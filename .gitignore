@@ -32,3 +32,77 @@
 *.app
 /build/
 /dist/
+
+# Build directories and files
+*.o
+*.obj
+*.so
+*.a
+*.dll
+*.exe
+*.out
+*.app
+*.dylib
+*.moc
+*.qrc
+*.qm
+*.core
+*~
+core
+*.core
+*.log
+
+# Qt generated files
+moc_*.cpp
+ui_*.h
+qrc_*.cpp
+*.moc
+*.pro.user
+*.qmake.stash
+*.qmake.cache
+
+# Translation files
+*.qm
+
+# Build system files
+Makefile
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+build/
+release/
+debug/
+.qtc_clangd/
+.qmake.stash
+.qmake.cache
+
+# IDE/project files
+*.user
+*.user.*
+*.autosave
+*.swp
+*.swo
+*.kate-swp
+*.kdev4
+*.pro.user
+*.pro.user.*
+*.qbs.user
+*.qbs.user.*
+*.creator.user
+*.creator.user.*
+*.creator
+*.DS_Store
+
+# Specific to Genesys build outputs
+*.o
+*.so
+*.moc
+*.qrc
+*.qm
+*.core
+*~
+core
+*.core
+*.log
+
+# Remove any specific files you want to keep tracked!
