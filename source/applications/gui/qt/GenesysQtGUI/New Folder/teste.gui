@@ -1,0 +1,17 @@
+# Genesys Simulation Model
+# Simulator, Model and Simulation infos
+0   Simulator  "GenESyS - GENeric and Expansible SYstem Simulator" versionNumber=230914 
+0   ModelInfo  "Model 1" version="1.0" projectTitle="" description="" analystName="" 
+0   ModelSimulation "" traceLevel=9 
+
+# Model Data Definitions
+
+# Model Components
+85  Create     "Create_1" entityType="entitytype" nexts=0 
+86  Decide     "Decide_1" nexts=0 
+87  Decide     "Decide_2" nexts=0 
+#Genegys Graphic Model
+0	View	zoom=500, grid=0, rule=0, snap=0, viewpoint=(0,0)
+85	Create	Create_1	color=#0000ff	position=(481,000000,961,000000)
+86	Decide	Decide_1	color=#000000	position=(855,000000,959,000000)
+87	Decide	Decide_2	color=#000000	position=(1276,000000,962,000000)
