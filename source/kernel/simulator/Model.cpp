@@ -41,7 +41,7 @@ Model::Model(Simulator* simulator, unsigned int level) {
 	_responses = new List<SimulationControl*>();
 	_controls = new List<SimulationControl*>();
 	// 1:1 associations (no Traits)
-	_traceManager = simulator->getTracer(); // every model starts with the same tracer, unless a specific one is set
+	_traceManager = simulator->getTraceManager(); // every model starts with the same tracer, unless a specific one is set
 	_modelInfo = new ModelInfo();	//Sampler_if* sampler = new Traits<Sampler_if>::Implementation();
 
 	_eventManager = new OnEventManager(); // should be on .h (all that does not depends on THIS)
@@ -109,7 +109,7 @@ void Model::sendEntityToComponent(Entity* entity, ModelComponent* component, dou
 	SimulationEvent* se = _simulation->_createSimulationEvent();
 	se->setDestinationComponent(component);
 	se->setEntityMoveTimeDelay(timeDelay);
-	this->getOnEvents()->NotifyEntityMoveHandlers(se); // it's my friend
+    this->getOnEventManager()->NotifyEntityMoveHandlers(se); // it's my friend
 	Event* newEvent = new Event(this->getSimulation()->getSimulatedTime()+timeDelay, entity, component, componentinputPortNumber);
 	this->getFutureEvents()->insert(newEvent);
 }
@@ -229,7 +229,7 @@ bool Model::insert(ModelDataDefinition*elemOrComp) {
 	if (comp==nullptr) // it's a ModelDataDefinition
 		return this->getDataManager()->insert(elemOrComp);
 	else // it's a ModelComponent
-		return this->getComponents()->insert(comp);
+        return this->getComponentManager()->insert(comp);
 }
 
 void Model::remove(ModelDataDefinition*elemOrComp) {
@@ -237,7 +237,7 @@ void Model::remove(ModelDataDefinition*elemOrComp) {
 	if (comp==nullptr) // it's a ModelDataDefinition
 		this->getDataManager()->remove(elemOrComp);
 	else // it's a ModelComponent
-		this->getComponents()->remove(comp);
+        this->getComponentManager()->remove(comp);
 }
 
 void Model::_showElements() const {
@@ -271,7 +271,7 @@ void Model::_showConnections() const {
 void Model::_showComponents() const {
 	getTracer()->trace("Components:", TraceManager::Level::L2_results);
 	Util::IncIndent();
-	for (ModelComponent* component : *getComponents()) {
+    for (ModelComponent* component : *getComponentManager()) {
 		getTracer()->trace(component->show(), TraceManager::Level::L2_results); ////
 	}
 	Util::DecIndent();
@@ -388,7 +388,7 @@ Entity*Model::createEntity(std::string name, bool insertIntoModel) {
 	SimulationEvent *se = _simulation->_createSimulationEvent(); // it's my friend
 	se->setEntityCreated(newEntity);
 	//getTracer()->traceSimulation(this, /*"Entity " + entId +*/entity->getName() + " was created");
-	getOnEvents()->NotifyEntityCreateHandlers(se);
+    getOnEventManager()->NotifyEntityCreateHandlers(se);
 	return newEntity;
 }
 
@@ -437,11 +437,11 @@ bool Model::hasChanged() const {
 	return changed;
 }
 
-ComponentManager*Model::getComponents() const {
+ComponentManager*Model::getComponentManager() const {
 	return _componentManager;
 }
 
-OnEventManager*Model::getOnEvents() const {
+OnEventManager*Model::getOnEventManager() const {
 	return _eventManager;
 }
 

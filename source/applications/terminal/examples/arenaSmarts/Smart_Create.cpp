@@ -33,11 +33,11 @@ Smart_Create::Smart_Create() {
  */
 int Smart_Create::main(int argc, char** argv) {
 	Simulator* genesys = new Simulator();
-	genesys->getTracer()->setTraceLevel(TraitsApp<GenesysApplication_if>::traceLevel);
-	setDefaultTraceHandlers(genesys->getTracer());
-	PluginManager* plugins = genesys->getPlugins();
+	genesys->getTraceManager()->setTraceLevel(TraitsApp<GenesysApplication_if>::traceLevel);
+	setDefaultTraceHandlers(genesys->getTraceManager());
+	PluginManager* plugins = genesys->getPluginManager();
 	plugins->autoInsertPlugins("autoloadplugins.txt");
-	Model* model = genesys->getModels()->newModel();
+	Model* model = genesys->getModelManager()->newModel();
 	// create model
 	EntityType* entityType = new EntityType(model, "Customers");
     Create* create = new Create(model);
@@ -51,17 +51,17 @@ int Smart_Create::main(int argc, char** argv) {
     Assignment* assignment = new Assignment("processTime", "NORM(10, 2)");
     assign->getAssignments()->insert(assignment);
     new Attribute(model, "processTime");
-    create->getConnections()->insert(assign);
+    create->getConnectionManager()->insert(assign);
     
     Delay* delay = new Delay(model);
     delay->setDescription("Process");
     delay->setDelayExpression("processTime");
     delay->setDelayTimeUnit(Util::TimeUnit::minute);
-    assign->getConnections()->insert(delay);
+    assign->getConnectionManager()->insert(delay);
     
     Dispose* dispose = new Dispose(model);
     dispose->setDescription("Dispose");
-    delay->getConnections()->insert(dispose);
+    delay->getConnectionManager()->insert(dispose);
     
     ModelSimulation* simulation = model->getSimulation();
     simulation->setReplicationLength(10);

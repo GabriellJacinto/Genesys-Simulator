@@ -33,11 +33,11 @@ Smart_ProcessSet::Smart_ProcessSet() {
  */
 int Smart_ProcessSet::main(int argc, char** argv) {
 	Simulator* genesys = new Simulator();
-	genesys->getTracer()->setTraceLevel(TraitsApp<GenesysApplication_if>::traceLevel);
-	setDefaultTraceHandlers(genesys->getTracer());
-	PluginManager* plugins = genesys->getPlugins();
+	genesys->getTraceManager()->setTraceLevel(TraitsApp<GenesysApplication_if>::traceLevel);
+	setDefaultTraceHandlers(genesys->getTraceManager());
+	PluginManager* plugins = genesys->getPluginManager();
 	plugins->autoInsertPlugins("autoloadplugins.txt");
-	Model* model = genesys->getModels()->newModel();
+	Model* model = genesys->getModelManager()->newModel();
 	// create model
 	Create *create = plugins->newInstance<Create>(model);
 	create->setEntityTypeName("Client");
@@ -55,8 +55,8 @@ int Smart_ProcessSet::main(int argc, char** argv) {
 	process->setQueueableItem(new QueueableItem(model, "myqueue"));
 	process->setDelayExpression("unif(0.6,1.4)");
 	// connect model components to create a "workflow"
-	create->getConnections()->insert(process);
-	process->getConnections()->insert(dispose);
+	create->getConnectionManager()->insert(process);
+	process->getConnectionManager()->insert(dispose);
 	// set options, save and simulate step-by-step (but no user interaction required)
 	model->getSimulation()->setReplicationLength(10);
 	model->save("./models/Smart_ProcessSet.gen");

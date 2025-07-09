@@ -35,11 +35,11 @@ Smart_ArrivalsElementStopsEntitiesArrivingAfterASetTime::Smart_ArrivalsElementSt
  */
 int Smart_ArrivalsElementStopsEntitiesArrivingAfterASetTime::main(int argc, char** argv) {
 	Simulator* genesys = new Simulator();
-	genesys->getTracer()->setTraceLevel(TraitsApp<GenesysApplication_if>::traceLevel);
-	setDefaultTraceHandlers(genesys->getTracer());
-	PluginManager* plugins = genesys->getPlugins();
+	genesys->getTraceManager()->setTraceLevel(TraitsApp<GenesysApplication_if>::traceLevel);
+	setDefaultTraceHandlers(genesys->getTraceManager());
+	PluginManager* plugins = genesys->getPluginManager();
 	plugins->autoInsertPlugins("autoloadplugins.txt");
-	Model* model = genesys->getModels()->newModel();
+	Model* model = genesys->getModelManager()->newModel();
 	// create model
 	EntityType* entityType = plugins->newInstance<EntityType>(model);
 	Create* create = plugins->newInstance<Create>(model);
@@ -74,13 +74,13 @@ int Smart_ArrivalsElementStopsEntitiesArrivingAfterASetTime::main(int argc, char
 	Dispose* dispose = plugins->newInstance<Dispose>(model);
 
 	// connect model components to create a "workflow"
-	create->getConnections()->insert(processTeller);
-	processTeller->getConnections()->insert(decide);
+	create->getConnectionManager()->insert(processTeller);
+	processTeller->getConnectionManager()->insert(decide);
 	// True
-	decide->getConnections()->insert(processSupervisor);
-	processSupervisor->getConnections()->insert(processTeller);
+	decide->getConnectionManager()->insert(processSupervisor);
+	processSupervisor->getConnectionManager()->insert(processTeller);
 	// False
-	decide->getConnections()->insert(dispose);
+	decide->getConnectionManager()->insert(dispose);
 
 	// set options, save and simulate
 	ModelSimulation* sim = model->getSimulation();

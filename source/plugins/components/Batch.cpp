@@ -251,7 +251,7 @@ void Batch::_onDispatchEvent(Entity* entity, unsigned int inputPortNumber) {
 		} else {
 			traceSimulation(this, "Entity \"" + representativeEnt->getName() + "\" id=" + std::to_string(groupIdKey) + " now represented the removed entities: " + txtEntsInGroup, TraceManager::Level::L7_internal);
 		}
-		this->_parentModel->sendEntityToComponent(representativeEnt, this->getConnections()->getFrontConnection());
+		this->_parentModel->sendEntityToComponent(representativeEnt, this->getConnectionManager()->getFrontConnection());
 	} else {
 		if (_rule == Batch::Rule::Any) {
 			traceSimulation(this, "Entity \"" + entity->getName() + "\" is waiting in the queue " + _queue->getName());
@@ -294,7 +294,7 @@ void Batch::_createInternalAndAttachedData() {
 	_attachedAttributesInsert({"Entity.Group"});
 	_attachedDataInsert("GroupdEntityType", _groupedEntityType);
 	if (_queue == nullptr) {
-		PluginManager* plugins = _parentModel->getParentSimulator()->getPlugins();
+		PluginManager* plugins = _parentModel->getParentSimulator()->getPluginManager();
 		_queue = plugins->newInstance<Queue>(_parentModel, this->getName() + ".Queue");
 		_internalDataInsert("EntityQueue", _queue);
 		_entityGroup = plugins->newInstance<EntityGroup>(_parentModel, this->getName() + ".EntiyGroup");

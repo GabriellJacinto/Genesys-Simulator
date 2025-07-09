@@ -33,11 +33,11 @@ Smart_ProcessArena::Smart_ProcessArena() {
  */
 int Smart_ProcessArena::main(int argc, char** argv) {
 	Simulator* genesys = new Simulator();
-	genesys->getTracer()->setTraceLevel(TraitsApp<GenesysApplication_if>::traceLevel);
-	setDefaultTraceHandlers(genesys->getTracer());
-	PluginManager* plugins = genesys->getPlugins();
+	genesys->getTraceManager()->setTraceLevel(TraitsApp<GenesysApplication_if>::traceLevel);
+	setDefaultTraceHandlers(genesys->getTraceManager());
+	PluginManager* plugins = genesys->getPluginManager();
 	plugins->autoInsertPlugins("autoloadplugins.txt");
-	Model* model = genesys->getModels()->newModel();
+	Model* model = genesys->getModelManager()->newModel();
 	// create model
 
     EntityType* entityType = new EntityType(model, "Entity 1");
@@ -51,11 +51,11 @@ int Smart_ProcessArena::main(int argc, char** argv) {
     delay->setDescription("Process 1");
     delay->setDelayExpression("tria(0.5, 1, 1.5)");
     delay->setDelayTimeUnit(Util::TimeUnit::hour);
-    create->getConnections()->insert(delay);
+    create->getConnectionManager()->insert(delay);
 
     Dispose* dispose = new Dispose(model);
     dispose->setDescription("Dispose 1");
-    delay->getConnections()->insert(dispose);
+    delay->getConnectionManager()->insert(dispose);
 
     ModelSimulation* simulation = model->getSimulation();
     simulation->setReplicationLength(10);

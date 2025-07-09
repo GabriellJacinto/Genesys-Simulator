@@ -38,11 +38,11 @@ Smart_PriorityExample::Smart_PriorityExample() {
  */
 int Smart_PriorityExample::main(int argc, char** argv) {
 	Simulator* genesys = new Simulator();
-	genesys->getTracer()->setTraceLevel(TraitsApp<GenesysApplication_if>::traceLevel);
-	setDefaultTraceHandlers(genesys->getTracer());
-	PluginManager* plugins = genesys->getPlugins();
+	genesys->getTraceManager()->setTraceLevel(TraitsApp<GenesysApplication_if>::traceLevel);
+	setDefaultTraceHandlers(genesys->getTraceManager());
+	PluginManager* plugins = genesys->getPluginManager();
 	plugins->autoInsertPlugins("autoloadplugins.txt");
-	Model* model = genesys->getModels()->newModel();
+	Model* model = genesys->getModelManager()->newModel();
 	// create model
 	// create components
 	Create* create1 = plugins->newInstance<Create>(model, "GP");
@@ -58,15 +58,15 @@ int Smart_PriorityExample::main(int argc, char** argv) {
 	Resource* resource1 = plugins->newInstance<Resource>(model, "Doctor");
 
 	// connect model components to create a "workflow"
-	create1->getConnections()->insert(seize1);
-	seize1->getConnections()->insert(delay1);
-	delay1->getConnections()->insert(release1);
-	release1->getConnections()->insert(dispose1);
+	create1->getConnectionManager()->insert(seize1);
+	seize1->getConnectionManager()->insert(delay1);
+	delay1->getConnectionManager()->insert(release1);
+	release1->getConnectionManager()->insert(dispose1);
 	//
-	create2->getConnections()->insert(seize2);
-	seize2->getConnections()->insert(delay2);
-	delay2->getConnections()->insert(release2);
-	release2->getConnections()->insert(dispose1);
+	create2->getConnectionManager()->insert(seize2);
+	seize2->getConnectionManager()->insert(delay2);
+	delay2->getConnectionManager()->insert(release2);
+	release2->getConnectionManager()->insert(dispose1);
 
 	// configure data
 	resource1->setCapacity(1);

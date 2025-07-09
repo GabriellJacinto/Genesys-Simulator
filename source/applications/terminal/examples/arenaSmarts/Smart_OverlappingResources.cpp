@@ -34,11 +34,11 @@ Smart_OverlappingResources::Smart_OverlappingResources() {
  */
 int Smart_OverlappingResources::main(int argc, char** argv) {
 	Simulator* genesys = new Simulator();
-	genesys->getTracer()->setTraceLevel(TraitsApp<GenesysApplication_if>::traceLevel);
-	setDefaultTraceHandlers(genesys->getTracer());
-	PluginManager* plugins = genesys->getPlugins();
+	genesys->getTraceManager()->setTraceLevel(TraitsApp<GenesysApplication_if>::traceLevel);
+	setDefaultTraceHandlers(genesys->getTraceManager());
+	PluginManager* plugins = genesys->getPluginManager();
 	plugins->autoInsertPlugins("autoloadplugins.txt");
-	Model* model = genesys->getModels()->newModel();
+	Model* model = genesys->getModelManager()->newModel();
 	// create model
 
 	Resource* resource3 = plugins->newInstance<Resource>(model, "Resource_3");
@@ -75,13 +75,13 @@ int Smart_OverlappingResources::main(int argc, char** argv) {
 
 
 	// connect model components to create a "workflow"
-	create2->getConnections()->insert(seizeResource3);
-	seizeResource3->getConnections()->insert(delay1);
-	delay1->getConnections()->insert(seizeResource4);
-	seizeResource4->getConnections()->insert(releaseResource3);
-	releaseResource3->getConnections()->insert(delay2);
-	delay2->getConnections()->insert(releaseResource4);
-	releaseResource4->getConnections()->insert(dispose2);
+	create2->getConnectionManager()->insert(seizeResource3);
+	seizeResource3->getConnectionManager()->insert(delay1);
+	delay1->getConnectionManager()->insert(seizeResource4);
+	seizeResource4->getConnectionManager()->insert(releaseResource3);
+	releaseResource3->getConnectionManager()->insert(delay2);
+	delay2->getConnectionManager()->insert(releaseResource4);
+	releaseResource4->getConnectionManager()->insert(dispose2);
 
 	// set options, save and simulate
 	model->getSimulation()->setReplicationLength(8, Util::TimeUnit::hour);

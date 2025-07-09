@@ -33,19 +33,19 @@ Smart_Delay::Smart_Delay() {
  */
 int Smart_Delay::main(int argc, char** argv) {
 	Simulator* genesys = new Simulator();
-	genesys->getTracer()->setTraceLevel(TraitsApp<GenesysApplication_if>::traceLevel);
-	setDefaultTraceHandlers(genesys->getTracer());
-	PluginManager* plugins = genesys->getPlugins();
+	genesys->getTraceManager()->setTraceLevel(TraitsApp<GenesysApplication_if>::traceLevel);
+	setDefaultTraceHandlers(genesys->getTraceManager());
+	PluginManager* plugins = genesys->getPluginManager();
 	plugins->autoInsertPlugins("autoloadplugins.txt");
-	Model* model = genesys->getModels()->newModel();
+	Model* model = genesys->getModelManager()->newModel();
 	// create model
 	Create* create1 = plugins->newInstance<Create>(model);
 	Delay* delay1 = plugins->newInstance<Delay>(model); // the default delay time is 1.0 s
 	delay1->setDelayExpression("unif(1,0.2)");
 	Dispose* dispose1 = plugins->newInstance<Dispose>(model);
 	// connect model components to create a "workflow"
-	create1->getConnections()->insert(delay1);
-	delay1->getConnections()->insert(dispose1);
+	create1->getConnectionManager()->insert(delay1);
+	delay1->getConnectionManager()->insert(dispose1);
 	// set options, save and simulate
 	model->getSimulation()->setReplicationLength(60);
 	model->getSimulation()->setTerminatingCondition("");

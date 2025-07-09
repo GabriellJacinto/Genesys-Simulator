@@ -37,11 +37,11 @@ Smart_WaitSignal::Smart_WaitSignal() {
  */
 int Smart_WaitSignal::main(int argc, char** argv) {
 	Simulator* genesys = new Simulator();
-	genesys->getTracer()->setTraceLevel(TraitsApp<GenesysApplication_if>::traceLevel);
-	setDefaultTraceHandlers(genesys->getTracer());
-	PluginManager* plugins = genesys->getPlugins();
+	genesys->getTraceManager()->setTraceLevel(TraitsApp<GenesysApplication_if>::traceLevel);
+	setDefaultTraceHandlers(genesys->getTraceManager());
+	PluginManager* plugins = genesys->getPluginManager();
 	plugins->autoInsertPlugins("autoloadplugins.txt");
-	Model* model = genesys->getModels()->newModel();
+	Model* model = genesys->getModelManager()->newModel();
 	// create model
 	Create* create1 = plugins->newInstance<Create>(model);
 	create1->setTimeBetweenCreationsExpression("1");
@@ -69,14 +69,14 @@ int Smart_WaitSignal::main(int argc, char** argv) {
 	Dispose* dispose1 = plugins->newInstance<Dispose>(model);
 	Dispose* dispose2 = plugins->newInstance<Dispose>(model);
 	//
-	create1->getConnections()->insert(wait1);
-	wait1->getConnections()->insert(dispose1);
-	create2->getConnections()->insert(wait2);
-	wait2->getConnections()->insert(dispose1);
-	create3->getConnections()->insert(signal1);
-	signal1->getConnections()->insert(dispose2);
-	create4->getConnections()->insert(signal2);
-	signal2->getConnections()->insert(dispose2);
+	create1->getConnectionManager()->insert(wait1);
+	wait1->getConnectionManager()->insert(dispose1);
+	create2->getConnectionManager()->insert(wait2);
+	wait2->getConnectionManager()->insert(dispose1);
+	create3->getConnectionManager()->insert(signal1);
+	signal1->getConnectionManager()->insert(dispose2);
+	create4->getConnectionManager()->insert(signal2);
+	signal2->getConnectionManager()->insert(dispose2);
 	//
 	ModelSimulation* simulation = model->getSimulation();
 	simulation->setReplicationLength(20);

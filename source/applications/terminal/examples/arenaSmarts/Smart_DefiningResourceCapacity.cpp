@@ -34,11 +34,11 @@ Smart_DefiningResourceCapacity::Smart_DefiningResourceCapacity() {
  */
 int Smart_DefiningResourceCapacity::main(int argc, char** argv) {
 	Simulator* genesys = new Simulator();
-	genesys->getTracer()->setTraceLevel(TraitsApp<GenesysApplication_if>::traceLevel);
-	setDefaultTraceHandlers(genesys->getTracer());
-	PluginManager* plugins = genesys->getPlugins();
+	genesys->getTraceManager()->setTraceLevel(TraitsApp<GenesysApplication_if>::traceLevel);
+	setDefaultTraceHandlers(genesys->getTraceManager());
+	PluginManager* plugins = genesys->getPluginManager();
 	plugins->autoInsertPlugins("autoloadplugins.txt");
-	Model* model = genesys->getModels()->newModel();
+	Model* model = genesys->getModelManager()->newModel();
 	// create model
 	Create* create = plugins->newInstance<Create>(model, "Create_1");
 	create->setTimeBetweenCreationsExpression("expo(3)");
@@ -76,11 +76,11 @@ int Smart_DefiningResourceCapacity::main(int argc, char** argv) {
 	Dispose* dispose2 = plugins->newInstance<Dispose>(model);
 
 	// connect model components to create a "workflow"
-	create->getConnections()->insert(clone);
-	clone->getConnections()->insert(process1);
-	clone->getConnections()->insert(process2);
-	process1->getConnections()->insert(dispose1);
-	process2->getConnections()->insert(dispose2);
+	create->getConnectionManager()->insert(clone);
+	clone->getConnectionManager()->insert(process1);
+	clone->getConnectionManager()->insert(process2);
+	process1->getConnectionManager()->insert(dispose1);
+	process2->getConnectionManager()->insert(dispose2);
 
 	// set options, save and simulate
 	ModelSimulation* sim = model->getSimulation();

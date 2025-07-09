@@ -34,10 +34,10 @@ Smart_SeizeDelayReleaseNoDataDefs::Smart_SeizeDelayReleaseNoDataDefs() {
 int Smart_SeizeDelayReleaseNoDataDefs::main(int argc, char** argv) {
 	Simulator* genesys = new Simulator();
 	//genesys->getTracer()->setTraceLevel(TraitsApp<GenesysApplication_if>::traceLevel);
-	setDefaultTraceHandlers(genesys->getTracer());
-	PluginManager* plugins = genesys->getPlugins();
+	setDefaultTraceHandlers(genesys->getTraceManager());
+	PluginManager* plugins = genesys->getPluginManager();
 	plugins->autoInsertPlugins("autoloadplugins.txt");
-	Model* model = genesys->getModels()->newModel();
+	Model* model = genesys->getModelManager()->newModel();
 	// create model
 	Create* create1 = plugins->newInstance<Create>(model);
 	create1->setEntityTypeName("Customer");
@@ -58,10 +58,10 @@ int Smart_SeizeDelayReleaseNoDataDefs::main(int argc, char** argv) {
 	////////////////////	release1->getReleaseRequests()->insert(new SeizableItem(machine1, "1"));
 	Dispose* dispose1 = plugins->newInstance<Dispose>(model);
 	// connect model components to create a "workflow"
-	create1->getConnections()->insert(seize1);
-	seize1->getConnections()->insert(delay1);
-	delay1->getConnections()->insert(release1);
-	release1->getConnections()->insert(dispose1);
+	create1->getConnectionManager()->insert(seize1);
+	seize1->getConnectionManager()->insert(delay1);
+	delay1->getConnectionManager()->insert(release1);
+	release1->getConnectionManager()->insert(dispose1);
 	// set options, save and simulate
 	ModelSimulation* sim = model->getSimulation();
 	sim->setReplicationLength(120, Util::TimeUnit::second);

@@ -34,11 +34,11 @@ Smart_Expression::Smart_Expression() {
  */
 int Smart_Expression::main(int argc, char** argv) {
 	Simulator* genesys = new Simulator();
-	genesys->getTracer()->setTraceLevel(TraitsApp<GenesysApplication_if>::traceLevel);
-	setDefaultTraceHandlers(genesys->getTracer());
-	PluginManager* plugins = genesys->getPlugins();
+	genesys->getTraceManager()->setTraceLevel(TraitsApp<GenesysApplication_if>::traceLevel);
+	setDefaultTraceHandlers(genesys->getTraceManager());
+	PluginManager* plugins = genesys->getPluginManager();
 	plugins->autoInsertPlugins("autoloadplugins.txt");
-	Model* model = genesys->getModels()->newModel();
+	Model* model = genesys->getModelManager()->newModel();
 	// create model
 
     EntityType* entityType = new EntityType(model, "Package");
@@ -53,25 +53,25 @@ int Smart_Expression::main(int argc, char** argv) {
     Assignment* assignment = new Assignment("productWeight", "NORM(100, 5)");
     assign->getAssignments()->insert(assignment);
     new Attribute(model, "productWeight");
-    create->getConnections()->insert(assign);
+    create->getConnectionManager()->insert(assign);
 
     Delay* delay = new Delay(model);
     delay->setDescription("The packages are processed");
     delay->setDelayExpression("productWeight * 0.33 + 5");
     delay->setDelayTimeUnit(Util::TimeUnit::minute);
-    assign->getConnections()->insert(delay);
+    assign->getConnectionManager()->insert(delay);
 
     Decide* decide = new Decide(model);
     decide->setDescription("Send Package to correct department");
     decide->getConditions()->insert("productWeight > 100");
-    delay->getConnections()->insert(decide);
+    delay->getConnectionManager()->insert(decide);
 
     Dispose* department1 = new Dispose(model);
     department1->setDescription("Department 1");
     Dispose* department2 = new Dispose(model);
     department2->setDescription("Department 2");
-    decide->getConnections()->insert(department1);
-    decide->getConnections()->insert(department2);
+    decide->getConnectionManager()->insert(department1);
+    decide->getConnectionManager()->insert(department2);
 
     ModelSimulation* simulation = model->getSimulation();
     simulation->setNumberOfReplications(3);

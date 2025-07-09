@@ -174,7 +174,7 @@ unsigned int Buffer::_handlerForSignalDataEvent(SignalData* signalData) {
 	traceSimulation(this, "Buffer entities moved forward");
 	if (first != nullptr) {
 		traceSimulation(this, "Entity "+first->getName()+" was in the first position of the buffer");
-		_parentModel->sendEntityToComponent(first, this->getConnections()->getFrontConnection());
+		_parentModel->sendEntityToComponent(first, this->getConnectionManager()->getFrontConnection());
 	} else {
 		traceSimulation(this, "First position of the buffer was empty");
 	}
@@ -183,7 +183,7 @@ unsigned int Buffer::_handlerForSignalDataEvent(SignalData* signalData) {
 
 
 void Buffer::_createInternalAndAttachedData() {
-	PluginManager* pm = _parentModel->getParentSimulator()->getPlugins();
+	PluginManager* pm = _parentModel->getParentSimulator()->getPluginManager();
 	//attached
 	if (_advanceOn == AdvanceOn::Signal) {
 		if (_attachedSignal  == nullptr) {

@@ -27,11 +27,11 @@ Smart_MaxArrivalsField::Smart_MaxArrivalsField() {
  */
 int Smart_MaxArrivalsField::main(int argc, char** argv) {
 	Simulator* genesys = new Simulator();
-	genesys->getTracer()->setTraceLevel(TraitsApp<GenesysApplication_if>::traceLevel);
-	setDefaultTraceHandlers(genesys->getTracer());
-	PluginManager* plugins = genesys->getPlugins();
+	genesys->getTraceManager()->setTraceLevel(TraitsApp<GenesysApplication_if>::traceLevel);
+	setDefaultTraceHandlers(genesys->getTraceManager());
+	PluginManager* plugins = genesys->getPluginManager();
 	plugins->autoInsertPlugins("autoloadplugins.txt");
-	Model* model = genesys->getModels()->newModel();
+	Model* model = genesys->getModelManager()->newModel();
 	// create model
 
         // create1
@@ -54,8 +54,8 @@ int Smart_MaxArrivalsField::main(int argc, char** argv) {
 	Dispose* dispose1 = plugins->newInstance<Dispose>(model);
         
 	// connect model components to create a "workflow"
-	create1->getConnections()->insert(howMany);
-	howMany->getConnections()->insert(dispose1);
+	create1->getConnectionManager()->insert(howMany);
+	howMany->getConnectionManager()->insert(dispose1);
 	// set options, save and simulate
 	model->getSimulation()->setNumberOfReplications(300);
         model->getSimulation()->setReplicationReportBaseTimeUnit(Util::TimeUnit::minute);

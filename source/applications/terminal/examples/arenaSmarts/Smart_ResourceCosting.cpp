@@ -25,11 +25,11 @@ Smart_ResourceCosting::Smart_ResourceCosting() {
 
 int Smart_ResourceCosting::main(int argc, char** argv) {
 	Simulator* genesys = new Simulator();
-	genesys->getTracer()->setTraceLevel(TraitsApp<GenesysApplication_if>::traceLevel);
-	setDefaultTraceHandlers(genesys->getTracer());
-	PluginManager* plugins = genesys->getPlugins();
+	genesys->getTraceManager()->setTraceLevel(TraitsApp<GenesysApplication_if>::traceLevel);
+	setDefaultTraceHandlers(genesys->getTraceManager());
+	PluginManager* plugins = genesys->getPluginManager();
 	plugins->autoInsertPlugins("autoloadplugins.txt");
-	Model* model = genesys->getModels()->newModel();
+	Model* model = genesys->getModelManager()->newModel();
 	// create model
 
 	// Initialize resources
@@ -74,9 +74,9 @@ int Smart_ResourceCosting::main(int argc, char** argv) {
 	Dispose* Dispose_1 = plugins->newInstance<Dispose>(model, "Depart");
 
 	// connect model components
-	Create_2->getConnections()->insert(Process_3);
-	Process_3->getConnections()->insert(Process_4);
-	Process_4->getConnections()->insert(Dispose_1);
+	Create_2->getConnectionManager()->insert(Process_3);
+	Process_3->getConnectionManager()->insert(Process_4);
+	Process_4->getConnectionManager()->insert(Dispose_1);
 	
 	// set simulation parameters
 	ModelSimulation* sim = model->getSimulation();

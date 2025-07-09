@@ -100,7 +100,7 @@ void Assign::_onDispatchEvent(Entity* entity, unsigned int inputPortNumber) {
 		traceSimulation(this, "Let \"" + let->getDestination() + "\" = " + Util::StrTruncIfInt(std::to_string(value)) + "  // " + let->getExpression());
 	}
 
-	this->_parentModel->sendEntityToComponent(entity, this->getConnections()->getFrontConnection());
+	this->_parentModel->sendEntityToComponent(entity, this->getConnectionManager()->getFrontConnection());
 }
 
 //void Assign::_initBetweenReplications() {}
@@ -138,14 +138,14 @@ bool Assign::_check(std::string* errorMessage) {
 		if (let->isAttributeNotVariable()) {
 			data = _parentModel->getDataManager()->getDataDefinition(Util::TypeOf<Attribute>(), let->getDestination());
 			if (data == nullptr) {
-				data = _parentModel->getParentSimulator()->getPlugins()->newInstance<Attribute>(_parentModel, let->getDestination());
+				data = _parentModel->getParentSimulator()->getPluginManager()->newInstance<Attribute>(_parentModel, let->getDestination());
 				_parentModel->getDataManager()->insert(data);
 			}
 		}
 		if (!let->isAttributeNotVariable()) {
 			data = _parentModel->getDataManager()->getDataDefinition(Util::TypeOf<Variable>(), let->getDestination());
 			if (data == nullptr) {
-				data = _parentModel->getParentSimulator()->getPlugins()->newInstance<Variable>(_parentModel, let->getDestination());
+				data = _parentModel->getParentSimulator()->getPluginManager()->newInstance<Variable>(_parentModel, let->getDestination());
 				_parentModel->getDataManager()->insert(data);
 			}
 		}

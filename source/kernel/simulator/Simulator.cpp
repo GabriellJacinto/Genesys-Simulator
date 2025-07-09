@@ -53,23 +53,23 @@ Simulator::Simulator() {
     std::cout << '|' << '\t' << _licenceManager->showLimits() << std::endl;
 }
 
-PluginManager* Simulator::getPlugins() const {
+PluginManager* Simulator::getPluginManager() const {
 	return _pluginManager;
 }
 
-ModelManager* Simulator::getModels() const {
+ModelManager* Simulator::getModelManager() const {
 	return _modelManager;
 }
 
-TraceManager* Simulator::getTracer() const {
+TraceManager* Simulator::getTraceManager() const {
 	return _traceManager;
 }
 
-ParserManager* Simulator::getParser() const {
+ParserManager* Simulator::getParserManager() const {
 	return _parserManager;
 }
 
-ExperimentManager* Simulator::getExperimenter() const {
+ExperimentManager* Simulator::getExperimentManager() const {
 	return _experimentManager;
 }
 
@@ -85,7 +85,7 @@ std::string Simulator::getName() const {
 	return _name;
 }
 
-LicenceManager* Simulator::getLicence() const {
+LicenceManager* Simulator::getLicenceManager() const {
 	return _licenceManager;
 }
 
@@ -114,8 +114,8 @@ bool Simulator::_completePluginsFieldsAndTemplate() {
 					if (info->isComponent()) {
 						comp = dynamic_cast<ModelComponent*> (plugin->loadNew(tempModel, fields.get()));
 						comp->setName("name");
-						while (comp->getConnections()->size() < info->getMinimumOutputs()) {
-							comp->getConnections()->insert(comp);
+						while (comp->getConnectionManager()->size() < info->getMinimumOutputs()) {
+							comp->getConnectionManager()->insert(comp);
 						}
 						fields->clear();
 						comp->SaveInstance(fields.get(), comp);

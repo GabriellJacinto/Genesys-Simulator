@@ -79,7 +79,7 @@ void Signal::_onDispatchEvent(Entity* entity, unsigned int inputPortNumber) {
 	unsigned int limit = _parentModel->parseExpression(_limitExpression);
 	traceSimulation(this, "Triggering signal \""+_signalData->getName()+"\" with limit \""+_limitExpression+"\"="+std::to_string(limit));
 	unsigned int freed = _signalData->generateSignal(_signalData->getId(),limit);
-	this->_parentModel->sendEntityToComponent(entity, this->getConnections()->getFrontConnection());
+	this->_parentModel->sendEntityToComponent(entity, this->getConnectionManager()->getFrontConnection());
 }
 
 bool Signal::_loadInstance(PersistenceRecord *fields) {
@@ -108,7 +108,7 @@ bool Signal::_check(std::string* errorMessage) {
 
 void Signal::_createInternalAndAttachedData() {
 	// internal
-	PluginManager* pm = _parentModel->getParentSimulator()->getPlugins();
+	PluginManager* pm = _parentModel->getParentSimulator()->getPluginManager();
 	//attached
 	if (_signalData == nullptr) {
 		_signalData = pm->newInstance<SignalData>(_parentModel);

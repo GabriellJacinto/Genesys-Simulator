@@ -33,11 +33,11 @@ Smart_ModuleDisplayVariables::Smart_ModuleDisplayVariables() {
  */
 int Smart_ModuleDisplayVariables::main(int argc, char** argv) {
 	Simulator* genesys = new Simulator();
-	genesys->getTracer()->setTraceLevel(TraitsApp<GenesysApplication_if>::traceLevel);
-	setDefaultTraceHandlers(genesys->getTracer());
-	PluginManager* plugins = genesys->getPlugins();
+	genesys->getTraceManager()->setTraceLevel(TraitsApp<GenesysApplication_if>::traceLevel);
+	setDefaultTraceHandlers(genesys->getTraceManager());
+	PluginManager* plugins = genesys->getPluginManager();
 	plugins->autoInsertPlugins("autoloadplugins.txt");
-	Model* model = genesys->getModels()->newModel();
+	Model* model = genesys->getModelManager()->newModel();
 	// create model
 
 	// Create 1
@@ -56,8 +56,8 @@ int Smart_ModuleDisplayVariables::main(int argc, char** argv) {
 	Dispose* dispose_1 = plugins->newInstance<Dispose>(model, "Dispose 1");
 
 	// connecting model components to create a "workflow"
-	create_1->getConnections()->insert(process_1);
-	process_1->getConnections()->insert(dispose_1);
+	create_1->getConnectionManager()->insert(process_1);
+	process_1->getConnectionManager()->insert(dispose_1);
 
 	// set options, save and simulate step-by-step (but no user interaction required)
 	double replicationLength = 1300; // duracao para alcancar ~1000 entidades saindo do sistema

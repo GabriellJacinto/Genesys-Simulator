@@ -27,11 +27,11 @@ Smart_AddingResource::Smart_AddingResource() {
  */
 int Smart_AddingResource::main(int argc, char** argv) {
 	Simulator* genesys = new Simulator();
-	genesys->getTracer()->setTraceLevel(TraitsApp<GenesysApplication_if>::traceLevel);
-	setDefaultTraceHandlers(genesys->getTracer());
-	PluginManager* plugins = genesys->getPlugins();
+	genesys->getTraceManager()->setTraceLevel(TraitsApp<GenesysApplication_if>::traceLevel);
+	setDefaultTraceHandlers(genesys->getTraceManager());
+	PluginManager* plugins = genesys->getPluginManager();
 	plugins->autoInsertPlugins("autoloadplugins.txt");
-	Model* model = genesys->getModels()->newModel();
+	Model* model = genesys->getModelManager()->newModel();
 	// create model
 	Create* create1 = plugins->newInstance<Create>(model);
 	create1->setEntityTypeName("Create 1");
@@ -58,8 +58,8 @@ int Smart_AddingResource::main(int argc, char** argv) {
 	Dispose* dispose1 = plugins->newInstance<Dispose>(model);
 
 	//connections
-	create1->getConnections()->insert(process1);
-	process1->getConnections()->insert(dispose1);
+	create1->getConnectionManager()->insert(process1);
+	process1->getConnectionManager()->insert(dispose1);
 	// set options, save and simulate
 
 	model->getSimulation()->setNumberOfReplications(3);

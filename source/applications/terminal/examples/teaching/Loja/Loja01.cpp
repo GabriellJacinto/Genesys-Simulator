@@ -22,12 +22,12 @@ int Loja01::main(int argc, char** argv) {
     // Criando o simulador, vinculando os tratadores de eventos para mostrar mensagens na tela, e carregando os plugins.
     // Código "padrão"
     Simulator* genesys = new Simulator();
-    this->setDefaultTraceHandlers(genesys->getTracer());
-    genesys->getPlugins()->autoInsertPlugins("autoloadplugins.txt");
+    this->setDefaultTraceHandlers(genesys->getTraceManager());
+    genesys->getPluginManager()->autoInsertPlugins("autoloadplugins.txt");
     //
     // Instanciando um modelo
-    Model* model = genesys->getModels()->newModel();
-    PluginManager* plugins = genesys->getPlugins();
+    Model* model = genesys->getModelManager()->newModel();
+    PluginManager* plugins = genesys->getPluginManager();
     //
     // Ajustando informações do modelo. Não é importante, mas fornece alguma informações básicas
     //    sobre o que está sendo modelado
@@ -56,10 +56,10 @@ int Loja01::main(int argc, char** argv) {
     // Depois dos componentes criados, os conectamos, formando um "processo"
     //  do conceito de "modelagem orientada ao processo", ou seja, um "fluxograma" por
     //  onde a entidade se movimentará, realizando ações (disparando eventos)
-    create1->getConnections()->insert(seize1);
-    seize1->getConnections()->insert(delay1);
-    delay1->getConnections()->insert(release1);
-    release1->getConnections()->insert(dispose1);
+    create1->getConnectionManager()->insert(seize1);
+    seize1->getConnectionManager()->insert(delay1);
+    delay1->getConnectionManager()->insert(release1);
+    release1->getConnectionManager()->insert(dispose1);
     //
     // Concluindo a modelagem, preenchemos os parâmetros de cada componente.
     // Corresponde a dar um duplo clique no componente que arrastamos para a área

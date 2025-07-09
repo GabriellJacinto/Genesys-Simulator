@@ -15,11 +15,11 @@ Smart_BasicModeling::Smart_BasicModeling() {
 
 int Smart_BasicModeling::main(int argc, char** argv) {
 	Simulator* genesys = new Simulator();
-	genesys->getTracer()->setTraceLevel(TraitsApp<GenesysApplication_if>::traceLevel);
-	setDefaultTraceHandlers(genesys->getTracer());
-	PluginManager* plugins = genesys->getPlugins();
+	genesys->getTraceManager()->setTraceLevel(TraitsApp<GenesysApplication_if>::traceLevel);
+	setDefaultTraceHandlers(genesys->getTraceManager());
+	PluginManager* plugins = genesys->getPluginManager();
 	plugins->autoInsertPlugins("autoloadplugins.txt");
-	Model* model = genesys->getModels()->newModel();
+	Model* model = genesys->getModelManager()->newModel();
 	// create model
 	Create *create = plugins->newInstance<Create>(model);
     create->setName("Create 1");
@@ -36,8 +36,8 @@ int Smart_BasicModeling::main(int argc, char** argv) {
 
     Dispose *dispose = plugins->newInstance<Dispose>(model);
 
-    create->getConnections()->insert(process);
-    process->getConnections()->insert(dispose);
+    create->getConnectionManager()->insert(process);
+    process->getConnectionManager()->insert(dispose);
 
     ModelSimulation *s = model->getSimulation();
     s->setNumberOfReplications(300);

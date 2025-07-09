@@ -21,10 +21,10 @@ Book_Cap02_Example01::Book_Cap02_Example01() {
 
 int Book_Cap02_Example01::main(int argc, char** argv) {
 	Simulator* genesys = new Simulator();
-	this->setDefaultTraceHandlers(genesys->getTracer());
-	genesys->getPlugins()->autoInsertPlugins("autoloadplugins.txt");
-	Model* model = genesys->getModels()->newModel();
-	PluginManager* plugins = genesys->getPlugins();
+	this->setDefaultTraceHandlers(genesys->getTraceManager());
+	genesys->getPluginManager()->autoInsertPlugins("autoloadplugins.txt");
+	Model* model = genesys->getModelManager()->newModel();
+	PluginManager* plugins = genesys->getPluginManager();
 	Create* create1 = plugins->newInstance<Create>(model);
 	//EntityType* entityType1 = plugins->newInstance<EntityType>(model, "EntityType1");
 	//create1->setEntityType(entityType1);
@@ -32,8 +32,8 @@ int Book_Cap02_Example01::main(int argc, char** argv) {
 	Delay* delay1 = plugins->newInstance<Delay>(model);
 	delay1->setDelayExpression("unif(3,7)");
 	Dispose* dispose1 = plugins->newInstance<Dispose>(model);
-	create1->getConnections()->insert(delay1);
-	delay1->getConnections()->insert(dispose1);
+	create1->getConnectionManager()->insert(delay1);
+	delay1->getConnectionManager()->insert(dispose1);
 	model->getSimulation()->setReplicationLength(30, Util::TimeUnit::second);
 	model->getSimulation()->setNumberOfReplications(100);
 	model->getSimulation()->start();

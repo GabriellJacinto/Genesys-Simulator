@@ -35,11 +35,11 @@ Smart_WaitScanCondition::Smart_WaitScanCondition() {
  */
 int Smart_WaitScanCondition::main(int argc, char** argv) {
 	Simulator* genesys = new Simulator();
-	genesys->getTracer()->setTraceLevel(TraitsApp<GenesysApplication_if>::traceLevel);
-	setDefaultTraceHandlers(genesys->getTracer());
-	PluginManager* plugins = genesys->getPlugins();
+	genesys->getTraceManager()->setTraceLevel(TraitsApp<GenesysApplication_if>::traceLevel);
+	setDefaultTraceHandlers(genesys->getTraceManager());
+	PluginManager* plugins = genesys->getPluginManager();
 	plugins->autoInsertPlugins("autoloadplugins.txt");
-	Model* model = genesys->getModels()->newModel();
+	Model* model = genesys->getModelManager()->newModel();
 	// create model
 	Create* create1 = plugins->newInstance<Create>(model);
 	create1->setTimeBetweenCreationsExpression("1");
@@ -53,10 +53,10 @@ int Smart_WaitScanCondition::main(int argc, char** argv) {
 	assign1->getAssignments()->insert(new Assignment(model, "var1", "var1+1", false));
 	Dispose* dispose1 = plugins->newInstance<Dispose>(model);
 	//
-	create1->getConnections()->insert(wait1);
-	wait1->getConnections()->insert(dispose1);
-	create2->getConnections()->insert(assign1);
-	assign1->getConnections()->insert(dispose1);
+	create1->getConnectionManager()->insert(wait1);
+	wait1->getConnectionManager()->insert(dispose1);
+	create2->getConnectionManager()->insert(assign1);
+	assign1->getConnectionManager()->insert(dispose1);
 	//
 	ModelSimulation* simulation = model->getSimulation();
 	simulation->setReplicationLength(20);

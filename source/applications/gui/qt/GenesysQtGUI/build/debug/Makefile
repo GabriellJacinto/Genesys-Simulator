@@ -110,17 +110,11 @@ SOURCES       = /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE
 		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/components/Assign.cpp \
 		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/components/Batch.cpp \
 		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/components/Buffer.cpp \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/components/CellularAutomata/Cell.cpp \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/components/CellularAutomata/CellularAutomataBase.cpp \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/components/CellularAutomata/Lattice.cpp \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/components/CellularAutomata/StateSet.cpp \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/components/CellularAutomata/StateSet_Enumerable.cpp \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/components/CellularAutomataComp.cpp \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/components/CellularAutomata.cpp \
 		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/components/Clone.cpp \
 		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/components/CppForG.cpp \
 		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/components/Create.cpp \
 		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/components/Decide.cpp \
+		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/components/DefaultModalModel.cpp \
 		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/components/Delay.cpp \
 		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/components/DiffEquations.cpp \
 		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/components/Dispose.cpp \
@@ -128,10 +122,6 @@ SOURCES       = /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE
 		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/components/DummyComponent.cpp \
 		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/components/Enter.cpp \
 		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/components/Exit.cpp \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/components/FSM_ModalModel.cpp \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/components/FSM_State.cpp \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/components/FSM_Transition.cpp \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/components/FiniteStateMachine.cpp \
 		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/components/PickableStationItem.cpp \
 		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/components/SPICECircuit.cpp \
 		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/components/SPICENode.cpp \
@@ -160,10 +150,10 @@ SOURCES       = /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE
 		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/components/Submodel.cpp \
 		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/components/Unstore.cpp \
 		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/components/Write.cpp \
+		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/components/network/DefaultNode.cpp \
 		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/data/AssignmentItem.cpp \
 		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/data/CppCompiler.cpp \
 		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/data/DummyElement.cpp \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/data/EFSM.cpp \
 		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/data/EntityGroup.cpp \
 		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/data/Failure.cpp \
 		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/data/File.cpp \
@@ -236,17 +226,11 @@ SOURCES       = /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE
 		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/terminal/examples/smarts/Smart_AssignWriteSeizes.cpp \
 		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/terminal/examples/smarts/Smart_BatchSeparate.cpp \
 		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/terminal/examples/smarts/Smart_Buffer.cpp \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/terminal/examples/smarts/Smart_CellularAutomata.cpp \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/terminal/examples/smarts/Smart_CellularAutomata1.cpp \
 		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/terminal/examples/smarts/Smart_Clone.cpp \
 		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/terminal/examples/smarts/Smart_CppForG.cpp \
 		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/terminal/examples/smarts/Smart_Delay.cpp \
 		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/terminal/examples/smarts/Smart_Dummy.cpp \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/terminal/examples/smarts/Smart_EFSM1.cpp \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/terminal/examples/smarts/Smart_EFSM2.cpp \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/terminal/examples/smarts/Smart_ExtendedFSM.cpp \
 		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/terminal/examples/smarts/Smart_Failures.cpp \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/terminal/examples/smarts/Smart_FiniteStateMachine.cpp \
 		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/terminal/examples/smarts/Smart_HoldSearchRemove.cpp \
 		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/terminal/examples/smarts/Smart_LSODE.cpp \
 		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/terminal/examples/smarts/Smart_MarkovChain.cpp \
@@ -267,6 +251,7 @@ SOURCES       = /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE
 		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/terminal/examples/smarts/Smart_SimulationControlResponse.cpp \
 		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/terminal/examples/smarts/Smart_WaitScanCondition.cpp \
 		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/terminal/examples/smarts/Smart_WaitSignal.cpp \
+		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/terminal/examples/smarts/Smaty_DefaultModalModel.cpp \
 		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/terminal/examples/teaching/AnElectronicAssemblyAndTestSystem.cpp \
 		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/terminal/examples/teaching/ContinuousModel.cpp \
 		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/terminal/examples/teaching/FullSimulationOfComplexModel.cpp \
@@ -275,14 +260,17 @@ SOURCES       = /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE
 		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/terminal/examples/teaching/OperatingSystem02.cpp \
 		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/terminal/examples/teaching/OperatingSystem03.cpp \
 		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/terminal/examples/teaching/Rectifier.cpp \
-		../../CodeEditor.cpp \
-		../../DataComponentProperty.cpp \
-		../../ModelGraphicsScene.cpp \
-		../../ModelGraphicsView.cpp \
-		../../ObjectPropertyBrowser.cpp \
-		../../PropertyEditor.cpp \
-		../../DataComponentEditor.cpp \
-		../../ComboBoxEnum.cpp \
+		../../codeeditor/CodeEditor.cpp \
+		../../mainwindow_controller_on.cpp \
+		../../mainwindow_scene.cpp \
+		../../mainwindow_simulator.cpp \
+		../../propertyeditor/DataComponentProperty.cpp \
+		../../graphicals/ModelGraphicsScene.cpp \
+		../../graphicals/ModelGraphicsView.cpp \
+		../../propertyeditor/ObjectPropertyBrowser.cpp \
+		../../propertyeditor/PropertyEditor.cpp \
+		../../propertyeditor/DataComponentEditor.cpp \
+		../../propertyeditor/ComboBoxEnum.cpp \
 		../../actions/AddUndoCommand.cpp \
 		../../actions/DeleteUndoCommand.cpp \
 		../../actions/GroupUndoCommand.cpp \
@@ -313,14 +301,14 @@ SOURCES       = /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE
 		../../graphicals/GraphicalModelDataDefinition.cpp \
 		../../main.cpp \
 		../../mainwindow.cpp \
-		../../qtpropertybrowser/qtbuttonpropertybrowser.cpp \
-		../../qtpropertybrowser/qteditorfactory.cpp \
-		../../qtpropertybrowser/qtgroupboxpropertybrowser.cpp \
-		../../qtpropertybrowser/qtpropertybrowser.cpp \
-		../../qtpropertybrowser/qtpropertybrowserutils.cpp \
-		../../qtpropertybrowser/qtpropertymanager.cpp \
-		../../qtpropertybrowser/qttreepropertybrowser.cpp \
-		../../qtpropertybrowser/qtvariantproperty.cpp qrc_GenesysQtGUI_resources.cpp \
+		../../propertyeditor/qtpropertybrowser/qtbuttonpropertybrowser.cpp \
+		../../propertyeditor/qtpropertybrowser/qteditorfactory.cpp \
+		../../propertyeditor/qtpropertybrowser/qtgroupboxpropertybrowser.cpp \
+		../../propertyeditor/qtpropertybrowser/qtpropertybrowser.cpp \
+		../../propertyeditor/qtpropertybrowser/qtpropertybrowserutils.cpp \
+		../../propertyeditor/qtpropertybrowser/qtpropertymanager.cpp \
+		../../propertyeditor/qtpropertybrowser/qttreepropertybrowser.cpp \
+		../../propertyeditor/qtpropertybrowser/qtvariantproperty.cpp qrc_GenesysQtGUI_resources.cpp \
 		qrc_qtpropertybrowser.cpp \
 		qrc_qmake_qmake_qm_files.cpp \
 		moc_CodeEditor.cpp \
@@ -394,17 +382,11 @@ OBJECTS       = Attribute.o \
 		Assign.o \
 		Batch.o \
 		Buffer.o \
-		Cell.o \
-		CellularAutomataBase.o \
-		Lattice.o \
-		StateSet.o \
-		StateSet_Enumerable.o \
-		CellularAutomataComp.o \
-		CellularAutomata.o \
 		Clone.o \
 		CppForG.o \
 		Create.o \
 		Decide.o \
+		DefaultModalModel.o \
 		Delay.o \
 		DiffEquations.o \
 		Dispose.o \
@@ -412,10 +394,6 @@ OBJECTS       = Attribute.o \
 		DummyComponent.o \
 		Enter.o \
 		Exit.o \
-		FSM_ModalModel.o \
-		FSM_State.o \
-		FSM_Transition.o \
-		FiniteStateMachine.o \
 		PickableStationItem.o \
 		SPICECircuit.o \
 		SPICENode.o \
@@ -444,10 +422,10 @@ OBJECTS       = Attribute.o \
 		Submodel.o \
 		Unstore.o \
 		Write.o \
+		DefaultNode.o \
 		AssignmentItem.o \
 		CppCompiler.o \
 		DummyElement.o \
-		EFSM.o \
 		EntityGroup.o \
 		Failure.o \
 		File.o \
@@ -520,17 +498,11 @@ OBJECTS       = Attribute.o \
 		Smart_AssignWriteSeizes.o \
 		Smart_BatchSeparate.o \
 		Smart_Buffer.o \
-		Smart_CellularAutomata.o \
-		Smart_CellularAutomata1.o \
 		Smart_Clone.o \
 		Smart_CppForG.o \
 		Smart_Delay.o \
 		Smart_Dummy.o \
-		Smart_EFSM1.o \
-		Smart_EFSM2.o \
-		Smart_ExtendedFSM.o \
 		Smart_Failures.o \
-		Smart_FiniteStateMachine.o \
 		Smart_HoldSearchRemove.o \
 		Smart_LSODE.o \
 		Smart_MarkovChain.o \
@@ -551,6 +523,7 @@ OBJECTS       = Attribute.o \
 		Smart_SimulationControlResponse.o \
 		Smart_WaitScanCondition.o \
 		Smart_WaitSignal.o \
+		Smaty_DefaultModalModel.o \
 		AnElectronicAssemblyAndTestSystem.o \
 		ContinuousModel.o \
 		FullSimulationOfComplexModel.o \
@@ -560,6 +533,9 @@ OBJECTS       = Attribute.o \
 		OperatingSystem03.o \
 		Rectifier.o \
 		CodeEditor.o \
+		mainwindow_controller_on.o \
+		mainwindow_scene.o \
+		mainwindow_simulator.o \
 		DataComponentProperty.o \
 		ModelGraphicsScene.o \
 		ModelGraphicsView.o \
@@ -632,25 +608,25 @@ DIST          = /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE
 		../../Set \
 		../../Time \
 		../../Modificado.doe \
-		../../qtpropertybrowser/CMakeLists.txt \
-		../../qtpropertybrowser/images/cursor-arrow.png \
-		../../qtpropertybrowser/images/cursor-busy.png \
-		../../qtpropertybrowser/images/cursor-closedhand.png \
-		../../qtpropertybrowser/images/cursor-cross.png \
-		../../qtpropertybrowser/images/cursor-forbidden.png \
-		../../qtpropertybrowser/images/cursor-hand.png \
-		../../qtpropertybrowser/images/cursor-hsplit.png \
-		../../qtpropertybrowser/images/cursor-ibeam.png \
-		../../qtpropertybrowser/images/cursor-openhand.png \
-		../../qtpropertybrowser/images/cursor-sizeall.png \
-		../../qtpropertybrowser/images/cursor-sizeb.png \
-		../../qtpropertybrowser/images/cursor-sizef.png \
-		../../qtpropertybrowser/images/cursor-sizeh.png \
-		../../qtpropertybrowser/images/cursor-sizev.png \
-		../../qtpropertybrowser/images/cursor-uparrow.png \
-		../../qtpropertybrowser/images/cursor-vsplit.png \
-		../../qtpropertybrowser/images/cursor-wait.png \
-		../../qtpropertybrowser/images/cursor-whatsthis.png \
+		../../propertyeditor/qtpropertybrowser/CMakeLists.txt \
+		../../propertyeditor/qtpropertybrowser/images/cursor-arrow.png \
+		../../propertyeditor/qtpropertybrowser/images/cursor-busy.png \
+		../../propertyeditor/qtpropertybrowser/images/cursor-closedhand.png \
+		../../propertyeditor/qtpropertybrowser/images/cursor-cross.png \
+		../../propertyeditor/qtpropertybrowser/images/cursor-forbidden.png \
+		../../propertyeditor/qtpropertybrowser/images/cursor-hand.png \
+		../../propertyeditor/qtpropertybrowser/images/cursor-hsplit.png \
+		../../propertyeditor/qtpropertybrowser/images/cursor-ibeam.png \
+		../../propertyeditor/qtpropertybrowser/images/cursor-openhand.png \
+		../../propertyeditor/qtpropertybrowser/images/cursor-sizeall.png \
+		../../propertyeditor/qtpropertybrowser/images/cursor-sizeb.png \
+		../../propertyeditor/qtpropertybrowser/images/cursor-sizef.png \
+		../../propertyeditor/qtpropertybrowser/images/cursor-sizeh.png \
+		../../propertyeditor/qtpropertybrowser/images/cursor-sizev.png \
+		../../propertyeditor/qtpropertybrowser/images/cursor-uparrow.png \
+		../../propertyeditor/qtpropertybrowser/images/cursor-vsplit.png \
+		../../propertyeditor/qtpropertybrowser/images/cursor-wait.png \
+		../../propertyeditor/qtpropertybrowser/images/cursor-whatsthis.png \
 		/usr/lib/x86_64-linux-gnu/qt6/mkspecs/features/spec_pre.prf \
 		/usr/lib/x86_64-linux-gnu/qt6/mkspecs/common/unix.conf \
 		/usr/lib/x86_64-linux-gnu/qt6/mkspecs/common/linux.conf \
@@ -803,34 +779,11 @@ DIST          = /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE
 		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/components/Assign.h \
 		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/components/Batch.h \
 		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/components/Buffer.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/components/CellularAutomata/BoundaryCondition.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/components/CellularAutomata/Boundary_Closed.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/components/CellularAutomata/Boundary_Fixed.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/components/CellularAutomata/Cell.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/components/CellularAutomata/CellularAutomataBase.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/components/CellularAutomata/CellularAutomata_1DTimed.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/components/CellularAutomata/CellularAutomata_Classic.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/components/CellularAutomata/Lattice.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/components/CellularAutomata/LocalRule.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/components/CellularAutomata/LocalRule_Elementary.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/components/CellularAutomata/LocalRule_FlorestalFire.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/components/CellularAutomata/LocalRule_GameOfLife.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/components/CellularAutomata/LocalRule_Growty.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/components/CellularAutomata/LocalRule_ShowNeighbordhood.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/components/CellularAutomata/Neighborhood.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/components/CellularAutomata/Neighborhood_Center.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/components/CellularAutomata/Neighborhood_Moore.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/components/CellularAutomata/Neighborhood_VonNeumann.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/components/CellularAutomata/State.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/components/CellularAutomata/StateSet.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/components/CellularAutomata/StateSet_Enumerable.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/components/CellularAutomata/State_Numerical.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/components/CellularAutomataComp.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/components/CellularAutomata.h \
 		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/components/Clone.h \
 		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/components/CppForG.h \
 		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/components/Create.h \
 		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/components/Decide.h \
+		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/components/DefaultModalModel.h \
 		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/components/Delay.h \
 		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/components/DiffEquations.h \
 		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/components/Dispose.h \
@@ -838,10 +791,6 @@ DIST          = /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE
 		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/components/DummyComponent.h \
 		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/components/Enter.h \
 		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/components/Exit.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/components/FSM_ModalModel.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/components/FSM_State.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/components/FSM_Transition.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/components/FiniteStateMachine.h \
 		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/components/PickableStationItem.h \
 		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/components/SPICECircuit.h \
 		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/components/SPICENode.h \
@@ -870,10 +819,10 @@ DIST          = /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE
 		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/components/Submodel.h \
 		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/components/Unstore.h \
 		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/components/Write.h \
+		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/components/network/DefaultNode.h \
 		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/data/AssignmentItem.h \
 		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/data/CppCompiler.h \
 		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/data/DummyElement.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/data/EFSM.h \
 		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/data/EntityGroup.h \
 		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/data/Failure.h \
 		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/data/File.h \
@@ -955,17 +904,12 @@ DIST          = /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE
 		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/terminal/examples/smarts/Smart_AssignWriteSeizes.h \
 		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/terminal/examples/smarts/Smart_BatchSeparate.h \
 		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/terminal/examples/smarts/Smart_Buffer.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/terminal/examples/smarts/Smart_CellularAutomata.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/terminal/examples/smarts/Smart_CellularAutomata1.h \
 		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/terminal/examples/smarts/Smart_Clone.h \
 		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/terminal/examples/smarts/Smart_CppForG.h \
+		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/terminal/examples/smarts/Smart_DefaultModalModel.h \
 		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/terminal/examples/smarts/Smart_Delay.h \
 		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/terminal/examples/smarts/Smart_Dummy.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/terminal/examples/smarts/Smart_EFSM1.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/terminal/examples/smarts/Smart_EFSM2.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/terminal/examples/smarts/Smart_ExtendedFSM.h \
 		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/terminal/examples/smarts/Smart_Failures.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/terminal/examples/smarts/Smart_FiniteStateMachine.h \
 		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/terminal/examples/smarts/Smart_HoldSearchRemove.h \
 		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/terminal/examples/smarts/Smart_LSODE.h \
 		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/terminal/examples/smarts/Smart_MarkovChain.h \
@@ -995,15 +939,15 @@ DIST          = /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE
 		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/terminal/examples/teaching/OperatingSystem02.h \
 		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/terminal/examples/teaching/OperatingSystem03.h \
 		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/terminal/examples/teaching/Rectifier.h \
-		../../CodeEditor.h \
-		../../LineNumberArea.h \
-		../../ModelGraphicsScene.h \
-		../../ModelGraphicsView.h \
-		../../ObjectPropertyBrowser.h \
-		../../PropertyEditor.h \
-		../../DataComponentProperty.h \
-		../../DataComponentEditor.h \
-		../../ComboBoxEnum.h \
+		../../codeeditor/CodeEditor.h \
+		../../codeeditor/LineNumberArea.h \
+		../../graphicals/ModelGraphicsScene.h \
+		../../graphicals/ModelGraphicsView.h \
+		../../propertyeditor/ObjectPropertyBrowser.h \
+		../../propertyeditor/PropertyEditor.h \
+		../../propertyeditor/DataComponentProperty.h \
+		../../propertyeditor/DataComponentEditor.h \
+		../../propertyeditor/ComboBoxEnum.h \
 		../../TraitsGUI.h \
 		../../UtilGUI.h \
 		../../actions/AddUndoCommand.h \
@@ -1035,63 +979,63 @@ DIST          = /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE
 		../../graphicals/GraphicalModelComponent.h \
 		../../graphicals/GraphicalModelDataDefinition.h \
 		../../mainwindow.h \
-		../../qtpropertybrowser/QtAbstractEditorFactoryBase \
-		../../qtpropertybrowser/QtAbstractPropertyBrowser \
-		../../qtpropertybrowser/QtAbstractPropertyManager \
-		../../qtpropertybrowser/QtBoolPropertyManager \
-		../../qtpropertybrowser/QtBrowserItem \
-		../../qtpropertybrowser/QtButtonPropertyBrowser \
-		../../qtpropertybrowser/QtCharEditorFactory \
-		../../qtpropertybrowser/QtCharPropertyManager \
-		../../qtpropertybrowser/QtCheckBoxFactory \
-		../../qtpropertybrowser/QtColorEditorFactory \
-		../../qtpropertybrowser/QtColorPropertyManager \
-		../../qtpropertybrowser/QtCursorEditorFactory \
-		../../qtpropertybrowser/QtCursorPropertyManager \
-		../../qtpropertybrowser/QtDateEditFactory \
-		../../qtpropertybrowser/QtDatePropertyManager \
-		../../qtpropertybrowser/QtDateTimeEditFactory \
-		../../qtpropertybrowser/QtDateTimePropertyManager \
-		../../qtpropertybrowser/QtDoublePropertyManager \
-		../../qtpropertybrowser/QtDoubleSpinBoxFactory \
-		../../qtpropertybrowser/QtEnumEditorFactory \
-		../../qtpropertybrowser/QtEnumPropertyManager \
-		../../qtpropertybrowser/QtFlagPropertyManager \
-		../../qtpropertybrowser/QtFontEditorFactory \
-		../../qtpropertybrowser/QtFontPropertyManager \
-		../../qtpropertybrowser/QtGroupBoxPropertyBrowser \
-		../../qtpropertybrowser/QtGroupPropertyManager \
-		../../qtpropertybrowser/QtIntPropertyManager \
-		../../qtpropertybrowser/QtKeySequenceEditorFactory \
-		../../qtpropertybrowser/QtKeySequencePropertyManager \
-		../../qtpropertybrowser/QtLineEditFactory \
-		../../qtpropertybrowser/QtLocalePropertyManager \
-		../../qtpropertybrowser/QtPointFPropertyManager \
-		../../qtpropertybrowser/QtPointPropertyManager \
-		../../qtpropertybrowser/QtProperty \
-		../../qtpropertybrowser/QtRectFPropertyManager \
-		../../qtpropertybrowser/QtRectPropertyManager \
-		../../qtpropertybrowser/QtScrollBarFactory \
-		../../qtpropertybrowser/QtSizeFPropertyManager \
-		../../qtpropertybrowser/QtSizePolicyPropertyManager \
-		../../qtpropertybrowser/QtSizePropertyManager \
-		../../qtpropertybrowser/QtSliderFactory \
-		../../qtpropertybrowser/QtSpinBoxFactory \
-		../../qtpropertybrowser/QtStringPropertyManager \
-		../../qtpropertybrowser/QtTimeEditFactory \
-		../../qtpropertybrowser/QtTimePropertyManager \
-		../../qtpropertybrowser/QtTreePropertyBrowser \
-		../../qtpropertybrowser/QtVariantEditorFactory \
-		../../qtpropertybrowser/QtVariantProperty \
-		../../qtpropertybrowser/QtVariantPropertyManager \
-		../../qtpropertybrowser/qtbuttonpropertybrowser.h \
-		../../qtpropertybrowser/qteditorfactory.h \
-		../../qtpropertybrowser/qtgroupboxpropertybrowser.h \
-		../../qtpropertybrowser/qtpropertybrowser.h \
-		../../qtpropertybrowser/qtpropertybrowserutils_p.h \
-		../../qtpropertybrowser/qtpropertymanager.h \
-		../../qtpropertybrowser/qttreepropertybrowser.h \
-		../../qtpropertybrowser/qtvariantproperty.h /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/Attribute.cpp \
+		../../propertyeditor/qtpropertybrowser/QtAbstractEditorFactoryBase \
+		../../propertyeditor/qtpropertybrowser/QtAbstractPropertyBrowser \
+		../../propertyeditor/qtpropertybrowser/QtAbstractPropertyManager \
+		../../propertyeditor/qtpropertybrowser/QtBoolPropertyManager \
+		../../propertyeditor/qtpropertybrowser/QtBrowserItem \
+		../../propertyeditor/qtpropertybrowser/QtButtonPropertyBrowser \
+		../../propertyeditor/qtpropertybrowser/QtCharEditorFactory \
+		../../propertyeditor/qtpropertybrowser/QtCharPropertyManager \
+		../../propertyeditor/qtpropertybrowser/QtCheckBoxFactory \
+		../../propertyeditor/qtpropertybrowser/QtColorEditorFactory \
+		../../propertyeditor/qtpropertybrowser/QtColorPropertyManager \
+		../../propertyeditor/qtpropertybrowser/QtCursorEditorFactory \
+		../../propertyeditor/qtpropertybrowser/QtCursorPropertyManager \
+		../../propertyeditor/qtpropertybrowser/QtDateEditFactory \
+		../../propertyeditor/qtpropertybrowser/QtDatePropertyManager \
+		../../propertyeditor/qtpropertybrowser/QtDateTimeEditFactory \
+		../../propertyeditor/qtpropertybrowser/QtDateTimePropertyManager \
+		../../propertyeditor/qtpropertybrowser/QtDoublePropertyManager \
+		../../propertyeditor/qtpropertybrowser/QtDoubleSpinBoxFactory \
+		../../propertyeditor/qtpropertybrowser/QtEnumEditorFactory \
+		../../propertyeditor/qtpropertybrowser/QtEnumPropertyManager \
+		../../propertyeditor/qtpropertybrowser/QtFlagPropertyManager \
+		../../propertyeditor/qtpropertybrowser/QtFontEditorFactory \
+		../../propertyeditor/qtpropertybrowser/QtFontPropertyManager \
+		../../propertyeditor/qtpropertybrowser/QtGroupBoxPropertyBrowser \
+		../../propertyeditor/qtpropertybrowser/QtGroupPropertyManager \
+		../../propertyeditor/qtpropertybrowser/QtIntPropertyManager \
+		../../propertyeditor/qtpropertybrowser/QtKeySequenceEditorFactory \
+		../../propertyeditor/qtpropertybrowser/QtKeySequencePropertyManager \
+		../../propertyeditor/qtpropertybrowser/QtLineEditFactory \
+		../../propertyeditor/qtpropertybrowser/QtLocalePropertyManager \
+		../../propertyeditor/qtpropertybrowser/QtPointFPropertyManager \
+		../../propertyeditor/qtpropertybrowser/QtPointPropertyManager \
+		../../propertyeditor/qtpropertybrowser/QtProperty \
+		../../propertyeditor/qtpropertybrowser/QtRectFPropertyManager \
+		../../propertyeditor/qtpropertybrowser/QtRectPropertyManager \
+		../../propertyeditor/qtpropertybrowser/QtScrollBarFactory \
+		../../propertyeditor/qtpropertybrowser/QtSizeFPropertyManager \
+		../../propertyeditor/qtpropertybrowser/QtSizePolicyPropertyManager \
+		../../propertyeditor/qtpropertybrowser/QtSizePropertyManager \
+		../../propertyeditor/qtpropertybrowser/QtSliderFactory \
+		../../propertyeditor/qtpropertybrowser/QtSpinBoxFactory \
+		../../propertyeditor/qtpropertybrowser/QtStringPropertyManager \
+		../../propertyeditor/qtpropertybrowser/QtTimeEditFactory \
+		../../propertyeditor/qtpropertybrowser/QtTimePropertyManager \
+		../../propertyeditor/qtpropertybrowser/QtTreePropertyBrowser \
+		../../propertyeditor/qtpropertybrowser/QtVariantEditorFactory \
+		../../propertyeditor/qtpropertybrowser/QtVariantProperty \
+		../../propertyeditor/qtpropertybrowser/QtVariantPropertyManager \
+		../../propertyeditor/qtpropertybrowser/qtbuttonpropertybrowser.h \
+		../../propertyeditor/qtpropertybrowser/qteditorfactory.h \
+		../../propertyeditor/qtpropertybrowser/qtgroupboxpropertybrowser.h \
+		../../propertyeditor/qtpropertybrowser/qtpropertybrowser.h \
+		../../propertyeditor/qtpropertybrowser/qtpropertybrowserutils_p.h \
+		../../propertyeditor/qtpropertybrowser/qtpropertymanager.h \
+		../../propertyeditor/qtpropertybrowser/qttreepropertybrowser.h \
+		../../propertyeditor/qtpropertybrowser/qtvariantproperty.h /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/Attribute.cpp \
 		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/ComponentManager.cpp \
 		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/ConnectionManager.cpp \
 		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/Counter.cpp \
@@ -1149,17 +1093,11 @@ DIST          = /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE
 		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/components/Assign.cpp \
 		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/components/Batch.cpp \
 		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/components/Buffer.cpp \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/components/CellularAutomata/Cell.cpp \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/components/CellularAutomata/CellularAutomataBase.cpp \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/components/CellularAutomata/Lattice.cpp \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/components/CellularAutomata/StateSet.cpp \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/components/CellularAutomata/StateSet_Enumerable.cpp \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/components/CellularAutomataComp.cpp \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/components/CellularAutomata.cpp \
 		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/components/Clone.cpp \
 		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/components/CppForG.cpp \
 		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/components/Create.cpp \
 		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/components/Decide.cpp \
+		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/components/DefaultModalModel.cpp \
 		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/components/Delay.cpp \
 		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/components/DiffEquations.cpp \
 		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/components/Dispose.cpp \
@@ -1167,10 +1105,6 @@ DIST          = /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE
 		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/components/DummyComponent.cpp \
 		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/components/Enter.cpp \
 		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/components/Exit.cpp \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/components/FSM_ModalModel.cpp \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/components/FSM_State.cpp \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/components/FSM_Transition.cpp \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/components/FiniteStateMachine.cpp \
 		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/components/PickableStationItem.cpp \
 		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/components/SPICECircuit.cpp \
 		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/components/SPICENode.cpp \
@@ -1199,10 +1133,10 @@ DIST          = /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE
 		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/components/Submodel.cpp \
 		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/components/Unstore.cpp \
 		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/components/Write.cpp \
+		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/components/network/DefaultNode.cpp \
 		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/data/AssignmentItem.cpp \
 		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/data/CppCompiler.cpp \
 		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/data/DummyElement.cpp \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/data/EFSM.cpp \
 		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/data/EntityGroup.cpp \
 		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/data/Failure.cpp \
 		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/data/File.cpp \
@@ -1275,17 +1209,11 @@ DIST          = /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE
 		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/terminal/examples/smarts/Smart_AssignWriteSeizes.cpp \
 		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/terminal/examples/smarts/Smart_BatchSeparate.cpp \
 		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/terminal/examples/smarts/Smart_Buffer.cpp \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/terminal/examples/smarts/Smart_CellularAutomata.cpp \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/terminal/examples/smarts/Smart_CellularAutomata1.cpp \
 		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/terminal/examples/smarts/Smart_Clone.cpp \
 		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/terminal/examples/smarts/Smart_CppForG.cpp \
 		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/terminal/examples/smarts/Smart_Delay.cpp \
 		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/terminal/examples/smarts/Smart_Dummy.cpp \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/terminal/examples/smarts/Smart_EFSM1.cpp \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/terminal/examples/smarts/Smart_EFSM2.cpp \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/terminal/examples/smarts/Smart_ExtendedFSM.cpp \
 		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/terminal/examples/smarts/Smart_Failures.cpp \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/terminal/examples/smarts/Smart_FiniteStateMachine.cpp \
 		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/terminal/examples/smarts/Smart_HoldSearchRemove.cpp \
 		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/terminal/examples/smarts/Smart_LSODE.cpp \
 		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/terminal/examples/smarts/Smart_MarkovChain.cpp \
@@ -1306,6 +1234,7 @@ DIST          = /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE
 		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/terminal/examples/smarts/Smart_SimulationControlResponse.cpp \
 		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/terminal/examples/smarts/Smart_WaitScanCondition.cpp \
 		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/terminal/examples/smarts/Smart_WaitSignal.cpp \
+		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/terminal/examples/smarts/Smaty_DefaultModalModel.cpp \
 		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/terminal/examples/teaching/AnElectronicAssemblyAndTestSystem.cpp \
 		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/terminal/examples/teaching/ContinuousModel.cpp \
 		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/terminal/examples/teaching/FullSimulationOfComplexModel.cpp \
@@ -1314,14 +1243,17 @@ DIST          = /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE
 		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/terminal/examples/teaching/OperatingSystem02.cpp \
 		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/terminal/examples/teaching/OperatingSystem03.cpp \
 		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/terminal/examples/teaching/Rectifier.cpp \
-		../../CodeEditor.cpp \
-		../../DataComponentProperty.cpp \
-		../../ModelGraphicsScene.cpp \
-		../../ModelGraphicsView.cpp \
-		../../ObjectPropertyBrowser.cpp \
-		../../PropertyEditor.cpp \
-		../../DataComponentEditor.cpp \
-		../../ComboBoxEnum.cpp \
+		../../codeeditor/CodeEditor.cpp \
+		../../mainwindow_controller_on.cpp \
+		../../mainwindow_scene.cpp \
+		../../mainwindow_simulator.cpp \
+		../../propertyeditor/DataComponentProperty.cpp \
+		../../graphicals/ModelGraphicsScene.cpp \
+		../../graphicals/ModelGraphicsView.cpp \
+		../../propertyeditor/ObjectPropertyBrowser.cpp \
+		../../propertyeditor/PropertyEditor.cpp \
+		../../propertyeditor/DataComponentEditor.cpp \
+		../../propertyeditor/ComboBoxEnum.cpp \
 		../../actions/AddUndoCommand.cpp \
 		../../actions/DeleteUndoCommand.cpp \
 		../../actions/GroupUndoCommand.cpp \
@@ -1352,14 +1284,14 @@ DIST          = /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE
 		../../graphicals/GraphicalModelDataDefinition.cpp \
 		../../main.cpp \
 		../../mainwindow.cpp \
-		../../qtpropertybrowser/qtbuttonpropertybrowser.cpp \
-		../../qtpropertybrowser/qteditorfactory.cpp \
-		../../qtpropertybrowser/qtgroupboxpropertybrowser.cpp \
-		../../qtpropertybrowser/qtpropertybrowser.cpp \
-		../../qtpropertybrowser/qtpropertybrowserutils.cpp \
-		../../qtpropertybrowser/qtpropertymanager.cpp \
-		../../qtpropertybrowser/qttreepropertybrowser.cpp \
-		../../qtpropertybrowser/qtvariantproperty.cpp
+		../../propertyeditor/qtpropertybrowser/qtbuttonpropertybrowser.cpp \
+		../../propertyeditor/qtpropertybrowser/qteditorfactory.cpp \
+		../../propertyeditor/qtpropertybrowser/qtgroupboxpropertybrowser.cpp \
+		../../propertyeditor/qtpropertybrowser/qtpropertybrowser.cpp \
+		../../propertyeditor/qtpropertybrowser/qtpropertybrowserutils.cpp \
+		../../propertyeditor/qtpropertybrowser/qtpropertymanager.cpp \
+		../../propertyeditor/qtpropertybrowser/qttreepropertybrowser.cpp \
+		../../propertyeditor/qtpropertybrowser/qtvariantproperty.cpp
 QMAKE_TARGET  = GenesysQtGUI
 DESTDIR       = 
 TARGET        = GenesysQtGUI
@@ -1445,7 +1377,7 @@ Makefile: ../../GenesysQtGUI.pro /usr/lib/x86_64-linux-gnu/qt6/mkspecs/linux-cla
 		/usr/lib/x86_64-linux-gnu/qt6/mkspecs/features/lex.prf \
 		../../GenesysQtGUI.pro \
 		../../GenesysQtGUI_resources.qrc \
-		../../qtpropertybrowser/qtpropertybrowser.qrc \
+		../../propertyeditor/qtpropertybrowser/qtpropertybrowser.qrc \
 		qmake_qmake_qm_files.qrc \
 		/usr/lib/x86_64-linux-gnu/libQt6PrintSupport.prl \
 		/usr/lib/x86_64-linux-gnu/libQt6Designer.prl \
@@ -1530,7 +1462,7 @@ Makefile: ../../GenesysQtGUI.pro /usr/lib/x86_64-linux-gnu/qt6/mkspecs/linux-cla
 /usr/lib/x86_64-linux-gnu/qt6/mkspecs/features/lex.prf:
 ../../GenesysQtGUI.pro:
 ../../GenesysQtGUI_resources.qrc:
-../../qtpropertybrowser/qtpropertybrowser.qrc:
+../../propertyeditor/qtpropertybrowser/qtpropertybrowser.qrc:
 qmake_qmake_qm_files.qrc:
 /usr/lib/x86_64-linux-gnu/libQt6PrintSupport.prl:
 /usr/lib/x86_64-linux-gnu/libQt6Designer.prl:
@@ -1555,10 +1487,10 @@ distdir: FORCE
 	@test -d $(DISTDIR) || mkdir -p $(DISTDIR)
 	$(COPY_FILE) --parents $(DIST) $(DISTDIR)/
 	$(COPY_FILE) --parents ../../GenesysQtGUI_en_US.ts $(DISTDIR)/
-	$(COPY_FILE) --parents ../../GenesysQtGUI_resources.qrc ../../qtpropertybrowser/qtpropertybrowser.qrc qmake_qmake_qm_files.qrc $(DISTDIR)/
+	$(COPY_FILE) --parents ../../GenesysQtGUI_resources.qrc ../../propertyeditor/qtpropertybrowser/qtpropertybrowser.qrc qmake_qmake_qm_files.qrc $(DISTDIR)/
 	$(COPY_FILE) --parents /usr/lib/x86_64-linux-gnu/qt6/mkspecs/features/data/dummy.cpp $(DISTDIR)/
-	$(COPY_FILE) --parents /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/TraitsKernel.h /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/Attribute.h /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/ComponentManager.h /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/ConnectionManager.h /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/Counter.h /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/CppSerializer.h /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/DefineGetterSetter.h /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/Entity.h /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/EntityType.h /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/Event.h /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/ExperimentManager.h /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/ExperimentManagerDefaultImpl1.h /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/ExperimetManager_if.h /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/GenSerializer.h /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/JsonSerializer.h /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/LicenceManager.h /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/Model.h /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/ModelCheckerDefaultImpl1.h /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/ModelChecker_if.h /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/ModelComponent.h /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/ModelDataDefinition.h /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/ModelDataManager.h /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/ModelInfo.h /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/ModelManager.h /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/ModelPersistenceDefaultImpl2.h /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/ModelSerializer.h /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/ModelSimulation.h /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/OnEventManager.h /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/ParserChangesInformation.h /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/ParserDefaultImpl1.h /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/ParserDefaultImpl2.h /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/ParserManager.h /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/Parser_if.h /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/Persistence.h /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/Plugin.h /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/PluginConnectorDummyImpl1.h /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/PluginConnector_if.h /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/PluginInformation.h /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/PluginManager.h /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/PropertyGenesys.h /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/ScenarioExperiment_if.h /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/SimulationControlAndResponse.h /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/SimulationExperiment.h /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/SimulationReporterDefaultImpl1.h /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/SimulationReporter_if.h /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/SimulationScenario.h /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/Simulator.h /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/SinkModelComponent.h /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/SourceModelComponent.h /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/StatisticsCollector.h /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/TraceManager.h /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/XmlSerializer.h /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/statistics/CollectorDatafileDefaultImpl1.h /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/statistics/CollectorDatafile_if.h /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/statistics/CollectorDefaultImpl1.h /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/statistics/Collector_if.h /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/statistics/SamplerBoostImpl.h /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/statistics/SamplerDefaultImpl1.h /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/statistics/Sampler_if.h /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/statistics/SorttFile.h /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/statistics/StatisticsDataFileDefaultImpl.h /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/statistics/StatisticsDataFile_if.h /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/statistics/StatisticsDefaultImpl1.h /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/statistics/Statistics_if.h /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/util/Exact.h /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/util/List.h /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/util/ListObservable.h /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/util/Util.h /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/parser/Genesys++-driver.h /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/parser/GenesysParser.h /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/parser/location.hh /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/parser/obj_t.h /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/parser/parserBisonFlex/bisonparser.yy /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/parser/parserBisonFlex/lexerparser.ll /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/parser/position.hh /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/parser/stack.hh /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/components/Access.h /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/components/Assign.h /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/components/Batch.h /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/components/Buffer.h /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/components/CellularAutomata/BoundaryCondition.h /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/components/CellularAutomata/Boundary_Closed.h /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/components/CellularAutomata/Boundary_Fixed.h /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/components/CellularAutomata/Cell.h /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/components/CellularAutomata/CellularAutomataBase.h /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/components/CellularAutomata/CellularAutomata_1DTimed.h /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/components/CellularAutomata/CellularAutomata_Classic.h /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/components/CellularAutomata/Lattice.h /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/components/CellularAutomata/LocalRule.h /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/components/CellularAutomata/LocalRule_Elementary.h /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/components/CellularAutomata/LocalRule_FlorestalFire.h /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/components/CellularAutomata/LocalRule_GameOfLife.h /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/components/CellularAutomata/LocalRule_Growty.h /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/components/CellularAutomata/LocalRule_ShowNeighbordhood.h /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/components/CellularAutomata/Neighborhood.h /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/components/CellularAutomata/Neighborhood_Center.h /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/components/CellularAutomata/Neighborhood_Moore.h /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/components/CellularAutomata/Neighborhood_VonNeumann.h /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/components/CellularAutomata/State.h /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/components/CellularAutomata/StateSet.h /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/components/CellularAutomata/StateSet_Enumerable.h /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/components/CellularAutomata/State_Numerical.h /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/components/CellularAutomataComp.h /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/components/CellularAutomata.h /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/components/Clone.h /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/components/CppForG.h /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/components/Create.h /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/components/Decide.h /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/components/Delay.h /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/components/DiffEquations.h /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/components/Dispose.h /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/components/DropOff.h /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/components/DummyComponent.h /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/components/Enter.h /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/components/Exit.h /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/components/FSM_ModalModel.h /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/components/FSM_State.h /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/components/FSM_Transition.h /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/components/FiniteStateMachine.h /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/components/PickableStationItem.h /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/components/SPICECircuit.h /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/components/SPICENode.h /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/components/Wait.h /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/components/LSODE.h /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/components/Leave.h /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/components/MarkovChain.h /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/components/Match.h /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/components/OLD_ODEelement.h /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/components/PickStation.h /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/components/PickUp.h /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/components/Process.h /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/components/QueueableItem.h /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/components/Record.h /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/components/Release.h /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/components/Remove.h /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/components/Route.h /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/components/Search.h /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/components/SeizableItem.h /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/components/Seize.h /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/components/Separate.h /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/components/Signal.h /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/components/Start.h /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/components/Stop.h /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/components/Store.h /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/components/Submodel.h /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/components/Unstore.h /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/components/Write.h /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/data/AssignmentItem.h /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/data/CppCompiler.h /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/data/DummyElement.h /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/data/EFSM.h /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/data/EntityGroup.h /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/data/Failure.h /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/data/File.h /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/data/Formula.h /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/data/Label.h /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/data/Queue.h /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/data/Resource.h /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/data/SPICERunner.h /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/data/Schedule.h /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/data/Sequence.h /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/data/Set.h /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/data/SignalData.h /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/data/Station.h /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/data/Storage.h /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/data/Variable.h /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/tools/DataAnalyser_if.h /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/tools/FitterDummyImpl.h /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/tools/Fitter_if.h /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/tools/HypothesisTesterDefaultImpl1.h /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/tools/HypothesisTester_if.h /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/tools/ProbabilityDistribution.h /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/tools/ProbabilityDistributionBase.h /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/tools/SolverDefaultImpl1.h /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/tools/Solver_if.h /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/tools/TraitsTools.h /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/BaseGenesysTerminalApplication.h /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/GenesysApplication_if.h /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/TraitsApp.h /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/terminal/GenesysShell/GenesysShell.h /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/terminal/GenesysShell/GenesysShell_if.h /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/terminal/TraitsTerminalApp.h /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/terminal/examples/arenaExamples/AirportSecurityExample.h /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/terminal/examples/arenaExamples/AirportSecurityExampleExtended.h /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/terminal/examples/arenaExamples/Airport_Extended1.h /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/terminal/examples/arenaExamples/Assembly_Line.h /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/terminal/examples/arenaExamples/Banking_Transactions.h /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/terminal/examples/arenaExamples/Example_BasicOrderShipping.h /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/terminal/examples/arenaExamples/Example_PortModel.h /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/terminal/examples/arenaExamples/Example_PublicTransport.h /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/terminal/examples/arenaSmarts/Smart_AddingResource.h /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/terminal/examples/arenaSmarts/Smart_AlternatingEntityCreation.h /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/terminal/examples/arenaSmarts/Smart_ArrivalsElementStopsEntitiesArrivingAfterASetTime.h /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/terminal/examples/arenaSmarts/Smart_ArrivalsEntityTypeVsAttribute.h /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/terminal/examples/arenaSmarts/Smart_AssignExample.h /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/terminal/examples/arenaSmarts/Smart_AutomaticStatisticsCollection.h /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/terminal/examples/arenaSmarts/Smart_BasicModeling.h /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/terminal/examples/arenaSmarts/Smart_BatchAndSeparate.h /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/terminal/examples/arenaSmarts/Smart_ContinuousFlowEntities.h /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/terminal/examples/arenaSmarts/Smart_Create.h /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/terminal/examples/arenaSmarts/Smart_DecideNWayByChance.h /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/terminal/examples/arenaSmarts/Smart_DefiningAttributesAsStrings.h /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/terminal/examples/arenaSmarts/Smart_DefiningControlLogic.h /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/terminal/examples/arenaSmarts/Smart_DefiningResourceCapacity.h /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/terminal/examples/arenaSmarts/Smart_DelayBasedOnReplication.h /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/terminal/examples/arenaSmarts/Smart_EntitiesProcessedByPriority.h /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/terminal/examples/arenaSmarts/Smart_EvaluatingConditionsBeforeEnteringQueue.h /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/terminal/examples/arenaSmarts/Smart_Expression.h /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/terminal/examples/arenaSmarts/Smart_InventoryAndHoldingCosts.h /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/terminal/examples/arenaSmarts/Smart_MaxArrivalsField.h /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/terminal/examples/arenaSmarts/Smart_ModelRunUntil1000Parts.h /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/terminal/examples/arenaSmarts/Smart_ModuleDisplayVariables.h /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/terminal/examples/arenaSmarts/Smart_OverlappingResources.h /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/terminal/examples/arenaSmarts/Smart_ParallelProcessingOfEntities.h /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/terminal/examples/arenaSmarts/Smart_PlacingEntitiesInQueueSets.h /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/terminal/examples/arenaSmarts/Smart_PriorityExample.h /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/terminal/examples/arenaSmarts/Smart_ProcessArena.h /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/terminal/examples/arenaSmarts/Smart_Record_Arena.h /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/terminal/examples/arenaSmarts/Smart_RemovingAndReorderingEntitiesInAQueue.h /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/terminal/examples/arenaSmarts/Smart_ResourceCosting.h /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/terminal/examples/arenaSmarts/Smart_ResourceScheduleCosting.h /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/terminal/examples/arenaSmarts/Smart_ResourceSets.h /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/terminal/examples/arenaSmarts/Smart_SeizingMultipleSimultaneosly.h /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/terminal/examples/arenaSmarts/Smart_SelectingRouteBasedOnProbability.h /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/terminal/examples/arenaSmarts/Smart_SelectingShorterQueue.h /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/terminal/examples/arenaSmarts/Smart_SynchronizingParallelEntities.h /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/terminal/examples/arenaSmarts/Smart_ValueAdded.h /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/terminal/examples/arenaSmarts/Smart_WaitForSignal.h /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/terminal/examples/book/Book_Cap02_Example01.h /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/terminal/examples/smarts/Smart_AssignWriteSeizes.h /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/terminal/examples/smarts/Smart_BatchSeparate.h /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/terminal/examples/smarts/Smart_Buffer.h /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/terminal/examples/smarts/Smart_CellularAutomata.h /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/terminal/examples/smarts/Smart_CellularAutomata1.h /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/terminal/examples/smarts/Smart_Clone.h /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/terminal/examples/smarts/Smart_CppForG.h /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/terminal/examples/smarts/Smart_Delay.h /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/terminal/examples/smarts/Smart_Dummy.h /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/terminal/examples/smarts/Smart_EFSM1.h /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/terminal/examples/smarts/Smart_EFSM2.h /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/terminal/examples/smarts/Smart_ExtendedFSM.h /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/terminal/examples/smarts/Smart_Failures.h /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/terminal/examples/smarts/Smart_FiniteStateMachine.h /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/terminal/examples/smarts/Smart_HoldSearchRemove.h /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/terminal/examples/smarts/Smart_LSODE.h /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/terminal/examples/smarts/Smart_MarkovChain.h /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/terminal/examples/smarts/Smart_ModelInfoModelSimulation.h /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/terminal/examples/smarts/Smart_ODE.h /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/terminal/examples/smarts/Smart_OnEvent.h /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/terminal/examples/smarts/Smart_Parser.h /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/terminal/examples/smarts/Smart_ParserModelFunctions.h /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/terminal/examples/smarts/Smart_Plugin.h /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/terminal/examples/smarts/Smart_Process.h /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/terminal/examples/smarts/Smart_ProcessSet.h /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/terminal/examples/smarts/Smart_Record.h /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/terminal/examples/smarts/Smart_RouteStation.h /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/terminal/examples/smarts/Smart_SeizeDelayRelease.h /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/terminal/examples/smarts/Smart_SeizeDelayReleaseMany.h /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/terminal/examples/smarts/Smart_SeizeDelayReleaseNoDataDefs.h /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/terminal/examples/smarts/Smart_Sequence.h /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/terminal/examples/smarts/Smart_SimulationControlResponse.h /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/terminal/examples/smarts/Smart_WaitScanCondition.h /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/terminal/examples/smarts/Smart_WaitSignal.h /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/terminal/examples/teaching/AnElectronicAssemblyAndTestSystem.h /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/terminal/examples/teaching/BufferFIFO.h /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/terminal/examples/teaching/ContinuousModel.h /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/terminal/examples/teaching/FullSimulationOfComplexModel.h /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/terminal/examples/teaching/Half_Adder.h /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/terminal/examples/teaching/Loja/Loja01.h /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/terminal/examples/teaching/OperatingSystem02.h /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/terminal/examples/teaching/OperatingSystem03.h /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/terminal/examples/teaching/Rectifier.h ../../CodeEditor.h ../../LineNumberArea.h ../../ModelGraphicsScene.h ../../ModelGraphicsView.h ../../ObjectPropertyBrowser.h ../../PropertyEditor.h ../../DataComponentProperty.h ../../DataComponentEditor.h ../../ComboBoxEnum.h ../../TraitsGUI.h ../../UtilGUI.h ../../actions/AddUndoCommand.h ../../actions/DeleteUndoCommand.h ../../actions/GroupUndoCommand.h ../../actions/MoveUndoCommand.h ../../actions/PasteUndoCommand.h ../../actions/UngroupUndoCommand.h ../../animations/AnimationCounter.h ../../animations/AnimationQueue.h ../../animations/AnimationTimer.h ../../animations/AnimationTransition.h ../../animations/AnimationVariable.h ../../dialogs/DialogFind.h ../../dialogs/DialogSelectCounter.h ../../dialogs/DialogSelectVariable.h ../../dialogs/DialogTimerConfigure.h ../../dialogs/Dialogmodelinformation.h ../../dialogs/dialogBreakpoint.h ../../dialogs/dialogpluginmanager.h ../../dialogs/dialogsimulationconfigure.h ../../dialogs/dialogsystempreferences.h ../../graphicals/GraphicalAnimateExpression.h ../../graphicals/GraphicalAssociation.h ../../graphicals/GraphicalComponentPort.h ../../graphicals/GraphicalConnection.h ../../graphicals/GraphicalDiagramConnection.h ../../graphicals/GraphicalImageAnimation.h ../../graphicals/GraphicalModelComponent.h ../../graphicals/GraphicalModelDataDefinition.h ../../mainwindow.h ../../qtpropertybrowser/QtAbstractEditorFactoryBase ../../qtpropertybrowser/QtAbstractPropertyBrowser ../../qtpropertybrowser/QtAbstractPropertyManager ../../qtpropertybrowser/QtBoolPropertyManager ../../qtpropertybrowser/QtBrowserItem ../../qtpropertybrowser/QtButtonPropertyBrowser ../../qtpropertybrowser/QtCharEditorFactory ../../qtpropertybrowser/QtCharPropertyManager ../../qtpropertybrowser/QtCheckBoxFactory ../../qtpropertybrowser/QtColorEditorFactory ../../qtpropertybrowser/QtColorPropertyManager ../../qtpropertybrowser/QtCursorEditorFactory ../../qtpropertybrowser/QtCursorPropertyManager ../../qtpropertybrowser/QtDateEditFactory ../../qtpropertybrowser/QtDatePropertyManager ../../qtpropertybrowser/QtDateTimeEditFactory ../../qtpropertybrowser/QtDateTimePropertyManager ../../qtpropertybrowser/QtDoublePropertyManager ../../qtpropertybrowser/QtDoubleSpinBoxFactory ../../qtpropertybrowser/QtEnumEditorFactory ../../qtpropertybrowser/QtEnumPropertyManager ../../qtpropertybrowser/QtFlagPropertyManager ../../qtpropertybrowser/QtFontEditorFactory ../../qtpropertybrowser/QtFontPropertyManager ../../qtpropertybrowser/QtGroupBoxPropertyBrowser ../../qtpropertybrowser/QtGroupPropertyManager ../../qtpropertybrowser/QtIntPropertyManager ../../qtpropertybrowser/QtKeySequenceEditorFactory ../../qtpropertybrowser/QtKeySequencePropertyManager ../../qtpropertybrowser/QtLineEditFactory ../../qtpropertybrowser/QtLocalePropertyManager ../../qtpropertybrowser/QtPointFPropertyManager ../../qtpropertybrowser/QtPointPropertyManager ../../qtpropertybrowser/QtProperty ../../qtpropertybrowser/QtRectFPropertyManager ../../qtpropertybrowser/QtRectPropertyManager ../../qtpropertybrowser/QtScrollBarFactory ../../qtpropertybrowser/QtSizeFPropertyManager ../../qtpropertybrowser/QtSizePolicyPropertyManager ../../qtpropertybrowser/QtSizePropertyManager ../../qtpropertybrowser/QtSliderFactory ../../qtpropertybrowser/QtSpinBoxFactory ../../qtpropertybrowser/QtStringPropertyManager ../../qtpropertybrowser/QtTimeEditFactory ../../qtpropertybrowser/QtTimePropertyManager ../../qtpropertybrowser/QtTreePropertyBrowser ../../qtpropertybrowser/QtVariantEditorFactory ../../qtpropertybrowser/QtVariantProperty ../../qtpropertybrowser/QtVariantPropertyManager ../../qtpropertybrowser/qtbuttonpropertybrowser.h ../../qtpropertybrowser/qteditorfactory.h ../../qtpropertybrowser/qtgroupboxpropertybrowser.h ../../qtpropertybrowser/qtpropertybrowser.h ../../qtpropertybrowser/qtpropertybrowserutils_p.h ../../qtpropertybrowser/qtpropertymanager.h ../../qtpropertybrowser/qttreepropertybrowser.h ../../qtpropertybrowser/qtvariantproperty.h $(DISTDIR)/
-	$(COPY_FILE) --parents /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/Attribute.cpp /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/ComponentManager.cpp /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/ConnectionManager.cpp /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/Counter.cpp /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/CppSerializer.cpp /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/Entity.cpp /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/EntityType.cpp /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/Event.cpp /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/ExperimentManager.cpp /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/ExperimentManagerDefaultImpl1.cpp /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/GenSerializer.cpp /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/JsonSerializer.cpp /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/LicenceManager.cpp /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/Model.cpp /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/ModelCheckerDefaultImpl1.cpp /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/ModelComponent.cpp /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/ModelDataDefinition.cpp /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/ModelDataManager.cpp /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/ModelInfo.cpp /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/ModelManager.cpp /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/ModelPersistenceDefaultImpl2.cpp /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/ModelSerializer.cpp /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/ModelSimulation.cpp /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/OnEventManager.cpp /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/ParserChangesInformation.cpp /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/ParserDefaultImpl1.cpp /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/ParserDefaultImpl2.cpp /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/ParserManager.cpp /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/Persistence.cpp /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/Plugin.cpp /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/PluginConnectorDummyImpl1.cpp /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/PluginInformation.cpp /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/PluginManager.cpp /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/SimulationExperiment.cpp /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/SimulationReporterDefaultImpl1.cpp /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/SimulationScenario.cpp /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/Simulator.cpp /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/SinkModelComponent.cpp /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/SourceModelComponent.cpp /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/StatisticsCollector.cpp /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/TraceManager.cpp /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/XmlSerializer.cpp /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/statistics/CollectorDatafileDefaultImpl1.cpp /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/statistics/CollectorDefaultImpl1.cpp /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/statistics/SamplerBoostImpl.cpp /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/statistics/SamplerDefaultImpl1.cpp /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/statistics/SorttFile.cpp /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/statistics/StatisticsDataFileDefaultImpl.cpp /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/statistics/StatisticsDefaultImpl1.cpp /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/util/Util.cpp /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/parser/Genesys++-driver.cpp /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/parser/Genesys++-scanner.cpp /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/parser/GenesysParser.cpp /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/parser/obj_t.cpp /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/components/Access.cpp /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/components/Assign.cpp /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/components/Batch.cpp /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/components/Buffer.cpp /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/components/CellularAutomata/Cell.cpp /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/components/CellularAutomata/CellularAutomataBase.cpp /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/components/CellularAutomata/Lattice.cpp /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/components/CellularAutomata/StateSet.cpp /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/components/CellularAutomata/StateSet_Enumerable.cpp /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/components/CellularAutomataComp.cpp /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/components/CellularAutomata.cpp /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/components/Clone.cpp /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/components/CppForG.cpp /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/components/Create.cpp /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/components/Decide.cpp /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/components/Delay.cpp /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/components/DiffEquations.cpp /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/components/Dispose.cpp /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/components/DropOff.cpp /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/components/DummyComponent.cpp /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/components/Enter.cpp /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/components/Exit.cpp /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/components/FSM_ModalModel.cpp /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/components/FSM_State.cpp /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/components/FSM_Transition.cpp /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/components/FiniteStateMachine.cpp /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/components/PickableStationItem.cpp /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/components/SPICECircuit.cpp /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/components/SPICENode.cpp /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/components/Wait.cpp /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/components/LSODE.cpp /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/components/Leave.cpp /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/components/MarkovChain.cpp /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/components/Match.cpp /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/components/OLD_ODEelement.cpp /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/components/PickStation.cpp /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/components/PickUp.cpp /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/components/Process.cpp /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/components/QueueableItem.cpp /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/components/Record.cpp /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/components/Release.cpp /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/components/Remove.cpp /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/components/Route.cpp /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/components/Search.cpp /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/components/SeizableItem.cpp /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/components/Seize.cpp /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/components/Separate.cpp /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/components/Signal.cpp /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/components/Start.cpp /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/components/Stop.cpp /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/components/Store.cpp /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/components/Submodel.cpp /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/components/Unstore.cpp /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/components/Write.cpp /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/data/AssignmentItem.cpp /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/data/CppCompiler.cpp /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/data/DummyElement.cpp /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/data/EFSM.cpp /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/data/EntityGroup.cpp /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/data/Failure.cpp /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/data/File.cpp /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/data/Formula.cpp /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/data/Label.cpp /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/data/Queue.cpp /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/data/Resource.cpp /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/data/SPICERunner.cpp /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/data/Schedule.cpp /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/data/Sequence.cpp /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/data/Set.cpp /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/data/SignalData.cpp /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/data/Station.cpp /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/data/Storage.cpp /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/data/Variable.cpp /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/tools/FitterDummyImpl.cpp /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/tools/HypothesisTesterDefaultImpl1.cpp /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/tools/ProbabilityDistribution.cpp /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/tools/ProbabilityDistributionBase.cpp /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/tools/SolverDefaultImpl1.cpp /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/BaseGenesysTerminalApplication.cpp /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/terminal/GenesysShell/GenesysShell.cpp /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/terminal/examples/arenaExamples/AirportSecurityExample.cpp /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/terminal/examples/arenaExamples/AirportSecurityExampleExtended.cpp /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/terminal/examples/arenaExamples/Airport_Extended1.cpp /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/terminal/examples/arenaExamples/Assembly_Line.cpp /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/terminal/examples/arenaExamples/Banking_Transactions.cpp /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/terminal/examples/arenaExamples/Example_BasicOrderShipping.cpp /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/terminal/examples/arenaExamples/Example_PortModel.cpp /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/terminal/examples/arenaExamples/Example_PublicTransport.cpp /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/terminal/examples/arenaSmarts/Smart_AddingResource.cpp /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/terminal/examples/arenaSmarts/Smart_AlternatingEntityCreation.cpp /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/terminal/examples/arenaSmarts/Smart_ArrivalsElementStopsEntitiesArrivingAfterASetTime.cpp /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/terminal/examples/arenaSmarts/Smart_ArrivalsEntityTypeVsAttribute.cpp /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/terminal/examples/arenaSmarts/Smart_AssignExample.cpp /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/terminal/examples/arenaSmarts/Smart_AutomaticStatisticsCollection.cpp /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/terminal/examples/arenaSmarts/Smart_BasicModeling.cpp /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/terminal/examples/arenaSmarts/Smart_BatchAndSeparate.cpp /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/terminal/examples/arenaSmarts/Smart_ContinuousFlowEntities.cpp /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/terminal/examples/arenaSmarts/Smart_Create.cpp /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/terminal/examples/arenaSmarts/Smart_DecideNWayByChance.cpp /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/terminal/examples/arenaSmarts/Smart_DefiningAttributesAsStrings.cpp /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/terminal/examples/arenaSmarts/Smart_DefiningControlLogic.cpp /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/terminal/examples/arenaSmarts/Smart_DefiningResourceCapacity.cpp /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/terminal/examples/arenaSmarts/Smart_DelayBasedOnReplication.cpp /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/terminal/examples/arenaSmarts/Smart_EntitiesProcessedByPriority.cpp /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/terminal/examples/arenaSmarts/Smart_EvaluatingConditionsBeforeEnteringQueue.cpp /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/terminal/examples/arenaSmarts/Smart_Expression.cpp /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/terminal/examples/arenaSmarts/Smart_InventoryAndHoldingCosts.cpp /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/terminal/examples/arenaSmarts/Smart_MaxArrivalsField.cpp /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/terminal/examples/arenaSmarts/Smart_ModelRunUntil1000Parts.cpp /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/terminal/examples/arenaSmarts/Smart_ModuleDisplayVariables.cpp /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/terminal/examples/arenaSmarts/Smart_OverlappingResources.cpp /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/terminal/examples/arenaSmarts/Smart_ParallelProcessingOfEntities.cpp /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/terminal/examples/arenaSmarts/Smart_PlacingEntitiesInQueueSets.cpp /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/terminal/examples/arenaSmarts/Smart_PriorityExample.cpp /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/terminal/examples/arenaSmarts/Smart_ProcessArena.cpp /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/terminal/examples/arenaSmarts/Smart_Record_Arena.cpp /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/terminal/examples/arenaSmarts/Smart_RemovingAndReorderingEntitiesInAQueue.cpp /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/terminal/examples/arenaSmarts/Smart_ResourceCosting.cpp /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/terminal/examples/arenaSmarts/Smart_ResourceScheduleCosting.cpp /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/terminal/examples/arenaSmarts/Smart_ResourceSets.cpp /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/terminal/examples/arenaSmarts/Smart_SeizingMultipleSimultaneosly.cpp /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/terminal/examples/arenaSmarts/Smart_SelectingRouteBasedOnProbability.cpp /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/terminal/examples/arenaSmarts/Smart_SelectingShorterQueue.cpp /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/terminal/examples/arenaSmarts/Smart_SynchronizingParallelEntities.cpp /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/terminal/examples/arenaSmarts/Smart_ValueAdded.cpp /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/terminal/examples/arenaSmarts/Smart_WaitForSignal.cpp /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/terminal/examples/book/Book_Cap02_Example01.cpp /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/terminal/examples/smarts/Smart_AssignWriteSeizes.cpp /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/terminal/examples/smarts/Smart_BatchSeparate.cpp /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/terminal/examples/smarts/Smart_Buffer.cpp /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/terminal/examples/smarts/Smart_CellularAutomata.cpp /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/terminal/examples/smarts/Smart_CellularAutomata1.cpp /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/terminal/examples/smarts/Smart_Clone.cpp /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/terminal/examples/smarts/Smart_CppForG.cpp /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/terminal/examples/smarts/Smart_Delay.cpp /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/terminal/examples/smarts/Smart_Dummy.cpp /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/terminal/examples/smarts/Smart_EFSM1.cpp /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/terminal/examples/smarts/Smart_EFSM2.cpp /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/terminal/examples/smarts/Smart_ExtendedFSM.cpp /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/terminal/examples/smarts/Smart_Failures.cpp /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/terminal/examples/smarts/Smart_FiniteStateMachine.cpp /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/terminal/examples/smarts/Smart_HoldSearchRemove.cpp /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/terminal/examples/smarts/Smart_LSODE.cpp /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/terminal/examples/smarts/Smart_MarkovChain.cpp /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/terminal/examples/smarts/Smart_ModelInfoModelSimulation.cpp /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/terminal/examples/smarts/Smart_ODE.cpp /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/terminal/examples/smarts/Smart_OnEvent.cpp /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/terminal/examples/smarts/Smart_Parser.cpp /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/terminal/examples/smarts/Smart_ParserModelFunctions.cpp /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/terminal/examples/smarts/Smart_Plugin.cpp /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/terminal/examples/smarts/Smart_Process.cpp /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/terminal/examples/smarts/Smart_ProcessSet.cpp /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/terminal/examples/smarts/Smart_Record.cpp /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/terminal/examples/smarts/Smart_RouteStation.cpp /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/terminal/examples/smarts/Smart_SeizeDelayRelease.cpp /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/terminal/examples/smarts/Smart_SeizeDelayReleaseMany.cpp /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/terminal/examples/smarts/Smart_SeizeDelayReleaseNoDataDefs.cpp /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/terminal/examples/smarts/Smart_Sequence.cpp /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/terminal/examples/smarts/Smart_SimulationControlResponse.cpp /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/terminal/examples/smarts/Smart_WaitScanCondition.cpp /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/terminal/examples/smarts/Smart_WaitSignal.cpp /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/terminal/examples/teaching/AnElectronicAssemblyAndTestSystem.cpp /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/terminal/examples/teaching/ContinuousModel.cpp /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/terminal/examples/teaching/FullSimulationOfComplexModel.cpp /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/terminal/examples/teaching/Half_Adder.cpp /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/terminal/examples/teaching/Loja/Loja01.cpp /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/terminal/examples/teaching/OperatingSystem02.cpp /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/terminal/examples/teaching/OperatingSystem03.cpp /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/terminal/examples/teaching/Rectifier.cpp ../../CodeEditor.cpp ../../DataComponentProperty.cpp ../../ModelGraphicsScene.cpp ../../ModelGraphicsView.cpp ../../ObjectPropertyBrowser.cpp ../../PropertyEditor.cpp ../../DataComponentEditor.cpp ../../ComboBoxEnum.cpp ../../actions/AddUndoCommand.cpp ../../actions/DeleteUndoCommand.cpp ../../actions/GroupUndoCommand.cpp ../../actions/MoveUndoCommand.cpp ../../actions/PasteUndoCommand.cpp ../../actions/UngroupUndoCommand.cpp ../../animations/AnimationCounter.cpp ../../animations/AnimationQueue.cpp ../../animations/AnimationTimer.cpp ../../animations/AnimationTransition.cpp ../../animations/AnimationVariable.cpp ../../dialogs/DialogFind.cpp ../../dialogs/DialogSelectCounter.cpp ../../dialogs/DialogSelectVariable.cpp ../../dialogs/DialogTimerConfigure.cpp ../../dialogs/Dialogmodelinformation.cpp ../../dialogs/dialogBreakpoint.cpp ../../dialogs/dialogpluginmanager.cpp ../../dialogs/dialogsimulationconfigure.cpp ../../dialogs/dialogsystempreferences.cpp ../../graphicals/GraphicalAnimateExpression.cpp ../../graphicals/GraphicalAssociation.cpp ../../graphicals/GraphicalComponentPort.cpp ../../graphicals/GraphicalConnection.cpp ../../graphicals/GraphicalDiagramConnection.cpp ../../graphicals/GraphicalImageAnimation.cpp ../../graphicals/GraphicalModelComponent.cpp ../../graphicals/GraphicalModelDataDefinition.cpp ../../main.cpp ../../mainwindow.cpp ../../qtpropertybrowser/qtbuttonpropertybrowser.cpp ../../qtpropertybrowser/qteditorfactory.cpp ../../qtpropertybrowser/qtgroupboxpropertybrowser.cpp ../../qtpropertybrowser/qtpropertybrowser.cpp ../../qtpropertybrowser/qtpropertybrowserutils.cpp ../../qtpropertybrowser/qtpropertymanager.cpp ../../qtpropertybrowser/qttreepropertybrowser.cpp ../../qtpropertybrowser/qtvariantproperty.cpp $(DISTDIR)/
+	$(COPY_FILE) --parents /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/TraitsKernel.h /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/Attribute.h /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/ComponentManager.h /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/ConnectionManager.h /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/Counter.h /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/CppSerializer.h /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/DefineGetterSetter.h /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/Entity.h /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/EntityType.h /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/Event.h /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/ExperimentManager.h /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/ExperimentManagerDefaultImpl1.h /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/ExperimetManager_if.h /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/GenSerializer.h /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/JsonSerializer.h /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/LicenceManager.h /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/Model.h /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/ModelCheckerDefaultImpl1.h /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/ModelChecker_if.h /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/ModelComponent.h /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/ModelDataDefinition.h /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/ModelDataManager.h /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/ModelInfo.h /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/ModelManager.h /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/ModelPersistenceDefaultImpl2.h /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/ModelSerializer.h /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/ModelSimulation.h /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/OnEventManager.h /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/ParserChangesInformation.h /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/ParserDefaultImpl1.h /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/ParserDefaultImpl2.h /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/ParserManager.h /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/Parser_if.h /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/Persistence.h /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/Plugin.h /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/PluginConnectorDummyImpl1.h /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/PluginConnector_if.h /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/PluginInformation.h /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/PluginManager.h /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/PropertyGenesys.h /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/ScenarioExperiment_if.h /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/SimulationControlAndResponse.h /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/SimulationExperiment.h /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/SimulationReporterDefaultImpl1.h /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/SimulationReporter_if.h /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/SimulationScenario.h /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/Simulator.h /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/SinkModelComponent.h /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/SourceModelComponent.h /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/StatisticsCollector.h /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/TraceManager.h /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/XmlSerializer.h /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/statistics/CollectorDatafileDefaultImpl1.h /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/statistics/CollectorDatafile_if.h /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/statistics/CollectorDefaultImpl1.h /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/statistics/Collector_if.h /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/statistics/SamplerBoostImpl.h /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/statistics/SamplerDefaultImpl1.h /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/statistics/Sampler_if.h /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/statistics/SorttFile.h /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/statistics/StatisticsDataFileDefaultImpl.h /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/statistics/StatisticsDataFile_if.h /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/statistics/StatisticsDefaultImpl1.h /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/statistics/Statistics_if.h /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/util/Exact.h /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/util/List.h /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/util/ListObservable.h /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/util/Util.h /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/parser/Genesys++-driver.h /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/parser/GenesysParser.h /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/parser/location.hh /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/parser/obj_t.h /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/parser/parserBisonFlex/bisonparser.yy /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/parser/parserBisonFlex/lexerparser.ll /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/parser/position.hh /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/parser/stack.hh /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/components/Access.h /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/components/Assign.h /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/components/Batch.h /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/components/Buffer.h /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/components/Clone.h /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/components/CppForG.h /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/components/Create.h /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/components/Decide.h /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/components/DefaultModalModel.h /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/components/Delay.h /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/components/DiffEquations.h /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/components/Dispose.h /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/components/DropOff.h /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/components/DummyComponent.h /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/components/Enter.h /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/components/Exit.h /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/components/PickableStationItem.h /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/components/SPICECircuit.h /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/components/SPICENode.h /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/components/Wait.h /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/components/LSODE.h /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/components/Leave.h /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/components/MarkovChain.h /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/components/Match.h /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/components/OLD_ODEelement.h /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/components/PickStation.h /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/components/PickUp.h /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/components/Process.h /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/components/QueueableItem.h /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/components/Record.h /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/components/Release.h /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/components/Remove.h /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/components/Route.h /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/components/Search.h /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/components/SeizableItem.h /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/components/Seize.h /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/components/Separate.h /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/components/Signal.h /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/components/Start.h /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/components/Stop.h /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/components/Store.h /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/components/Submodel.h /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/components/Unstore.h /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/components/Write.h /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/components/network/DefaultNode.h /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/data/AssignmentItem.h /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/data/CppCompiler.h /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/data/DummyElement.h /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/data/EntityGroup.h /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/data/Failure.h /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/data/File.h /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/data/Formula.h /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/data/Label.h /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/data/Queue.h /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/data/Resource.h /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/data/SPICERunner.h /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/data/Schedule.h /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/data/Sequence.h /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/data/Set.h /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/data/SignalData.h /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/data/Station.h /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/data/Storage.h /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/data/Variable.h /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/tools/DataAnalyser_if.h /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/tools/FitterDummyImpl.h /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/tools/Fitter_if.h /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/tools/HypothesisTesterDefaultImpl1.h /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/tools/HypothesisTester_if.h /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/tools/ProbabilityDistribution.h /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/tools/ProbabilityDistributionBase.h /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/tools/SolverDefaultImpl1.h /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/tools/Solver_if.h /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/tools/TraitsTools.h /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/BaseGenesysTerminalApplication.h /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/GenesysApplication_if.h /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/TraitsApp.h /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/terminal/GenesysShell/GenesysShell.h /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/terminal/GenesysShell/GenesysShell_if.h /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/terminal/TraitsTerminalApp.h /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/terminal/examples/arenaExamples/AirportSecurityExample.h /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/terminal/examples/arenaExamples/AirportSecurityExampleExtended.h /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/terminal/examples/arenaExamples/Airport_Extended1.h /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/terminal/examples/arenaExamples/Assembly_Line.h /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/terminal/examples/arenaExamples/Banking_Transactions.h /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/terminal/examples/arenaExamples/Example_BasicOrderShipping.h /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/terminal/examples/arenaExamples/Example_PortModel.h /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/terminal/examples/arenaExamples/Example_PublicTransport.h /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/terminal/examples/arenaSmarts/Smart_AddingResource.h /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/terminal/examples/arenaSmarts/Smart_AlternatingEntityCreation.h /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/terminal/examples/arenaSmarts/Smart_ArrivalsElementStopsEntitiesArrivingAfterASetTime.h /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/terminal/examples/arenaSmarts/Smart_ArrivalsEntityTypeVsAttribute.h /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/terminal/examples/arenaSmarts/Smart_AssignExample.h /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/terminal/examples/arenaSmarts/Smart_AutomaticStatisticsCollection.h /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/terminal/examples/arenaSmarts/Smart_BasicModeling.h /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/terminal/examples/arenaSmarts/Smart_BatchAndSeparate.h /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/terminal/examples/arenaSmarts/Smart_ContinuousFlowEntities.h /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/terminal/examples/arenaSmarts/Smart_Create.h /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/terminal/examples/arenaSmarts/Smart_DecideNWayByChance.h /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/terminal/examples/arenaSmarts/Smart_DefiningAttributesAsStrings.h /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/terminal/examples/arenaSmarts/Smart_DefiningControlLogic.h /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/terminal/examples/arenaSmarts/Smart_DefiningResourceCapacity.h /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/terminal/examples/arenaSmarts/Smart_DelayBasedOnReplication.h /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/terminal/examples/arenaSmarts/Smart_EntitiesProcessedByPriority.h /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/terminal/examples/arenaSmarts/Smart_EvaluatingConditionsBeforeEnteringQueue.h /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/terminal/examples/arenaSmarts/Smart_Expression.h /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/terminal/examples/arenaSmarts/Smart_InventoryAndHoldingCosts.h /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/terminal/examples/arenaSmarts/Smart_MaxArrivalsField.h /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/terminal/examples/arenaSmarts/Smart_ModelRunUntil1000Parts.h /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/terminal/examples/arenaSmarts/Smart_ModuleDisplayVariables.h /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/terminal/examples/arenaSmarts/Smart_OverlappingResources.h /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/terminal/examples/arenaSmarts/Smart_ParallelProcessingOfEntities.h /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/terminal/examples/arenaSmarts/Smart_PlacingEntitiesInQueueSets.h /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/terminal/examples/arenaSmarts/Smart_PriorityExample.h /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/terminal/examples/arenaSmarts/Smart_ProcessArena.h /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/terminal/examples/arenaSmarts/Smart_Record_Arena.h /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/terminal/examples/arenaSmarts/Smart_RemovingAndReorderingEntitiesInAQueue.h /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/terminal/examples/arenaSmarts/Smart_ResourceCosting.h /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/terminal/examples/arenaSmarts/Smart_ResourceScheduleCosting.h /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/terminal/examples/arenaSmarts/Smart_ResourceSets.h /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/terminal/examples/arenaSmarts/Smart_SeizingMultipleSimultaneosly.h /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/terminal/examples/arenaSmarts/Smart_SelectingRouteBasedOnProbability.h /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/terminal/examples/arenaSmarts/Smart_SelectingShorterQueue.h /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/terminal/examples/arenaSmarts/Smart_SynchronizingParallelEntities.h /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/terminal/examples/arenaSmarts/Smart_ValueAdded.h /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/terminal/examples/arenaSmarts/Smart_WaitForSignal.h /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/terminal/examples/book/Book_Cap02_Example01.h /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/terminal/examples/smarts/Smart_AssignWriteSeizes.h /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/terminal/examples/smarts/Smart_BatchSeparate.h /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/terminal/examples/smarts/Smart_Buffer.h /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/terminal/examples/smarts/Smart_Clone.h /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/terminal/examples/smarts/Smart_CppForG.h /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/terminal/examples/smarts/Smart_DefaultModalModel.h /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/terminal/examples/smarts/Smart_Delay.h /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/terminal/examples/smarts/Smart_Dummy.h /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/terminal/examples/smarts/Smart_Failures.h /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/terminal/examples/smarts/Smart_HoldSearchRemove.h /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/terminal/examples/smarts/Smart_LSODE.h /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/terminal/examples/smarts/Smart_MarkovChain.h /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/terminal/examples/smarts/Smart_ModelInfoModelSimulation.h /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/terminal/examples/smarts/Smart_ODE.h /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/terminal/examples/smarts/Smart_OnEvent.h /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/terminal/examples/smarts/Smart_Parser.h /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/terminal/examples/smarts/Smart_ParserModelFunctions.h /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/terminal/examples/smarts/Smart_Plugin.h /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/terminal/examples/smarts/Smart_Process.h /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/terminal/examples/smarts/Smart_ProcessSet.h /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/terminal/examples/smarts/Smart_Record.h /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/terminal/examples/smarts/Smart_RouteStation.h /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/terminal/examples/smarts/Smart_SeizeDelayRelease.h /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/terminal/examples/smarts/Smart_SeizeDelayReleaseMany.h /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/terminal/examples/smarts/Smart_SeizeDelayReleaseNoDataDefs.h /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/terminal/examples/smarts/Smart_Sequence.h /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/terminal/examples/smarts/Smart_SimulationControlResponse.h /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/terminal/examples/smarts/Smart_WaitScanCondition.h /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/terminal/examples/smarts/Smart_WaitSignal.h /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/terminal/examples/teaching/AnElectronicAssemblyAndTestSystem.h /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/terminal/examples/teaching/BufferFIFO.h /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/terminal/examples/teaching/ContinuousModel.h /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/terminal/examples/teaching/FullSimulationOfComplexModel.h /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/terminal/examples/teaching/Half_Adder.h /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/terminal/examples/teaching/Loja/Loja01.h /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/terminal/examples/teaching/OperatingSystem02.h /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/terminal/examples/teaching/OperatingSystem03.h /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/terminal/examples/teaching/Rectifier.h ../../codeeditor/CodeEditor.h ../../codeeditor/LineNumberArea.h ../../graphicals/ModelGraphicsScene.h ../../graphicals/ModelGraphicsView.h ../../propertyeditor/ObjectPropertyBrowser.h ../../propertyeditor/PropertyEditor.h ../../propertyeditor/DataComponentProperty.h ../../propertyeditor/DataComponentEditor.h ../../propertyeditor/ComboBoxEnum.h ../../TraitsGUI.h ../../UtilGUI.h ../../actions/AddUndoCommand.h ../../actions/DeleteUndoCommand.h ../../actions/GroupUndoCommand.h ../../actions/MoveUndoCommand.h ../../actions/PasteUndoCommand.h ../../actions/UngroupUndoCommand.h ../../animations/AnimationCounter.h ../../animations/AnimationQueue.h ../../animations/AnimationTimer.h ../../animations/AnimationTransition.h ../../animations/AnimationVariable.h ../../dialogs/DialogFind.h ../../dialogs/DialogSelectCounter.h ../../dialogs/DialogSelectVariable.h ../../dialogs/DialogTimerConfigure.h ../../dialogs/Dialogmodelinformation.h ../../dialogs/dialogBreakpoint.h ../../dialogs/dialogpluginmanager.h ../../dialogs/dialogsimulationconfigure.h ../../dialogs/dialogsystempreferences.h ../../graphicals/GraphicalAnimateExpression.h ../../graphicals/GraphicalAssociation.h ../../graphicals/GraphicalComponentPort.h ../../graphicals/GraphicalConnection.h ../../graphicals/GraphicalDiagramConnection.h ../../graphicals/GraphicalImageAnimation.h ../../graphicals/GraphicalModelComponent.h ../../graphicals/GraphicalModelDataDefinition.h ../../mainwindow.h ../../propertyeditor/qtpropertybrowser/QtAbstractEditorFactoryBase ../../propertyeditor/qtpropertybrowser/QtAbstractPropertyBrowser ../../propertyeditor/qtpropertybrowser/QtAbstractPropertyManager ../../propertyeditor/qtpropertybrowser/QtBoolPropertyManager ../../propertyeditor/qtpropertybrowser/QtBrowserItem ../../propertyeditor/qtpropertybrowser/QtButtonPropertyBrowser ../../propertyeditor/qtpropertybrowser/QtCharEditorFactory ../../propertyeditor/qtpropertybrowser/QtCharPropertyManager ../../propertyeditor/qtpropertybrowser/QtCheckBoxFactory ../../propertyeditor/qtpropertybrowser/QtColorEditorFactory ../../propertyeditor/qtpropertybrowser/QtColorPropertyManager ../../propertyeditor/qtpropertybrowser/QtCursorEditorFactory ../../propertyeditor/qtpropertybrowser/QtCursorPropertyManager ../../propertyeditor/qtpropertybrowser/QtDateEditFactory ../../propertyeditor/qtpropertybrowser/QtDatePropertyManager ../../propertyeditor/qtpropertybrowser/QtDateTimeEditFactory ../../propertyeditor/qtpropertybrowser/QtDateTimePropertyManager ../../propertyeditor/qtpropertybrowser/QtDoublePropertyManager ../../propertyeditor/qtpropertybrowser/QtDoubleSpinBoxFactory ../../propertyeditor/qtpropertybrowser/QtEnumEditorFactory ../../propertyeditor/qtpropertybrowser/QtEnumPropertyManager ../../propertyeditor/qtpropertybrowser/QtFlagPropertyManager ../../propertyeditor/qtpropertybrowser/QtFontEditorFactory ../../propertyeditor/qtpropertybrowser/QtFontPropertyManager ../../propertyeditor/qtpropertybrowser/QtGroupBoxPropertyBrowser ../../propertyeditor/qtpropertybrowser/QtGroupPropertyManager ../../propertyeditor/qtpropertybrowser/QtIntPropertyManager ../../propertyeditor/qtpropertybrowser/QtKeySequenceEditorFactory ../../propertyeditor/qtpropertybrowser/QtKeySequencePropertyManager ../../propertyeditor/qtpropertybrowser/QtLineEditFactory ../../propertyeditor/qtpropertybrowser/QtLocalePropertyManager ../../propertyeditor/qtpropertybrowser/QtPointFPropertyManager ../../propertyeditor/qtpropertybrowser/QtPointPropertyManager ../../propertyeditor/qtpropertybrowser/QtProperty ../../propertyeditor/qtpropertybrowser/QtRectFPropertyManager ../../propertyeditor/qtpropertybrowser/QtRectPropertyManager ../../propertyeditor/qtpropertybrowser/QtScrollBarFactory ../../propertyeditor/qtpropertybrowser/QtSizeFPropertyManager ../../propertyeditor/qtpropertybrowser/QtSizePolicyPropertyManager ../../propertyeditor/qtpropertybrowser/QtSizePropertyManager ../../propertyeditor/qtpropertybrowser/QtSliderFactory ../../propertyeditor/qtpropertybrowser/QtSpinBoxFactory ../../propertyeditor/qtpropertybrowser/QtStringPropertyManager ../../propertyeditor/qtpropertybrowser/QtTimeEditFactory ../../propertyeditor/qtpropertybrowser/QtTimePropertyManager ../../propertyeditor/qtpropertybrowser/QtTreePropertyBrowser ../../propertyeditor/qtpropertybrowser/QtVariantEditorFactory ../../propertyeditor/qtpropertybrowser/QtVariantProperty ../../propertyeditor/qtpropertybrowser/QtVariantPropertyManager ../../propertyeditor/qtpropertybrowser/qtbuttonpropertybrowser.h ../../propertyeditor/qtpropertybrowser/qteditorfactory.h ../../propertyeditor/qtpropertybrowser/qtgroupboxpropertybrowser.h ../../propertyeditor/qtpropertybrowser/qtpropertybrowser.h ../../propertyeditor/qtpropertybrowser/qtpropertybrowserutils_p.h ../../propertyeditor/qtpropertybrowser/qtpropertymanager.h ../../propertyeditor/qtpropertybrowser/qttreepropertybrowser.h ../../propertyeditor/qtpropertybrowser/qtvariantproperty.h $(DISTDIR)/
+	$(COPY_FILE) --parents /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/Attribute.cpp /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/ComponentManager.cpp /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/ConnectionManager.cpp /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/Counter.cpp /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/CppSerializer.cpp /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/Entity.cpp /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/EntityType.cpp /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/Event.cpp /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/ExperimentManager.cpp /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/ExperimentManagerDefaultImpl1.cpp /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/GenSerializer.cpp /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/JsonSerializer.cpp /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/LicenceManager.cpp /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/Model.cpp /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/ModelCheckerDefaultImpl1.cpp /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/ModelComponent.cpp /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/ModelDataDefinition.cpp /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/ModelDataManager.cpp /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/ModelInfo.cpp /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/ModelManager.cpp /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/ModelPersistenceDefaultImpl2.cpp /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/ModelSerializer.cpp /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/ModelSimulation.cpp /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/OnEventManager.cpp /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/ParserChangesInformation.cpp /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/ParserDefaultImpl1.cpp /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/ParserDefaultImpl2.cpp /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/ParserManager.cpp /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/Persistence.cpp /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/Plugin.cpp /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/PluginConnectorDummyImpl1.cpp /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/PluginInformation.cpp /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/PluginManager.cpp /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/SimulationExperiment.cpp /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/SimulationReporterDefaultImpl1.cpp /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/SimulationScenario.cpp /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/Simulator.cpp /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/SinkModelComponent.cpp /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/SourceModelComponent.cpp /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/StatisticsCollector.cpp /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/TraceManager.cpp /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/XmlSerializer.cpp /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/statistics/CollectorDatafileDefaultImpl1.cpp /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/statistics/CollectorDefaultImpl1.cpp /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/statistics/SamplerBoostImpl.cpp /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/statistics/SamplerDefaultImpl1.cpp /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/statistics/SorttFile.cpp /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/statistics/StatisticsDataFileDefaultImpl.cpp /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/statistics/StatisticsDefaultImpl1.cpp /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/util/Util.cpp /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/parser/Genesys++-driver.cpp /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/parser/Genesys++-scanner.cpp /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/parser/GenesysParser.cpp /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/parser/obj_t.cpp /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/components/Access.cpp /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/components/Assign.cpp /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/components/Batch.cpp /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/components/Buffer.cpp /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/components/Clone.cpp /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/components/CppForG.cpp /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/components/Create.cpp /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/components/Decide.cpp /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/components/DefaultModalModel.cpp /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/components/Delay.cpp /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/components/DiffEquations.cpp /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/components/Dispose.cpp /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/components/DropOff.cpp /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/components/DummyComponent.cpp /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/components/Enter.cpp /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/components/Exit.cpp /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/components/PickableStationItem.cpp /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/components/SPICECircuit.cpp /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/components/SPICENode.cpp /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/components/Wait.cpp /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/components/LSODE.cpp /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/components/Leave.cpp /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/components/MarkovChain.cpp /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/components/Match.cpp /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/components/OLD_ODEelement.cpp /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/components/PickStation.cpp /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/components/PickUp.cpp /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/components/Process.cpp /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/components/QueueableItem.cpp /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/components/Record.cpp /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/components/Release.cpp /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/components/Remove.cpp /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/components/Route.cpp /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/components/Search.cpp /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/components/SeizableItem.cpp /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/components/Seize.cpp /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/components/Separate.cpp /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/components/Signal.cpp /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/components/Start.cpp /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/components/Stop.cpp /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/components/Store.cpp /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/components/Submodel.cpp /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/components/Unstore.cpp /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/components/Write.cpp /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/components/network/DefaultNode.cpp /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/data/AssignmentItem.cpp /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/data/CppCompiler.cpp /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/data/DummyElement.cpp /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/data/EntityGroup.cpp /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/data/Failure.cpp /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/data/File.cpp /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/data/Formula.cpp /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/data/Label.cpp /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/data/Queue.cpp /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/data/Resource.cpp /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/data/SPICERunner.cpp /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/data/Schedule.cpp /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/data/Sequence.cpp /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/data/Set.cpp /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/data/SignalData.cpp /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/data/Station.cpp /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/data/Storage.cpp /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/data/Variable.cpp /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/tools/FitterDummyImpl.cpp /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/tools/HypothesisTesterDefaultImpl1.cpp /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/tools/ProbabilityDistribution.cpp /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/tools/ProbabilityDistributionBase.cpp /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/tools/SolverDefaultImpl1.cpp /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/BaseGenesysTerminalApplication.cpp /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/terminal/GenesysShell/GenesysShell.cpp /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/terminal/examples/arenaExamples/AirportSecurityExample.cpp /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/terminal/examples/arenaExamples/AirportSecurityExampleExtended.cpp /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/terminal/examples/arenaExamples/Airport_Extended1.cpp /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/terminal/examples/arenaExamples/Assembly_Line.cpp /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/terminal/examples/arenaExamples/Banking_Transactions.cpp /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/terminal/examples/arenaExamples/Example_BasicOrderShipping.cpp /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/terminal/examples/arenaExamples/Example_PortModel.cpp /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/terminal/examples/arenaExamples/Example_PublicTransport.cpp /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/terminal/examples/arenaSmarts/Smart_AddingResource.cpp /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/terminal/examples/arenaSmarts/Smart_AlternatingEntityCreation.cpp /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/terminal/examples/arenaSmarts/Smart_ArrivalsElementStopsEntitiesArrivingAfterASetTime.cpp /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/terminal/examples/arenaSmarts/Smart_ArrivalsEntityTypeVsAttribute.cpp /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/terminal/examples/arenaSmarts/Smart_AssignExample.cpp /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/terminal/examples/arenaSmarts/Smart_AutomaticStatisticsCollection.cpp /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/terminal/examples/arenaSmarts/Smart_BasicModeling.cpp /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/terminal/examples/arenaSmarts/Smart_BatchAndSeparate.cpp /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/terminal/examples/arenaSmarts/Smart_ContinuousFlowEntities.cpp /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/terminal/examples/arenaSmarts/Smart_Create.cpp /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/terminal/examples/arenaSmarts/Smart_DecideNWayByChance.cpp /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/terminal/examples/arenaSmarts/Smart_DefiningAttributesAsStrings.cpp /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/terminal/examples/arenaSmarts/Smart_DefiningControlLogic.cpp /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/terminal/examples/arenaSmarts/Smart_DefiningResourceCapacity.cpp /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/terminal/examples/arenaSmarts/Smart_DelayBasedOnReplication.cpp /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/terminal/examples/arenaSmarts/Smart_EntitiesProcessedByPriority.cpp /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/terminal/examples/arenaSmarts/Smart_EvaluatingConditionsBeforeEnteringQueue.cpp /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/terminal/examples/arenaSmarts/Smart_Expression.cpp /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/terminal/examples/arenaSmarts/Smart_InventoryAndHoldingCosts.cpp /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/terminal/examples/arenaSmarts/Smart_MaxArrivalsField.cpp /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/terminal/examples/arenaSmarts/Smart_ModelRunUntil1000Parts.cpp /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/terminal/examples/arenaSmarts/Smart_ModuleDisplayVariables.cpp /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/terminal/examples/arenaSmarts/Smart_OverlappingResources.cpp /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/terminal/examples/arenaSmarts/Smart_ParallelProcessingOfEntities.cpp /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/terminal/examples/arenaSmarts/Smart_PlacingEntitiesInQueueSets.cpp /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/terminal/examples/arenaSmarts/Smart_PriorityExample.cpp /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/terminal/examples/arenaSmarts/Smart_ProcessArena.cpp /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/terminal/examples/arenaSmarts/Smart_Record_Arena.cpp /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/terminal/examples/arenaSmarts/Smart_RemovingAndReorderingEntitiesInAQueue.cpp /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/terminal/examples/arenaSmarts/Smart_ResourceCosting.cpp /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/terminal/examples/arenaSmarts/Smart_ResourceScheduleCosting.cpp /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/terminal/examples/arenaSmarts/Smart_ResourceSets.cpp /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/terminal/examples/arenaSmarts/Smart_SeizingMultipleSimultaneosly.cpp /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/terminal/examples/arenaSmarts/Smart_SelectingRouteBasedOnProbability.cpp /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/terminal/examples/arenaSmarts/Smart_SelectingShorterQueue.cpp /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/terminal/examples/arenaSmarts/Smart_SynchronizingParallelEntities.cpp /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/terminal/examples/arenaSmarts/Smart_ValueAdded.cpp /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/terminal/examples/arenaSmarts/Smart_WaitForSignal.cpp /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/terminal/examples/book/Book_Cap02_Example01.cpp /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/terminal/examples/smarts/Smart_AssignWriteSeizes.cpp /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/terminal/examples/smarts/Smart_BatchSeparate.cpp /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/terminal/examples/smarts/Smart_Buffer.cpp /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/terminal/examples/smarts/Smart_Clone.cpp /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/terminal/examples/smarts/Smart_CppForG.cpp /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/terminal/examples/smarts/Smart_Delay.cpp /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/terminal/examples/smarts/Smart_Dummy.cpp /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/terminal/examples/smarts/Smart_Failures.cpp /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/terminal/examples/smarts/Smart_HoldSearchRemove.cpp /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/terminal/examples/smarts/Smart_LSODE.cpp /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/terminal/examples/smarts/Smart_MarkovChain.cpp /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/terminal/examples/smarts/Smart_ModelInfoModelSimulation.cpp /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/terminal/examples/smarts/Smart_ODE.cpp /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/terminal/examples/smarts/Smart_OnEvent.cpp /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/terminal/examples/smarts/Smart_Parser.cpp /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/terminal/examples/smarts/Smart_ParserModelFunctions.cpp /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/terminal/examples/smarts/Smart_Plugin.cpp /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/terminal/examples/smarts/Smart_Process.cpp /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/terminal/examples/smarts/Smart_ProcessSet.cpp /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/terminal/examples/smarts/Smart_Record.cpp /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/terminal/examples/smarts/Smart_RouteStation.cpp /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/terminal/examples/smarts/Smart_SeizeDelayRelease.cpp /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/terminal/examples/smarts/Smart_SeizeDelayReleaseMany.cpp /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/terminal/examples/smarts/Smart_SeizeDelayReleaseNoDataDefs.cpp /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/terminal/examples/smarts/Smart_Sequence.cpp /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/terminal/examples/smarts/Smart_SimulationControlResponse.cpp /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/terminal/examples/smarts/Smart_WaitScanCondition.cpp /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/terminal/examples/smarts/Smart_WaitSignal.cpp /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/terminal/examples/smarts/Smaty_DefaultModalModel.cpp /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/terminal/examples/teaching/AnElectronicAssemblyAndTestSystem.cpp /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/terminal/examples/teaching/ContinuousModel.cpp /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/terminal/examples/teaching/FullSimulationOfComplexModel.cpp /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/terminal/examples/teaching/Half_Adder.cpp /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/terminal/examples/teaching/Loja/Loja01.cpp /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/terminal/examples/teaching/OperatingSystem02.cpp /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/terminal/examples/teaching/OperatingSystem03.cpp /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/terminal/examples/teaching/Rectifier.cpp ../../codeeditor/CodeEditor.cpp ../../mainwindow_controller_on.cpp ../../mainwindow_scene.cpp ../../mainwindow_simulator.cpp ../../propertyeditor/DataComponentProperty.cpp ../../graphicals/ModelGraphicsScene.cpp ../../graphicals/ModelGraphicsView.cpp ../../propertyeditor/ObjectPropertyBrowser.cpp ../../propertyeditor/PropertyEditor.cpp ../../propertyeditor/DataComponentEditor.cpp ../../propertyeditor/ComboBoxEnum.cpp ../../actions/AddUndoCommand.cpp ../../actions/DeleteUndoCommand.cpp ../../actions/GroupUndoCommand.cpp ../../actions/MoveUndoCommand.cpp ../../actions/PasteUndoCommand.cpp ../../actions/UngroupUndoCommand.cpp ../../animations/AnimationCounter.cpp ../../animations/AnimationQueue.cpp ../../animations/AnimationTimer.cpp ../../animations/AnimationTransition.cpp ../../animations/AnimationVariable.cpp ../../dialogs/DialogFind.cpp ../../dialogs/DialogSelectCounter.cpp ../../dialogs/DialogSelectVariable.cpp ../../dialogs/DialogTimerConfigure.cpp ../../dialogs/Dialogmodelinformation.cpp ../../dialogs/dialogBreakpoint.cpp ../../dialogs/dialogpluginmanager.cpp ../../dialogs/dialogsimulationconfigure.cpp ../../dialogs/dialogsystempreferences.cpp ../../graphicals/GraphicalAnimateExpression.cpp ../../graphicals/GraphicalAssociation.cpp ../../graphicals/GraphicalComponentPort.cpp ../../graphicals/GraphicalConnection.cpp ../../graphicals/GraphicalDiagramConnection.cpp ../../graphicals/GraphicalImageAnimation.cpp ../../graphicals/GraphicalModelComponent.cpp ../../graphicals/GraphicalModelDataDefinition.cpp ../../main.cpp ../../mainwindow.cpp ../../propertyeditor/qtpropertybrowser/qtbuttonpropertybrowser.cpp ../../propertyeditor/qtpropertybrowser/qteditorfactory.cpp ../../propertyeditor/qtpropertybrowser/qtgroupboxpropertybrowser.cpp ../../propertyeditor/qtpropertybrowser/qtpropertybrowser.cpp ../../propertyeditor/qtpropertybrowser/qtpropertybrowserutils.cpp ../../propertyeditor/qtpropertybrowser/qtpropertymanager.cpp ../../propertyeditor/qtpropertybrowser/qttreepropertybrowser.cpp ../../propertyeditor/qtpropertybrowser/qtvariantproperty.cpp $(DISTDIR)/
 	$(COPY_FILE) --parents ../../dialogs/DialogTimerConfigure.ui ../../dialogs/Dialogmodelinformation.ui ../../dialogs/dialogBreakpoint.ui ../../dialogs/dialogpluginmanager.ui ../../dialogs/dialogsimulationconfigure.ui ../../dialogs/dialogsystempreferences.ui ../../mainwindow.ui $(DISTDIR)/
 	$(COPY_FILE) --parents ../../GenesysQtGUI_en_US.ts $(DISTDIR)/
 
@@ -2322,28 +2254,28 @@ qrc_GenesysQtGUI_resources.cpp: ../../GenesysQtGUI_resources.qrc \
 		../../resources/icons/pack2/ico/29.ico
 	/usr/lib/qt6/libexec/rcc -name GenesysQtGUI_resources ../../GenesysQtGUI_resources.qrc -o qrc_GenesysQtGUI_resources.cpp
 
-qrc_qtpropertybrowser.cpp: ../../qtpropertybrowser/qtpropertybrowser.qrc \
+qrc_qtpropertybrowser.cpp: ../../propertyeditor/qtpropertybrowser/qtpropertybrowser.qrc \
 		/usr/lib/qt6/libexec/rcc \
-		../../qtpropertybrowser/images/cursor-ibeam.png \
-		../../qtpropertybrowser/images/cursor-forbidden.png \
-		../../qtpropertybrowser/images/cursor-sizeb.png \
-		../../qtpropertybrowser/images/cursor-cross.png \
-		../../qtpropertybrowser/images/cursor-arrow.png \
-		../../qtpropertybrowser/images/cursor-sizeall.png \
-		../../qtpropertybrowser/images/cursor-wait.png \
-		../../qtpropertybrowser/images/cursor-sizeh.png \
-		../../qtpropertybrowser/images/cursor-openhand.png \
-		../../qtpropertybrowser/images/cursor-busy.png \
-		../../qtpropertybrowser/images/cursor-whatsthis.png \
-		../../qtpropertybrowser/images/cursor-uparrow.png \
-		../../qtpropertybrowser/images/cursor-sizef.png \
-		../../qtpropertybrowser/images/cursor-hsplit.png \
-		../../qtpropertybrowser/images/cursor-vsplit.png \
-		../../qtpropertybrowser/images/cursor-closedhand.png \
-		../../qtpropertybrowser/images/cursor-hand.png \
-		../../qtpropertybrowser/images/button-reset.ico \
-		../../qtpropertybrowser/images/cursor-sizev.png
-	/usr/lib/qt6/libexec/rcc -name qtpropertybrowser ../../qtpropertybrowser/qtpropertybrowser.qrc -o qrc_qtpropertybrowser.cpp
+		../../propertyeditor/qtpropertybrowser/images/cursor-ibeam.png \
+		../../propertyeditor/qtpropertybrowser/images/cursor-forbidden.png \
+		../../propertyeditor/qtpropertybrowser/images/cursor-sizeb.png \
+		../../propertyeditor/qtpropertybrowser/images/cursor-cross.png \
+		../../propertyeditor/qtpropertybrowser/images/cursor-arrow.png \
+		../../propertyeditor/qtpropertybrowser/images/cursor-sizeall.png \
+		../../propertyeditor/qtpropertybrowser/images/cursor-wait.png \
+		../../propertyeditor/qtpropertybrowser/images/cursor-sizeh.png \
+		../../propertyeditor/qtpropertybrowser/images/cursor-openhand.png \
+		../../propertyeditor/qtpropertybrowser/images/cursor-busy.png \
+		../../propertyeditor/qtpropertybrowser/images/cursor-whatsthis.png \
+		../../propertyeditor/qtpropertybrowser/images/cursor-uparrow.png \
+		../../propertyeditor/qtpropertybrowser/images/cursor-sizef.png \
+		../../propertyeditor/qtpropertybrowser/images/cursor-hsplit.png \
+		../../propertyeditor/qtpropertybrowser/images/cursor-vsplit.png \
+		../../propertyeditor/qtpropertybrowser/images/cursor-closedhand.png \
+		../../propertyeditor/qtpropertybrowser/images/cursor-hand.png \
+		../../propertyeditor/qtpropertybrowser/images/button-reset.ico \
+		../../propertyeditor/qtpropertybrowser/images/cursor-sizev.png
+	/usr/lib/qt6/libexec/rcc -name qtpropertybrowser ../../propertyeditor/qtpropertybrowser/qtpropertybrowser.qrc -o qrc_qtpropertybrowser.cpp
 
 qrc_qmake_qmake_qm_files.cpp: qmake_qmake_qm_files.qrc \
 		/usr/lib/qt6/libexec/rcc \
@@ -2359,17 +2291,17 @@ moc_predefs.h: /usr/lib/x86_64-linux-gnu/qt6/mkspecs/features/data/dummy.cpp
 compiler_moc_header_make_all: moc_CodeEditor.cpp moc_ObjectPropertyBrowser.cpp moc_DialogFind.cpp moc_DialogSelectCounter.cpp moc_DialogSelectVariable.cpp moc_DialogTimerConfigure.cpp moc_Dialogmodelinformation.cpp moc_dialogBreakpoint.cpp moc_dialogpluginmanager.cpp moc_dialogsimulationconfigure.cpp moc_dialogsystempreferences.cpp moc_mainwindow.cpp moc_qtbuttonpropertybrowser.cpp moc_qteditorfactory.cpp moc_qtgroupboxpropertybrowser.cpp moc_qtpropertybrowser.cpp moc_qtpropertybrowserutils_p.cpp moc_qtpropertymanager.cpp moc_qttreepropertybrowser.cpp moc_qtvariantproperty.cpp
 compiler_moc_header_clean:
 	-$(DEL_FILE) moc_CodeEditor.cpp moc_ObjectPropertyBrowser.cpp moc_DialogFind.cpp moc_DialogSelectCounter.cpp moc_DialogSelectVariable.cpp moc_DialogTimerConfigure.cpp moc_Dialogmodelinformation.cpp moc_dialogBreakpoint.cpp moc_dialogpluginmanager.cpp moc_dialogsimulationconfigure.cpp moc_dialogsystempreferences.cpp moc_mainwindow.cpp moc_qtbuttonpropertybrowser.cpp moc_qteditorfactory.cpp moc_qtgroupboxpropertybrowser.cpp moc_qtpropertybrowser.cpp moc_qtpropertybrowserutils_p.cpp moc_qtpropertymanager.cpp moc_qttreepropertybrowser.cpp moc_qtvariantproperty.cpp
-moc_CodeEditor.cpp: ../../CodeEditor.h \
+moc_CodeEditor.cpp: ../../codeeditor/CodeEditor.h \
 		moc_predefs.h \
 		/usr/lib/qt6/libexec/moc
-	/usr/lib/qt6/libexec/moc $(DEFINES) --include /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/gui/qt/GenesysQtGUI/build/debug/moc_predefs.h -I/usr/lib/x86_64-linux-gnu/qt6/mkspecs/linux-clang -I/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/gui/qt/GenesysQtGUI -I/usr/include/x86_64-linux-gnu/qt6 -I/usr/include/x86_64-linux-gnu/qt6/QtPrintSupport -I/usr/include/x86_64-linux-gnu/qt6/QtDesigner -I/usr/include/x86_64-linux-gnu/qt6/QtUiPlugin -I/usr/include/x86_64-linux-gnu/qt6/QtOpenGLWidgets -I/usr/include/x86_64-linux-gnu/qt6/QtWidgets -I/usr/include/x86_64-linux-gnu/qt6/QtOpenGL -I/usr/include/x86_64-linux-gnu/qt6/QtGui -I/usr/include/x86_64-linux-gnu/qt6/QtXml -I/usr/include/x86_64-linux-gnu/qt6/QtCore -I. -I/usr/include/c++/12 -I/usr/include/x86_64-linux-gnu/c++/12 -I/usr/include/c++/12/backward -I/usr/lib/gcc/x86_64-linux-gnu/12/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include ../../CodeEditor.h -o moc_CodeEditor.cpp
+	/usr/lib/qt6/libexec/moc $(DEFINES) --include /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/gui/qt/GenesysQtGUI/build/debug/moc_predefs.h -I/usr/lib/x86_64-linux-gnu/qt6/mkspecs/linux-clang -I/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/gui/qt/GenesysQtGUI -I/usr/include/x86_64-linux-gnu/qt6 -I/usr/include/x86_64-linux-gnu/qt6/QtPrintSupport -I/usr/include/x86_64-linux-gnu/qt6/QtDesigner -I/usr/include/x86_64-linux-gnu/qt6/QtUiPlugin -I/usr/include/x86_64-linux-gnu/qt6/QtOpenGLWidgets -I/usr/include/x86_64-linux-gnu/qt6/QtWidgets -I/usr/include/x86_64-linux-gnu/qt6/QtOpenGL -I/usr/include/x86_64-linux-gnu/qt6/QtGui -I/usr/include/x86_64-linux-gnu/qt6/QtXml -I/usr/include/x86_64-linux-gnu/qt6/QtCore -I. -I/usr/include/c++/12 -I/usr/include/x86_64-linux-gnu/c++/12 -I/usr/include/c++/12/backward -I/usr/lib/gcc/x86_64-linux-gnu/12/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include ../../codeeditor/CodeEditor.h -o moc_CodeEditor.cpp
 
-moc_ObjectPropertyBrowser.cpp: ../../ObjectPropertyBrowser.h \
-		../../qtpropertybrowser/qttreepropertybrowser.h \
-		../../qtpropertybrowser/qtpropertybrowser.h \
-		../../qtpropertybrowser/qtvariantproperty.h \
-		../../DataComponentProperty.h \
-		../../DataComponentEditor.h \
+moc_ObjectPropertyBrowser.cpp: ../../propertyeditor/ObjectPropertyBrowser.h \
+		../../propertyeditor/qtpropertybrowser/qttreepropertybrowser.h \
+		../../propertyeditor/qtpropertybrowser/qtpropertybrowser.h \
+		../../propertyeditor/qtpropertybrowser/qtvariantproperty.h \
+		../../propertyeditor/DataComponentProperty.h \
+		../../propertyeditor/DataComponentEditor.h \
 		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/PropertyGenesys.h \
 		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/SimulationControlAndResponse.h \
 		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/util/Util.h \
@@ -2389,10 +2321,10 @@ moc_ObjectPropertyBrowser.cpp: ../../ObjectPropertyBrowser.h \
 		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/statistics/Collector_if.h \
 		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/ModelDataManager.h \
 		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/ConnectionManager.h \
-		../../ComboBoxEnum.h \
+		../../propertyeditor/ComboBoxEnum.h \
 		moc_predefs.h \
 		/usr/lib/qt6/libexec/moc
-	/usr/lib/qt6/libexec/moc $(DEFINES) --include /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/gui/qt/GenesysQtGUI/build/debug/moc_predefs.h -I/usr/lib/x86_64-linux-gnu/qt6/mkspecs/linux-clang -I/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/gui/qt/GenesysQtGUI -I/usr/include/x86_64-linux-gnu/qt6 -I/usr/include/x86_64-linux-gnu/qt6/QtPrintSupport -I/usr/include/x86_64-linux-gnu/qt6/QtDesigner -I/usr/include/x86_64-linux-gnu/qt6/QtUiPlugin -I/usr/include/x86_64-linux-gnu/qt6/QtOpenGLWidgets -I/usr/include/x86_64-linux-gnu/qt6/QtWidgets -I/usr/include/x86_64-linux-gnu/qt6/QtOpenGL -I/usr/include/x86_64-linux-gnu/qt6/QtGui -I/usr/include/x86_64-linux-gnu/qt6/QtXml -I/usr/include/x86_64-linux-gnu/qt6/QtCore -I. -I/usr/include/c++/12 -I/usr/include/x86_64-linux-gnu/c++/12 -I/usr/include/c++/12/backward -I/usr/lib/gcc/x86_64-linux-gnu/12/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include ../../ObjectPropertyBrowser.h -o moc_ObjectPropertyBrowser.cpp
+	/usr/lib/qt6/libexec/moc $(DEFINES) --include /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/gui/qt/GenesysQtGUI/build/debug/moc_predefs.h -I/usr/lib/x86_64-linux-gnu/qt6/mkspecs/linux-clang -I/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/gui/qt/GenesysQtGUI -I/usr/include/x86_64-linux-gnu/qt6 -I/usr/include/x86_64-linux-gnu/qt6/QtPrintSupport -I/usr/include/x86_64-linux-gnu/qt6/QtDesigner -I/usr/include/x86_64-linux-gnu/qt6/QtUiPlugin -I/usr/include/x86_64-linux-gnu/qt6/QtOpenGLWidgets -I/usr/include/x86_64-linux-gnu/qt6/QtWidgets -I/usr/include/x86_64-linux-gnu/qt6/QtOpenGL -I/usr/include/x86_64-linux-gnu/qt6/QtGui -I/usr/include/x86_64-linux-gnu/qt6/QtXml -I/usr/include/x86_64-linux-gnu/qt6/QtCore -I. -I/usr/include/c++/12 -I/usr/include/x86_64-linux-gnu/c++/12 -I/usr/include/c++/12/backward -I/usr/lib/gcc/x86_64-linux-gnu/12/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include ../../propertyeditor/ObjectPropertyBrowser.h -o moc_ObjectPropertyBrowser.cpp
 
 moc_DialogFind.cpp: ../../dialogs/DialogFind.h \
 		../../graphicals/GraphicalModelComponent.h \
@@ -2419,13 +2351,13 @@ moc_DialogFind.cpp: ../../dialogs/DialogFind.h \
 		../../graphicals/GraphicalComponentPort.h \
 		../../TraitsGUI.h \
 		../../graphicals/GraphicalModelDataDefinition.h \
-		../../ModelGraphicsScene.h \
+		../../graphicals/ModelGraphicsScene.h \
 		../../graphicals/GraphicalDiagramConnection.h \
 		../../UtilGUI.h \
-		../../DataComponentProperty.h \
-		../../DataComponentEditor.h \
+		../../propertyeditor/DataComponentProperty.h \
+		../../propertyeditor/DataComponentEditor.h \
 		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/PropertyGenesys.h \
-		../../ComboBoxEnum.h \
+		../../propertyeditor/ComboBoxEnum.h \
 		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/Simulator.h \
 		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/Model.h \
 		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/Event.h \
@@ -2600,8 +2532,8 @@ moc_dialogsystempreferences.cpp: ../../dialogs/dialogsystempreferences.h \
 	/usr/lib/qt6/libexec/moc $(DEFINES) --include /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/gui/qt/GenesysQtGUI/build/debug/moc_predefs.h -I/usr/lib/x86_64-linux-gnu/qt6/mkspecs/linux-clang -I/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/gui/qt/GenesysQtGUI -I/usr/include/x86_64-linux-gnu/qt6 -I/usr/include/x86_64-linux-gnu/qt6/QtPrintSupport -I/usr/include/x86_64-linux-gnu/qt6/QtDesigner -I/usr/include/x86_64-linux-gnu/qt6/QtUiPlugin -I/usr/include/x86_64-linux-gnu/qt6/QtOpenGLWidgets -I/usr/include/x86_64-linux-gnu/qt6/QtWidgets -I/usr/include/x86_64-linux-gnu/qt6/QtOpenGL -I/usr/include/x86_64-linux-gnu/qt6/QtGui -I/usr/include/x86_64-linux-gnu/qt6/QtXml -I/usr/include/x86_64-linux-gnu/qt6/QtCore -I. -I/usr/include/c++/12 -I/usr/include/x86_64-linux-gnu/c++/12 -I/usr/include/c++/12/backward -I/usr/lib/gcc/x86_64-linux-gnu/12/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include ../../dialogs/dialogsystempreferences.h -o moc_dialogsystempreferences.cpp
 
 moc_mainwindow.cpp: ../../mainwindow.h \
-		../../DataComponentProperty.h \
-		../../DataComponentEditor.h \
+		../../propertyeditor/DataComponentProperty.h \
+		../../propertyeditor/DataComponentEditor.h \
 		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/PropertyGenesys.h \
 		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/SimulationControlAndResponse.h \
 		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/util/Util.h \
@@ -2621,7 +2553,7 @@ moc_mainwindow.cpp: ../../mainwindow.h \
 		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/statistics/Collector_if.h \
 		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/ModelDataManager.h \
 		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/ConnectionManager.h \
-		../../ComboBoxEnum.h \
+		../../propertyeditor/ComboBoxEnum.h \
 		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/Simulator.h \
 		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/Model.h \
 		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/Event.h \
@@ -2641,7 +2573,7 @@ moc_mainwindow.cpp: ../../mainwindow.h \
 		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/ParserManager.h \
 		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/ExperimentManager.h \
 		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/SimulationExperiment.h \
-		../../ModelGraphicsScene.h \
+		../../graphicals/ModelGraphicsScene.h \
 		../../graphicals/GraphicalModelComponent.h \
 		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/data/Queue.h \
 		../../graphicals/GraphicalImageAnimation.h \
@@ -2661,84 +2593,84 @@ moc_mainwindow.cpp: ../../mainwindow.h \
 		/usr/lib/qt6/libexec/moc
 	/usr/lib/qt6/libexec/moc $(DEFINES) --include /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/gui/qt/GenesysQtGUI/build/debug/moc_predefs.h -I/usr/lib/x86_64-linux-gnu/qt6/mkspecs/linux-clang -I/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/gui/qt/GenesysQtGUI -I/usr/include/x86_64-linux-gnu/qt6 -I/usr/include/x86_64-linux-gnu/qt6/QtPrintSupport -I/usr/include/x86_64-linux-gnu/qt6/QtDesigner -I/usr/include/x86_64-linux-gnu/qt6/QtUiPlugin -I/usr/include/x86_64-linux-gnu/qt6/QtOpenGLWidgets -I/usr/include/x86_64-linux-gnu/qt6/QtWidgets -I/usr/include/x86_64-linux-gnu/qt6/QtOpenGL -I/usr/include/x86_64-linux-gnu/qt6/QtGui -I/usr/include/x86_64-linux-gnu/qt6/QtXml -I/usr/include/x86_64-linux-gnu/qt6/QtCore -I. -I/usr/include/c++/12 -I/usr/include/x86_64-linux-gnu/c++/12 -I/usr/include/c++/12/backward -I/usr/lib/gcc/x86_64-linux-gnu/12/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include ../../mainwindow.h -o moc_mainwindow.cpp
 
-moc_qtbuttonpropertybrowser.cpp: ../../qtpropertybrowser/qtbuttonpropertybrowser.h \
-		../../qtpropertybrowser/qtpropertybrowser.h \
+moc_qtbuttonpropertybrowser.cpp: ../../propertyeditor/qtpropertybrowser/qtbuttonpropertybrowser.h \
+		../../propertyeditor/qtpropertybrowser/qtpropertybrowser.h \
 		moc_predefs.h \
 		/usr/lib/qt6/libexec/moc
-	/usr/lib/qt6/libexec/moc $(DEFINES) --include /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/gui/qt/GenesysQtGUI/build/debug/moc_predefs.h -I/usr/lib/x86_64-linux-gnu/qt6/mkspecs/linux-clang -I/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/gui/qt/GenesysQtGUI -I/usr/include/x86_64-linux-gnu/qt6 -I/usr/include/x86_64-linux-gnu/qt6/QtPrintSupport -I/usr/include/x86_64-linux-gnu/qt6/QtDesigner -I/usr/include/x86_64-linux-gnu/qt6/QtUiPlugin -I/usr/include/x86_64-linux-gnu/qt6/QtOpenGLWidgets -I/usr/include/x86_64-linux-gnu/qt6/QtWidgets -I/usr/include/x86_64-linux-gnu/qt6/QtOpenGL -I/usr/include/x86_64-linux-gnu/qt6/QtGui -I/usr/include/x86_64-linux-gnu/qt6/QtXml -I/usr/include/x86_64-linux-gnu/qt6/QtCore -I. -I/usr/include/c++/12 -I/usr/include/x86_64-linux-gnu/c++/12 -I/usr/include/c++/12/backward -I/usr/lib/gcc/x86_64-linux-gnu/12/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include ../../qtpropertybrowser/qtbuttonpropertybrowser.h -o moc_qtbuttonpropertybrowser.cpp
+	/usr/lib/qt6/libexec/moc $(DEFINES) --include /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/gui/qt/GenesysQtGUI/build/debug/moc_predefs.h -I/usr/lib/x86_64-linux-gnu/qt6/mkspecs/linux-clang -I/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/gui/qt/GenesysQtGUI -I/usr/include/x86_64-linux-gnu/qt6 -I/usr/include/x86_64-linux-gnu/qt6/QtPrintSupport -I/usr/include/x86_64-linux-gnu/qt6/QtDesigner -I/usr/include/x86_64-linux-gnu/qt6/QtUiPlugin -I/usr/include/x86_64-linux-gnu/qt6/QtOpenGLWidgets -I/usr/include/x86_64-linux-gnu/qt6/QtWidgets -I/usr/include/x86_64-linux-gnu/qt6/QtOpenGL -I/usr/include/x86_64-linux-gnu/qt6/QtGui -I/usr/include/x86_64-linux-gnu/qt6/QtXml -I/usr/include/x86_64-linux-gnu/qt6/QtCore -I. -I/usr/include/c++/12 -I/usr/include/x86_64-linux-gnu/c++/12 -I/usr/include/c++/12/backward -I/usr/lib/gcc/x86_64-linux-gnu/12/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include ../../propertyeditor/qtpropertybrowser/qtbuttonpropertybrowser.h -o moc_qtbuttonpropertybrowser.cpp
 
-moc_qteditorfactory.cpp: ../../qtpropertybrowser/qteditorfactory.h \
-		../../qtpropertybrowser/qtpropertymanager.h \
-		../../qtpropertybrowser/qtpropertybrowser.h \
+moc_qteditorfactory.cpp: ../../propertyeditor/qtpropertybrowser/qteditorfactory.h \
+		../../propertyeditor/qtpropertybrowser/qtpropertymanager.h \
+		../../propertyeditor/qtpropertybrowser/qtpropertybrowser.h \
 		moc_predefs.h \
 		/usr/lib/qt6/libexec/moc
-	/usr/lib/qt6/libexec/moc $(DEFINES) --include /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/gui/qt/GenesysQtGUI/build/debug/moc_predefs.h -I/usr/lib/x86_64-linux-gnu/qt6/mkspecs/linux-clang -I/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/gui/qt/GenesysQtGUI -I/usr/include/x86_64-linux-gnu/qt6 -I/usr/include/x86_64-linux-gnu/qt6/QtPrintSupport -I/usr/include/x86_64-linux-gnu/qt6/QtDesigner -I/usr/include/x86_64-linux-gnu/qt6/QtUiPlugin -I/usr/include/x86_64-linux-gnu/qt6/QtOpenGLWidgets -I/usr/include/x86_64-linux-gnu/qt6/QtWidgets -I/usr/include/x86_64-linux-gnu/qt6/QtOpenGL -I/usr/include/x86_64-linux-gnu/qt6/QtGui -I/usr/include/x86_64-linux-gnu/qt6/QtXml -I/usr/include/x86_64-linux-gnu/qt6/QtCore -I. -I/usr/include/c++/12 -I/usr/include/x86_64-linux-gnu/c++/12 -I/usr/include/c++/12/backward -I/usr/lib/gcc/x86_64-linux-gnu/12/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include ../../qtpropertybrowser/qteditorfactory.h -o moc_qteditorfactory.cpp
+	/usr/lib/qt6/libexec/moc $(DEFINES) --include /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/gui/qt/GenesysQtGUI/build/debug/moc_predefs.h -I/usr/lib/x86_64-linux-gnu/qt6/mkspecs/linux-clang -I/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/gui/qt/GenesysQtGUI -I/usr/include/x86_64-linux-gnu/qt6 -I/usr/include/x86_64-linux-gnu/qt6/QtPrintSupport -I/usr/include/x86_64-linux-gnu/qt6/QtDesigner -I/usr/include/x86_64-linux-gnu/qt6/QtUiPlugin -I/usr/include/x86_64-linux-gnu/qt6/QtOpenGLWidgets -I/usr/include/x86_64-linux-gnu/qt6/QtWidgets -I/usr/include/x86_64-linux-gnu/qt6/QtOpenGL -I/usr/include/x86_64-linux-gnu/qt6/QtGui -I/usr/include/x86_64-linux-gnu/qt6/QtXml -I/usr/include/x86_64-linux-gnu/qt6/QtCore -I. -I/usr/include/c++/12 -I/usr/include/x86_64-linux-gnu/c++/12 -I/usr/include/c++/12/backward -I/usr/lib/gcc/x86_64-linux-gnu/12/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include ../../propertyeditor/qtpropertybrowser/qteditorfactory.h -o moc_qteditorfactory.cpp
 
-moc_qtgroupboxpropertybrowser.cpp: ../../qtpropertybrowser/qtgroupboxpropertybrowser.h \
-		../../qtpropertybrowser/qtpropertybrowser.h \
+moc_qtgroupboxpropertybrowser.cpp: ../../propertyeditor/qtpropertybrowser/qtgroupboxpropertybrowser.h \
+		../../propertyeditor/qtpropertybrowser/qtpropertybrowser.h \
 		moc_predefs.h \
 		/usr/lib/qt6/libexec/moc
-	/usr/lib/qt6/libexec/moc $(DEFINES) --include /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/gui/qt/GenesysQtGUI/build/debug/moc_predefs.h -I/usr/lib/x86_64-linux-gnu/qt6/mkspecs/linux-clang -I/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/gui/qt/GenesysQtGUI -I/usr/include/x86_64-linux-gnu/qt6 -I/usr/include/x86_64-linux-gnu/qt6/QtPrintSupport -I/usr/include/x86_64-linux-gnu/qt6/QtDesigner -I/usr/include/x86_64-linux-gnu/qt6/QtUiPlugin -I/usr/include/x86_64-linux-gnu/qt6/QtOpenGLWidgets -I/usr/include/x86_64-linux-gnu/qt6/QtWidgets -I/usr/include/x86_64-linux-gnu/qt6/QtOpenGL -I/usr/include/x86_64-linux-gnu/qt6/QtGui -I/usr/include/x86_64-linux-gnu/qt6/QtXml -I/usr/include/x86_64-linux-gnu/qt6/QtCore -I. -I/usr/include/c++/12 -I/usr/include/x86_64-linux-gnu/c++/12 -I/usr/include/c++/12/backward -I/usr/lib/gcc/x86_64-linux-gnu/12/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include ../../qtpropertybrowser/qtgroupboxpropertybrowser.h -o moc_qtgroupboxpropertybrowser.cpp
+	/usr/lib/qt6/libexec/moc $(DEFINES) --include /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/gui/qt/GenesysQtGUI/build/debug/moc_predefs.h -I/usr/lib/x86_64-linux-gnu/qt6/mkspecs/linux-clang -I/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/gui/qt/GenesysQtGUI -I/usr/include/x86_64-linux-gnu/qt6 -I/usr/include/x86_64-linux-gnu/qt6/QtPrintSupport -I/usr/include/x86_64-linux-gnu/qt6/QtDesigner -I/usr/include/x86_64-linux-gnu/qt6/QtUiPlugin -I/usr/include/x86_64-linux-gnu/qt6/QtOpenGLWidgets -I/usr/include/x86_64-linux-gnu/qt6/QtWidgets -I/usr/include/x86_64-linux-gnu/qt6/QtOpenGL -I/usr/include/x86_64-linux-gnu/qt6/QtGui -I/usr/include/x86_64-linux-gnu/qt6/QtXml -I/usr/include/x86_64-linux-gnu/qt6/QtCore -I. -I/usr/include/c++/12 -I/usr/include/x86_64-linux-gnu/c++/12 -I/usr/include/c++/12/backward -I/usr/lib/gcc/x86_64-linux-gnu/12/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include ../../propertyeditor/qtpropertybrowser/qtgroupboxpropertybrowser.h -o moc_qtgroupboxpropertybrowser.cpp
 
-moc_qtpropertybrowser.cpp: ../../qtpropertybrowser/qtpropertybrowser.h \
+moc_qtpropertybrowser.cpp: ../../propertyeditor/qtpropertybrowser/qtpropertybrowser.h \
 		moc_predefs.h \
 		/usr/lib/qt6/libexec/moc
-	/usr/lib/qt6/libexec/moc $(DEFINES) --include /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/gui/qt/GenesysQtGUI/build/debug/moc_predefs.h -I/usr/lib/x86_64-linux-gnu/qt6/mkspecs/linux-clang -I/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/gui/qt/GenesysQtGUI -I/usr/include/x86_64-linux-gnu/qt6 -I/usr/include/x86_64-linux-gnu/qt6/QtPrintSupport -I/usr/include/x86_64-linux-gnu/qt6/QtDesigner -I/usr/include/x86_64-linux-gnu/qt6/QtUiPlugin -I/usr/include/x86_64-linux-gnu/qt6/QtOpenGLWidgets -I/usr/include/x86_64-linux-gnu/qt6/QtWidgets -I/usr/include/x86_64-linux-gnu/qt6/QtOpenGL -I/usr/include/x86_64-linux-gnu/qt6/QtGui -I/usr/include/x86_64-linux-gnu/qt6/QtXml -I/usr/include/x86_64-linux-gnu/qt6/QtCore -I. -I/usr/include/c++/12 -I/usr/include/x86_64-linux-gnu/c++/12 -I/usr/include/c++/12/backward -I/usr/lib/gcc/x86_64-linux-gnu/12/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include ../../qtpropertybrowser/qtpropertybrowser.h -o moc_qtpropertybrowser.cpp
+	/usr/lib/qt6/libexec/moc $(DEFINES) --include /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/gui/qt/GenesysQtGUI/build/debug/moc_predefs.h -I/usr/lib/x86_64-linux-gnu/qt6/mkspecs/linux-clang -I/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/gui/qt/GenesysQtGUI -I/usr/include/x86_64-linux-gnu/qt6 -I/usr/include/x86_64-linux-gnu/qt6/QtPrintSupport -I/usr/include/x86_64-linux-gnu/qt6/QtDesigner -I/usr/include/x86_64-linux-gnu/qt6/QtUiPlugin -I/usr/include/x86_64-linux-gnu/qt6/QtOpenGLWidgets -I/usr/include/x86_64-linux-gnu/qt6/QtWidgets -I/usr/include/x86_64-linux-gnu/qt6/QtOpenGL -I/usr/include/x86_64-linux-gnu/qt6/QtGui -I/usr/include/x86_64-linux-gnu/qt6/QtXml -I/usr/include/x86_64-linux-gnu/qt6/QtCore -I. -I/usr/include/c++/12 -I/usr/include/x86_64-linux-gnu/c++/12 -I/usr/include/c++/12/backward -I/usr/lib/gcc/x86_64-linux-gnu/12/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include ../../propertyeditor/qtpropertybrowser/qtpropertybrowser.h -o moc_qtpropertybrowser.cpp
 
-moc_qtpropertybrowserutils_p.cpp: ../../qtpropertybrowser/qtpropertybrowserutils_p.h \
+moc_qtpropertybrowserutils_p.cpp: ../../propertyeditor/qtpropertybrowser/qtpropertybrowserutils_p.h \
 		moc_predefs.h \
 		/usr/lib/qt6/libexec/moc
-	/usr/lib/qt6/libexec/moc $(DEFINES) --include /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/gui/qt/GenesysQtGUI/build/debug/moc_predefs.h -I/usr/lib/x86_64-linux-gnu/qt6/mkspecs/linux-clang -I/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/gui/qt/GenesysQtGUI -I/usr/include/x86_64-linux-gnu/qt6 -I/usr/include/x86_64-linux-gnu/qt6/QtPrintSupport -I/usr/include/x86_64-linux-gnu/qt6/QtDesigner -I/usr/include/x86_64-linux-gnu/qt6/QtUiPlugin -I/usr/include/x86_64-linux-gnu/qt6/QtOpenGLWidgets -I/usr/include/x86_64-linux-gnu/qt6/QtWidgets -I/usr/include/x86_64-linux-gnu/qt6/QtOpenGL -I/usr/include/x86_64-linux-gnu/qt6/QtGui -I/usr/include/x86_64-linux-gnu/qt6/QtXml -I/usr/include/x86_64-linux-gnu/qt6/QtCore -I. -I/usr/include/c++/12 -I/usr/include/x86_64-linux-gnu/c++/12 -I/usr/include/c++/12/backward -I/usr/lib/gcc/x86_64-linux-gnu/12/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include ../../qtpropertybrowser/qtpropertybrowserutils_p.h -o moc_qtpropertybrowserutils_p.cpp
+	/usr/lib/qt6/libexec/moc $(DEFINES) --include /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/gui/qt/GenesysQtGUI/build/debug/moc_predefs.h -I/usr/lib/x86_64-linux-gnu/qt6/mkspecs/linux-clang -I/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/gui/qt/GenesysQtGUI -I/usr/include/x86_64-linux-gnu/qt6 -I/usr/include/x86_64-linux-gnu/qt6/QtPrintSupport -I/usr/include/x86_64-linux-gnu/qt6/QtDesigner -I/usr/include/x86_64-linux-gnu/qt6/QtUiPlugin -I/usr/include/x86_64-linux-gnu/qt6/QtOpenGLWidgets -I/usr/include/x86_64-linux-gnu/qt6/QtWidgets -I/usr/include/x86_64-linux-gnu/qt6/QtOpenGL -I/usr/include/x86_64-linux-gnu/qt6/QtGui -I/usr/include/x86_64-linux-gnu/qt6/QtXml -I/usr/include/x86_64-linux-gnu/qt6/QtCore -I. -I/usr/include/c++/12 -I/usr/include/x86_64-linux-gnu/c++/12 -I/usr/include/c++/12/backward -I/usr/lib/gcc/x86_64-linux-gnu/12/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include ../../propertyeditor/qtpropertybrowser/qtpropertybrowserutils_p.h -o moc_qtpropertybrowserutils_p.cpp
 
-moc_qtpropertymanager.cpp: ../../qtpropertybrowser/qtpropertymanager.h \
-		../../qtpropertybrowser/qtpropertybrowser.h \
+moc_qtpropertymanager.cpp: ../../propertyeditor/qtpropertybrowser/qtpropertymanager.h \
+		../../propertyeditor/qtpropertybrowser/qtpropertybrowser.h \
 		moc_predefs.h \
 		/usr/lib/qt6/libexec/moc
-	/usr/lib/qt6/libexec/moc $(DEFINES) --include /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/gui/qt/GenesysQtGUI/build/debug/moc_predefs.h -I/usr/lib/x86_64-linux-gnu/qt6/mkspecs/linux-clang -I/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/gui/qt/GenesysQtGUI -I/usr/include/x86_64-linux-gnu/qt6 -I/usr/include/x86_64-linux-gnu/qt6/QtPrintSupport -I/usr/include/x86_64-linux-gnu/qt6/QtDesigner -I/usr/include/x86_64-linux-gnu/qt6/QtUiPlugin -I/usr/include/x86_64-linux-gnu/qt6/QtOpenGLWidgets -I/usr/include/x86_64-linux-gnu/qt6/QtWidgets -I/usr/include/x86_64-linux-gnu/qt6/QtOpenGL -I/usr/include/x86_64-linux-gnu/qt6/QtGui -I/usr/include/x86_64-linux-gnu/qt6/QtXml -I/usr/include/x86_64-linux-gnu/qt6/QtCore -I. -I/usr/include/c++/12 -I/usr/include/x86_64-linux-gnu/c++/12 -I/usr/include/c++/12/backward -I/usr/lib/gcc/x86_64-linux-gnu/12/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include ../../qtpropertybrowser/qtpropertymanager.h -o moc_qtpropertymanager.cpp
+	/usr/lib/qt6/libexec/moc $(DEFINES) --include /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/gui/qt/GenesysQtGUI/build/debug/moc_predefs.h -I/usr/lib/x86_64-linux-gnu/qt6/mkspecs/linux-clang -I/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/gui/qt/GenesysQtGUI -I/usr/include/x86_64-linux-gnu/qt6 -I/usr/include/x86_64-linux-gnu/qt6/QtPrintSupport -I/usr/include/x86_64-linux-gnu/qt6/QtDesigner -I/usr/include/x86_64-linux-gnu/qt6/QtUiPlugin -I/usr/include/x86_64-linux-gnu/qt6/QtOpenGLWidgets -I/usr/include/x86_64-linux-gnu/qt6/QtWidgets -I/usr/include/x86_64-linux-gnu/qt6/QtOpenGL -I/usr/include/x86_64-linux-gnu/qt6/QtGui -I/usr/include/x86_64-linux-gnu/qt6/QtXml -I/usr/include/x86_64-linux-gnu/qt6/QtCore -I. -I/usr/include/c++/12 -I/usr/include/x86_64-linux-gnu/c++/12 -I/usr/include/c++/12/backward -I/usr/lib/gcc/x86_64-linux-gnu/12/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include ../../propertyeditor/qtpropertybrowser/qtpropertymanager.h -o moc_qtpropertymanager.cpp
 
-moc_qttreepropertybrowser.cpp: ../../qtpropertybrowser/qttreepropertybrowser.h \
-		../../qtpropertybrowser/qtpropertybrowser.h \
+moc_qttreepropertybrowser.cpp: ../../propertyeditor/qtpropertybrowser/qttreepropertybrowser.h \
+		../../propertyeditor/qtpropertybrowser/qtpropertybrowser.h \
 		moc_predefs.h \
 		/usr/lib/qt6/libexec/moc
-	/usr/lib/qt6/libexec/moc $(DEFINES) --include /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/gui/qt/GenesysQtGUI/build/debug/moc_predefs.h -I/usr/lib/x86_64-linux-gnu/qt6/mkspecs/linux-clang -I/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/gui/qt/GenesysQtGUI -I/usr/include/x86_64-linux-gnu/qt6 -I/usr/include/x86_64-linux-gnu/qt6/QtPrintSupport -I/usr/include/x86_64-linux-gnu/qt6/QtDesigner -I/usr/include/x86_64-linux-gnu/qt6/QtUiPlugin -I/usr/include/x86_64-linux-gnu/qt6/QtOpenGLWidgets -I/usr/include/x86_64-linux-gnu/qt6/QtWidgets -I/usr/include/x86_64-linux-gnu/qt6/QtOpenGL -I/usr/include/x86_64-linux-gnu/qt6/QtGui -I/usr/include/x86_64-linux-gnu/qt6/QtXml -I/usr/include/x86_64-linux-gnu/qt6/QtCore -I. -I/usr/include/c++/12 -I/usr/include/x86_64-linux-gnu/c++/12 -I/usr/include/c++/12/backward -I/usr/lib/gcc/x86_64-linux-gnu/12/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include ../../qtpropertybrowser/qttreepropertybrowser.h -o moc_qttreepropertybrowser.cpp
+	/usr/lib/qt6/libexec/moc $(DEFINES) --include /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/gui/qt/GenesysQtGUI/build/debug/moc_predefs.h -I/usr/lib/x86_64-linux-gnu/qt6/mkspecs/linux-clang -I/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/gui/qt/GenesysQtGUI -I/usr/include/x86_64-linux-gnu/qt6 -I/usr/include/x86_64-linux-gnu/qt6/QtPrintSupport -I/usr/include/x86_64-linux-gnu/qt6/QtDesigner -I/usr/include/x86_64-linux-gnu/qt6/QtUiPlugin -I/usr/include/x86_64-linux-gnu/qt6/QtOpenGLWidgets -I/usr/include/x86_64-linux-gnu/qt6/QtWidgets -I/usr/include/x86_64-linux-gnu/qt6/QtOpenGL -I/usr/include/x86_64-linux-gnu/qt6/QtGui -I/usr/include/x86_64-linux-gnu/qt6/QtXml -I/usr/include/x86_64-linux-gnu/qt6/QtCore -I. -I/usr/include/c++/12 -I/usr/include/x86_64-linux-gnu/c++/12 -I/usr/include/c++/12/backward -I/usr/lib/gcc/x86_64-linux-gnu/12/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include ../../propertyeditor/qtpropertybrowser/qttreepropertybrowser.h -o moc_qttreepropertybrowser.cpp
 
-moc_qtvariantproperty.cpp: ../../qtpropertybrowser/qtvariantproperty.h \
-		../../qtpropertybrowser/qtpropertybrowser.h \
+moc_qtvariantproperty.cpp: ../../propertyeditor/qtpropertybrowser/qtvariantproperty.h \
+		../../propertyeditor/qtpropertybrowser/qtpropertybrowser.h \
 		moc_predefs.h \
 		/usr/lib/qt6/libexec/moc
-	/usr/lib/qt6/libexec/moc $(DEFINES) --include /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/gui/qt/GenesysQtGUI/build/debug/moc_predefs.h -I/usr/lib/x86_64-linux-gnu/qt6/mkspecs/linux-clang -I/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/gui/qt/GenesysQtGUI -I/usr/include/x86_64-linux-gnu/qt6 -I/usr/include/x86_64-linux-gnu/qt6/QtPrintSupport -I/usr/include/x86_64-linux-gnu/qt6/QtDesigner -I/usr/include/x86_64-linux-gnu/qt6/QtUiPlugin -I/usr/include/x86_64-linux-gnu/qt6/QtOpenGLWidgets -I/usr/include/x86_64-linux-gnu/qt6/QtWidgets -I/usr/include/x86_64-linux-gnu/qt6/QtOpenGL -I/usr/include/x86_64-linux-gnu/qt6/QtGui -I/usr/include/x86_64-linux-gnu/qt6/QtXml -I/usr/include/x86_64-linux-gnu/qt6/QtCore -I. -I/usr/include/c++/12 -I/usr/include/x86_64-linux-gnu/c++/12 -I/usr/include/c++/12/backward -I/usr/lib/gcc/x86_64-linux-gnu/12/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include ../../qtpropertybrowser/qtvariantproperty.h -o moc_qtvariantproperty.cpp
+	/usr/lib/qt6/libexec/moc $(DEFINES) --include /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/gui/qt/GenesysQtGUI/build/debug/moc_predefs.h -I/usr/lib/x86_64-linux-gnu/qt6/mkspecs/linux-clang -I/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/gui/qt/GenesysQtGUI -I/usr/include/x86_64-linux-gnu/qt6 -I/usr/include/x86_64-linux-gnu/qt6/QtPrintSupport -I/usr/include/x86_64-linux-gnu/qt6/QtDesigner -I/usr/include/x86_64-linux-gnu/qt6/QtUiPlugin -I/usr/include/x86_64-linux-gnu/qt6/QtOpenGLWidgets -I/usr/include/x86_64-linux-gnu/qt6/QtWidgets -I/usr/include/x86_64-linux-gnu/qt6/QtOpenGL -I/usr/include/x86_64-linux-gnu/qt6/QtGui -I/usr/include/x86_64-linux-gnu/qt6/QtXml -I/usr/include/x86_64-linux-gnu/qt6/QtCore -I. -I/usr/include/c++/12 -I/usr/include/x86_64-linux-gnu/c++/12 -I/usr/include/c++/12/backward -I/usr/lib/gcc/x86_64-linux-gnu/12/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include ../../propertyeditor/qtpropertybrowser/qtvariantproperty.h -o moc_qtvariantproperty.cpp
 
 compiler_moc_objc_header_make_all:
 compiler_moc_objc_header_clean:
 compiler_moc_source_make_all: qteditorfactory.moc qtpropertymanager.moc qttreepropertybrowser.moc
 compiler_moc_source_clean:
 	-$(DEL_FILE) qteditorfactory.moc qtpropertymanager.moc qttreepropertybrowser.moc
-qteditorfactory.moc: ../../qtpropertybrowser/qteditorfactory.cpp \
-		../../qtpropertybrowser/qteditorfactory.h \
-		../../qtpropertybrowser/qtpropertymanager.h \
-		../../qtpropertybrowser/qtpropertybrowser.h \
-		../../qtpropertybrowser/qtpropertybrowserutils_p.h \
+qteditorfactory.moc: ../../propertyeditor/qtpropertybrowser/qteditorfactory.cpp \
+		../../propertyeditor/qtpropertybrowser/qteditorfactory.h \
+		../../propertyeditor/qtpropertybrowser/qtpropertymanager.h \
+		../../propertyeditor/qtpropertybrowser/qtpropertybrowser.h \
+		../../propertyeditor/qtpropertybrowser/qtpropertybrowserutils_p.h \
 		moc_qteditorfactory.cpp \
 		moc_predefs.h \
 		/usr/lib/qt6/libexec/moc
-	/usr/lib/qt6/libexec/moc $(DEFINES) --include /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/gui/qt/GenesysQtGUI/build/debug/moc_predefs.h -I/usr/lib/x86_64-linux-gnu/qt6/mkspecs/linux-clang -I/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/gui/qt/GenesysQtGUI -I/usr/include/x86_64-linux-gnu/qt6 -I/usr/include/x86_64-linux-gnu/qt6/QtPrintSupport -I/usr/include/x86_64-linux-gnu/qt6/QtDesigner -I/usr/include/x86_64-linux-gnu/qt6/QtUiPlugin -I/usr/include/x86_64-linux-gnu/qt6/QtOpenGLWidgets -I/usr/include/x86_64-linux-gnu/qt6/QtWidgets -I/usr/include/x86_64-linux-gnu/qt6/QtOpenGL -I/usr/include/x86_64-linux-gnu/qt6/QtGui -I/usr/include/x86_64-linux-gnu/qt6/QtXml -I/usr/include/x86_64-linux-gnu/qt6/QtCore -I. -I/usr/include/c++/12 -I/usr/include/x86_64-linux-gnu/c++/12 -I/usr/include/c++/12/backward -I/usr/lib/gcc/x86_64-linux-gnu/12/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include ../../qtpropertybrowser/qteditorfactory.cpp -o qteditorfactory.moc
+	/usr/lib/qt6/libexec/moc $(DEFINES) --include /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/gui/qt/GenesysQtGUI/build/debug/moc_predefs.h -I/usr/lib/x86_64-linux-gnu/qt6/mkspecs/linux-clang -I/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/gui/qt/GenesysQtGUI -I/usr/include/x86_64-linux-gnu/qt6 -I/usr/include/x86_64-linux-gnu/qt6/QtPrintSupport -I/usr/include/x86_64-linux-gnu/qt6/QtDesigner -I/usr/include/x86_64-linux-gnu/qt6/QtUiPlugin -I/usr/include/x86_64-linux-gnu/qt6/QtOpenGLWidgets -I/usr/include/x86_64-linux-gnu/qt6/QtWidgets -I/usr/include/x86_64-linux-gnu/qt6/QtOpenGL -I/usr/include/x86_64-linux-gnu/qt6/QtGui -I/usr/include/x86_64-linux-gnu/qt6/QtXml -I/usr/include/x86_64-linux-gnu/qt6/QtCore -I. -I/usr/include/c++/12 -I/usr/include/x86_64-linux-gnu/c++/12 -I/usr/include/c++/12/backward -I/usr/lib/gcc/x86_64-linux-gnu/12/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include ../../propertyeditor/qtpropertybrowser/qteditorfactory.cpp -o qteditorfactory.moc
 
-qtpropertymanager.moc: ../../qtpropertybrowser/qtpropertymanager.cpp \
-		../../qtpropertybrowser/qtpropertymanager.h \
-		../../qtpropertybrowser/qtpropertybrowser.h \
-		../../qtpropertybrowser/qtpropertybrowserutils_p.h \
+qtpropertymanager.moc: ../../propertyeditor/qtpropertybrowser/qtpropertymanager.cpp \
+		../../propertyeditor/qtpropertybrowser/qtpropertymanager.h \
+		../../propertyeditor/qtpropertybrowser/qtpropertybrowser.h \
+		../../propertyeditor/qtpropertybrowser/qtpropertybrowserutils_p.h \
 		moc_qtpropertymanager.cpp \
 		moc_predefs.h \
 		/usr/lib/qt6/libexec/moc
-	/usr/lib/qt6/libexec/moc $(DEFINES) --include /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/gui/qt/GenesysQtGUI/build/debug/moc_predefs.h -I/usr/lib/x86_64-linux-gnu/qt6/mkspecs/linux-clang -I/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/gui/qt/GenesysQtGUI -I/usr/include/x86_64-linux-gnu/qt6 -I/usr/include/x86_64-linux-gnu/qt6/QtPrintSupport -I/usr/include/x86_64-linux-gnu/qt6/QtDesigner -I/usr/include/x86_64-linux-gnu/qt6/QtUiPlugin -I/usr/include/x86_64-linux-gnu/qt6/QtOpenGLWidgets -I/usr/include/x86_64-linux-gnu/qt6/QtWidgets -I/usr/include/x86_64-linux-gnu/qt6/QtOpenGL -I/usr/include/x86_64-linux-gnu/qt6/QtGui -I/usr/include/x86_64-linux-gnu/qt6/QtXml -I/usr/include/x86_64-linux-gnu/qt6/QtCore -I. -I/usr/include/c++/12 -I/usr/include/x86_64-linux-gnu/c++/12 -I/usr/include/c++/12/backward -I/usr/lib/gcc/x86_64-linux-gnu/12/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include ../../qtpropertybrowser/qtpropertymanager.cpp -o qtpropertymanager.moc
+	/usr/lib/qt6/libexec/moc $(DEFINES) --include /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/gui/qt/GenesysQtGUI/build/debug/moc_predefs.h -I/usr/lib/x86_64-linux-gnu/qt6/mkspecs/linux-clang -I/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/gui/qt/GenesysQtGUI -I/usr/include/x86_64-linux-gnu/qt6 -I/usr/include/x86_64-linux-gnu/qt6/QtPrintSupport -I/usr/include/x86_64-linux-gnu/qt6/QtDesigner -I/usr/include/x86_64-linux-gnu/qt6/QtUiPlugin -I/usr/include/x86_64-linux-gnu/qt6/QtOpenGLWidgets -I/usr/include/x86_64-linux-gnu/qt6/QtWidgets -I/usr/include/x86_64-linux-gnu/qt6/QtOpenGL -I/usr/include/x86_64-linux-gnu/qt6/QtGui -I/usr/include/x86_64-linux-gnu/qt6/QtXml -I/usr/include/x86_64-linux-gnu/qt6/QtCore -I. -I/usr/include/c++/12 -I/usr/include/x86_64-linux-gnu/c++/12 -I/usr/include/c++/12/backward -I/usr/lib/gcc/x86_64-linux-gnu/12/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include ../../propertyeditor/qtpropertybrowser/qtpropertymanager.cpp -o qtpropertymanager.moc
 
-qttreepropertybrowser.moc: ../../qtpropertybrowser/qttreepropertybrowser.cpp \
-		../../qtpropertybrowser/qttreepropertybrowser.h \
-		../../qtpropertybrowser/qtpropertybrowser.h \
+qttreepropertybrowser.moc: ../../propertyeditor/qtpropertybrowser/qttreepropertybrowser.cpp \
+		../../propertyeditor/qtpropertybrowser/qttreepropertybrowser.h \
+		../../propertyeditor/qtpropertybrowser/qtpropertybrowser.h \
 		moc_qttreepropertybrowser.cpp \
 		moc_predefs.h \
 		/usr/lib/qt6/libexec/moc
-	/usr/lib/qt6/libexec/moc $(DEFINES) --include /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/gui/qt/GenesysQtGUI/build/debug/moc_predefs.h -I/usr/lib/x86_64-linux-gnu/qt6/mkspecs/linux-clang -I/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/gui/qt/GenesysQtGUI -I/usr/include/x86_64-linux-gnu/qt6 -I/usr/include/x86_64-linux-gnu/qt6/QtPrintSupport -I/usr/include/x86_64-linux-gnu/qt6/QtDesigner -I/usr/include/x86_64-linux-gnu/qt6/QtUiPlugin -I/usr/include/x86_64-linux-gnu/qt6/QtOpenGLWidgets -I/usr/include/x86_64-linux-gnu/qt6/QtWidgets -I/usr/include/x86_64-linux-gnu/qt6/QtOpenGL -I/usr/include/x86_64-linux-gnu/qt6/QtGui -I/usr/include/x86_64-linux-gnu/qt6/QtXml -I/usr/include/x86_64-linux-gnu/qt6/QtCore -I. -I/usr/include/c++/12 -I/usr/include/x86_64-linux-gnu/c++/12 -I/usr/include/c++/12/backward -I/usr/lib/gcc/x86_64-linux-gnu/12/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include ../../qtpropertybrowser/qttreepropertybrowser.cpp -o qttreepropertybrowser.moc
+	/usr/lib/qt6/libexec/moc $(DEFINES) --include /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/gui/qt/GenesysQtGUI/build/debug/moc_predefs.h -I/usr/lib/x86_64-linux-gnu/qt6/mkspecs/linux-clang -I/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/gui/qt/GenesysQtGUI -I/usr/include/x86_64-linux-gnu/qt6 -I/usr/include/x86_64-linux-gnu/qt6/QtPrintSupport -I/usr/include/x86_64-linux-gnu/qt6/QtDesigner -I/usr/include/x86_64-linux-gnu/qt6/QtUiPlugin -I/usr/include/x86_64-linux-gnu/qt6/QtOpenGLWidgets -I/usr/include/x86_64-linux-gnu/qt6/QtWidgets -I/usr/include/x86_64-linux-gnu/qt6/QtOpenGL -I/usr/include/x86_64-linux-gnu/qt6/QtGui -I/usr/include/x86_64-linux-gnu/qt6/QtXml -I/usr/include/x86_64-linux-gnu/qt6/QtCore -I. -I/usr/include/c++/12 -I/usr/include/x86_64-linux-gnu/c++/12 -I/usr/include/c++/12/backward -I/usr/lib/gcc/x86_64-linux-gnu/12/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include ../../propertyeditor/qtpropertybrowser/qttreepropertybrowser.cpp -o qttreepropertybrowser.moc
 
 compiler_uic_make_all: ui_DialogTimerConfigure.h ui_Dialogmodelinformation.h ui_dialogBreakpoint.h ui_dialogpluginmanager.h ui_dialogsimulationconfigure.h ui_dialogsystempreferences.h ui_mainwindow.h
 compiler_uic_clean:
@@ -2769,10 +2701,10 @@ ui_dialogsystempreferences.h: ../../dialogs/dialogsystempreferences.ui \
 
 ui_mainwindow.h: ../../mainwindow.ui \
 		/usr/lib/qt6/libexec/uic \
-		../../ModelGraphicsView.h \
-		../../CodeEditor.h \
-		../../ObjectPropertyBrowser.h \
-		../../ModelGraphicsScene.h \
+		../../graphicals/ModelGraphicsView.h \
+		../../codeeditor/CodeEditor.h \
+		../../propertyeditor/ObjectPropertyBrowser.h \
+		../../graphicals/ModelGraphicsScene.h \
 		../../graphicals/GraphicalModelComponent.h \
 		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/ModelComponent.h \
 		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/Plugin.h \
@@ -2799,10 +2731,10 @@ ui_mainwindow.h: ../../mainwindow.ui \
 		../../graphicals/GraphicalModelDataDefinition.h \
 		../../graphicals/GraphicalDiagramConnection.h \
 		../../UtilGUI.h \
-		../../DataComponentProperty.h \
-		../../DataComponentEditor.h \
+		../../propertyeditor/DataComponentProperty.h \
+		../../propertyeditor/DataComponentEditor.h \
 		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/PropertyGenesys.h \
-		../../ComboBoxEnum.h \
+		../../propertyeditor/ComboBoxEnum.h \
 		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/Simulator.h \
 		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/Model.h \
 		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/Event.h \
@@ -2829,11 +2761,11 @@ ui_mainwindow.h: ../../mainwindow.ui \
 		../../animations/AnimationCounter.h \
 		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/Counter.h \
 		../../animations/AnimationTimer.h \
-		../../qtpropertybrowser/qttreepropertybrowser.h \
-		../../qtpropertybrowser/qtpropertybrowser.h \
-		../../qtpropertybrowser/qtvariantproperty.h \
-		../../DataComponentProperty.h \
-		../../DataComponentEditor.h \
+		../../propertyeditor/qtpropertybrowser/qttreepropertybrowser.h \
+		../../propertyeditor/qtpropertybrowser/qtpropertybrowser.h \
+		../../propertyeditor/qtpropertybrowser/qtvariantproperty.h \
+		../../propertyeditor/DataComponentProperty.h \
+		../../propertyeditor/DataComponentEditor.h \
 		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/PropertyGenesys.h \
 		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/SimulationControlAndResponse.h \
 		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/util/Util.h \
@@ -2853,7 +2785,7 @@ ui_mainwindow.h: ../../mainwindow.ui \
 		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/statistics/Collector_if.h \
 		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/ModelDataManager.h \
 		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/ConnectionManager.h \
-		../../ComboBoxEnum.h
+		../../propertyeditor/ComboBoxEnum.h
 	/usr/lib/qt6/libexec/uic ../../mainwindow.ui -o ui_mainwindow.h
 
 compiler_yacc_decl_make_all:
@@ -3833,14 +3765,6 @@ PluginConnectorDummyImpl1.o: /home/rafaelcancian/Laboratory/Software/Educational
 		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/data/EntityGroup.h \
 		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/components/Buffer.h \
 		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/data/SignalData.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/components/CellularAutomataComp.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/components/CellularAutomata/CellularAutomataBase.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/components/CellularAutomata/Lattice.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/components/CellularAutomata/Cell.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/components/CellularAutomata/State.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/components/CellularAutomata/Neighborhood.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/components/CellularAutomata/BoundaryCondition.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/components/CellularAutomata/StateSet.h \
 		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/components/Clone.h \
 		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/Counter.h \
 		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/components/CppForG.h \
@@ -3866,11 +3790,6 @@ PluginConnectorDummyImpl1.o: /home/rafaelcancian/Laboratory/Software/Educational
 		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/components/Enter.h \
 		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/data/Station.h \
 		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/components/Exit.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/components/FiniteStateMachine.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/data/EFSM.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/components/FSM_Transition.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/components/FSM_State.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/components/FSM_ModalModel.h \
 		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/components/Leave.h \
 		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/components/Match.h \
 		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/components/MarkovChain.h \
@@ -4755,122 +4674,6 @@ Buffer.o: /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/G
 		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/SimulationExperiment.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o Buffer.o /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/components/Buffer.cpp
 
-Cell.o: /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/components/CellularAutomata/Cell.cpp /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/components/CellularAutomata/Cell.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/components/CellularAutomata/State.h
-	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o Cell.o /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/components/CellularAutomata/Cell.cpp
-
-CellularAutomataBase.o: /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/components/CellularAutomata/CellularAutomataBase.cpp /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/components/CellularAutomata/CellularAutomataBase.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/components/CellularAutomata/Lattice.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/components/CellularAutomata/Cell.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/components/CellularAutomata/State.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/components/CellularAutomata/LocalRule.h
-	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o CellularAutomataBase.o /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/components/CellularAutomata/CellularAutomataBase.cpp
-
-Lattice.o: /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/components/CellularAutomata/Lattice.cpp /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/components/CellularAutomata/Lattice.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/components/CellularAutomata/Cell.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/components/CellularAutomata/State.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/components/CellularAutomata/CellularAutomataBase.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/components/CellularAutomata/StateSet.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/components/CellularAutomata/Neighborhood.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/components/CellularAutomata/BoundaryCondition.h
-	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o Lattice.o /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/components/CellularAutomata/Lattice.cpp
-
-StateSet.o: /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/components/CellularAutomata/StateSet.cpp /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/components/CellularAutomata/StateSet.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/components/CellularAutomata/State.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/components/CellularAutomata/CellularAutomataBase.h
-	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o StateSet.o /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/components/CellularAutomata/StateSet.cpp
-
-StateSet_Enumerable.o: /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/components/CellularAutomata/StateSet_Enumerable.cpp /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/components/CellularAutomata/StateSet_Enumerable.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/components/CellularAutomata/State.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/components/CellularAutomata/StateSet.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/components/CellularAutomata/CellularAutomataBase.h
-	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o StateSet_Enumerable.o /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/components/CellularAutomata/StateSet_Enumerable.cpp
-
-CellularAutomataComp.o: /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/components/CellularAutomataComp.cpp /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/components/CellularAutomataComp.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/ModelComponent.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/Plugin.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/util/Util.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/Persistence.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/ModelPersistence_if.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/PluginInformation.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/util/List.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/Entity.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/ModelDataDefinition.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/ParserChangesInformation.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/SimulationControlAndResponse.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/TraceManager.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/EntityType.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/StatisticsCollector.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/statistics/Statistics_if.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/statistics/Collector_if.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/ModelDataManager.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/ConnectionManager.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/components/CellularAutomata/CellularAutomataBase.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/components/CellularAutomata/Lattice.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/components/CellularAutomata/Cell.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/components/CellularAutomata/State.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/components/CellularAutomata/Neighborhood.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/components/CellularAutomata/BoundaryCondition.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/components/CellularAutomata/StateSet.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/Model.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/Event.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/ModelChecker_if.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/Parser_if.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/statistics/Sampler_if.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/ComponentManager.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/SourceModelComponent.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/OnEventManager.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/ModelInfo.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/ModelSimulation.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/SimulationReporter_if.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/PropertyGenesys.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/components/CellularAutomata/Boundary_Closed.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/components/CellularAutomata/Boundary_Fixed.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/components/CellularAutomata/CellularAutomata_Classic.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/components/CellularAutomata/LocalRule.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/components/CellularAutomata/CellularAutomata_1DTimed.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/components/CellularAutomata/LocalRule_Elementary.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/components/CellularAutomata/StateSet_Enumerable.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/components/CellularAutomata/LocalRule_GameOfLife.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/components/CellularAutomata/LocalRule_Growty.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/components/CellularAutomata/Neighborhood_Center.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/components/CellularAutomata/Neighborhood_Moore.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/components/CellularAutomata/Neighborhood_VonNeumann.h
-	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o CellularAutomataComp.o /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/components/CellularAutomataComp.cpp
-
-CellularAutomata.o: /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/components/CellularAutomata.cpp /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/components/CellularAutomata.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/ModelComponent.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/Plugin.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/util/Util.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/Persistence.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/ModelPersistence_if.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/PluginInformation.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/util/List.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/Entity.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/ModelDataDefinition.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/ParserChangesInformation.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/SimulationControlAndResponse.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/TraceManager.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/EntityType.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/StatisticsCollector.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/statistics/Statistics_if.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/statistics/Collector_if.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/ModelDataManager.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/ConnectionManager.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/Model.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/Event.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/ModelChecker_if.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/Parser_if.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/statistics/Sampler_if.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/ComponentManager.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/SourceModelComponent.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/OnEventManager.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/ModelInfo.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/ModelSimulation.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/SimulationReporter_if.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/PropertyGenesys.h
-	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o CellularAutomata.o /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/components/CellularAutomata.cpp
-
 Clone.o: /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/components/Clone.cpp /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/components/Clone.h \
 		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/ModelComponent.h \
 		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/Plugin.h \
@@ -5025,6 +4828,40 @@ Decide.o: /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/G
 		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/SimulationReporter_if.h \
 		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/PropertyGenesys.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o Decide.o /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/components/Decide.cpp
+
+DefaultModalModel.o: /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/components/DefaultModalModel.cpp /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/components/DefaultModalModel.h \
+		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/ModelComponent.h \
+		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/Plugin.h \
+		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/util/Util.h \
+		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/Persistence.h \
+		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/ModelPersistence_if.h \
+		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/PluginInformation.h \
+		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/util/List.h \
+		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/Entity.h \
+		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/ModelDataDefinition.h \
+		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/ParserChangesInformation.h \
+		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/SimulationControlAndResponse.h \
+		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/TraceManager.h \
+		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/EntityType.h \
+		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/StatisticsCollector.h \
+		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/statistics/Statistics_if.h \
+		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/statistics/Collector_if.h \
+		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/ModelDataManager.h \
+		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/ConnectionManager.h \
+		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/components/network/DefaultNode.h \
+		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/Model.h \
+		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/Event.h \
+		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/ModelChecker_if.h \
+		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/Parser_if.h \
+		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/statistics/Sampler_if.h \
+		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/ComponentManager.h \
+		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/SourceModelComponent.h \
+		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/OnEventManager.h \
+		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/ModelInfo.h \
+		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/ModelSimulation.h \
+		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/SimulationReporter_if.h \
+		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/PropertyGenesys.h
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o DefaultModalModel.o /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/components/DefaultModalModel.cpp
 
 Delay.o: /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/components/Delay.cpp /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/components/Delay.h \
 		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/ModelComponent.h \
@@ -5271,176 +5108,6 @@ Exit.o: /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/Gen
 		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/SimulationReporter_if.h \
 		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/PropertyGenesys.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o Exit.o /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/components/Exit.cpp
-
-FSM_ModalModel.o: /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/components/FSM_ModalModel.cpp /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/components/FSM_ModalModel.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/ModelComponent.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/Plugin.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/util/Util.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/Persistence.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/ModelPersistence_if.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/PluginInformation.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/util/List.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/Entity.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/ModelDataDefinition.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/ParserChangesInformation.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/SimulationControlAndResponse.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/TraceManager.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/EntityType.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/StatisticsCollector.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/statistics/Statistics_if.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/statistics/Collector_if.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/ModelDataManager.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/ConnectionManager.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/data/EFSM.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/Attribute.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/data/AssignmentItem.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/Model.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/Event.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/ModelChecker_if.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/Parser_if.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/statistics/Sampler_if.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/ComponentManager.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/SourceModelComponent.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/OnEventManager.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/ModelInfo.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/ModelSimulation.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/SimulationReporter_if.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/PropertyGenesys.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/data/Variable.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/components/FSM_Transition.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/components/FSM_State.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/Simulator.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/LicenceManager.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/PluginManager.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/PluginConnector_if.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/ModelManager.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/ParserManager.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/ExperimentManager.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/SimulationExperiment.h
-	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o FSM_ModalModel.o /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/components/FSM_ModalModel.cpp
-
-FSM_State.o: /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/components/FSM_State.cpp /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/components/FSM_State.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/ModelComponent.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/Plugin.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/util/Util.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/Persistence.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/ModelPersistence_if.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/PluginInformation.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/util/List.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/Entity.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/ModelDataDefinition.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/ParserChangesInformation.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/SimulationControlAndResponse.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/TraceManager.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/EntityType.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/StatisticsCollector.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/statistics/Statistics_if.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/statistics/Collector_if.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/ModelDataManager.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/ConnectionManager.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/components/FSM_Transition.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/Model.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/Event.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/ModelChecker_if.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/Parser_if.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/statistics/Sampler_if.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/ComponentManager.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/SourceModelComponent.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/OnEventManager.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/ModelInfo.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/ModelSimulation.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/SimulationReporter_if.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/PropertyGenesys.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/data/EFSM.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/Attribute.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/data/AssignmentItem.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/data/Variable.h
-	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o FSM_State.o /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/components/FSM_State.cpp
-
-FSM_Transition.o: /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/components/FSM_Transition.cpp /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/components/FSM_Transition.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/ModelComponent.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/Plugin.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/util/Util.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/Persistence.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/ModelPersistence_if.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/PluginInformation.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/util/List.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/Entity.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/ModelDataDefinition.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/ParserChangesInformation.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/SimulationControlAndResponse.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/TraceManager.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/EntityType.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/StatisticsCollector.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/statistics/Statistics_if.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/statistics/Collector_if.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/ModelDataManager.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/ConnectionManager.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/Model.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/Event.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/ModelChecker_if.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/Parser_if.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/statistics/Sampler_if.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/ComponentManager.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/SourceModelComponent.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/OnEventManager.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/ModelInfo.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/ModelSimulation.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/SimulationReporter_if.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/PropertyGenesys.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/components/FSM_State.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/data/EFSM.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/Attribute.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/data/AssignmentItem.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/data/Variable.h
-	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o FSM_Transition.o /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/components/FSM_Transition.cpp
-
-FiniteStateMachine.o: /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/components/FiniteStateMachine.cpp /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/components/FiniteStateMachine.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/ModelComponent.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/Plugin.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/util/Util.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/Persistence.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/ModelPersistence_if.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/PluginInformation.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/util/List.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/Entity.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/ModelDataDefinition.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/ParserChangesInformation.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/SimulationControlAndResponse.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/TraceManager.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/EntityType.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/StatisticsCollector.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/statistics/Statistics_if.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/statistics/Collector_if.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/ModelDataManager.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/ConnectionManager.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/data/EFSM.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/Attribute.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/data/AssignmentItem.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/Model.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/Event.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/ModelChecker_if.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/Parser_if.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/statistics/Sampler_if.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/ComponentManager.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/SourceModelComponent.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/OnEventManager.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/ModelInfo.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/ModelSimulation.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/SimulationReporter_if.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/PropertyGenesys.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/data/Variable.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/components/FSM_Transition.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/components/FSM_State.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/Simulator.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/LicenceManager.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/PluginManager.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/PluginConnector_if.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/ModelManager.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/ParserManager.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/ExperimentManager.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/SimulationExperiment.h
-	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o FiniteStateMachine.o /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/components/FiniteStateMachine.cpp
 
 PickableStationItem.o: /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/components/PickableStationItem.cpp /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/components/PickableStationItem.h \
 		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/Model.h \
@@ -6572,6 +6239,39 @@ Write.o: /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/Ge
 		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/PropertyGenesys.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o Write.o /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/components/Write.cpp
 
+DefaultNode.o: /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/components/network/DefaultNode.cpp /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/components/network/DefaultNode.h \
+		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/ModelComponent.h \
+		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/Plugin.h \
+		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/util/Util.h \
+		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/Persistence.h \
+		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/ModelPersistence_if.h \
+		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/PluginInformation.h \
+		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/util/List.h \
+		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/Entity.h \
+		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/ModelDataDefinition.h \
+		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/ParserChangesInformation.h \
+		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/SimulationControlAndResponse.h \
+		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/TraceManager.h \
+		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/EntityType.h \
+		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/StatisticsCollector.h \
+		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/statistics/Statistics_if.h \
+		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/statistics/Collector_if.h \
+		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/ModelDataManager.h \
+		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/ConnectionManager.h \
+		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/Model.h \
+		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/Event.h \
+		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/ModelChecker_if.h \
+		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/Parser_if.h \
+		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/statistics/Sampler_if.h \
+		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/ComponentManager.h \
+		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/SourceModelComponent.h \
+		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/OnEventManager.h \
+		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/ModelInfo.h \
+		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/ModelSimulation.h \
+		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/SimulationReporter_if.h \
+		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/PropertyGenesys.h
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o DefaultNode.o /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/components/network/DefaultNode.cpp
+
 AssignmentItem.o: /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/data/AssignmentItem.cpp /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/data/AssignmentItem.h \
 		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/Model.h \
 		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/util/List.h \
@@ -6651,44 +6351,6 @@ DummyElement.o: /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE
 		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/TraceManager.h \
 		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/PluginInformation.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o DummyElement.o /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/data/DummyElement.cpp
-
-EFSM.o: /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/data/EFSM.cpp /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/data/EFSM.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/ModelDataDefinition.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/util/List.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/util/Util.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/ParserChangesInformation.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/Persistence.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/ModelPersistence_if.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/SimulationControlAndResponse.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/TraceManager.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/PluginInformation.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/Attribute.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/ModelDataManager.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/data/AssignmentItem.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/Model.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/ModelComponent.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/Plugin.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/Entity.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/EntityType.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/StatisticsCollector.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/statistics/Statistics_if.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/statistics/Collector_if.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/ConnectionManager.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/Event.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/ModelChecker_if.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/Parser_if.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/statistics/Sampler_if.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/ComponentManager.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/SourceModelComponent.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/OnEventManager.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/ModelInfo.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/ModelSimulation.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/SimulationReporter_if.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/PropertyGenesys.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/data/Variable.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/components/FSM_Transition.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/components/FSM_State.h
-	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o EFSM.o /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/data/EFSM.cpp
 
 EntityGroup.o: /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/data/EntityGroup.cpp /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/data/EntityGroup.h \
 		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/ModelDataDefinition.h \
@@ -10482,72 +10144,6 @@ Smart_Buffer.o: /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE
 		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/TraitsApp.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o Smart_Buffer.o /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/terminal/examples/smarts/Smart_Buffer.cpp
 
-Smart_CellularAutomata.o: /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/terminal/examples/smarts/Smart_CellularAutomata.cpp /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/terminal/examples/smarts/Smart_CellularAutomata.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/BaseGenesysTerminalApplication.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/GenesysApplication_if.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/TraceManager.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/util/List.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/util/Util.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/OnEventManager.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/Event.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/ModelDataDefinition.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/ParserChangesInformation.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/Persistence.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/ModelPersistence_if.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/SimulationControlAndResponse.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/Entity.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/EntityType.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/StatisticsCollector.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/statistics/Statistics_if.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/statistics/Collector_if.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/ModelDataManager.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/Plugin.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/PluginInformation.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/ModelComponent.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/ConnectionManager.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/PluginManager.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/PluginConnector_if.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/Model.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/ModelChecker_if.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/Parser_if.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/statistics/Sampler_if.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/ComponentManager.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/SourceModelComponent.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/ModelInfo.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/ModelSimulation.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/SimulationReporter_if.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/PropertyGenesys.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/Simulator.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/LicenceManager.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/ModelManager.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/ParserManager.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/ExperimentManager.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/SimulationExperiment.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/components/Create.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/Counter.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/data/Formula.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/data/Schedule.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/components/CellularAutomataComp.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/components/CellularAutomata/CellularAutomataBase.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/components/CellularAutomata/Lattice.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/components/CellularAutomata/Cell.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/components/CellularAutomata/State.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/components/CellularAutomata/Neighborhood.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/components/CellularAutomata/BoundaryCondition.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/components/CellularAutomata/StateSet.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/components/Dispose.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/SinkModelComponent.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/TraitsApp.h
-	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o Smart_CellularAutomata.o /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/terminal/examples/smarts/Smart_CellularAutomata.cpp
-
-Smart_CellularAutomata1.o: /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/terminal/examples/smarts/Smart_CellularAutomata1.cpp /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/terminal/examples/smarts/Smart_CellularAutomata1.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/TraitsApp.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/GenesysApplication_if.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/TraceManager.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/util/List.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/util/Util.h
-	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o Smart_CellularAutomata1.o /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/terminal/examples/smarts/Smart_CellularAutomata1.cpp
-
 Smart_Clone.o: /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/terminal/examples/smarts/Smart_Clone.cpp /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/terminal/examples/smarts/Smart_Clone.h \
 		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/BaseGenesysTerminalApplication.h \
 		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/GenesysApplication_if.h \
@@ -10753,180 +10349,6 @@ Smart_Dummy.o: /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5
 		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/TraitsApp.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o Smart_Dummy.o /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/terminal/examples/smarts/Smart_Dummy.cpp
 
-Smart_EFSM1.o: /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/terminal/examples/smarts/Smart_EFSM1.cpp /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/terminal/examples/smarts/Smart_EFSM1.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/BaseGenesysTerminalApplication.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/GenesysApplication_if.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/TraceManager.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/util/List.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/util/Util.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/OnEventManager.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/Event.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/ModelDataDefinition.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/ParserChangesInformation.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/Persistence.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/ModelPersistence_if.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/SimulationControlAndResponse.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/Entity.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/EntityType.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/StatisticsCollector.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/statistics/Statistics_if.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/statistics/Collector_if.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/ModelDataManager.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/Plugin.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/PluginInformation.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/ModelComponent.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/ConnectionManager.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/PluginManager.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/PluginConnector_if.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/Model.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/ModelChecker_if.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/Parser_if.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/statistics/Sampler_if.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/ComponentManager.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/SourceModelComponent.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/ModelInfo.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/ModelSimulation.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/SimulationReporter_if.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/PropertyGenesys.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/Simulator.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/LicenceManager.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/ModelManager.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/ParserManager.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/ExperimentManager.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/SimulationExperiment.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/components/Create.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/Counter.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/data/Formula.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/data/Schedule.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/components/Dispose.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/SinkModelComponent.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/components/Assign.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/Attribute.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/data/AssignmentItem.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/data/Variable.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/data/EFSM.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/components/FSM_Transition.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/components/FSM_State.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/components/FSM_ModalModel.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/components/Delay.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/TraitsApp.h
-	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o Smart_EFSM1.o /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/terminal/examples/smarts/Smart_EFSM1.cpp
-
-Smart_EFSM2.o: /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/terminal/examples/smarts/Smart_EFSM2.cpp /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/terminal/examples/smarts/Smart_EFSM2.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/BaseGenesysTerminalApplication.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/GenesysApplication_if.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/TraceManager.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/util/List.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/util/Util.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/OnEventManager.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/Event.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/ModelDataDefinition.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/ParserChangesInformation.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/Persistence.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/ModelPersistence_if.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/SimulationControlAndResponse.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/Entity.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/EntityType.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/StatisticsCollector.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/statistics/Statistics_if.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/statistics/Collector_if.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/ModelDataManager.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/Plugin.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/PluginInformation.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/ModelComponent.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/ConnectionManager.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/PluginManager.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/PluginConnector_if.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/Model.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/ModelChecker_if.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/Parser_if.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/statistics/Sampler_if.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/ComponentManager.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/SourceModelComponent.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/ModelInfo.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/ModelSimulation.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/SimulationReporter_if.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/PropertyGenesys.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/Simulator.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/LicenceManager.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/ModelManager.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/ParserManager.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/ExperimentManager.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/SimulationExperiment.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/components/Create.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/Counter.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/data/Formula.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/data/Schedule.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/components/Dispose.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/SinkModelComponent.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/components/Assign.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/Attribute.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/data/AssignmentItem.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/data/Variable.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/data/EFSM.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/components/FSM_Transition.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/components/FSM_State.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/components/FSM_ModalModel.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/components/Delay.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/TraitsApp.h
-	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o Smart_EFSM2.o /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/terminal/examples/smarts/Smart_EFSM2.cpp
-
-Smart_ExtendedFSM.o: /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/terminal/examples/smarts/Smart_ExtendedFSM.cpp /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/terminal/examples/smarts/Smart_ExtendedFSM.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/BaseGenesysTerminalApplication.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/GenesysApplication_if.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/TraceManager.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/util/List.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/util/Util.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/OnEventManager.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/Event.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/ModelDataDefinition.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/ParserChangesInformation.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/Persistence.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/ModelPersistence_if.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/SimulationControlAndResponse.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/Entity.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/EntityType.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/StatisticsCollector.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/statistics/Statistics_if.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/statistics/Collector_if.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/ModelDataManager.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/Plugin.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/PluginInformation.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/ModelComponent.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/ConnectionManager.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/PluginManager.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/PluginConnector_if.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/Model.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/ModelChecker_if.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/Parser_if.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/statistics/Sampler_if.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/ComponentManager.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/SourceModelComponent.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/ModelInfo.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/ModelSimulation.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/SimulationReporter_if.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/PropertyGenesys.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/Simulator.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/LicenceManager.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/ModelManager.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/ParserManager.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/ExperimentManager.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/SimulationExperiment.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/components/Create.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/Counter.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/data/Formula.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/data/Schedule.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/components/FiniteStateMachine.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/data/EFSM.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/Attribute.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/data/AssignmentItem.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/data/Variable.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/components/FSM_Transition.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/components/FSM_State.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/components/Dispose.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/SinkModelComponent.h
-	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o Smart_ExtendedFSM.o /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/terminal/examples/smarts/Smart_ExtendedFSM.cpp
-
 Smart_Failures.o: /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/terminal/examples/smarts/Smart_Failures.cpp /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/terminal/examples/smarts/Smart_Failures.h \
 		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/BaseGenesysTerminalApplication.h \
 		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/GenesysApplication_if.h \
@@ -10985,62 +10407,6 @@ Smart_Failures.o: /home/rafaelcancian/Laboratory/Software/Educational_Projects/I
 		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/SinkModelComponent.h \
 		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/TraitsApp.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o Smart_Failures.o /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/terminal/examples/smarts/Smart_Failures.cpp
-
-Smart_FiniteStateMachine.o: /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/terminal/examples/smarts/Smart_FiniteStateMachine.cpp /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/terminal/examples/smarts/Smart_FiniteStateMachine.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/BaseGenesysTerminalApplication.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/GenesysApplication_if.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/TraceManager.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/util/List.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/util/Util.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/OnEventManager.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/Event.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/ModelDataDefinition.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/ParserChangesInformation.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/Persistence.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/ModelPersistence_if.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/SimulationControlAndResponse.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/Entity.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/EntityType.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/StatisticsCollector.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/statistics/Statistics_if.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/statistics/Collector_if.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/ModelDataManager.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/Plugin.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/PluginInformation.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/ModelComponent.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/ConnectionManager.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/PluginManager.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/PluginConnector_if.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/Model.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/ModelChecker_if.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/Parser_if.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/statistics/Sampler_if.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/ComponentManager.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/SourceModelComponent.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/ModelInfo.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/ModelSimulation.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/SimulationReporter_if.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/PropertyGenesys.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/Simulator.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/LicenceManager.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/ModelManager.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/ParserManager.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/ExperimentManager.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/SimulationExperiment.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/components/Create.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/Counter.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/data/Formula.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/data/Schedule.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/components/FiniteStateMachine.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/data/EFSM.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/Attribute.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/data/AssignmentItem.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/data/Variable.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/components/FSM_Transition.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/components/FSM_State.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/components/Dispose.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/SinkModelComponent.h
-	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o Smart_FiniteStateMachine.o /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/terminal/examples/smarts/Smart_FiniteStateMachine.cpp
 
 Smart_HoldSearchRemove.o: /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/terminal/examples/smarts/Smart_HoldSearchRemove.cpp /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/terminal/examples/smarts/Smart_HoldSearchRemove.h \
 		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/BaseGenesysTerminalApplication.h \
@@ -12160,6 +11526,58 @@ Smart_WaitSignal.o: /home/rafaelcancian/Laboratory/Software/Educational_Projects
 		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/TraitsApp.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o Smart_WaitSignal.o /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/terminal/examples/smarts/Smart_WaitSignal.cpp
 
+Smaty_DefaultModalModel.o: /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/terminal/examples/smarts/Smaty_DefaultModalModel.cpp /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/terminal/examples/smarts/Smart_DefaultModalModel.h \
+		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/BaseGenesysTerminalApplication.h \
+		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/GenesysApplication_if.h \
+		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/TraceManager.h \
+		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/util/List.h \
+		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/util/Util.h \
+		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/OnEventManager.h \
+		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/Event.h \
+		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/ModelDataDefinition.h \
+		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/ParserChangesInformation.h \
+		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/Persistence.h \
+		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/ModelPersistence_if.h \
+		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/SimulationControlAndResponse.h \
+		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/Entity.h \
+		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/EntityType.h \
+		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/StatisticsCollector.h \
+		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/statistics/Statistics_if.h \
+		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/statistics/Collector_if.h \
+		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/ModelDataManager.h \
+		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/Plugin.h \
+		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/PluginInformation.h \
+		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/ModelComponent.h \
+		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/ConnectionManager.h \
+		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/PluginManager.h \
+		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/PluginConnector_if.h \
+		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/Model.h \
+		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/ModelChecker_if.h \
+		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/Parser_if.h \
+		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/statistics/Sampler_if.h \
+		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/ComponentManager.h \
+		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/SourceModelComponent.h \
+		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/ModelInfo.h \
+		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/ModelSimulation.h \
+		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/SimulationReporter_if.h \
+		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/PropertyGenesys.h \
+		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/Simulator.h \
+		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/LicenceManager.h \
+		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/ModelManager.h \
+		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/ParserManager.h \
+		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/ExperimentManager.h \
+		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/SimulationExperiment.h \
+		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/components/Create.h \
+		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/Counter.h \
+		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/data/Formula.h \
+		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/data/Schedule.h \
+		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/components/DefaultModalModel.h \
+		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/components/network/DefaultNode.h \
+		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/components/Dispose.h \
+		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/SinkModelComponent.h \
+		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/TraitsApp.h
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o Smaty_DefaultModalModel.o /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/terminal/examples/smarts/Smaty_DefaultModalModel.cpp
+
 AnElectronicAssemblyAndTestSystem.o: /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/terminal/examples/teaching/AnElectronicAssemblyAndTestSystem.cpp /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/terminal/examples/teaching/AnElectronicAssemblyAndTestSystem.h \
 		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/BaseGenesysTerminalApplication.h \
 		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/GenesysApplication_if.h \
@@ -12622,12 +12040,13 @@ Rectifier.o: /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE542
 		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/TraitsApp.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o Rectifier.o /home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/terminal/examples/teaching/Rectifier.cpp
 
-CodeEditor.o: ../../CodeEditor.cpp ../../CodeEditor.h \
-		../../LineNumberArea.h
-	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o CodeEditor.o ../../CodeEditor.cpp
+CodeEditor.o: ../../codeeditor/CodeEditor.cpp ../../codeeditor/CodeEditor.h \
+		../../codeeditor/LineNumberArea.h
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o CodeEditor.o ../../codeeditor/CodeEditor.cpp
 
-DataComponentProperty.o: ../../DataComponentProperty.cpp ../../DataComponentProperty.h \
-		../../DataComponentEditor.h \
+mainwindow_controller_on.o: ../../mainwindow_controller_on.cpp ../../mainwindow.h \
+		../../propertyeditor/DataComponentProperty.h \
+		../../propertyeditor/DataComponentEditor.h \
 		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/PropertyGenesys.h \
 		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/SimulationControlAndResponse.h \
 		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/util/Util.h \
@@ -12647,10 +12066,217 @@ DataComponentProperty.o: ../../DataComponentProperty.cpp ../../DataComponentProp
 		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/statistics/Collector_if.h \
 		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/ModelDataManager.h \
 		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/ConnectionManager.h \
-		../../ComboBoxEnum.h
-	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o DataComponentProperty.o ../../DataComponentProperty.cpp
+		../../propertyeditor/ComboBoxEnum.h \
+		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/Simulator.h \
+		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/Model.h \
+		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/Event.h \
+		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/ModelChecker_if.h \
+		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/Parser_if.h \
+		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/statistics/Sampler_if.h \
+		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/ComponentManager.h \
+		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/SourceModelComponent.h \
+		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/OnEventManager.h \
+		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/ModelInfo.h \
+		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/ModelSimulation.h \
+		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/SimulationReporter_if.h \
+		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/LicenceManager.h \
+		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/PluginManager.h \
+		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/PluginConnector_if.h \
+		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/ModelManager.h \
+		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/ParserManager.h \
+		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/ExperimentManager.h \
+		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/SimulationExperiment.h \
+		../../graphicals/ModelGraphicsScene.h \
+		../../graphicals/GraphicalModelComponent.h \
+		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/data/Queue.h \
+		../../graphicals/GraphicalImageAnimation.h \
+		../../graphicals/GraphicalComponentPort.h \
+		../../TraitsGUI.h \
+		../../graphicals/GraphicalModelDataDefinition.h \
+		../../graphicals/GraphicalDiagramConnection.h \
+		../../UtilGUI.h \
+		../../animations/AnimationTransition.h \
+		../../graphicals/GraphicalConnection.h \
+		../../animations/AnimationVariable.h \
+		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/data/Variable.h \
+		../../animations/AnimationCounter.h \
+		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/Counter.h \
+		../../animations/AnimationTimer.h \
+		ui_mainwindow.h \
+		../../codeeditor/CodeEditor.h \
+		../../graphicals/ModelGraphicsView.h \
+		../../propertyeditor/ObjectPropertyBrowser.h \
+		../../propertyeditor/qtpropertybrowser/qttreepropertybrowser.h \
+		../../propertyeditor/qtpropertybrowser/qtpropertybrowser.h \
+		../../propertyeditor/qtpropertybrowser/qtvariantproperty.h \
+		../../dialogs/dialogBreakpoint.h \
+		ui_dialogBreakpoint.h \
+		../../dialogs/Dialogmodelinformation.h \
+		../../dialogs/dialogsimulationconfigure.h \
+		../../dialogs/dialogpluginmanager.h \
+		../../dialogs/dialogsystempreferences.h \
+		../../dialogs/DialogFind.h
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o mainwindow_controller_on.o ../../mainwindow_controller_on.cpp
 
-ModelGraphicsScene.o: ../../ModelGraphicsScene.cpp ../../ModelGraphicsScene.h \
+mainwindow_scene.o: ../../mainwindow_scene.cpp ../../mainwindow.h \
+		../../propertyeditor/DataComponentProperty.h \
+		../../propertyeditor/DataComponentEditor.h \
+		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/PropertyGenesys.h \
+		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/SimulationControlAndResponse.h \
+		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/util/Util.h \
+		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/util/List.h \
+		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/ModelComponent.h \
+		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/Plugin.h \
+		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/Persistence.h \
+		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/ModelPersistence_if.h \
+		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/PluginInformation.h \
+		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/Entity.h \
+		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/ModelDataDefinition.h \
+		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/ParserChangesInformation.h \
+		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/TraceManager.h \
+		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/EntityType.h \
+		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/StatisticsCollector.h \
+		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/statistics/Statistics_if.h \
+		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/statistics/Collector_if.h \
+		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/ModelDataManager.h \
+		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/ConnectionManager.h \
+		../../propertyeditor/ComboBoxEnum.h \
+		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/Simulator.h \
+		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/Model.h \
+		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/Event.h \
+		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/ModelChecker_if.h \
+		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/Parser_if.h \
+		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/statistics/Sampler_if.h \
+		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/ComponentManager.h \
+		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/SourceModelComponent.h \
+		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/OnEventManager.h \
+		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/ModelInfo.h \
+		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/ModelSimulation.h \
+		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/SimulationReporter_if.h \
+		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/LicenceManager.h \
+		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/PluginManager.h \
+		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/PluginConnector_if.h \
+		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/ModelManager.h \
+		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/ParserManager.h \
+		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/ExperimentManager.h \
+		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/SimulationExperiment.h \
+		../../graphicals/ModelGraphicsScene.h \
+		../../graphicals/GraphicalModelComponent.h \
+		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/data/Queue.h \
+		../../graphicals/GraphicalImageAnimation.h \
+		../../graphicals/GraphicalComponentPort.h \
+		../../TraitsGUI.h \
+		../../graphicals/GraphicalModelDataDefinition.h \
+		../../graphicals/GraphicalDiagramConnection.h \
+		../../UtilGUI.h \
+		../../animations/AnimationTransition.h \
+		../../graphicals/GraphicalConnection.h \
+		../../animations/AnimationVariable.h \
+		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/data/Variable.h \
+		../../animations/AnimationCounter.h \
+		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/Counter.h \
+		../../animations/AnimationTimer.h \
+		ui_mainwindow.h \
+		../../codeeditor/CodeEditor.h \
+		../../graphicals/ModelGraphicsView.h \
+		../../propertyeditor/ObjectPropertyBrowser.h \
+		../../propertyeditor/qtpropertybrowser/qttreepropertybrowser.h \
+		../../propertyeditor/qtpropertybrowser/qtpropertybrowser.h \
+		../../propertyeditor/qtpropertybrowser/qtvariantproperty.h
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o mainwindow_scene.o ../../mainwindow_scene.cpp
+
+mainwindow_simulator.o: ../../mainwindow_simulator.cpp ../../mainwindow.h \
+		../../propertyeditor/DataComponentProperty.h \
+		../../propertyeditor/DataComponentEditor.h \
+		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/PropertyGenesys.h \
+		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/SimulationControlAndResponse.h \
+		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/util/Util.h \
+		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/util/List.h \
+		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/ModelComponent.h \
+		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/Plugin.h \
+		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/Persistence.h \
+		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/ModelPersistence_if.h \
+		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/PluginInformation.h \
+		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/Entity.h \
+		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/ModelDataDefinition.h \
+		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/ParserChangesInformation.h \
+		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/TraceManager.h \
+		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/EntityType.h \
+		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/StatisticsCollector.h \
+		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/statistics/Statistics_if.h \
+		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/statistics/Collector_if.h \
+		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/ModelDataManager.h \
+		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/ConnectionManager.h \
+		../../propertyeditor/ComboBoxEnum.h \
+		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/Simulator.h \
+		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/Model.h \
+		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/Event.h \
+		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/ModelChecker_if.h \
+		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/Parser_if.h \
+		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/statistics/Sampler_if.h \
+		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/ComponentManager.h \
+		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/SourceModelComponent.h \
+		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/OnEventManager.h \
+		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/ModelInfo.h \
+		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/ModelSimulation.h \
+		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/SimulationReporter_if.h \
+		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/LicenceManager.h \
+		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/PluginManager.h \
+		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/PluginConnector_if.h \
+		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/ModelManager.h \
+		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/ParserManager.h \
+		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/ExperimentManager.h \
+		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/SimulationExperiment.h \
+		../../graphicals/ModelGraphicsScene.h \
+		../../graphicals/GraphicalModelComponent.h \
+		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/data/Queue.h \
+		../../graphicals/GraphicalImageAnimation.h \
+		../../graphicals/GraphicalComponentPort.h \
+		../../TraitsGUI.h \
+		../../graphicals/GraphicalModelDataDefinition.h \
+		../../graphicals/GraphicalDiagramConnection.h \
+		../../UtilGUI.h \
+		../../animations/AnimationTransition.h \
+		../../graphicals/GraphicalConnection.h \
+		../../animations/AnimationVariable.h \
+		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/data/Variable.h \
+		../../animations/AnimationCounter.h \
+		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/Counter.h \
+		../../animations/AnimationTimer.h \
+		ui_mainwindow.h \
+		../../codeeditor/CodeEditor.h \
+		../../graphicals/ModelGraphicsView.h \
+		../../propertyeditor/ObjectPropertyBrowser.h \
+		../../propertyeditor/qtpropertybrowser/qttreepropertybrowser.h \
+		../../propertyeditor/qtpropertybrowser/qtpropertybrowser.h \
+		../../propertyeditor/qtpropertybrowser/qtvariantproperty.h
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o mainwindow_simulator.o ../../mainwindow_simulator.cpp
+
+DataComponentProperty.o: ../../propertyeditor/DataComponentProperty.cpp ../../propertyeditor/DataComponentProperty.h \
+		../../propertyeditor/DataComponentEditor.h \
+		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/PropertyGenesys.h \
+		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/SimulationControlAndResponse.h \
+		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/util/Util.h \
+		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/util/List.h \
+		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/ModelComponent.h \
+		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/Plugin.h \
+		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/Persistence.h \
+		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/ModelPersistence_if.h \
+		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/PluginInformation.h \
+		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/Entity.h \
+		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/ModelDataDefinition.h \
+		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/ParserChangesInformation.h \
+		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/TraceManager.h \
+		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/EntityType.h \
+		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/StatisticsCollector.h \
+		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/statistics/Statistics_if.h \
+		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/statistics/Collector_if.h \
+		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/ModelDataManager.h \
+		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/ConnectionManager.h \
+		../../propertyeditor/ComboBoxEnum.h
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o DataComponentProperty.o ../../propertyeditor/DataComponentProperty.cpp
+
+ModelGraphicsScene.o: ../../graphicals/ModelGraphicsScene.cpp ../../graphicals/ModelGraphicsScene.h \
 		../../graphicals/GraphicalModelComponent.h \
 		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/ModelComponent.h \
 		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/Plugin.h \
@@ -12677,10 +12303,10 @@ ModelGraphicsScene.o: ../../ModelGraphicsScene.cpp ../../ModelGraphicsScene.h \
 		../../graphicals/GraphicalModelDataDefinition.h \
 		../../graphicals/GraphicalDiagramConnection.h \
 		../../UtilGUI.h \
-		../../DataComponentProperty.h \
-		../../DataComponentEditor.h \
+		../../propertyeditor/DataComponentProperty.h \
+		../../propertyeditor/DataComponentEditor.h \
 		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/PropertyGenesys.h \
-		../../ComboBoxEnum.h \
+		../../propertyeditor/ComboBoxEnum.h \
 		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/Simulator.h \
 		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/Model.h \
 		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/Event.h \
@@ -12707,7 +12333,7 @@ ModelGraphicsScene.o: ../../ModelGraphicsScene.cpp ../../ModelGraphicsScene.h \
 		../../animations/AnimationCounter.h \
 		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/Counter.h \
 		../../animations/AnimationTimer.h \
-		../../ModelGraphicsView.h \
+		../../graphicals/ModelGraphicsView.h \
 		../../actions/AddUndoCommand.h \
 		../../actions/DeleteUndoCommand.h \
 		../../actions/MoveUndoCommand.h \
@@ -12717,10 +12343,10 @@ ModelGraphicsScene.o: ../../ModelGraphicsScene.cpp ../../ModelGraphicsScene.h \
 		../../dialogs/DialogSelectVariable.h \
 		../../dialogs/DialogTimerConfigure.h \
 		../../animations/AnimationQueue.h
-	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o ModelGraphicsScene.o ../../ModelGraphicsScene.cpp
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o ModelGraphicsScene.o ../../graphicals/ModelGraphicsScene.cpp
 
-ModelGraphicsView.o: ../../ModelGraphicsView.cpp ../../ModelGraphicsView.h \
-		../../ModelGraphicsScene.h \
+ModelGraphicsView.o: ../../graphicals/ModelGraphicsView.cpp ../../graphicals/ModelGraphicsView.h \
+		../../graphicals/ModelGraphicsScene.h \
 		../../graphicals/GraphicalModelComponent.h \
 		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/ModelComponent.h \
 		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/Plugin.h \
@@ -12747,10 +12373,10 @@ ModelGraphicsView.o: ../../ModelGraphicsView.cpp ../../ModelGraphicsView.h \
 		../../graphicals/GraphicalModelDataDefinition.h \
 		../../graphicals/GraphicalDiagramConnection.h \
 		../../UtilGUI.h \
-		../../DataComponentProperty.h \
-		../../DataComponentEditor.h \
+		../../propertyeditor/DataComponentProperty.h \
+		../../propertyeditor/DataComponentEditor.h \
 		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/PropertyGenesys.h \
-		../../ComboBoxEnum.h \
+		../../propertyeditor/ComboBoxEnum.h \
 		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/Simulator.h \
 		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/Model.h \
 		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/Event.h \
@@ -12777,14 +12403,14 @@ ModelGraphicsView.o: ../../ModelGraphicsView.cpp ../../ModelGraphicsView.h \
 		../../animations/AnimationCounter.h \
 		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/Counter.h \
 		../../animations/AnimationTimer.h
-	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o ModelGraphicsView.o ../../ModelGraphicsView.cpp
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o ModelGraphicsView.o ../../graphicals/ModelGraphicsView.cpp
 
-ObjectPropertyBrowser.o: ../../ObjectPropertyBrowser.cpp ../../ObjectPropertyBrowser.h \
-		../../qtpropertybrowser/qttreepropertybrowser.h \
-		../../qtpropertybrowser/qtpropertybrowser.h \
-		../../qtpropertybrowser/qtvariantproperty.h \
-		../../DataComponentProperty.h \
-		../../DataComponentEditor.h \
+ObjectPropertyBrowser.o: ../../propertyeditor/ObjectPropertyBrowser.cpp ../../propertyeditor/ObjectPropertyBrowser.h \
+		../../propertyeditor/qtpropertybrowser/qttreepropertybrowser.h \
+		../../propertyeditor/qtpropertybrowser/qtpropertybrowser.h \
+		../../propertyeditor/qtpropertybrowser/qtvariantproperty.h \
+		../../propertyeditor/DataComponentProperty.h \
+		../../propertyeditor/DataComponentEditor.h \
 		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/PropertyGenesys.h \
 		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/SimulationControlAndResponse.h \
 		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/util/Util.h \
@@ -12804,10 +12430,10 @@ ObjectPropertyBrowser.o: ../../ObjectPropertyBrowser.cpp ../../ObjectPropertyBro
 		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/statistics/Collector_if.h \
 		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/ModelDataManager.h \
 		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/ConnectionManager.h \
-		../../ComboBoxEnum.h
-	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o ObjectPropertyBrowser.o ../../ObjectPropertyBrowser.cpp
+		../../propertyeditor/ComboBoxEnum.h
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o ObjectPropertyBrowser.o ../../propertyeditor/ObjectPropertyBrowser.cpp
 
-PropertyEditor.o: ../../PropertyEditor.cpp ../../PropertyEditor.h \
+PropertyEditor.o: ../../propertyeditor/PropertyEditor.cpp ../../propertyeditor/PropertyEditor.h \
 		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/ModelDataDefinition.h \
 		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/util/List.h \
 		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/util/Util.h \
@@ -12816,11 +12442,11 @@ PropertyEditor.o: ../../PropertyEditor.cpp ../../PropertyEditor.h \
 		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/ModelPersistence_if.h \
 		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/SimulationControlAndResponse.h \
 		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/TraceManager.h
-	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o PropertyEditor.o ../../PropertyEditor.cpp
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o PropertyEditor.o ../../propertyeditor/PropertyEditor.cpp
 
-DataComponentEditor.o: ../../DataComponentEditor.cpp ../../DataComponentEditor.h \
-		../../DataComponentProperty.h \
-		../../ComboBoxEnum.h \
+DataComponentEditor.o: ../../propertyeditor/DataComponentEditor.cpp ../../propertyeditor/DataComponentEditor.h \
+		../../propertyeditor/DataComponentProperty.h \
+		../../propertyeditor/ComboBoxEnum.h \
 		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/PropertyGenesys.h \
 		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/SimulationControlAndResponse.h \
 		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/util/Util.h \
@@ -12840,9 +12466,9 @@ DataComponentEditor.o: ../../DataComponentEditor.cpp ../../DataComponentEditor.h
 		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/statistics/Collector_if.h \
 		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/ModelDataManager.h \
 		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/ConnectionManager.h
-	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o DataComponentEditor.o ../../DataComponentEditor.cpp
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o DataComponentEditor.o ../../propertyeditor/DataComponentEditor.cpp
 
-ComboBoxEnum.o: ../../ComboBoxEnum.cpp ../../ComboBoxEnum.h \
+ComboBoxEnum.o: ../../propertyeditor/ComboBoxEnum.cpp ../../propertyeditor/ComboBoxEnum.h \
 		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/PropertyGenesys.h \
 		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/SimulationControlAndResponse.h \
 		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/util/Util.h \
@@ -12862,10 +12488,10 @@ ComboBoxEnum.o: ../../ComboBoxEnum.cpp ../../ComboBoxEnum.h \
 		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/statistics/Collector_if.h \
 		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/ModelDataManager.h \
 		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/ConnectionManager.h
-	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o ComboBoxEnum.o ../../ComboBoxEnum.cpp
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o ComboBoxEnum.o ../../propertyeditor/ComboBoxEnum.cpp
 
 AddUndoCommand.o: ../../actions/AddUndoCommand.cpp ../../actions/AddUndoCommand.h \
-		../../ModelGraphicsScene.h \
+		../../graphicals/ModelGraphicsScene.h \
 		../../graphicals/GraphicalModelComponent.h \
 		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/ModelComponent.h \
 		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/Plugin.h \
@@ -12892,10 +12518,10 @@ AddUndoCommand.o: ../../actions/AddUndoCommand.cpp ../../actions/AddUndoCommand.
 		../../graphicals/GraphicalModelDataDefinition.h \
 		../../graphicals/GraphicalDiagramConnection.h \
 		../../UtilGUI.h \
-		../../DataComponentProperty.h \
-		../../DataComponentEditor.h \
+		../../propertyeditor/DataComponentProperty.h \
+		../../propertyeditor/DataComponentEditor.h \
 		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/PropertyGenesys.h \
-		../../ComboBoxEnum.h \
+		../../propertyeditor/ComboBoxEnum.h \
 		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/Simulator.h \
 		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/Model.h \
 		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/Event.h \
@@ -12926,7 +12552,7 @@ AddUndoCommand.o: ../../actions/AddUndoCommand.cpp ../../actions/AddUndoCommand.
 
 DeleteUndoCommand.o: ../../actions/DeleteUndoCommand.cpp ../../actions/DeleteUndoCommand.h \
 		../../actions/AddUndoCommand.h \
-		../../ModelGraphicsScene.h \
+		../../graphicals/ModelGraphicsScene.h \
 		../../graphicals/GraphicalModelComponent.h \
 		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/ModelComponent.h \
 		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/Plugin.h \
@@ -12953,10 +12579,10 @@ DeleteUndoCommand.o: ../../actions/DeleteUndoCommand.cpp ../../actions/DeleteUnd
 		../../graphicals/GraphicalModelDataDefinition.h \
 		../../graphicals/GraphicalDiagramConnection.h \
 		../../UtilGUI.h \
-		../../DataComponentProperty.h \
-		../../DataComponentEditor.h \
+		../../propertyeditor/DataComponentProperty.h \
+		../../propertyeditor/DataComponentEditor.h \
 		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/PropertyGenesys.h \
-		../../ComboBoxEnum.h \
+		../../propertyeditor/ComboBoxEnum.h \
 		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/Simulator.h \
 		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/Model.h \
 		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/Event.h \
@@ -12986,7 +12612,7 @@ DeleteUndoCommand.o: ../../actions/DeleteUndoCommand.cpp ../../actions/DeleteUnd
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o DeleteUndoCommand.o ../../actions/DeleteUndoCommand.cpp
 
 GroupUndoCommand.o: ../../actions/GroupUndoCommand.cpp ../../actions/GroupUndoCommand.h \
-		../../ModelGraphicsScene.h \
+		../../graphicals/ModelGraphicsScene.h \
 		../../graphicals/GraphicalModelComponent.h \
 		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/ModelComponent.h \
 		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/Plugin.h \
@@ -13013,10 +12639,10 @@ GroupUndoCommand.o: ../../actions/GroupUndoCommand.cpp ../../actions/GroupUndoCo
 		../../graphicals/GraphicalModelDataDefinition.h \
 		../../graphicals/GraphicalDiagramConnection.h \
 		../../UtilGUI.h \
-		../../DataComponentProperty.h \
-		../../DataComponentEditor.h \
+		../../propertyeditor/DataComponentProperty.h \
+		../../propertyeditor/DataComponentEditor.h \
 		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/PropertyGenesys.h \
-		../../ComboBoxEnum.h \
+		../../propertyeditor/ComboBoxEnum.h \
 		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/Simulator.h \
 		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/Model.h \
 		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/Event.h \
@@ -13046,7 +12672,7 @@ GroupUndoCommand.o: ../../actions/GroupUndoCommand.cpp ../../actions/GroupUndoCo
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o GroupUndoCommand.o ../../actions/GroupUndoCommand.cpp
 
 MoveUndoCommand.o: ../../actions/MoveUndoCommand.cpp ../../actions/MoveUndoCommand.h \
-		../../ModelGraphicsScene.h \
+		../../graphicals/ModelGraphicsScene.h \
 		../../graphicals/GraphicalModelComponent.h \
 		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/ModelComponent.h \
 		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/Plugin.h \
@@ -13073,10 +12699,10 @@ MoveUndoCommand.o: ../../actions/MoveUndoCommand.cpp ../../actions/MoveUndoComma
 		../../graphicals/GraphicalModelDataDefinition.h \
 		../../graphicals/GraphicalDiagramConnection.h \
 		../../UtilGUI.h \
-		../../DataComponentProperty.h \
-		../../DataComponentEditor.h \
+		../../propertyeditor/DataComponentProperty.h \
+		../../propertyeditor/DataComponentEditor.h \
 		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/PropertyGenesys.h \
-		../../ComboBoxEnum.h \
+		../../propertyeditor/ComboBoxEnum.h \
 		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/Simulator.h \
 		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/Model.h \
 		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/Event.h \
@@ -13107,7 +12733,7 @@ MoveUndoCommand.o: ../../actions/MoveUndoCommand.cpp ../../actions/MoveUndoComma
 
 PasteUndoCommand.o: ../../actions/PasteUndoCommand.cpp ../../actions/PasteUndoCommand.h \
 		../../actions/AddUndoCommand.h \
-		../../ModelGraphicsScene.h \
+		../../graphicals/ModelGraphicsScene.h \
 		../../graphicals/GraphicalModelComponent.h \
 		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/ModelComponent.h \
 		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/Plugin.h \
@@ -13134,10 +12760,10 @@ PasteUndoCommand.o: ../../actions/PasteUndoCommand.cpp ../../actions/PasteUndoCo
 		../../graphicals/GraphicalModelDataDefinition.h \
 		../../graphicals/GraphicalDiagramConnection.h \
 		../../UtilGUI.h \
-		../../DataComponentProperty.h \
-		../../DataComponentEditor.h \
+		../../propertyeditor/DataComponentProperty.h \
+		../../propertyeditor/DataComponentEditor.h \
 		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/PropertyGenesys.h \
-		../../ComboBoxEnum.h \
+		../../propertyeditor/ComboBoxEnum.h \
 		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/Simulator.h \
 		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/Model.h \
 		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/Event.h \
@@ -13167,7 +12793,7 @@ PasteUndoCommand.o: ../../actions/PasteUndoCommand.cpp ../../actions/PasteUndoCo
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o PasteUndoCommand.o ../../actions/PasteUndoCommand.cpp
 
 UngroupUndoCommand.o: ../../actions/UngroupUndoCommand.cpp ../../actions/UngroupUndoCommand.h \
-		../../ModelGraphicsScene.h \
+		../../graphicals/ModelGraphicsScene.h \
 		../../graphicals/GraphicalModelComponent.h \
 		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/ModelComponent.h \
 		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/Plugin.h \
@@ -13194,10 +12820,10 @@ UngroupUndoCommand.o: ../../actions/UngroupUndoCommand.cpp ../../actions/Ungroup
 		../../graphicals/GraphicalModelDataDefinition.h \
 		../../graphicals/GraphicalDiagramConnection.h \
 		../../UtilGUI.h \
-		../../DataComponentProperty.h \
-		../../DataComponentEditor.h \
+		../../propertyeditor/DataComponentProperty.h \
+		../../propertyeditor/DataComponentEditor.h \
 		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/PropertyGenesys.h \
-		../../ComboBoxEnum.h \
+		../../propertyeditor/ComboBoxEnum.h \
 		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/Simulator.h \
 		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/Model.h \
 		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/Event.h \
@@ -13266,13 +12892,13 @@ AnimationQueue.o: ../../animations/AnimationQueue.cpp ../../animations/Animation
 		../../graphicals/GraphicalComponentPort.h \
 		../../TraitsGUI.h \
 		../../graphicals/GraphicalModelDataDefinition.h \
-		../../ModelGraphicsScene.h \
+		../../graphicals/ModelGraphicsScene.h \
 		../../graphicals/GraphicalDiagramConnection.h \
 		../../UtilGUI.h \
-		../../DataComponentProperty.h \
-		../../DataComponentEditor.h \
+		../../propertyeditor/DataComponentProperty.h \
+		../../propertyeditor/DataComponentEditor.h \
 		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/PropertyGenesys.h \
-		../../ComboBoxEnum.h \
+		../../propertyeditor/ComboBoxEnum.h \
 		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/Simulator.h \
 		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/Model.h \
 		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/Event.h \
@@ -13303,7 +12929,7 @@ AnimationQueue.o: ../../animations/AnimationQueue.cpp ../../animations/Animation
 
 AnimationTimer.o: ../../animations/AnimationTimer.cpp ../../animations/AnimationTimer.h \
 		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/util/Util.h \
-		../../ModelGraphicsScene.h \
+		../../graphicals/ModelGraphicsScene.h \
 		../../graphicals/GraphicalModelComponent.h \
 		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/ModelComponent.h \
 		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/Plugin.h \
@@ -13329,10 +12955,10 @@ AnimationTimer.o: ../../animations/AnimationTimer.cpp ../../animations/Animation
 		../../graphicals/GraphicalModelDataDefinition.h \
 		../../graphicals/GraphicalDiagramConnection.h \
 		../../UtilGUI.h \
-		../../DataComponentProperty.h \
-		../../DataComponentEditor.h \
+		../../propertyeditor/DataComponentProperty.h \
+		../../propertyeditor/DataComponentEditor.h \
 		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/PropertyGenesys.h \
-		../../ComboBoxEnum.h \
+		../../propertyeditor/ComboBoxEnum.h \
 		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/Simulator.h \
 		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/Model.h \
 		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/Event.h \
@@ -13386,13 +13012,13 @@ AnimationTransition.o: ../../animations/AnimationTransition.cpp ../../animations
 		../../TraitsGUI.h \
 		../../graphicals/GraphicalModelDataDefinition.h \
 		../../graphicals/GraphicalConnection.h \
-		../../ModelGraphicsScene.h \
+		../../graphicals/ModelGraphicsScene.h \
 		../../graphicals/GraphicalDiagramConnection.h \
 		../../UtilGUI.h \
-		../../DataComponentProperty.h \
-		../../DataComponentEditor.h \
+		../../propertyeditor/DataComponentProperty.h \
+		../../propertyeditor/DataComponentEditor.h \
 		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/PropertyGenesys.h \
-		../../ComboBoxEnum.h \
+		../../propertyeditor/ComboBoxEnum.h \
 		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/Simulator.h \
 		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/Model.h \
 		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/Event.h \
@@ -13459,13 +13085,13 @@ DialogFind.o: ../../dialogs/DialogFind.cpp ../../dialogs/DialogFind.h \
 		../../graphicals/GraphicalComponentPort.h \
 		../../TraitsGUI.h \
 		../../graphicals/GraphicalModelDataDefinition.h \
-		../../ModelGraphicsScene.h \
+		../../graphicals/ModelGraphicsScene.h \
 		../../graphicals/GraphicalDiagramConnection.h \
 		../../UtilGUI.h \
-		../../DataComponentProperty.h \
-		../../DataComponentEditor.h \
+		../../propertyeditor/DataComponentProperty.h \
+		../../propertyeditor/DataComponentEditor.h \
 		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/PropertyGenesys.h \
-		../../ComboBoxEnum.h \
+		../../propertyeditor/ComboBoxEnum.h \
 		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/Simulator.h \
 		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/Model.h \
 		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/Event.h \
@@ -13761,8 +13387,8 @@ GraphicalModelDataDefinition.o: ../../graphicals/GraphicalModelDataDefinition.cp
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o GraphicalModelDataDefinition.o ../../graphicals/GraphicalModelDataDefinition.cpp
 
 main.o: ../../main.cpp ../../mainwindow.h \
-		../../DataComponentProperty.h \
-		../../DataComponentEditor.h \
+		../../propertyeditor/DataComponentProperty.h \
+		../../propertyeditor/DataComponentEditor.h \
 		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/PropertyGenesys.h \
 		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/SimulationControlAndResponse.h \
 		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/util/Util.h \
@@ -13782,7 +13408,7 @@ main.o: ../../main.cpp ../../mainwindow.h \
 		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/statistics/Collector_if.h \
 		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/ModelDataManager.h \
 		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/ConnectionManager.h \
-		../../ComboBoxEnum.h \
+		../../propertyeditor/ComboBoxEnum.h \
 		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/Simulator.h \
 		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/Model.h \
 		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/Event.h \
@@ -13802,7 +13428,7 @@ main.o: ../../main.cpp ../../mainwindow.h \
 		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/ParserManager.h \
 		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/ExperimentManager.h \
 		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/SimulationExperiment.h \
-		../../ModelGraphicsScene.h \
+		../../graphicals/ModelGraphicsScene.h \
 		../../graphicals/GraphicalModelComponent.h \
 		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/data/Queue.h \
 		../../graphicals/GraphicalImageAnimation.h \
@@ -13823,12 +13449,12 @@ main.o: ../../main.cpp ../../mainwindow.h \
 		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/terminal/TraitsTerminalApp.h \
 		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/terminal/GenesysShell/GenesysShell.h \
 		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/BaseGenesysTerminalApplication.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/terminal/examples/smarts/Smart_SeizeDelayRelease.h
+		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/terminal/examples/smarts/Smart_DefaultModalModel.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o main.o ../../main.cpp
 
 mainwindow.o: ../../mainwindow.cpp ../../mainwindow.h \
-		../../DataComponentProperty.h \
-		../../DataComponentEditor.h \
+		../../propertyeditor/DataComponentProperty.h \
+		../../propertyeditor/DataComponentEditor.h \
 		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/PropertyGenesys.h \
 		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/SimulationControlAndResponse.h \
 		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/util/Util.h \
@@ -13848,7 +13474,7 @@ mainwindow.o: ../../mainwindow.cpp ../../mainwindow.h \
 		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/statistics/Collector_if.h \
 		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/ModelDataManager.h \
 		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/ConnectionManager.h \
-		../../ComboBoxEnum.h \
+		../../propertyeditor/ComboBoxEnum.h \
 		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/Simulator.h \
 		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/Model.h \
 		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/Event.h \
@@ -13868,7 +13494,7 @@ mainwindow.o: ../../mainwindow.cpp ../../mainwindow.h \
 		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/ParserManager.h \
 		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/ExperimentManager.h \
 		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/SimulationExperiment.h \
-		../../ModelGraphicsScene.h \
+		../../graphicals/ModelGraphicsScene.h \
 		../../graphicals/GraphicalModelComponent.h \
 		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/plugins/data/Queue.h \
 		../../graphicals/GraphicalImageAnimation.h \
@@ -13885,68 +13511,62 @@ mainwindow.o: ../../mainwindow.cpp ../../mainwindow.h \
 		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/Counter.h \
 		../../animations/AnimationTimer.h \
 		ui_mainwindow.h \
-		../../dialogs/dialogBreakpoint.h \
-		ui_dialogBreakpoint.h \
-		../../dialogs/Dialogmodelinformation.h \
-		../../dialogs/dialogsimulationconfigure.h \
-		../../dialogs/dialogpluginmanager.h \
-		../../dialogs/dialogsystempreferences.h \
-		../../dialogs/DialogFind.h \
+		../../codeeditor/CodeEditor.h \
+		../../graphicals/ModelGraphicsView.h \
+		../../propertyeditor/ObjectPropertyBrowser.h \
+		../../propertyeditor/qtpropertybrowser/qttreepropertybrowser.h \
+		../../propertyeditor/qtpropertybrowser/qtpropertybrowser.h \
+		../../propertyeditor/qtpropertybrowser/qtvariantproperty.h \
 		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/SinkModelComponent.h \
 		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/kernel/simulator/Attribute.h \
 		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/TraitsApp.h \
-		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/GenesysApplication_if.h \
-		../../qtpropertybrowser/qttreepropertybrowser.h \
-		../../qtpropertybrowser/qtpropertybrowser.h \
-		../../actions/PasteUndoCommand.h \
-		../../actions/AddUndoCommand.h \
-		../../actions/DeleteUndoCommand.h
+		/home/rafaelcancian/Laboratory/Software/Educational_Projects/INE5425/GenESyS/github_repository/Genesys-Simulator/source/applications/GenesysApplication_if.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o mainwindow.o ../../mainwindow.cpp
 
-qtbuttonpropertybrowser.o: ../../qtpropertybrowser/qtbuttonpropertybrowser.cpp ../../qtpropertybrowser/qtbuttonpropertybrowser.h \
-		../../qtpropertybrowser/qtpropertybrowser.h \
+qtbuttonpropertybrowser.o: ../../propertyeditor/qtpropertybrowser/qtbuttonpropertybrowser.cpp ../../propertyeditor/qtpropertybrowser/qtbuttonpropertybrowser.h \
+		../../propertyeditor/qtpropertybrowser/qtpropertybrowser.h \
 		moc_qtbuttonpropertybrowser.cpp
-	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o qtbuttonpropertybrowser.o ../../qtpropertybrowser/qtbuttonpropertybrowser.cpp
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o qtbuttonpropertybrowser.o ../../propertyeditor/qtpropertybrowser/qtbuttonpropertybrowser.cpp
 
-qteditorfactory.o: ../../qtpropertybrowser/qteditorfactory.cpp ../../qtpropertybrowser/qteditorfactory.h \
-		../../qtpropertybrowser/qtpropertymanager.h \
-		../../qtpropertybrowser/qtpropertybrowser.h \
-		../../qtpropertybrowser/qtpropertybrowserutils_p.h \
+qteditorfactory.o: ../../propertyeditor/qtpropertybrowser/qteditorfactory.cpp ../../propertyeditor/qtpropertybrowser/qteditorfactory.h \
+		../../propertyeditor/qtpropertybrowser/qtpropertymanager.h \
+		../../propertyeditor/qtpropertybrowser/qtpropertybrowser.h \
+		../../propertyeditor/qtpropertybrowser/qtpropertybrowserutils_p.h \
 		moc_qteditorfactory.cpp \
 		qteditorfactory.moc
-	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o qteditorfactory.o ../../qtpropertybrowser/qteditorfactory.cpp
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o qteditorfactory.o ../../propertyeditor/qtpropertybrowser/qteditorfactory.cpp
 
-qtgroupboxpropertybrowser.o: ../../qtpropertybrowser/qtgroupboxpropertybrowser.cpp ../../qtpropertybrowser/qtgroupboxpropertybrowser.h \
-		../../qtpropertybrowser/qtpropertybrowser.h \
+qtgroupboxpropertybrowser.o: ../../propertyeditor/qtpropertybrowser/qtgroupboxpropertybrowser.cpp ../../propertyeditor/qtpropertybrowser/qtgroupboxpropertybrowser.h \
+		../../propertyeditor/qtpropertybrowser/qtpropertybrowser.h \
 		moc_qtgroupboxpropertybrowser.cpp
-	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o qtgroupboxpropertybrowser.o ../../qtpropertybrowser/qtgroupboxpropertybrowser.cpp
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o qtgroupboxpropertybrowser.o ../../propertyeditor/qtpropertybrowser/qtgroupboxpropertybrowser.cpp
 
-qtpropertybrowser.o: ../../qtpropertybrowser/qtpropertybrowser.cpp ../../qtpropertybrowser/qtpropertybrowser.h \
+qtpropertybrowser.o: ../../propertyeditor/qtpropertybrowser/qtpropertybrowser.cpp ../../propertyeditor/qtpropertybrowser/qtpropertybrowser.h \
 		moc_qtpropertybrowser.cpp
-	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o qtpropertybrowser.o ../../qtpropertybrowser/qtpropertybrowser.cpp
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o qtpropertybrowser.o ../../propertyeditor/qtpropertybrowser/qtpropertybrowser.cpp
 
-qtpropertybrowserutils.o: ../../qtpropertybrowser/qtpropertybrowserutils.cpp ../../qtpropertybrowser/qtpropertybrowserutils_p.h
-	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o qtpropertybrowserutils.o ../../qtpropertybrowser/qtpropertybrowserutils.cpp
+qtpropertybrowserutils.o: ../../propertyeditor/qtpropertybrowser/qtpropertybrowserutils.cpp ../../propertyeditor/qtpropertybrowser/qtpropertybrowserutils_p.h
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o qtpropertybrowserutils.o ../../propertyeditor/qtpropertybrowser/qtpropertybrowserutils.cpp
 
-qtpropertymanager.o: ../../qtpropertybrowser/qtpropertymanager.cpp ../../qtpropertybrowser/qtpropertymanager.h \
-		../../qtpropertybrowser/qtpropertybrowser.h \
-		../../qtpropertybrowser/qtpropertybrowserutils_p.h \
+qtpropertymanager.o: ../../propertyeditor/qtpropertybrowser/qtpropertymanager.cpp ../../propertyeditor/qtpropertybrowser/qtpropertymanager.h \
+		../../propertyeditor/qtpropertybrowser/qtpropertybrowser.h \
+		../../propertyeditor/qtpropertybrowser/qtpropertybrowserutils_p.h \
 		moc_qtpropertymanager.cpp \
 		qtpropertymanager.moc
-	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o qtpropertymanager.o ../../qtpropertybrowser/qtpropertymanager.cpp
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o qtpropertymanager.o ../../propertyeditor/qtpropertybrowser/qtpropertymanager.cpp
 
-qttreepropertybrowser.o: ../../qtpropertybrowser/qttreepropertybrowser.cpp ../../qtpropertybrowser/qttreepropertybrowser.h \
-		../../qtpropertybrowser/qtpropertybrowser.h \
+qttreepropertybrowser.o: ../../propertyeditor/qtpropertybrowser/qttreepropertybrowser.cpp ../../propertyeditor/qtpropertybrowser/qttreepropertybrowser.h \
+		../../propertyeditor/qtpropertybrowser/qtpropertybrowser.h \
 		moc_qttreepropertybrowser.cpp \
 		qttreepropertybrowser.moc
-	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o qttreepropertybrowser.o ../../qtpropertybrowser/qttreepropertybrowser.cpp
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o qttreepropertybrowser.o ../../propertyeditor/qtpropertybrowser/qttreepropertybrowser.cpp
 
-qtvariantproperty.o: ../../qtpropertybrowser/qtvariantproperty.cpp ../../qtpropertybrowser/qtvariantproperty.h \
-		../../qtpropertybrowser/qtpropertybrowser.h \
-		../../qtpropertybrowser/qtpropertymanager.h \
-		../../qtpropertybrowser/qteditorfactory.h \
+qtvariantproperty.o: ../../propertyeditor/qtpropertybrowser/qtvariantproperty.cpp ../../propertyeditor/qtpropertybrowser/qtvariantproperty.h \
+		../../propertyeditor/qtpropertybrowser/qtpropertybrowser.h \
+		../../propertyeditor/qtpropertybrowser/qtpropertymanager.h \
+		../../propertyeditor/qtpropertybrowser/qteditorfactory.h \
 		moc_qtvariantproperty.cpp
-	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o qtvariantproperty.o ../../qtpropertybrowser/qtvariantproperty.cpp
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o qtvariantproperty.o ../../propertyeditor/qtpropertybrowser/qtvariantproperty.cpp
 
 qrc_GenesysQtGUI_resources.o: qrc_GenesysQtGUI_resources.cpp 
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o qrc_GenesysQtGUI_resources.o qrc_GenesysQtGUI_resources.cpp

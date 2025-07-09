@@ -21,11 +21,11 @@ Smart_BatchAndSeparate::Smart_BatchAndSeparate() {
 
 int Smart_BatchAndSeparate::main(int argc, char** argv) {
 	Simulator* genesys = new Simulator();
-	genesys->getTracer()->setTraceLevel(TraitsApp<GenesysApplication_if>::traceLevel);
-	setDefaultTraceHandlers(genesys->getTracer());
-	PluginManager* plugins = genesys->getPlugins();
+	genesys->getTraceManager()->setTraceLevel(TraitsApp<GenesysApplication_if>::traceLevel);
+	setDefaultTraceHandlers(genesys->getTraceManager());
+	PluginManager* plugins = genesys->getPluginManager();
 	plugins->autoInsertPlugins("autoloadplugins.txt");
-	Model* model = genesys->getModels()->newModel();
+	Model* model = genesys->getModelManager()->newModel();
 	// create model
 	Create* cr1 = plugins->newInstance<Create>(model);
     cr1->setEntityTypeName("Entity 1");
@@ -52,12 +52,12 @@ int Smart_BatchAndSeparate::main(int argc, char** argv) {
     
 	Dispose* di2 = plugins->newInstance<Dispose>(model);
 
-    cr1->getConnections()->insert(ba1);
-    ba1->getConnections()->insert(di1);
+    cr1->getConnectionManager()->insert(ba1);
+    ba1->getConnectionManager()->insert(di1);
     
-    cr2->getConnections()->insert(ba2);
-    ba2->getConnections()->insert(se2);
-    se2->getConnections()->insert(di2);
+    cr2->getConnectionManager()->insert(ba2);
+    ba2->getConnectionManager()->insert(se2);
+    se2->getConnectionManager()->insert(di2);
     
 	ModelSimulation* s = model->getSimulation();
     s->setNumberOfReplications(300);

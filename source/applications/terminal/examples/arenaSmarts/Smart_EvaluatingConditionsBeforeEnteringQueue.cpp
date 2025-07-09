@@ -40,11 +40,11 @@ Smart_EvaluatingConditionsBeforeEnteringQueue::Smart_EvaluatingConditionsBeforeE
  */
 int Smart_EvaluatingConditionsBeforeEnteringQueue::main(int argc, char** argv) {
 	Simulator* genesys = new Simulator();
-	genesys->getTracer()->setTraceLevel(TraitsApp<GenesysApplication_if>::traceLevel);
-	setDefaultTraceHandlers(genesys->getTracer());
-	PluginManager* plugins = genesys->getPlugins();
+	genesys->getTraceManager()->setTraceLevel(TraitsApp<GenesysApplication_if>::traceLevel);
+	setDefaultTraceHandlers(genesys->getTraceManager());
+	PluginManager* plugins = genesys->getPluginManager();
 	plugins->autoInsertPlugins("autoloadplugins.txt");
-	Model* model = genesys->getModels()->newModel();
+	Model* model = genesys->getModelManager()->newModel();
 	// create model
 
 	Variable* procStartTime = plugins->newInstance<Variable>(model, "procstarttime");
@@ -102,17 +102,17 @@ int Smart_EvaluatingConditionsBeforeEnteringQueue::main(int argc, char** argv) {
 
 
 	// connect model components to create a "workflow"
-	create->getConnections()->insert(assign1);
-	assign1->getConnections()->insert(decide);
+	create->getConnectionManager()->insert(assign1);
+	assign1->getConnectionManager()->insert(decide);
 	// decide == true
-	decide->getConnections()->insert(seize1);
-	seize1->getConnections()->insert(delay1);
-	delay1->getConnections()->insert(assign2);
-	assign2->getConnections()->insert(delay2);
-	delay2->getConnections()->insert(release);
-	release->getConnections()->insert(disposeTrue);
+	decide->getConnectionManager()->insert(seize1);
+	seize1->getConnectionManager()->insert(delay1);
+	delay1->getConnectionManager()->insert(assign2);
+	assign2->getConnectionManager()->insert(delay2);
+	delay2->getConnectionManager()->insert(release);
+	release->getConnectionManager()->insert(disposeTrue);
 	// decide == false
-	decide->getConnections()->insert(disposeFalse);
+	decide->getConnectionManager()->insert(disposeFalse);
 
 
 	// set options, save and simulate

@@ -63,7 +63,7 @@ void Enter::setStationName(std::string stationName) {
 	if (data != nullptr) {
 		_station = dynamic_cast<Station*> (data);
 	} else {
-		_station = _parentModel->getParentSimulator()->getPlugins()->newInstance<Station>(_parentModel, stationName);
+		_station = _parentModel->getParentSimulator()->getPluginManager()->newInstance<Station>(_parentModel, stationName);
 	}
 	_station->setEnterIntoStationComponent(this);
 }
@@ -76,7 +76,7 @@ void Enter::_onDispatchEvent(Entity* entity, unsigned int inputPortNumber) {
 	if (_reportStatistics)
 		_numberIn->incCountValue();
 	_station->enter(entity);
-	_parentModel->sendEntityToComponent(entity, this->getConnections()->getFrontConnection());
+	_parentModel->sendEntityToComponent(entity, this->getConnectionManager()->getFrontConnection());
 }
 
 bool Enter::_loadInstance(PersistenceRecord *fields) {
@@ -123,7 +123,7 @@ void Enter::_createInternalAndAttachedData() {
 			_internalDataClear();
 		}
 	if (_station == nullptr) {
-		_station = _parentModel->getParentSimulator()->getPlugins()->newInstance<Station>(_parentModel);
+		_station = _parentModel->getParentSimulator()->getPluginManager()->newInstance<Station>(_parentModel);
 	}
 	_attachedDataInsert("Station", _station);
 }

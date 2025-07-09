@@ -188,9 +188,9 @@ void Search::_onDispatchEvent(Entity* entity, unsigned int inputPortNumber) {
 	} else if (_searchInType == SearchInType::ENTITYGROUP) {
 	}
 	if (found) {
-		_parentModel->sendEntityToComponent(entity, this->getConnections()->getConnectionAtPort(1));
+		_parentModel->sendEntityToComponent(entity, this->getConnectionManager()->getConnectionAtPort(1));
 	} else {
-		_parentModel->sendEntityToComponent(entity, this->getConnections()->getConnectionAtPort(0));
+		_parentModel->sendEntityToComponent(entity, this->getConnectionManager()->getConnectionAtPort(0));
 	}
 }
 
@@ -250,7 +250,7 @@ void Search::_createInternalAndAttachedData() {
 	if (_parentModel->getDataManager()->getDataDefinition(Util::TypeOf<Attribute>(), _saveFounRankAttribute) == nullptr) {
 		this->_attachedAttributesInsert({_saveFounRankAttribute});
 	}
-	PluginManager* plugins = _parentModel->getParentSimulator()->getPlugins();
+	PluginManager* plugins = _parentModel->getParentSimulator()->getPluginManager();
 	if (_searchInType == Search::SearchInType::QUEUE) {
 		if (_searchIn == nullptr) {
 			_searchIn = plugins->newInstance<Queue>(_parentModel, getName() + ".Queue");

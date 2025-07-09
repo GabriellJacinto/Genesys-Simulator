@@ -110,7 +110,7 @@ void Match::_onDispatchEvent(Entity* entity, unsigned int inputPortNumber) {
 					queue->removeElement(waiting);
 					// @TODO: Actualize STATISTICS about queue/wait time
 					waitingEntity = waiting->getEntity();
-					_parentModel->sendEntityToComponent(waitingEntity, this->getConnections()->getFrontConnection(), 0.0);
+					_parentModel->sendEntityToComponent(waitingEntity, this->getConnectionManager()->getFrontConnection(), 0.0);
 				}
 			}
 		}
@@ -187,7 +187,7 @@ void Match::_createInternalAndAttachedData() {
 		_queues->remove(_queues->last());
 	}
 	while (_queues->size() < _numberOfQueues) {
-		Queue* newQueue = _parentModel->getParentSimulator()->getPlugins()->newInstance<Queue>(_parentModel, getName() + ".Queue" + std::to_string(_queues->size()));
+		Queue* newQueue = _parentModel->getParentSimulator()->getPluginManager()->newInstance<Queue>(_parentModel, getName() + ".Queue" + std::to_string(_queues->size()));
 		_queues->insert(newQueue);
 		_internalDataInsert(newQueue->getName(), newQueue);
 	}

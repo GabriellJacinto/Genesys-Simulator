@@ -24,20 +24,20 @@ Smart_CppForG::Smart_CppForG() {
 
 int Smart_CppForG::main(int argc, char** argv) {
 	Simulator* genesys = new Simulator();
-	genesys->getTracer()->setTraceLevel(TraitsApp<GenesysApplication_if>::traceLevel);
-	setDefaultTraceHandlers(genesys->getTracer());
-	PluginManager* plugins = genesys->getPlugins();
+	genesys->getTraceManager()->setTraceLevel(TraitsApp<GenesysApplication_if>::traceLevel);
+	setDefaultTraceHandlers(genesys->getTraceManager());
+	PluginManager* plugins = genesys->getPluginManager();
 	plugins->autoInsertPlugins("autoloadplugins.txt");
-	Model* model = genesys->getModels()->newModel();
+	Model* model = genesys->getModelManager()->newModel();
 	// create model
 	Create* create = plugins->newInstance<Create>(model);
 	CppForG* cpp1 = plugins->newInstance<CppForG>(model);
 	CppForG* cpp2 = plugins->newInstance<CppForG>(model);
 	Dispose* dispose = plugins->newInstance<Dispose>(model);
 	// connect model components to create a "workflow"
-	create->getConnections()->insert(cpp1);
-	cpp1->getConnections()->insert(cpp2);
-	cpp2->getConnections()->insert(dispose);
+	create->getConnectionManager()->insert(cpp1);
+	cpp1->getConnectionManager()->insert(cpp2);
+	cpp2->getConnectionManager()->insert(dispose);
 	// set parameters for cpp1 and cpp2 components
 	std::string includeCode = "\
 		#include \"../../../../kernel/simulator/ModelSimulation.h\"\n\

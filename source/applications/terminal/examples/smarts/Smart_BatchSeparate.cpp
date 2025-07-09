@@ -27,11 +27,11 @@ Smart_BatchSeparate::Smart_BatchSeparate() {
 
 int Smart_BatchSeparate::main(int argc, char** argv) {
 	Simulator* genesys = new Simulator();
-	genesys->getTracer()->setTraceLevel(TraitsApp<GenesysApplication_if>::traceLevel);
-	setDefaultTraceHandlers(genesys->getTracer());
-	PluginManager* plugins = genesys->getPlugins();
+	genesys->getTraceManager()->setTraceLevel(TraitsApp<GenesysApplication_if>::traceLevel);
+	setDefaultTraceHandlers(genesys->getTraceManager());
+	PluginManager* plugins = genesys->getPluginManager();
 	plugins->autoInsertPlugins("autoloadplugins.txt");
-	Model* model = genesys->getModels()->newModel();
+	Model* model = genesys->getModelManager()->newModel();
 	// create model
 	Create* cr = plugins->newInstance<Create>(model);
 	cr->setEntityTypeName("normal");
@@ -49,11 +49,11 @@ int Smart_BatchSeparate::main(int argc, char** argv) {
 	Separate* se = plugins->newInstance<Separate>(model);
 	Dispose* di = plugins->newInstance<Dispose>(model);
 	// connect model components to create a "workflow"
-	cr->getConnections()->insert(as);
-	as->getConnections()->insert(ba);
-	ba->getConnections()->insert(de);
-	de->getConnections()->insert(se);
-	se->getConnections()->insert(di);
+	cr->getConnectionManager()->insert(as);
+	as->getConnectionManager()->insert(ba);
+	ba->getConnectionManager()->insert(de);
+	de->getConnectionManager()->insert(se);
+	se->getConnectionManager()->insert(di);
 	// save, trace specific modules and aimulate
 	ModelSimulation* sim = model->getSimulation();
 	sim->setReplicationLength(100);

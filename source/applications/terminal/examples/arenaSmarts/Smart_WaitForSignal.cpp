@@ -37,11 +37,11 @@ Smart_WaitForSignal::Smart_WaitForSignal() {
  */
 int Smart_WaitForSignal::main(int argc, char** argv) {
 	Simulator* genesys = new Simulator();
-	genesys->getTracer()->setTraceLevel(TraitsApp<GenesysApplication_if>::traceLevel);
-	setDefaultTraceHandlers(genesys->getTracer());
-	PluginManager* plugins = genesys->getPlugins();
+	genesys->getTraceManager()->setTraceLevel(TraitsApp<GenesysApplication_if>::traceLevel);
+	setDefaultTraceHandlers(genesys->getTraceManager());
+	PluginManager* plugins = genesys->getPluginManager();
 	plugins->autoInsertPlugins("autoloadplugins.txt");
-	Model* model = genesys->getModels()->newModel();
+	Model* model = genesys->getModelManager()->newModel();
 	// create model
 
         //Data Definition        
@@ -101,12 +101,12 @@ int Smart_WaitForSignal::main(int argc, char** argv) {
         dispose_2->setReportStatistics(true);
         
 	// connect model components to create a "workflow"
-	create_1->getConnections()->insert(hold_1);
-	hold_1->getConnections()->insert(process_1);
-	process_1->getConnections()->insert(dispose_1);
+	create_1->getConnectionManager()->insert(hold_1);
+	hold_1->getConnectionManager()->insert(process_1);
+	process_1->getConnectionManager()->insert(dispose_1);
         
-	create_2->getConnections()->insert(signal_1);
-	signal_1->getConnections()->insert(dispose_2);
+	create_2->getConnectionManager()->insert(signal_1);
+	signal_1->getConnectionManager()->insert(dispose_2);
                 
         
 	// set options, save and simulate

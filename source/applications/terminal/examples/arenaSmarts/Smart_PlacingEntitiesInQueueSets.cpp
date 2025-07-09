@@ -37,11 +37,11 @@ Smart_PlacingEntitiesInQueueSets::Smart_PlacingEntitiesInQueueSets() {
 
 int Smart_PlacingEntitiesInQueueSets::main(int argc, char** argv) {
 	Simulator* genesys = new Simulator();
-	genesys->getTracer()->setTraceLevel(TraitsApp<GenesysApplication_if>::traceLevel);
-	setDefaultTraceHandlers(genesys->getTracer());
-	PluginManager* plugins = genesys->getPlugins();
+	genesys->getTraceManager()->setTraceLevel(TraitsApp<GenesysApplication_if>::traceLevel);
+	setDefaultTraceHandlers(genesys->getTraceManager());
+	PluginManager* plugins = genesys->getPluginManager();
 	plugins->autoInsertPlugins("autoloadplugins.txt");
-	Model* model = genesys->getModels()->newModel();
+	Model* model = genesys->getModelManager()->newModel();
 	// create model
 
 	// Create Customer into system
@@ -93,18 +93,18 @@ int Smart_PlacingEntitiesInQueueSets::main(int argc, char** argv) {
 	Dispose* dummy_dispose = plugins->newInstance<Dispose>(model, "Dummy_Dispose");
 
 	// connect model components to create a "workflow"
-	create1->getConnections()->insert(assign);
-	assign->getConnections()->insert(decide1);
+	create1->getConnectionManager()->insert(assign);
+	assign->getConnectionManager()->insert(decide1);
 
-	decide1->getConnections()->insert(wait1);
-	decide1->getConnections()->insert(wait2);
-	decide1->getConnections()->insert(wait3);
-	decide1->getConnections()->insert(wait4);
+	decide1->getConnectionManager()->insert(wait1);
+	decide1->getConnectionManager()->insert(wait2);
+	decide1->getConnectionManager()->insert(wait3);
+	decide1->getConnectionManager()->insert(wait4);
 
-	wait1->getConnections()->insert(dummy_dispose); // just because "Wait" is not a SinkComponent
-	wait2->getConnections()->insert(dummy_dispose); // just because "Wait" is not a SinkComponent
-	wait3->getConnections()->insert(dummy_dispose); // just because "Wait" is not a SinkComponent
-	wait4->getConnections()->insert(dummy_dispose); // just because "Wait" is not a SinkComponent
+	wait1->getConnectionManager()->insert(dummy_dispose); // just because "Wait" is not a SinkComponent
+	wait2->getConnectionManager()->insert(dummy_dispose); // just because "Wait" is not a SinkComponent
+	wait3->getConnectionManager()->insert(dummy_dispose); // just because "Wait" is not a SinkComponent
+	wait4->getConnectionManager()->insert(dummy_dispose); // just because "Wait" is not a SinkComponent
  
 	// set options, save and simulate
 	model->getSimulation()->setNumberOfReplications(300);

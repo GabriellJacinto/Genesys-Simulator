@@ -41,11 +41,11 @@ Smart_ContinuousFlowEntities::Smart_ContinuousFlowEntities() {
  */
 int Smart_ContinuousFlowEntities::main(int argc, char** argv) {
 	Simulator* genesys = new Simulator();
-	genesys->getTracer()->setTraceLevel(TraitsApp<GenesysApplication_if>::traceLevel);
-	setDefaultTraceHandlers(genesys->getTracer());
-	PluginManager* plugins = genesys->getPlugins();
+	genesys->getTraceManager()->setTraceLevel(TraitsApp<GenesysApplication_if>::traceLevel);
+	setDefaultTraceHandlers(genesys->getTraceManager());
+	PluginManager* plugins = genesys->getPluginManager();
 	plugins->autoInsertPlugins("autoloadplugins.txt");
-	Model* model = genesys->getModels()->newModel();
+	Model* model = genesys->getModelManager()->newModel();
 	// create model
 	Create* create1 = plugins->newInstance<Create>(model);
 	Seize* seize1 = plugins->newInstance<Seize>(model);
@@ -57,12 +57,12 @@ int Smart_ContinuousFlowEntities::main(int argc, char** argv) {
 	Resource* resource1 = plugins->newInstance<Resource>(model, "Resource 1");
 
 	// connect model components to create a "workflow"
-	create1->getConnections()->insert(seize1);
-	seize1->getConnections()->insert(clone1);
-	clone1->getConnections()->insert(delay1);
-	clone1->getConnections()->insert(seize1);
-	delay1->getConnections()->insert(release1);
-	release1->getConnections()->insert(dispose1);
+	create1->getConnectionManager()->insert(seize1);
+	seize1->getConnectionManager()->insert(clone1);
+	clone1->getConnectionManager()->insert(delay1);
+	clone1->getConnectionManager()->insert(seize1);
+	delay1->getConnectionManager()->insert(release1);
+	release1->getConnectionManager()->insert(dispose1);
 
 	// configure components
 	create1->setTimeBetweenCreationsExpression("EXPO(1)", Util::TimeUnit::hour);

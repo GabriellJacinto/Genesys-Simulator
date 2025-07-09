@@ -10,10 +10,10 @@ AirportSecurityExample::AirportSecurityExample() {
 
 int AirportSecurityExample::main(int argc, char** argv) {
 	Simulator* genesys = new Simulator();
-	this->setDefaultTraceHandlers(genesys->getTracer());
-	genesys->getPlugins()->autoInsertPlugins("autoloadplugins.txt");
-	Model* model = genesys->getModels()->newModel();
-	PluginManager* plugins = genesys->getPlugins();
+	this->setDefaultTraceHandlers(genesys->getTraceManager());
+	genesys->getPluginManager()->autoInsertPlugins("autoloadplugins.txt");
+	Model* model = genesys->getModelManager()->newModel();
+	PluginManager* plugins = genesys->getPluginManager();
 
 	model->getInfos()->setName("Airport Security Example");
 
@@ -41,12 +41,12 @@ int AirportSecurityExample::main(int argc, char** argv) {
 	Dispose* disposeDenied = plugins->newInstance<Dispose>(model);
 	disposeDenied->setDescription("Denied");
 
-	create->getConnections()->insert(process);
-	process->getConnections()->insert(decide);
-	decide->getConnections()->insert(disposeCleared);
-	decide->getConnections()->insert(disposeDenied);
+	create->getConnectionManager()->insert(process);
+	process->getConnectionManager()->insert(decide);
+	decide->getConnectionManager()->insert(disposeCleared);
+	decide->getConnectionManager()->insert(disposeDenied);
 
-	genesys->getTracer()->setTraceLevel(TraceManager::Level::L5_event);
+	genesys->getTraceManager()->setTraceLevel(TraceManager::Level::L5_event);
 	model->getSimulation()->setReplicationLength(12, Util::TimeUnit::hour);
 	model->getSimulation()->setNumberOfReplications(2);
 	model->getSimulation()->setWarmUpPeriod(0.5, Util::TimeUnit::hour);
