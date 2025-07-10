@@ -33,6 +33,8 @@ public:
 	MainWindow(QWidget *parent = nullptr);
 	~MainWindow();
     ModelGraphicsScene* myScene() const;
+    void updateResultsPlot();
+    QtCharts::QChartView* getChartView() const { return chartView; }
 
 public: // to notify changes
 	bool graphicalModelHasChanged() const;
