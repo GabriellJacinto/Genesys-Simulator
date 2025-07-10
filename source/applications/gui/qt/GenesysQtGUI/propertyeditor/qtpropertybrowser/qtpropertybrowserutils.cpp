@@ -47,6 +47,8 @@
 #include <QtWidgets/QMenu>
 #include <QtCore/QLocale>
 
+#include "math.h"
+
 QT_BEGIN_NAMESPACE
 
 QtCursorDatabase::QtCursorDatabase()
@@ -344,8 +346,8 @@ QtIntEdit::QtIntEdit(QWidget* parent) :
 	setLayout(lt);
 
 	m_initialvalue = m_spinbox->value();
-	connect(m_spinbox, &QSpinBox::valueChanged, this, &QtIntEdit::valueChanged);
-	connect(m_spinbox, &QSpinBox::valueChanged, this, [&] { m_button->setEnabled(m_initialvalue != m_spinbox->value()); });
+	connect(m_spinbox, static_cast<void(QSpinBox::*)(int)>(&QSpinBox::valueChanged), this, &QtIntEdit::valueChanged);
+	connect(m_spinbox, static_cast<void(QSpinBox::*)(int)>(&QSpinBox::valueChanged), this, [&] { m_button->setEnabled(m_initialvalue != m_spinbox->value()); });
 	connect(m_button, &QPushButton::clicked, this, [&] { m_spinbox->setValue(m_initialvalue); });
 	setFocusProxy(m_spinbox);
 }
@@ -403,8 +405,8 @@ QtDoubleEdit::QtDoubleEdit(QWidget* parent) :
 	setLayout(lt);
 
 	m_initialvalue = m_doublespinbox->value();
-	connect(m_doublespinbox, &QDoubleSpinBox::valueChanged, this, &QtDoubleEdit::valueChanged);
-	connect(m_doublespinbox, &QDoubleSpinBox::valueChanged, this, [&] {
+    connect(m_doublespinbox, static_cast<void(QDoubleSpinBox::*)(double)>(&QDoubleSpinBox::valueChanged), this, &QtDoubleEdit::valueChanged);
+    connect(m_doublespinbox, static_cast<void(QDoubleSpinBox::*)(double)>(&QDoubleSpinBox::valueChanged), this, [&] {
 		int e10 = pow(10, m_doublespinbox->decimals());
 		m_button->setEnabled(int(m_initialvalue + 0.5) * e10 != int(m_doublespinbox->value() + 0.5) * e10); });
 	connect(m_button, &QPushButton::clicked, this, [&] { m_doublespinbox->setValue(m_initialvalue); });

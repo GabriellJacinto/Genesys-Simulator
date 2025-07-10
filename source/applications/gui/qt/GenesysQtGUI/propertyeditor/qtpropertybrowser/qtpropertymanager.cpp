@@ -6077,7 +6077,8 @@ void QtFontPropertyManagerPrivate::slotFontDatabaseDelayedChange()
 	typedef QMap<const QtProperty*, QtProperty*> PropertyPropertyMap;
 	// rescan available font names
 	const QStringList oldFamilies = m_familyNames;
-	m_familyNames = QFontDatabase::families();
+	QFontDatabase fdb;
+	m_familyNames = fdb.families();
 
 	// Adapt all existing properties
 	if (!m_propertyToFamily.isEmpty()) {
@@ -6262,7 +6263,7 @@ void QtFontPropertyManager::setValue(QtProperty* property, const QFont& val)
 		return;
 
 	const QFont oldVal = it.value();
-	if (oldVal == val && oldVal.resolveMask() == val.resolveMask())
+	if (oldVal == val) // && oldVal.resolveMask() == val.resolveMask())
 		return;
 
 	it.value() = val;
@@ -6291,12 +6292,13 @@ void QtFontPropertyManager::setValue(QtProperty* property, const QFont& val)
 void QtFontPropertyManager::initializeProperty(QtProperty* property)
 {
 	QFont val;
+	QFontDatabase fdb;
 	d_ptr->m_values[property] = val;
 
 	QtProperty* familyProp = d_ptr->m_enumPropertyManager->addProperty();
 	familyProp->setPropertyName(tr("Family"));
 	if (d_ptr->m_familyNames.isEmpty())
-		d_ptr->m_familyNames = QFontDatabase::families();
+		d_ptr->m_familyNames = fdb.families();
 	d_ptr->m_enumPropertyManager->setEnumNames(familyProp, d_ptr->m_familyNames);
 	int idx = d_ptr->m_familyNames.indexOf(val.family());
 	if (idx == -1)

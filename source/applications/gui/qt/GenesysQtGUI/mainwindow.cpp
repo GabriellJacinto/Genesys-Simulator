@@ -41,6 +41,13 @@
 #include <QDebug>
 #include <QRegularExpression>
 #include <QRandomGenerator>
+#include <QtCharts/QBarSeries>
+#include <QtCharts/QBarSet>
+#include <QtCharts/QChart>
+#include <QtCharts/QChartView>
+#include <QtCharts/QBarCategoryAxis>
+#include <QtCharts/QValueAxis>
+using namespace QtCharts;
 
 MainWindow::MainWindow(QWidget *parent) : QMainWindow(parent), ui(new Ui::MainWindow) {
     ui->setupUi(this);
@@ -176,6 +183,36 @@ MainWindow::MainWindow(QWidget *parent) : QMainWindow(parent), ui(new Ui::MainWi
     //this->on_actionModelNew_triggered();
     //this->_loadGraphicalModel("./models/Smart_AnElectronicAssemblyAndTestSystem.gen"); //("../../../../../models/Smart_Delay.gen"); // Smart_AnElectronicAssemblyAndTestSystem.gen");
     //ui->tabWidget_Model->setCurrentIndex(CONST.TabModelGraphicEditIndex);
+
+    // Inicializa o Qt Charts para a aba Plots
+    QBarSet *set0 = new QBarSet("Média");
+    *set0 << 1 << 2 << 3 << 4 << 5; // Exemplo de dados
+
+    QBarSeries *series = new QBarSeries();
+    series->append(set0);
+
+    QChart *chart = new QChart();
+    chart->addSeries(series);
+    chart->setTitle("Exemplo de gráfico de barras");
+    chart->setAnimationOptions(QChart::SeriesAnimations);
+
+    QStringList categories;
+    categories << "A" << "B" << "C" << "D" << "E";
+    QBarCategoryAxis *axisX = new QBarCategoryAxis();
+    axisX->append(categories);
+    chart->addAxis(axisX, Qt::AlignBottom);
+    series->attachAxis(axisX);
+
+    QValueAxis *axisY = new QValueAxis();
+    chart->addAxis(axisY, Qt::AlignLeft);
+    series->attachAxis(axisY);
+
+    chartView = new QChartView(chart, ui->tabReportsPlots);
+    chartView->setRenderHint(QPainter::Antialiasing);
+
+    QVBoxLayout* layout = new QVBoxLayout(ui->tabReportsPlots);
+    layout->addWidget(chartView);
+    ui->tabReportsPlots->setLayout(layout);
 }
 
 MainWindow::~MainWindow() {

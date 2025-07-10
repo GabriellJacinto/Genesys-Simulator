@@ -624,6 +624,12 @@ void QtVariantPropertyManagerPrivate::slotValueChanged(QtProperty *property, con
     valueChanged(property, QVariant(val));
 }
 
+void QtVariantPropertyManagerPrivate::slotEnumChanged(QtProperty *property, int val)
+{
+    if (QtVariantProperty *varProp = m_internalToProperty.value(property, 0))
+        emit q_ptr->attributeChanged(varProp, m_enumNamesAttribute, QVariant(val));
+}
+
 void QtVariantPropertyManagerPrivate::slotEnumNamesChanged(QtProperty *property, const QStringList &enumNames)
 {
     if (QtVariantProperty *varProp = m_internalToProperty.value(property, 0))
@@ -654,6 +660,12 @@ void QtVariantPropertyManagerPrivate::slotValueChanged(QtProperty *property, con
 #ifndef QT_NO_CURSOR
     valueChanged(property, QVariant(val));
 #endif
+}
+
+void QtVariantPropertyManagerPrivate::slotFlagChanged(QtProperty *property, int val)
+{
+    if (QtVariantProperty *varProp = m_internalToProperty.value(property, 0))
+        emit q_ptr->attributeChanged(varProp, m_flagNamesAttribute, QVariant(val));
 }
 
 void QtVariantPropertyManagerPrivate::slotFlagNamesChanged(QtProperty *property, const QStringList &flagNames)
@@ -1556,7 +1568,7 @@ void QtVariantPropertyManager::setValue(QtProperty *property, const QVariant &va
 
     int valType = valueType(property);
 
-    if (propType != valType && !val.canConvert(QMetaType(valType)))
+    if (propType != valType && !val.canConvert(valType))
         return;
 
     QtProperty *internProp = propertyToWrappedProperty()->value(property, 0);
@@ -1660,7 +1672,7 @@ void QtVariantPropertyManager::setAttribute(QtProperty *property,
         return;
 
     if (attrType != attributeType(propertyType(property), attribute) &&
-                !value.canConvert(QMetaType(attrType)))
+                !value.canConvert(attrType))
         return;
 
     QtProperty *internProp = propertyToWrappedProperty()->value(property, 0);

@@ -59,7 +59,7 @@ void MainWindow::on_horizontalSlider_Zoom_valueChanged(int value) {
     double scaleFactor = 1.0;
     // @TODO: Qt5 -- Q_ASSERT(ui->label_ModelGraphic->pixmap());
     scaleFactor *= factor;
-    ui->label_ModelGraphic->resize(scaleFactor * ui->label_ModelGraphic->pixmap().size());
+    ui->label_ModelGraphic->resize(scaleFactor * ui->label_ModelGraphic->pixmap()->size());
     //adjustScrollBar(ui->scrollArea_Graphic->horizontalScrollBar(), factor);
     //adjustScrollBar(ui->scrollArea_Graphic->verticalScrollBar(), factor);
 

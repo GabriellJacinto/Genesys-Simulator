@@ -1,6 +1,7 @@
 QT += core gui
 QT += printsupport
 QT += designer
+QT += charts
 greaterThan(QT_MAJOR_VERSION, 6): QT += widgets
 CONFIG += c++14
 

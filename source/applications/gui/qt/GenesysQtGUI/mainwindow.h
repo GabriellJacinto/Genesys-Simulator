@@ -6,6 +6,9 @@
 #include <QTreeWidgetItem>
 #include <QGraphicsItem>
 #include <QUndoView>
+#include <QtCharts/QChartView>
+
+QT_CHARTS_USE_NAMESPACE
 
 #include "propertyeditor/DataComponentProperty.h"
 #include "propertyeditor/DataComponentEditor.h"
@@ -314,5 +317,6 @@ private:
     bool _modelCheked = false;
     bool _loaded = false;
 	//CodeEditor* textCodeEdit_Model;
+    QChartView* chartView = nullptr;
 };
 #endif // MAINWINDOW_H
