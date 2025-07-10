@@ -27,19 +27,10 @@ git clone https://github.com/rlcancian/Genesys-Simulator.git
 cd Genesys-Simulator/source/applications/gui/qt/GenesysQtGUI
 ```
 
-## 3. Workaround for Missing Qt6 lrelease
-
-Create a symlink so the build system can find `lrelease`:
-
-```bash
-sudo mkdir -p /usr/lib/qt6/bin
-sudo ln -s /usr/bin/lrelease /usr/lib/qt6/bin/lrelease
-```
-
 ## 4. Configure the Project
 
 ```bash
-qmake6 GenesysQtGUI.pro
+qmake GenesysQtGUI.pro
 ```
 > If you are using Qt5, use `qmake GenesysQtGUI.pro` instead.
 
@@ -56,18 +47,3 @@ After building, you should find the executable in the current directory or a `bu
 ```bash
 ./GenesysQtGUI
 ```
-
----
-
-## Troubleshooting
-
-- **Missing Qt modules:**  
-  If you get errors about missing modules (like `printsupport` or `designer`), remove them from the `QT += ...` line in `GenesysQtGUI.pro` or install the corresponding Qt5 packages.
-- **Translation errors:**  
-  If you do not need translations, you can comment out or remove the `TRANSLATIONS` line in your `.pro` file.
-
----
-
-## Docker Alternative
-
-You can also build and run Genesys-Simulator using Docker. See the `docker/README.md` in the repository for details.
