@@ -237,6 +237,8 @@ void MainWindow::on_actionSimulationStop_triggered() {
 
     simulator->getModelManager()->current()->getSimulation()->stop();
 
+    updateResultsPlot(); // Atualiza o gráfico de resultados
+
     _actualizeActions();
 }
 

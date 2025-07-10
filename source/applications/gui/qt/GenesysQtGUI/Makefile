@@ -17,7 +17,7 @@ CXX           = g++
 DEFINES       = -DQT_NO_DEBUG -DQT_PRINTSUPPORT_LIB -DQT_DESIGNER_LIB -DQT_UIPLUGIN_LIB -DQT_CHARTS_LIB -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_XML_LIB -DQT_CORE_LIB
 CFLAGS        = -pipe -O2 -Wall -Wextra -D_REENTRANT -fPIC $(DEFINES)
 CXXFLAGS      = -pipe -pedantic -Wno-unused -Wmissing-field-initializers -O2 -std=gnu++1y -Wall -Wextra -D_REENTRANT -fPIC $(DEFINES)
-INCPATH       = -I. -I/usr/include/x86_64-linux-gnu/qt5 -I/usr/include/x86_64-linux-gnu/qt5/QtPrintSupport -I/usr/include/x86_64-linux-gnu/qt5/QtDesigner -I/usr/include/x86_64-linux-gnu/qt5/QtUiPlugin -I/usr/include/x86_64-linux-gnu/qt5/QtCharts -I/usr/include/x86_64-linux-gnu/qt5/QtWidgets -I/usr/include/x86_64-linux-gnu/qt5/QtGui -I/usr/include/x86_64-linux-gnu/qt5/QtXml -I/usr/include/x86_64-linux-gnu/qt5/QtCore -I. -I. -I/usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++
+INCPATH       = -I. -I/usr/include/x86_64-linux-gnu/qt5 -I/usr/include/x86_64-linux-gnu/qt5/QtPrintSupport -I/usr/include/x86_64-linux-gnu/qt5/QtDesigner -I/usr/include/x86_64-linux-gnu/qt5/QtUiPlugin -I/usr/include/x86_64-linux-gnu/qt5/QtCharts -I/usr/include/x86_64-linux-gnu/qt5/QtWidgets -I/usr/include/x86_64-linux-gnu/qt5/QtGui -I/usr/include/x86_64-linux-gnu/qt5/QtXml -I/usr/include/x86_64-linux-gnu/qt5/QtCore -Ibuild/moc -Ibuild/ui -I/usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++
 QMAKE         = /usr/lib/qt5/bin/qmake
 DEL_FILE      = rm -f
 CHK_DIR_EXISTS= test -d
@@ -37,7 +37,7 @@ MOVE          = mv -f
 TAR           = tar -cf
 COMPRESS      = gzip -9f
 DISTNAME      = GenesysQtGUI1.0.0
-DISTDIR = /home/orion23/Documents/repos/Genesys-Simulator/source/applications/gui/qt/GenesysQtGUI/.tmp/GenesysQtGUI1.0.0
+DISTDIR = /home/orion23/Documents/repos/Genesys-Simulator/source/applications/gui/qt/GenesysQtGUI/build/obj/GenesysQtGUI1.0.0
 LINK          = g++
 LFLAGS        = -Wl,-O1
 LIBS          = $(SUBLIBS) /usr/lib/x86_64-linux-gnu/libQt5PrintSupport.so /usr/lib/x86_64-linux-gnu/libQt5Designer.so /usr/lib/x86_64-linux-gnu/libQt5Charts.so /usr/lib/x86_64-linux-gnu/libQt5Widgets.so /usr/lib/x86_64-linux-gnu/libQt5Gui.so /usr/lib/x86_64-linux-gnu/libQt5Xml.so /usr/lib/x86_64-linux-gnu/libQt5Core.so -lGL -lpthread   
@@ -48,7 +48,7 @@ STRIP         = strip
 
 ####### Output directory
 
-OBJECTS_DIR   = ./
+OBJECTS_DIR   = build/obj/
 
 ####### Files
 
@@ -308,295 +308,295 @@ SOURCES       = ../../../../kernel/simulator/Attribute.cpp \
 		propertyeditor/qtpropertybrowser/qtpropertybrowserutils.cpp \
 		propertyeditor/qtpropertybrowser/qtpropertymanager.cpp \
 		propertyeditor/qtpropertybrowser/qttreepropertybrowser.cpp \
-		propertyeditor/qtpropertybrowser/qtvariantproperty.cpp qrc_GenesysQtGUI_resources.cpp \
-		qrc_qtpropertybrowser.cpp \
-		qrc_qmake_qmake_qm_files.cpp \
-		moc_CodeEditor.cpp \
-		moc_ObjectPropertyBrowser.cpp \
-		moc_DialogFind.cpp \
-		moc_DialogSelectCounter.cpp \
-		moc_DialogSelectVariable.cpp \
-		moc_DialogTimerConfigure.cpp \
-		moc_Dialogmodelinformation.cpp \
-		moc_dialogBreakpoint.cpp \
-		moc_dialogpluginmanager.cpp \
-		moc_dialogsimulationconfigure.cpp \
-		moc_dialogsystempreferences.cpp \
-		moc_mainwindow.cpp \
-		moc_qtpropertybrowserutils_p.cpp
-OBJECTS       = Attribute.o \
-		ComponentManager.o \
-		ConnectionManager.o \
-		Counter.o \
-		CppSerializer.o \
-		Entity.o \
-		EntityType.o \
-		Event.o \
-		ExperimentManager.o \
-		ExperimentManagerDefaultImpl1.o \
-		GenSerializer.o \
-		JsonSerializer.o \
-		LicenceManager.o \
-		Model.o \
-		ModelCheckerDefaultImpl1.o \
-		ModelComponent.o \
-		ModelDataDefinition.o \
-		ModelDataManager.o \
-		ModelInfo.o \
-		ModelManager.o \
-		ModelPersistenceDefaultImpl2.o \
-		ModelSerializer.o \
-		ModelSimulation.o \
-		OnEventManager.o \
-		ParserChangesInformation.o \
-		ParserDefaultImpl1.o \
-		ParserDefaultImpl2.o \
-		ParserManager.o \
-		Persistence.o \
-		Plugin.o \
-		PluginConnectorDummyImpl1.o \
-		PluginInformation.o \
-		PluginManager.o \
-		SimulationExperiment.o \
-		SimulationReporterDefaultImpl1.o \
-		SimulationScenario.o \
-		Simulator.o \
-		SinkModelComponent.o \
-		SourceModelComponent.o \
-		StatisticsCollector.o \
-		TraceManager.o \
-		XmlSerializer.o \
-		CollectorDatafileDefaultImpl1.o \
-		CollectorDefaultImpl1.o \
-		SamplerBoostImpl.o \
-		SamplerDefaultImpl1.o \
-		SorttFile.o \
-		StatisticsDataFileDefaultImpl.o \
-		StatisticsDefaultImpl1.o \
-		Util.o \
-		Genesys++-driver.o \
-		Genesys++-scanner.o \
-		GenesysParser.o \
-		obj_t.o \
-		Access.o \
-		Assign.o \
-		Batch.o \
-		Buffer.o \
-		Clone.o \
-		CppForG.o \
-		Create.o \
-		Decide.o \
-		DefaultModalModel.o \
-		Delay.o \
-		DiffEquations.o \
-		Dispose.o \
-		DropOff.o \
-		DummyComponent.o \
-		Enter.o \
-		Exit.o \
-		PickableStationItem.o \
-		SPICECircuit.o \
-		SPICENode.o \
-		Wait.o \
-		LSODE.o \
-		Leave.o \
-		MarkovChain.o \
-		Match.o \
-		OLD_ODEelement.o \
-		PickStation.o \
-		PickUp.o \
-		Process.o \
-		QueueableItem.o \
-		Record.o \
-		Release.o \
-		Remove.o \
-		Route.o \
-		Search.o \
-		SeizableItem.o \
-		Seize.o \
-		Separate.o \
-		Signal.o \
-		Start.o \
-		Stop.o \
-		Store.o \
-		Submodel.o \
-		Unstore.o \
-		Write.o \
-		DefaultNode.o \
-		AssignmentItem.o \
-		CppCompiler.o \
-		DummyElement.o \
-		EntityGroup.o \
-		Failure.o \
-		File.o \
-		Formula.o \
-		Label.o \
-		Queue.o \
-		Resource.o \
-		SPICERunner.o \
-		Schedule.o \
-		Sequence.o \
-		Set.o \
-		SignalData.o \
-		Station.o \
-		Storage.o \
-		Variable.o \
-		FitterDummyImpl.o \
-		HypothesisTesterDefaultImpl1.o \
-		ProbabilityDistribution.o \
-		ProbabilityDistributionBase.o \
-		SolverDefaultImpl1.o \
-		BaseGenesysTerminalApplication.o \
-		GenesysShell.o \
-		AirportSecurityExample.o \
-		AirportSecurityExampleExtended.o \
-		Airport_Extended1.o \
-		Assembly_Line.o \
-		Banking_Transactions.o \
-		Example_BasicOrderShipping.o \
-		Example_PortModel.o \
-		Example_PublicTransport.o \
-		Smart_AddingResource.o \
-		Smart_AlternatingEntityCreation.o \
-		Smart_ArrivalsElementStopsEntitiesArrivingAfterASetTime.o \
-		Smart_ArrivalsEntityTypeVsAttribute.o \
-		Smart_AssignExample.o \
-		Smart_AutomaticStatisticsCollection.o \
-		Smart_BasicModeling.o \
-		Smart_BatchAndSeparate.o \
-		Smart_ContinuousFlowEntities.o \
-		Smart_Create.o \
-		Smart_DecideNWayByChance.o \
-		Smart_DefiningAttributesAsStrings.o \
-		Smart_DefiningControlLogic.o \
-		Smart_DefiningResourceCapacity.o \
-		Smart_DelayBasedOnReplication.o \
-		Smart_EntitiesProcessedByPriority.o \
-		Smart_EvaluatingConditionsBeforeEnteringQueue.o \
-		Smart_Expression.o \
-		Smart_InventoryAndHoldingCosts.o \
-		Smart_MaxArrivalsField.o \
-		Smart_ModelRunUntil1000Parts.o \
-		Smart_ModuleDisplayVariables.o \
-		Smart_OverlappingResources.o \
-		Smart_ParallelProcessingOfEntities.o \
-		Smart_PlacingEntitiesInQueueSets.o \
-		Smart_PriorityExample.o \
-		Smart_ProcessArena.o \
-		Smart_Record_Arena.o \
-		Smart_RemovingAndReorderingEntitiesInAQueue.o \
-		Smart_ResourceCosting.o \
-		Smart_ResourceScheduleCosting.o \
-		Smart_ResourceSets.o \
-		Smart_SeizingMultipleSimultaneosly.o \
-		Smart_SelectingRouteBasedOnProbability.o \
-		Smart_SelectingShorterQueue.o \
-		Smart_SynchronizingParallelEntities.o \
-		Smart_ValueAdded.o \
-		Smart_WaitForSignal.o \
-		Book_Cap02_Example01.o \
-		Smart_AssignWriteSeizes.o \
-		Smart_BatchSeparate.o \
-		Smart_Buffer.o \
-		Smart_Clone.o \
-		Smart_CppForG.o \
-		Smart_Delay.o \
-		Smart_Dummy.o \
-		Smart_Failures.o \
-		Smart_HoldSearchRemove.o \
-		Smart_LSODE.o \
-		Smart_MarkovChain.o \
-		Smart_ModelInfoModelSimulation.o \
-		Smart_ODE.o \
-		Smart_OnEvent.o \
-		Smart_Parser.o \
-		Smart_ParserModelFunctions.o \
-		Smart_Plugin.o \
-		Smart_Process.o \
-		Smart_ProcessSet.o \
-		Smart_Record.o \
-		Smart_RouteStation.o \
-		Smart_SeizeDelayRelease.o \
-		Smart_SeizeDelayReleaseMany.o \
-		Smart_SeizeDelayReleaseNoDataDefs.o \
-		Smart_Sequence.o \
-		Smart_SimulationControlResponse.o \
-		Smart_WaitScanCondition.o \
-		Smart_WaitSignal.o \
-		Smaty_DefaultModalModel.o \
-		AnElectronicAssemblyAndTestSystem.o \
-		ContinuousModel.o \
-		FullSimulationOfComplexModel.o \
-		Half_Adder.o \
-		Loja01.o \
-		OperatingSystem02.o \
-		OperatingSystem03.o \
-		Rectifier.o \
-		CodeEditor.o \
-		mainwindow_controller_on.o \
-		mainwindow_scene.o \
-		mainwindow_simulator.o \
-		DataComponentProperty.o \
-		ModelGraphicsScene.o \
-		ModelGraphicsView.o \
-		ObjectPropertyBrowser.o \
-		PropertyEditor.o \
-		DataComponentEditor.o \
-		ComboBoxEnum.o \
-		AddUndoCommand.o \
-		DeleteUndoCommand.o \
-		GroupUndoCommand.o \
-		MoveUndoCommand.o \
-		PasteUndoCommand.o \
-		UngroupUndoCommand.o \
-		AnimationCounter.o \
-		AnimationQueue.o \
-		AnimationTimer.o \
-		AnimationTransition.o \
-		AnimationVariable.o \
-		DialogFind.o \
-		DialogSelectCounter.o \
-		DialogSelectVariable.o \
-		DialogTimerConfigure.o \
-		Dialogmodelinformation.o \
-		dialogBreakpoint.o \
-		dialogpluginmanager.o \
-		dialogsimulationconfigure.o \
-		dialogsystempreferences.o \
-		GraphicalAnimateExpression.o \
-		GraphicalAssociation.o \
-		GraphicalComponentPort.o \
-		GraphicalConnection.o \
-		GraphicalDiagramConnection.o \
-		GraphicalImageAnimation.o \
-		GraphicalModelComponent.o \
-		GraphicalModelDataDefinition.o \
-		main.o \
-		mainwindow.o \
-		qtbuttonpropertybrowser.o \
-		qteditorfactory.o \
-		qtgroupboxpropertybrowser.o \
-		qtpropertybrowser.o \
-		qtpropertybrowserutils.o \
-		qtpropertymanager.o \
-		qttreepropertybrowser.o \
-		qtvariantproperty.o \
-		qrc_GenesysQtGUI_resources.o \
-		qrc_qtpropertybrowser.o \
-		qrc_qmake_qmake_qm_files.o \
-		moc_CodeEditor.o \
-		moc_ObjectPropertyBrowser.o \
-		moc_DialogFind.o \
-		moc_DialogSelectCounter.o \
-		moc_DialogSelectVariable.o \
-		moc_DialogTimerConfigure.o \
-		moc_Dialogmodelinformation.o \
-		moc_dialogBreakpoint.o \
-		moc_dialogpluginmanager.o \
-		moc_dialogsimulationconfigure.o \
-		moc_dialogsystempreferences.o \
-		moc_mainwindow.o \
-		moc_qtpropertybrowserutils_p.o
+		propertyeditor/qtpropertybrowser/qtvariantproperty.cpp build/rcc/qrc_GenesysQtGUI_resources.cpp \
+		build/rcc/qrc_qtpropertybrowser.cpp \
+		build/rcc/qrc_qmake_qmake_qm_files.cpp \
+		build/moc/moc_CodeEditor.cpp \
+		build/moc/moc_ObjectPropertyBrowser.cpp \
+		build/moc/moc_DialogFind.cpp \
+		build/moc/moc_DialogSelectCounter.cpp \
+		build/moc/moc_DialogSelectVariable.cpp \
+		build/moc/moc_DialogTimerConfigure.cpp \
+		build/moc/moc_Dialogmodelinformation.cpp \
+		build/moc/moc_dialogBreakpoint.cpp \
+		build/moc/moc_dialogpluginmanager.cpp \
+		build/moc/moc_dialogsimulationconfigure.cpp \
+		build/moc/moc_dialogsystempreferences.cpp \
+		build/moc/moc_mainwindow.cpp \
+		build/moc/moc_qtpropertybrowserutils_p.cpp
+OBJECTS       = build/obj/Attribute.o \
+		build/obj/ComponentManager.o \
+		build/obj/ConnectionManager.o \
+		build/obj/Counter.o \
+		build/obj/CppSerializer.o \
+		build/obj/Entity.o \
+		build/obj/EntityType.o \
+		build/obj/Event.o \
+		build/obj/ExperimentManager.o \
+		build/obj/ExperimentManagerDefaultImpl1.o \
+		build/obj/GenSerializer.o \
+		build/obj/JsonSerializer.o \
+		build/obj/LicenceManager.o \
+		build/obj/Model.o \
+		build/obj/ModelCheckerDefaultImpl1.o \
+		build/obj/ModelComponent.o \
+		build/obj/ModelDataDefinition.o \
+		build/obj/ModelDataManager.o \
+		build/obj/ModelInfo.o \
+		build/obj/ModelManager.o \
+		build/obj/ModelPersistenceDefaultImpl2.o \
+		build/obj/ModelSerializer.o \
+		build/obj/ModelSimulation.o \
+		build/obj/OnEventManager.o \
+		build/obj/ParserChangesInformation.o \
+		build/obj/ParserDefaultImpl1.o \
+		build/obj/ParserDefaultImpl2.o \
+		build/obj/ParserManager.o \
+		build/obj/Persistence.o \
+		build/obj/Plugin.o \
+		build/obj/PluginConnectorDummyImpl1.o \
+		build/obj/PluginInformation.o \
+		build/obj/PluginManager.o \
+		build/obj/SimulationExperiment.o \
+		build/obj/SimulationReporterDefaultImpl1.o \
+		build/obj/SimulationScenario.o \
+		build/obj/Simulator.o \
+		build/obj/SinkModelComponent.o \
+		build/obj/SourceModelComponent.o \
+		build/obj/StatisticsCollector.o \
+		build/obj/TraceManager.o \
+		build/obj/XmlSerializer.o \
+		build/obj/CollectorDatafileDefaultImpl1.o \
+		build/obj/CollectorDefaultImpl1.o \
+		build/obj/SamplerBoostImpl.o \
+		build/obj/SamplerDefaultImpl1.o \
+		build/obj/SorttFile.o \
+		build/obj/StatisticsDataFileDefaultImpl.o \
+		build/obj/StatisticsDefaultImpl1.o \
+		build/obj/Util.o \
+		build/obj/Genesys++-driver.o \
+		build/obj/Genesys++-scanner.o \
+		build/obj/GenesysParser.o \
+		build/obj/obj_t.o \
+		build/obj/Access.o \
+		build/obj/Assign.o \
+		build/obj/Batch.o \
+		build/obj/Buffer.o \
+		build/obj/Clone.o \
+		build/obj/CppForG.o \
+		build/obj/Create.o \
+		build/obj/Decide.o \
+		build/obj/DefaultModalModel.o \
+		build/obj/Delay.o \
+		build/obj/DiffEquations.o \
+		build/obj/Dispose.o \
+		build/obj/DropOff.o \
+		build/obj/DummyComponent.o \
+		build/obj/Enter.o \
+		build/obj/Exit.o \
+		build/obj/PickableStationItem.o \
+		build/obj/SPICECircuit.o \
+		build/obj/SPICENode.o \
+		build/obj/Wait.o \
+		build/obj/LSODE.o \
+		build/obj/Leave.o \
+		build/obj/MarkovChain.o \
+		build/obj/Match.o \
+		build/obj/OLD_ODEelement.o \
+		build/obj/PickStation.o \
+		build/obj/PickUp.o \
+		build/obj/Process.o \
+		build/obj/QueueableItem.o \
+		build/obj/Record.o \
+		build/obj/Release.o \
+		build/obj/Remove.o \
+		build/obj/Route.o \
+		build/obj/Search.o \
+		build/obj/SeizableItem.o \
+		build/obj/Seize.o \
+		build/obj/Separate.o \
+		build/obj/Signal.o \
+		build/obj/Start.o \
+		build/obj/Stop.o \
+		build/obj/Store.o \
+		build/obj/Submodel.o \
+		build/obj/Unstore.o \
+		build/obj/Write.o \
+		build/obj/DefaultNode.o \
+		build/obj/AssignmentItem.o \
+		build/obj/CppCompiler.o \
+		build/obj/DummyElement.o \
+		build/obj/EntityGroup.o \
+		build/obj/Failure.o \
+		build/obj/File.o \
+		build/obj/Formula.o \
+		build/obj/Label.o \
+		build/obj/Queue.o \
+		build/obj/Resource.o \
+		build/obj/SPICERunner.o \
+		build/obj/Schedule.o \
+		build/obj/Sequence.o \
+		build/obj/Set.o \
+		build/obj/SignalData.o \
+		build/obj/Station.o \
+		build/obj/Storage.o \
+		build/obj/Variable.o \
+		build/obj/FitterDummyImpl.o \
+		build/obj/HypothesisTesterDefaultImpl1.o \
+		build/obj/ProbabilityDistribution.o \
+		build/obj/ProbabilityDistributionBase.o \
+		build/obj/SolverDefaultImpl1.o \
+		build/obj/BaseGenesysTerminalApplication.o \
+		build/obj/GenesysShell.o \
+		build/obj/AirportSecurityExample.o \
+		build/obj/AirportSecurityExampleExtended.o \
+		build/obj/Airport_Extended1.o \
+		build/obj/Assembly_Line.o \
+		build/obj/Banking_Transactions.o \
+		build/obj/Example_BasicOrderShipping.o \
+		build/obj/Example_PortModel.o \
+		build/obj/Example_PublicTransport.o \
+		build/obj/Smart_AddingResource.o \
+		build/obj/Smart_AlternatingEntityCreation.o \
+		build/obj/Smart_ArrivalsElementStopsEntitiesArrivingAfterASetTime.o \
+		build/obj/Smart_ArrivalsEntityTypeVsAttribute.o \
+		build/obj/Smart_AssignExample.o \
+		build/obj/Smart_AutomaticStatisticsCollection.o \
+		build/obj/Smart_BasicModeling.o \
+		build/obj/Smart_BatchAndSeparate.o \
+		build/obj/Smart_ContinuousFlowEntities.o \
+		build/obj/Smart_Create.o \
+		build/obj/Smart_DecideNWayByChance.o \
+		build/obj/Smart_DefiningAttributesAsStrings.o \
+		build/obj/Smart_DefiningControlLogic.o \
+		build/obj/Smart_DefiningResourceCapacity.o \
+		build/obj/Smart_DelayBasedOnReplication.o \
+		build/obj/Smart_EntitiesProcessedByPriority.o \
+		build/obj/Smart_EvaluatingConditionsBeforeEnteringQueue.o \
+		build/obj/Smart_Expression.o \
+		build/obj/Smart_InventoryAndHoldingCosts.o \
+		build/obj/Smart_MaxArrivalsField.o \
+		build/obj/Smart_ModelRunUntil1000Parts.o \
+		build/obj/Smart_ModuleDisplayVariables.o \
+		build/obj/Smart_OverlappingResources.o \
+		build/obj/Smart_ParallelProcessingOfEntities.o \
+		build/obj/Smart_PlacingEntitiesInQueueSets.o \
+		build/obj/Smart_PriorityExample.o \
+		build/obj/Smart_ProcessArena.o \
+		build/obj/Smart_Record_Arena.o \
+		build/obj/Smart_RemovingAndReorderingEntitiesInAQueue.o \
+		build/obj/Smart_ResourceCosting.o \
+		build/obj/Smart_ResourceScheduleCosting.o \
+		build/obj/Smart_ResourceSets.o \
+		build/obj/Smart_SeizingMultipleSimultaneosly.o \
+		build/obj/Smart_SelectingRouteBasedOnProbability.o \
+		build/obj/Smart_SelectingShorterQueue.o \
+		build/obj/Smart_SynchronizingParallelEntities.o \
+		build/obj/Smart_ValueAdded.o \
+		build/obj/Smart_WaitForSignal.o \
+		build/obj/Book_Cap02_Example01.o \
+		build/obj/Smart_AssignWriteSeizes.o \
+		build/obj/Smart_BatchSeparate.o \
+		build/obj/Smart_Buffer.o \
+		build/obj/Smart_Clone.o \
+		build/obj/Smart_CppForG.o \
+		build/obj/Smart_Delay.o \
+		build/obj/Smart_Dummy.o \
+		build/obj/Smart_Failures.o \
+		build/obj/Smart_HoldSearchRemove.o \
+		build/obj/Smart_LSODE.o \
+		build/obj/Smart_MarkovChain.o \
+		build/obj/Smart_ModelInfoModelSimulation.o \
+		build/obj/Smart_ODE.o \
+		build/obj/Smart_OnEvent.o \
+		build/obj/Smart_Parser.o \
+		build/obj/Smart_ParserModelFunctions.o \
+		build/obj/Smart_Plugin.o \
+		build/obj/Smart_Process.o \
+		build/obj/Smart_ProcessSet.o \
+		build/obj/Smart_Record.o \
+		build/obj/Smart_RouteStation.o \
+		build/obj/Smart_SeizeDelayRelease.o \
+		build/obj/Smart_SeizeDelayReleaseMany.o \
+		build/obj/Smart_SeizeDelayReleaseNoDataDefs.o \
+		build/obj/Smart_Sequence.o \
+		build/obj/Smart_SimulationControlResponse.o \
+		build/obj/Smart_WaitScanCondition.o \
+		build/obj/Smart_WaitSignal.o \
+		build/obj/Smaty_DefaultModalModel.o \
+		build/obj/AnElectronicAssemblyAndTestSystem.o \
+		build/obj/ContinuousModel.o \
+		build/obj/FullSimulationOfComplexModel.o \
+		build/obj/Half_Adder.o \
+		build/obj/Loja01.o \
+		build/obj/OperatingSystem02.o \
+		build/obj/OperatingSystem03.o \
+		build/obj/Rectifier.o \
+		build/obj/CodeEditor.o \
+		build/obj/mainwindow_controller_on.o \
+		build/obj/mainwindow_scene.o \
+		build/obj/mainwindow_simulator.o \
+		build/obj/DataComponentProperty.o \
+		build/obj/ModelGraphicsScene.o \
+		build/obj/ModelGraphicsView.o \
+		build/obj/ObjectPropertyBrowser.o \
+		build/obj/PropertyEditor.o \
+		build/obj/DataComponentEditor.o \
+		build/obj/ComboBoxEnum.o \
+		build/obj/AddUndoCommand.o \
+		build/obj/DeleteUndoCommand.o \
+		build/obj/GroupUndoCommand.o \
+		build/obj/MoveUndoCommand.o \
+		build/obj/PasteUndoCommand.o \
+		build/obj/UngroupUndoCommand.o \
+		build/obj/AnimationCounter.o \
+		build/obj/AnimationQueue.o \
+		build/obj/AnimationTimer.o \
+		build/obj/AnimationTransition.o \
+		build/obj/AnimationVariable.o \
+		build/obj/DialogFind.o \
+		build/obj/DialogSelectCounter.o \
+		build/obj/DialogSelectVariable.o \
+		build/obj/DialogTimerConfigure.o \
+		build/obj/Dialogmodelinformation.o \
+		build/obj/dialogBreakpoint.o \
+		build/obj/dialogpluginmanager.o \
+		build/obj/dialogsimulationconfigure.o \
+		build/obj/dialogsystempreferences.o \
+		build/obj/GraphicalAnimateExpression.o \
+		build/obj/GraphicalAssociation.o \
+		build/obj/GraphicalComponentPort.o \
+		build/obj/GraphicalConnection.o \
+		build/obj/GraphicalDiagramConnection.o \
+		build/obj/GraphicalImageAnimation.o \
+		build/obj/GraphicalModelComponent.o \
+		build/obj/GraphicalModelDataDefinition.o \
+		build/obj/main.o \
+		build/obj/mainwindow.o \
+		build/obj/qtbuttonpropertybrowser.o \
+		build/obj/qteditorfactory.o \
+		build/obj/qtgroupboxpropertybrowser.o \
+		build/obj/qtpropertybrowser.o \
+		build/obj/qtpropertybrowserutils.o \
+		build/obj/qtpropertymanager.o \
+		build/obj/qttreepropertybrowser.o \
+		build/obj/qtvariantproperty.o \
+		build/obj/qrc_GenesysQtGUI_resources.o \
+		build/obj/qrc_qtpropertybrowser.o \
+		build/obj/qrc_qmake_qmake_qm_files.o \
+		build/obj/moc_CodeEditor.o \
+		build/obj/moc_ObjectPropertyBrowser.o \
+		build/obj/moc_DialogFind.o \
+		build/obj/moc_DialogSelectCounter.o \
+		build/obj/moc_DialogSelectVariable.o \
+		build/obj/moc_DialogTimerConfigure.o \
+		build/obj/moc_Dialogmodelinformation.o \
+		build/obj/moc_dialogBreakpoint.o \
+		build/obj/moc_dialogpluginmanager.o \
+		build/obj/moc_dialogsimulationconfigure.o \
+		build/obj/moc_dialogsystempreferences.o \
+		build/obj/moc_mainwindow.o \
+		build/obj/moc_qtpropertybrowserutils_p.o
 DIST          = ../../../../../autoloadplugins.txt \
 		../../../terminal/examples/arenaSmarts/Arrivals \
 		Element \
@@ -695,6 +695,7 @@ DIST          = ../../../../../autoloadplugins.txt \
 		/usr/lib/x86_64-linux-gnu/qt5/mkspecs/features/qt_config.prf \
 		/usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++/qmake.conf \
 		/usr/lib/x86_64-linux-gnu/qt5/mkspecs/features/spec_post.prf \
+		.qmake.stash \
 		/usr/lib/x86_64-linux-gnu/qt5/mkspecs/features/exclusive_builds.prf \
 		/usr/lib/x86_64-linux-gnu/qt5/mkspecs/features/toolchain.prf \
 		/usr/lib/x86_64-linux-gnu/qt5/mkspecs/features/default_pre.prf \
@@ -1317,7 +1318,7 @@ TARGET        = GenesysQtGUI
 first: all
 ####### Build rules
 
-GenesysQtGUI: ui_DialogTimerConfigure.h ui_Dialogmodelinformation.h ui_dialogBreakpoint.h ui_dialogpluginmanager.h ui_dialogsimulationconfigure.h ui_dialogsystempreferences.h ui_mainwindow.h $(OBJECTS)  
+GenesysQtGUI: build/ui/ui_DialogTimerConfigure.h build/ui/ui_Dialogmodelinformation.h build/ui/ui_dialogBreakpoint.h build/ui/ui_dialogpluginmanager.h build/ui/ui_dialogsimulationconfigure.h build/ui/ui_dialogsystempreferences.h build/ui/ui_mainwindow.h $(OBJECTS)  
 	$(LINK) $(LFLAGS) -o $(TARGET) $(OBJECTS) $(OBJCOMP) $(LIBS)
 
 Makefile: GenesysQtGUI.pro /usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++/qmake.conf /usr/lib/x86_64-linux-gnu/qt5/mkspecs/features/spec_pre.prf \
@@ -1388,6 +1389,7 @@ Makefile: GenesysQtGUI.pro /usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++/qmake
 		/usr/lib/x86_64-linux-gnu/qt5/mkspecs/features/qt_config.prf \
 		/usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++/qmake.conf \
 		/usr/lib/x86_64-linux-gnu/qt5/mkspecs/features/spec_post.prf \
+		.qmake.stash \
 		/usr/lib/x86_64-linux-gnu/qt5/mkspecs/features/exclusive_builds.prf \
 		/usr/lib/x86_64-linux-gnu/qt5/mkspecs/features/toolchain.prf \
 		/usr/lib/x86_64-linux-gnu/qt5/mkspecs/features/default_pre.prf \
@@ -1412,7 +1414,7 @@ Makefile: GenesysQtGUI.pro /usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++/qmake
 		GenesysQtGUI.pro \
 		GenesysQtGUI_resources.qrc \
 		propertyeditor/qtpropertybrowser/qtpropertybrowser.qrc \
-		qmake_qmake_qm_files.qrc
+		build/rcc/qmake_qmake_qm_files.qrc
 	$(QMAKE) -o Makefile GenesysQtGUI.pro
 /usr/lib/x86_64-linux-gnu/qt5/mkspecs/features/spec_pre.prf:
 /usr/lib/x86_64-linux-gnu/qt5/mkspecs/common/unix.conf:
@@ -1482,6 +1484,7 @@ Makefile: GenesysQtGUI.pro /usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++/qmake
 /usr/lib/x86_64-linux-gnu/qt5/mkspecs/features/qt_config.prf:
 /usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++/qmake.conf:
 /usr/lib/x86_64-linux-gnu/qt5/mkspecs/features/spec_post.prf:
+.qmake.stash:
 /usr/lib/x86_64-linux-gnu/qt5/mkspecs/features/exclusive_builds.prf:
 /usr/lib/x86_64-linux-gnu/qt5/mkspecs/features/toolchain.prf:
 /usr/lib/x86_64-linux-gnu/qt5/mkspecs/features/default_pre.prf:
@@ -1506,7 +1509,7 @@ Makefile: GenesysQtGUI.pro /usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++/qmake
 GenesysQtGUI.pro:
 GenesysQtGUI_resources.qrc:
 propertyeditor/qtpropertybrowser/qtpropertybrowser.qrc:
-qmake_qmake_qm_files.qrc:
+build/rcc/qmake_qmake_qm_files.qrc:
 qmake: FORCE
 	@$(QMAKE) -o Makefile GenesysQtGUI.pro
 
@@ -1522,7 +1525,7 @@ distdir: FORCE
 	@test -d $(DISTDIR) || mkdir -p $(DISTDIR)
 	$(COPY_FILE) --parents $(DIST) $(DISTDIR)/
 	$(COPY_FILE) --parents GenesysQtGUI_en_US.ts $(DISTDIR)/
-	$(COPY_FILE) --parents GenesysQtGUI_resources.qrc propertyeditor/qtpropertybrowser/qtpropertybrowser.qrc qmake_qmake_qm_files.qrc $(DISTDIR)/
+	$(COPY_FILE) --parents GenesysQtGUI_resources.qrc propertyeditor/qtpropertybrowser/qtpropertybrowser.qrc build/rcc/qmake_qmake_qm_files.qrc $(DISTDIR)/
 	$(COPY_FILE) --parents /usr/lib/x86_64-linux-gnu/qt5/mkspecs/features/data/dummy.cpp $(DISTDIR)/
 	$(COPY_FILE) --parents ../../../../kernel/TraitsKernel.h ../../../../kernel/simulator/Attribute.h ../../../../kernel/simulator/ComponentManager.h ../../../../kernel/simulator/ConnectionManager.h ../../../../kernel/simulator/Counter.h ../../../../kernel/simulator/CppSerializer.h ../../../../kernel/simulator/DefineGetterSetter.h ../../../../kernel/simulator/Entity.h ../../../../kernel/simulator/EntityType.h ../../../../kernel/simulator/Event.h ../../../../kernel/simulator/ExperimentManager.h ../../../../kernel/simulator/ExperimentManagerDefaultImpl1.h ../../../../kernel/simulator/ExperimetManager_if.h ../../../../kernel/simulator/GenSerializer.h ../../../../kernel/simulator/JsonSerializer.h ../../../../kernel/simulator/LicenceManager.h ../../../../kernel/simulator/Model.h ../../../../kernel/simulator/ModelCheckerDefaultImpl1.h ../../../../kernel/simulator/ModelChecker_if.h ../../../../kernel/simulator/ModelComponent.h ../../../../kernel/simulator/ModelDataDefinition.h ../../../../kernel/simulator/ModelDataManager.h ../../../../kernel/simulator/ModelInfo.h ../../../../kernel/simulator/ModelManager.h ../../../../kernel/simulator/ModelPersistenceDefaultImpl2.h ../../../../kernel/simulator/ModelSerializer.h ../../../../kernel/simulator/ModelSimulation.h ../../../../kernel/simulator/OnEventManager.h ../../../../kernel/simulator/ParserChangesInformation.h ../../../../kernel/simulator/ParserDefaultImpl1.h ../../../../kernel/simulator/ParserDefaultImpl2.h ../../../../kernel/simulator/ParserManager.h ../../../../kernel/simulator/Parser_if.h ../../../../kernel/simulator/Persistence.h ../../../../kernel/simulator/Plugin.h ../../../../kernel/simulator/PluginConnectorDummyImpl1.h ../../../../kernel/simulator/PluginConnector_if.h ../../../../kernel/simulator/PluginInformation.h ../../../../kernel/simulator/PluginManager.h ../../../../kernel/simulator/PropertyGenesys.h ../../../../kernel/simulator/ScenarioExperiment_if.h ../../../../kernel/simulator/SimulationControlAndResponse.h ../../../../kernel/simulator/SimulationExperiment.h ../../../../kernel/simulator/SimulationReporterDefaultImpl1.h ../../../../kernel/simulator/SimulationReporter_if.h ../../../../kernel/simulator/SimulationScenario.h ../../../../kernel/simulator/Simulator.h ../../../../kernel/simulator/SinkModelComponent.h ../../../../kernel/simulator/SourceModelComponent.h ../../../../kernel/simulator/StatisticsCollector.h ../../../../kernel/simulator/TraceManager.h ../../../../kernel/simulator/XmlSerializer.h ../../../../kernel/statistics/CollectorDatafileDefaultImpl1.h ../../../../kernel/statistics/CollectorDatafile_if.h ../../../../kernel/statistics/CollectorDefaultImpl1.h ../../../../kernel/statistics/Collector_if.h ../../../../kernel/statistics/SamplerBoostImpl.h ../../../../kernel/statistics/SamplerDefaultImpl1.h ../../../../kernel/statistics/Sampler_if.h ../../../../kernel/statistics/SorttFile.h ../../../../kernel/statistics/StatisticsDataFileDefaultImpl.h ../../../../kernel/statistics/StatisticsDataFile_if.h ../../../../kernel/statistics/StatisticsDefaultImpl1.h ../../../../kernel/statistics/Statistics_if.h ../../../../kernel/util/Exact.h ../../../../kernel/util/List.h ../../../../kernel/util/ListObservable.h ../../../../kernel/util/Util.h ../../../../parser/Genesys++-driver.h ../../../../parser/GenesysParser.h ../../../../parser/location.hh ../../../../parser/obj_t.h ../../../../parser/parserBisonFlex/bisonparser.yy ../../../../parser/parserBisonFlex/lexerparser.ll ../../../../parser/position.hh ../../../../parser/stack.hh ../../../../plugins/components/Access.h ../../../../plugins/components/Assign.h ../../../../plugins/components/Batch.h ../../../../plugins/components/Buffer.h ../../../../plugins/components/Clone.h ../../../../plugins/components/CppForG.h ../../../../plugins/components/Create.h ../../../../plugins/components/Decide.h ../../../../plugins/components/DefaultModalModel.h ../../../../plugins/components/Delay.h ../../../../plugins/components/DiffEquations.h ../../../../plugins/components/Dispose.h ../../../../plugins/components/DropOff.h ../../../../plugins/components/DummyComponent.h ../../../../plugins/components/Enter.h ../../../../plugins/components/Exit.h ../../../../plugins/components/PickableStationItem.h ../../../../plugins/components/SPICECircuit.h ../../../../plugins/components/SPICENode.h ../../../../plugins/components/Wait.h ../../../../plugins/components/LSODE.h ../../../../plugins/components/Leave.h ../../../../plugins/components/MarkovChain.h ../../../../plugins/components/Match.h ../../../../plugins/components/OLD_ODEelement.h ../../../../plugins/components/PickStation.h ../../../../plugins/components/PickUp.h ../../../../plugins/components/Process.h ../../../../plugins/components/QueueableItem.h ../../../../plugins/components/Record.h ../../../../plugins/components/Release.h ../../../../plugins/components/Remove.h ../../../../plugins/components/Route.h ../../../../plugins/components/Search.h ../../../../plugins/components/SeizableItem.h ../../../../plugins/components/Seize.h ../../../../plugins/components/Separate.h ../../../../plugins/components/Signal.h ../../../../plugins/components/Start.h ../../../../plugins/components/Stop.h ../../../../plugins/components/Store.h ../../../../plugins/components/Submodel.h ../../../../plugins/components/Unstore.h ../../../../plugins/components/Write.h ../../../../plugins/components/network/DefaultNode.h ../../../../plugins/data/AssignmentItem.h ../../../../plugins/data/CppCompiler.h ../../../../plugins/data/DummyElement.h ../../../../plugins/data/EntityGroup.h ../../../../plugins/data/Failure.h ../../../../plugins/data/File.h ../../../../plugins/data/Formula.h ../../../../plugins/data/Label.h ../../../../plugins/data/Queue.h ../../../../plugins/data/Resource.h ../../../../plugins/data/SPICERunner.h ../../../../plugins/data/Schedule.h ../../../../plugins/data/Sequence.h ../../../../plugins/data/Set.h ../../../../plugins/data/SignalData.h ../../../../plugins/data/Station.h ../../../../plugins/data/Storage.h ../../../../plugins/data/Variable.h ../../../../tools/DataAnalyser_if.h ../../../../tools/FitterDummyImpl.h ../../../../tools/Fitter_if.h ../../../../tools/HypothesisTesterDefaultImpl1.h ../../../../tools/HypothesisTester_if.h ../../../../tools/ProbabilityDistribution.h ../../../../tools/ProbabilityDistributionBase.h ../../../../tools/SolverDefaultImpl1.h ../../../../tools/Solver_if.h ../../../../tools/TraitsTools.h ../../../BaseGenesysTerminalApplication.h ../../../GenesysApplication_if.h ../../../TraitsApp.h ../../../terminal/GenesysShell/GenesysShell.h ../../../terminal/GenesysShell/GenesysShell_if.h ../../../terminal/TraitsTerminalApp.h ../../../terminal/examples/arenaExamples/AirportSecurityExample.h ../../../terminal/examples/arenaExamples/AirportSecurityExampleExtended.h ../../../terminal/examples/arenaExamples/Airport_Extended1.h ../../../terminal/examples/arenaExamples/Assembly_Line.h ../../../terminal/examples/arenaExamples/Banking_Transactions.h ../../../terminal/examples/arenaExamples/Example_BasicOrderShipping.h ../../../terminal/examples/arenaExamples/Example_PortModel.h ../../../terminal/examples/arenaExamples/Example_PublicTransport.h ../../../terminal/examples/arenaSmarts/Smart_AddingResource.h ../../../terminal/examples/arenaSmarts/Smart_AlternatingEntityCreation.h ../../../terminal/examples/arenaSmarts/Smart_ArrivalsElementStopsEntitiesArrivingAfterASetTime.h ../../../terminal/examples/arenaSmarts/Smart_ArrivalsEntityTypeVsAttribute.h ../../../terminal/examples/arenaSmarts/Smart_AssignExample.h ../../../terminal/examples/arenaSmarts/Smart_AutomaticStatisticsCollection.h ../../../terminal/examples/arenaSmarts/Smart_BasicModeling.h ../../../terminal/examples/arenaSmarts/Smart_BatchAndSeparate.h ../../../terminal/examples/arenaSmarts/Smart_ContinuousFlowEntities.h ../../../terminal/examples/arenaSmarts/Smart_Create.h ../../../terminal/examples/arenaSmarts/Smart_DecideNWayByChance.h ../../../terminal/examples/arenaSmarts/Smart_DefiningAttributesAsStrings.h ../../../terminal/examples/arenaSmarts/Smart_DefiningControlLogic.h ../../../terminal/examples/arenaSmarts/Smart_DefiningResourceCapacity.h ../../../terminal/examples/arenaSmarts/Smart_DelayBasedOnReplication.h ../../../terminal/examples/arenaSmarts/Smart_EntitiesProcessedByPriority.h ../../../terminal/examples/arenaSmarts/Smart_EvaluatingConditionsBeforeEnteringQueue.h ../../../terminal/examples/arenaSmarts/Smart_Expression.h ../../../terminal/examples/arenaSmarts/Smart_InventoryAndHoldingCosts.h ../../../terminal/examples/arenaSmarts/Smart_MaxArrivalsField.h ../../../terminal/examples/arenaSmarts/Smart_ModelRunUntil1000Parts.h ../../../terminal/examples/arenaSmarts/Smart_ModuleDisplayVariables.h ../../../terminal/examples/arenaSmarts/Smart_OverlappingResources.h ../../../terminal/examples/arenaSmarts/Smart_ParallelProcessingOfEntities.h ../../../terminal/examples/arenaSmarts/Smart_PlacingEntitiesInQueueSets.h ../../../terminal/examples/arenaSmarts/Smart_PriorityExample.h ../../../terminal/examples/arenaSmarts/Smart_ProcessArena.h ../../../terminal/examples/arenaSmarts/Smart_Record_Arena.h ../../../terminal/examples/arenaSmarts/Smart_RemovingAndReorderingEntitiesInAQueue.h ../../../terminal/examples/arenaSmarts/Smart_ResourceCosting.h ../../../terminal/examples/arenaSmarts/Smart_ResourceScheduleCosting.h ../../../terminal/examples/arenaSmarts/Smart_ResourceSets.h ../../../terminal/examples/arenaSmarts/Smart_SeizingMultipleSimultaneosly.h ../../../terminal/examples/arenaSmarts/Smart_SelectingRouteBasedOnProbability.h ../../../terminal/examples/arenaSmarts/Smart_SelectingShorterQueue.h ../../../terminal/examples/arenaSmarts/Smart_SynchronizingParallelEntities.h ../../../terminal/examples/arenaSmarts/Smart_ValueAdded.h ../../../terminal/examples/arenaSmarts/Smart_WaitForSignal.h ../../../terminal/examples/book/Book_Cap02_Example01.h ../../../terminal/examples/smarts/Smart_AssignWriteSeizes.h ../../../terminal/examples/smarts/Smart_BatchSeparate.h ../../../terminal/examples/smarts/Smart_Buffer.h ../../../terminal/examples/smarts/Smart_Clone.h ../../../terminal/examples/smarts/Smart_CppForG.h ../../../terminal/examples/smarts/Smart_DefaultModalModel.h ../../../terminal/examples/smarts/Smart_Delay.h ../../../terminal/examples/smarts/Smart_Dummy.h ../../../terminal/examples/smarts/Smart_Failures.h ../../../terminal/examples/smarts/Smart_HoldSearchRemove.h ../../../terminal/examples/smarts/Smart_LSODE.h ../../../terminal/examples/smarts/Smart_MarkovChain.h ../../../terminal/examples/smarts/Smart_ModelInfoModelSimulation.h ../../../terminal/examples/smarts/Smart_ODE.h ../../../terminal/examples/smarts/Smart_OnEvent.h ../../../terminal/examples/smarts/Smart_Parser.h ../../../terminal/examples/smarts/Smart_ParserModelFunctions.h ../../../terminal/examples/smarts/Smart_Plugin.h ../../../terminal/examples/smarts/Smart_Process.h ../../../terminal/examples/smarts/Smart_ProcessSet.h ../../../terminal/examples/smarts/Smart_Record.h ../../../terminal/examples/smarts/Smart_RouteStation.h ../../../terminal/examples/smarts/Smart_SeizeDelayRelease.h ../../../terminal/examples/smarts/Smart_SeizeDelayReleaseMany.h ../../../terminal/examples/smarts/Smart_SeizeDelayReleaseNoDataDefs.h ../../../terminal/examples/smarts/Smart_Sequence.h ../../../terminal/examples/smarts/Smart_SimulationControlResponse.h ../../../terminal/examples/smarts/Smart_WaitScanCondition.h ../../../terminal/examples/smarts/Smart_WaitSignal.h ../../../terminal/examples/teaching/AnElectronicAssemblyAndTestSystem.h ../../../terminal/examples/teaching/BufferFIFO.h ../../../terminal/examples/teaching/ContinuousModel.h ../../../terminal/examples/teaching/FullSimulationOfComplexModel.h ../../../terminal/examples/teaching/Half_Adder.h ../../../terminal/examples/teaching/Loja/Loja01.h ../../../terminal/examples/teaching/OperatingSystem02.h ../../../terminal/examples/teaching/OperatingSystem03.h ../../../terminal/examples/teaching/Rectifier.h codeeditor/CodeEditor.h codeeditor/LineNumberArea.h graphicals/ModelGraphicsScene.h graphicals/ModelGraphicsView.h propertyeditor/ObjectPropertyBrowser.h propertyeditor/PropertyEditor.h propertyeditor/DataComponentProperty.h propertyeditor/DataComponentEditor.h propertyeditor/ComboBoxEnum.h TraitsGUI.h UtilGUI.h actions/AddUndoCommand.h actions/DeleteUndoCommand.h actions/GroupUndoCommand.h actions/MoveUndoCommand.h actions/PasteUndoCommand.h actions/UngroupUndoCommand.h animations/AnimationCounter.h animations/AnimationQueue.h animations/AnimationTimer.h animations/AnimationTransition.h animations/AnimationVariable.h dialogs/DialogFind.h dialogs/DialogSelectCounter.h dialogs/DialogSelectVariable.h dialogs/DialogTimerConfigure.h dialogs/Dialogmodelinformation.h dialogs/dialogBreakpoint.h dialogs/dialogpluginmanager.h dialogs/dialogsimulationconfigure.h dialogs/dialogsystempreferences.h graphicals/GraphicalAnimateExpression.h graphicals/GraphicalAssociation.h graphicals/GraphicalComponentPort.h graphicals/GraphicalConnection.h graphicals/GraphicalDiagramConnection.h graphicals/GraphicalImageAnimation.h graphicals/GraphicalModelComponent.h graphicals/GraphicalModelDataDefinition.h mainwindow.h propertyeditor/qtpropertybrowser/QtAbstractEditorFactoryBase propertyeditor/qtpropertybrowser/QtAbstractPropertyBrowser propertyeditor/qtpropertybrowser/QtAbstractPropertyManager propertyeditor/qtpropertybrowser/QtBoolPropertyManager propertyeditor/qtpropertybrowser/QtBrowserItem propertyeditor/qtpropertybrowser/QtButtonPropertyBrowser propertyeditor/qtpropertybrowser/QtCharEditorFactory propertyeditor/qtpropertybrowser/QtCharPropertyManager propertyeditor/qtpropertybrowser/QtCheckBoxFactory propertyeditor/qtpropertybrowser/QtColorEditorFactory propertyeditor/qtpropertybrowser/QtColorPropertyManager propertyeditor/qtpropertybrowser/QtCursorEditorFactory propertyeditor/qtpropertybrowser/QtCursorPropertyManager propertyeditor/qtpropertybrowser/QtDateEditFactory propertyeditor/qtpropertybrowser/QtDatePropertyManager propertyeditor/qtpropertybrowser/QtDateTimeEditFactory propertyeditor/qtpropertybrowser/QtDateTimePropertyManager propertyeditor/qtpropertybrowser/QtDoublePropertyManager propertyeditor/qtpropertybrowser/QtDoubleSpinBoxFactory propertyeditor/qtpropertybrowser/QtEnumEditorFactory propertyeditor/qtpropertybrowser/QtEnumPropertyManager propertyeditor/qtpropertybrowser/QtFlagPropertyManager propertyeditor/qtpropertybrowser/QtFontEditorFactory propertyeditor/qtpropertybrowser/QtFontPropertyManager propertyeditor/qtpropertybrowser/QtGroupBoxPropertyBrowser propertyeditor/qtpropertybrowser/QtGroupPropertyManager propertyeditor/qtpropertybrowser/QtIntPropertyManager propertyeditor/qtpropertybrowser/QtKeySequenceEditorFactory propertyeditor/qtpropertybrowser/QtKeySequencePropertyManager propertyeditor/qtpropertybrowser/QtLineEditFactory propertyeditor/qtpropertybrowser/QtLocalePropertyManager propertyeditor/qtpropertybrowser/QtPointFPropertyManager propertyeditor/qtpropertybrowser/QtPointPropertyManager propertyeditor/qtpropertybrowser/QtProperty propertyeditor/qtpropertybrowser/QtRectFPropertyManager propertyeditor/qtpropertybrowser/QtRectPropertyManager propertyeditor/qtpropertybrowser/QtScrollBarFactory propertyeditor/qtpropertybrowser/QtSizeFPropertyManager propertyeditor/qtpropertybrowser/QtSizePolicyPropertyManager propertyeditor/qtpropertybrowser/QtSizePropertyManager propertyeditor/qtpropertybrowser/QtSliderFactory propertyeditor/qtpropertybrowser/QtSpinBoxFactory propertyeditor/qtpropertybrowser/QtStringPropertyManager propertyeditor/qtpropertybrowser/QtTimeEditFactory propertyeditor/qtpropertybrowser/QtTimePropertyManager propertyeditor/qtpropertybrowser/QtTreePropertyBrowser propertyeditor/qtpropertybrowser/QtVariantEditorFactory propertyeditor/qtpropertybrowser/QtVariantProperty propertyeditor/qtpropertybrowser/QtVariantPropertyManager propertyeditor/qtpropertybrowser/qtbuttonpropertybrowser.h propertyeditor/qtpropertybrowser/qteditorfactory.h propertyeditor/qtpropertybrowser/qtgroupboxpropertybrowser.h propertyeditor/qtpropertybrowser/qtpropertybrowser.h propertyeditor/qtpropertybrowser/qtpropertybrowserutils_p.h propertyeditor/qtpropertybrowser/qtpropertymanager.h propertyeditor/qtpropertybrowser/qttreepropertybrowser.h propertyeditor/qtpropertybrowser/qtvariantproperty.h $(DISTDIR)/
 	$(COPY_FILE) --parents ../../../../kernel/simulator/Attribute.cpp ../../../../kernel/simulator/ComponentManager.cpp ../../../../kernel/simulator/ConnectionManager.cpp ../../../../kernel/simulator/Counter.cpp ../../../../kernel/simulator/CppSerializer.cpp ../../../../kernel/simulator/Entity.cpp ../../../../kernel/simulator/EntityType.cpp ../../../../kernel/simulator/Event.cpp ../../../../kernel/simulator/ExperimentManager.cpp ../../../../kernel/simulator/ExperimentManagerDefaultImpl1.cpp ../../../../kernel/simulator/GenSerializer.cpp ../../../../kernel/simulator/JsonSerializer.cpp ../../../../kernel/simulator/LicenceManager.cpp ../../../../kernel/simulator/Model.cpp ../../../../kernel/simulator/ModelCheckerDefaultImpl1.cpp ../../../../kernel/simulator/ModelComponent.cpp ../../../../kernel/simulator/ModelDataDefinition.cpp ../../../../kernel/simulator/ModelDataManager.cpp ../../../../kernel/simulator/ModelInfo.cpp ../../../../kernel/simulator/ModelManager.cpp ../../../../kernel/simulator/ModelPersistenceDefaultImpl2.cpp ../../../../kernel/simulator/ModelSerializer.cpp ../../../../kernel/simulator/ModelSimulation.cpp ../../../../kernel/simulator/OnEventManager.cpp ../../../../kernel/simulator/ParserChangesInformation.cpp ../../../../kernel/simulator/ParserDefaultImpl1.cpp ../../../../kernel/simulator/ParserDefaultImpl2.cpp ../../../../kernel/simulator/ParserManager.cpp ../../../../kernel/simulator/Persistence.cpp ../../../../kernel/simulator/Plugin.cpp ../../../../kernel/simulator/PluginConnectorDummyImpl1.cpp ../../../../kernel/simulator/PluginInformation.cpp ../../../../kernel/simulator/PluginManager.cpp ../../../../kernel/simulator/SimulationExperiment.cpp ../../../../kernel/simulator/SimulationReporterDefaultImpl1.cpp ../../../../kernel/simulator/SimulationScenario.cpp ../../../../kernel/simulator/Simulator.cpp ../../../../kernel/simulator/SinkModelComponent.cpp ../../../../kernel/simulator/SourceModelComponent.cpp ../../../../kernel/simulator/StatisticsCollector.cpp ../../../../kernel/simulator/TraceManager.cpp ../../../../kernel/simulator/XmlSerializer.cpp ../../../../kernel/statistics/CollectorDatafileDefaultImpl1.cpp ../../../../kernel/statistics/CollectorDefaultImpl1.cpp ../../../../kernel/statistics/SamplerBoostImpl.cpp ../../../../kernel/statistics/SamplerDefaultImpl1.cpp ../../../../kernel/statistics/SorttFile.cpp ../../../../kernel/statistics/StatisticsDataFileDefaultImpl.cpp ../../../../kernel/statistics/StatisticsDefaultImpl1.cpp ../../../../kernel/util/Util.cpp ../../../../parser/Genesys++-driver.cpp ../../../../parser/Genesys++-scanner.cpp ../../../../parser/GenesysParser.cpp ../../../../parser/obj_t.cpp ../../../../plugins/components/Access.cpp ../../../../plugins/components/Assign.cpp ../../../../plugins/components/Batch.cpp ../../../../plugins/components/Buffer.cpp ../../../../plugins/components/Clone.cpp ../../../../plugins/components/CppForG.cpp ../../../../plugins/components/Create.cpp ../../../../plugins/components/Decide.cpp ../../../../plugins/components/DefaultModalModel.cpp ../../../../plugins/components/Delay.cpp ../../../../plugins/components/DiffEquations.cpp ../../../../plugins/components/Dispose.cpp ../../../../plugins/components/DropOff.cpp ../../../../plugins/components/DummyComponent.cpp ../../../../plugins/components/Enter.cpp ../../../../plugins/components/Exit.cpp ../../../../plugins/components/PickableStationItem.cpp ../../../../plugins/components/SPICECircuit.cpp ../../../../plugins/components/SPICENode.cpp ../../../../plugins/components/Wait.cpp ../../../../plugins/components/LSODE.cpp ../../../../plugins/components/Leave.cpp ../../../../plugins/components/MarkovChain.cpp ../../../../plugins/components/Match.cpp ../../../../plugins/components/OLD_ODEelement.cpp ../../../../plugins/components/PickStation.cpp ../../../../plugins/components/PickUp.cpp ../../../../plugins/components/Process.cpp ../../../../plugins/components/QueueableItem.cpp ../../../../plugins/components/Record.cpp ../../../../plugins/components/Release.cpp ../../../../plugins/components/Remove.cpp ../../../../plugins/components/Route.cpp ../../../../plugins/components/Search.cpp ../../../../plugins/components/SeizableItem.cpp ../../../../plugins/components/Seize.cpp ../../../../plugins/components/Separate.cpp ../../../../plugins/components/Signal.cpp ../../../../plugins/components/Start.cpp ../../../../plugins/components/Stop.cpp ../../../../plugins/components/Store.cpp ../../../../plugins/components/Submodel.cpp ../../../../plugins/components/Unstore.cpp ../../../../plugins/components/Write.cpp ../../../../plugins/components/network/DefaultNode.cpp ../../../../plugins/data/AssignmentItem.cpp ../../../../plugins/data/CppCompiler.cpp ../../../../plugins/data/DummyElement.cpp ../../../../plugins/data/EntityGroup.cpp ../../../../plugins/data/Failure.cpp ../../../../plugins/data/File.cpp ../../../../plugins/data/Formula.cpp ../../../../plugins/data/Label.cpp ../../../../plugins/data/Queue.cpp ../../../../plugins/data/Resource.cpp ../../../../plugins/data/SPICERunner.cpp ../../../../plugins/data/Schedule.cpp ../../../../plugins/data/Sequence.cpp ../../../../plugins/data/Set.cpp ../../../../plugins/data/SignalData.cpp ../../../../plugins/data/Station.cpp ../../../../plugins/data/Storage.cpp ../../../../plugins/data/Variable.cpp ../../../../tools/FitterDummyImpl.cpp ../../../../tools/HypothesisTesterDefaultImpl1.cpp ../../../../tools/ProbabilityDistribution.cpp ../../../../tools/ProbabilityDistributionBase.cpp ../../../../tools/SolverDefaultImpl1.cpp ../../../BaseGenesysTerminalApplication.cpp ../../../terminal/GenesysShell/GenesysShell.cpp ../../../terminal/examples/arenaExamples/AirportSecurityExample.cpp ../../../terminal/examples/arenaExamples/AirportSecurityExampleExtended.cpp ../../../terminal/examples/arenaExamples/Airport_Extended1.cpp ../../../terminal/examples/arenaExamples/Assembly_Line.cpp ../../../terminal/examples/arenaExamples/Banking_Transactions.cpp ../../../terminal/examples/arenaExamples/Example_BasicOrderShipping.cpp ../../../terminal/examples/arenaExamples/Example_PortModel.cpp ../../../terminal/examples/arenaExamples/Example_PublicTransport.cpp ../../../terminal/examples/arenaSmarts/Smart_AddingResource.cpp ../../../terminal/examples/arenaSmarts/Smart_AlternatingEntityCreation.cpp ../../../terminal/examples/arenaSmarts/Smart_ArrivalsElementStopsEntitiesArrivingAfterASetTime.cpp ../../../terminal/examples/arenaSmarts/Smart_ArrivalsEntityTypeVsAttribute.cpp ../../../terminal/examples/arenaSmarts/Smart_AssignExample.cpp ../../../terminal/examples/arenaSmarts/Smart_AutomaticStatisticsCollection.cpp ../../../terminal/examples/arenaSmarts/Smart_BasicModeling.cpp ../../../terminal/examples/arenaSmarts/Smart_BatchAndSeparate.cpp ../../../terminal/examples/arenaSmarts/Smart_ContinuousFlowEntities.cpp ../../../terminal/examples/arenaSmarts/Smart_Create.cpp ../../../terminal/examples/arenaSmarts/Smart_DecideNWayByChance.cpp ../../../terminal/examples/arenaSmarts/Smart_DefiningAttributesAsStrings.cpp ../../../terminal/examples/arenaSmarts/Smart_DefiningControlLogic.cpp ../../../terminal/examples/arenaSmarts/Smart_DefiningResourceCapacity.cpp ../../../terminal/examples/arenaSmarts/Smart_DelayBasedOnReplication.cpp ../../../terminal/examples/arenaSmarts/Smart_EntitiesProcessedByPriority.cpp ../../../terminal/examples/arenaSmarts/Smart_EvaluatingConditionsBeforeEnteringQueue.cpp ../../../terminal/examples/arenaSmarts/Smart_Expression.cpp ../../../terminal/examples/arenaSmarts/Smart_InventoryAndHoldingCosts.cpp ../../../terminal/examples/arenaSmarts/Smart_MaxArrivalsField.cpp ../../../terminal/examples/arenaSmarts/Smart_ModelRunUntil1000Parts.cpp ../../../terminal/examples/arenaSmarts/Smart_ModuleDisplayVariables.cpp ../../../terminal/examples/arenaSmarts/Smart_OverlappingResources.cpp ../../../terminal/examples/arenaSmarts/Smart_ParallelProcessingOfEntities.cpp ../../../terminal/examples/arenaSmarts/Smart_PlacingEntitiesInQueueSets.cpp ../../../terminal/examples/arenaSmarts/Smart_PriorityExample.cpp ../../../terminal/examples/arenaSmarts/Smart_ProcessArena.cpp ../../../terminal/examples/arenaSmarts/Smart_Record_Arena.cpp ../../../terminal/examples/arenaSmarts/Smart_RemovingAndReorderingEntitiesInAQueue.cpp ../../../terminal/examples/arenaSmarts/Smart_ResourceCosting.cpp ../../../terminal/examples/arenaSmarts/Smart_ResourceScheduleCosting.cpp ../../../terminal/examples/arenaSmarts/Smart_ResourceSets.cpp ../../../terminal/examples/arenaSmarts/Smart_SeizingMultipleSimultaneosly.cpp ../../../terminal/examples/arenaSmarts/Smart_SelectingRouteBasedOnProbability.cpp ../../../terminal/examples/arenaSmarts/Smart_SelectingShorterQueue.cpp ../../../terminal/examples/arenaSmarts/Smart_SynchronizingParallelEntities.cpp ../../../terminal/examples/arenaSmarts/Smart_ValueAdded.cpp ../../../terminal/examples/arenaSmarts/Smart_WaitForSignal.cpp ../../../terminal/examples/book/Book_Cap02_Example01.cpp ../../../terminal/examples/smarts/Smart_AssignWriteSeizes.cpp ../../../terminal/examples/smarts/Smart_BatchSeparate.cpp ../../../terminal/examples/smarts/Smart_Buffer.cpp ../../../terminal/examples/smarts/Smart_Clone.cpp ../../../terminal/examples/smarts/Smart_CppForG.cpp ../../../terminal/examples/smarts/Smart_Delay.cpp ../../../terminal/examples/smarts/Smart_Dummy.cpp ../../../terminal/examples/smarts/Smart_Failures.cpp ../../../terminal/examples/smarts/Smart_HoldSearchRemove.cpp ../../../terminal/examples/smarts/Smart_LSODE.cpp ../../../terminal/examples/smarts/Smart_MarkovChain.cpp ../../../terminal/examples/smarts/Smart_ModelInfoModelSimulation.cpp ../../../terminal/examples/smarts/Smart_ODE.cpp ../../../terminal/examples/smarts/Smart_OnEvent.cpp ../../../terminal/examples/smarts/Smart_Parser.cpp ../../../terminal/examples/smarts/Smart_ParserModelFunctions.cpp ../../../terminal/examples/smarts/Smart_Plugin.cpp ../../../terminal/examples/smarts/Smart_Process.cpp ../../../terminal/examples/smarts/Smart_ProcessSet.cpp ../../../terminal/examples/smarts/Smart_Record.cpp ../../../terminal/examples/smarts/Smart_RouteStation.cpp ../../../terminal/examples/smarts/Smart_SeizeDelayRelease.cpp ../../../terminal/examples/smarts/Smart_SeizeDelayReleaseMany.cpp ../../../terminal/examples/smarts/Smart_SeizeDelayReleaseNoDataDefs.cpp ../../../terminal/examples/smarts/Smart_Sequence.cpp ../../../terminal/examples/smarts/Smart_SimulationControlResponse.cpp ../../../terminal/examples/smarts/Smart_WaitScanCondition.cpp ../../../terminal/examples/smarts/Smart_WaitSignal.cpp ../../../terminal/examples/smarts/Smaty_DefaultModalModel.cpp ../../../terminal/examples/teaching/AnElectronicAssemblyAndTestSystem.cpp ../../../terminal/examples/teaching/ContinuousModel.cpp ../../../terminal/examples/teaching/FullSimulationOfComplexModel.cpp ../../../terminal/examples/teaching/Half_Adder.cpp ../../../terminal/examples/teaching/Loja/Loja01.cpp ../../../terminal/examples/teaching/OperatingSystem02.cpp ../../../terminal/examples/teaching/OperatingSystem03.cpp ../../../terminal/examples/teaching/Rectifier.cpp codeeditor/CodeEditor.cpp mainwindow_controller_on.cpp mainwindow_scene.cpp mainwindow_simulator.cpp propertyeditor/DataComponentProperty.cpp graphicals/ModelGraphicsScene.cpp graphicals/ModelGraphicsView.cpp propertyeditor/ObjectPropertyBrowser.cpp propertyeditor/PropertyEditor.cpp propertyeditor/DataComponentEditor.cpp propertyeditor/ComboBoxEnum.cpp actions/AddUndoCommand.cpp actions/DeleteUndoCommand.cpp actions/GroupUndoCommand.cpp actions/MoveUndoCommand.cpp actions/PasteUndoCommand.cpp actions/UngroupUndoCommand.cpp animations/AnimationCounter.cpp animations/AnimationQueue.cpp animations/AnimationTimer.cpp animations/AnimationTransition.cpp animations/AnimationVariable.cpp dialogs/DialogFind.cpp dialogs/DialogSelectCounter.cpp dialogs/DialogSelectVariable.cpp dialogs/DialogTimerConfigure.cpp dialogs/Dialogmodelinformation.cpp dialogs/dialogBreakpoint.cpp dialogs/dialogpluginmanager.cpp dialogs/dialogsimulationconfigure.cpp dialogs/dialogsystempreferences.cpp graphicals/GraphicalAnimateExpression.cpp graphicals/GraphicalAssociation.cpp graphicals/GraphicalComponentPort.cpp graphicals/GraphicalConnection.cpp graphicals/GraphicalDiagramConnection.cpp graphicals/GraphicalImageAnimation.cpp graphicals/GraphicalModelComponent.cpp graphicals/GraphicalModelDataDefinition.cpp main.cpp mainwindow.cpp propertyeditor/qtpropertybrowser/qtbuttonpropertybrowser.cpp propertyeditor/qtpropertybrowser/qteditorfactory.cpp propertyeditor/qtpropertybrowser/qtgroupboxpropertybrowser.cpp propertyeditor/qtpropertybrowser/qtpropertybrowser.cpp propertyeditor/qtpropertybrowser/qtpropertybrowserutils.cpp propertyeditor/qtpropertybrowser/qtpropertymanager.cpp propertyeditor/qtpropertybrowser/qttreepropertybrowser.cpp propertyeditor/qtpropertybrowser/qtvariantproperty.cpp $(DISTDIR)/
@@ -1557,10 +1560,10 @@ compiler_lrelease_clean:
 .qm/GenesysQtGUI_en_US.qm: GenesysQtGUI_en_US.ts
 	/usr/lib/qt5/bin/lrelease GenesysQtGUI_en_US.ts -qm .qm/GenesysQtGUI_en_US.qm
 
-compiler_rcc_make_all: qrc_GenesysQtGUI_resources.cpp qrc_qtpropertybrowser.cpp qrc_qmake_qmake_qm_files.cpp
+compiler_rcc_make_all: build/rcc/qrc_GenesysQtGUI_resources.cpp build/rcc/qrc_qtpropertybrowser.cpp build/rcc/qrc_qmake_qmake_qm_files.cpp
 compiler_rcc_clean:
-	-$(DEL_FILE) qrc_GenesysQtGUI_resources.cpp qrc_qtpropertybrowser.cpp qrc_qmake_qmake_qm_files.cpp
-qrc_GenesysQtGUI_resources.cpp: GenesysQtGUI_resources.qrc \
+	-$(DEL_FILE) build/rcc/qrc_GenesysQtGUI_resources.cpp build/rcc/qrc_qtpropertybrowser.cpp build/rcc/qrc_qmake_qmake_qm_files.cpp
+build/rcc/qrc_GenesysQtGUI_resources.cpp: GenesysQtGUI_resources.qrc \
 		/usr/lib/qt5/bin/rcc \
 		resources/icons/pack4/iconsMxGraph/rounded.png \
 		resources/icons/pack4/iconsMxGraph/fontcolor.gif \
@@ -2288,9 +2291,9 @@ qrc_GenesysQtGUI_resources.cpp: GenesysQtGUI_resources.qrc \
 		resources/icons/pack1/ico/88.ico \
 		resources/icons/pack1/ico/97.ico \
 		resources/icons/pack1/ico/5.ico
-	/usr/lib/qt5/bin/rcc -name GenesysQtGUI_resources GenesysQtGUI_resources.qrc -o qrc_GenesysQtGUI_resources.cpp
+	/usr/lib/qt5/bin/rcc -name GenesysQtGUI_resources GenesysQtGUI_resources.qrc -o build/rcc/qrc_GenesysQtGUI_resources.cpp
 
-qrc_qtpropertybrowser.cpp: propertyeditor/qtpropertybrowser/qtpropertybrowser.qrc \
+build/rcc/qrc_qtpropertybrowser.cpp: propertyeditor/qtpropertybrowser/qtpropertybrowser.qrc \
 		/usr/lib/qt5/bin/rcc \
 		propertyeditor/qtpropertybrowser/images/cursor-sizeb.png \
 		propertyeditor/qtpropertybrowser/images/cursor-sizeall.png \
@@ -2311,28 +2314,28 @@ qrc_qtpropertybrowser.cpp: propertyeditor/qtpropertybrowser/qtpropertybrowser.qr
 		propertyeditor/qtpropertybrowser/images/cursor-arrow.png \
 		propertyeditor/qtpropertybrowser/images/cursor-wait.png \
 		propertyeditor/qtpropertybrowser/images/cursor-whatsthis.png
-	/usr/lib/qt5/bin/rcc -name qtpropertybrowser propertyeditor/qtpropertybrowser/qtpropertybrowser.qrc -o qrc_qtpropertybrowser.cpp
+	/usr/lib/qt5/bin/rcc -name qtpropertybrowser propertyeditor/qtpropertybrowser/qtpropertybrowser.qrc -o build/rcc/qrc_qtpropertybrowser.cpp
 
-qrc_qmake_qmake_qm_files.cpp: qmake_qmake_qm_files.qrc \
+build/rcc/qrc_qmake_qmake_qm_files.cpp: build/rcc/qmake_qmake_qm_files.qrc \
 		/usr/lib/qt5/bin/rcc \
 		.qm/GenesysQtGUI_en_US.qm
-	/usr/lib/qt5/bin/rcc -name qmake_qmake_qm_files qmake_qmake_qm_files.qrc -o qrc_qmake_qmake_qm_files.cpp
+	/usr/lib/qt5/bin/rcc -name qmake_qmake_qm_files build/rcc/qmake_qmake_qm_files.qrc -o build/rcc/qrc_qmake_qmake_qm_files.cpp
 
-compiler_moc_predefs_make_all: moc_predefs.h
+compiler_moc_predefs_make_all: build/moc/moc_predefs.h
 compiler_moc_predefs_clean:
-	-$(DEL_FILE) moc_predefs.h
-moc_predefs.h: /usr/lib/x86_64-linux-gnu/qt5/mkspecs/features/data/dummy.cpp
-	g++ -pipe -pedantic -Wno-unused -Wmissing-field-initializers -O2 -std=gnu++1y -Wall -Wextra -dM -E -o moc_predefs.h /usr/lib/x86_64-linux-gnu/qt5/mkspecs/features/data/dummy.cpp
+	-$(DEL_FILE) build/moc/moc_predefs.h
+build/moc/moc_predefs.h: /usr/lib/x86_64-linux-gnu/qt5/mkspecs/features/data/dummy.cpp
+	g++ -pipe -pedantic -Wno-unused -Wmissing-field-initializers -O2 -std=gnu++1y -Wall -Wextra -dM -E -o build/moc/moc_predefs.h /usr/lib/x86_64-linux-gnu/qt5/mkspecs/features/data/dummy.cpp
 
-compiler_moc_header_make_all: moc_CodeEditor.cpp moc_ObjectPropertyBrowser.cpp moc_DialogFind.cpp moc_DialogSelectCounter.cpp moc_DialogSelectVariable.cpp moc_DialogTimerConfigure.cpp moc_Dialogmodelinformation.cpp moc_dialogBreakpoint.cpp moc_dialogpluginmanager.cpp moc_dialogsimulationconfigure.cpp moc_dialogsystempreferences.cpp moc_mainwindow.cpp moc_qtbuttonpropertybrowser.cpp moc_qteditorfactory.cpp moc_qtgroupboxpropertybrowser.cpp moc_qtpropertybrowser.cpp moc_qtpropertybrowserutils_p.cpp moc_qtpropertymanager.cpp moc_qttreepropertybrowser.cpp moc_qtvariantproperty.cpp
+compiler_moc_header_make_all: build/moc/moc_CodeEditor.cpp build/moc/moc_ObjectPropertyBrowser.cpp build/moc/moc_DialogFind.cpp build/moc/moc_DialogSelectCounter.cpp build/moc/moc_DialogSelectVariable.cpp build/moc/moc_DialogTimerConfigure.cpp build/moc/moc_Dialogmodelinformation.cpp build/moc/moc_dialogBreakpoint.cpp build/moc/moc_dialogpluginmanager.cpp build/moc/moc_dialogsimulationconfigure.cpp build/moc/moc_dialogsystempreferences.cpp build/moc/moc_mainwindow.cpp build/moc/moc_qtbuttonpropertybrowser.cpp build/moc/moc_qteditorfactory.cpp build/moc/moc_qtgroupboxpropertybrowser.cpp build/moc/moc_qtpropertybrowser.cpp build/moc/moc_qtpropertybrowserutils_p.cpp build/moc/moc_qtpropertymanager.cpp build/moc/moc_qttreepropertybrowser.cpp build/moc/moc_qtvariantproperty.cpp
 compiler_moc_header_clean:
-	-$(DEL_FILE) moc_CodeEditor.cpp moc_ObjectPropertyBrowser.cpp moc_DialogFind.cpp moc_DialogSelectCounter.cpp moc_DialogSelectVariable.cpp moc_DialogTimerConfigure.cpp moc_Dialogmodelinformation.cpp moc_dialogBreakpoint.cpp moc_dialogpluginmanager.cpp moc_dialogsimulationconfigure.cpp moc_dialogsystempreferences.cpp moc_mainwindow.cpp moc_qtbuttonpropertybrowser.cpp moc_qteditorfactory.cpp moc_qtgroupboxpropertybrowser.cpp moc_qtpropertybrowser.cpp moc_qtpropertybrowserutils_p.cpp moc_qtpropertymanager.cpp moc_qttreepropertybrowser.cpp moc_qtvariantproperty.cpp
-moc_CodeEditor.cpp: codeeditor/CodeEditor.h \
-		moc_predefs.h \
+	-$(DEL_FILE) build/moc/moc_CodeEditor.cpp build/moc/moc_ObjectPropertyBrowser.cpp build/moc/moc_DialogFind.cpp build/moc/moc_DialogSelectCounter.cpp build/moc/moc_DialogSelectVariable.cpp build/moc/moc_DialogTimerConfigure.cpp build/moc/moc_Dialogmodelinformation.cpp build/moc/moc_dialogBreakpoint.cpp build/moc/moc_dialogpluginmanager.cpp build/moc/moc_dialogsimulationconfigure.cpp build/moc/moc_dialogsystempreferences.cpp build/moc/moc_mainwindow.cpp build/moc/moc_qtbuttonpropertybrowser.cpp build/moc/moc_qteditorfactory.cpp build/moc/moc_qtgroupboxpropertybrowser.cpp build/moc/moc_qtpropertybrowser.cpp build/moc/moc_qtpropertybrowserutils_p.cpp build/moc/moc_qtpropertymanager.cpp build/moc/moc_qttreepropertybrowser.cpp build/moc/moc_qtvariantproperty.cpp
+build/moc/moc_CodeEditor.cpp: codeeditor/CodeEditor.h \
+		build/moc/moc_predefs.h \
 		/usr/lib/qt5/bin/moc
-	/usr/lib/qt5/bin/moc $(DEFINES) --include /home/orion23/Documents/repos/Genesys-Simulator/source/applications/gui/qt/GenesysQtGUI/moc_predefs.h -I/usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++ -I/home/orion23/Documents/repos/Genesys-Simulator/source/applications/gui/qt/GenesysQtGUI -I/usr/include/x86_64-linux-gnu/qt5 -I/usr/include/x86_64-linux-gnu/qt5/QtPrintSupport -I/usr/include/x86_64-linux-gnu/qt5/QtDesigner -I/usr/include/x86_64-linux-gnu/qt5/QtUiPlugin -I/usr/include/x86_64-linux-gnu/qt5/QtCharts -I/usr/include/x86_64-linux-gnu/qt5/QtWidgets -I/usr/include/x86_64-linux-gnu/qt5/QtGui -I/usr/include/x86_64-linux-gnu/qt5/QtXml -I/usr/include/x86_64-linux-gnu/qt5/QtCore -I/usr/include/c++/11 -I/usr/include/x86_64-linux-gnu/c++/11 -I/usr/include/c++/11/backward -I/usr/lib/gcc/x86_64-linux-gnu/11/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include codeeditor/CodeEditor.h -o moc_CodeEditor.cpp
+	/usr/lib/qt5/bin/moc $(DEFINES) --include /home/orion23/Documents/repos/Genesys-Simulator/source/applications/gui/qt/GenesysQtGUI/build/moc/moc_predefs.h -I/usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++ -I/home/orion23/Documents/repos/Genesys-Simulator/source/applications/gui/qt/GenesysQtGUI -I/usr/include/x86_64-linux-gnu/qt5 -I/usr/include/x86_64-linux-gnu/qt5/QtPrintSupport -I/usr/include/x86_64-linux-gnu/qt5/QtDesigner -I/usr/include/x86_64-linux-gnu/qt5/QtUiPlugin -I/usr/include/x86_64-linux-gnu/qt5/QtCharts -I/usr/include/x86_64-linux-gnu/qt5/QtWidgets -I/usr/include/x86_64-linux-gnu/qt5/QtGui -I/usr/include/x86_64-linux-gnu/qt5/QtXml -I/usr/include/x86_64-linux-gnu/qt5/QtCore -I/usr/include/c++/11 -I/usr/include/x86_64-linux-gnu/c++/11 -I/usr/include/c++/11/backward -I/usr/lib/gcc/x86_64-linux-gnu/11/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include codeeditor/CodeEditor.h -o build/moc/moc_CodeEditor.cpp
 
-moc_ObjectPropertyBrowser.cpp: propertyeditor/ObjectPropertyBrowser.h \
+build/moc/moc_ObjectPropertyBrowser.cpp: propertyeditor/ObjectPropertyBrowser.h \
 		propertyeditor/qtpropertybrowser/qttreepropertybrowser.h \
 		propertyeditor/qtpropertybrowser/qtpropertybrowser.h \
 		propertyeditor/qtpropertybrowser/qtvariantproperty.h \
@@ -2358,11 +2361,11 @@ moc_ObjectPropertyBrowser.cpp: propertyeditor/ObjectPropertyBrowser.h \
 		../../../../kernel/simulator/ModelDataManager.h \
 		../../../../kernel/simulator/ConnectionManager.h \
 		propertyeditor/ComboBoxEnum.h \
-		moc_predefs.h \
+		build/moc/moc_predefs.h \
 		/usr/lib/qt5/bin/moc
-	/usr/lib/qt5/bin/moc $(DEFINES) --include /home/orion23/Documents/repos/Genesys-Simulator/source/applications/gui/qt/GenesysQtGUI/moc_predefs.h -I/usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++ -I/home/orion23/Documents/repos/Genesys-Simulator/source/applications/gui/qt/GenesysQtGUI -I/usr/include/x86_64-linux-gnu/qt5 -I/usr/include/x86_64-linux-gnu/qt5/QtPrintSupport -I/usr/include/x86_64-linux-gnu/qt5/QtDesigner -I/usr/include/x86_64-linux-gnu/qt5/QtUiPlugin -I/usr/include/x86_64-linux-gnu/qt5/QtCharts -I/usr/include/x86_64-linux-gnu/qt5/QtWidgets -I/usr/include/x86_64-linux-gnu/qt5/QtGui -I/usr/include/x86_64-linux-gnu/qt5/QtXml -I/usr/include/x86_64-linux-gnu/qt5/QtCore -I/usr/include/c++/11 -I/usr/include/x86_64-linux-gnu/c++/11 -I/usr/include/c++/11/backward -I/usr/lib/gcc/x86_64-linux-gnu/11/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include propertyeditor/ObjectPropertyBrowser.h -o moc_ObjectPropertyBrowser.cpp
+	/usr/lib/qt5/bin/moc $(DEFINES) --include /home/orion23/Documents/repos/Genesys-Simulator/source/applications/gui/qt/GenesysQtGUI/build/moc/moc_predefs.h -I/usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++ -I/home/orion23/Documents/repos/Genesys-Simulator/source/applications/gui/qt/GenesysQtGUI -I/usr/include/x86_64-linux-gnu/qt5 -I/usr/include/x86_64-linux-gnu/qt5/QtPrintSupport -I/usr/include/x86_64-linux-gnu/qt5/QtDesigner -I/usr/include/x86_64-linux-gnu/qt5/QtUiPlugin -I/usr/include/x86_64-linux-gnu/qt5/QtCharts -I/usr/include/x86_64-linux-gnu/qt5/QtWidgets -I/usr/include/x86_64-linux-gnu/qt5/QtGui -I/usr/include/x86_64-linux-gnu/qt5/QtXml -I/usr/include/x86_64-linux-gnu/qt5/QtCore -I/usr/include/c++/11 -I/usr/include/x86_64-linux-gnu/c++/11 -I/usr/include/c++/11/backward -I/usr/lib/gcc/x86_64-linux-gnu/11/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include propertyeditor/ObjectPropertyBrowser.h -o build/moc/moc_ObjectPropertyBrowser.cpp
 
-moc_DialogFind.cpp: dialogs/DialogFind.h \
+build/moc/moc_DialogFind.cpp: dialogs/DialogFind.h \
 		graphicals/GraphicalModelComponent.h \
 		../../../../kernel/simulator/ModelComponent.h \
 		../../../../kernel/simulator/Plugin.h \
@@ -2420,11 +2423,11 @@ moc_DialogFind.cpp: dialogs/DialogFind.h \
 		animations/AnimationCounter.h \
 		../../../../kernel/simulator/Counter.h \
 		animations/AnimationTimer.h \
-		moc_predefs.h \
+		build/moc/moc_predefs.h \
 		/usr/lib/qt5/bin/moc
-	/usr/lib/qt5/bin/moc $(DEFINES) --include /home/orion23/Documents/repos/Genesys-Simulator/source/applications/gui/qt/GenesysQtGUI/moc_predefs.h -I/usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++ -I/home/orion23/Documents/repos/Genesys-Simulator/source/applications/gui/qt/GenesysQtGUI -I/usr/include/x86_64-linux-gnu/qt5 -I/usr/include/x86_64-linux-gnu/qt5/QtPrintSupport -I/usr/include/x86_64-linux-gnu/qt5/QtDesigner -I/usr/include/x86_64-linux-gnu/qt5/QtUiPlugin -I/usr/include/x86_64-linux-gnu/qt5/QtCharts -I/usr/include/x86_64-linux-gnu/qt5/QtWidgets -I/usr/include/x86_64-linux-gnu/qt5/QtGui -I/usr/include/x86_64-linux-gnu/qt5/QtXml -I/usr/include/x86_64-linux-gnu/qt5/QtCore -I/usr/include/c++/11 -I/usr/include/x86_64-linux-gnu/c++/11 -I/usr/include/c++/11/backward -I/usr/lib/gcc/x86_64-linux-gnu/11/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include dialogs/DialogFind.h -o moc_DialogFind.cpp
+	/usr/lib/qt5/bin/moc $(DEFINES) --include /home/orion23/Documents/repos/Genesys-Simulator/source/applications/gui/qt/GenesysQtGUI/build/moc/moc_predefs.h -I/usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++ -I/home/orion23/Documents/repos/Genesys-Simulator/source/applications/gui/qt/GenesysQtGUI -I/usr/include/x86_64-linux-gnu/qt5 -I/usr/include/x86_64-linux-gnu/qt5/QtPrintSupport -I/usr/include/x86_64-linux-gnu/qt5/QtDesigner -I/usr/include/x86_64-linux-gnu/qt5/QtUiPlugin -I/usr/include/x86_64-linux-gnu/qt5/QtCharts -I/usr/include/x86_64-linux-gnu/qt5/QtWidgets -I/usr/include/x86_64-linux-gnu/qt5/QtGui -I/usr/include/x86_64-linux-gnu/qt5/QtXml -I/usr/include/x86_64-linux-gnu/qt5/QtCore -I/usr/include/c++/11 -I/usr/include/x86_64-linux-gnu/c++/11 -I/usr/include/c++/11/backward -I/usr/lib/gcc/x86_64-linux-gnu/11/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include dialogs/DialogFind.h -o build/moc/moc_DialogFind.cpp
 
-moc_DialogSelectCounter.cpp: dialogs/DialogSelectCounter.h \
+build/moc/moc_DialogSelectCounter.cpp: dialogs/DialogSelectCounter.h \
 		../../../../kernel/simulator/Counter.h \
 		../../../../kernel/simulator/ModelDataDefinition.h \
 		../../../../kernel/util/List.h \
@@ -2437,11 +2440,11 @@ moc_DialogSelectCounter.cpp: dialogs/DialogSelectCounter.h \
 		../../../../kernel/simulator/ModelDataManager.h \
 		../../../../kernel/simulator/Plugin.h \
 		../../../../kernel/simulator/PluginInformation.h \
-		moc_predefs.h \
+		build/moc/moc_predefs.h \
 		/usr/lib/qt5/bin/moc
-	/usr/lib/qt5/bin/moc $(DEFINES) --include /home/orion23/Documents/repos/Genesys-Simulator/source/applications/gui/qt/GenesysQtGUI/moc_predefs.h -I/usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++ -I/home/orion23/Documents/repos/Genesys-Simulator/source/applications/gui/qt/GenesysQtGUI -I/usr/include/x86_64-linux-gnu/qt5 -I/usr/include/x86_64-linux-gnu/qt5/QtPrintSupport -I/usr/include/x86_64-linux-gnu/qt5/QtDesigner -I/usr/include/x86_64-linux-gnu/qt5/QtUiPlugin -I/usr/include/x86_64-linux-gnu/qt5/QtCharts -I/usr/include/x86_64-linux-gnu/qt5/QtWidgets -I/usr/include/x86_64-linux-gnu/qt5/QtGui -I/usr/include/x86_64-linux-gnu/qt5/QtXml -I/usr/include/x86_64-linux-gnu/qt5/QtCore -I/usr/include/c++/11 -I/usr/include/x86_64-linux-gnu/c++/11 -I/usr/include/c++/11/backward -I/usr/lib/gcc/x86_64-linux-gnu/11/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include dialogs/DialogSelectCounter.h -o moc_DialogSelectCounter.cpp
+	/usr/lib/qt5/bin/moc $(DEFINES) --include /home/orion23/Documents/repos/Genesys-Simulator/source/applications/gui/qt/GenesysQtGUI/build/moc/moc_predefs.h -I/usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++ -I/home/orion23/Documents/repos/Genesys-Simulator/source/applications/gui/qt/GenesysQtGUI -I/usr/include/x86_64-linux-gnu/qt5 -I/usr/include/x86_64-linux-gnu/qt5/QtPrintSupport -I/usr/include/x86_64-linux-gnu/qt5/QtDesigner -I/usr/include/x86_64-linux-gnu/qt5/QtUiPlugin -I/usr/include/x86_64-linux-gnu/qt5/QtCharts -I/usr/include/x86_64-linux-gnu/qt5/QtWidgets -I/usr/include/x86_64-linux-gnu/qt5/QtGui -I/usr/include/x86_64-linux-gnu/qt5/QtXml -I/usr/include/x86_64-linux-gnu/qt5/QtCore -I/usr/include/c++/11 -I/usr/include/x86_64-linux-gnu/c++/11 -I/usr/include/c++/11/backward -I/usr/lib/gcc/x86_64-linux-gnu/11/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include dialogs/DialogSelectCounter.h -o build/moc/moc_DialogSelectCounter.cpp
 
-moc_DialogSelectVariable.cpp: dialogs/DialogSelectVariable.h \
+build/moc/moc_DialogSelectVariable.cpp: dialogs/DialogSelectVariable.h \
 		../../../../plugins/data/Variable.h \
 		../../../../kernel/simulator/ModelDataDefinition.h \
 		../../../../kernel/util/List.h \
@@ -2454,23 +2457,23 @@ moc_DialogSelectVariable.cpp: dialogs/DialogSelectVariable.h \
 		../../../../kernel/simulator/ModelDataManager.h \
 		../../../../kernel/simulator/Plugin.h \
 		../../../../kernel/simulator/PluginInformation.h \
-		moc_predefs.h \
+		build/moc/moc_predefs.h \
 		/usr/lib/qt5/bin/moc
-	/usr/lib/qt5/bin/moc $(DEFINES) --include /home/orion23/Documents/repos/Genesys-Simulator/source/applications/gui/qt/GenesysQtGUI/moc_predefs.h -I/usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++ -I/home/orion23/Documents/repos/Genesys-Simulator/source/applications/gui/qt/GenesysQtGUI -I/usr/include/x86_64-linux-gnu/qt5 -I/usr/include/x86_64-linux-gnu/qt5/QtPrintSupport -I/usr/include/x86_64-linux-gnu/qt5/QtDesigner -I/usr/include/x86_64-linux-gnu/qt5/QtUiPlugin -I/usr/include/x86_64-linux-gnu/qt5/QtCharts -I/usr/include/x86_64-linux-gnu/qt5/QtWidgets -I/usr/include/x86_64-linux-gnu/qt5/QtGui -I/usr/include/x86_64-linux-gnu/qt5/QtXml -I/usr/include/x86_64-linux-gnu/qt5/QtCore -I/usr/include/c++/11 -I/usr/include/x86_64-linux-gnu/c++/11 -I/usr/include/c++/11/backward -I/usr/lib/gcc/x86_64-linux-gnu/11/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include dialogs/DialogSelectVariable.h -o moc_DialogSelectVariable.cpp
+	/usr/lib/qt5/bin/moc $(DEFINES) --include /home/orion23/Documents/repos/Genesys-Simulator/source/applications/gui/qt/GenesysQtGUI/build/moc/moc_predefs.h -I/usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++ -I/home/orion23/Documents/repos/Genesys-Simulator/source/applications/gui/qt/GenesysQtGUI -I/usr/include/x86_64-linux-gnu/qt5 -I/usr/include/x86_64-linux-gnu/qt5/QtPrintSupport -I/usr/include/x86_64-linux-gnu/qt5/QtDesigner -I/usr/include/x86_64-linux-gnu/qt5/QtUiPlugin -I/usr/include/x86_64-linux-gnu/qt5/QtCharts -I/usr/include/x86_64-linux-gnu/qt5/QtWidgets -I/usr/include/x86_64-linux-gnu/qt5/QtGui -I/usr/include/x86_64-linux-gnu/qt5/QtXml -I/usr/include/x86_64-linux-gnu/qt5/QtCore -I/usr/include/c++/11 -I/usr/include/x86_64-linux-gnu/c++/11 -I/usr/include/c++/11/backward -I/usr/lib/gcc/x86_64-linux-gnu/11/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include dialogs/DialogSelectVariable.h -o build/moc/moc_DialogSelectVariable.cpp
 
-moc_DialogTimerConfigure.cpp: dialogs/DialogTimerConfigure.h \
+build/moc/moc_DialogTimerConfigure.cpp: dialogs/DialogTimerConfigure.h \
 		animations/AnimationTimer.h \
 		../../../../kernel/util/Util.h \
-		moc_predefs.h \
+		build/moc/moc_predefs.h \
 		/usr/lib/qt5/bin/moc
-	/usr/lib/qt5/bin/moc $(DEFINES) --include /home/orion23/Documents/repos/Genesys-Simulator/source/applications/gui/qt/GenesysQtGUI/moc_predefs.h -I/usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++ -I/home/orion23/Documents/repos/Genesys-Simulator/source/applications/gui/qt/GenesysQtGUI -I/usr/include/x86_64-linux-gnu/qt5 -I/usr/include/x86_64-linux-gnu/qt5/QtPrintSupport -I/usr/include/x86_64-linux-gnu/qt5/QtDesigner -I/usr/include/x86_64-linux-gnu/qt5/QtUiPlugin -I/usr/include/x86_64-linux-gnu/qt5/QtCharts -I/usr/include/x86_64-linux-gnu/qt5/QtWidgets -I/usr/include/x86_64-linux-gnu/qt5/QtGui -I/usr/include/x86_64-linux-gnu/qt5/QtXml -I/usr/include/x86_64-linux-gnu/qt5/QtCore -I/usr/include/c++/11 -I/usr/include/x86_64-linux-gnu/c++/11 -I/usr/include/c++/11/backward -I/usr/lib/gcc/x86_64-linux-gnu/11/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include dialogs/DialogTimerConfigure.h -o moc_DialogTimerConfigure.cpp
+	/usr/lib/qt5/bin/moc $(DEFINES) --include /home/orion23/Documents/repos/Genesys-Simulator/source/applications/gui/qt/GenesysQtGUI/build/moc/moc_predefs.h -I/usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++ -I/home/orion23/Documents/repos/Genesys-Simulator/source/applications/gui/qt/GenesysQtGUI -I/usr/include/x86_64-linux-gnu/qt5 -I/usr/include/x86_64-linux-gnu/qt5/QtPrintSupport -I/usr/include/x86_64-linux-gnu/qt5/QtDesigner -I/usr/include/x86_64-linux-gnu/qt5/QtUiPlugin -I/usr/include/x86_64-linux-gnu/qt5/QtCharts -I/usr/include/x86_64-linux-gnu/qt5/QtWidgets -I/usr/include/x86_64-linux-gnu/qt5/QtGui -I/usr/include/x86_64-linux-gnu/qt5/QtXml -I/usr/include/x86_64-linux-gnu/qt5/QtCore -I/usr/include/c++/11 -I/usr/include/x86_64-linux-gnu/c++/11 -I/usr/include/c++/11/backward -I/usr/lib/gcc/x86_64-linux-gnu/11/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include dialogs/DialogTimerConfigure.h -o build/moc/moc_DialogTimerConfigure.cpp
 
-moc_Dialogmodelinformation.cpp: dialogs/Dialogmodelinformation.h \
-		moc_predefs.h \
+build/moc/moc_Dialogmodelinformation.cpp: dialogs/Dialogmodelinformation.h \
+		build/moc/moc_predefs.h \
 		/usr/lib/qt5/bin/moc
-	/usr/lib/qt5/bin/moc $(DEFINES) --include /home/orion23/Documents/repos/Genesys-Simulator/source/applications/gui/qt/GenesysQtGUI/moc_predefs.h -I/usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++ -I/home/orion23/Documents/repos/Genesys-Simulator/source/applications/gui/qt/GenesysQtGUI -I/usr/include/x86_64-linux-gnu/qt5 -I/usr/include/x86_64-linux-gnu/qt5/QtPrintSupport -I/usr/include/x86_64-linux-gnu/qt5/QtDesigner -I/usr/include/x86_64-linux-gnu/qt5/QtUiPlugin -I/usr/include/x86_64-linux-gnu/qt5/QtCharts -I/usr/include/x86_64-linux-gnu/qt5/QtWidgets -I/usr/include/x86_64-linux-gnu/qt5/QtGui -I/usr/include/x86_64-linux-gnu/qt5/QtXml -I/usr/include/x86_64-linux-gnu/qt5/QtCore -I/usr/include/c++/11 -I/usr/include/x86_64-linux-gnu/c++/11 -I/usr/include/c++/11/backward -I/usr/lib/gcc/x86_64-linux-gnu/11/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include dialogs/Dialogmodelinformation.h -o moc_Dialogmodelinformation.cpp
+	/usr/lib/qt5/bin/moc $(DEFINES) --include /home/orion23/Documents/repos/Genesys-Simulator/source/applications/gui/qt/GenesysQtGUI/build/moc/moc_predefs.h -I/usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++ -I/home/orion23/Documents/repos/Genesys-Simulator/source/applications/gui/qt/GenesysQtGUI -I/usr/include/x86_64-linux-gnu/qt5 -I/usr/include/x86_64-linux-gnu/qt5/QtPrintSupport -I/usr/include/x86_64-linux-gnu/qt5/QtDesigner -I/usr/include/x86_64-linux-gnu/qt5/QtUiPlugin -I/usr/include/x86_64-linux-gnu/qt5/QtCharts -I/usr/include/x86_64-linux-gnu/qt5/QtWidgets -I/usr/include/x86_64-linux-gnu/qt5/QtGui -I/usr/include/x86_64-linux-gnu/qt5/QtXml -I/usr/include/x86_64-linux-gnu/qt5/QtCore -I/usr/include/c++/11 -I/usr/include/x86_64-linux-gnu/c++/11 -I/usr/include/c++/11/backward -I/usr/lib/gcc/x86_64-linux-gnu/11/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include dialogs/Dialogmodelinformation.h -o build/moc/moc_Dialogmodelinformation.cpp
 
-moc_dialogBreakpoint.cpp: dialogs/dialogBreakpoint.h \
+build/moc/moc_dialogBreakpoint.cpp: dialogs/dialogBreakpoint.h \
 		ui_dialogBreakpoint.h \
 		../../../../kernel/simulator/Simulator.h \
 		../../../../kernel/simulator/Model.h \
@@ -2510,16 +2513,16 @@ moc_dialogBreakpoint.cpp: dialogs/dialogBreakpoint.h \
 		../../../../kernel/simulator/ParserManager.h \
 		../../../../kernel/simulator/ExperimentManager.h \
 		../../../../kernel/simulator/SimulationExperiment.h \
-		moc_predefs.h \
+		build/moc/moc_predefs.h \
 		/usr/lib/qt5/bin/moc
-	/usr/lib/qt5/bin/moc $(DEFINES) --include /home/orion23/Documents/repos/Genesys-Simulator/source/applications/gui/qt/GenesysQtGUI/moc_predefs.h -I/usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++ -I/home/orion23/Documents/repos/Genesys-Simulator/source/applications/gui/qt/GenesysQtGUI -I/usr/include/x86_64-linux-gnu/qt5 -I/usr/include/x86_64-linux-gnu/qt5/QtPrintSupport -I/usr/include/x86_64-linux-gnu/qt5/QtDesigner -I/usr/include/x86_64-linux-gnu/qt5/QtUiPlugin -I/usr/include/x86_64-linux-gnu/qt5/QtCharts -I/usr/include/x86_64-linux-gnu/qt5/QtWidgets -I/usr/include/x86_64-linux-gnu/qt5/QtGui -I/usr/include/x86_64-linux-gnu/qt5/QtXml -I/usr/include/x86_64-linux-gnu/qt5/QtCore -I/usr/include/c++/11 -I/usr/include/x86_64-linux-gnu/c++/11 -I/usr/include/c++/11/backward -I/usr/lib/gcc/x86_64-linux-gnu/11/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include dialogs/dialogBreakpoint.h -o moc_dialogBreakpoint.cpp
+	/usr/lib/qt5/bin/moc $(DEFINES) --include /home/orion23/Documents/repos/Genesys-Simulator/source/applications/gui/qt/GenesysQtGUI/build/moc/moc_predefs.h -I/usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++ -I/home/orion23/Documents/repos/Genesys-Simulator/source/applications/gui/qt/GenesysQtGUI -I/usr/include/x86_64-linux-gnu/qt5 -I/usr/include/x86_64-linux-gnu/qt5/QtPrintSupport -I/usr/include/x86_64-linux-gnu/qt5/QtDesigner -I/usr/include/x86_64-linux-gnu/qt5/QtUiPlugin -I/usr/include/x86_64-linux-gnu/qt5/QtCharts -I/usr/include/x86_64-linux-gnu/qt5/QtWidgets -I/usr/include/x86_64-linux-gnu/qt5/QtGui -I/usr/include/x86_64-linux-gnu/qt5/QtXml -I/usr/include/x86_64-linux-gnu/qt5/QtCore -I/usr/include/c++/11 -I/usr/include/x86_64-linux-gnu/c++/11 -I/usr/include/c++/11/backward -I/usr/lib/gcc/x86_64-linux-gnu/11/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include dialogs/dialogBreakpoint.h -o build/moc/moc_dialogBreakpoint.cpp
 
-moc_dialogpluginmanager.cpp: dialogs/dialogpluginmanager.h \
-		moc_predefs.h \
+build/moc/moc_dialogpluginmanager.cpp: dialogs/dialogpluginmanager.h \
+		build/moc/moc_predefs.h \
 		/usr/lib/qt5/bin/moc
-	/usr/lib/qt5/bin/moc $(DEFINES) --include /home/orion23/Documents/repos/Genesys-Simulator/source/applications/gui/qt/GenesysQtGUI/moc_predefs.h -I/usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++ -I/home/orion23/Documents/repos/Genesys-Simulator/source/applications/gui/qt/GenesysQtGUI -I/usr/include/x86_64-linux-gnu/qt5 -I/usr/include/x86_64-linux-gnu/qt5/QtPrintSupport -I/usr/include/x86_64-linux-gnu/qt5/QtDesigner -I/usr/include/x86_64-linux-gnu/qt5/QtUiPlugin -I/usr/include/x86_64-linux-gnu/qt5/QtCharts -I/usr/include/x86_64-linux-gnu/qt5/QtWidgets -I/usr/include/x86_64-linux-gnu/qt5/QtGui -I/usr/include/x86_64-linux-gnu/qt5/QtXml -I/usr/include/x86_64-linux-gnu/qt5/QtCore -I/usr/include/c++/11 -I/usr/include/x86_64-linux-gnu/c++/11 -I/usr/include/c++/11/backward -I/usr/lib/gcc/x86_64-linux-gnu/11/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include dialogs/dialogpluginmanager.h -o moc_dialogpluginmanager.cpp
+	/usr/lib/qt5/bin/moc $(DEFINES) --include /home/orion23/Documents/repos/Genesys-Simulator/source/applications/gui/qt/GenesysQtGUI/build/moc/moc_predefs.h -I/usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++ -I/home/orion23/Documents/repos/Genesys-Simulator/source/applications/gui/qt/GenesysQtGUI -I/usr/include/x86_64-linux-gnu/qt5 -I/usr/include/x86_64-linux-gnu/qt5/QtPrintSupport -I/usr/include/x86_64-linux-gnu/qt5/QtDesigner -I/usr/include/x86_64-linux-gnu/qt5/QtUiPlugin -I/usr/include/x86_64-linux-gnu/qt5/QtCharts -I/usr/include/x86_64-linux-gnu/qt5/QtWidgets -I/usr/include/x86_64-linux-gnu/qt5/QtGui -I/usr/include/x86_64-linux-gnu/qt5/QtXml -I/usr/include/x86_64-linux-gnu/qt5/QtCore -I/usr/include/c++/11 -I/usr/include/x86_64-linux-gnu/c++/11 -I/usr/include/c++/11/backward -I/usr/lib/gcc/x86_64-linux-gnu/11/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include dialogs/dialogpluginmanager.h -o build/moc/moc_dialogpluginmanager.cpp
 
-moc_dialogsimulationconfigure.cpp: dialogs/dialogsimulationconfigure.h \
+build/moc/moc_dialogsimulationconfigure.cpp: dialogs/dialogsimulationconfigure.h \
 		../../../../kernel/simulator/Simulator.h \
 		../../../../kernel/simulator/Model.h \
 		../../../../kernel/util/List.h \
@@ -2558,16 +2561,16 @@ moc_dialogsimulationconfigure.cpp: dialogs/dialogsimulationconfigure.h \
 		../../../../kernel/simulator/ParserManager.h \
 		../../../../kernel/simulator/ExperimentManager.h \
 		../../../../kernel/simulator/SimulationExperiment.h \
-		moc_predefs.h \
+		build/moc/moc_predefs.h \
 		/usr/lib/qt5/bin/moc
-	/usr/lib/qt5/bin/moc $(DEFINES) --include /home/orion23/Documents/repos/Genesys-Simulator/source/applications/gui/qt/GenesysQtGUI/moc_predefs.h -I/usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++ -I/home/orion23/Documents/repos/Genesys-Simulator/source/applications/gui/qt/GenesysQtGUI -I/usr/include/x86_64-linux-gnu/qt5 -I/usr/include/x86_64-linux-gnu/qt5/QtPrintSupport -I/usr/include/x86_64-linux-gnu/qt5/QtDesigner -I/usr/include/x86_64-linux-gnu/qt5/QtUiPlugin -I/usr/include/x86_64-linux-gnu/qt5/QtCharts -I/usr/include/x86_64-linux-gnu/qt5/QtWidgets -I/usr/include/x86_64-linux-gnu/qt5/QtGui -I/usr/include/x86_64-linux-gnu/qt5/QtXml -I/usr/include/x86_64-linux-gnu/qt5/QtCore -I/usr/include/c++/11 -I/usr/include/x86_64-linux-gnu/c++/11 -I/usr/include/c++/11/backward -I/usr/lib/gcc/x86_64-linux-gnu/11/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include dialogs/dialogsimulationconfigure.h -o moc_dialogsimulationconfigure.cpp
+	/usr/lib/qt5/bin/moc $(DEFINES) --include /home/orion23/Documents/repos/Genesys-Simulator/source/applications/gui/qt/GenesysQtGUI/build/moc/moc_predefs.h -I/usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++ -I/home/orion23/Documents/repos/Genesys-Simulator/source/applications/gui/qt/GenesysQtGUI -I/usr/include/x86_64-linux-gnu/qt5 -I/usr/include/x86_64-linux-gnu/qt5/QtPrintSupport -I/usr/include/x86_64-linux-gnu/qt5/QtDesigner -I/usr/include/x86_64-linux-gnu/qt5/QtUiPlugin -I/usr/include/x86_64-linux-gnu/qt5/QtCharts -I/usr/include/x86_64-linux-gnu/qt5/QtWidgets -I/usr/include/x86_64-linux-gnu/qt5/QtGui -I/usr/include/x86_64-linux-gnu/qt5/QtXml -I/usr/include/x86_64-linux-gnu/qt5/QtCore -I/usr/include/c++/11 -I/usr/include/x86_64-linux-gnu/c++/11 -I/usr/include/c++/11/backward -I/usr/lib/gcc/x86_64-linux-gnu/11/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include dialogs/dialogsimulationconfigure.h -o build/moc/moc_dialogsimulationconfigure.cpp
 
-moc_dialogsystempreferences.cpp: dialogs/dialogsystempreferences.h \
-		moc_predefs.h \
+build/moc/moc_dialogsystempreferences.cpp: dialogs/dialogsystempreferences.h \
+		build/moc/moc_predefs.h \
 		/usr/lib/qt5/bin/moc
-	/usr/lib/qt5/bin/moc $(DEFINES) --include /home/orion23/Documents/repos/Genesys-Simulator/source/applications/gui/qt/GenesysQtGUI/moc_predefs.h -I/usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++ -I/home/orion23/Documents/repos/Genesys-Simulator/source/applications/gui/qt/GenesysQtGUI -I/usr/include/x86_64-linux-gnu/qt5 -I/usr/include/x86_64-linux-gnu/qt5/QtPrintSupport -I/usr/include/x86_64-linux-gnu/qt5/QtDesigner -I/usr/include/x86_64-linux-gnu/qt5/QtUiPlugin -I/usr/include/x86_64-linux-gnu/qt5/QtCharts -I/usr/include/x86_64-linux-gnu/qt5/QtWidgets -I/usr/include/x86_64-linux-gnu/qt5/QtGui -I/usr/include/x86_64-linux-gnu/qt5/QtXml -I/usr/include/x86_64-linux-gnu/qt5/QtCore -I/usr/include/c++/11 -I/usr/include/x86_64-linux-gnu/c++/11 -I/usr/include/c++/11/backward -I/usr/lib/gcc/x86_64-linux-gnu/11/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include dialogs/dialogsystempreferences.h -o moc_dialogsystempreferences.cpp
+	/usr/lib/qt5/bin/moc $(DEFINES) --include /home/orion23/Documents/repos/Genesys-Simulator/source/applications/gui/qt/GenesysQtGUI/build/moc/moc_predefs.h -I/usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++ -I/home/orion23/Documents/repos/Genesys-Simulator/source/applications/gui/qt/GenesysQtGUI -I/usr/include/x86_64-linux-gnu/qt5 -I/usr/include/x86_64-linux-gnu/qt5/QtPrintSupport -I/usr/include/x86_64-linux-gnu/qt5/QtDesigner -I/usr/include/x86_64-linux-gnu/qt5/QtUiPlugin -I/usr/include/x86_64-linux-gnu/qt5/QtCharts -I/usr/include/x86_64-linux-gnu/qt5/QtWidgets -I/usr/include/x86_64-linux-gnu/qt5/QtGui -I/usr/include/x86_64-linux-gnu/qt5/QtXml -I/usr/include/x86_64-linux-gnu/qt5/QtCore -I/usr/include/c++/11 -I/usr/include/x86_64-linux-gnu/c++/11 -I/usr/include/c++/11/backward -I/usr/lib/gcc/x86_64-linux-gnu/11/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include dialogs/dialogsystempreferences.h -o build/moc/moc_dialogsystempreferences.cpp
 
-moc_mainwindow.cpp: mainwindow.h \
+build/moc/moc_mainwindow.cpp: mainwindow.h \
 		propertyeditor/DataComponentProperty.h \
 		propertyeditor/DataComponentEditor.h \
 		../../../../kernel/simulator/PropertyGenesys.h \
@@ -2625,117 +2628,120 @@ moc_mainwindow.cpp: mainwindow.h \
 		animations/AnimationCounter.h \
 		../../../../kernel/simulator/Counter.h \
 		animations/AnimationTimer.h \
-		moc_predefs.h \
+		build/moc/moc_predefs.h \
 		/usr/lib/qt5/bin/moc
-	/usr/lib/qt5/bin/moc $(DEFINES) --include /home/orion23/Documents/repos/Genesys-Simulator/source/applications/gui/qt/GenesysQtGUI/moc_predefs.h -I/usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++ -I/home/orion23/Documents/repos/Genesys-Simulator/source/applications/gui/qt/GenesysQtGUI -I/usr/include/x86_64-linux-gnu/qt5 -I/usr/include/x86_64-linux-gnu/qt5/QtPrintSupport -I/usr/include/x86_64-linux-gnu/qt5/QtDesigner -I/usr/include/x86_64-linux-gnu/qt5/QtUiPlugin -I/usr/include/x86_64-linux-gnu/qt5/QtCharts -I/usr/include/x86_64-linux-gnu/qt5/QtWidgets -I/usr/include/x86_64-linux-gnu/qt5/QtGui -I/usr/include/x86_64-linux-gnu/qt5/QtXml -I/usr/include/x86_64-linux-gnu/qt5/QtCore -I/usr/include/c++/11 -I/usr/include/x86_64-linux-gnu/c++/11 -I/usr/include/c++/11/backward -I/usr/lib/gcc/x86_64-linux-gnu/11/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include mainwindow.h -o moc_mainwindow.cpp
+	/usr/lib/qt5/bin/moc $(DEFINES) --include /home/orion23/Documents/repos/Genesys-Simulator/source/applications/gui/qt/GenesysQtGUI/build/moc/moc_predefs.h -I/usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++ -I/home/orion23/Documents/repos/Genesys-Simulator/source/applications/gui/qt/GenesysQtGUI -I/usr/include/x86_64-linux-gnu/qt5 -I/usr/include/x86_64-linux-gnu/qt5/QtPrintSupport -I/usr/include/x86_64-linux-gnu/qt5/QtDesigner -I/usr/include/x86_64-linux-gnu/qt5/QtUiPlugin -I/usr/include/x86_64-linux-gnu/qt5/QtCharts -I/usr/include/x86_64-linux-gnu/qt5/QtWidgets -I/usr/include/x86_64-linux-gnu/qt5/QtGui -I/usr/include/x86_64-linux-gnu/qt5/QtXml -I/usr/include/x86_64-linux-gnu/qt5/QtCore -I/usr/include/c++/11 -I/usr/include/x86_64-linux-gnu/c++/11 -I/usr/include/c++/11/backward -I/usr/lib/gcc/x86_64-linux-gnu/11/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include mainwindow.h -o build/moc/moc_mainwindow.cpp
 
-moc_qtbuttonpropertybrowser.cpp: propertyeditor/qtpropertybrowser/qtbuttonpropertybrowser.h \
+build/moc/moc_qtbuttonpropertybrowser.cpp: propertyeditor/qtpropertybrowser/qtbuttonpropertybrowser.h \
 		propertyeditor/qtpropertybrowser/qtpropertybrowser.h \
-		moc_predefs.h \
+		build/moc/moc_predefs.h \
 		/usr/lib/qt5/bin/moc
-	/usr/lib/qt5/bin/moc $(DEFINES) --include /home/orion23/Documents/repos/Genesys-Simulator/source/applications/gui/qt/GenesysQtGUI/moc_predefs.h -I/usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++ -I/home/orion23/Documents/repos/Genesys-Simulator/source/applications/gui/qt/GenesysQtGUI -I/usr/include/x86_64-linux-gnu/qt5 -I/usr/include/x86_64-linux-gnu/qt5/QtPrintSupport -I/usr/include/x86_64-linux-gnu/qt5/QtDesigner -I/usr/include/x86_64-linux-gnu/qt5/QtUiPlugin -I/usr/include/x86_64-linux-gnu/qt5/QtCharts -I/usr/include/x86_64-linux-gnu/qt5/QtWidgets -I/usr/include/x86_64-linux-gnu/qt5/QtGui -I/usr/include/x86_64-linux-gnu/qt5/QtXml -I/usr/include/x86_64-linux-gnu/qt5/QtCore -I/usr/include/c++/11 -I/usr/include/x86_64-linux-gnu/c++/11 -I/usr/include/c++/11/backward -I/usr/lib/gcc/x86_64-linux-gnu/11/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include propertyeditor/qtpropertybrowser/qtbuttonpropertybrowser.h -o moc_qtbuttonpropertybrowser.cpp
+	/usr/lib/qt5/bin/moc $(DEFINES) --include /home/orion23/Documents/repos/Genesys-Simulator/source/applications/gui/qt/GenesysQtGUI/build/moc/moc_predefs.h -I/usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++ -I/home/orion23/Documents/repos/Genesys-Simulator/source/applications/gui/qt/GenesysQtGUI -I/usr/include/x86_64-linux-gnu/qt5 -I/usr/include/x86_64-linux-gnu/qt5/QtPrintSupport -I/usr/include/x86_64-linux-gnu/qt5/QtDesigner -I/usr/include/x86_64-linux-gnu/qt5/QtUiPlugin -I/usr/include/x86_64-linux-gnu/qt5/QtCharts -I/usr/include/x86_64-linux-gnu/qt5/QtWidgets -I/usr/include/x86_64-linux-gnu/qt5/QtGui -I/usr/include/x86_64-linux-gnu/qt5/QtXml -I/usr/include/x86_64-linux-gnu/qt5/QtCore -I/usr/include/c++/11 -I/usr/include/x86_64-linux-gnu/c++/11 -I/usr/include/c++/11/backward -I/usr/lib/gcc/x86_64-linux-gnu/11/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include propertyeditor/qtpropertybrowser/qtbuttonpropertybrowser.h -o build/moc/moc_qtbuttonpropertybrowser.cpp
 
-moc_qteditorfactory.cpp: propertyeditor/qtpropertybrowser/qteditorfactory.h \
+build/moc/moc_qteditorfactory.cpp: propertyeditor/qtpropertybrowser/qteditorfactory.h \
 		propertyeditor/qtpropertybrowser/qtpropertymanager.h \
 		propertyeditor/qtpropertybrowser/qtpropertybrowser.h \
-		moc_predefs.h \
+		build/moc/moc_predefs.h \
 		/usr/lib/qt5/bin/moc
-	/usr/lib/qt5/bin/moc $(DEFINES) --include /home/orion23/Documents/repos/Genesys-Simulator/source/applications/gui/qt/GenesysQtGUI/moc_predefs.h -I/usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++ -I/home/orion23/Documents/repos/Genesys-Simulator/source/applications/gui/qt/GenesysQtGUI -I/usr/include/x86_64-linux-gnu/qt5 -I/usr/include/x86_64-linux-gnu/qt5/QtPrintSupport -I/usr/include/x86_64-linux-gnu/qt5/QtDesigner -I/usr/include/x86_64-linux-gnu/qt5/QtUiPlugin -I/usr/include/x86_64-linux-gnu/qt5/QtCharts -I/usr/include/x86_64-linux-gnu/qt5/QtWidgets -I/usr/include/x86_64-linux-gnu/qt5/QtGui -I/usr/include/x86_64-linux-gnu/qt5/QtXml -I/usr/include/x86_64-linux-gnu/qt5/QtCore -I/usr/include/c++/11 -I/usr/include/x86_64-linux-gnu/c++/11 -I/usr/include/c++/11/backward -I/usr/lib/gcc/x86_64-linux-gnu/11/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include propertyeditor/qtpropertybrowser/qteditorfactory.h -o moc_qteditorfactory.cpp
+	/usr/lib/qt5/bin/moc $(DEFINES) --include /home/orion23/Documents/repos/Genesys-Simulator/source/applications/gui/qt/GenesysQtGUI/build/moc/moc_predefs.h -I/usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++ -I/home/orion23/Documents/repos/Genesys-Simulator/source/applications/gui/qt/GenesysQtGUI -I/usr/include/x86_64-linux-gnu/qt5 -I/usr/include/x86_64-linux-gnu/qt5/QtPrintSupport -I/usr/include/x86_64-linux-gnu/qt5/QtDesigner -I/usr/include/x86_64-linux-gnu/qt5/QtUiPlugin -I/usr/include/x86_64-linux-gnu/qt5/QtCharts -I/usr/include/x86_64-linux-gnu/qt5/QtWidgets -I/usr/include/x86_64-linux-gnu/qt5/QtGui -I/usr/include/x86_64-linux-gnu/qt5/QtXml -I/usr/include/x86_64-linux-gnu/qt5/QtCore -I/usr/include/c++/11 -I/usr/include/x86_64-linux-gnu/c++/11 -I/usr/include/c++/11/backward -I/usr/lib/gcc/x86_64-linux-gnu/11/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include propertyeditor/qtpropertybrowser/qteditorfactory.h -o build/moc/moc_qteditorfactory.cpp
 
-moc_qtgroupboxpropertybrowser.cpp: propertyeditor/qtpropertybrowser/qtgroupboxpropertybrowser.h \
+build/moc/moc_qtgroupboxpropertybrowser.cpp: propertyeditor/qtpropertybrowser/qtgroupboxpropertybrowser.h \
 		propertyeditor/qtpropertybrowser/qtpropertybrowser.h \
-		moc_predefs.h \
+		build/moc/moc_predefs.h \
 		/usr/lib/qt5/bin/moc
-	/usr/lib/qt5/bin/moc $(DEFINES) --include /home/orion23/Documents/repos/Genesys-Simulator/source/applications/gui/qt/GenesysQtGUI/moc_predefs.h -I/usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++ -I/home/orion23/Documents/repos/Genesys-Simulator/source/applications/gui/qt/GenesysQtGUI -I/usr/include/x86_64-linux-gnu/qt5 -I/usr/include/x86_64-linux-gnu/qt5/QtPrintSupport -I/usr/include/x86_64-linux-gnu/qt5/QtDesigner -I/usr/include/x86_64-linux-gnu/qt5/QtUiPlugin -I/usr/include/x86_64-linux-gnu/qt5/QtCharts -I/usr/include/x86_64-linux-gnu/qt5/QtWidgets -I/usr/include/x86_64-linux-gnu/qt5/QtGui -I/usr/include/x86_64-linux-gnu/qt5/QtXml -I/usr/include/x86_64-linux-gnu/qt5/QtCore -I/usr/include/c++/11 -I/usr/include/x86_64-linux-gnu/c++/11 -I/usr/include/c++/11/backward -I/usr/lib/gcc/x86_64-linux-gnu/11/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include propertyeditor/qtpropertybrowser/qtgroupboxpropertybrowser.h -o moc_qtgroupboxpropertybrowser.cpp
+	/usr/lib/qt5/bin/moc $(DEFINES) --include /home/orion23/Documents/repos/Genesys-Simulator/source/applications/gui/qt/GenesysQtGUI/build/moc/moc_predefs.h -I/usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++ -I/home/orion23/Documents/repos/Genesys-Simulator/source/applications/gui/qt/GenesysQtGUI -I/usr/include/x86_64-linux-gnu/qt5 -I/usr/include/x86_64-linux-gnu/qt5/QtPrintSupport -I/usr/include/x86_64-linux-gnu/qt5/QtDesigner -I/usr/include/x86_64-linux-gnu/qt5/QtUiPlugin -I/usr/include/x86_64-linux-gnu/qt5/QtCharts -I/usr/include/x86_64-linux-gnu/qt5/QtWidgets -I/usr/include/x86_64-linux-gnu/qt5/QtGui -I/usr/include/x86_64-linux-gnu/qt5/QtXml -I/usr/include/x86_64-linux-gnu/qt5/QtCore -I/usr/include/c++/11 -I/usr/include/x86_64-linux-gnu/c++/11 -I/usr/include/c++/11/backward -I/usr/lib/gcc/x86_64-linux-gnu/11/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include propertyeditor/qtpropertybrowser/qtgroupboxpropertybrowser.h -o build/moc/moc_qtgroupboxpropertybrowser.cpp
 
-moc_qtpropertybrowser.cpp: propertyeditor/qtpropertybrowser/qtpropertybrowser.h \
-		moc_predefs.h \
+build/moc/moc_qtpropertybrowser.cpp: propertyeditor/qtpropertybrowser/qtpropertybrowser.h \
+		build/moc/moc_predefs.h \
 		/usr/lib/qt5/bin/moc
-	/usr/lib/qt5/bin/moc $(DEFINES) --include /home/orion23/Documents/repos/Genesys-Simulator/source/applications/gui/qt/GenesysQtGUI/moc_predefs.h -I/usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++ -I/home/orion23/Documents/repos/Genesys-Simulator/source/applications/gui/qt/GenesysQtGUI -I/usr/include/x86_64-linux-gnu/qt5 -I/usr/include/x86_64-linux-gnu/qt5/QtPrintSupport -I/usr/include/x86_64-linux-gnu/qt5/QtDesigner -I/usr/include/x86_64-linux-gnu/qt5/QtUiPlugin -I/usr/include/x86_64-linux-gnu/qt5/QtCharts -I/usr/include/x86_64-linux-gnu/qt5/QtWidgets -I/usr/include/x86_64-linux-gnu/qt5/QtGui -I/usr/include/x86_64-linux-gnu/qt5/QtXml -I/usr/include/x86_64-linux-gnu/qt5/QtCore -I/usr/include/c++/11 -I/usr/include/x86_64-linux-gnu/c++/11 -I/usr/include/c++/11/backward -I/usr/lib/gcc/x86_64-linux-gnu/11/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include propertyeditor/qtpropertybrowser/qtpropertybrowser.h -o moc_qtpropertybrowser.cpp
+	/usr/lib/qt5/bin/moc $(DEFINES) --include /home/orion23/Documents/repos/Genesys-Simulator/source/applications/gui/qt/GenesysQtGUI/build/moc/moc_predefs.h -I/usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++ -I/home/orion23/Documents/repos/Genesys-Simulator/source/applications/gui/qt/GenesysQtGUI -I/usr/include/x86_64-linux-gnu/qt5 -I/usr/include/x86_64-linux-gnu/qt5/QtPrintSupport -I/usr/include/x86_64-linux-gnu/qt5/QtDesigner -I/usr/include/x86_64-linux-gnu/qt5/QtUiPlugin -I/usr/include/x86_64-linux-gnu/qt5/QtCharts -I/usr/include/x86_64-linux-gnu/qt5/QtWidgets -I/usr/include/x86_64-linux-gnu/qt5/QtGui -I/usr/include/x86_64-linux-gnu/qt5/QtXml -I/usr/include/x86_64-linux-gnu/qt5/QtCore -I/usr/include/c++/11 -I/usr/include/x86_64-linux-gnu/c++/11 -I/usr/include/c++/11/backward -I/usr/lib/gcc/x86_64-linux-gnu/11/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include propertyeditor/qtpropertybrowser/qtpropertybrowser.h -o build/moc/moc_qtpropertybrowser.cpp
 
-moc_qtpropertybrowserutils_p.cpp: propertyeditor/qtpropertybrowser/qtpropertybrowserutils_p.h \
-		moc_predefs.h \
+build/moc/moc_qtpropertybrowserutils_p.cpp: propertyeditor/qtpropertybrowser/qtpropertybrowserutils_p.h \
+		build/moc/moc_predefs.h \
 		/usr/lib/qt5/bin/moc
-	/usr/lib/qt5/bin/moc $(DEFINES) --include /home/orion23/Documents/repos/Genesys-Simulator/source/applications/gui/qt/GenesysQtGUI/moc_predefs.h -I/usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++ -I/home/orion23/Documents/repos/Genesys-Simulator/source/applications/gui/qt/GenesysQtGUI -I/usr/include/x86_64-linux-gnu/qt5 -I/usr/include/x86_64-linux-gnu/qt5/QtPrintSupport -I/usr/include/x86_64-linux-gnu/qt5/QtDesigner -I/usr/include/x86_64-linux-gnu/qt5/QtUiPlugin -I/usr/include/x86_64-linux-gnu/qt5/QtCharts -I/usr/include/x86_64-linux-gnu/qt5/QtWidgets -I/usr/include/x86_64-linux-gnu/qt5/QtGui -I/usr/include/x86_64-linux-gnu/qt5/QtXml -I/usr/include/x86_64-linux-gnu/qt5/QtCore -I/usr/include/c++/11 -I/usr/include/x86_64-linux-gnu/c++/11 -I/usr/include/c++/11/backward -I/usr/lib/gcc/x86_64-linux-gnu/11/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include propertyeditor/qtpropertybrowser/qtpropertybrowserutils_p.h -o moc_qtpropertybrowserutils_p.cpp
+	/usr/lib/qt5/bin/moc $(DEFINES) --include /home/orion23/Documents/repos/Genesys-Simulator/source/applications/gui/qt/GenesysQtGUI/build/moc/moc_predefs.h -I/usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++ -I/home/orion23/Documents/repos/Genesys-Simulator/source/applications/gui/qt/GenesysQtGUI -I/usr/include/x86_64-linux-gnu/qt5 -I/usr/include/x86_64-linux-gnu/qt5/QtPrintSupport -I/usr/include/x86_64-linux-gnu/qt5/QtDesigner -I/usr/include/x86_64-linux-gnu/qt5/QtUiPlugin -I/usr/include/x86_64-linux-gnu/qt5/QtCharts -I/usr/include/x86_64-linux-gnu/qt5/QtWidgets -I/usr/include/x86_64-linux-gnu/qt5/QtGui -I/usr/include/x86_64-linux-gnu/qt5/QtXml -I/usr/include/x86_64-linux-gnu/qt5/QtCore -I/usr/include/c++/11 -I/usr/include/x86_64-linux-gnu/c++/11 -I/usr/include/c++/11/backward -I/usr/lib/gcc/x86_64-linux-gnu/11/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include propertyeditor/qtpropertybrowser/qtpropertybrowserutils_p.h -o build/moc/moc_qtpropertybrowserutils_p.cpp
 
-moc_qtpropertymanager.cpp: propertyeditor/qtpropertybrowser/qtpropertymanager.h \
+build/moc/moc_qtpropertymanager.cpp: propertyeditor/qtpropertybrowser/qtpropertymanager.h \
 		propertyeditor/qtpropertybrowser/qtpropertybrowser.h \
-		moc_predefs.h \
+		build/moc/moc_predefs.h \
 		/usr/lib/qt5/bin/moc
-	/usr/lib/qt5/bin/moc $(DEFINES) --include /home/orion23/Documents/repos/Genesys-Simulator/source/applications/gui/qt/GenesysQtGUI/moc_predefs.h -I/usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++ -I/home/orion23/Documents/repos/Genesys-Simulator/source/applications/gui/qt/GenesysQtGUI -I/usr/include/x86_64-linux-gnu/qt5 -I/usr/include/x86_64-linux-gnu/qt5/QtPrintSupport -I/usr/include/x86_64-linux-gnu/qt5/QtDesigner -I/usr/include/x86_64-linux-gnu/qt5/QtUiPlugin -I/usr/include/x86_64-linux-gnu/qt5/QtCharts -I/usr/include/x86_64-linux-gnu/qt5/QtWidgets -I/usr/include/x86_64-linux-gnu/qt5/QtGui -I/usr/include/x86_64-linux-gnu/qt5/QtXml -I/usr/include/x86_64-linux-gnu/qt5/QtCore -I/usr/include/c++/11 -I/usr/include/x86_64-linux-gnu/c++/11 -I/usr/include/c++/11/backward -I/usr/lib/gcc/x86_64-linux-gnu/11/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include propertyeditor/qtpropertybrowser/qtpropertymanager.h -o moc_qtpropertymanager.cpp
+	/usr/lib/qt5/bin/moc $(DEFINES) --include /home/orion23/Documents/repos/Genesys-Simulator/source/applications/gui/qt/GenesysQtGUI/build/moc/moc_predefs.h -I/usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++ -I/home/orion23/Documents/repos/Genesys-Simulator/source/applications/gui/qt/GenesysQtGUI -I/usr/include/x86_64-linux-gnu/qt5 -I/usr/include/x86_64-linux-gnu/qt5/QtPrintSupport -I/usr/include/x86_64-linux-gnu/qt5/QtDesigner -I/usr/include/x86_64-linux-gnu/qt5/QtUiPlugin -I/usr/include/x86_64-linux-gnu/qt5/QtCharts -I/usr/include/x86_64-linux-gnu/qt5/QtWidgets -I/usr/include/x86_64-linux-gnu/qt5/QtGui -I/usr/include/x86_64-linux-gnu/qt5/QtXml -I/usr/include/x86_64-linux-gnu/qt5/QtCore -I/usr/include/c++/11 -I/usr/include/x86_64-linux-gnu/c++/11 -I/usr/include/c++/11/backward -I/usr/lib/gcc/x86_64-linux-gnu/11/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include propertyeditor/qtpropertybrowser/qtpropertymanager.h -o build/moc/moc_qtpropertymanager.cpp
 
-moc_qttreepropertybrowser.cpp: propertyeditor/qtpropertybrowser/qttreepropertybrowser.h \
+build/moc/moc_qttreepropertybrowser.cpp: propertyeditor/qtpropertybrowser/qttreepropertybrowser.h \
 		propertyeditor/qtpropertybrowser/qtpropertybrowser.h \
-		moc_predefs.h \
+		build/moc/moc_predefs.h \
 		/usr/lib/qt5/bin/moc
-	/usr/lib/qt5/bin/moc $(DEFINES) --include /home/orion23/Documents/repos/Genesys-Simulator/source/applications/gui/qt/GenesysQtGUI/moc_predefs.h -I/usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++ -I/home/orion23/Documents/repos/Genesys-Simulator/source/applications/gui/qt/GenesysQtGUI -I/usr/include/x86_64-linux-gnu/qt5 -I/usr/include/x86_64-linux-gnu/qt5/QtPrintSupport -I/usr/include/x86_64-linux-gnu/qt5/QtDesigner -I/usr/include/x86_64-linux-gnu/qt5/QtUiPlugin -I/usr/include/x86_64-linux-gnu/qt5/QtCharts -I/usr/include/x86_64-linux-gnu/qt5/QtWidgets -I/usr/include/x86_64-linux-gnu/qt5/QtGui -I/usr/include/x86_64-linux-gnu/qt5/QtXml -I/usr/include/x86_64-linux-gnu/qt5/QtCore -I/usr/include/c++/11 -I/usr/include/x86_64-linux-gnu/c++/11 -I/usr/include/c++/11/backward -I/usr/lib/gcc/x86_64-linux-gnu/11/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include propertyeditor/qtpropertybrowser/qttreepropertybrowser.h -o moc_qttreepropertybrowser.cpp
+	/usr/lib/qt5/bin/moc $(DEFINES) --include /home/orion23/Documents/repos/Genesys-Simulator/source/applications/gui/qt/GenesysQtGUI/build/moc/moc_predefs.h -I/usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++ -I/home/orion23/Documents/repos/Genesys-Simulator/source/applications/gui/qt/GenesysQtGUI -I/usr/include/x86_64-linux-gnu/qt5 -I/usr/include/x86_64-linux-gnu/qt5/QtPrintSupport -I/usr/include/x86_64-linux-gnu/qt5/QtDesigner -I/usr/include/x86_64-linux-gnu/qt5/QtUiPlugin -I/usr/include/x86_64-linux-gnu/qt5/QtCharts -I/usr/include/x86_64-linux-gnu/qt5/QtWidgets -I/usr/include/x86_64-linux-gnu/qt5/QtGui -I/usr/include/x86_64-linux-gnu/qt5/QtXml -I/usr/include/x86_64-linux-gnu/qt5/QtCore -I/usr/include/c++/11 -I/usr/include/x86_64-linux-gnu/c++/11 -I/usr/include/c++/11/backward -I/usr/lib/gcc/x86_64-linux-gnu/11/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include propertyeditor/qtpropertybrowser/qttreepropertybrowser.h -o build/moc/moc_qttreepropertybrowser.cpp
 
-moc_qtvariantproperty.cpp: propertyeditor/qtpropertybrowser/qtvariantproperty.h \
+build/moc/moc_qtvariantproperty.cpp: propertyeditor/qtpropertybrowser/qtvariantproperty.h \
 		propertyeditor/qtpropertybrowser/qtpropertybrowser.h \
-		moc_predefs.h \
+		build/moc/moc_predefs.h \
 		/usr/lib/qt5/bin/moc
-	/usr/lib/qt5/bin/moc $(DEFINES) --include /home/orion23/Documents/repos/Genesys-Simulator/source/applications/gui/qt/GenesysQtGUI/moc_predefs.h -I/usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++ -I/home/orion23/Documents/repos/Genesys-Simulator/source/applications/gui/qt/GenesysQtGUI -I/usr/include/x86_64-linux-gnu/qt5 -I/usr/include/x86_64-linux-gnu/qt5/QtPrintSupport -I/usr/include/x86_64-linux-gnu/qt5/QtDesigner -I/usr/include/x86_64-linux-gnu/qt5/QtUiPlugin -I/usr/include/x86_64-linux-gnu/qt5/QtCharts -I/usr/include/x86_64-linux-gnu/qt5/QtWidgets -I/usr/include/x86_64-linux-gnu/qt5/QtGui -I/usr/include/x86_64-linux-gnu/qt5/QtXml -I/usr/include/x86_64-linux-gnu/qt5/QtCore -I/usr/include/c++/11 -I/usr/include/x86_64-linux-gnu/c++/11 -I/usr/include/c++/11/backward -I/usr/lib/gcc/x86_64-linux-gnu/11/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include propertyeditor/qtpropertybrowser/qtvariantproperty.h -o moc_qtvariantproperty.cpp
+	/usr/lib/qt5/bin/moc $(DEFINES) --include /home/orion23/Documents/repos/Genesys-Simulator/source/applications/gui/qt/GenesysQtGUI/build/moc/moc_predefs.h -I/usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++ -I/home/orion23/Documents/repos/Genesys-Simulator/source/applications/gui/qt/GenesysQtGUI -I/usr/include/x86_64-linux-gnu/qt5 -I/usr/include/x86_64-linux-gnu/qt5/QtPrintSupport -I/usr/include/x86_64-linux-gnu/qt5/QtDesigner -I/usr/include/x86_64-linux-gnu/qt5/QtUiPlugin -I/usr/include/x86_64-linux-gnu/qt5/QtCharts -I/usr/include/x86_64-linux-gnu/qt5/QtWidgets -I/usr/include/x86_64-linux-gnu/qt5/QtGui -I/usr/include/x86_64-linux-gnu/qt5/QtXml -I/usr/include/x86_64-linux-gnu/qt5/QtCore -I/usr/include/c++/11 -I/usr/include/x86_64-linux-gnu/c++/11 -I/usr/include/c++/11/backward -I/usr/lib/gcc/x86_64-linux-gnu/11/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include propertyeditor/qtpropertybrowser/qtvariantproperty.h -o build/moc/moc_qtvariantproperty.cpp
 
 compiler_moc_objc_header_make_all:
 compiler_moc_objc_header_clean:
-compiler_moc_source_make_all: qteditorfactory.moc qtpropertymanager.moc qttreepropertybrowser.moc
+compiler_moc_source_make_all: build/moc/qteditorfactory.moc build/moc/qtpropertymanager.moc build/moc/qttreepropertybrowser.moc
 compiler_moc_source_clean:
-	-$(DEL_FILE) qteditorfactory.moc qtpropertymanager.moc qttreepropertybrowser.moc
-qteditorfactory.moc: propertyeditor/qtpropertybrowser/qteditorfactory.cpp \
+	-$(DEL_FILE) build/moc/qteditorfactory.moc build/moc/qtpropertymanager.moc build/moc/qttreepropertybrowser.moc
+build/moc/qteditorfactory.moc: propertyeditor/qtpropertybrowser/qteditorfactory.cpp \
 		propertyeditor/qtpropertybrowser/qteditorfactory.h \
 		propertyeditor/qtpropertybrowser/qtpropertymanager.h \
 		propertyeditor/qtpropertybrowser/qtpropertybrowser.h \
 		propertyeditor/qtpropertybrowser/qtpropertybrowserutils_p.h \
-		moc_qteditorfactory.cpp \
-		moc_predefs.h \
+		build/moc/moc_qteditorfactory.cpp \
+		qteditorfactory.moc \
+		build/moc/moc_predefs.h \
 		/usr/lib/qt5/bin/moc
-	/usr/lib/qt5/bin/moc $(DEFINES) --include /home/orion23/Documents/repos/Genesys-Simulator/source/applications/gui/qt/GenesysQtGUI/moc_predefs.h -I/usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++ -I/home/orion23/Documents/repos/Genesys-Simulator/source/applications/gui/qt/GenesysQtGUI -I/usr/include/x86_64-linux-gnu/qt5 -I/usr/include/x86_64-linux-gnu/qt5/QtPrintSupport -I/usr/include/x86_64-linux-gnu/qt5/QtDesigner -I/usr/include/x86_64-linux-gnu/qt5/QtUiPlugin -I/usr/include/x86_64-linux-gnu/qt5/QtCharts -I/usr/include/x86_64-linux-gnu/qt5/QtWidgets -I/usr/include/x86_64-linux-gnu/qt5/QtGui -I/usr/include/x86_64-linux-gnu/qt5/QtXml -I/usr/include/x86_64-linux-gnu/qt5/QtCore -I/usr/include/c++/11 -I/usr/include/x86_64-linux-gnu/c++/11 -I/usr/include/c++/11/backward -I/usr/lib/gcc/x86_64-linux-gnu/11/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include propertyeditor/qtpropertybrowser/qteditorfactory.cpp -o qteditorfactory.moc
+	/usr/lib/qt5/bin/moc $(DEFINES) --include /home/orion23/Documents/repos/Genesys-Simulator/source/applications/gui/qt/GenesysQtGUI/build/moc/moc_predefs.h -I/usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++ -I/home/orion23/Documents/repos/Genesys-Simulator/source/applications/gui/qt/GenesysQtGUI -I/usr/include/x86_64-linux-gnu/qt5 -I/usr/include/x86_64-linux-gnu/qt5/QtPrintSupport -I/usr/include/x86_64-linux-gnu/qt5/QtDesigner -I/usr/include/x86_64-linux-gnu/qt5/QtUiPlugin -I/usr/include/x86_64-linux-gnu/qt5/QtCharts -I/usr/include/x86_64-linux-gnu/qt5/QtWidgets -I/usr/include/x86_64-linux-gnu/qt5/QtGui -I/usr/include/x86_64-linux-gnu/qt5/QtXml -I/usr/include/x86_64-linux-gnu/qt5/QtCore -I/usr/include/c++/11 -I/usr/include/x86_64-linux-gnu/c++/11 -I/usr/include/c++/11/backward -I/usr/lib/gcc/x86_64-linux-gnu/11/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include propertyeditor/qtpropertybrowser/qteditorfactory.cpp -o build/moc/qteditorfactory.moc
 
-qtpropertymanager.moc: propertyeditor/qtpropertybrowser/qtpropertymanager.cpp \
+build/moc/qtpropertymanager.moc: propertyeditor/qtpropertybrowser/qtpropertymanager.cpp \
 		propertyeditor/qtpropertybrowser/qtpropertymanager.h \
 		propertyeditor/qtpropertybrowser/qtpropertybrowser.h \
 		propertyeditor/qtpropertybrowser/qtpropertybrowserutils_p.h \
-		moc_qtpropertymanager.cpp \
-		moc_predefs.h \
+		build/moc/moc_qtpropertymanager.cpp \
+		qtpropertymanager.moc \
+		build/moc/moc_predefs.h \
 		/usr/lib/qt5/bin/moc
-	/usr/lib/qt5/bin/moc $(DEFINES) --include /home/orion23/Documents/repos/Genesys-Simulator/source/applications/gui/qt/GenesysQtGUI/moc_predefs.h -I/usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++ -I/home/orion23/Documents/repos/Genesys-Simulator/source/applications/gui/qt/GenesysQtGUI -I/usr/include/x86_64-linux-gnu/qt5 -I/usr/include/x86_64-linux-gnu/qt5/QtPrintSupport -I/usr/include/x86_64-linux-gnu/qt5/QtDesigner -I/usr/include/x86_64-linux-gnu/qt5/QtUiPlugin -I/usr/include/x86_64-linux-gnu/qt5/QtCharts -I/usr/include/x86_64-linux-gnu/qt5/QtWidgets -I/usr/include/x86_64-linux-gnu/qt5/QtGui -I/usr/include/x86_64-linux-gnu/qt5/QtXml -I/usr/include/x86_64-linux-gnu/qt5/QtCore -I/usr/include/c++/11 -I/usr/include/x86_64-linux-gnu/c++/11 -I/usr/include/c++/11/backward -I/usr/lib/gcc/x86_64-linux-gnu/11/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include propertyeditor/qtpropertybrowser/qtpropertymanager.cpp -o qtpropertymanager.moc
+	/usr/lib/qt5/bin/moc $(DEFINES) --include /home/orion23/Documents/repos/Genesys-Simulator/source/applications/gui/qt/GenesysQtGUI/build/moc/moc_predefs.h -I/usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++ -I/home/orion23/Documents/repos/Genesys-Simulator/source/applications/gui/qt/GenesysQtGUI -I/usr/include/x86_64-linux-gnu/qt5 -I/usr/include/x86_64-linux-gnu/qt5/QtPrintSupport -I/usr/include/x86_64-linux-gnu/qt5/QtDesigner -I/usr/include/x86_64-linux-gnu/qt5/QtUiPlugin -I/usr/include/x86_64-linux-gnu/qt5/QtCharts -I/usr/include/x86_64-linux-gnu/qt5/QtWidgets -I/usr/include/x86_64-linux-gnu/qt5/QtGui -I/usr/include/x86_64-linux-gnu/qt5/QtXml -I/usr/include/x86_64-linux-gnu/qt5/QtCore -I/usr/include/c++/11 -I/usr/include/x86_64-linux-gnu/c++/11 -I/usr/include/c++/11/backward -I/usr/lib/gcc/x86_64-linux-gnu/11/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include propertyeditor/qtpropertybrowser/qtpropertymanager.cpp -o build/moc/qtpropertymanager.moc
 
-qttreepropertybrowser.moc: propertyeditor/qtpropertybrowser/qttreepropertybrowser.cpp \
+build/moc/qttreepropertybrowser.moc: propertyeditor/qtpropertybrowser/qttreepropertybrowser.cpp \
 		propertyeditor/qtpropertybrowser/qttreepropertybrowser.h \
 		propertyeditor/qtpropertybrowser/qtpropertybrowser.h \
-		moc_qttreepropertybrowser.cpp \
-		moc_predefs.h \
+		build/moc/moc_qttreepropertybrowser.cpp \
+		qttreepropertybrowser.moc \
+		build/moc/moc_predefs.h \
 		/usr/lib/qt5/bin/moc
-	/usr/lib/qt5/bin/moc $(DEFINES) --include /home/orion23/Documents/repos/Genesys-Simulator/source/applications/gui/qt/GenesysQtGUI/moc_predefs.h -I/usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++ -I/home/orion23/Documents/repos/Genesys-Simulator/source/applications/gui/qt/GenesysQtGUI -I/usr/include/x86_64-linux-gnu/qt5 -I/usr/include/x86_64-linux-gnu/qt5/QtPrintSupport -I/usr/include/x86_64-linux-gnu/qt5/QtDesigner -I/usr/include/x86_64-linux-gnu/qt5/QtUiPlugin -I/usr/include/x86_64-linux-gnu/qt5/QtCharts -I/usr/include/x86_64-linux-gnu/qt5/QtWidgets -I/usr/include/x86_64-linux-gnu/qt5/QtGui -I/usr/include/x86_64-linux-gnu/qt5/QtXml -I/usr/include/x86_64-linux-gnu/qt5/QtCore -I/usr/include/c++/11 -I/usr/include/x86_64-linux-gnu/c++/11 -I/usr/include/c++/11/backward -I/usr/lib/gcc/x86_64-linux-gnu/11/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include propertyeditor/qtpropertybrowser/qttreepropertybrowser.cpp -o qttreepropertybrowser.moc
+	/usr/lib/qt5/bin/moc $(DEFINES) --include /home/orion23/Documents/repos/Genesys-Simulator/source/applications/gui/qt/GenesysQtGUI/build/moc/moc_predefs.h -I/usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++ -I/home/orion23/Documents/repos/Genesys-Simulator/source/applications/gui/qt/GenesysQtGUI -I/usr/include/x86_64-linux-gnu/qt5 -I/usr/include/x86_64-linux-gnu/qt5/QtPrintSupport -I/usr/include/x86_64-linux-gnu/qt5/QtDesigner -I/usr/include/x86_64-linux-gnu/qt5/QtUiPlugin -I/usr/include/x86_64-linux-gnu/qt5/QtCharts -I/usr/include/x86_64-linux-gnu/qt5/QtWidgets -I/usr/include/x86_64-linux-gnu/qt5/QtGui -I/usr/include/x86_64-linux-gnu/qt5/QtXml -I/usr/include/x86_64-linux-gnu/qt5/QtCore -I/usr/include/c++/11 -I/usr/include/x86_64-linux-gnu/c++/11 -I/usr/include/c++/11/backward -I/usr/lib/gcc/x86_64-linux-gnu/11/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include propertyeditor/qtpropertybrowser/qttreepropertybrowser.cpp -o build/moc/qttreepropertybrowser.moc
 
-compiler_uic_make_all: ui_DialogTimerConfigure.h ui_Dialogmodelinformation.h ui_dialogBreakpoint.h ui_dialogpluginmanager.h ui_dialogsimulationconfigure.h ui_dialogsystempreferences.h ui_mainwindow.h
+compiler_uic_make_all: build/ui/ui_DialogTimerConfigure.h build/ui/ui_Dialogmodelinformation.h build/ui/ui_dialogBreakpoint.h build/ui/ui_dialogpluginmanager.h build/ui/ui_dialogsimulationconfigure.h build/ui/ui_dialogsystempreferences.h build/ui/ui_mainwindow.h
 compiler_uic_clean:
-	-$(DEL_FILE) ui_DialogTimerConfigure.h ui_Dialogmodelinformation.h ui_dialogBreakpoint.h ui_dialogpluginmanager.h ui_dialogsimulationconfigure.h ui_dialogsystempreferences.h ui_mainwindow.h
-ui_DialogTimerConfigure.h: dialogs/DialogTimerConfigure.ui \
+	-$(DEL_FILE) build/ui/ui_DialogTimerConfigure.h build/ui/ui_Dialogmodelinformation.h build/ui/ui_dialogBreakpoint.h build/ui/ui_dialogpluginmanager.h build/ui/ui_dialogsimulationconfigure.h build/ui/ui_dialogsystempreferences.h build/ui/ui_mainwindow.h
+build/ui/ui_DialogTimerConfigure.h: dialogs/DialogTimerConfigure.ui \
 		/usr/lib/qt5/bin/uic
-	/usr/lib/qt5/bin/uic dialogs/DialogTimerConfigure.ui -o ui_DialogTimerConfigure.h
+	/usr/lib/qt5/bin/uic dialogs/DialogTimerConfigure.ui -o build/ui/ui_DialogTimerConfigure.h
 
-ui_Dialogmodelinformation.h: dialogs/Dialogmodelinformation.ui \
+build/ui/ui_Dialogmodelinformation.h: dialogs/Dialogmodelinformation.ui \
 		/usr/lib/qt5/bin/uic
-	/usr/lib/qt5/bin/uic dialogs/Dialogmodelinformation.ui -o ui_Dialogmodelinformation.h
+	/usr/lib/qt5/bin/uic dialogs/Dialogmodelinformation.ui -o build/ui/ui_Dialogmodelinformation.h
 
-ui_dialogBreakpoint.h: dialogs/dialogBreakpoint.ui \
+build/ui/ui_dialogBreakpoint.h: dialogs/dialogBreakpoint.ui \
 		/usr/lib/qt5/bin/uic
-	/usr/lib/qt5/bin/uic dialogs/dialogBreakpoint.ui -o ui_dialogBreakpoint.h
+	/usr/lib/qt5/bin/uic dialogs/dialogBreakpoint.ui -o build/ui/ui_dialogBreakpoint.h
 
-ui_dialogpluginmanager.h: dialogs/dialogpluginmanager.ui \
+build/ui/ui_dialogpluginmanager.h: dialogs/dialogpluginmanager.ui \
 		/usr/lib/qt5/bin/uic
-	/usr/lib/qt5/bin/uic dialogs/dialogpluginmanager.ui -o ui_dialogpluginmanager.h
+	/usr/lib/qt5/bin/uic dialogs/dialogpluginmanager.ui -o build/ui/ui_dialogpluginmanager.h
 
-ui_dialogsimulationconfigure.h: dialogs/dialogsimulationconfigure.ui \
+build/ui/ui_dialogsimulationconfigure.h: dialogs/dialogsimulationconfigure.ui \
 		/usr/lib/qt5/bin/uic
-	/usr/lib/qt5/bin/uic dialogs/dialogsimulationconfigure.ui -o ui_dialogsimulationconfigure.h
+	/usr/lib/qt5/bin/uic dialogs/dialogsimulationconfigure.ui -o build/ui/ui_dialogsimulationconfigure.h
 
-ui_dialogsystempreferences.h: dialogs/dialogsystempreferences.ui \
+build/ui/ui_dialogsystempreferences.h: dialogs/dialogsystempreferences.ui \
 		/usr/lib/qt5/bin/uic
-	/usr/lib/qt5/bin/uic dialogs/dialogsystempreferences.ui -o ui_dialogsystempreferences.h
+	/usr/lib/qt5/bin/uic dialogs/dialogsystempreferences.ui -o build/ui/ui_dialogsystempreferences.h
 
-ui_mainwindow.h: mainwindow.ui \
+build/ui/ui_mainwindow.h: mainwindow.ui \
 		/usr/lib/qt5/bin/uic \
 		graphicals/ModelGraphicsView.h \
 		codeeditor/CodeEditor.h \
@@ -2822,7 +2828,7 @@ ui_mainwindow.h: mainwindow.ui \
 		../../../../kernel/simulator/ModelDataManager.h \
 		../../../../kernel/simulator/ConnectionManager.h \
 		propertyeditor/ComboBoxEnum.h
-	/usr/lib/qt5/bin/uic mainwindow.ui -o ui_mainwindow.h
+	/usr/lib/qt5/bin/uic mainwindow.ui -o build/ui/ui_mainwindow.h
 
 compiler_yacc_decl_make_all:
 compiler_yacc_decl_clean:
@@ -2834,7 +2840,7 @@ compiler_clean: compiler_lrelease_clean compiler_rcc_clean compiler_moc_predefs_
 
 ####### Compile
 
-Attribute.o: ../../../../kernel/simulator/Attribute.cpp ../../../../kernel/simulator/Attribute.h \
+build/obj/Attribute.o: ../../../../kernel/simulator/Attribute.cpp ../../../../kernel/simulator/Attribute.h \
 		../../../../kernel/simulator/ModelDataDefinition.h \
 		../../../../kernel/util/List.h \
 		../../../../kernel/util/Util.h \
@@ -2845,9 +2851,9 @@ Attribute.o: ../../../../kernel/simulator/Attribute.cpp ../../../../kernel/simul
 		../../../../kernel/simulator/TraceManager.h \
 		../../../../kernel/simulator/ModelDataManager.h \
 		../../../../kernel/simulator/PluginInformation.h
-	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o Attribute.o ../../../../kernel/simulator/Attribute.cpp
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o build/obj/Attribute.o ../../../../kernel/simulator/Attribute.cpp
 
-ComponentManager.o: ../../../../kernel/simulator/ComponentManager.cpp ../../../../kernel/simulator/ComponentManager.h \
+build/obj/ComponentManager.o: ../../../../kernel/simulator/ComponentManager.cpp ../../../../kernel/simulator/ComponentManager.h \
 		../../../../kernel/simulator/ModelComponent.h \
 		../../../../kernel/simulator/Plugin.h \
 		../../../../kernel/util/Util.h \
@@ -2885,14 +2891,14 @@ ComponentManager.o: ../../../../kernel/simulator/ComponentManager.cpp ../../../.
 		../../../../kernel/simulator/ParserManager.h \
 		../../../../kernel/simulator/ExperimentManager.h \
 		../../../../kernel/simulator/SimulationExperiment.h
-	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o ComponentManager.o ../../../../kernel/simulator/ComponentManager.cpp
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o build/obj/ComponentManager.o ../../../../kernel/simulator/ComponentManager.cpp
 
-ConnectionManager.o: ../../../../kernel/simulator/ConnectionManager.cpp ../../../../kernel/simulator/ConnectionManager.h \
+build/obj/ConnectionManager.o: ../../../../kernel/simulator/ConnectionManager.cpp ../../../../kernel/simulator/ConnectionManager.h \
 		../../../../kernel/util/List.h \
 		../../../../kernel/util/Util.h
-	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o ConnectionManager.o ../../../../kernel/simulator/ConnectionManager.cpp
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o build/obj/ConnectionManager.o ../../../../kernel/simulator/ConnectionManager.cpp
 
-Counter.o: ../../../../kernel/simulator/Counter.cpp ../../../../kernel/simulator/Counter.h \
+build/obj/Counter.o: ../../../../kernel/simulator/Counter.cpp ../../../../kernel/simulator/Counter.h \
 		../../../../kernel/simulator/ModelDataDefinition.h \
 		../../../../kernel/util/List.h \
 		../../../../kernel/util/Util.h \
@@ -2923,9 +2929,9 @@ Counter.o: ../../../../kernel/simulator/Counter.cpp ../../../../kernel/simulator
 		../../../../kernel/simulator/ModelSimulation.h \
 		../../../../kernel/simulator/SimulationReporter_if.h \
 		../../../../kernel/simulator/PropertyGenesys.h
-	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o Counter.o ../../../../kernel/simulator/Counter.cpp
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o build/obj/Counter.o ../../../../kernel/simulator/Counter.cpp
 
-CppSerializer.o: ../../../../kernel/simulator/CppSerializer.cpp ../../../../kernel/simulator/CppSerializer.h \
+build/obj/CppSerializer.o: ../../../../kernel/simulator/CppSerializer.cpp ../../../../kernel/simulator/CppSerializer.h \
 		../../../../kernel/simulator/ModelSerializer.h \
 		../../../../kernel/simulator/Persistence.h \
 		../../../../kernel/util/Util.h \
@@ -2965,9 +2971,9 @@ CppSerializer.o: ../../../../kernel/simulator/CppSerializer.cpp ../../../../kern
 		../../../../kernel/simulator/ParserManager.h \
 		../../../../kernel/simulator/ExperimentManager.h \
 		../../../../kernel/simulator/SimulationExperiment.h
-	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o CppSerializer.o ../../../../kernel/simulator/CppSerializer.cpp
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o build/obj/CppSerializer.o ../../../../kernel/simulator/CppSerializer.cpp
 
-Entity.o: ../../../../kernel/simulator/Entity.cpp ../../../../kernel/simulator/Entity.h \
+build/obj/Entity.o: ../../../../kernel/simulator/Entity.cpp ../../../../kernel/simulator/Entity.h \
 		../../../../kernel/util/Util.h \
 		../../../../kernel/util/List.h \
 		../../../../kernel/simulator/ModelDataDefinition.h \
@@ -2998,9 +3004,9 @@ Entity.o: ../../../../kernel/simulator/Entity.cpp ../../../../kernel/simulator/E
 		../../../../kernel/simulator/ModelSimulation.h \
 		../../../../kernel/simulator/SimulationReporter_if.h \
 		../../../../kernel/simulator/PropertyGenesys.h
-	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o Entity.o ../../../../kernel/simulator/Entity.cpp
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o build/obj/Entity.o ../../../../kernel/simulator/Entity.cpp
 
-EntityType.o: ../../../../kernel/simulator/EntityType.cpp ../../../../kernel/simulator/EntityType.h \
+build/obj/EntityType.o: ../../../../kernel/simulator/EntityType.cpp ../../../../kernel/simulator/EntityType.h \
 		../../../../kernel/simulator/ModelDataDefinition.h \
 		../../../../kernel/util/List.h \
 		../../../../kernel/util/Util.h \
@@ -3030,9 +3036,9 @@ EntityType.o: ../../../../kernel/simulator/EntityType.cpp ../../../../kernel/sim
 		../../../../kernel/simulator/ModelSimulation.h \
 		../../../../kernel/simulator/SimulationReporter_if.h \
 		../../../../kernel/simulator/PropertyGenesys.h
-	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o EntityType.o ../../../../kernel/simulator/EntityType.cpp
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o build/obj/EntityType.o ../../../../kernel/simulator/EntityType.cpp
 
-Event.o: ../../../../kernel/simulator/Event.cpp ../../../../kernel/simulator/Event.h \
+build/obj/Event.o: ../../../../kernel/simulator/Event.cpp ../../../../kernel/simulator/Event.h \
 		../../../../kernel/simulator/ModelDataDefinition.h \
 		../../../../kernel/util/List.h \
 		../../../../kernel/util/Util.h \
@@ -3051,9 +3057,9 @@ Event.o: ../../../../kernel/simulator/Event.cpp ../../../../kernel/simulator/Eve
 		../../../../kernel/simulator/PluginInformation.h \
 		../../../../kernel/simulator/ModelComponent.h \
 		../../../../kernel/simulator/ConnectionManager.h
-	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o Event.o ../../../../kernel/simulator/Event.cpp
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o build/obj/Event.o ../../../../kernel/simulator/Event.cpp
 
-ExperimentManager.o: ../../../../kernel/simulator/ExperimentManager.cpp ../../../../kernel/simulator/ExperimentManager.h \
+build/obj/ExperimentManager.o: ../../../../kernel/simulator/ExperimentManager.cpp ../../../../kernel/simulator/ExperimentManager.h \
 		../../../../kernel/simulator/Persistence.h \
 		../../../../kernel/util/Util.h \
 		../../../../kernel/simulator/ModelPersistence_if.h \
@@ -3091,9 +3097,9 @@ ExperimentManager.o: ../../../../kernel/simulator/ExperimentManager.cpp ../../..
 		../../../../kernel/simulator/PluginConnector_if.h \
 		../../../../kernel/simulator/ModelManager.h \
 		../../../../kernel/simulator/ParserManager.h
-	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o ExperimentManager.o ../../../../kernel/simulator/ExperimentManager.cpp
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o build/obj/ExperimentManager.o ../../../../kernel/simulator/ExperimentManager.cpp
 
-ExperimentManagerDefaultImpl1.o: ../../../../kernel/simulator/ExperimentManagerDefaultImpl1.cpp ../../../../kernel/simulator/ExperimentManagerDefaultImpl1.h \
+build/obj/ExperimentManagerDefaultImpl1.o: ../../../../kernel/simulator/ExperimentManagerDefaultImpl1.cpp ../../../../kernel/simulator/ExperimentManagerDefaultImpl1.h \
 		../../../../kernel/simulator/ExperimetManager_if.h \
 		../../../../kernel/util/List.h \
 		../../../../kernel/util/Util.h \
@@ -3134,9 +3140,9 @@ ExperimentManagerDefaultImpl1.o: ../../../../kernel/simulator/ExperimentManagerD
 		../../../../kernel/simulator/ParserManager.h \
 		../../../../kernel/simulator/ExperimentManager.h \
 		../../../../kernel/simulator/SimulationExperiment.h
-	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o ExperimentManagerDefaultImpl1.o ../../../../kernel/simulator/ExperimentManagerDefaultImpl1.cpp
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o build/obj/ExperimentManagerDefaultImpl1.o ../../../../kernel/simulator/ExperimentManagerDefaultImpl1.cpp
 
-GenSerializer.o: ../../../../kernel/simulator/GenSerializer.cpp ../../../../kernel/simulator/GenSerializer.h \
+build/obj/GenSerializer.o: ../../../../kernel/simulator/GenSerializer.cpp ../../../../kernel/simulator/GenSerializer.h \
 		../../../../kernel/simulator/ModelSerializer.h \
 		../../../../kernel/simulator/Persistence.h \
 		../../../../kernel/util/Util.h \
@@ -3176,9 +3182,9 @@ GenSerializer.o: ../../../../kernel/simulator/GenSerializer.cpp ../../../../kern
 		../../../../kernel/simulator/ParserManager.h \
 		../../../../kernel/simulator/ExperimentManager.h \
 		../../../../kernel/simulator/SimulationExperiment.h
-	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o GenSerializer.o ../../../../kernel/simulator/GenSerializer.cpp
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o build/obj/GenSerializer.o ../../../../kernel/simulator/GenSerializer.cpp
 
-JsonSerializer.o: ../../../../kernel/simulator/JsonSerializer.cpp ../../../../kernel/simulator/JsonSerializer.h \
+build/obj/JsonSerializer.o: ../../../../kernel/simulator/JsonSerializer.cpp ../../../../kernel/simulator/JsonSerializer.h \
 		../../../../kernel/simulator/ModelSerializer.h \
 		../../../../kernel/simulator/Persistence.h \
 		../../../../kernel/util/Util.h \
@@ -3210,12 +3216,12 @@ JsonSerializer.o: ../../../../kernel/simulator/JsonSerializer.cpp ../../../../ke
 		../../../../kernel/simulator/ModelSimulation.h \
 		../../../../kernel/simulator/SimulationReporter_if.h \
 		../../../../kernel/simulator/PropertyGenesys.h
-	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o JsonSerializer.o ../../../../kernel/simulator/JsonSerializer.cpp
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o build/obj/JsonSerializer.o ../../../../kernel/simulator/JsonSerializer.cpp
 
-LicenceManager.o: ../../../../kernel/simulator/LicenceManager.cpp ../../../../kernel/simulator/LicenceManager.h
-	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o LicenceManager.o ../../../../kernel/simulator/LicenceManager.cpp
+build/obj/LicenceManager.o: ../../../../kernel/simulator/LicenceManager.cpp ../../../../kernel/simulator/LicenceManager.h
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o build/obj/LicenceManager.o ../../../../kernel/simulator/LicenceManager.cpp
 
-Model.o: ../../../../kernel/simulator/Model.cpp ../../../../kernel/simulator/Model.h \
+build/obj/Model.o: ../../../../kernel/simulator/Model.cpp ../../../../kernel/simulator/Model.h \
 		../../../../kernel/util/List.h \
 		../../../../kernel/util/Util.h \
 		../../../../kernel/simulator/ModelComponent.h \
@@ -3280,9 +3286,9 @@ Model.o: ../../../../kernel/simulator/Model.cpp ../../../../kernel/simulator/Mod
 		../../../../kernel/statistics/StatisticsDataFile_if.h \
 		../../../../kernel/statistics/SorttFile.h \
 		../../../../kernel/statistics/SamplerDefaultImpl1.h
-	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o Model.o ../../../../kernel/simulator/Model.cpp
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o build/obj/Model.o ../../../../kernel/simulator/Model.cpp
 
-ModelCheckerDefaultImpl1.o: ../../../../kernel/simulator/ModelCheckerDefaultImpl1.cpp ../../../../kernel/simulator/ModelCheckerDefaultImpl1.h \
+build/obj/ModelCheckerDefaultImpl1.o: ../../../../kernel/simulator/ModelCheckerDefaultImpl1.cpp ../../../../kernel/simulator/ModelCheckerDefaultImpl1.h \
 		../../../../kernel/simulator/ModelChecker_if.h \
 		../../../../kernel/simulator/Model.h \
 		../../../../kernel/util/List.h \
@@ -3322,9 +3328,9 @@ ModelCheckerDefaultImpl1.o: ../../../../kernel/simulator/ModelCheckerDefaultImpl
 		../../../../kernel/simulator/ParserManager.h \
 		../../../../kernel/simulator/ExperimentManager.h \
 		../../../../kernel/simulator/SimulationExperiment.h
-	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o ModelCheckerDefaultImpl1.o ../../../../kernel/simulator/ModelCheckerDefaultImpl1.cpp
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o build/obj/ModelCheckerDefaultImpl1.o ../../../../kernel/simulator/ModelCheckerDefaultImpl1.cpp
 
-ModelComponent.o: ../../../../kernel/simulator/ModelComponent.cpp ../../../../kernel/simulator/ModelComponent.h \
+build/obj/ModelComponent.o: ../../../../kernel/simulator/ModelComponent.cpp ../../../../kernel/simulator/ModelComponent.h \
 		../../../../kernel/simulator/Plugin.h \
 		../../../../kernel/util/Util.h \
 		../../../../kernel/simulator/Persistence.h \
@@ -3354,9 +3360,9 @@ ModelComponent.o: ../../../../kernel/simulator/ModelComponent.cpp ../../../../ke
 		../../../../kernel/simulator/ModelSimulation.h \
 		../../../../kernel/simulator/SimulationReporter_if.h \
 		../../../../kernel/simulator/PropertyGenesys.h
-	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o ModelComponent.o ../../../../kernel/simulator/ModelComponent.cpp
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o build/obj/ModelComponent.o ../../../../kernel/simulator/ModelComponent.cpp
 
-ModelDataDefinition.o: ../../../../kernel/simulator/ModelDataDefinition.cpp ../../../../kernel/simulator/ModelDataDefinition.h \
+build/obj/ModelDataDefinition.o: ../../../../kernel/simulator/ModelDataDefinition.cpp ../../../../kernel/simulator/ModelDataDefinition.h \
 		../../../../kernel/util/List.h \
 		../../../../kernel/util/Util.h \
 		../../../../kernel/simulator/ParserChangesInformation.h \
@@ -3415,9 +3421,9 @@ ModelDataDefinition.o: ../../../../kernel/simulator/ModelDataDefinition.cpp ../.
 		../../../../kernel/statistics/StatisticsDataFile_if.h \
 		../../../../kernel/statistics/SorttFile.h \
 		../../../../kernel/statistics/SamplerDefaultImpl1.h
-	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o ModelDataDefinition.o ../../../../kernel/simulator/ModelDataDefinition.cpp
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o build/obj/ModelDataDefinition.o ../../../../kernel/simulator/ModelDataDefinition.cpp
 
-ModelDataManager.o: ../../../../kernel/simulator/ModelDataManager.cpp ../../../../kernel/simulator/ModelDataManager.h \
+build/obj/ModelDataManager.o: ../../../../kernel/simulator/ModelDataManager.cpp ../../../../kernel/simulator/ModelDataManager.h \
 		../../../../kernel/util/List.h \
 		../../../../kernel/util/Util.h \
 		../../../../kernel/simulator/ModelDataDefinition.h \
@@ -3447,9 +3453,9 @@ ModelDataManager.o: ../../../../kernel/simulator/ModelDataManager.cpp ../../../.
 		../../../../kernel/simulator/ModelSimulation.h \
 		../../../../kernel/simulator/SimulationReporter_if.h \
 		../../../../kernel/simulator/PropertyGenesys.h
-	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o ModelDataManager.o ../../../../kernel/simulator/ModelDataManager.cpp
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o build/obj/ModelDataManager.o ../../../../kernel/simulator/ModelDataManager.cpp
 
-ModelInfo.o: ../../../../kernel/simulator/ModelInfo.cpp ../../../../kernel/simulator/ModelInfo.h \
+build/obj/ModelInfo.o: ../../../../kernel/simulator/ModelInfo.cpp ../../../../kernel/simulator/ModelInfo.h \
 		../../../../kernel/util/Util.h \
 		../../../../kernel/simulator/Persistence.h \
 		../../../../kernel/simulator/ModelPersistence_if.h \
@@ -3479,9 +3485,9 @@ ModelInfo.o: ../../../../kernel/simulator/ModelInfo.cpp ../../../../kernel/simul
 		../../../../kernel/simulator/ModelSimulation.h \
 		../../../../kernel/simulator/SimulationReporter_if.h \
 		../../../../kernel/simulator/PropertyGenesys.h
-	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o ModelInfo.o ../../../../kernel/simulator/ModelInfo.cpp
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o build/obj/ModelInfo.o ../../../../kernel/simulator/ModelInfo.cpp
 
-ModelManager.o: ../../../../kernel/simulator/ModelManager.cpp ../../../../kernel/simulator/ModelManager.h \
+build/obj/ModelManager.o: ../../../../kernel/simulator/ModelManager.cpp ../../../../kernel/simulator/ModelManager.h \
 		../../../../kernel/simulator/Model.h \
 		../../../../kernel/util/List.h \
 		../../../../kernel/util/Util.h \
@@ -3519,9 +3525,9 @@ ModelManager.o: ../../../../kernel/simulator/ModelManager.cpp ../../../../kernel
 		../../../../kernel/simulator/ParserManager.h \
 		../../../../kernel/simulator/ExperimentManager.h \
 		../../../../kernel/simulator/SimulationExperiment.h
-	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o ModelManager.o ../../../../kernel/simulator/ModelManager.cpp
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o build/obj/ModelManager.o ../../../../kernel/simulator/ModelManager.cpp
 
-ModelPersistenceDefaultImpl2.o: ../../../../kernel/simulator/ModelPersistenceDefaultImpl2.cpp ../../../../kernel/simulator/ModelPersistenceDefaultImpl2.h \
+build/obj/ModelPersistenceDefaultImpl2.o: ../../../../kernel/simulator/ModelPersistenceDefaultImpl2.cpp ../../../../kernel/simulator/ModelPersistenceDefaultImpl2.h \
 		../../../../kernel/simulator/ModelPersistence_if.h \
 		../../../../kernel/simulator/Model.h \
 		../../../../kernel/util/List.h \
@@ -3566,15 +3572,15 @@ ModelPersistenceDefaultImpl2.o: ../../../../kernel/simulator/ModelPersistenceDef
 		../../../../kernel/simulator/XmlSerializer.h \
 		../../../../kernel/simulator/JsonSerializer.h \
 		../../../../kernel/simulator/CppSerializer.h
-	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o ModelPersistenceDefaultImpl2.o ../../../../kernel/simulator/ModelPersistenceDefaultImpl2.cpp
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o build/obj/ModelPersistenceDefaultImpl2.o ../../../../kernel/simulator/ModelPersistenceDefaultImpl2.cpp
 
-ModelSerializer.o: ../../../../kernel/simulator/ModelSerializer.cpp ../../../../kernel/simulator/ModelSerializer.h \
+build/obj/ModelSerializer.o: ../../../../kernel/simulator/ModelSerializer.cpp ../../../../kernel/simulator/ModelSerializer.h \
 		../../../../kernel/simulator/Persistence.h \
 		../../../../kernel/util/Util.h \
 		../../../../kernel/simulator/ModelPersistence_if.h
-	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o ModelSerializer.o ../../../../kernel/simulator/ModelSerializer.cpp
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o build/obj/ModelSerializer.o ../../../../kernel/simulator/ModelSerializer.cpp
 
-ModelSimulation.o: ../../../../kernel/simulator/ModelSimulation.cpp ../../../../kernel/simulator/ModelSimulation.h \
+build/obj/ModelSimulation.o: ../../../../kernel/simulator/ModelSimulation.cpp ../../../../kernel/simulator/ModelSimulation.h \
 		../../../../kernel/simulator/Event.h \
 		../../../../kernel/simulator/ModelDataDefinition.h \
 		../../../../kernel/util/List.h \
@@ -3639,9 +3645,9 @@ ModelSimulation.o: ../../../../kernel/simulator/ModelSimulation.cpp ../../../../
 		../../../../kernel/statistics/StatisticsDataFile_if.h \
 		../../../../kernel/statistics/SorttFile.h \
 		../../../../kernel/statistics/SamplerDefaultImpl1.h
-	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o ModelSimulation.o ../../../../kernel/simulator/ModelSimulation.cpp
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o build/obj/ModelSimulation.o ../../../../kernel/simulator/ModelSimulation.cpp
 
-OnEventManager.o: ../../../../kernel/simulator/OnEventManager.cpp ../../../../kernel/simulator/OnEventManager.h \
+build/obj/OnEventManager.o: ../../../../kernel/simulator/OnEventManager.cpp ../../../../kernel/simulator/OnEventManager.h \
 		../../../../kernel/util/List.h \
 		../../../../kernel/util/Util.h \
 		../../../../kernel/simulator/Event.h \
@@ -3661,17 +3667,17 @@ OnEventManager.o: ../../../../kernel/simulator/OnEventManager.cpp ../../../../ke
 		../../../../kernel/simulator/PluginInformation.h \
 		../../../../kernel/simulator/ModelComponent.h \
 		../../../../kernel/simulator/ConnectionManager.h
-	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o OnEventManager.o ../../../../kernel/simulator/OnEventManager.cpp
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o build/obj/OnEventManager.o ../../../../kernel/simulator/OnEventManager.cpp
 
-ParserChangesInformation.o: ../../../../kernel/simulator/ParserChangesInformation.cpp ../../../../kernel/simulator/ParserChangesInformation.h
-	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o ParserChangesInformation.o ../../../../kernel/simulator/ParserChangesInformation.cpp
+build/obj/ParserChangesInformation.o: ../../../../kernel/simulator/ParserChangesInformation.cpp ../../../../kernel/simulator/ParserChangesInformation.h
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o build/obj/ParserChangesInformation.o ../../../../kernel/simulator/ParserChangesInformation.cpp
 
-ParserDefaultImpl1.o: ../../../../kernel/simulator/ParserDefaultImpl1.cpp ../../../../kernel/simulator/ParserDefaultImpl1.h \
+build/obj/ParserDefaultImpl1.o: ../../../../kernel/simulator/ParserDefaultImpl1.cpp ../../../../kernel/simulator/ParserDefaultImpl1.h \
 		../../../../kernel/simulator/Parser_if.h \
 		../../../../kernel/statistics/Sampler_if.h
-	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o ParserDefaultImpl1.o ../../../../kernel/simulator/ParserDefaultImpl1.cpp
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o build/obj/ParserDefaultImpl1.o ../../../../kernel/simulator/ParserDefaultImpl1.cpp
 
-ParserDefaultImpl2.o: ../../../../kernel/simulator/ParserDefaultImpl2.cpp ../../../../kernel/simulator/ParserDefaultImpl2.h \
+build/obj/ParserDefaultImpl2.o: ../../../../kernel/simulator/ParserDefaultImpl2.cpp ../../../../kernel/simulator/ParserDefaultImpl2.h \
 		../../../../kernel/simulator/Parser_if.h \
 		../../../../kernel/statistics/Sampler_if.h \
 		../../../../kernel/simulator/Model.h \
@@ -3715,18 +3721,18 @@ ParserDefaultImpl2.o: ../../../../kernel/simulator/ParserDefaultImpl2.cpp ../../
 		../../../../plugins/data/Schedule.h \
 		../../../../plugins/data/Set.h \
 		../../../../parser/location.hh
-	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o ParserDefaultImpl2.o ../../../../kernel/simulator/ParserDefaultImpl2.cpp
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o build/obj/ParserDefaultImpl2.o ../../../../kernel/simulator/ParserDefaultImpl2.cpp
 
-ParserManager.o: ../../../../kernel/simulator/ParserManager.cpp ../../../../kernel/simulator/ParserManager.h \
+build/obj/ParserManager.o: ../../../../kernel/simulator/ParserManager.cpp ../../../../kernel/simulator/ParserManager.h \
 		../../../../kernel/simulator/ParserChangesInformation.h
-	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o ParserManager.o ../../../../kernel/simulator/ParserManager.cpp
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o build/obj/ParserManager.o ../../../../kernel/simulator/ParserManager.cpp
 
-Persistence.o: ../../../../kernel/simulator/Persistence.cpp ../../../../kernel/simulator/Persistence.h \
+build/obj/Persistence.o: ../../../../kernel/simulator/Persistence.cpp ../../../../kernel/simulator/Persistence.h \
 		../../../../kernel/util/Util.h \
 		../../../../kernel/simulator/ModelPersistence_if.h
-	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o Persistence.o ../../../../kernel/simulator/Persistence.cpp
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o build/obj/Persistence.o ../../../../kernel/simulator/Persistence.cpp
 
-Plugin.o: ../../../../kernel/simulator/Plugin.cpp ../../../../kernel/simulator/Plugin.h \
+build/obj/Plugin.o: ../../../../kernel/simulator/Plugin.cpp ../../../../kernel/simulator/Plugin.h \
 		../../../../kernel/util/Util.h \
 		../../../../kernel/simulator/Persistence.h \
 		../../../../kernel/simulator/ModelPersistence_if.h \
@@ -3757,9 +3763,9 @@ Plugin.o: ../../../../kernel/simulator/Plugin.cpp ../../../../kernel/simulator/P
 		../../../../kernel/simulator/SimulationReporter_if.h \
 		../../../../kernel/simulator/PropertyGenesys.h \
 		../../../../kernel/simulator/SinkModelComponent.h
-	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o Plugin.o ../../../../kernel/simulator/Plugin.cpp
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o build/obj/Plugin.o ../../../../kernel/simulator/Plugin.cpp
 
-PluginConnectorDummyImpl1.o: ../../../../kernel/simulator/PluginConnectorDummyImpl1.cpp ../../../../kernel/simulator/PluginConnectorDummyImpl1.h \
+build/obj/PluginConnectorDummyImpl1.o: ../../../../kernel/simulator/PluginConnectorDummyImpl1.cpp ../../../../kernel/simulator/PluginConnectorDummyImpl1.h \
 		../../../../kernel/simulator/PluginConnector_if.h \
 		../../../../kernel/simulator/Plugin.h \
 		../../../../kernel/util/Util.h \
@@ -3861,12 +3867,12 @@ PluginConnectorDummyImpl1.o: ../../../../kernel/simulator/PluginConnectorDummyIm
 		../../../../plugins/components/LSODE.h \
 		../../../../plugins/data/File.h \
 		../../../../plugins/data/Storage.h
-	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o PluginConnectorDummyImpl1.o ../../../../kernel/simulator/PluginConnectorDummyImpl1.cpp
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o build/obj/PluginConnectorDummyImpl1.o ../../../../kernel/simulator/PluginConnectorDummyImpl1.cpp
 
-PluginInformation.o: ../../../../kernel/simulator/PluginInformation.cpp ../../../../kernel/simulator/PluginInformation.h
-	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o PluginInformation.o ../../../../kernel/simulator/PluginInformation.cpp
+build/obj/PluginInformation.o: ../../../../kernel/simulator/PluginInformation.cpp ../../../../kernel/simulator/PluginInformation.h
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o build/obj/PluginInformation.o ../../../../kernel/simulator/PluginInformation.cpp
 
-PluginManager.o: ../../../../kernel/simulator/PluginManager.cpp ../../../../kernel/simulator/PluginManager.h \
+build/obj/PluginManager.o: ../../../../kernel/simulator/PluginManager.cpp ../../../../kernel/simulator/PluginManager.h \
 		../../../../kernel/util/List.h \
 		../../../../kernel/util/Util.h \
 		../../../../kernel/simulator/Plugin.h \
@@ -3931,12 +3937,12 @@ PluginManager.o: ../../../../kernel/simulator/PluginManager.cpp ../../../../kern
 		../../../../kernel/statistics/StatisticsDataFile_if.h \
 		../../../../kernel/statistics/SorttFile.h \
 		../../../../kernel/statistics/SamplerDefaultImpl1.h
-	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o PluginManager.o ../../../../kernel/simulator/PluginManager.cpp
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o build/obj/PluginManager.o ../../../../kernel/simulator/PluginManager.cpp
 
-SimulationExperiment.o: ../../../../kernel/simulator/SimulationExperiment.cpp ../../../../kernel/simulator/SimulationExperiment.h
-	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o SimulationExperiment.o ../../../../kernel/simulator/SimulationExperiment.cpp
+build/obj/SimulationExperiment.o: ../../../../kernel/simulator/SimulationExperiment.cpp ../../../../kernel/simulator/SimulationExperiment.h
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o build/obj/SimulationExperiment.o ../../../../kernel/simulator/SimulationExperiment.cpp
 
-SimulationReporterDefaultImpl1.o: ../../../../kernel/simulator/SimulationReporterDefaultImpl1.cpp ../../../../kernel/simulator/SimulationReporterDefaultImpl1.h \
+build/obj/SimulationReporterDefaultImpl1.o: ../../../../kernel/simulator/SimulationReporterDefaultImpl1.cpp ../../../../kernel/simulator/SimulationReporterDefaultImpl1.h \
 		../../../../kernel/simulator/SimulationReporter_if.h \
 		../../../../kernel/util/List.h \
 		../../../../kernel/util/Util.h \
@@ -3968,9 +3974,9 @@ SimulationReporterDefaultImpl1.o: ../../../../kernel/simulator/SimulationReporte
 		../../../../kernel/simulator/SourceModelComponent.h \
 		../../../../kernel/simulator/PropertyGenesys.h \
 		../../../../kernel/simulator/Counter.h
-	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o SimulationReporterDefaultImpl1.o ../../../../kernel/simulator/SimulationReporterDefaultImpl1.cpp
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o build/obj/SimulationReporterDefaultImpl1.o ../../../../kernel/simulator/SimulationReporterDefaultImpl1.cpp
 
-SimulationScenario.o: ../../../../kernel/simulator/SimulationScenario.cpp ../../../../kernel/simulator/SimulationScenario.h \
+build/obj/SimulationScenario.o: ../../../../kernel/simulator/SimulationScenario.cpp ../../../../kernel/simulator/SimulationScenario.h \
 		../../../../kernel/simulator/Simulator.h \
 		../../../../kernel/simulator/Model.h \
 		../../../../kernel/util/List.h \
@@ -4009,9 +4015,9 @@ SimulationScenario.o: ../../../../kernel/simulator/SimulationScenario.cpp ../../
 		../../../../kernel/simulator/ParserManager.h \
 		../../../../kernel/simulator/ExperimentManager.h \
 		../../../../kernel/simulator/SimulationExperiment.h
-	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o SimulationScenario.o ../../../../kernel/simulator/SimulationScenario.cpp
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o build/obj/SimulationScenario.o ../../../../kernel/simulator/SimulationScenario.cpp
 
-Simulator.o: ../../../../kernel/simulator/Simulator.cpp ../../../../kernel/simulator/Simulator.h \
+build/obj/Simulator.o: ../../../../kernel/simulator/Simulator.cpp ../../../../kernel/simulator/Simulator.h \
 		../../../../kernel/simulator/Model.h \
 		../../../../kernel/util/List.h \
 		../../../../kernel/util/Util.h \
@@ -4049,9 +4055,9 @@ Simulator.o: ../../../../kernel/simulator/Simulator.cpp ../../../../kernel/simul
 		../../../../kernel/simulator/ParserManager.h \
 		../../../../kernel/simulator/ExperimentManager.h \
 		../../../../kernel/simulator/SimulationExperiment.h
-	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o Simulator.o ../../../../kernel/simulator/Simulator.cpp
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o build/obj/Simulator.o ../../../../kernel/simulator/Simulator.cpp
 
-SinkModelComponent.o: ../../../../kernel/simulator/SinkModelComponent.cpp ../../../../kernel/simulator/SinkModelComponent.h \
+build/obj/SinkModelComponent.o: ../../../../kernel/simulator/SinkModelComponent.cpp ../../../../kernel/simulator/SinkModelComponent.h \
 		../../../../kernel/simulator/ModelComponent.h \
 		../../../../kernel/simulator/Plugin.h \
 		../../../../kernel/util/Util.h \
@@ -4070,9 +4076,9 @@ SinkModelComponent.o: ../../../../kernel/simulator/SinkModelComponent.cpp ../../
 		../../../../kernel/statistics/Collector_if.h \
 		../../../../kernel/simulator/ModelDataManager.h \
 		../../../../kernel/simulator/ConnectionManager.h
-	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o SinkModelComponent.o ../../../../kernel/simulator/SinkModelComponent.cpp
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o build/obj/SinkModelComponent.o ../../../../kernel/simulator/SinkModelComponent.cpp
 
-SourceModelComponent.o: ../../../../kernel/simulator/SourceModelComponent.cpp ../../../../kernel/simulator/SourceModelComponent.h \
+build/obj/SourceModelComponent.o: ../../../../kernel/simulator/SourceModelComponent.cpp ../../../../kernel/simulator/SourceModelComponent.h \
 		../../../../kernel/simulator/ModelComponent.h \
 		../../../../kernel/simulator/Plugin.h \
 		../../../../kernel/util/Util.h \
@@ -4102,9 +4108,9 @@ SourceModelComponent.o: ../../../../kernel/simulator/SourceModelComponent.cpp ..
 		../../../../kernel/simulator/ModelSimulation.h \
 		../../../../kernel/simulator/SimulationReporter_if.h \
 		../../../../kernel/simulator/PropertyGenesys.h
-	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o SourceModelComponent.o ../../../../kernel/simulator/SourceModelComponent.cpp
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o build/obj/SourceModelComponent.o ../../../../kernel/simulator/SourceModelComponent.cpp
 
-StatisticsCollector.o: ../../../../kernel/simulator/StatisticsCollector.cpp ../../../../kernel/simulator/StatisticsCollector.h \
+build/obj/StatisticsCollector.o: ../../../../kernel/simulator/StatisticsCollector.cpp ../../../../kernel/simulator/StatisticsCollector.h \
 		../../../../kernel/simulator/ModelDataDefinition.h \
 		../../../../kernel/util/List.h \
 		../../../../kernel/util/Util.h \
@@ -4163,9 +4169,9 @@ StatisticsCollector.o: ../../../../kernel/simulator/StatisticsCollector.cpp ../.
 		../../../../kernel/statistics/StatisticsDataFile_if.h \
 		../../../../kernel/statistics/SorttFile.h \
 		../../../../kernel/statistics/SamplerDefaultImpl1.h
-	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o StatisticsCollector.o ../../../../kernel/simulator/StatisticsCollector.cpp
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o build/obj/StatisticsCollector.o ../../../../kernel/simulator/StatisticsCollector.cpp
 
-TraceManager.o: ../../../../kernel/simulator/TraceManager.cpp ../../../../kernel/simulator/TraceManager.h \
+build/obj/TraceManager.o: ../../../../kernel/simulator/TraceManager.cpp ../../../../kernel/simulator/TraceManager.h \
 		../../../../kernel/util/List.h \
 		../../../../kernel/util/Util.h \
 		../../../../kernel/TraitsKernel.h \
@@ -4224,9 +4230,9 @@ TraceManager.o: ../../../../kernel/simulator/TraceManager.cpp ../../../../kernel
 		../../../../kernel/statistics/StatisticsDataFile_if.h \
 		../../../../kernel/statistics/SorttFile.h \
 		../../../../kernel/statistics/SamplerDefaultImpl1.h
-	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o TraceManager.o ../../../../kernel/simulator/TraceManager.cpp
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o build/obj/TraceManager.o ../../../../kernel/simulator/TraceManager.cpp
 
-XmlSerializer.o: ../../../../kernel/simulator/XmlSerializer.cpp ../../../../kernel/simulator/XmlSerializer.h \
+build/obj/XmlSerializer.o: ../../../../kernel/simulator/XmlSerializer.cpp ../../../../kernel/simulator/XmlSerializer.h \
 		../../../../kernel/simulator/ModelSerializer.h \
 		../../../../kernel/simulator/Persistence.h \
 		../../../../kernel/util/Util.h \
@@ -4258,29 +4264,29 @@ XmlSerializer.o: ../../../../kernel/simulator/XmlSerializer.cpp ../../../../kern
 		../../../../kernel/simulator/ModelSimulation.h \
 		../../../../kernel/simulator/SimulationReporter_if.h \
 		../../../../kernel/simulator/PropertyGenesys.h
-	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o XmlSerializer.o ../../../../kernel/simulator/XmlSerializer.cpp
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o build/obj/XmlSerializer.o ../../../../kernel/simulator/XmlSerializer.cpp
 
-CollectorDatafileDefaultImpl1.o: ../../../../kernel/statistics/CollectorDatafileDefaultImpl1.cpp ../../../../kernel/statistics/CollectorDatafileDefaultImpl1.h \
+build/obj/CollectorDatafileDefaultImpl1.o: ../../../../kernel/statistics/CollectorDatafileDefaultImpl1.cpp ../../../../kernel/statistics/CollectorDatafileDefaultImpl1.h \
 		../../../../kernel/statistics/CollectorDatafile_if.h \
 		../../../../kernel/statistics/Collector_if.h
-	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o CollectorDatafileDefaultImpl1.o ../../../../kernel/statistics/CollectorDatafileDefaultImpl1.cpp
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o build/obj/CollectorDatafileDefaultImpl1.o ../../../../kernel/statistics/CollectorDatafileDefaultImpl1.cpp
 
-CollectorDefaultImpl1.o: ../../../../kernel/statistics/CollectorDefaultImpl1.cpp ../../../../kernel/statistics/CollectorDefaultImpl1.h \
+build/obj/CollectorDefaultImpl1.o: ../../../../kernel/statistics/CollectorDefaultImpl1.cpp ../../../../kernel/statistics/CollectorDefaultImpl1.h \
 		../../../../kernel/statistics/Collector_if.h
-	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o CollectorDefaultImpl1.o ../../../../kernel/statistics/CollectorDefaultImpl1.cpp
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o build/obj/CollectorDefaultImpl1.o ../../../../kernel/statistics/CollectorDefaultImpl1.cpp
 
-SamplerBoostImpl.o: ../../../../kernel/statistics/SamplerBoostImpl.cpp ../../../../kernel/statistics/SamplerBoostImpl.h \
+build/obj/SamplerBoostImpl.o: ../../../../kernel/statistics/SamplerBoostImpl.cpp ../../../../kernel/statistics/SamplerBoostImpl.h \
 		../../../../kernel/statistics/Sampler_if.h
-	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o SamplerBoostImpl.o ../../../../kernel/statistics/SamplerBoostImpl.cpp
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o build/obj/SamplerBoostImpl.o ../../../../kernel/statistics/SamplerBoostImpl.cpp
 
-SamplerDefaultImpl1.o: ../../../../kernel/statistics/SamplerDefaultImpl1.cpp ../../../../kernel/statistics/SamplerDefaultImpl1.h \
+build/obj/SamplerDefaultImpl1.o: ../../../../kernel/statistics/SamplerDefaultImpl1.cpp ../../../../kernel/statistics/SamplerDefaultImpl1.h \
 		../../../../kernel/statistics/Sampler_if.h
-	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o SamplerDefaultImpl1.o ../../../../kernel/statistics/SamplerDefaultImpl1.cpp
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o build/obj/SamplerDefaultImpl1.o ../../../../kernel/statistics/SamplerDefaultImpl1.cpp
 
-SorttFile.o: ../../../../kernel/statistics/SorttFile.cpp ../../../../kernel/statistics/SorttFile.h
-	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o SorttFile.o ../../../../kernel/statistics/SorttFile.cpp
+build/obj/SorttFile.o: ../../../../kernel/statistics/SorttFile.cpp ../../../../kernel/statistics/SorttFile.h
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o build/obj/SorttFile.o ../../../../kernel/statistics/SorttFile.cpp
 
-StatisticsDataFileDefaultImpl.o: ../../../../kernel/statistics/StatisticsDataFileDefaultImpl.cpp ../../../../kernel/statistics/StatisticsDataFileDefaultImpl.h \
+build/obj/StatisticsDataFileDefaultImpl.o: ../../../../kernel/statistics/StatisticsDataFileDefaultImpl.cpp ../../../../kernel/statistics/StatisticsDataFileDefaultImpl.h \
 		../../../../kernel/statistics/StatisticsDataFile_if.h \
 		../../../../kernel/statistics/CollectorDatafile_if.h \
 		../../../../kernel/statistics/Collector_if.h \
@@ -4339,9 +4345,9 @@ StatisticsDataFileDefaultImpl.o: ../../../../kernel/statistics/StatisticsDataFil
 		../../../../kernel/statistics/CollectorDefaultImpl1.h \
 		../../../../kernel/statistics/StatisticsDefaultImpl1.h \
 		../../../../kernel/statistics/SamplerDefaultImpl1.h
-	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o StatisticsDataFileDefaultImpl.o ../../../../kernel/statistics/StatisticsDataFileDefaultImpl.cpp
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o build/obj/StatisticsDataFileDefaultImpl.o ../../../../kernel/statistics/StatisticsDataFileDefaultImpl.cpp
 
-StatisticsDefaultImpl1.o: ../../../../kernel/statistics/StatisticsDefaultImpl1.cpp ../../../../kernel/statistics/StatisticsDefaultImpl1.h \
+build/obj/StatisticsDefaultImpl1.o: ../../../../kernel/statistics/StatisticsDefaultImpl1.cpp ../../../../kernel/statistics/StatisticsDefaultImpl1.h \
 		../../../../kernel/statistics/Statistics_if.h \
 		../../../../kernel/statistics/Collector_if.h \
 		../../../../kernel/TraitsKernel.h \
@@ -4400,12 +4406,12 @@ StatisticsDefaultImpl1.o: ../../../../kernel/statistics/StatisticsDefaultImpl1.c
 		../../../../kernel/statistics/StatisticsDataFile_if.h \
 		../../../../kernel/statistics/SorttFile.h \
 		../../../../kernel/statistics/SamplerDefaultImpl1.h
-	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o StatisticsDefaultImpl1.o ../../../../kernel/statistics/StatisticsDefaultImpl1.cpp
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o build/obj/StatisticsDefaultImpl1.o ../../../../kernel/statistics/StatisticsDefaultImpl1.cpp
 
-Util.o: ../../../../kernel/util/Util.cpp ../../../../kernel/util/Util.h
-	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o Util.o ../../../../kernel/util/Util.cpp
+build/obj/Util.o: ../../../../kernel/util/Util.cpp ../../../../kernel/util/Util.h
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o build/obj/Util.o ../../../../kernel/util/Util.cpp
 
-Genesys++-driver.o: ../../../../parser/Genesys++-driver.cpp ../../../../parser/Genesys++-driver.h \
+build/obj/Genesys++-driver.o: ../../../../parser/Genesys++-driver.cpp ../../../../parser/Genesys++-driver.h \
 		../../../../parser/GenesysParser.h \
 		../../../../parser/obj_t.h \
 		../../../../kernel/util/Util.h \
@@ -4448,9 +4454,9 @@ Genesys++-driver.o: ../../../../parser/Genesys++-driver.cpp ../../../../parser/G
 		../../../../kernel/simulator/ModelSimulation.h \
 		../../../../kernel/simulator/SimulationReporter_if.h \
 		../../../../kernel/simulator/PropertyGenesys.h
-	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o Genesys++-driver.o ../../../../parser/Genesys++-driver.cpp
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o build/obj/Genesys++-driver.o ../../../../parser/Genesys++-driver.cpp
 
-Genesys++-scanner.o: ../../../../parser/Genesys++-scanner.cpp ../../../../parser/Genesys++-driver.h \
+build/obj/Genesys++-scanner.o: ../../../../parser/Genesys++-scanner.cpp ../../../../parser/Genesys++-driver.h \
 		../../../../parser/GenesysParser.h \
 		../../../../parser/obj_t.h \
 		../../../../kernel/util/Util.h \
@@ -4493,9 +4499,9 @@ Genesys++-scanner.o: ../../../../parser/Genesys++-scanner.cpp ../../../../parser
 		../../../../kernel/simulator/ModelSimulation.h \
 		../../../../kernel/simulator/SimulationReporter_if.h \
 		../../../../kernel/simulator/PropertyGenesys.h
-	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o Genesys++-scanner.o ../../../../parser/Genesys++-scanner.cpp
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o build/obj/Genesys++-scanner.o ../../../../parser/Genesys++-scanner.cpp
 
-GenesysParser.o: ../../../../parser/GenesysParser.cpp ../../../../parser/GenesysParser.h \
+build/obj/GenesysParser.o: ../../../../parser/GenesysParser.cpp ../../../../parser/GenesysParser.h \
 		../../../../parser/obj_t.h \
 		../../../../kernel/util/Util.h \
 		../../../../kernel/simulator/Attribute.h \
@@ -4538,12 +4544,12 @@ GenesysParser.o: ../../../../parser/GenesysParser.cpp ../../../../parser/Genesys
 		../../../../kernel/simulator/ModelSimulation.h \
 		../../../../kernel/simulator/SimulationReporter_if.h \
 		../../../../kernel/simulator/PropertyGenesys.h
-	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o GenesysParser.o ../../../../parser/GenesysParser.cpp
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o build/obj/GenesysParser.o ../../../../parser/GenesysParser.cpp
 
-obj_t.o: ../../../../parser/obj_t.cpp ../../../../parser/obj_t.h
-	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o obj_t.o ../../../../parser/obj_t.cpp
+build/obj/obj_t.o: ../../../../parser/obj_t.cpp ../../../../parser/obj_t.h
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o build/obj/obj_t.o ../../../../parser/obj_t.cpp
 
-Access.o: ../../../../plugins/components/Access.cpp ../../../../plugins/components/Access.h \
+build/obj/Access.o: ../../../../plugins/components/Access.cpp ../../../../plugins/components/Access.h \
 		../../../../kernel/simulator/ModelComponent.h \
 		../../../../kernel/simulator/Plugin.h \
 		../../../../kernel/util/Util.h \
@@ -4574,9 +4580,9 @@ Access.o: ../../../../plugins/components/Access.cpp ../../../../plugins/componen
 		../../../../kernel/simulator/ModelSimulation.h \
 		../../../../kernel/simulator/SimulationReporter_if.h \
 		../../../../kernel/simulator/PropertyGenesys.h
-	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o Access.o ../../../../plugins/components/Access.cpp
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o build/obj/Access.o ../../../../plugins/components/Access.cpp
 
-Assign.o: ../../../../plugins/components/Assign.cpp ../../../../plugins/components/Assign.h \
+build/obj/Assign.o: ../../../../plugins/components/Assign.cpp ../../../../plugins/components/Assign.h \
 		../../../../kernel/simulator/ModelComponent.h \
 		../../../../kernel/simulator/Plugin.h \
 		../../../../kernel/util/Util.h \
@@ -4622,9 +4628,9 @@ Assign.o: ../../../../plugins/components/Assign.cpp ../../../../plugins/componen
 		../../../../kernel/simulator/Counter.h \
 		../../../../plugins/data/Failure.h \
 		../../../../plugins/data/Schedule.h
-	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o Assign.o ../../../../plugins/components/Assign.cpp
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o build/obj/Assign.o ../../../../plugins/components/Assign.cpp
 
-Batch.o: ../../../../plugins/components/Batch.cpp ../../../../plugins/components/Batch.h \
+build/obj/Batch.o: ../../../../plugins/components/Batch.cpp ../../../../plugins/components/Batch.h \
 		../../../../kernel/simulator/ModelComponent.h \
 		../../../../kernel/simulator/Plugin.h \
 		../../../../kernel/util/Util.h \
@@ -4666,9 +4672,9 @@ Batch.o: ../../../../plugins/components/Batch.cpp ../../../../plugins/components
 		../../../../kernel/simulator/ParserManager.h \
 		../../../../kernel/simulator/ExperimentManager.h \
 		../../../../kernel/simulator/SimulationExperiment.h
-	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o Batch.o ../../../../plugins/components/Batch.cpp
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o build/obj/Batch.o ../../../../plugins/components/Batch.cpp
 
-Buffer.o: ../../../../plugins/components/Buffer.cpp ../../../../plugins/components/Buffer.h \
+build/obj/Buffer.o: ../../../../plugins/components/Buffer.cpp ../../../../plugins/components/Buffer.h \
 		../../../../kernel/simulator/ModelComponent.h \
 		../../../../kernel/simulator/Plugin.h \
 		../../../../kernel/util/Util.h \
@@ -4708,9 +4714,9 @@ Buffer.o: ../../../../plugins/components/Buffer.cpp ../../../../plugins/componen
 		../../../../kernel/simulator/ParserManager.h \
 		../../../../kernel/simulator/ExperimentManager.h \
 		../../../../kernel/simulator/SimulationExperiment.h
-	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o Buffer.o ../../../../plugins/components/Buffer.cpp
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o build/obj/Buffer.o ../../../../plugins/components/Buffer.cpp
 
-Clone.o: ../../../../plugins/components/Clone.cpp ../../../../plugins/components/Clone.h \
+build/obj/Clone.o: ../../../../plugins/components/Clone.cpp ../../../../plugins/components/Clone.h \
 		../../../../kernel/simulator/ModelComponent.h \
 		../../../../kernel/simulator/Plugin.h \
 		../../../../kernel/util/Util.h \
@@ -4751,9 +4757,9 @@ Clone.o: ../../../../plugins/components/Clone.cpp ../../../../plugins/components
 		../../../../kernel/simulator/ParserManager.h \
 		../../../../kernel/simulator/ExperimentManager.h \
 		../../../../kernel/simulator/SimulationExperiment.h
-	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o Clone.o ../../../../plugins/components/Clone.cpp
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o build/obj/Clone.o ../../../../plugins/components/Clone.cpp
 
-CppForG.o: ../../../../plugins/components/CppForG.cpp ../../../../plugins/components/CppForG.h \
+build/obj/CppForG.o: ../../../../plugins/components/CppForG.cpp ../../../../plugins/components/CppForG.h \
 		../../../../kernel/simulator/ModelComponent.h \
 		../../../../kernel/simulator/Plugin.h \
 		../../../../kernel/util/Util.h \
@@ -4793,9 +4799,9 @@ CppForG.o: ../../../../plugins/components/CppForG.cpp ../../../../plugins/compon
 		../../../../kernel/simulator/ExperimentManager.h \
 		../../../../kernel/simulator/SimulationExperiment.h \
 		../../../../plugins/data/CppCompiler.h
-	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o CppForG.o ../../../../plugins/components/CppForG.cpp
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o build/obj/CppForG.o ../../../../plugins/components/CppForG.cpp
 
-Create.o: ../../../../plugins/components/Create.cpp ../../../../plugins/components/Create.h \
+build/obj/Create.o: ../../../../plugins/components/Create.cpp ../../../../plugins/components/Create.h \
 		../../../../kernel/simulator/SourceModelComponent.h \
 		../../../../kernel/simulator/ModelComponent.h \
 		../../../../kernel/simulator/Plugin.h \
@@ -4829,9 +4835,9 @@ Create.o: ../../../../plugins/components/Create.cpp ../../../../plugins/componen
 		../../../../kernel/simulator/ModelSimulation.h \
 		../../../../kernel/simulator/SimulationReporter_if.h \
 		../../../../kernel/simulator/PropertyGenesys.h
-	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o Create.o ../../../../plugins/components/Create.cpp
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o build/obj/Create.o ../../../../plugins/components/Create.cpp
 
-Decide.o: ../../../../plugins/components/Decide.cpp ../../../../plugins/components/Decide.h \
+build/obj/Decide.o: ../../../../plugins/components/Decide.cpp ../../../../plugins/components/Decide.h \
 		../../../../kernel/simulator/ModelComponent.h \
 		../../../../kernel/simulator/Plugin.h \
 		../../../../kernel/util/Util.h \
@@ -4863,9 +4869,9 @@ Decide.o: ../../../../plugins/components/Decide.cpp ../../../../plugins/componen
 		../../../../kernel/simulator/ModelSimulation.h \
 		../../../../kernel/simulator/SimulationReporter_if.h \
 		../../../../kernel/simulator/PropertyGenesys.h
-	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o Decide.o ../../../../plugins/components/Decide.cpp
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o build/obj/Decide.o ../../../../plugins/components/Decide.cpp
 
-DefaultModalModel.o: ../../../../plugins/components/DefaultModalModel.cpp ../../../../plugins/components/DefaultModalModel.h \
+build/obj/DefaultModalModel.o: ../../../../plugins/components/DefaultModalModel.cpp ../../../../plugins/components/DefaultModalModel.h \
 		../../../../kernel/simulator/ModelComponent.h \
 		../../../../kernel/simulator/Plugin.h \
 		../../../../kernel/util/Util.h \
@@ -4897,9 +4903,9 @@ DefaultModalModel.o: ../../../../plugins/components/DefaultModalModel.cpp ../../
 		../../../../kernel/simulator/ModelSimulation.h \
 		../../../../kernel/simulator/SimulationReporter_if.h \
 		../../../../kernel/simulator/PropertyGenesys.h
-	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o DefaultModalModel.o ../../../../plugins/components/DefaultModalModel.cpp
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o build/obj/DefaultModalModel.o ../../../../plugins/components/DefaultModalModel.cpp
 
-Delay.o: ../../../../plugins/components/Delay.cpp ../../../../plugins/components/Delay.h \
+build/obj/Delay.o: ../../../../plugins/components/Delay.cpp ../../../../plugins/components/Delay.h \
 		../../../../kernel/simulator/ModelComponent.h \
 		../../../../kernel/simulator/Plugin.h \
 		../../../../kernel/util/Util.h \
@@ -4931,9 +4937,9 @@ Delay.o: ../../../../plugins/components/Delay.cpp ../../../../plugins/components
 		../../../../kernel/simulator/SimulationReporter_if.h \
 		../../../../kernel/simulator/PropertyGenesys.h \
 		../../../../kernel/simulator/Attribute.h
-	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o Delay.o ../../../../plugins/components/Delay.cpp
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o build/obj/Delay.o ../../../../plugins/components/Delay.cpp
 
-DiffEquations.o: ../../../../plugins/components/DiffEquations.cpp ../../../../plugins/components/DiffEquations.h \
+build/obj/DiffEquations.o: ../../../../plugins/components/DiffEquations.cpp ../../../../plugins/components/DiffEquations.h \
 		../../../../kernel/simulator/ModelComponent.h \
 		../../../../kernel/simulator/Plugin.h \
 		../../../../kernel/util/Util.h \
@@ -4965,9 +4971,9 @@ DiffEquations.o: ../../../../plugins/components/DiffEquations.cpp ../../../../pl
 		../../../../kernel/simulator/ModelSimulation.h \
 		../../../../kernel/simulator/SimulationReporter_if.h \
 		../../../../kernel/simulator/PropertyGenesys.h
-	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o DiffEquations.o ../../../../plugins/components/DiffEquations.cpp
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o build/obj/DiffEquations.o ../../../../plugins/components/DiffEquations.cpp
 
-Dispose.o: ../../../../plugins/components/Dispose.cpp ../../../../plugins/components/Dispose.h \
+build/obj/Dispose.o: ../../../../plugins/components/Dispose.cpp ../../../../plugins/components/Dispose.h \
 		../../../../kernel/simulator/SinkModelComponent.h \
 		../../../../kernel/simulator/ModelComponent.h \
 		../../../../kernel/simulator/Plugin.h \
@@ -5000,9 +5006,9 @@ Dispose.o: ../../../../plugins/components/Dispose.cpp ../../../../plugins/compon
 		../../../../kernel/simulator/ModelSimulation.h \
 		../../../../kernel/simulator/SimulationReporter_if.h \
 		../../../../kernel/simulator/PropertyGenesys.h
-	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o Dispose.o ../../../../plugins/components/Dispose.cpp
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o build/obj/Dispose.o ../../../../plugins/components/Dispose.cpp
 
-DropOff.o: ../../../../plugins/components/DropOff.cpp ../../../../plugins/components/DropOff.h \
+build/obj/DropOff.o: ../../../../plugins/components/DropOff.cpp ../../../../plugins/components/DropOff.h \
 		../../../../kernel/simulator/ModelComponent.h \
 		../../../../kernel/simulator/Plugin.h \
 		../../../../kernel/util/Util.h \
@@ -5033,9 +5039,9 @@ DropOff.o: ../../../../plugins/components/DropOff.cpp ../../../../plugins/compon
 		../../../../kernel/simulator/ModelSimulation.h \
 		../../../../kernel/simulator/SimulationReporter_if.h \
 		../../../../kernel/simulator/PropertyGenesys.h
-	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o DropOff.o ../../../../plugins/components/DropOff.cpp
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o build/obj/DropOff.o ../../../../plugins/components/DropOff.cpp
 
-DummyComponent.o: ../../../../plugins/components/DummyComponent.cpp ../../../../plugins/components/DummyComponent.h \
+build/obj/DummyComponent.o: ../../../../plugins/components/DummyComponent.cpp ../../../../plugins/components/DummyComponent.h \
 		../../../../kernel/simulator/ModelComponent.h \
 		../../../../kernel/simulator/Plugin.h \
 		../../../../kernel/util/Util.h \
@@ -5067,9 +5073,9 @@ DummyComponent.o: ../../../../plugins/components/DummyComponent.cpp ../../../../
 		../../../../kernel/simulator/ModelSimulation.h \
 		../../../../kernel/simulator/SimulationReporter_if.h \
 		../../../../kernel/simulator/PropertyGenesys.h
-	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o DummyComponent.o ../../../../plugins/components/DummyComponent.cpp
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o build/obj/DummyComponent.o ../../../../plugins/components/DummyComponent.cpp
 
-Enter.o: ../../../../plugins/components/Enter.cpp ../../../../plugins/components/Enter.h \
+build/obj/Enter.o: ../../../../plugins/components/Enter.cpp ../../../../plugins/components/Enter.h \
 		../../../../kernel/simulator/ModelComponent.h \
 		../../../../kernel/simulator/Plugin.h \
 		../../../../kernel/util/Util.h \
@@ -5110,9 +5116,9 @@ Enter.o: ../../../../plugins/components/Enter.cpp ../../../../plugins/components
 		../../../../kernel/simulator/ParserManager.h \
 		../../../../kernel/simulator/ExperimentManager.h \
 		../../../../kernel/simulator/SimulationExperiment.h
-	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o Enter.o ../../../../plugins/components/Enter.cpp
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o build/obj/Enter.o ../../../../plugins/components/Enter.cpp
 
-Exit.o: ../../../../plugins/components/Exit.cpp ../../../../plugins/components/Exit.h \
+build/obj/Exit.o: ../../../../plugins/components/Exit.cpp ../../../../plugins/components/Exit.h \
 		../../../../kernel/simulator/ModelComponent.h \
 		../../../../kernel/simulator/Plugin.h \
 		../../../../kernel/util/Util.h \
@@ -5143,9 +5149,9 @@ Exit.o: ../../../../plugins/components/Exit.cpp ../../../../plugins/components/E
 		../../../../kernel/simulator/ModelSimulation.h \
 		../../../../kernel/simulator/SimulationReporter_if.h \
 		../../../../kernel/simulator/PropertyGenesys.h
-	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o Exit.o ../../../../plugins/components/Exit.cpp
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o build/obj/Exit.o ../../../../plugins/components/Exit.cpp
 
-PickableStationItem.o: ../../../../plugins/components/PickableStationItem.cpp ../../../../plugins/components/PickableStationItem.h \
+build/obj/PickableStationItem.o: ../../../../plugins/components/PickableStationItem.cpp ../../../../plugins/components/PickableStationItem.h \
 		../../../../kernel/simulator/Model.h \
 		../../../../kernel/util/List.h \
 		../../../../kernel/util/Util.h \
@@ -5190,9 +5196,9 @@ PickableStationItem.o: ../../../../plugins/components/PickableStationItem.cpp ..
 		../../../../kernel/simulator/ParserManager.h \
 		../../../../kernel/simulator/ExperimentManager.h \
 		../../../../kernel/simulator/SimulationExperiment.h
-	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o PickableStationItem.o ../../../../plugins/components/PickableStationItem.cpp
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o build/obj/PickableStationItem.o ../../../../plugins/components/PickableStationItem.cpp
 
-SPICECircuit.o: ../../../../plugins/components/SPICECircuit.cpp ../../../../plugins/components/SPICECircuit.h \
+build/obj/SPICECircuit.o: ../../../../plugins/components/SPICECircuit.cpp ../../../../plugins/components/SPICECircuit.h \
 		../../../../kernel/simulator/ModelComponent.h \
 		../../../../kernel/simulator/Plugin.h \
 		../../../../kernel/util/Util.h \
@@ -5225,9 +5231,9 @@ SPICECircuit.o: ../../../../plugins/components/SPICECircuit.cpp ../../../../plug
 		../../../../kernel/simulator/ModelSimulation.h \
 		../../../../kernel/simulator/SimulationReporter_if.h \
 		../../../../kernel/simulator/PropertyGenesys.h
-	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o SPICECircuit.o ../../../../plugins/components/SPICECircuit.cpp
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o build/obj/SPICECircuit.o ../../../../plugins/components/SPICECircuit.cpp
 
-SPICENode.o: ../../../../plugins/components/SPICENode.cpp ../../../../plugins/components/SPICENode.h \
+build/obj/SPICENode.o: ../../../../plugins/components/SPICENode.cpp ../../../../plugins/components/SPICENode.h \
 		../../../../kernel/simulator/ModelComponent.h \
 		../../../../kernel/simulator/Plugin.h \
 		../../../../kernel/util/Util.h \
@@ -5259,9 +5265,9 @@ SPICENode.o: ../../../../plugins/components/SPICENode.cpp ../../../../plugins/co
 		../../../../kernel/simulator/ModelSimulation.h \
 		../../../../kernel/simulator/SimulationReporter_if.h \
 		../../../../kernel/simulator/PropertyGenesys.h
-	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o SPICENode.o ../../../../plugins/components/SPICENode.cpp
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o build/obj/SPICENode.o ../../../../plugins/components/SPICENode.cpp
 
-Wait.o: ../../../../plugins/components/Wait.cpp ../../../../plugins/components/Wait.h \
+build/obj/Wait.o: ../../../../plugins/components/Wait.cpp ../../../../plugins/components/Wait.h \
 		../../../../kernel/simulator/ModelComponent.h \
 		../../../../kernel/simulator/Plugin.h \
 		../../../../kernel/util/Util.h \
@@ -5302,9 +5308,9 @@ Wait.o: ../../../../plugins/components/Wait.cpp ../../../../plugins/components/W
 		../../../../kernel/simulator/ParserManager.h \
 		../../../../kernel/simulator/ExperimentManager.h \
 		../../../../kernel/simulator/SimulationExperiment.h
-	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o Wait.o ../../../../plugins/components/Wait.cpp
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o build/obj/Wait.o ../../../../plugins/components/Wait.cpp
 
-LSODE.o: ../../../../plugins/components/LSODE.cpp ../../../../plugins/components/LSODE.h \
+build/obj/LSODE.o: ../../../../plugins/components/LSODE.cpp ../../../../plugins/components/LSODE.h \
 		../../../../kernel/simulator/ModelComponent.h \
 		../../../../kernel/simulator/Plugin.h \
 		../../../../kernel/util/Util.h \
@@ -5337,9 +5343,9 @@ LSODE.o: ../../../../plugins/components/LSODE.cpp ../../../../plugins/components
 		../../../../kernel/simulator/ModelSimulation.h \
 		../../../../kernel/simulator/SimulationReporter_if.h \
 		../../../../kernel/simulator/PropertyGenesys.h
-	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o LSODE.o ../../../../plugins/components/LSODE.cpp
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o build/obj/LSODE.o ../../../../plugins/components/LSODE.cpp
 
-Leave.o: ../../../../plugins/components/Leave.cpp ../../../../plugins/components/Leave.h \
+build/obj/Leave.o: ../../../../plugins/components/Leave.cpp ../../../../plugins/components/Leave.h \
 		../../../../kernel/simulator/ModelComponent.h \
 		../../../../kernel/simulator/Plugin.h \
 		../../../../kernel/util/Util.h \
@@ -5380,9 +5386,9 @@ Leave.o: ../../../../plugins/components/Leave.cpp ../../../../plugins/components
 		../../../../kernel/simulator/ParserManager.h \
 		../../../../kernel/simulator/ExperimentManager.h \
 		../../../../kernel/simulator/SimulationExperiment.h
-	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o Leave.o ../../../../plugins/components/Leave.cpp
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o build/obj/Leave.o ../../../../plugins/components/Leave.cpp
 
-MarkovChain.o: ../../../../plugins/components/MarkovChain.cpp ../../../../plugins/components/MarkovChain.h \
+build/obj/MarkovChain.o: ../../../../plugins/components/MarkovChain.cpp ../../../../plugins/components/MarkovChain.h \
 		../../../../kernel/simulator/ModelComponent.h \
 		../../../../kernel/simulator/Plugin.h \
 		../../../../kernel/util/Util.h \
@@ -5448,9 +5454,9 @@ MarkovChain.o: ../../../../plugins/components/MarkovChain.cpp ../../../../plugin
 		../../../../kernel/statistics/StatisticsDataFile_if.h \
 		../../../../kernel/statistics/SorttFile.h \
 		../../../../kernel/statistics/SamplerDefaultImpl1.h
-	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o MarkovChain.o ../../../../plugins/components/MarkovChain.cpp
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o build/obj/MarkovChain.o ../../../../plugins/components/MarkovChain.cpp
 
-Match.o: ../../../../plugins/components/Match.cpp ../../../../plugins/components/Match.h \
+build/obj/Match.o: ../../../../plugins/components/Match.cpp ../../../../plugins/components/Match.h \
 		../../../../kernel/simulator/ModelComponent.h \
 		../../../../kernel/simulator/Plugin.h \
 		../../../../kernel/util/Util.h \
@@ -5490,9 +5496,9 @@ Match.o: ../../../../plugins/components/Match.cpp ../../../../plugins/components
 		../../../../kernel/simulator/ParserManager.h \
 		../../../../kernel/simulator/ExperimentManager.h \
 		../../../../kernel/simulator/SimulationExperiment.h
-	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o Match.o ../../../../plugins/components/Match.cpp
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o build/obj/Match.o ../../../../plugins/components/Match.cpp
 
-OLD_ODEelement.o: ../../../../plugins/components/OLD_ODEelement.cpp ../../../../plugins/components/OLD_ODEelement.h \
+build/obj/OLD_ODEelement.o: ../../../../plugins/components/OLD_ODEelement.cpp ../../../../plugins/components/OLD_ODEelement.h \
 		../../../../kernel/simulator/ModelDataDefinition.h \
 		../../../../kernel/util/List.h \
 		../../../../kernel/util/Util.h \
@@ -5523,9 +5529,9 @@ OLD_ODEelement.o: ../../../../plugins/components/OLD_ODEelement.cpp ../../../../
 		../../../../kernel/simulator/ModelSimulation.h \
 		../../../../kernel/simulator/SimulationReporter_if.h \
 		../../../../kernel/simulator/PropertyGenesys.h
-	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o OLD_ODEelement.o ../../../../plugins/components/OLD_ODEelement.cpp
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o build/obj/OLD_ODEelement.o ../../../../plugins/components/OLD_ODEelement.cpp
 
-PickStation.o: ../../../../plugins/components/PickStation.cpp ../../../../plugins/components/PickStation.h \
+build/obj/PickStation.o: ../../../../plugins/components/PickStation.cpp ../../../../plugins/components/PickStation.h \
 		../../../../kernel/simulator/ModelComponent.h \
 		../../../../kernel/simulator/Plugin.h \
 		../../../../kernel/util/Util.h \
@@ -5571,9 +5577,9 @@ PickStation.o: ../../../../plugins/components/PickStation.cpp ../../../../plugin
 		../../../../kernel/simulator/ParserManager.h \
 		../../../../kernel/simulator/ExperimentManager.h \
 		../../../../kernel/simulator/SimulationExperiment.h
-	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o PickStation.o ../../../../plugins/components/PickStation.cpp
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o build/obj/PickStation.o ../../../../plugins/components/PickStation.cpp
 
-PickUp.o: ../../../../plugins/components/PickUp.cpp ../../../../plugins/components/PickUp.h \
+build/obj/PickUp.o: ../../../../plugins/components/PickUp.cpp ../../../../plugins/components/PickUp.h \
 		../../../../plugins/components/Remove.h \
 		../../../../kernel/simulator/ModelComponent.h \
 		../../../../kernel/simulator/Plugin.h \
@@ -5593,9 +5599,9 @@ PickUp.o: ../../../../plugins/components/PickUp.cpp ../../../../plugins/componen
 		../../../../kernel/statistics/Collector_if.h \
 		../../../../kernel/simulator/ModelDataManager.h \
 		../../../../kernel/simulator/ConnectionManager.h
-	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o PickUp.o ../../../../plugins/components/PickUp.cpp
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o build/obj/PickUp.o ../../../../plugins/components/PickUp.cpp
 
-Process.o: ../../../../plugins/components/Process.cpp ../../../../plugins/components/Process.h \
+build/obj/Process.o: ../../../../plugins/components/Process.cpp ../../../../plugins/components/Process.h \
 		../../../../kernel/simulator/ModelComponent.h \
 		../../../../kernel/simulator/Plugin.h \
 		../../../../kernel/util/Util.h \
@@ -5645,9 +5651,9 @@ Process.o: ../../../../plugins/components/Process.cpp ../../../../plugins/compon
 		../../../../kernel/simulator/ParserManager.h \
 		../../../../kernel/simulator/ExperimentManager.h \
 		../../../../kernel/simulator/SimulationExperiment.h
-	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o Process.o ../../../../plugins/components/Process.cpp
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o build/obj/Process.o ../../../../plugins/components/Process.cpp
 
-QueueableItem.o: ../../../../plugins/components/QueueableItem.cpp ../../../../plugins/components/QueueableItem.h \
+build/obj/QueueableItem.o: ../../../../plugins/components/QueueableItem.cpp ../../../../plugins/components/QueueableItem.h \
 		../../../../plugins/data/Queue.h \
 		../../../../kernel/simulator/ModelDataDefinition.h \
 		../../../../kernel/util/List.h \
@@ -5688,9 +5694,9 @@ QueueableItem.o: ../../../../plugins/components/QueueableItem.cpp ../../../../pl
 		../../../../kernel/simulator/ParserManager.h \
 		../../../../kernel/simulator/ExperimentManager.h \
 		../../../../kernel/simulator/SimulationExperiment.h
-	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o QueueableItem.o ../../../../plugins/components/QueueableItem.cpp
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o build/obj/QueueableItem.o ../../../../plugins/components/QueueableItem.cpp
 
-Record.o: ../../../../plugins/components/Record.cpp ../../../../plugins/components/Record.h \
+build/obj/Record.o: ../../../../plugins/components/Record.cpp ../../../../plugins/components/Record.h \
 		../../../../kernel/simulator/ModelComponent.h \
 		../../../../kernel/simulator/Plugin.h \
 		../../../../kernel/util/Util.h \
@@ -5721,9 +5727,9 @@ Record.o: ../../../../plugins/components/Record.cpp ../../../../plugins/componen
 		../../../../kernel/simulator/ModelSimulation.h \
 		../../../../kernel/simulator/SimulationReporter_if.h \
 		../../../../kernel/simulator/PropertyGenesys.h
-	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o Record.o ../../../../plugins/components/Record.cpp
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o build/obj/Record.o ../../../../plugins/components/Record.cpp
 
-Release.o: ../../../../plugins/components/Release.cpp ../../../../plugins/components/Release.h \
+build/obj/Release.o: ../../../../plugins/components/Release.cpp ../../../../plugins/components/Release.h \
 		../../../../kernel/simulator/ModelComponent.h \
 		../../../../kernel/simulator/Plugin.h \
 		../../../../kernel/util/Util.h \
@@ -5768,9 +5774,9 @@ Release.o: ../../../../plugins/components/Release.cpp ../../../../plugins/compon
 		../../../../kernel/simulator/ParserManager.h \
 		../../../../kernel/simulator/ExperimentManager.h \
 		../../../../kernel/simulator/SimulationExperiment.h
-	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o Release.o ../../../../plugins/components/Release.cpp
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o build/obj/Release.o ../../../../plugins/components/Release.cpp
 
-Remove.o: ../../../../plugins/components/Remove.cpp ../../../../plugins/components/Remove.h \
+build/obj/Remove.o: ../../../../plugins/components/Remove.cpp ../../../../plugins/components/Remove.h \
 		../../../../kernel/simulator/ModelComponent.h \
 		../../../../kernel/simulator/Plugin.h \
 		../../../../kernel/util/Util.h \
@@ -5811,9 +5817,9 @@ Remove.o: ../../../../plugins/components/Remove.cpp ../../../../plugins/componen
 		../../../../kernel/simulator/SimulationExperiment.h \
 		../../../../plugins/data/EntityGroup.h \
 		../../../../plugins/data/Queue.h
-	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o Remove.o ../../../../plugins/components/Remove.cpp
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o build/obj/Remove.o ../../../../plugins/components/Remove.cpp
 
-Route.o: ../../../../plugins/components/Route.cpp ../../../../plugins/components/Route.h \
+build/obj/Route.o: ../../../../plugins/components/Route.cpp ../../../../plugins/components/Route.h \
 		../../../../kernel/simulator/ModelComponent.h \
 		../../../../kernel/simulator/Plugin.h \
 		../../../../kernel/util/Util.h \
@@ -5858,9 +5864,9 @@ Route.o: ../../../../plugins/components/Route.cpp ../../../../plugins/components
 		../../../../kernel/simulator/ParserManager.h \
 		../../../../kernel/simulator/ExperimentManager.h \
 		../../../../kernel/simulator/SimulationExperiment.h
-	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o Route.o ../../../../plugins/components/Route.cpp
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o build/obj/Route.o ../../../../plugins/components/Route.cpp
 
-Search.o: ../../../../plugins/components/Search.cpp ../../../../plugins/components/Search.h \
+build/obj/Search.o: ../../../../plugins/components/Search.cpp ../../../../plugins/components/Search.h \
 		../../../../kernel/simulator/ModelComponent.h \
 		../../../../kernel/simulator/Plugin.h \
 		../../../../kernel/util/Util.h \
@@ -5902,9 +5908,9 @@ Search.o: ../../../../plugins/components/Search.cpp ../../../../plugins/componen
 		../../../../kernel/simulator/Attribute.h \
 		../../../../plugins/data/EntityGroup.h \
 		../../../../plugins/data/Queue.h
-	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o Search.o ../../../../plugins/components/Search.cpp
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o build/obj/Search.o ../../../../plugins/components/Search.cpp
 
-SeizableItem.o: ../../../../plugins/components/SeizableItem.cpp ../../../../plugins/components/SeizableItem.h \
+build/obj/SeizableItem.o: ../../../../plugins/components/SeizableItem.cpp ../../../../plugins/components/SeizableItem.h \
 		../../../../plugins/data/Resource.h \
 		../../../../kernel/simulator/ModelDataDefinition.h \
 		../../../../kernel/util/List.h \
@@ -5948,9 +5954,9 @@ SeizableItem.o: ../../../../plugins/components/SeizableItem.cpp ../../../../plug
 		../../../../kernel/simulator/ParserManager.h \
 		../../../../kernel/simulator/ExperimentManager.h \
 		../../../../kernel/simulator/SimulationExperiment.h
-	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o SeizableItem.o ../../../../plugins/components/SeizableItem.cpp
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o build/obj/SeizableItem.o ../../../../plugins/components/SeizableItem.cpp
 
-Seize.o: ../../../../plugins/components/Seize.cpp ../../../../plugins/components/Seize.h \
+build/obj/Seize.o: ../../../../plugins/components/Seize.cpp ../../../../plugins/components/Seize.h \
 		../../../../kernel/simulator/ModelComponent.h \
 		../../../../kernel/simulator/Plugin.h \
 		../../../../kernel/util/Util.h \
@@ -5998,9 +6004,9 @@ Seize.o: ../../../../plugins/components/Seize.cpp ../../../../plugins/components
 		../../../../kernel/simulator/ParserManager.h \
 		../../../../kernel/simulator/ExperimentManager.h \
 		../../../../kernel/simulator/SimulationExperiment.h
-	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o Seize.o ../../../../plugins/components/Seize.cpp
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o build/obj/Seize.o ../../../../plugins/components/Seize.cpp
 
-Separate.o: ../../../../plugins/components/Separate.cpp ../../../../plugins/components/Separate.h \
+build/obj/Separate.o: ../../../../plugins/components/Separate.cpp ../../../../plugins/components/Separate.h \
 		../../../../kernel/simulator/ModelComponent.h \
 		../../../../kernel/simulator/Plugin.h \
 		../../../../kernel/util/Util.h \
@@ -6033,9 +6039,9 @@ Separate.o: ../../../../plugins/components/Separate.cpp ../../../../plugins/comp
 		../../../../kernel/simulator/PropertyGenesys.h \
 		../../../../kernel/simulator/Attribute.h \
 		../../../../plugins/data/EntityGroup.h
-	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o Separate.o ../../../../plugins/components/Separate.cpp
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o build/obj/Separate.o ../../../../plugins/components/Separate.cpp
 
-Signal.o: ../../../../plugins/components/Signal.cpp ../../../../plugins/components/Signal.h \
+build/obj/Signal.o: ../../../../plugins/components/Signal.cpp ../../../../plugins/components/Signal.h \
 		../../../../kernel/simulator/ModelComponent.h \
 		../../../../kernel/simulator/Plugin.h \
 		../../../../kernel/util/Util.h \
@@ -6075,9 +6081,9 @@ Signal.o: ../../../../plugins/components/Signal.cpp ../../../../plugins/componen
 		../../../../kernel/simulator/ParserManager.h \
 		../../../../kernel/simulator/ExperimentManager.h \
 		../../../../kernel/simulator/SimulationExperiment.h
-	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o Signal.o ../../../../plugins/components/Signal.cpp
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o build/obj/Signal.o ../../../../plugins/components/Signal.cpp
 
-Start.o: ../../../../plugins/components/Start.cpp ../../../../plugins/components/Start.h \
+build/obj/Start.o: ../../../../plugins/components/Start.cpp ../../../../plugins/components/Start.h \
 		../../../../kernel/simulator/ModelComponent.h \
 		../../../../kernel/simulator/Plugin.h \
 		../../../../kernel/util/Util.h \
@@ -6108,9 +6114,9 @@ Start.o: ../../../../plugins/components/Start.cpp ../../../../plugins/components
 		../../../../kernel/simulator/ModelSimulation.h \
 		../../../../kernel/simulator/SimulationReporter_if.h \
 		../../../../kernel/simulator/PropertyGenesys.h
-	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o Start.o ../../../../plugins/components/Start.cpp
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o build/obj/Start.o ../../../../plugins/components/Start.cpp
 
-Stop.o: ../../../../plugins/components/Stop.cpp ../../../../plugins/components/Stop.h \
+build/obj/Stop.o: ../../../../plugins/components/Stop.cpp ../../../../plugins/components/Stop.h \
 		../../../../kernel/simulator/ModelComponent.h \
 		../../../../kernel/simulator/Plugin.h \
 		../../../../kernel/util/Util.h \
@@ -6141,9 +6147,9 @@ Stop.o: ../../../../plugins/components/Stop.cpp ../../../../plugins/components/S
 		../../../../kernel/simulator/ModelSimulation.h \
 		../../../../kernel/simulator/SimulationReporter_if.h \
 		../../../../kernel/simulator/PropertyGenesys.h
-	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o Stop.o ../../../../plugins/components/Stop.cpp
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o build/obj/Stop.o ../../../../plugins/components/Stop.cpp
 
-Store.o: ../../../../plugins/components/Store.cpp ../../../../plugins/components/Store.h \
+build/obj/Store.o: ../../../../plugins/components/Store.cpp ../../../../plugins/components/Store.h \
 		../../../../kernel/simulator/ModelComponent.h \
 		../../../../kernel/simulator/Plugin.h \
 		../../../../kernel/util/Util.h \
@@ -6174,9 +6180,9 @@ Store.o: ../../../../plugins/components/Store.cpp ../../../../plugins/components
 		../../../../kernel/simulator/ModelSimulation.h \
 		../../../../kernel/simulator/SimulationReporter_if.h \
 		../../../../kernel/simulator/PropertyGenesys.h
-	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o Store.o ../../../../plugins/components/Store.cpp
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o build/obj/Store.o ../../../../plugins/components/Store.cpp
 
-Submodel.o: ../../../../plugins/components/Submodel.cpp ../../../../plugins/components/Submodel.h \
+build/obj/Submodel.o: ../../../../plugins/components/Submodel.cpp ../../../../plugins/components/Submodel.h \
 		../../../../kernel/simulator/ModelComponent.h \
 		../../../../kernel/simulator/Plugin.h \
 		../../../../kernel/util/Util.h \
@@ -6207,9 +6213,9 @@ Submodel.o: ../../../../plugins/components/Submodel.cpp ../../../../plugins/comp
 		../../../../kernel/simulator/ModelSimulation.h \
 		../../../../kernel/simulator/SimulationReporter_if.h \
 		../../../../kernel/simulator/PropertyGenesys.h
-	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o Submodel.o ../../../../plugins/components/Submodel.cpp
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o build/obj/Submodel.o ../../../../plugins/components/Submodel.cpp
 
-Unstore.o: ../../../../plugins/components/Unstore.cpp ../../../../plugins/components/Unstore.h \
+build/obj/Unstore.o: ../../../../plugins/components/Unstore.cpp ../../../../plugins/components/Unstore.h \
 		../../../../kernel/simulator/ModelComponent.h \
 		../../../../kernel/simulator/Plugin.h \
 		../../../../kernel/util/Util.h \
@@ -6240,9 +6246,9 @@ Unstore.o: ../../../../plugins/components/Unstore.cpp ../../../../plugins/compon
 		../../../../kernel/simulator/ModelSimulation.h \
 		../../../../kernel/simulator/SimulationReporter_if.h \
 		../../../../kernel/simulator/PropertyGenesys.h
-	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o Unstore.o ../../../../plugins/components/Unstore.cpp
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o build/obj/Unstore.o ../../../../plugins/components/Unstore.cpp
 
-Write.o: ../../../../plugins/components/Write.cpp ../../../../plugins/components/Write.h \
+build/obj/Write.o: ../../../../plugins/components/Write.cpp ../../../../plugins/components/Write.h \
 		../../../../kernel/simulator/ModelComponent.h \
 		../../../../kernel/simulator/Plugin.h \
 		../../../../kernel/util/Util.h \
@@ -6273,9 +6279,9 @@ Write.o: ../../../../plugins/components/Write.cpp ../../../../plugins/components
 		../../../../kernel/simulator/ModelSimulation.h \
 		../../../../kernel/simulator/SimulationReporter_if.h \
 		../../../../kernel/simulator/PropertyGenesys.h
-	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o Write.o ../../../../plugins/components/Write.cpp
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o build/obj/Write.o ../../../../plugins/components/Write.cpp
 
-DefaultNode.o: ../../../../plugins/components/network/DefaultNode.cpp ../../../../plugins/components/network/DefaultNode.h \
+build/obj/DefaultNode.o: ../../../../plugins/components/network/DefaultNode.cpp ../../../../plugins/components/network/DefaultNode.h \
 		../../../../kernel/simulator/ModelComponent.h \
 		../../../../kernel/simulator/Plugin.h \
 		../../../../kernel/util/Util.h \
@@ -6306,9 +6312,9 @@ DefaultNode.o: ../../../../plugins/components/network/DefaultNode.cpp ../../../.
 		../../../../kernel/simulator/ModelSimulation.h \
 		../../../../kernel/simulator/SimulationReporter_if.h \
 		../../../../kernel/simulator/PropertyGenesys.h
-	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o DefaultNode.o ../../../../plugins/components/network/DefaultNode.cpp
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o build/obj/DefaultNode.o ../../../../plugins/components/network/DefaultNode.cpp
 
-AssignmentItem.o: ../../../../plugins/data/AssignmentItem.cpp ../../../../plugins/data/AssignmentItem.h \
+build/obj/AssignmentItem.o: ../../../../plugins/data/AssignmentItem.cpp ../../../../plugins/data/AssignmentItem.h \
 		../../../../kernel/simulator/Model.h \
 		../../../../kernel/util/List.h \
 		../../../../kernel/util/Util.h \
@@ -6341,9 +6347,9 @@ AssignmentItem.o: ../../../../plugins/data/AssignmentItem.cpp ../../../../plugin
 		../../../../kernel/simulator/PropertyGenesys.h \
 		../../../../kernel/simulator/Attribute.h \
 		../../../../plugins/data/Variable.h
-	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o AssignmentItem.o ../../../../plugins/data/AssignmentItem.cpp
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o build/obj/AssignmentItem.o ../../../../plugins/data/AssignmentItem.cpp
 
-CppCompiler.o: ../../../../plugins/data/CppCompiler.cpp ../../../../plugins/data/CppCompiler.h \
+build/obj/CppCompiler.o: ../../../../plugins/data/CppCompiler.cpp ../../../../plugins/data/CppCompiler.h \
 		../../../../kernel/simulator/ModelDataDefinition.h \
 		../../../../kernel/util/List.h \
 		../../../../kernel/util/Util.h \
@@ -6374,9 +6380,9 @@ CppCompiler.o: ../../../../plugins/data/CppCompiler.cpp ../../../../plugins/data
 		../../../../kernel/simulator/ModelSimulation.h \
 		../../../../kernel/simulator/SimulationReporter_if.h \
 		../../../../kernel/simulator/PropertyGenesys.h
-	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o CppCompiler.o ../../../../plugins/data/CppCompiler.cpp
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o build/obj/CppCompiler.o ../../../../plugins/data/CppCompiler.cpp
 
-DummyElement.o: ../../../../plugins/data/DummyElement.cpp ../../../../plugins/data/DummyElement.h \
+build/obj/DummyElement.o: ../../../../plugins/data/DummyElement.cpp ../../../../plugins/data/DummyElement.h \
 		../../../../kernel/simulator/ModelDataDefinition.h \
 		../../../../kernel/util/List.h \
 		../../../../kernel/util/Util.h \
@@ -6386,9 +6392,9 @@ DummyElement.o: ../../../../plugins/data/DummyElement.cpp ../../../../plugins/da
 		../../../../kernel/simulator/SimulationControlAndResponse.h \
 		../../../../kernel/simulator/TraceManager.h \
 		../../../../kernel/simulator/PluginInformation.h
-	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o DummyElement.o ../../../../plugins/data/DummyElement.cpp
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o build/obj/DummyElement.o ../../../../plugins/data/DummyElement.cpp
 
-EntityGroup.o: ../../../../plugins/data/EntityGroup.cpp ../../../../plugins/data/EntityGroup.h \
+build/obj/EntityGroup.o: ../../../../plugins/data/EntityGroup.cpp ../../../../plugins/data/EntityGroup.h \
 		../../../../kernel/simulator/ModelDataDefinition.h \
 		../../../../kernel/util/List.h \
 		../../../../kernel/util/Util.h \
@@ -6420,9 +6426,9 @@ EntityGroup.o: ../../../../plugins/data/EntityGroup.cpp ../../../../plugins/data
 		../../../../kernel/simulator/SimulationReporter_if.h \
 		../../../../kernel/simulator/PropertyGenesys.h \
 		../../../../kernel/simulator/Attribute.h
-	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o EntityGroup.o ../../../../plugins/data/EntityGroup.cpp
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o build/obj/EntityGroup.o ../../../../plugins/data/EntityGroup.cpp
 
-Failure.o: ../../../../plugins/data/Failure.cpp ../../../../plugins/data/Failure.h \
+build/obj/Failure.o: ../../../../plugins/data/Failure.cpp ../../../../plugins/data/Failure.h \
 		../../../../kernel/simulator/ModelDataDefinition.h \
 		../../../../kernel/util/List.h \
 		../../../../kernel/util/Util.h \
@@ -6456,9 +6462,9 @@ Failure.o: ../../../../plugins/data/Failure.cpp ../../../../plugins/data/Failure
 		../../../../plugins/data/Resource.h \
 		../../../../kernel/simulator/Counter.h \
 		../../../../plugins/data/Schedule.h
-	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o Failure.o ../../../../plugins/data/Failure.cpp
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o build/obj/Failure.o ../../../../plugins/data/Failure.cpp
 
-File.o: ../../../../plugins/data/File.cpp ../../../../plugins/data/File.h \
+build/obj/File.o: ../../../../plugins/data/File.cpp ../../../../plugins/data/File.h \
 		../../../../kernel/simulator/ModelDataDefinition.h \
 		../../../../kernel/util/List.h \
 		../../../../kernel/util/Util.h \
@@ -6469,9 +6475,9 @@ File.o: ../../../../plugins/data/File.cpp ../../../../plugins/data/File.h \
 		../../../../kernel/simulator/TraceManager.h \
 		../../../../kernel/simulator/ModelDataManager.h \
 		../../../../kernel/simulator/PluginInformation.h
-	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o File.o ../../../../plugins/data/File.cpp
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o build/obj/File.o ../../../../plugins/data/File.cpp
 
-Formula.o: ../../../../plugins/data/Formula.cpp ../../../../plugins/data/Formula.h \
+build/obj/Formula.o: ../../../../plugins/data/Formula.cpp ../../../../plugins/data/Formula.h \
 		../../../../kernel/simulator/ModelDataDefinition.h \
 		../../../../kernel/util/List.h \
 		../../../../kernel/util/Util.h \
@@ -6530,9 +6536,9 @@ Formula.o: ../../../../plugins/data/Formula.cpp ../../../../plugins/data/Formula
 		../../../../kernel/statistics/StatisticsDataFile_if.h \
 		../../../../kernel/statistics/SorttFile.h \
 		../../../../kernel/statistics/SamplerDefaultImpl1.h
-	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o Formula.o ../../../../plugins/data/Formula.cpp
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o build/obj/Formula.o ../../../../plugins/data/Formula.cpp
 
-Label.o: ../../../../plugins/data/Label.cpp ../../../../plugins/data/Label.h \
+build/obj/Label.o: ../../../../plugins/data/Label.cpp ../../../../plugins/data/Label.h \
 		../../../../kernel/simulator/ModelDataDefinition.h \
 		../../../../kernel/util/List.h \
 		../../../../kernel/util/Util.h \
@@ -6563,9 +6569,9 @@ Label.o: ../../../../plugins/data/Label.cpp ../../../../plugins/data/Label.h \
 		../../../../kernel/simulator/ModelSimulation.h \
 		../../../../kernel/simulator/SimulationReporter_if.h \
 		../../../../kernel/simulator/PropertyGenesys.h
-	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o Label.o ../../../../plugins/data/Label.cpp
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o build/obj/Label.o ../../../../plugins/data/Label.cpp
 
-Queue.o: ../../../../plugins/data/Queue.cpp ../../../../plugins/data/Queue.h \
+build/obj/Queue.o: ../../../../plugins/data/Queue.cpp ../../../../plugins/data/Queue.h \
 		../../../../kernel/simulator/ModelDataDefinition.h \
 		../../../../kernel/util/List.h \
 		../../../../kernel/util/Util.h \
@@ -6597,9 +6603,9 @@ Queue.o: ../../../../plugins/data/Queue.cpp ../../../../plugins/data/Queue.h \
 		../../../../kernel/simulator/SimulationReporter_if.h \
 		../../../../kernel/simulator/PropertyGenesys.h \
 		../../../../kernel/simulator/Attribute.h
-	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o Queue.o ../../../../plugins/data/Queue.cpp
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o build/obj/Queue.o ../../../../plugins/data/Queue.cpp
 
-Resource.o: ../../../../plugins/data/Resource.cpp ../../../../plugins/data/Resource.h \
+build/obj/Resource.o: ../../../../plugins/data/Resource.cpp ../../../../plugins/data/Resource.h \
 		../../../../kernel/simulator/ModelDataDefinition.h \
 		../../../../kernel/util/List.h \
 		../../../../kernel/util/Util.h \
@@ -6633,9 +6639,9 @@ Resource.o: ../../../../plugins/data/Resource.cpp ../../../../plugins/data/Resou
 		../../../../kernel/simulator/ModelSimulation.h \
 		../../../../kernel/simulator/SimulationReporter_if.h \
 		../../../../kernel/simulator/PropertyGenesys.h
-	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o Resource.o ../../../../plugins/data/Resource.cpp
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o build/obj/Resource.o ../../../../plugins/data/Resource.cpp
 
-SPICERunner.o: ../../../../plugins/data/SPICERunner.cpp ../../../../plugins/data/SPICERunner.h \
+build/obj/SPICERunner.o: ../../../../plugins/data/SPICERunner.cpp ../../../../plugins/data/SPICERunner.h \
 		../../../../kernel/simulator/ModelDataDefinition.h \
 		../../../../kernel/util/List.h \
 		../../../../kernel/util/Util.h \
@@ -6645,9 +6651,9 @@ SPICERunner.o: ../../../../plugins/data/SPICERunner.cpp ../../../../plugins/data
 		../../../../kernel/simulator/SimulationControlAndResponse.h \
 		../../../../kernel/simulator/TraceManager.h \
 		../../../../kernel/simulator/PluginInformation.h
-	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o SPICERunner.o ../../../../plugins/data/SPICERunner.cpp
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o build/obj/SPICERunner.o ../../../../plugins/data/SPICERunner.cpp
 
-Schedule.o: ../../../../plugins/data/Schedule.cpp ../../../../plugins/data/Schedule.h \
+build/obj/Schedule.o: ../../../../plugins/data/Schedule.cpp ../../../../plugins/data/Schedule.h \
 		../../../../kernel/simulator/ModelDataDefinition.h \
 		../../../../kernel/util/List.h \
 		../../../../kernel/util/Util.h \
@@ -6678,9 +6684,9 @@ Schedule.o: ../../../../plugins/data/Schedule.cpp ../../../../plugins/data/Sched
 		../../../../kernel/simulator/ModelSimulation.h \
 		../../../../kernel/simulator/SimulationReporter_if.h \
 		../../../../kernel/simulator/PropertyGenesys.h
-	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o Schedule.o ../../../../plugins/data/Schedule.cpp
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o build/obj/Schedule.o ../../../../plugins/data/Schedule.cpp
 
-Sequence.o: ../../../../plugins/data/Sequence.cpp ../../../../plugins/data/Sequence.h \
+build/obj/Sequence.o: ../../../../plugins/data/Sequence.cpp ../../../../plugins/data/Sequence.h \
 		../../../../kernel/simulator/ModelDataDefinition.h \
 		../../../../kernel/util/List.h \
 		../../../../kernel/util/Util.h \
@@ -6723,9 +6729,9 @@ Sequence.o: ../../../../plugins/data/Sequence.cpp ../../../../plugins/data/Seque
 		../../../../kernel/simulator/ParserManager.h \
 		../../../../kernel/simulator/ExperimentManager.h \
 		../../../../kernel/simulator/SimulationExperiment.h
-	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o Sequence.o ../../../../plugins/data/Sequence.cpp
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o build/obj/Sequence.o ../../../../plugins/data/Sequence.cpp
 
-Set.o: ../../../../plugins/data/Set.cpp ../../../../plugins/data/Set.h \
+build/obj/Set.o: ../../../../plugins/data/Set.cpp ../../../../plugins/data/Set.h \
 		../../../../kernel/simulator/ModelDataDefinition.h \
 		../../../../kernel/util/List.h \
 		../../../../kernel/util/Util.h \
@@ -6756,9 +6762,9 @@ Set.o: ../../../../plugins/data/Set.cpp ../../../../plugins/data/Set.h \
 		../../../../kernel/simulator/ModelSimulation.h \
 		../../../../kernel/simulator/SimulationReporter_if.h \
 		../../../../kernel/simulator/PropertyGenesys.h
-	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o Set.o ../../../../plugins/data/Set.cpp
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o build/obj/Set.o ../../../../plugins/data/Set.cpp
 
-SignalData.o: ../../../../plugins/data/SignalData.cpp ../../../../plugins/data/SignalData.h \
+build/obj/SignalData.o: ../../../../plugins/data/SignalData.cpp ../../../../plugins/data/SignalData.h \
 		../../../../kernel/simulator/ModelDataDefinition.h \
 		../../../../kernel/util/List.h \
 		../../../../kernel/util/Util.h \
@@ -6789,9 +6795,9 @@ SignalData.o: ../../../../plugins/data/SignalData.cpp ../../../../plugins/data/S
 		../../../../kernel/simulator/ModelSimulation.h \
 		../../../../kernel/simulator/SimulationReporter_if.h \
 		../../../../kernel/simulator/PropertyGenesys.h
-	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o SignalData.o ../../../../plugins/data/SignalData.cpp
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o build/obj/SignalData.o ../../../../plugins/data/SignalData.cpp
 
-Station.o: ../../../../plugins/data/Station.cpp ../../../../plugins/data/Station.h \
+build/obj/Station.o: ../../../../plugins/data/Station.cpp ../../../../plugins/data/Station.h \
 		../../../../kernel/simulator/ModelDataDefinition.h \
 		../../../../kernel/util/List.h \
 		../../../../kernel/util/Util.h \
@@ -6823,9 +6829,9 @@ Station.o: ../../../../plugins/data/Station.cpp ../../../../plugins/data/Station
 		../../../../kernel/simulator/SimulationReporter_if.h \
 		../../../../kernel/simulator/PropertyGenesys.h \
 		../../../../kernel/simulator/Attribute.h
-	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o Station.o ../../../../plugins/data/Station.cpp
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o build/obj/Station.o ../../../../plugins/data/Station.cpp
 
-Storage.o: ../../../../plugins/data/Storage.cpp ../../../../plugins/data/Storage.h \
+build/obj/Storage.o: ../../../../plugins/data/Storage.cpp ../../../../plugins/data/Storage.h \
 		../../../../kernel/simulator/ModelDataDefinition.h \
 		../../../../kernel/util/List.h \
 		../../../../kernel/util/Util.h \
@@ -6856,9 +6862,9 @@ Storage.o: ../../../../plugins/data/Storage.cpp ../../../../plugins/data/Storage
 		../../../../kernel/simulator/ModelSimulation.h \
 		../../../../kernel/simulator/SimulationReporter_if.h \
 		../../../../kernel/simulator/PropertyGenesys.h
-	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o Storage.o ../../../../plugins/data/Storage.cpp
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o build/obj/Storage.o ../../../../plugins/data/Storage.cpp
 
-Variable.o: ../../../../plugins/data/Variable.cpp ../../../../plugins/data/Variable.h \
+build/obj/Variable.o: ../../../../plugins/data/Variable.cpp ../../../../plugins/data/Variable.h \
 		../../../../kernel/simulator/ModelDataDefinition.h \
 		../../../../kernel/util/List.h \
 		../../../../kernel/util/Util.h \
@@ -6889,13 +6895,13 @@ Variable.o: ../../../../plugins/data/Variable.cpp ../../../../plugins/data/Varia
 		../../../../kernel/simulator/ModelSimulation.h \
 		../../../../kernel/simulator/SimulationReporter_if.h \
 		../../../../kernel/simulator/PropertyGenesys.h
-	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o Variable.o ../../../../plugins/data/Variable.cpp
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o build/obj/Variable.o ../../../../plugins/data/Variable.cpp
 
-FitterDummyImpl.o: ../../../../tools/FitterDummyImpl.cpp ../../../../tools/FitterDummyImpl.h \
+build/obj/FitterDummyImpl.o: ../../../../tools/FitterDummyImpl.cpp ../../../../tools/FitterDummyImpl.h \
 		../../../../tools/Fitter_if.h
-	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o FitterDummyImpl.o ../../../../tools/FitterDummyImpl.cpp
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o build/obj/FitterDummyImpl.o ../../../../tools/FitterDummyImpl.cpp
 
-HypothesisTesterDefaultImpl1.o: ../../../../tools/HypothesisTesterDefaultImpl1.cpp ../../../../tools/HypothesisTesterDefaultImpl1.h \
+build/obj/HypothesisTesterDefaultImpl1.o: ../../../../tools/HypothesisTesterDefaultImpl1.cpp ../../../../tools/HypothesisTesterDefaultImpl1.h \
 		../../../../tools/HypothesisTester_if.h \
 		../../../../kernel/statistics/StatisticsDataFile_if.h \
 		../../../../kernel/statistics/CollectorDatafile_if.h \
@@ -6959,9 +6965,9 @@ HypothesisTesterDefaultImpl1.o: ../../../../tools/HypothesisTesterDefaultImpl1.c
 		../../../../kernel/statistics/StatisticsDataFileDefaultImpl.h \
 		../../../../kernel/statistics/SorttFile.h \
 		../../../../kernel/statistics/SamplerDefaultImpl1.h
-	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o HypothesisTesterDefaultImpl1.o ../../../../tools/HypothesisTesterDefaultImpl1.cpp
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o build/obj/HypothesisTesterDefaultImpl1.o ../../../../tools/HypothesisTesterDefaultImpl1.cpp
 
-ProbabilityDistribution.o: ../../../../tools/ProbabilityDistribution.cpp ../../../../tools/ProbabilityDistribution.h \
+build/obj/ProbabilityDistribution.o: ../../../../tools/ProbabilityDistribution.cpp ../../../../tools/ProbabilityDistribution.h \
 		../../../../tools/ProbabilityDistributionBase.h \
 		../../../../tools/Solver_if.h \
 		../../../../tools/TraitsTools.h \
@@ -6974,17 +6980,17 @@ ProbabilityDistribution.o: ../../../../tools/ProbabilityDistribution.cpp ../../.
 		../../../../kernel/statistics/Statistics_if.h \
 		../../../../tools/FitterDummyImpl.h \
 		../../../../tools/Fitter_if.h
-	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o ProbabilityDistribution.o ../../../../tools/ProbabilityDistribution.cpp
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o build/obj/ProbabilityDistribution.o ../../../../tools/ProbabilityDistribution.cpp
 
-ProbabilityDistributionBase.o: ../../../../tools/ProbabilityDistributionBase.cpp ../../../../tools/ProbabilityDistributionBase.h \
+build/obj/ProbabilityDistributionBase.o: ../../../../tools/ProbabilityDistributionBase.cpp ../../../../tools/ProbabilityDistributionBase.h \
 		../../../../tools/Solver_if.h
-	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o ProbabilityDistributionBase.o ../../../../tools/ProbabilityDistributionBase.cpp
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o build/obj/ProbabilityDistributionBase.o ../../../../tools/ProbabilityDistributionBase.cpp
 
-SolverDefaultImpl1.o: ../../../../tools/SolverDefaultImpl1.cpp ../../../../tools/SolverDefaultImpl1.h \
+build/obj/SolverDefaultImpl1.o: ../../../../tools/SolverDefaultImpl1.cpp ../../../../tools/SolverDefaultImpl1.h \
 		../../../../tools/Solver_if.h
-	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o SolverDefaultImpl1.o ../../../../tools/SolverDefaultImpl1.cpp
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o build/obj/SolverDefaultImpl1.o ../../../../tools/SolverDefaultImpl1.cpp
 
-BaseGenesysTerminalApplication.o: ../../../BaseGenesysTerminalApplication.cpp ../../../BaseGenesysTerminalApplication.h \
+build/obj/BaseGenesysTerminalApplication.o: ../../../BaseGenesysTerminalApplication.cpp ../../../BaseGenesysTerminalApplication.h \
 		../../../GenesysApplication_if.h \
 		../../../../kernel/simulator/TraceManager.h \
 		../../../../kernel/util/List.h \
@@ -7025,9 +7031,9 @@ BaseGenesysTerminalApplication.o: ../../../BaseGenesysTerminalApplication.cpp ..
 		../../../../kernel/simulator/ExperimentManager.h \
 		../../../../kernel/simulator/SimulationExperiment.h \
 		../../../TraitsApp.h
-	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o BaseGenesysTerminalApplication.o ../../../BaseGenesysTerminalApplication.cpp
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o build/obj/BaseGenesysTerminalApplication.o ../../../BaseGenesysTerminalApplication.cpp
 
-GenesysShell.o: ../../../terminal/GenesysShell/GenesysShell.cpp ../../../terminal/GenesysShell/GenesysShell.h \
+build/obj/GenesysShell.o: ../../../terminal/GenesysShell/GenesysShell.cpp ../../../terminal/GenesysShell/GenesysShell.h \
 		../../../BaseGenesysTerminalApplication.h \
 		../../../GenesysApplication_if.h \
 		../../../../kernel/simulator/TraceManager.h \
@@ -7068,9 +7074,9 @@ GenesysShell.o: ../../../terminal/GenesysShell/GenesysShell.cpp ../../../termina
 		../../../../kernel/simulator/ParserManager.h \
 		../../../../kernel/simulator/ExperimentManager.h \
 		../../../../kernel/simulator/SimulationExperiment.h
-	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o GenesysShell.o ../../../terminal/GenesysShell/GenesysShell.cpp
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o build/obj/GenesysShell.o ../../../terminal/GenesysShell/GenesysShell.cpp
 
-AirportSecurityExample.o: ../../../terminal/examples/arenaExamples/AirportSecurityExample.cpp ../../../terminal/examples/arenaExamples/AirportSecurityExample.h \
+build/obj/AirportSecurityExample.o: ../../../terminal/examples/arenaExamples/AirportSecurityExample.cpp ../../../terminal/examples/arenaExamples/AirportSecurityExample.h \
 		../../../BaseGenesysTerminalApplication.h \
 		../../../GenesysApplication_if.h \
 		../../../../kernel/simulator/TraceManager.h \
@@ -7128,9 +7134,9 @@ AirportSecurityExample.o: ../../../terminal/examples/arenaExamples/AirportSecuri
 		../../../../plugins/components/Decide.h \
 		../../../../plugins/components/Dispose.h \
 		../../../../kernel/simulator/SinkModelComponent.h
-	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o AirportSecurityExample.o ../../../terminal/examples/arenaExamples/AirportSecurityExample.cpp
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o build/obj/AirportSecurityExample.o ../../../terminal/examples/arenaExamples/AirportSecurityExample.cpp
 
-AirportSecurityExampleExtended.o: ../../../terminal/examples/arenaExamples/AirportSecurityExampleExtended.cpp ../../../terminal/examples/arenaExamples/AirportSecurityExampleExtended.h \
+build/obj/AirportSecurityExampleExtended.o: ../../../terminal/examples/arenaExamples/AirportSecurityExampleExtended.cpp ../../../terminal/examples/arenaExamples/AirportSecurityExampleExtended.h \
 		../../../BaseGenesysTerminalApplication.h \
 		../../../GenesysApplication_if.h \
 		../../../../kernel/simulator/TraceManager.h \
@@ -7193,9 +7199,9 @@ AirportSecurityExampleExtended.o: ../../../terminal/examples/arenaExamples/Airpo
 		../../../../plugins/data/AssignmentItem.h \
 		../../../../plugins/data/Variable.h \
 		../../../../plugins/components/Record.h
-	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o AirportSecurityExampleExtended.o ../../../terminal/examples/arenaExamples/AirportSecurityExampleExtended.cpp
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o build/obj/AirportSecurityExampleExtended.o ../../../terminal/examples/arenaExamples/AirportSecurityExampleExtended.cpp
 
-Airport_Extended1.o: ../../../terminal/examples/arenaExamples/Airport_Extended1.cpp ../../../terminal/examples/arenaExamples/Airport_Extended1.h \
+build/obj/Airport_Extended1.o: ../../../terminal/examples/arenaExamples/Airport_Extended1.cpp ../../../terminal/examples/arenaExamples/Airport_Extended1.h \
 		../../../BaseGenesysTerminalApplication.h \
 		../../../GenesysApplication_if.h \
 		../../../../kernel/simulator/TraceManager.h \
@@ -7252,9 +7258,9 @@ Airport_Extended1.o: ../../../terminal/examples/arenaExamples/Airport_Extended1.
 		../../../../plugins/components/Decide.h \
 		../../../../plugins/components/Dispose.h \
 		../../../../kernel/simulator/SinkModelComponent.h
-	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o Airport_Extended1.o ../../../terminal/examples/arenaExamples/Airport_Extended1.cpp
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o build/obj/Airport_Extended1.o ../../../terminal/examples/arenaExamples/Airport_Extended1.cpp
 
-Assembly_Line.o: ../../../terminal/examples/arenaExamples/Assembly_Line.cpp ../../../terminal/examples/arenaExamples/Assembly_Line.h \
+build/obj/Assembly_Line.o: ../../../terminal/examples/arenaExamples/Assembly_Line.cpp ../../../terminal/examples/arenaExamples/Assembly_Line.h \
 		../../../BaseGenesysTerminalApplication.h \
 		../../../GenesysApplication_if.h \
 		../../../../kernel/simulator/TraceManager.h \
@@ -7321,9 +7327,9 @@ Assembly_Line.o: ../../../terminal/examples/arenaExamples/Assembly_Line.cpp ../.
 		../../../../plugins/components/Route.h \
 		../../../../plugins/data/Sequence.h \
 		../../../../plugins/data/Label.h
-	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o Assembly_Line.o ../../../terminal/examples/arenaExamples/Assembly_Line.cpp
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o build/obj/Assembly_Line.o ../../../terminal/examples/arenaExamples/Assembly_Line.cpp
 
-Banking_Transactions.o: ../../../terminal/examples/arenaExamples/Banking_Transactions.cpp ../../../terminal/examples/arenaExamples/Banking_Transactions.h \
+build/obj/Banking_Transactions.o: ../../../terminal/examples/arenaExamples/Banking_Transactions.cpp ../../../terminal/examples/arenaExamples/Banking_Transactions.h \
 		../../../BaseGenesysTerminalApplication.h \
 		../../../GenesysApplication_if.h \
 		../../../../kernel/simulator/TraceManager.h \
@@ -7390,9 +7396,9 @@ Banking_Transactions.o: ../../../terminal/examples/arenaExamples/Banking_Transac
 		../../../../plugins/components/Route.h \
 		../../../../plugins/data/Sequence.h \
 		../../../../plugins/data/Label.h
-	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o Banking_Transactions.o ../../../terminal/examples/arenaExamples/Banking_Transactions.cpp
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o build/obj/Banking_Transactions.o ../../../terminal/examples/arenaExamples/Banking_Transactions.cpp
 
-Example_BasicOrderShipping.o: ../../../terminal/examples/arenaExamples/Example_BasicOrderShipping.cpp ../../../terminal/examples/arenaExamples/Example_BasicOrderShipping.h \
+build/obj/Example_BasicOrderShipping.o: ../../../terminal/examples/arenaExamples/Example_BasicOrderShipping.cpp ../../../terminal/examples/arenaExamples/Example_BasicOrderShipping.h \
 		../../../BaseGenesysTerminalApplication.h \
 		../../../GenesysApplication_if.h \
 		../../../../kernel/simulator/TraceManager.h \
@@ -7457,9 +7463,9 @@ Example_BasicOrderShipping.o: ../../../terminal/examples/arenaExamples/Example_B
 		../../../../plugins/data/Variable.h \
 		../../../../plugins/components/Decide.h \
 		../../../../plugins/components/Record.h
-	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o Example_BasicOrderShipping.o ../../../terminal/examples/arenaExamples/Example_BasicOrderShipping.cpp
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o build/obj/Example_BasicOrderShipping.o ../../../terminal/examples/arenaExamples/Example_BasicOrderShipping.cpp
 
-Example_PortModel.o: ../../../terminal/examples/arenaExamples/Example_PortModel.cpp ../../../terminal/examples/arenaExamples/Example_PortModel.h \
+build/obj/Example_PortModel.o: ../../../terminal/examples/arenaExamples/Example_PortModel.cpp ../../../terminal/examples/arenaExamples/Example_PortModel.h \
 		../../../BaseGenesysTerminalApplication.h \
 		../../../GenesysApplication_if.h \
 		../../../../kernel/simulator/TraceManager.h \
@@ -7526,9 +7532,9 @@ Example_PortModel.o: ../../../terminal/examples/arenaExamples/Example_PortModel.
 		../../../../plugins/components/Route.h \
 		../../../../plugins/data/Sequence.h \
 		../../../../plugins/data/Label.h
-	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o Example_PortModel.o ../../../terminal/examples/arenaExamples/Example_PortModel.cpp
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o build/obj/Example_PortModel.o ../../../terminal/examples/arenaExamples/Example_PortModel.cpp
 
-Example_PublicTransport.o: ../../../terminal/examples/arenaExamples/Example_PublicTransport.cpp ../../../terminal/examples/arenaExamples/Example_PublicTransport.h \
+build/obj/Example_PublicTransport.o: ../../../terminal/examples/arenaExamples/Example_PublicTransport.cpp ../../../terminal/examples/arenaExamples/Example_PublicTransport.h \
 		../../../BaseGenesysTerminalApplication.h \
 		../../../GenesysApplication_if.h \
 		../../../../kernel/simulator/TraceManager.h \
@@ -7595,9 +7601,9 @@ Example_PublicTransport.o: ../../../terminal/examples/arenaExamples/Example_Publ
 		../../../../plugins/components/DropOff.h \
 		../../../../plugins/components/Search.h \
 		../../../../plugins/data/EntityGroup.h
-	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o Example_PublicTransport.o ../../../terminal/examples/arenaExamples/Example_PublicTransport.cpp
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o build/obj/Example_PublicTransport.o ../../../terminal/examples/arenaExamples/Example_PublicTransport.cpp
 
-Smart_AddingResource.o: ../../../terminal/examples/arenaSmarts/Smart_AddingResource.cpp ../../../terminal/examples/arenaSmarts/Smart_AddingResource.h \
+build/obj/Smart_AddingResource.o: ../../../terminal/examples/arenaSmarts/Smart_AddingResource.cpp ../../../terminal/examples/arenaSmarts/Smart_AddingResource.h \
 		../../../BaseGenesysTerminalApplication.h \
 		../../../GenesysApplication_if.h \
 		../../../../kernel/simulator/TraceManager.h \
@@ -7655,9 +7661,9 @@ Smart_AddingResource.o: ../../../terminal/examples/arenaSmarts/Smart_AddingResou
 		../../../../plugins/components/Delay.h \
 		../../../../plugins/components/Release.h \
 		../../../TraitsApp.h
-	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o Smart_AddingResource.o ../../../terminal/examples/arenaSmarts/Smart_AddingResource.cpp
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o build/obj/Smart_AddingResource.o ../../../terminal/examples/arenaSmarts/Smart_AddingResource.cpp
 
-Smart_AlternatingEntityCreation.o: ../../../terminal/examples/arenaSmarts/Smart_AlternatingEntityCreation.cpp ../../../terminal/examples/arenaSmarts/Smart_AlternatingEntityCreation.h \
+build/obj/Smart_AlternatingEntityCreation.o: ../../../terminal/examples/arenaSmarts/Smart_AlternatingEntityCreation.cpp ../../../terminal/examples/arenaSmarts/Smart_AlternatingEntityCreation.h \
 		../../../BaseGenesysTerminalApplication.h \
 		../../../GenesysApplication_if.h \
 		../../../../kernel/simulator/TraceManager.h \
@@ -7724,9 +7730,9 @@ Smart_AlternatingEntityCreation.o: ../../../terminal/examples/arenaSmarts/Smart_
 		../../../../plugins/components/Release.h \
 		../../../../plugins/components/Decide.h \
 		../../../TraitsApp.h
-	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o Smart_AlternatingEntityCreation.o ../../../terminal/examples/arenaSmarts/Smart_AlternatingEntityCreation.cpp
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o build/obj/Smart_AlternatingEntityCreation.o ../../../terminal/examples/arenaSmarts/Smart_AlternatingEntityCreation.cpp
 
-Smart_ArrivalsElementStopsEntitiesArrivingAfterASetTime.o: ../../../terminal/examples/arenaSmarts/Smart_ArrivalsElementStopsEntitiesArrivingAfterASetTime.cpp ../../../terminal/examples/arenaSmarts/Smart_ArrivalsElementStopsEntitiesArrivingAfterASetTime.h \
+build/obj/Smart_ArrivalsElementStopsEntitiesArrivingAfterASetTime.o: ../../../terminal/examples/arenaSmarts/Smart_ArrivalsElementStopsEntitiesArrivingAfterASetTime.cpp ../../../terminal/examples/arenaSmarts/Smart_ArrivalsElementStopsEntitiesArrivingAfterASetTime.h \
 		../../../BaseGenesysTerminalApplication.h \
 		../../../GenesysApplication_if.h \
 		../../../../kernel/simulator/TraceManager.h \
@@ -7789,9 +7795,9 @@ Smart_ArrivalsElementStopsEntitiesArrivingAfterASetTime.o: ../../../terminal/exa
 		../../../../plugins/components/Dispose.h \
 		../../../../kernel/simulator/SinkModelComponent.h \
 		../../../TraitsApp.h
-	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o Smart_ArrivalsElementStopsEntitiesArrivingAfterASetTime.o ../../../terminal/examples/arenaSmarts/Smart_ArrivalsElementStopsEntitiesArrivingAfterASetTime.cpp
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o build/obj/Smart_ArrivalsElementStopsEntitiesArrivingAfterASetTime.o ../../../terminal/examples/arenaSmarts/Smart_ArrivalsElementStopsEntitiesArrivingAfterASetTime.cpp
 
-Smart_ArrivalsEntityTypeVsAttribute.o: ../../../terminal/examples/arenaSmarts/Smart_ArrivalsEntityTypeVsAttribute.cpp ../../../terminal/examples/arenaSmarts/Smart_ArrivalsEntityTypeVsAttribute.h \
+build/obj/Smart_ArrivalsEntityTypeVsAttribute.o: ../../../terminal/examples/arenaSmarts/Smart_ArrivalsEntityTypeVsAttribute.cpp ../../../terminal/examples/arenaSmarts/Smart_ArrivalsEntityTypeVsAttribute.h \
 		../../../BaseGenesysTerminalApplication.h \
 		../../../GenesysApplication_if.h \
 		../../../../kernel/simulator/TraceManager.h \
@@ -7854,9 +7860,9 @@ Smart_ArrivalsEntityTypeVsAttribute.o: ../../../terminal/examples/arenaSmarts/Sm
 		../../../../plugins/components/Release.h \
 		../../../../plugins/components/Decide.h \
 		../../../TraitsApp.h
-	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o Smart_ArrivalsEntityTypeVsAttribute.o ../../../terminal/examples/arenaSmarts/Smart_ArrivalsEntityTypeVsAttribute.cpp
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o build/obj/Smart_ArrivalsEntityTypeVsAttribute.o ../../../terminal/examples/arenaSmarts/Smart_ArrivalsEntityTypeVsAttribute.cpp
 
-Smart_AssignExample.o: ../../../terminal/examples/arenaSmarts/Smart_AssignExample.cpp ../../../terminal/examples/arenaSmarts/Smart_AssignExample.h \
+build/obj/Smart_AssignExample.o: ../../../terminal/examples/arenaSmarts/Smart_AssignExample.cpp ../../../terminal/examples/arenaSmarts/Smart_AssignExample.h \
 		../../../BaseGenesysTerminalApplication.h \
 		../../../GenesysApplication_if.h \
 		../../../../kernel/simulator/TraceManager.h \
@@ -7919,9 +7925,9 @@ Smart_AssignExample.o: ../../../terminal/examples/arenaSmarts/Smart_AssignExampl
 		../../../../plugins/data/AssignmentItem.h \
 		../../../../plugins/data/Variable.h \
 		../../../TraitsApp.h
-	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o Smart_AssignExample.o ../../../terminal/examples/arenaSmarts/Smart_AssignExample.cpp
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o build/obj/Smart_AssignExample.o ../../../terminal/examples/arenaSmarts/Smart_AssignExample.cpp
 
-Smart_AutomaticStatisticsCollection.o: ../../../terminal/examples/arenaSmarts/Smart_AutomaticStatisticsCollection.cpp ../../../terminal/examples/arenaSmarts/Smart_AutomaticStatisticsCollection.h \
+build/obj/Smart_AutomaticStatisticsCollection.o: ../../../terminal/examples/arenaSmarts/Smart_AutomaticStatisticsCollection.cpp ../../../terminal/examples/arenaSmarts/Smart_AutomaticStatisticsCollection.h \
 		../../../BaseGenesysTerminalApplication.h \
 		../../../GenesysApplication_if.h \
 		../../../../kernel/simulator/TraceManager.h \
@@ -7979,9 +7985,9 @@ Smart_AutomaticStatisticsCollection.o: ../../../terminal/examples/arenaSmarts/Sm
 		../../../../plugins/components/Dispose.h \
 		../../../../kernel/simulator/SinkModelComponent.h \
 		../../../TraitsApp.h
-	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o Smart_AutomaticStatisticsCollection.o ../../../terminal/examples/arenaSmarts/Smart_AutomaticStatisticsCollection.cpp
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o build/obj/Smart_AutomaticStatisticsCollection.o ../../../terminal/examples/arenaSmarts/Smart_AutomaticStatisticsCollection.cpp
 
-Smart_BasicModeling.o: ../../../terminal/examples/arenaSmarts/Smart_BasicModeling.cpp ../../../terminal/examples/arenaSmarts/Smart_BasicModeling.h \
+build/obj/Smart_BasicModeling.o: ../../../terminal/examples/arenaSmarts/Smart_BasicModeling.cpp ../../../terminal/examples/arenaSmarts/Smart_BasicModeling.h \
 		../../../BaseGenesysTerminalApplication.h \
 		../../../GenesysApplication_if.h \
 		../../../../kernel/simulator/TraceManager.h \
@@ -8039,9 +8045,9 @@ Smart_BasicModeling.o: ../../../terminal/examples/arenaSmarts/Smart_BasicModelin
 		../../../../plugins/components/Dispose.h \
 		../../../../kernel/simulator/SinkModelComponent.h \
 		../../../TraitsApp.h
-	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o Smart_BasicModeling.o ../../../terminal/examples/arenaSmarts/Smart_BasicModeling.cpp
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o build/obj/Smart_BasicModeling.o ../../../terminal/examples/arenaSmarts/Smart_BasicModeling.cpp
 
-Smart_BatchAndSeparate.o: ../../../terminal/examples/arenaSmarts/Smart_BatchAndSeparate.cpp ../../../terminal/examples/arenaSmarts/Smart_BatchAndSeparate.h \
+build/obj/Smart_BatchAndSeparate.o: ../../../terminal/examples/arenaSmarts/Smart_BatchAndSeparate.cpp ../../../terminal/examples/arenaSmarts/Smart_BatchAndSeparate.h \
 		../../../BaseGenesysTerminalApplication.h \
 		../../../GenesysApplication_if.h \
 		../../../../kernel/simulator/TraceManager.h \
@@ -8098,9 +8104,9 @@ Smart_BatchAndSeparate.o: ../../../terminal/examples/arenaSmarts/Smart_BatchAndS
 		../../../../plugins/components/Delay.h \
 		../../../../plugins/components/Separate.h \
 		../../../TraitsApp.h
-	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o Smart_BatchAndSeparate.o ../../../terminal/examples/arenaSmarts/Smart_BatchAndSeparate.cpp
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o build/obj/Smart_BatchAndSeparate.o ../../../terminal/examples/arenaSmarts/Smart_BatchAndSeparate.cpp
 
-Smart_ContinuousFlowEntities.o: ../../../terminal/examples/arenaSmarts/Smart_ContinuousFlowEntities.cpp ../../../terminal/examples/arenaSmarts/Smart_ContinuousFlowEntities.h \
+build/obj/Smart_ContinuousFlowEntities.o: ../../../terminal/examples/arenaSmarts/Smart_ContinuousFlowEntities.cpp ../../../terminal/examples/arenaSmarts/Smart_ContinuousFlowEntities.h \
 		../../../BaseGenesysTerminalApplication.h \
 		../../../GenesysApplication_if.h \
 		../../../../kernel/simulator/TraceManager.h \
@@ -8165,9 +8171,9 @@ Smart_ContinuousFlowEntities.o: ../../../terminal/examples/arenaSmarts/Smart_Con
 		../../../../plugins/data/Variable.h \
 		../../../../plugins/components/Clone.h \
 		../../../TraitsApp.h
-	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o Smart_ContinuousFlowEntities.o ../../../terminal/examples/arenaSmarts/Smart_ContinuousFlowEntities.cpp
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o build/obj/Smart_ContinuousFlowEntities.o ../../../terminal/examples/arenaSmarts/Smart_ContinuousFlowEntities.cpp
 
-Smart_Create.o: ../../../terminal/examples/arenaSmarts/Smart_Create.cpp ../../../terminal/examples/arenaSmarts/Smart_Create.h \
+build/obj/Smart_Create.o: ../../../terminal/examples/arenaSmarts/Smart_Create.cpp ../../../terminal/examples/arenaSmarts/Smart_Create.h \
 		../../../BaseGenesysTerminalApplication.h \
 		../../../GenesysApplication_if.h \
 		../../../../kernel/simulator/TraceManager.h \
@@ -8220,9 +8226,9 @@ Smart_Create.o: ../../../terminal/examples/arenaSmarts/Smart_Create.cpp ../../..
 		../../../../plugins/components/Dispose.h \
 		../../../../kernel/simulator/SinkModelComponent.h \
 		../../../TraitsApp.h
-	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o Smart_Create.o ../../../terminal/examples/arenaSmarts/Smart_Create.cpp
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o build/obj/Smart_Create.o ../../../terminal/examples/arenaSmarts/Smart_Create.cpp
 
-Smart_DecideNWayByChance.o: ../../../terminal/examples/arenaSmarts/Smart_DecideNWayByChance.cpp ../../../terminal/examples/arenaSmarts/Smart_DecideNWayByChance.h \
+build/obj/Smart_DecideNWayByChance.o: ../../../terminal/examples/arenaSmarts/Smart_DecideNWayByChance.cpp ../../../terminal/examples/arenaSmarts/Smart_DecideNWayByChance.h \
 		../../../BaseGenesysTerminalApplication.h \
 		../../../GenesysApplication_if.h \
 		../../../../kernel/simulator/TraceManager.h \
@@ -8272,9 +8278,9 @@ Smart_DecideNWayByChance.o: ../../../terminal/examples/arenaSmarts/Smart_DecideN
 		../../../../plugins/components/Dispose.h \
 		../../../../kernel/simulator/SinkModelComponent.h \
 		../../../TraitsApp.h
-	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o Smart_DecideNWayByChance.o ../../../terminal/examples/arenaSmarts/Smart_DecideNWayByChance.cpp
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o build/obj/Smart_DecideNWayByChance.o ../../../terminal/examples/arenaSmarts/Smart_DecideNWayByChance.cpp
 
-Smart_DefiningAttributesAsStrings.o: ../../../terminal/examples/arenaSmarts/Smart_DefiningAttributesAsStrings.cpp ../../../terminal/examples/arenaSmarts/Smart_DefiningAttributesAsStrings.h \
+build/obj/Smart_DefiningAttributesAsStrings.o: ../../../terminal/examples/arenaSmarts/Smart_DefiningAttributesAsStrings.cpp ../../../terminal/examples/arenaSmarts/Smart_DefiningAttributesAsStrings.h \
 		../../../BaseGenesysTerminalApplication.h \
 		../../../GenesysApplication_if.h \
 		../../../../kernel/simulator/TraceManager.h \
@@ -8329,9 +8335,9 @@ Smart_DefiningAttributesAsStrings.o: ../../../terminal/examples/arenaSmarts/Smar
 		../../../../plugins/components/Delay.h \
 		../../../../plugins/components/Decide.h \
 		../../../TraitsApp.h
-	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o Smart_DefiningAttributesAsStrings.o ../../../terminal/examples/arenaSmarts/Smart_DefiningAttributesAsStrings.cpp
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o build/obj/Smart_DefiningAttributesAsStrings.o ../../../terminal/examples/arenaSmarts/Smart_DefiningAttributesAsStrings.cpp
 
-Smart_DefiningControlLogic.o: ../../../terminal/examples/arenaSmarts/Smart_DefiningControlLogic.cpp ../../../terminal/examples/arenaSmarts/Smart_DefiningControlLogic.h \
+build/obj/Smart_DefiningControlLogic.o: ../../../terminal/examples/arenaSmarts/Smart_DefiningControlLogic.cpp ../../../terminal/examples/arenaSmarts/Smart_DefiningControlLogic.h \
 		../../../BaseGenesysTerminalApplication.h \
 		../../../GenesysApplication_if.h \
 		../../../../kernel/simulator/TraceManager.h \
@@ -8398,9 +8404,9 @@ Smart_DefiningControlLogic.o: ../../../terminal/examples/arenaSmarts/Smart_Defin
 		../../../../plugins/components/Release.h \
 		../../../../plugins/components/Decide.h \
 		../../../TraitsApp.h
-	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o Smart_DefiningControlLogic.o ../../../terminal/examples/arenaSmarts/Smart_DefiningControlLogic.cpp
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o build/obj/Smart_DefiningControlLogic.o ../../../terminal/examples/arenaSmarts/Smart_DefiningControlLogic.cpp
 
-Smart_DefiningResourceCapacity.o: ../../../terminal/examples/arenaSmarts/Smart_DefiningResourceCapacity.cpp ../../../terminal/examples/arenaSmarts/Smart_DefiningResourceCapacity.h \
+build/obj/Smart_DefiningResourceCapacity.o: ../../../terminal/examples/arenaSmarts/Smart_DefiningResourceCapacity.cpp ../../../terminal/examples/arenaSmarts/Smart_DefiningResourceCapacity.h \
 		../../../BaseGenesysTerminalApplication.h \
 		../../../GenesysApplication_if.h \
 		../../../../kernel/simulator/TraceManager.h \
@@ -8459,9 +8465,9 @@ Smart_DefiningResourceCapacity.o: ../../../terminal/examples/arenaSmarts/Smart_D
 		../../../../plugins/components/Dispose.h \
 		../../../../kernel/simulator/SinkModelComponent.h \
 		../../../TraitsApp.h
-	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o Smart_DefiningResourceCapacity.o ../../../terminal/examples/arenaSmarts/Smart_DefiningResourceCapacity.cpp
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o build/obj/Smart_DefiningResourceCapacity.o ../../../terminal/examples/arenaSmarts/Smart_DefiningResourceCapacity.cpp
 
-Smart_DelayBasedOnReplication.o: ../../../terminal/examples/arenaSmarts/Smart_DelayBasedOnReplication.cpp ../../../terminal/examples/arenaSmarts/Smart_DelayBasedOnReplication.h \
+build/obj/Smart_DelayBasedOnReplication.o: ../../../terminal/examples/arenaSmarts/Smart_DelayBasedOnReplication.cpp ../../../terminal/examples/arenaSmarts/Smart_DelayBasedOnReplication.h \
 		../../../BaseGenesysTerminalApplication.h \
 		../../../GenesysApplication_if.h \
 		../../../../kernel/simulator/TraceManager.h \
@@ -8528,9 +8534,9 @@ Smart_DelayBasedOnReplication.o: ../../../terminal/examples/arenaSmarts/Smart_De
 		../../../../plugins/components/Release.h \
 		../../../../plugins/components/Decide.h \
 		../../../TraitsApp.h
-	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o Smart_DelayBasedOnReplication.o ../../../terminal/examples/arenaSmarts/Smart_DelayBasedOnReplication.cpp
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o build/obj/Smart_DelayBasedOnReplication.o ../../../terminal/examples/arenaSmarts/Smart_DelayBasedOnReplication.cpp
 
-Smart_EntitiesProcessedByPriority.o: ../../../terminal/examples/arenaSmarts/Smart_EntitiesProcessedByPriority.cpp ../../../terminal/examples/arenaSmarts/Smart_EntitiesProcessedByPriority.h \
+build/obj/Smart_EntitiesProcessedByPriority.o: ../../../terminal/examples/arenaSmarts/Smart_EntitiesProcessedByPriority.cpp ../../../terminal/examples/arenaSmarts/Smart_EntitiesProcessedByPriority.h \
 		../../../BaseGenesysTerminalApplication.h \
 		../../../GenesysApplication_if.h \
 		../../../../kernel/simulator/TraceManager.h \
@@ -8592,9 +8598,9 @@ Smart_EntitiesProcessedByPriority.o: ../../../terminal/examples/arenaSmarts/Smar
 		../../../../plugins/components/Dispose.h \
 		../../../../kernel/simulator/SinkModelComponent.h \
 		../../../TraitsApp.h
-	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o Smart_EntitiesProcessedByPriority.o ../../../terminal/examples/arenaSmarts/Smart_EntitiesProcessedByPriority.cpp
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o build/obj/Smart_EntitiesProcessedByPriority.o ../../../terminal/examples/arenaSmarts/Smart_EntitiesProcessedByPriority.cpp
 
-Smart_EvaluatingConditionsBeforeEnteringQueue.o: ../../../terminal/examples/arenaSmarts/Smart_EvaluatingConditionsBeforeEnteringQueue.cpp ../../../terminal/examples/arenaSmarts/Smart_EvaluatingConditionsBeforeEnteringQueue.h \
+build/obj/Smart_EvaluatingConditionsBeforeEnteringQueue.o: ../../../terminal/examples/arenaSmarts/Smart_EvaluatingConditionsBeforeEnteringQueue.cpp ../../../terminal/examples/arenaSmarts/Smart_EvaluatingConditionsBeforeEnteringQueue.h \
 		../../../BaseGenesysTerminalApplication.h \
 		../../../GenesysApplication_if.h \
 		../../../../kernel/simulator/TraceManager.h \
@@ -8656,9 +8662,9 @@ Smart_EvaluatingConditionsBeforeEnteringQueue.o: ../../../terminal/examples/aren
 		../../../../plugins/components/Dispose.h \
 		../../../../kernel/simulator/SinkModelComponent.h \
 		../../../TraitsApp.h
-	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o Smart_EvaluatingConditionsBeforeEnteringQueue.o ../../../terminal/examples/arenaSmarts/Smart_EvaluatingConditionsBeforeEnteringQueue.cpp
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o build/obj/Smart_EvaluatingConditionsBeforeEnteringQueue.o ../../../terminal/examples/arenaSmarts/Smart_EvaluatingConditionsBeforeEnteringQueue.cpp
 
-Smart_Expression.o: ../../../terminal/examples/arenaSmarts/Smart_Expression.cpp ../../../terminal/examples/arenaSmarts/Smart_Expression.h \
+build/obj/Smart_Expression.o: ../../../terminal/examples/arenaSmarts/Smart_Expression.cpp ../../../terminal/examples/arenaSmarts/Smart_Expression.h \
 		../../../BaseGenesysTerminalApplication.h \
 		../../../GenesysApplication_if.h \
 		../../../../kernel/simulator/TraceManager.h \
@@ -8712,9 +8718,9 @@ Smart_Expression.o: ../../../terminal/examples/arenaSmarts/Smart_Expression.cpp 
 		../../../../plugins/components/Dispose.h \
 		../../../../kernel/simulator/SinkModelComponent.h \
 		../../../TraitsApp.h
-	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o Smart_Expression.o ../../../terminal/examples/arenaSmarts/Smart_Expression.cpp
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o build/obj/Smart_Expression.o ../../../terminal/examples/arenaSmarts/Smart_Expression.cpp
 
-Smart_InventoryAndHoldingCosts.o: ../../../terminal/examples/arenaSmarts/Smart_InventoryAndHoldingCosts.cpp ../../../terminal/examples/arenaSmarts/Smart_InventoryAndHoldingCosts.h \
+build/obj/Smart_InventoryAndHoldingCosts.o: ../../../terminal/examples/arenaSmarts/Smart_InventoryAndHoldingCosts.cpp ../../../terminal/examples/arenaSmarts/Smart_InventoryAndHoldingCosts.h \
 		../../../BaseGenesysTerminalApplication.h \
 		../../../GenesysApplication_if.h \
 		../../../../kernel/simulator/TraceManager.h \
@@ -8778,9 +8784,9 @@ Smart_InventoryAndHoldingCosts.o: ../../../terminal/examples/arenaSmarts/Smart_I
 		../../../../plugins/components/Delay.h \
 		../../../../plugins/components/Release.h \
 		../../../TraitsApp.h
-	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o Smart_InventoryAndHoldingCosts.o ../../../terminal/examples/arenaSmarts/Smart_InventoryAndHoldingCosts.cpp
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o build/obj/Smart_InventoryAndHoldingCosts.o ../../../terminal/examples/arenaSmarts/Smart_InventoryAndHoldingCosts.cpp
 
-Smart_MaxArrivalsField.o: ../../../terminal/examples/arenaSmarts/Smart_MaxArrivalsField.cpp ../../../terminal/examples/arenaSmarts/Smart_MaxArrivalsField.h \
+build/obj/Smart_MaxArrivalsField.o: ../../../terminal/examples/arenaSmarts/Smart_MaxArrivalsField.cpp ../../../terminal/examples/arenaSmarts/Smart_MaxArrivalsField.h \
 		../../../BaseGenesysTerminalApplication.h \
 		../../../GenesysApplication_if.h \
 		../../../../kernel/simulator/TraceManager.h \
@@ -8829,9 +8835,9 @@ Smart_MaxArrivalsField.o: ../../../terminal/examples/arenaSmarts/Smart_MaxArriva
 		../../../../kernel/simulator/SinkModelComponent.h \
 		../../../../plugins/components/Record.h \
 		../../../TraitsApp.h
-	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o Smart_MaxArrivalsField.o ../../../terminal/examples/arenaSmarts/Smart_MaxArrivalsField.cpp
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o build/obj/Smart_MaxArrivalsField.o ../../../terminal/examples/arenaSmarts/Smart_MaxArrivalsField.cpp
 
-Smart_ModelRunUntil1000Parts.o: ../../../terminal/examples/arenaSmarts/Smart_ModelRunUntil1000Parts.cpp ../../../terminal/examples/arenaSmarts/Smart_ModelRunUntil1000Parts.h \
+build/obj/Smart_ModelRunUntil1000Parts.o: ../../../terminal/examples/arenaSmarts/Smart_ModelRunUntil1000Parts.cpp ../../../terminal/examples/arenaSmarts/Smart_ModelRunUntil1000Parts.h \
 		../../../BaseGenesysTerminalApplication.h \
 		../../../GenesysApplication_if.h \
 		../../../../kernel/simulator/TraceManager.h \
@@ -8894,9 +8900,9 @@ Smart_ModelRunUntil1000Parts.o: ../../../terminal/examples/arenaSmarts/Smart_Mod
 		../../../../plugins/data/AssignmentItem.h \
 		../../../../plugins/data/Variable.h \
 		../../../TraitsApp.h
-	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o Smart_ModelRunUntil1000Parts.o ../../../terminal/examples/arenaSmarts/Smart_ModelRunUntil1000Parts.cpp
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o build/obj/Smart_ModelRunUntil1000Parts.o ../../../terminal/examples/arenaSmarts/Smart_ModelRunUntil1000Parts.cpp
 
-Smart_ModuleDisplayVariables.o: ../../../terminal/examples/arenaSmarts/Smart_ModuleDisplayVariables.cpp ../../../terminal/examples/arenaSmarts/Smart_ModuleDisplayVariables.h \
+build/obj/Smart_ModuleDisplayVariables.o: ../../../terminal/examples/arenaSmarts/Smart_ModuleDisplayVariables.cpp ../../../terminal/examples/arenaSmarts/Smart_ModuleDisplayVariables.h \
 		../../../BaseGenesysTerminalApplication.h \
 		../../../GenesysApplication_if.h \
 		../../../../kernel/simulator/TraceManager.h \
@@ -8954,9 +8960,9 @@ Smart_ModuleDisplayVariables.o: ../../../terminal/examples/arenaSmarts/Smart_Mod
 		../../../../plugins/components/Dispose.h \
 		../../../../kernel/simulator/SinkModelComponent.h \
 		../../../TraitsApp.h
-	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o Smart_ModuleDisplayVariables.o ../../../terminal/examples/arenaSmarts/Smart_ModuleDisplayVariables.cpp
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o build/obj/Smart_ModuleDisplayVariables.o ../../../terminal/examples/arenaSmarts/Smart_ModuleDisplayVariables.cpp
 
-Smart_OverlappingResources.o: ../../../terminal/examples/arenaSmarts/Smart_OverlappingResources.cpp ../../../terminal/examples/arenaSmarts/Smart_OverlappingResources.h \
+build/obj/Smart_OverlappingResources.o: ../../../terminal/examples/arenaSmarts/Smart_OverlappingResources.cpp ../../../terminal/examples/arenaSmarts/Smart_OverlappingResources.h \
 		../../../BaseGenesysTerminalApplication.h \
 		../../../GenesysApplication_if.h \
 		../../../../kernel/simulator/TraceManager.h \
@@ -9013,9 +9019,9 @@ Smart_OverlappingResources.o: ../../../terminal/examples/arenaSmarts/Smart_Overl
 		../../../../plugins/components/Release.h \
 		../../../../plugins/components/Delay.h \
 		../../../TraitsApp.h
-	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o Smart_OverlappingResources.o ../../../terminal/examples/arenaSmarts/Smart_OverlappingResources.cpp
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o build/obj/Smart_OverlappingResources.o ../../../terminal/examples/arenaSmarts/Smart_OverlappingResources.cpp
 
-Smart_ParallelProcessingOfEntities.o: ../../../terminal/examples/arenaSmarts/Smart_ParallelProcessingOfEntities.cpp ../../../terminal/examples/arenaSmarts/Smart_ParallelProcessingOfEntities.h \
+build/obj/Smart_ParallelProcessingOfEntities.o: ../../../terminal/examples/arenaSmarts/Smart_ParallelProcessingOfEntities.cpp ../../../terminal/examples/arenaSmarts/Smart_ParallelProcessingOfEntities.h \
 		../../../BaseGenesysTerminalApplication.h \
 		../../../GenesysApplication_if.h \
 		../../../../kernel/simulator/TraceManager.h \
@@ -9081,9 +9087,9 @@ Smart_ParallelProcessingOfEntities.o: ../../../terminal/examples/arenaSmarts/Sma
 		../../../../plugins/data/AssignmentItem.h \
 		../../../../plugins/data/Variable.h \
 		../../../TraitsApp.h
-	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o Smart_ParallelProcessingOfEntities.o ../../../terminal/examples/arenaSmarts/Smart_ParallelProcessingOfEntities.cpp
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o build/obj/Smart_ParallelProcessingOfEntities.o ../../../terminal/examples/arenaSmarts/Smart_ParallelProcessingOfEntities.cpp
 
-Smart_PlacingEntitiesInQueueSets.o: ../../../terminal/examples/arenaSmarts/Smart_PlacingEntitiesInQueueSets.cpp ../../../terminal/examples/arenaSmarts/Smart_PlacingEntitiesInQueueSets.h \
+build/obj/Smart_PlacingEntitiesInQueueSets.o: ../../../terminal/examples/arenaSmarts/Smart_PlacingEntitiesInQueueSets.cpp ../../../terminal/examples/arenaSmarts/Smart_PlacingEntitiesInQueueSets.h \
 		../../../BaseGenesysTerminalApplication.h \
 		../../../GenesysApplication_if.h \
 		../../../../kernel/simulator/TraceManager.h \
@@ -9141,9 +9147,9 @@ Smart_PlacingEntitiesInQueueSets.o: ../../../terminal/examples/arenaSmarts/Smart
 		../../../../plugins/data/SignalData.h \
 		../../../../plugins/components/Decide.h \
 		../../../TraitsApp.h
-	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o Smart_PlacingEntitiesInQueueSets.o ../../../terminal/examples/arenaSmarts/Smart_PlacingEntitiesInQueueSets.cpp
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o build/obj/Smart_PlacingEntitiesInQueueSets.o ../../../terminal/examples/arenaSmarts/Smart_PlacingEntitiesInQueueSets.cpp
 
-Smart_PriorityExample.o: ../../../terminal/examples/arenaSmarts/Smart_PriorityExample.cpp ../../../terminal/examples/arenaSmarts/Smart_PriorityExample.h \
+build/obj/Smart_PriorityExample.o: ../../../terminal/examples/arenaSmarts/Smart_PriorityExample.cpp ../../../terminal/examples/arenaSmarts/Smart_PriorityExample.h \
 		../../../BaseGenesysTerminalApplication.h \
 		../../../GenesysApplication_if.h \
 		../../../../kernel/simulator/TraceManager.h \
@@ -9207,9 +9213,9 @@ Smart_PriorityExample.o: ../../../terminal/examples/arenaSmarts/Smart_PriorityEx
 		../../../../plugins/data/AssignmentItem.h \
 		../../../../plugins/data/Variable.h \
 		../../../TraitsApp.h
-	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o Smart_PriorityExample.o ../../../terminal/examples/arenaSmarts/Smart_PriorityExample.cpp
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o build/obj/Smart_PriorityExample.o ../../../terminal/examples/arenaSmarts/Smart_PriorityExample.cpp
 
-Smart_ProcessArena.o: ../../../terminal/examples/arenaSmarts/Smart_ProcessArena.cpp ../../../terminal/examples/arenaSmarts/Smart_ProcessArena.h \
+build/obj/Smart_ProcessArena.o: ../../../terminal/examples/arenaSmarts/Smart_ProcessArena.cpp ../../../terminal/examples/arenaSmarts/Smart_ProcessArena.h \
 		../../../BaseGenesysTerminalApplication.h \
 		../../../GenesysApplication_if.h \
 		../../../../kernel/simulator/TraceManager.h \
@@ -9258,9 +9264,9 @@ Smart_ProcessArena.o: ../../../terminal/examples/arenaSmarts/Smart_ProcessArena.
 		../../../../plugins/components/Dispose.h \
 		../../../../kernel/simulator/SinkModelComponent.h \
 		../../../TraitsApp.h
-	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o Smart_ProcessArena.o ../../../terminal/examples/arenaSmarts/Smart_ProcessArena.cpp
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o build/obj/Smart_ProcessArena.o ../../../terminal/examples/arenaSmarts/Smart_ProcessArena.cpp
 
-Smart_Record_Arena.o: ../../../terminal/examples/arenaSmarts/Smart_Record_Arena.cpp ../../../terminal/examples/arenaSmarts/Smart_Record_Arena.h \
+build/obj/Smart_Record_Arena.o: ../../../terminal/examples/arenaSmarts/Smart_Record_Arena.cpp ../../../terminal/examples/arenaSmarts/Smart_Record_Arena.h \
 		../../../BaseGenesysTerminalApplication.h \
 		../../../GenesysApplication_if.h \
 		../../../../kernel/simulator/TraceManager.h \
@@ -9314,9 +9320,9 @@ Smart_Record_Arena.o: ../../../terminal/examples/arenaSmarts/Smart_Record_Arena.
 		../../../../kernel/simulator/SinkModelComponent.h \
 		../../../../plugins/components/Record.h \
 		../../../TraitsApp.h
-	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o Smart_Record_Arena.o ../../../terminal/examples/arenaSmarts/Smart_Record_Arena.cpp
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o build/obj/Smart_Record_Arena.o ../../../terminal/examples/arenaSmarts/Smart_Record_Arena.cpp
 
-Smart_RemovingAndReorderingEntitiesInAQueue.o: ../../../terminal/examples/arenaSmarts/Smart_RemovingAndReorderingEntitiesInAQueue.cpp ../../../terminal/examples/arenaSmarts/Smart_RemovingAndReorderingEntitiesInAQueue.h \
+build/obj/Smart_RemovingAndReorderingEntitiesInAQueue.o: ../../../terminal/examples/arenaSmarts/Smart_RemovingAndReorderingEntitiesInAQueue.cpp ../../../terminal/examples/arenaSmarts/Smart_RemovingAndReorderingEntitiesInAQueue.h \
 		../../../BaseGenesysTerminalApplication.h \
 		../../../GenesysApplication_if.h \
 		../../../../kernel/simulator/TraceManager.h \
@@ -9380,9 +9386,9 @@ Smart_RemovingAndReorderingEntitiesInAQueue.o: ../../../terminal/examples/arenaS
 		../../../../plugins/components/Remove.h \
 		../../../../plugins/components/Search.h \
 		../../../TraitsApp.h
-	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o Smart_RemovingAndReorderingEntitiesInAQueue.o ../../../terminal/examples/arenaSmarts/Smart_RemovingAndReorderingEntitiesInAQueue.cpp
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o build/obj/Smart_RemovingAndReorderingEntitiesInAQueue.o ../../../terminal/examples/arenaSmarts/Smart_RemovingAndReorderingEntitiesInAQueue.cpp
 
-Smart_ResourceCosting.o: ../../../terminal/examples/arenaSmarts/Smart_ResourceCosting.cpp ../../../terminal/examples/arenaSmarts/Smart_ResourceCosting.h \
+build/obj/Smart_ResourceCosting.o: ../../../terminal/examples/arenaSmarts/Smart_ResourceCosting.cpp ../../../terminal/examples/arenaSmarts/Smart_ResourceCosting.h \
 		../../../BaseGenesysTerminalApplication.h \
 		../../../GenesysApplication_if.h \
 		../../../../kernel/simulator/TraceManager.h \
@@ -9446,9 +9452,9 @@ Smart_ResourceCosting.o: ../../../terminal/examples/arenaSmarts/Smart_ResourceCo
 		../../../../plugins/components/Delay.h \
 		../../../../plugins/components/Release.h \
 		../../../TraitsApp.h
-	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o Smart_ResourceCosting.o ../../../terminal/examples/arenaSmarts/Smart_ResourceCosting.cpp
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o build/obj/Smart_ResourceCosting.o ../../../terminal/examples/arenaSmarts/Smart_ResourceCosting.cpp
 
-Smart_ResourceScheduleCosting.o: ../../../terminal/examples/arenaSmarts/Smart_ResourceScheduleCosting.cpp ../../../terminal/examples/arenaSmarts/Smart_ResourceScheduleCosting.h \
+build/obj/Smart_ResourceScheduleCosting.o: ../../../terminal/examples/arenaSmarts/Smart_ResourceScheduleCosting.cpp ../../../terminal/examples/arenaSmarts/Smart_ResourceScheduleCosting.h \
 		../../../BaseGenesysTerminalApplication.h \
 		../../../GenesysApplication_if.h \
 		../../../../kernel/simulator/TraceManager.h \
@@ -9506,9 +9512,9 @@ Smart_ResourceScheduleCosting.o: ../../../terminal/examples/arenaSmarts/Smart_Re
 		../../../../plugins/components/Delay.h \
 		../../../../plugins/components/Release.h \
 		../../../TraitsApp.h
-	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o Smart_ResourceScheduleCosting.o ../../../terminal/examples/arenaSmarts/Smart_ResourceScheduleCosting.cpp
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o build/obj/Smart_ResourceScheduleCosting.o ../../../terminal/examples/arenaSmarts/Smart_ResourceScheduleCosting.cpp
 
-Smart_ResourceSets.o: ../../../terminal/examples/arenaSmarts/Smart_ResourceSets.cpp ../../../terminal/examples/arenaSmarts/Smart_ResourceSets.h \
+build/obj/Smart_ResourceSets.o: ../../../terminal/examples/arenaSmarts/Smart_ResourceSets.cpp ../../../terminal/examples/arenaSmarts/Smart_ResourceSets.h \
 		../../../BaseGenesysTerminalApplication.h \
 		../../../GenesysApplication_if.h \
 		../../../../kernel/simulator/TraceManager.h \
@@ -9567,9 +9573,9 @@ Smart_ResourceSets.o: ../../../terminal/examples/arenaSmarts/Smart_ResourceSets.
 		../../../../kernel/simulator/SinkModelComponent.h \
 		../../../../plugins/components/Decide.h \
 		../../../TraitsApp.h
-	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o Smart_ResourceSets.o ../../../terminal/examples/arenaSmarts/Smart_ResourceSets.cpp
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o build/obj/Smart_ResourceSets.o ../../../terminal/examples/arenaSmarts/Smart_ResourceSets.cpp
 
-Smart_SeizingMultipleSimultaneosly.o: ../../../terminal/examples/arenaSmarts/Smart_SeizingMultipleSimultaneosly.cpp ../../../terminal/examples/arenaSmarts/Smart_SeizingMultipleSimultaneosly.h \
+build/obj/Smart_SeizingMultipleSimultaneosly.o: ../../../terminal/examples/arenaSmarts/Smart_SeizingMultipleSimultaneosly.cpp ../../../terminal/examples/arenaSmarts/Smart_SeizingMultipleSimultaneosly.h \
 		../../../BaseGenesysTerminalApplication.h \
 		../../../GenesysApplication_if.h \
 		../../../../kernel/simulator/TraceManager.h \
@@ -9626,9 +9632,9 @@ Smart_SeizingMultipleSimultaneosly.o: ../../../terminal/examples/arenaSmarts/Sma
 		../../../../plugins/components/Delay.h \
 		../../../../plugins/components/Release.h \
 		../../../TraitsApp.h
-	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o Smart_SeizingMultipleSimultaneosly.o ../../../terminal/examples/arenaSmarts/Smart_SeizingMultipleSimultaneosly.cpp
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o build/obj/Smart_SeizingMultipleSimultaneosly.o ../../../terminal/examples/arenaSmarts/Smart_SeizingMultipleSimultaneosly.cpp
 
-Smart_SelectingRouteBasedOnProbability.o: ../../../terminal/examples/arenaSmarts/Smart_SelectingRouteBasedOnProbability.cpp ../../../terminal/examples/arenaSmarts/Smart_SelectingRouteBasedOnProbability.h \
+build/obj/Smart_SelectingRouteBasedOnProbability.o: ../../../terminal/examples/arenaSmarts/Smart_SelectingRouteBasedOnProbability.cpp ../../../terminal/examples/arenaSmarts/Smart_SelectingRouteBasedOnProbability.h \
 		../../../BaseGenesysTerminalApplication.h \
 		../../../GenesysApplication_if.h \
 		../../../../kernel/simulator/TraceManager.h \
@@ -9693,9 +9699,9 @@ Smart_SelectingRouteBasedOnProbability.o: ../../../terminal/examples/arenaSmarts
 		../../../../plugins/components/Delay.h \
 		../../../../plugins/components/Release.h \
 		../../../TraitsApp.h
-	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o Smart_SelectingRouteBasedOnProbability.o ../../../terminal/examples/arenaSmarts/Smart_SelectingRouteBasedOnProbability.cpp
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o build/obj/Smart_SelectingRouteBasedOnProbability.o ../../../terminal/examples/arenaSmarts/Smart_SelectingRouteBasedOnProbability.cpp
 
-Smart_SelectingShorterQueue.o: ../../../terminal/examples/arenaSmarts/Smart_SelectingShorterQueue.cpp ../../../terminal/examples/arenaSmarts/Smart_SelectingShorterQueue.h \
+build/obj/Smart_SelectingShorterQueue.o: ../../../terminal/examples/arenaSmarts/Smart_SelectingShorterQueue.cpp ../../../terminal/examples/arenaSmarts/Smart_SelectingShorterQueue.h \
 		../../../BaseGenesysTerminalApplication.h \
 		../../../GenesysApplication_if.h \
 		../../../../kernel/simulator/TraceManager.h \
@@ -9754,9 +9760,9 @@ Smart_SelectingShorterQueue.o: ../../../terminal/examples/arenaSmarts/Smart_Sele
 		../../../../plugins/components/Release.h \
 		../../../../plugins/components/Decide.h \
 		../../../TraitsApp.h
-	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o Smart_SelectingShorterQueue.o ../../../terminal/examples/arenaSmarts/Smart_SelectingShorterQueue.cpp
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o build/obj/Smart_SelectingShorterQueue.o ../../../terminal/examples/arenaSmarts/Smart_SelectingShorterQueue.cpp
 
-Smart_SynchronizingParallelEntities.o: ../../../terminal/examples/arenaSmarts/Smart_SynchronizingParallelEntities.cpp ../../../terminal/examples/arenaSmarts/Smart_SynchronizingParallelEntities.h \
+build/obj/Smart_SynchronizingParallelEntities.o: ../../../terminal/examples/arenaSmarts/Smart_SynchronizingParallelEntities.cpp ../../../terminal/examples/arenaSmarts/Smart_SynchronizingParallelEntities.h \
 		../../../BaseGenesysTerminalApplication.h \
 		../../../GenesysApplication_if.h \
 		../../../../kernel/simulator/TraceManager.h \
@@ -9821,9 +9827,9 @@ Smart_SynchronizingParallelEntities.o: ../../../terminal/examples/arenaSmarts/Sm
 		../../../../plugins/components/Batch.h \
 		../../../../plugins/data/EntityGroup.h \
 		../../../TraitsApp.h
-	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o Smart_SynchronizingParallelEntities.o ../../../terminal/examples/arenaSmarts/Smart_SynchronizingParallelEntities.cpp
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o build/obj/Smart_SynchronizingParallelEntities.o ../../../terminal/examples/arenaSmarts/Smart_SynchronizingParallelEntities.cpp
 
-Smart_ValueAdded.o: ../../../terminal/examples/arenaSmarts/Smart_ValueAdded.cpp ../../../terminal/examples/arenaSmarts/Smart_ValueAdded.h \
+build/obj/Smart_ValueAdded.o: ../../../terminal/examples/arenaSmarts/Smart_ValueAdded.cpp ../../../terminal/examples/arenaSmarts/Smart_ValueAdded.h \
 		../../../BaseGenesysTerminalApplication.h \
 		../../../GenesysApplication_if.h \
 		../../../../kernel/simulator/TraceManager.h \
@@ -9887,9 +9893,9 @@ Smart_ValueAdded.o: ../../../terminal/examples/arenaSmarts/Smart_ValueAdded.cpp 
 		../../../../plugins/components/Delay.h \
 		../../../../plugins/components/Release.h \
 		../../../TraitsApp.h
-	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o Smart_ValueAdded.o ../../../terminal/examples/arenaSmarts/Smart_ValueAdded.cpp
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o build/obj/Smart_ValueAdded.o ../../../terminal/examples/arenaSmarts/Smart_ValueAdded.cpp
 
-Smart_WaitForSignal.o: ../../../terminal/examples/arenaSmarts/Smart_WaitForSignal.cpp ../../../terminal/examples/arenaSmarts/Smart_WaitForSignal.h \
+build/obj/Smart_WaitForSignal.o: ../../../terminal/examples/arenaSmarts/Smart_WaitForSignal.cpp ../../../terminal/examples/arenaSmarts/Smart_WaitForSignal.h \
 		../../../BaseGenesysTerminalApplication.h \
 		../../../GenesysApplication_if.h \
 		../../../../kernel/simulator/TraceManager.h \
@@ -9950,9 +9956,9 @@ Smart_WaitForSignal.o: ../../../terminal/examples/arenaSmarts/Smart_WaitForSigna
 		../../../../plugins/components/Dispose.h \
 		../../../../kernel/simulator/SinkModelComponent.h \
 		../../../TraitsApp.h
-	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o Smart_WaitForSignal.o ../../../terminal/examples/arenaSmarts/Smart_WaitForSignal.cpp
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o build/obj/Smart_WaitForSignal.o ../../../terminal/examples/arenaSmarts/Smart_WaitForSignal.cpp
 
-Book_Cap02_Example01.o: ../../../terminal/examples/book/Book_Cap02_Example01.cpp ../../../terminal/examples/book/Book_Cap02_Example01.h \
+build/obj/Book_Cap02_Example01.o: ../../../terminal/examples/book/Book_Cap02_Example01.cpp ../../../terminal/examples/book/Book_Cap02_Example01.h \
 		../../../BaseGenesysTerminalApplication.h \
 		../../../GenesysApplication_if.h \
 		../../../../kernel/simulator/TraceManager.h \
@@ -10000,9 +10006,9 @@ Book_Cap02_Example01.o: ../../../terminal/examples/book/Book_Cap02_Example01.cpp
 		../../../../plugins/components/Delay.h \
 		../../../../plugins/components/Dispose.h \
 		../../../../kernel/simulator/SinkModelComponent.h
-	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o Book_Cap02_Example01.o ../../../terminal/examples/book/Book_Cap02_Example01.cpp
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o build/obj/Book_Cap02_Example01.o ../../../terminal/examples/book/Book_Cap02_Example01.cpp
 
-Smart_AssignWriteSeizes.o: ../../../terminal/examples/smarts/Smart_AssignWriteSeizes.cpp ../../../terminal/examples/smarts/Smart_AssignWriteSeizes.h \
+build/obj/Smart_AssignWriteSeizes.o: ../../../terminal/examples/smarts/Smart_AssignWriteSeizes.cpp ../../../terminal/examples/smarts/Smart_AssignWriteSeizes.h \
 		../../../BaseGenesysTerminalApplication.h \
 		../../../GenesysApplication_if.h \
 		../../../../kernel/simulator/TraceManager.h \
@@ -10066,9 +10072,9 @@ Smart_AssignWriteSeizes.o: ../../../terminal/examples/smarts/Smart_AssignWriteSe
 		../../../../plugins/components/Decide.h \
 		../../../../plugins/components/Write.h \
 		../../../TraitsApp.h
-	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o Smart_AssignWriteSeizes.o ../../../terminal/examples/smarts/Smart_AssignWriteSeizes.cpp
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o build/obj/Smart_AssignWriteSeizes.o ../../../terminal/examples/smarts/Smart_AssignWriteSeizes.cpp
 
-Smart_BatchSeparate.o: ../../../terminal/examples/smarts/Smart_BatchSeparate.cpp ../../../terminal/examples/smarts/Smart_BatchSeparate.h \
+build/obj/Smart_BatchSeparate.o: ../../../terminal/examples/smarts/Smart_BatchSeparate.cpp ../../../terminal/examples/smarts/Smart_BatchSeparate.h \
 		../../../BaseGenesysTerminalApplication.h \
 		../../../GenesysApplication_if.h \
 		../../../../kernel/simulator/TraceManager.h \
@@ -10125,9 +10131,9 @@ Smart_BatchSeparate.o: ../../../terminal/examples/smarts/Smart_BatchSeparate.cpp
 		../../../../plugins/components/Delay.h \
 		../../../../plugins/components/Separate.h \
 		../../../TraitsApp.h
-	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o Smart_BatchSeparate.o ../../../terminal/examples/smarts/Smart_BatchSeparate.cpp
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o build/obj/Smart_BatchSeparate.o ../../../terminal/examples/smarts/Smart_BatchSeparate.cpp
 
-Smart_Buffer.o: ../../../terminal/examples/smarts/Smart_Buffer.cpp ../../../terminal/examples/smarts/Smart_Buffer.h \
+build/obj/Smart_Buffer.o: ../../../terminal/examples/smarts/Smart_Buffer.cpp ../../../terminal/examples/smarts/Smart_Buffer.h \
 		../../../BaseGenesysTerminalApplication.h \
 		../../../GenesysApplication_if.h \
 		../../../../kernel/simulator/TraceManager.h \
@@ -10178,9 +10184,9 @@ Smart_Buffer.o: ../../../terminal/examples/smarts/Smart_Buffer.cpp ../../../term
 		../../../../plugins/components/Dispose.h \
 		../../../../kernel/simulator/SinkModelComponent.h \
 		../../../TraitsApp.h
-	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o Smart_Buffer.o ../../../terminal/examples/smarts/Smart_Buffer.cpp
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o build/obj/Smart_Buffer.o ../../../terminal/examples/smarts/Smart_Buffer.cpp
 
-Smart_Clone.o: ../../../terminal/examples/smarts/Smart_Clone.cpp ../../../terminal/examples/smarts/Smart_Clone.h \
+build/obj/Smart_Clone.o: ../../../terminal/examples/smarts/Smart_Clone.cpp ../../../terminal/examples/smarts/Smart_Clone.h \
 		../../../BaseGenesysTerminalApplication.h \
 		../../../GenesysApplication_if.h \
 		../../../../kernel/simulator/TraceManager.h \
@@ -10228,9 +10234,9 @@ Smart_Clone.o: ../../../terminal/examples/smarts/Smart_Clone.cpp ../../../termin
 		../../../../plugins/components/Clone.h \
 		../../../../plugins/components/Dispose.h \
 		../../../../kernel/simulator/SinkModelComponent.h
-	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o Smart_Clone.o ../../../terminal/examples/smarts/Smart_Clone.cpp
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o build/obj/Smart_Clone.o ../../../terminal/examples/smarts/Smart_Clone.cpp
 
-Smart_CppForG.o: ../../../terminal/examples/smarts/Smart_CppForG.cpp ../../../terminal/examples/smarts/Smart_CppForG.h \
+build/obj/Smart_CppForG.o: ../../../terminal/examples/smarts/Smart_CppForG.cpp ../../../terminal/examples/smarts/Smart_CppForG.h \
 		../../../BaseGenesysTerminalApplication.h \
 		../../../GenesysApplication_if.h \
 		../../../../kernel/simulator/TraceManager.h \
@@ -10280,9 +10286,9 @@ Smart_CppForG.o: ../../../terminal/examples/smarts/Smart_CppForG.cpp ../../../te
 		../../../../plugins/components/Dispose.h \
 		../../../../kernel/simulator/SinkModelComponent.h \
 		../../../TraitsApp.h
-	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o Smart_CppForG.o ../../../terminal/examples/smarts/Smart_CppForG.cpp
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o build/obj/Smart_CppForG.o ../../../terminal/examples/smarts/Smart_CppForG.cpp
 
-Smart_Delay.o: ../../../terminal/examples/smarts/Smart_Delay.cpp ../../../terminal/examples/smarts/Smart_Delay.h \
+build/obj/Smart_Delay.o: ../../../terminal/examples/smarts/Smart_Delay.cpp ../../../terminal/examples/smarts/Smart_Delay.h \
 		../../../BaseGenesysTerminalApplication.h \
 		../../../GenesysApplication_if.h \
 		../../../../kernel/simulator/TraceManager.h \
@@ -10331,9 +10337,9 @@ Smart_Delay.o: ../../../terminal/examples/smarts/Smart_Delay.cpp ../../../termin
 		../../../../plugins/components/Dispose.h \
 		../../../../kernel/simulator/SinkModelComponent.h \
 		../../../TraitsApp.h
-	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o Smart_Delay.o ../../../terminal/examples/smarts/Smart_Delay.cpp
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o build/obj/Smart_Delay.o ../../../terminal/examples/smarts/Smart_Delay.cpp
 
-Smart_Dummy.o: ../../../terminal/examples/smarts/Smart_Dummy.cpp ../../../terminal/examples/smarts/Smart_Dummy.h \
+build/obj/Smart_Dummy.o: ../../../terminal/examples/smarts/Smart_Dummy.cpp ../../../terminal/examples/smarts/Smart_Dummy.h \
 		../../../BaseGenesysTerminalApplication.h \
 		../../../GenesysApplication_if.h \
 		../../../../kernel/simulator/TraceManager.h \
@@ -10383,9 +10389,9 @@ Smart_Dummy.o: ../../../terminal/examples/smarts/Smart_Dummy.cpp ../../../termin
 		../../../../plugins/components/Dispose.h \
 		../../../../kernel/simulator/SinkModelComponent.h \
 		../../../TraitsApp.h
-	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o Smart_Dummy.o ../../../terminal/examples/smarts/Smart_Dummy.cpp
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o build/obj/Smart_Dummy.o ../../../terminal/examples/smarts/Smart_Dummy.cpp
 
-Smart_Failures.o: ../../../terminal/examples/smarts/Smart_Failures.cpp ../../../terminal/examples/smarts/Smart_Failures.h \
+build/obj/Smart_Failures.o: ../../../terminal/examples/smarts/Smart_Failures.cpp ../../../terminal/examples/smarts/Smart_Failures.h \
 		../../../BaseGenesysTerminalApplication.h \
 		../../../GenesysApplication_if.h \
 		../../../../kernel/simulator/TraceManager.h \
@@ -10442,9 +10448,9 @@ Smart_Failures.o: ../../../terminal/examples/smarts/Smart_Failures.cpp ../../../
 		../../../../plugins/components/Dispose.h \
 		../../../../kernel/simulator/SinkModelComponent.h \
 		../../../TraitsApp.h
-	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o Smart_Failures.o ../../../terminal/examples/smarts/Smart_Failures.cpp
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o build/obj/Smart_Failures.o ../../../terminal/examples/smarts/Smart_Failures.cpp
 
-Smart_HoldSearchRemove.o: ../../../terminal/examples/smarts/Smart_HoldSearchRemove.cpp ../../../terminal/examples/smarts/Smart_HoldSearchRemove.h \
+build/obj/Smart_HoldSearchRemove.o: ../../../terminal/examples/smarts/Smart_HoldSearchRemove.cpp ../../../terminal/examples/smarts/Smart_HoldSearchRemove.h \
 		../../../BaseGenesysTerminalApplication.h \
 		../../../GenesysApplication_if.h \
 		../../../../kernel/simulator/TraceManager.h \
@@ -10500,9 +10506,9 @@ Smart_HoldSearchRemove.o: ../../../terminal/examples/smarts/Smart_HoldSearchRemo
 		../../../../plugins/components/Remove.h \
 		../../../../plugins/components/Dispose.h \
 		../../../../kernel/simulator/SinkModelComponent.h
-	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o Smart_HoldSearchRemove.o ../../../terminal/examples/smarts/Smart_HoldSearchRemove.cpp
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o build/obj/Smart_HoldSearchRemove.o ../../../terminal/examples/smarts/Smart_HoldSearchRemove.cpp
 
-Smart_LSODE.o: ../../../terminal/examples/smarts/Smart_LSODE.cpp ../../../terminal/examples/smarts/Smart_LSODE.h \
+build/obj/Smart_LSODE.o: ../../../terminal/examples/smarts/Smart_LSODE.cpp ../../../terminal/examples/smarts/Smart_LSODE.h \
 		../../../BaseGenesysTerminalApplication.h \
 		../../../GenesysApplication_if.h \
 		../../../../kernel/simulator/TraceManager.h \
@@ -10552,9 +10558,9 @@ Smart_LSODE.o: ../../../terminal/examples/smarts/Smart_LSODE.cpp ../../../termin
 		../../../../plugins/components/Dispose.h \
 		../../../../kernel/simulator/SinkModelComponent.h \
 		../../../TraitsApp.h
-	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o Smart_LSODE.o ../../../terminal/examples/smarts/Smart_LSODE.cpp
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o build/obj/Smart_LSODE.o ../../../terminal/examples/smarts/Smart_LSODE.cpp
 
-Smart_MarkovChain.o: ../../../terminal/examples/smarts/Smart_MarkovChain.cpp ../../../terminal/examples/smarts/Smart_MarkovChain.h \
+build/obj/Smart_MarkovChain.o: ../../../terminal/examples/smarts/Smart_MarkovChain.cpp ../../../terminal/examples/smarts/Smart_MarkovChain.h \
 		../../../BaseGenesysTerminalApplication.h \
 		../../../GenesysApplication_if.h \
 		../../../../kernel/simulator/TraceManager.h \
@@ -10604,9 +10610,9 @@ Smart_MarkovChain.o: ../../../terminal/examples/smarts/Smart_MarkovChain.cpp ../
 		../../../../plugins/components/Dispose.h \
 		../../../../kernel/simulator/SinkModelComponent.h \
 		../../../TraitsApp.h
-	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o Smart_MarkovChain.o ../../../terminal/examples/smarts/Smart_MarkovChain.cpp
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o build/obj/Smart_MarkovChain.o ../../../terminal/examples/smarts/Smart_MarkovChain.cpp
 
-Smart_ModelInfoModelSimulation.o: ../../../terminal/examples/smarts/Smart_ModelInfoModelSimulation.cpp ../../../terminal/examples/smarts/Smart_ModelInfoModelSimulation.h \
+build/obj/Smart_ModelInfoModelSimulation.o: ../../../terminal/examples/smarts/Smart_ModelInfoModelSimulation.cpp ../../../terminal/examples/smarts/Smart_ModelInfoModelSimulation.h \
 		../../../BaseGenesysTerminalApplication.h \
 		../../../GenesysApplication_if.h \
 		../../../../kernel/simulator/TraceManager.h \
@@ -10655,9 +10661,9 @@ Smart_ModelInfoModelSimulation.o: ../../../terminal/examples/smarts/Smart_ModelI
 		../../../../plugins/components/Dispose.h \
 		../../../../kernel/simulator/SinkModelComponent.h \
 		../../../TraitsApp.h
-	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o Smart_ModelInfoModelSimulation.o ../../../terminal/examples/smarts/Smart_ModelInfoModelSimulation.cpp
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o build/obj/Smart_ModelInfoModelSimulation.o ../../../terminal/examples/smarts/Smart_ModelInfoModelSimulation.cpp
 
-Smart_ODE.o: ../../../terminal/examples/smarts/Smart_ODE.cpp ../../../terminal/examples/smarts/Smart_ODE.h \
+build/obj/Smart_ODE.o: ../../../terminal/examples/smarts/Smart_ODE.cpp ../../../terminal/examples/smarts/Smart_ODE.h \
 		../../../BaseGenesysTerminalApplication.h \
 		../../../GenesysApplication_if.h \
 		../../../../kernel/simulator/TraceManager.h \
@@ -10707,9 +10713,9 @@ Smart_ODE.o: ../../../terminal/examples/smarts/Smart_ODE.cpp ../../../terminal/e
 		../../../../plugins/components/Dispose.h \
 		../../../../kernel/simulator/SinkModelComponent.h \
 		../../../TraitsApp.h
-	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o Smart_ODE.o ../../../terminal/examples/smarts/Smart_ODE.cpp
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o build/obj/Smart_ODE.o ../../../terminal/examples/smarts/Smart_ODE.cpp
 
-Smart_OnEvent.o: ../../../terminal/examples/smarts/Smart_OnEvent.cpp ../../../terminal/examples/smarts/Smart_OnEvent.h \
+build/obj/Smart_OnEvent.o: ../../../terminal/examples/smarts/Smart_OnEvent.cpp ../../../terminal/examples/smarts/Smart_OnEvent.h \
 		../../../BaseGenesysTerminalApplication.h \
 		../../../GenesysApplication_if.h \
 		../../../../kernel/simulator/TraceManager.h \
@@ -10758,9 +10764,9 @@ Smart_OnEvent.o: ../../../terminal/examples/smarts/Smart_OnEvent.cpp ../../../te
 		../../../../plugins/components/Dispose.h \
 		../../../../kernel/simulator/SinkModelComponent.h \
 		../../../TraitsApp.h
-	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o Smart_OnEvent.o ../../../terminal/examples/smarts/Smart_OnEvent.cpp
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o build/obj/Smart_OnEvent.o ../../../terminal/examples/smarts/Smart_OnEvent.cpp
 
-Smart_Parser.o: ../../../terminal/examples/smarts/Smart_Parser.cpp ../../../terminal/examples/smarts/Smart_Parser.h \
+build/obj/Smart_Parser.o: ../../../terminal/examples/smarts/Smart_Parser.cpp ../../../terminal/examples/smarts/Smart_Parser.h \
 		../../../BaseGenesysTerminalApplication.h \
 		../../../GenesysApplication_if.h \
 		../../../../kernel/simulator/TraceManager.h \
@@ -10808,9 +10814,9 @@ Smart_Parser.o: ../../../terminal/examples/smarts/Smart_Parser.cpp ../../../term
 		../../../../plugins/components/Dispose.h \
 		../../../../kernel/simulator/SinkModelComponent.h \
 		../../../TraitsApp.h
-	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o Smart_Parser.o ../../../terminal/examples/smarts/Smart_Parser.cpp
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o build/obj/Smart_Parser.o ../../../terminal/examples/smarts/Smart_Parser.cpp
 
-Smart_ParserModelFunctions.o: ../../../terminal/examples/smarts/Smart_ParserModelFunctions.cpp ../../../terminal/examples/smarts/Smart_ParserModelFunctions.h \
+build/obj/Smart_ParserModelFunctions.o: ../../../terminal/examples/smarts/Smart_ParserModelFunctions.cpp ../../../terminal/examples/smarts/Smart_ParserModelFunctions.h \
 		../../../BaseGenesysTerminalApplication.h \
 		../../../GenesysApplication_if.h \
 		../../../../kernel/simulator/TraceManager.h \
@@ -10870,9 +10876,9 @@ Smart_ParserModelFunctions.o: ../../../terminal/examples/smarts/Smart_ParserMode
 		../../../../kernel/simulator/SinkModelComponent.h \
 		../../../../kernel/simulator/Attribute.h \
 		../../../TraitsApp.h
-	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o Smart_ParserModelFunctions.o ../../../terminal/examples/smarts/Smart_ParserModelFunctions.cpp
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o build/obj/Smart_ParserModelFunctions.o ../../../terminal/examples/smarts/Smart_ParserModelFunctions.cpp
 
-Smart_Plugin.o: ../../../terminal/examples/smarts/Smart_Plugin.cpp ../../../terminal/examples/smarts/Smart_Plugin.h \
+build/obj/Smart_Plugin.o: ../../../terminal/examples/smarts/Smart_Plugin.cpp ../../../terminal/examples/smarts/Smart_Plugin.h \
 		../../../BaseGenesysTerminalApplication.h \
 		../../../GenesysApplication_if.h \
 		../../../../kernel/simulator/TraceManager.h \
@@ -10914,69 +10920,9 @@ Smart_Plugin.o: ../../../terminal/examples/smarts/Smart_Plugin.cpp ../../../term
 		../../../../kernel/simulator/ExperimentManager.h \
 		../../../../kernel/simulator/SimulationExperiment.h \
 		../../../TraitsApp.h
-	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o Smart_Plugin.o ../../../terminal/examples/smarts/Smart_Plugin.cpp
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o build/obj/Smart_Plugin.o ../../../terminal/examples/smarts/Smart_Plugin.cpp
 
-Smart_Process.o: ../../../terminal/examples/smarts/Smart_Process.cpp ../../../terminal/examples/smarts/Smart_Process.h \
-		../../../BaseGenesysTerminalApplication.h \
-		../../../GenesysApplication_if.h \
-		../../../../kernel/simulator/TraceManager.h \
-		../../../../kernel/util/List.h \
-		../../../../kernel/util/Util.h \
-		../../../../kernel/simulator/OnEventManager.h \
-		../../../../kernel/simulator/Event.h \
-		../../../../kernel/simulator/ModelDataDefinition.h \
-		../../../../kernel/simulator/ParserChangesInformation.h \
-		../../../../kernel/simulator/Persistence.h \
-		../../../../kernel/simulator/ModelPersistence_if.h \
-		../../../../kernel/simulator/SimulationControlAndResponse.h \
-		../../../../kernel/simulator/Entity.h \
-		../../../../kernel/simulator/EntityType.h \
-		../../../../kernel/simulator/StatisticsCollector.h \
-		../../../../kernel/statistics/Statistics_if.h \
-		../../../../kernel/statistics/Collector_if.h \
-		../../../../kernel/simulator/ModelDataManager.h \
-		../../../../kernel/simulator/Plugin.h \
-		../../../../kernel/simulator/PluginInformation.h \
-		../../../../kernel/simulator/ModelComponent.h \
-		../../../../kernel/simulator/ConnectionManager.h \
-		../../../../kernel/simulator/PluginManager.h \
-		../../../../kernel/simulator/PluginConnector_if.h \
-		../../../../kernel/simulator/Model.h \
-		../../../../kernel/simulator/ModelChecker_if.h \
-		../../../../kernel/simulator/Parser_if.h \
-		../../../../kernel/statistics/Sampler_if.h \
-		../../../../kernel/simulator/ComponentManager.h \
-		../../../../kernel/simulator/SourceModelComponent.h \
-		../../../../kernel/simulator/ModelInfo.h \
-		../../../../kernel/simulator/ModelSimulation.h \
-		../../../../kernel/simulator/SimulationReporter_if.h \
-		../../../../kernel/simulator/PropertyGenesys.h \
-		../../../../kernel/simulator/Simulator.h \
-		../../../../kernel/simulator/LicenceManager.h \
-		../../../../kernel/simulator/ModelManager.h \
-		../../../../kernel/simulator/ParserManager.h \
-		../../../../kernel/simulator/ExperimentManager.h \
-		../../../../kernel/simulator/SimulationExperiment.h \
-		../../../../plugins/components/Create.h \
-		../../../../kernel/simulator/Counter.h \
-		../../../../plugins/data/Formula.h \
-		../../../../plugins/data/Schedule.h \
-		../../../../plugins/components/Process.h \
-		../../../../plugins/components/Seize.h \
-		../../../../plugins/data/Resource.h \
-		../../../../plugins/data/Failure.h \
-		../../../../plugins/data/Queue.h \
-		../../../../plugins/components/SeizableItem.h \
-		../../../../plugins/data/Set.h \
-		../../../../plugins/components/QueueableItem.h \
-		../../../../plugins/components/Delay.h \
-		../../../../plugins/components/Release.h \
-		../../../../plugins/components/Dispose.h \
-		../../../../kernel/simulator/SinkModelComponent.h \
-		../../../TraitsApp.h
-	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o Smart_Process.o ../../../terminal/examples/smarts/Smart_Process.cpp
-
-Smart_ProcessSet.o: ../../../terminal/examples/smarts/Smart_ProcessSet.cpp ../../../terminal/examples/smarts/Smart_ProcessSet.h \
+build/obj/Smart_Process.o: ../../../terminal/examples/smarts/Smart_Process.cpp ../../../terminal/examples/smarts/Smart_Process.h \
 		../../../BaseGenesysTerminalApplication.h \
 		../../../GenesysApplication_if.h \
 		../../../../kernel/simulator/TraceManager.h \
@@ -11034,9 +10980,69 @@ Smart_ProcessSet.o: ../../../terminal/examples/smarts/Smart_ProcessSet.cpp ../..
 		../../../../plugins/components/Dispose.h \
 		../../../../kernel/simulator/SinkModelComponent.h \
 		../../../TraitsApp.h
-	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o Smart_ProcessSet.o ../../../terminal/examples/smarts/Smart_ProcessSet.cpp
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o build/obj/Smart_Process.o ../../../terminal/examples/smarts/Smart_Process.cpp
 
-Smart_Record.o: ../../../terminal/examples/smarts/Smart_Record.cpp ../../../terminal/examples/smarts/Smart_Record.h \
+build/obj/Smart_ProcessSet.o: ../../../terminal/examples/smarts/Smart_ProcessSet.cpp ../../../terminal/examples/smarts/Smart_ProcessSet.h \
+		../../../BaseGenesysTerminalApplication.h \
+		../../../GenesysApplication_if.h \
+		../../../../kernel/simulator/TraceManager.h \
+		../../../../kernel/util/List.h \
+		../../../../kernel/util/Util.h \
+		../../../../kernel/simulator/OnEventManager.h \
+		../../../../kernel/simulator/Event.h \
+		../../../../kernel/simulator/ModelDataDefinition.h \
+		../../../../kernel/simulator/ParserChangesInformation.h \
+		../../../../kernel/simulator/Persistence.h \
+		../../../../kernel/simulator/ModelPersistence_if.h \
+		../../../../kernel/simulator/SimulationControlAndResponse.h \
+		../../../../kernel/simulator/Entity.h \
+		../../../../kernel/simulator/EntityType.h \
+		../../../../kernel/simulator/StatisticsCollector.h \
+		../../../../kernel/statistics/Statistics_if.h \
+		../../../../kernel/statistics/Collector_if.h \
+		../../../../kernel/simulator/ModelDataManager.h \
+		../../../../kernel/simulator/Plugin.h \
+		../../../../kernel/simulator/PluginInformation.h \
+		../../../../kernel/simulator/ModelComponent.h \
+		../../../../kernel/simulator/ConnectionManager.h \
+		../../../../kernel/simulator/PluginManager.h \
+		../../../../kernel/simulator/PluginConnector_if.h \
+		../../../../kernel/simulator/Model.h \
+		../../../../kernel/simulator/ModelChecker_if.h \
+		../../../../kernel/simulator/Parser_if.h \
+		../../../../kernel/statistics/Sampler_if.h \
+		../../../../kernel/simulator/ComponentManager.h \
+		../../../../kernel/simulator/SourceModelComponent.h \
+		../../../../kernel/simulator/ModelInfo.h \
+		../../../../kernel/simulator/ModelSimulation.h \
+		../../../../kernel/simulator/SimulationReporter_if.h \
+		../../../../kernel/simulator/PropertyGenesys.h \
+		../../../../kernel/simulator/Simulator.h \
+		../../../../kernel/simulator/LicenceManager.h \
+		../../../../kernel/simulator/ModelManager.h \
+		../../../../kernel/simulator/ParserManager.h \
+		../../../../kernel/simulator/ExperimentManager.h \
+		../../../../kernel/simulator/SimulationExperiment.h \
+		../../../../plugins/components/Create.h \
+		../../../../kernel/simulator/Counter.h \
+		../../../../plugins/data/Formula.h \
+		../../../../plugins/data/Schedule.h \
+		../../../../plugins/components/Process.h \
+		../../../../plugins/components/Seize.h \
+		../../../../plugins/data/Resource.h \
+		../../../../plugins/data/Failure.h \
+		../../../../plugins/data/Queue.h \
+		../../../../plugins/components/SeizableItem.h \
+		../../../../plugins/data/Set.h \
+		../../../../plugins/components/QueueableItem.h \
+		../../../../plugins/components/Delay.h \
+		../../../../plugins/components/Release.h \
+		../../../../plugins/components/Dispose.h \
+		../../../../kernel/simulator/SinkModelComponent.h \
+		../../../TraitsApp.h
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o build/obj/Smart_ProcessSet.o ../../../terminal/examples/smarts/Smart_ProcessSet.cpp
+
+build/obj/Smart_Record.o: ../../../terminal/examples/smarts/Smart_Record.cpp ../../../terminal/examples/smarts/Smart_Record.h \
 		../../../BaseGenesysTerminalApplication.h \
 		../../../GenesysApplication_if.h \
 		../../../../kernel/simulator/TraceManager.h \
@@ -11095,9 +11101,9 @@ Smart_Record.o: ../../../terminal/examples/smarts/Smart_Record.cpp ../../../term
 		../../../../plugins/components/Dispose.h \
 		../../../../kernel/simulator/SinkModelComponent.h \
 		../../../TraitsApp.h
-	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o Smart_Record.o ../../../terminal/examples/smarts/Smart_Record.cpp
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o build/obj/Smart_Record.o ../../../terminal/examples/smarts/Smart_Record.cpp
 
-Smart_RouteStation.o: ../../../terminal/examples/smarts/Smart_RouteStation.cpp ../../../terminal/examples/smarts/Smart_RouteStation.h \
+build/obj/Smart_RouteStation.o: ../../../terminal/examples/smarts/Smart_RouteStation.cpp ../../../terminal/examples/smarts/Smart_RouteStation.h \
 		../../../BaseGenesysTerminalApplication.h \
 		../../../GenesysApplication_if.h \
 		../../../../kernel/simulator/TraceManager.h \
@@ -11152,9 +11158,9 @@ Smart_RouteStation.o: ../../../terminal/examples/smarts/Smart_RouteStation.cpp .
 		../../../../plugins/components/Dispose.h \
 		../../../../kernel/simulator/SinkModelComponent.h \
 		../../../TraitsApp.h
-	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o Smart_RouteStation.o ../../../terminal/examples/smarts/Smart_RouteStation.cpp
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o build/obj/Smart_RouteStation.o ../../../terminal/examples/smarts/Smart_RouteStation.cpp
 
-Smart_SeizeDelayRelease.o: ../../../terminal/examples/smarts/Smart_SeizeDelayRelease.cpp ../../../terminal/examples/smarts/Smart_SeizeDelayRelease.h \
+build/obj/Smart_SeizeDelayRelease.o: ../../../terminal/examples/smarts/Smart_SeizeDelayRelease.cpp ../../../terminal/examples/smarts/Smart_SeizeDelayRelease.h \
 		../../../BaseGenesysTerminalApplication.h \
 		../../../GenesysApplication_if.h \
 		../../../../kernel/simulator/TraceManager.h \
@@ -11211,9 +11217,9 @@ Smart_SeizeDelayRelease.o: ../../../terminal/examples/smarts/Smart_SeizeDelayRel
 		../../../../plugins/components/Dispose.h \
 		../../../../kernel/simulator/SinkModelComponent.h \
 		../../../TraitsApp.h
-	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o Smart_SeizeDelayRelease.o ../../../terminal/examples/smarts/Smart_SeizeDelayRelease.cpp
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o build/obj/Smart_SeizeDelayRelease.o ../../../terminal/examples/smarts/Smart_SeizeDelayRelease.cpp
 
-Smart_SeizeDelayReleaseMany.o: ../../../terminal/examples/smarts/Smart_SeizeDelayReleaseMany.cpp ../../../terminal/examples/smarts/Smart_SeizeDelayReleaseMany.h \
+build/obj/Smart_SeizeDelayReleaseMany.o: ../../../terminal/examples/smarts/Smart_SeizeDelayReleaseMany.cpp ../../../terminal/examples/smarts/Smart_SeizeDelayReleaseMany.h \
 		../../../BaseGenesysTerminalApplication.h \
 		../../../GenesysApplication_if.h \
 		../../../../kernel/simulator/TraceManager.h \
@@ -11270,9 +11276,9 @@ Smart_SeizeDelayReleaseMany.o: ../../../terminal/examples/smarts/Smart_SeizeDela
 		../../../../plugins/components/Dispose.h \
 		../../../../kernel/simulator/SinkModelComponent.h \
 		../../../TraitsApp.h
-	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o Smart_SeizeDelayReleaseMany.o ../../../terminal/examples/smarts/Smart_SeizeDelayReleaseMany.cpp
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o build/obj/Smart_SeizeDelayReleaseMany.o ../../../terminal/examples/smarts/Smart_SeizeDelayReleaseMany.cpp
 
-Smart_SeizeDelayReleaseNoDataDefs.o: ../../../terminal/examples/smarts/Smart_SeizeDelayReleaseNoDataDefs.cpp ../../../terminal/examples/smarts/Smart_SeizeDelayReleaseNoDataDefs.h \
+build/obj/Smart_SeizeDelayReleaseNoDataDefs.o: ../../../terminal/examples/smarts/Smart_SeizeDelayReleaseNoDataDefs.cpp ../../../terminal/examples/smarts/Smart_SeizeDelayReleaseNoDataDefs.h \
 		../../../BaseGenesysTerminalApplication.h \
 		../../../GenesysApplication_if.h \
 		../../../../kernel/simulator/TraceManager.h \
@@ -11328,9 +11334,9 @@ Smart_SeizeDelayReleaseNoDataDefs.o: ../../../terminal/examples/smarts/Smart_Sei
 		../../../../plugins/components/Release.h \
 		../../../../plugins/components/Dispose.h \
 		../../../../kernel/simulator/SinkModelComponent.h
-	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o Smart_SeizeDelayReleaseNoDataDefs.o ../../../terminal/examples/smarts/Smart_SeizeDelayReleaseNoDataDefs.cpp
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o build/obj/Smart_SeizeDelayReleaseNoDataDefs.o ../../../terminal/examples/smarts/Smart_SeizeDelayReleaseNoDataDefs.cpp
 
-Smart_Sequence.o: ../../../terminal/examples/smarts/Smart_Sequence.cpp ../../../terminal/examples/smarts/Smart_Sequence.h \
+build/obj/Smart_Sequence.o: ../../../terminal/examples/smarts/Smart_Sequence.cpp ../../../terminal/examples/smarts/Smart_Sequence.h \
 		../../../BaseGenesysTerminalApplication.h \
 		../../../GenesysApplication_if.h \
 		../../../../kernel/simulator/TraceManager.h \
@@ -11389,9 +11395,9 @@ Smart_Sequence.o: ../../../terminal/examples/smarts/Smart_Sequence.cpp ../../../
 		../../../../kernel/simulator/Attribute.h \
 		../../../../plugins/data/Variable.h \
 		../../../TraitsApp.h
-	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o Smart_Sequence.o ../../../terminal/examples/smarts/Smart_Sequence.cpp
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o build/obj/Smart_Sequence.o ../../../terminal/examples/smarts/Smart_Sequence.cpp
 
-Smart_SimulationControlResponse.o: ../../../terminal/examples/smarts/Smart_SimulationControlResponse.cpp ../../../terminal/examples/smarts/Smart_SimulationControlResponse.h \
+build/obj/Smart_SimulationControlResponse.o: ../../../terminal/examples/smarts/Smart_SimulationControlResponse.cpp ../../../terminal/examples/smarts/Smart_SimulationControlResponse.h \
 		../../../BaseGenesysTerminalApplication.h \
 		../../../GenesysApplication_if.h \
 		../../../../kernel/simulator/TraceManager.h \
@@ -11449,9 +11455,9 @@ Smart_SimulationControlResponse.o: ../../../terminal/examples/smarts/Smart_Simul
 		../../../../plugins/components/Dispose.h \
 		../../../../kernel/simulator/SinkModelComponent.h \
 		../../../TraitsApp.h
-	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o Smart_SimulationControlResponse.o ../../../terminal/examples/smarts/Smart_SimulationControlResponse.cpp
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o build/obj/Smart_SimulationControlResponse.o ../../../terminal/examples/smarts/Smart_SimulationControlResponse.cpp
 
-Smart_WaitScanCondition.o: ../../../terminal/examples/smarts/Smart_WaitScanCondition.cpp ../../../terminal/examples/smarts/Smart_WaitScanCondition.h \
+build/obj/Smart_WaitScanCondition.o: ../../../terminal/examples/smarts/Smart_WaitScanCondition.cpp ../../../terminal/examples/smarts/Smart_WaitScanCondition.h \
 		../../../BaseGenesysTerminalApplication.h \
 		../../../GenesysApplication_if.h \
 		../../../../kernel/simulator/TraceManager.h \
@@ -11506,9 +11512,9 @@ Smart_WaitScanCondition.o: ../../../terminal/examples/smarts/Smart_WaitScanCondi
 		../../../../plugins/components/Dispose.h \
 		../../../../kernel/simulator/SinkModelComponent.h \
 		../../../TraitsApp.h
-	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o Smart_WaitScanCondition.o ../../../terminal/examples/smarts/Smart_WaitScanCondition.cpp
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o build/obj/Smart_WaitScanCondition.o ../../../terminal/examples/smarts/Smart_WaitScanCondition.cpp
 
-Smart_WaitSignal.o: ../../../terminal/examples/smarts/Smart_WaitSignal.cpp ../../../terminal/examples/smarts/Smart_WaitSignal.h \
+build/obj/Smart_WaitSignal.o: ../../../terminal/examples/smarts/Smart_WaitSignal.cpp ../../../terminal/examples/smarts/Smart_WaitSignal.h \
 		../../../BaseGenesysTerminalApplication.h \
 		../../../GenesysApplication_if.h \
 		../../../../kernel/simulator/TraceManager.h \
@@ -11560,9 +11566,9 @@ Smart_WaitSignal.o: ../../../terminal/examples/smarts/Smart_WaitSignal.cpp ../..
 		../../../../plugins/components/Dispose.h \
 		../../../../kernel/simulator/SinkModelComponent.h \
 		../../../TraitsApp.h
-	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o Smart_WaitSignal.o ../../../terminal/examples/smarts/Smart_WaitSignal.cpp
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o build/obj/Smart_WaitSignal.o ../../../terminal/examples/smarts/Smart_WaitSignal.cpp
 
-Smaty_DefaultModalModel.o: ../../../terminal/examples/smarts/Smaty_DefaultModalModel.cpp ../../../terminal/examples/smarts/Smart_DefaultModalModel.h \
+build/obj/Smaty_DefaultModalModel.o: ../../../terminal/examples/smarts/Smaty_DefaultModalModel.cpp ../../../terminal/examples/smarts/Smart_DefaultModalModel.h \
 		../../../BaseGenesysTerminalApplication.h \
 		../../../GenesysApplication_if.h \
 		../../../../kernel/simulator/TraceManager.h \
@@ -11612,9 +11618,9 @@ Smaty_DefaultModalModel.o: ../../../terminal/examples/smarts/Smaty_DefaultModalM
 		../../../../plugins/components/Dispose.h \
 		../../../../kernel/simulator/SinkModelComponent.h \
 		../../../TraitsApp.h
-	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o Smaty_DefaultModalModel.o ../../../terminal/examples/smarts/Smaty_DefaultModalModel.cpp
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o build/obj/Smaty_DefaultModalModel.o ../../../terminal/examples/smarts/Smaty_DefaultModalModel.cpp
 
-AnElectronicAssemblyAndTestSystem.o: ../../../terminal/examples/teaching/AnElectronicAssemblyAndTestSystem.cpp ../../../terminal/examples/teaching/AnElectronicAssemblyAndTestSystem.h \
+build/obj/AnElectronicAssemblyAndTestSystem.o: ../../../terminal/examples/teaching/AnElectronicAssemblyAndTestSystem.cpp ../../../terminal/examples/teaching/AnElectronicAssemblyAndTestSystem.h \
 		../../../BaseGenesysTerminalApplication.h \
 		../../../GenesysApplication_if.h \
 		../../../../kernel/simulator/TraceManager.h \
@@ -11676,9 +11682,9 @@ AnElectronicAssemblyAndTestSystem.o: ../../../terminal/examples/teaching/AnElect
 		../../../../plugins/components/QueueableItem.h \
 		../../../../plugins/components/Release.h \
 		../../../../plugins/components/Decide.h
-	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o AnElectronicAssemblyAndTestSystem.o ../../../terminal/examples/teaching/AnElectronicAssemblyAndTestSystem.cpp
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o build/obj/AnElectronicAssemblyAndTestSystem.o ../../../terminal/examples/teaching/AnElectronicAssemblyAndTestSystem.cpp
 
-ContinuousModel.o: ../../../terminal/examples/teaching/ContinuousModel.cpp ../../../terminal/examples/teaching/ContinuousModel.h \
+build/obj/ContinuousModel.o: ../../../terminal/examples/teaching/ContinuousModel.cpp ../../../terminal/examples/teaching/ContinuousModel.h \
 		../../../BaseGenesysTerminalApplication.h \
 		../../../GenesysApplication_if.h \
 		../../../../kernel/simulator/TraceManager.h \
@@ -11721,9 +11727,9 @@ ContinuousModel.o: ../../../terminal/examples/teaching/ContinuousModel.cpp ../..
 		../../../../plugins/data/CppCompiler.h \
 		../../../../plugins/components/Dispose.h \
 		../../../../kernel/simulator/SinkModelComponent.h
-	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o ContinuousModel.o ../../../terminal/examples/teaching/ContinuousModel.cpp
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o build/obj/ContinuousModel.o ../../../terminal/examples/teaching/ContinuousModel.cpp
 
-FullSimulationOfComplexModel.o: ../../../terminal/examples/teaching/FullSimulationOfComplexModel.cpp ../../../terminal/examples/teaching/FullSimulationOfComplexModel.h \
+build/obj/FullSimulationOfComplexModel.o: ../../../terminal/examples/teaching/FullSimulationOfComplexModel.cpp ../../../terminal/examples/teaching/FullSimulationOfComplexModel.h \
 		../../../BaseGenesysTerminalApplication.h \
 		../../../GenesysApplication_if.h \
 		../../../../kernel/simulator/TraceManager.h \
@@ -11785,9 +11791,9 @@ FullSimulationOfComplexModel.o: ../../../terminal/examples/teaching/FullSimulati
 		../../../../plugins/data/Variable.h \
 		../../../../plugins/components/Record.h \
 		../../../../plugins/components/Decide.h
-	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o FullSimulationOfComplexModel.o ../../../terminal/examples/teaching/FullSimulationOfComplexModel.cpp
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o build/obj/FullSimulationOfComplexModel.o ../../../terminal/examples/teaching/FullSimulationOfComplexModel.cpp
 
-Half_Adder.o: ../../../terminal/examples/teaching/Half_Adder.cpp ../../../terminal/examples/teaching/Half_Adder.h \
+build/obj/Half_Adder.o: ../../../terminal/examples/teaching/Half_Adder.cpp ../../../terminal/examples/teaching/Half_Adder.h \
 		../../../BaseGenesysTerminalApplication.h \
 		../../../GenesysApplication_if.h \
 		../../../../kernel/simulator/TraceManager.h \
@@ -11832,9 +11838,9 @@ Half_Adder.o: ../../../terminal/examples/teaching/Half_Adder.cpp ../../../termin
 		../../../../plugins/data/SPICERunner.h \
 		../../../../plugins/components/SPICENode.h \
 		../../../TraitsApp.h
-	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o Half_Adder.o ../../../terminal/examples/teaching/Half_Adder.cpp
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o build/obj/Half_Adder.o ../../../terminal/examples/teaching/Half_Adder.cpp
 
-Loja01.o: ../../../terminal/examples/teaching/Loja/Loja01.cpp ../../../terminal/examples/teaching/Loja/Loja01.h \
+build/obj/Loja01.o: ../../../terminal/examples/teaching/Loja/Loja01.cpp ../../../terminal/examples/teaching/Loja/Loja01.h \
 		../../../BaseGenesysTerminalApplication.h \
 		../../../GenesysApplication_if.h \
 		../../../../kernel/simulator/TraceManager.h \
@@ -11891,9 +11897,9 @@ Loja01.o: ../../../terminal/examples/teaching/Loja/Loja01.cpp ../../../terminal/
 		../../../../plugins/components/QueueableItem.h \
 		../../../../plugins/components/Release.h \
 		../../../../kernel/simulator/Attribute.h
-	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o Loja01.o ../../../terminal/examples/teaching/Loja/Loja01.cpp
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o build/obj/Loja01.o ../../../terminal/examples/teaching/Loja/Loja01.cpp
 
-OperatingSystem02.o: ../../../terminal/examples/teaching/OperatingSystem02.cpp ../../../terminal/examples/teaching/OperatingSystem02.h \
+build/obj/OperatingSystem02.o: ../../../terminal/examples/teaching/OperatingSystem02.cpp ../../../terminal/examples/teaching/OperatingSystem02.h \
 		../../../BaseGenesysTerminalApplication.h \
 		../../../GenesysApplication_if.h \
 		../../../../kernel/simulator/TraceManager.h \
@@ -11959,9 +11965,9 @@ OperatingSystem02.o: ../../../terminal/examples/teaching/OperatingSystem02.cpp .
 		../../../../plugins/components/Route.h \
 		../../../../plugins/data/Sequence.h \
 		../../../../plugins/data/Label.h
-	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o OperatingSystem02.o ../../../terminal/examples/teaching/OperatingSystem02.cpp
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o build/obj/OperatingSystem02.o ../../../terminal/examples/teaching/OperatingSystem02.cpp
 
-OperatingSystem03.o: ../../../terminal/examples/teaching/OperatingSystem03.cpp ../../../terminal/examples/teaching/OperatingSystem03.h \
+build/obj/OperatingSystem03.o: ../../../terminal/examples/teaching/OperatingSystem03.cpp ../../../terminal/examples/teaching/OperatingSystem03.h \
 		../../../BaseGenesysTerminalApplication.h \
 		../../../GenesysApplication_if.h \
 		../../../../kernel/simulator/TraceManager.h \
@@ -12027,9 +12033,9 @@ OperatingSystem03.o: ../../../terminal/examples/teaching/OperatingSystem03.cpp .
 		../../../../plugins/components/Route.h \
 		../../../../plugins/data/Sequence.h \
 		../../../../plugins/data/Label.h
-	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o OperatingSystem03.o ../../../terminal/examples/teaching/OperatingSystem03.cpp
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o build/obj/OperatingSystem03.o ../../../terminal/examples/teaching/OperatingSystem03.cpp
 
-Rectifier.o: ../../../terminal/examples/teaching/Rectifier.cpp ../../../terminal/examples/teaching/Rectifier.h \
+build/obj/Rectifier.o: ../../../terminal/examples/teaching/Rectifier.cpp ../../../terminal/examples/teaching/Rectifier.h \
 		../../../BaseGenesysTerminalApplication.h \
 		../../../GenesysApplication_if.h \
 		../../../../kernel/simulator/TraceManager.h \
@@ -12074,13 +12080,13 @@ Rectifier.o: ../../../terminal/examples/teaching/Rectifier.cpp ../../../terminal
 		../../../../plugins/data/SPICERunner.h \
 		../../../../plugins/components/SPICENode.h \
 		../../../TraitsApp.h
-	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o Rectifier.o ../../../terminal/examples/teaching/Rectifier.cpp
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o build/obj/Rectifier.o ../../../terminal/examples/teaching/Rectifier.cpp
 
-CodeEditor.o: codeeditor/CodeEditor.cpp codeeditor/CodeEditor.h \
+build/obj/CodeEditor.o: codeeditor/CodeEditor.cpp codeeditor/CodeEditor.h \
 		codeeditor/LineNumberArea.h
-	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o CodeEditor.o codeeditor/CodeEditor.cpp
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o build/obj/CodeEditor.o codeeditor/CodeEditor.cpp
 
-mainwindow_controller_on.o: mainwindow_controller_on.cpp mainwindow.h \
+build/obj/mainwindow_controller_on.o: mainwindow_controller_on.cpp mainwindow.h \
 		propertyeditor/DataComponentProperty.h \
 		propertyeditor/DataComponentEditor.h \
 		../../../../kernel/simulator/PropertyGenesys.h \
@@ -12139,6 +12145,12 @@ mainwindow_controller_on.o: mainwindow_controller_on.cpp mainwindow.h \
 		../../../../kernel/simulator/Counter.h \
 		animations/AnimationTimer.h \
 		ui_mainwindow.h \
+		codeeditor/CodeEditor.h \
+		graphicals/ModelGraphicsView.h \
+		propertyeditor/ObjectPropertyBrowser.h \
+		propertyeditor/qtpropertybrowser/qttreepropertybrowser.h \
+		propertyeditor/qtpropertybrowser/qtpropertybrowser.h \
+		propertyeditor/qtpropertybrowser/qtvariantproperty.h \
 		dialogs/dialogBreakpoint.h \
 		ui_dialogBreakpoint.h \
 		dialogs/Dialogmodelinformation.h \
@@ -12149,9 +12161,9 @@ mainwindow_controller_on.o: mainwindow_controller_on.cpp mainwindow.h \
 		actions/DeleteUndoCommand.h \
 		actions/AddUndoCommand.h \
 		actions/PasteUndoCommand.h
-	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o mainwindow_controller_on.o mainwindow_controller_on.cpp
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o build/obj/mainwindow_controller_on.o mainwindow_controller_on.cpp
 
-mainwindow_scene.o: mainwindow_scene.cpp mainwindow.h \
+build/obj/mainwindow_scene.o: mainwindow_scene.cpp mainwindow.h \
 		propertyeditor/DataComponentProperty.h \
 		propertyeditor/DataComponentEditor.h \
 		../../../../kernel/simulator/PropertyGenesys.h \
@@ -12209,10 +12221,16 @@ mainwindow_scene.o: mainwindow_scene.cpp mainwindow.h \
 		animations/AnimationCounter.h \
 		../../../../kernel/simulator/Counter.h \
 		animations/AnimationTimer.h \
-		ui_mainwindow.h
-	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o mainwindow_scene.o mainwindow_scene.cpp
+		ui_mainwindow.h \
+		codeeditor/CodeEditor.h \
+		graphicals/ModelGraphicsView.h \
+		propertyeditor/ObjectPropertyBrowser.h \
+		propertyeditor/qtpropertybrowser/qttreepropertybrowser.h \
+		propertyeditor/qtpropertybrowser/qtpropertybrowser.h \
+		propertyeditor/qtpropertybrowser/qtvariantproperty.h
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o build/obj/mainwindow_scene.o mainwindow_scene.cpp
 
-mainwindow_simulator.o: mainwindow_simulator.cpp mainwindow.h \
+build/obj/mainwindow_simulator.o: mainwindow_simulator.cpp mainwindow.h \
 		propertyeditor/DataComponentProperty.h \
 		propertyeditor/DataComponentEditor.h \
 		../../../../kernel/simulator/PropertyGenesys.h \
@@ -12270,10 +12288,16 @@ mainwindow_simulator.o: mainwindow_simulator.cpp mainwindow.h \
 		animations/AnimationCounter.h \
 		../../../../kernel/simulator/Counter.h \
 		animations/AnimationTimer.h \
-		ui_mainwindow.h
-	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o mainwindow_simulator.o mainwindow_simulator.cpp
+		ui_mainwindow.h \
+		codeeditor/CodeEditor.h \
+		graphicals/ModelGraphicsView.h \
+		propertyeditor/ObjectPropertyBrowser.h \
+		propertyeditor/qtpropertybrowser/qttreepropertybrowser.h \
+		propertyeditor/qtpropertybrowser/qtpropertybrowser.h \
+		propertyeditor/qtpropertybrowser/qtvariantproperty.h
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o build/obj/mainwindow_simulator.o mainwindow_simulator.cpp
 
-DataComponentProperty.o: propertyeditor/DataComponentProperty.cpp propertyeditor/DataComponentProperty.h \
+build/obj/DataComponentProperty.o: propertyeditor/DataComponentProperty.cpp propertyeditor/DataComponentProperty.h \
 		propertyeditor/DataComponentEditor.h \
 		../../../../kernel/simulator/PropertyGenesys.h \
 		../../../../kernel/simulator/SimulationControlAndResponse.h \
@@ -12295,9 +12319,9 @@ DataComponentProperty.o: propertyeditor/DataComponentProperty.cpp propertyeditor
 		../../../../kernel/simulator/ModelDataManager.h \
 		../../../../kernel/simulator/ConnectionManager.h \
 		propertyeditor/ComboBoxEnum.h
-	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o DataComponentProperty.o propertyeditor/DataComponentProperty.cpp
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o build/obj/DataComponentProperty.o propertyeditor/DataComponentProperty.cpp
 
-ModelGraphicsScene.o: graphicals/ModelGraphicsScene.cpp graphicals/ModelGraphicsScene.h \
+build/obj/ModelGraphicsScene.o: graphicals/ModelGraphicsScene.cpp graphicals/ModelGraphicsScene.h \
 		graphicals/GraphicalModelComponent.h \
 		../../../../kernel/simulator/ModelComponent.h \
 		../../../../kernel/simulator/Plugin.h \
@@ -12364,9 +12388,9 @@ ModelGraphicsScene.o: graphicals/ModelGraphicsScene.cpp graphicals/ModelGraphics
 		dialogs/DialogSelectVariable.h \
 		dialogs/DialogTimerConfigure.h \
 		animations/AnimationQueue.h
-	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o ModelGraphicsScene.o graphicals/ModelGraphicsScene.cpp
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o build/obj/ModelGraphicsScene.o graphicals/ModelGraphicsScene.cpp
 
-ModelGraphicsView.o: graphicals/ModelGraphicsView.cpp graphicals/ModelGraphicsView.h \
+build/obj/ModelGraphicsView.o: graphicals/ModelGraphicsView.cpp graphicals/ModelGraphicsView.h \
 		graphicals/ModelGraphicsScene.h \
 		graphicals/GraphicalModelComponent.h \
 		../../../../kernel/simulator/ModelComponent.h \
@@ -12424,9 +12448,9 @@ ModelGraphicsView.o: graphicals/ModelGraphicsView.cpp graphicals/ModelGraphicsVi
 		animations/AnimationCounter.h \
 		../../../../kernel/simulator/Counter.h \
 		animations/AnimationTimer.h
-	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o ModelGraphicsView.o graphicals/ModelGraphicsView.cpp
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o build/obj/ModelGraphicsView.o graphicals/ModelGraphicsView.cpp
 
-ObjectPropertyBrowser.o: propertyeditor/ObjectPropertyBrowser.cpp propertyeditor/ObjectPropertyBrowser.h \
+build/obj/ObjectPropertyBrowser.o: propertyeditor/ObjectPropertyBrowser.cpp propertyeditor/ObjectPropertyBrowser.h \
 		propertyeditor/qtpropertybrowser/qttreepropertybrowser.h \
 		propertyeditor/qtpropertybrowser/qtpropertybrowser.h \
 		propertyeditor/qtpropertybrowser/qtvariantproperty.h \
@@ -12452,9 +12476,9 @@ ObjectPropertyBrowser.o: propertyeditor/ObjectPropertyBrowser.cpp propertyeditor
 		../../../../kernel/simulator/ModelDataManager.h \
 		../../../../kernel/simulator/ConnectionManager.h \
 		propertyeditor/ComboBoxEnum.h
-	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o ObjectPropertyBrowser.o propertyeditor/ObjectPropertyBrowser.cpp
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o build/obj/ObjectPropertyBrowser.o propertyeditor/ObjectPropertyBrowser.cpp
 
-PropertyEditor.o: propertyeditor/PropertyEditor.cpp propertyeditor/PropertyEditor.h \
+build/obj/PropertyEditor.o: propertyeditor/PropertyEditor.cpp propertyeditor/PropertyEditor.h \
 		../../../../kernel/simulator/ModelDataDefinition.h \
 		../../../../kernel/util/List.h \
 		../../../../kernel/util/Util.h \
@@ -12463,9 +12487,9 @@ PropertyEditor.o: propertyeditor/PropertyEditor.cpp propertyeditor/PropertyEdito
 		../../../../kernel/simulator/ModelPersistence_if.h \
 		../../../../kernel/simulator/SimulationControlAndResponse.h \
 		../../../../kernel/simulator/TraceManager.h
-	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o PropertyEditor.o propertyeditor/PropertyEditor.cpp
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o build/obj/PropertyEditor.o propertyeditor/PropertyEditor.cpp
 
-DataComponentEditor.o: propertyeditor/DataComponentEditor.cpp propertyeditor/DataComponentEditor.h \
+build/obj/DataComponentEditor.o: propertyeditor/DataComponentEditor.cpp propertyeditor/DataComponentEditor.h \
 		propertyeditor/DataComponentProperty.h \
 		propertyeditor/ComboBoxEnum.h \
 		../../../../kernel/simulator/PropertyGenesys.h \
@@ -12487,9 +12511,9 @@ DataComponentEditor.o: propertyeditor/DataComponentEditor.cpp propertyeditor/Dat
 		../../../../kernel/statistics/Collector_if.h \
 		../../../../kernel/simulator/ModelDataManager.h \
 		../../../../kernel/simulator/ConnectionManager.h
-	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o DataComponentEditor.o propertyeditor/DataComponentEditor.cpp
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o build/obj/DataComponentEditor.o propertyeditor/DataComponentEditor.cpp
 
-ComboBoxEnum.o: propertyeditor/ComboBoxEnum.cpp propertyeditor/ComboBoxEnum.h \
+build/obj/ComboBoxEnum.o: propertyeditor/ComboBoxEnum.cpp propertyeditor/ComboBoxEnum.h \
 		../../../../kernel/simulator/PropertyGenesys.h \
 		../../../../kernel/simulator/SimulationControlAndResponse.h \
 		../../../../kernel/util/Util.h \
@@ -12509,9 +12533,9 @@ ComboBoxEnum.o: propertyeditor/ComboBoxEnum.cpp propertyeditor/ComboBoxEnum.h \
 		../../../../kernel/statistics/Collector_if.h \
 		../../../../kernel/simulator/ModelDataManager.h \
 		../../../../kernel/simulator/ConnectionManager.h
-	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o ComboBoxEnum.o propertyeditor/ComboBoxEnum.cpp
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o build/obj/ComboBoxEnum.o propertyeditor/ComboBoxEnum.cpp
 
-AddUndoCommand.o: actions/AddUndoCommand.cpp actions/AddUndoCommand.h \
+build/obj/AddUndoCommand.o: actions/AddUndoCommand.cpp actions/AddUndoCommand.h \
 		graphicals/ModelGraphicsScene.h \
 		graphicals/GraphicalModelComponent.h \
 		../../../../kernel/simulator/ModelComponent.h \
@@ -12569,9 +12593,9 @@ AddUndoCommand.o: actions/AddUndoCommand.cpp actions/AddUndoCommand.h \
 		animations/AnimationCounter.h \
 		../../../../kernel/simulator/Counter.h \
 		animations/AnimationTimer.h
-	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o AddUndoCommand.o actions/AddUndoCommand.cpp
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o build/obj/AddUndoCommand.o actions/AddUndoCommand.cpp
 
-DeleteUndoCommand.o: actions/DeleteUndoCommand.cpp actions/DeleteUndoCommand.h \
+build/obj/DeleteUndoCommand.o: actions/DeleteUndoCommand.cpp actions/DeleteUndoCommand.h \
 		actions/AddUndoCommand.h \
 		graphicals/ModelGraphicsScene.h \
 		graphicals/GraphicalModelComponent.h \
@@ -12630,9 +12654,9 @@ DeleteUndoCommand.o: actions/DeleteUndoCommand.cpp actions/DeleteUndoCommand.h \
 		animations/AnimationCounter.h \
 		../../../../kernel/simulator/Counter.h \
 		animations/AnimationTimer.h
-	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o DeleteUndoCommand.o actions/DeleteUndoCommand.cpp
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o build/obj/DeleteUndoCommand.o actions/DeleteUndoCommand.cpp
 
-GroupUndoCommand.o: actions/GroupUndoCommand.cpp actions/GroupUndoCommand.h \
+build/obj/GroupUndoCommand.o: actions/GroupUndoCommand.cpp actions/GroupUndoCommand.h \
 		graphicals/ModelGraphicsScene.h \
 		graphicals/GraphicalModelComponent.h \
 		../../../../kernel/simulator/ModelComponent.h \
@@ -12690,9 +12714,9 @@ GroupUndoCommand.o: actions/GroupUndoCommand.cpp actions/GroupUndoCommand.h \
 		animations/AnimationCounter.h \
 		../../../../kernel/simulator/Counter.h \
 		animations/AnimationTimer.h
-	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o GroupUndoCommand.o actions/GroupUndoCommand.cpp
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o build/obj/GroupUndoCommand.o actions/GroupUndoCommand.cpp
 
-MoveUndoCommand.o: actions/MoveUndoCommand.cpp actions/MoveUndoCommand.h \
+build/obj/MoveUndoCommand.o: actions/MoveUndoCommand.cpp actions/MoveUndoCommand.h \
 		graphicals/ModelGraphicsScene.h \
 		graphicals/GraphicalModelComponent.h \
 		../../../../kernel/simulator/ModelComponent.h \
@@ -12750,9 +12774,9 @@ MoveUndoCommand.o: actions/MoveUndoCommand.cpp actions/MoveUndoCommand.h \
 		animations/AnimationCounter.h \
 		../../../../kernel/simulator/Counter.h \
 		animations/AnimationTimer.h
-	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o MoveUndoCommand.o actions/MoveUndoCommand.cpp
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o build/obj/MoveUndoCommand.o actions/MoveUndoCommand.cpp
 
-PasteUndoCommand.o: actions/PasteUndoCommand.cpp actions/PasteUndoCommand.h \
+build/obj/PasteUndoCommand.o: actions/PasteUndoCommand.cpp actions/PasteUndoCommand.h \
 		actions/AddUndoCommand.h \
 		graphicals/ModelGraphicsScene.h \
 		graphicals/GraphicalModelComponent.h \
@@ -12811,9 +12835,9 @@ PasteUndoCommand.o: actions/PasteUndoCommand.cpp actions/PasteUndoCommand.h \
 		animations/AnimationCounter.h \
 		../../../../kernel/simulator/Counter.h \
 		animations/AnimationTimer.h
-	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o PasteUndoCommand.o actions/PasteUndoCommand.cpp
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o build/obj/PasteUndoCommand.o actions/PasteUndoCommand.cpp
 
-UngroupUndoCommand.o: actions/UngroupUndoCommand.cpp actions/UngroupUndoCommand.h \
+build/obj/UngroupUndoCommand.o: actions/UngroupUndoCommand.cpp actions/UngroupUndoCommand.h \
 		graphicals/ModelGraphicsScene.h \
 		graphicals/GraphicalModelComponent.h \
 		../../../../kernel/simulator/ModelComponent.h \
@@ -12871,9 +12895,9 @@ UngroupUndoCommand.o: actions/UngroupUndoCommand.cpp actions/UngroupUndoCommand.
 		animations/AnimationCounter.h \
 		../../../../kernel/simulator/Counter.h \
 		animations/AnimationTimer.h
-	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o UngroupUndoCommand.o actions/UngroupUndoCommand.cpp
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o build/obj/UngroupUndoCommand.o actions/UngroupUndoCommand.cpp
 
-AnimationCounter.o: animations/AnimationCounter.cpp animations/AnimationCounter.h \
+build/obj/AnimationCounter.o: animations/AnimationCounter.cpp animations/AnimationCounter.h \
 		../../../../kernel/simulator/Counter.h \
 		../../../../kernel/simulator/ModelDataDefinition.h \
 		../../../../kernel/util/List.h \
@@ -12886,9 +12910,9 @@ AnimationCounter.o: animations/AnimationCounter.cpp animations/AnimationCounter.
 		../../../../kernel/simulator/ModelDataManager.h \
 		../../../../kernel/simulator/Plugin.h \
 		../../../../kernel/simulator/PluginInformation.h
-	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o AnimationCounter.o animations/AnimationCounter.cpp
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o build/obj/AnimationCounter.o animations/AnimationCounter.cpp
 
-AnimationQueue.o: animations/AnimationQueue.cpp animations/AnimationQueue.h \
+build/obj/AnimationQueue.o: animations/AnimationQueue.cpp animations/AnimationQueue.h \
 		graphicals/GraphicalModelComponent.h \
 		../../../../kernel/simulator/ModelComponent.h \
 		../../../../kernel/simulator/Plugin.h \
@@ -12946,9 +12970,9 @@ AnimationQueue.o: animations/AnimationQueue.cpp animations/AnimationQueue.h \
 		animations/AnimationCounter.h \
 		../../../../kernel/simulator/Counter.h \
 		animations/AnimationTimer.h
-	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o AnimationQueue.o animations/AnimationQueue.cpp
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o build/obj/AnimationQueue.o animations/AnimationQueue.cpp
 
-AnimationTimer.o: animations/AnimationTimer.cpp animations/AnimationTimer.h \
+build/obj/AnimationTimer.o: animations/AnimationTimer.cpp animations/AnimationTimer.h \
 		../../../../kernel/util/Util.h \
 		graphicals/ModelGraphicsScene.h \
 		graphicals/GraphicalModelComponent.h \
@@ -13005,9 +13029,9 @@ AnimationTimer.o: animations/AnimationTimer.cpp animations/AnimationTimer.h \
 		../../../../plugins/data/Variable.h \
 		animations/AnimationCounter.h \
 		../../../../kernel/simulator/Counter.h
-	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o AnimationTimer.o animations/AnimationTimer.cpp
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o build/obj/AnimationTimer.o animations/AnimationTimer.cpp
 
-AnimationTransition.o: animations/AnimationTransition.cpp animations/AnimationTransition.h \
+build/obj/AnimationTransition.o: animations/AnimationTransition.cpp animations/AnimationTransition.h \
 		graphicals/GraphicalImageAnimation.h \
 		graphicals/GraphicalModelComponent.h \
 		../../../../kernel/simulator/ModelComponent.h \
@@ -13064,9 +13088,9 @@ AnimationTransition.o: animations/AnimationTransition.cpp animations/AnimationTr
 		animations/AnimationCounter.h \
 		../../../../kernel/simulator/Counter.h \
 		animations/AnimationTimer.h
-	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o AnimationTransition.o animations/AnimationTransition.cpp
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o build/obj/AnimationTransition.o animations/AnimationTransition.cpp
 
-AnimationVariable.o: animations/AnimationVariable.cpp animations/AnimationVariable.h \
+build/obj/AnimationVariable.o: animations/AnimationVariable.cpp animations/AnimationVariable.h \
 		../../../../plugins/data/Variable.h \
 		../../../../kernel/simulator/ModelDataDefinition.h \
 		../../../../kernel/util/List.h \
@@ -13079,9 +13103,9 @@ AnimationVariable.o: animations/AnimationVariable.cpp animations/AnimationVariab
 		../../../../kernel/simulator/ModelDataManager.h \
 		../../../../kernel/simulator/Plugin.h \
 		../../../../kernel/simulator/PluginInformation.h
-	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o AnimationVariable.o animations/AnimationVariable.cpp
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o build/obj/AnimationVariable.o animations/AnimationVariable.cpp
 
-DialogFind.o: dialogs/DialogFind.cpp dialogs/DialogFind.h \
+build/obj/DialogFind.o: dialogs/DialogFind.cpp dialogs/DialogFind.h \
 		graphicals/GraphicalModelComponent.h \
 		../../../../kernel/simulator/ModelComponent.h \
 		../../../../kernel/simulator/Plugin.h \
@@ -13139,9 +13163,9 @@ DialogFind.o: dialogs/DialogFind.cpp dialogs/DialogFind.h \
 		animations/AnimationCounter.h \
 		../../../../kernel/simulator/Counter.h \
 		animations/AnimationTimer.h
-	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o DialogFind.o dialogs/DialogFind.cpp
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o build/obj/DialogFind.o dialogs/DialogFind.cpp
 
-DialogSelectCounter.o: dialogs/DialogSelectCounter.cpp dialogs/DialogSelectCounter.h \
+build/obj/DialogSelectCounter.o: dialogs/DialogSelectCounter.cpp dialogs/DialogSelectCounter.h \
 		../../../../kernel/simulator/Counter.h \
 		../../../../kernel/simulator/ModelDataDefinition.h \
 		../../../../kernel/util/List.h \
@@ -13154,9 +13178,9 @@ DialogSelectCounter.o: dialogs/DialogSelectCounter.cpp dialogs/DialogSelectCount
 		../../../../kernel/simulator/ModelDataManager.h \
 		../../../../kernel/simulator/Plugin.h \
 		../../../../kernel/simulator/PluginInformation.h
-	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o DialogSelectCounter.o dialogs/DialogSelectCounter.cpp
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o build/obj/DialogSelectCounter.o dialogs/DialogSelectCounter.cpp
 
-DialogSelectVariable.o: dialogs/DialogSelectVariable.cpp dialogs/DialogSelectVariable.h \
+build/obj/DialogSelectVariable.o: dialogs/DialogSelectVariable.cpp dialogs/DialogSelectVariable.h \
 		../../../../plugins/data/Variable.h \
 		../../../../kernel/simulator/ModelDataDefinition.h \
 		../../../../kernel/util/List.h \
@@ -13169,19 +13193,19 @@ DialogSelectVariable.o: dialogs/DialogSelectVariable.cpp dialogs/DialogSelectVar
 		../../../../kernel/simulator/ModelDataManager.h \
 		../../../../kernel/simulator/Plugin.h \
 		../../../../kernel/simulator/PluginInformation.h
-	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o DialogSelectVariable.o dialogs/DialogSelectVariable.cpp
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o build/obj/DialogSelectVariable.o dialogs/DialogSelectVariable.cpp
 
-DialogTimerConfigure.o: dialogs/DialogTimerConfigure.cpp dialogs/DialogTimerConfigure.h \
+build/obj/DialogTimerConfigure.o: dialogs/DialogTimerConfigure.cpp dialogs/DialogTimerConfigure.h \
 		animations/AnimationTimer.h \
 		../../../../kernel/util/Util.h \
 		ui_DialogTimerConfigure.h
-	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o DialogTimerConfigure.o dialogs/DialogTimerConfigure.cpp
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o build/obj/DialogTimerConfigure.o dialogs/DialogTimerConfigure.cpp
 
-Dialogmodelinformation.o: dialogs/Dialogmodelinformation.cpp dialogs/Dialogmodelinformation.h \
+build/obj/Dialogmodelinformation.o: dialogs/Dialogmodelinformation.cpp dialogs/Dialogmodelinformation.h \
 		ui_Dialogmodelinformation.h
-	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o Dialogmodelinformation.o dialogs/Dialogmodelinformation.cpp
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o build/obj/Dialogmodelinformation.o dialogs/Dialogmodelinformation.cpp
 
-dialogBreakpoint.o: dialogs/dialogBreakpoint.cpp dialogs/dialogBreakpoint.h \
+build/obj/dialogBreakpoint.o: dialogs/dialogBreakpoint.cpp dialogs/dialogBreakpoint.h \
 		ui_dialogBreakpoint.h \
 		../../../../kernel/simulator/Simulator.h \
 		../../../../kernel/simulator/Model.h \
@@ -13222,13 +13246,13 @@ dialogBreakpoint.o: dialogs/dialogBreakpoint.cpp dialogs/dialogBreakpoint.h \
 		../../../../kernel/simulator/ExperimentManager.h \
 		../../../../kernel/simulator/SimulationExperiment.h \
 		../../../../plugins/components/Access.h
-	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o dialogBreakpoint.o dialogs/dialogBreakpoint.cpp
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o build/obj/dialogBreakpoint.o dialogs/dialogBreakpoint.cpp
 
-dialogpluginmanager.o: dialogs/dialogpluginmanager.cpp dialogs/dialogpluginmanager.h \
+build/obj/dialogpluginmanager.o: dialogs/dialogpluginmanager.cpp dialogs/dialogpluginmanager.h \
 		ui_dialogpluginmanager.h
-	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o dialogpluginmanager.o dialogs/dialogpluginmanager.cpp
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o build/obj/dialogpluginmanager.o dialogs/dialogpluginmanager.cpp
 
-dialogsimulationconfigure.o: dialogs/dialogsimulationconfigure.cpp dialogs/dialogsimulationconfigure.h \
+build/obj/dialogsimulationconfigure.o: dialogs/dialogsimulationconfigure.cpp dialogs/dialogsimulationconfigure.h \
 		../../../../kernel/simulator/Simulator.h \
 		../../../../kernel/simulator/Model.h \
 		../../../../kernel/util/List.h \
@@ -13268,19 +13292,19 @@ dialogsimulationconfigure.o: dialogs/dialogsimulationconfigure.cpp dialogs/dialo
 		../../../../kernel/simulator/ExperimentManager.h \
 		../../../../kernel/simulator/SimulationExperiment.h \
 		ui_dialogsimulationconfigure.h
-	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o dialogsimulationconfigure.o dialogs/dialogsimulationconfigure.cpp
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o build/obj/dialogsimulationconfigure.o dialogs/dialogsimulationconfigure.cpp
 
-dialogsystempreferences.o: dialogs/dialogsystempreferences.cpp dialogs/dialogsystempreferences.h \
+build/obj/dialogsystempreferences.o: dialogs/dialogsystempreferences.cpp dialogs/dialogsystempreferences.h \
 		ui_dialogsystempreferences.h
-	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o dialogsystempreferences.o dialogs/dialogsystempreferences.cpp
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o build/obj/dialogsystempreferences.o dialogs/dialogsystempreferences.cpp
 
-GraphicalAnimateExpression.o: graphicals/GraphicalAnimateExpression.cpp graphicals/GraphicalAnimateExpression.h
-	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o GraphicalAnimateExpression.o graphicals/GraphicalAnimateExpression.cpp
+build/obj/GraphicalAnimateExpression.o: graphicals/GraphicalAnimateExpression.cpp graphicals/GraphicalAnimateExpression.h
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o build/obj/GraphicalAnimateExpression.o graphicals/GraphicalAnimateExpression.cpp
 
-GraphicalAssociation.o: graphicals/GraphicalAssociation.cpp graphicals/GraphicalAssociation.h
-	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o GraphicalAssociation.o graphicals/GraphicalAssociation.cpp
+build/obj/GraphicalAssociation.o: graphicals/GraphicalAssociation.cpp graphicals/GraphicalAssociation.h
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o build/obj/GraphicalAssociation.o graphicals/GraphicalAssociation.cpp
 
-GraphicalComponentPort.o: graphicals/GraphicalComponentPort.cpp graphicals/GraphicalComponentPort.h \
+build/obj/GraphicalComponentPort.o: graphicals/GraphicalComponentPort.cpp graphicals/GraphicalComponentPort.h \
 		../../../../kernel/simulator/ModelComponent.h \
 		../../../../kernel/simulator/Plugin.h \
 		../../../../kernel/util/Util.h \
@@ -13306,9 +13330,9 @@ GraphicalComponentPort.o: graphicals/GraphicalComponentPort.cpp graphicals/Graph
 		graphicals/GraphicalImageAnimation.h \
 		graphicals/GraphicalModelDataDefinition.h \
 		UtilGUI.h
-	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o GraphicalComponentPort.o graphicals/GraphicalComponentPort.cpp
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o build/obj/GraphicalComponentPort.o graphicals/GraphicalComponentPort.cpp
 
-GraphicalConnection.o: graphicals/GraphicalConnection.cpp graphicals/GraphicalConnection.h \
+build/obj/GraphicalConnection.o: graphicals/GraphicalConnection.cpp graphicals/GraphicalConnection.h \
 		graphicals/GraphicalComponentPort.h \
 		../../../../kernel/simulator/ModelComponent.h \
 		../../../../kernel/simulator/Plugin.h \
@@ -13333,9 +13357,9 @@ GraphicalConnection.o: graphicals/GraphicalConnection.cpp graphicals/GraphicalCo
 		../../../../plugins/data/Queue.h \
 		graphicals/GraphicalImageAnimation.h \
 		graphicals/GraphicalModelDataDefinition.h
-	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o GraphicalConnection.o graphicals/GraphicalConnection.cpp
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o build/obj/GraphicalConnection.o graphicals/GraphicalConnection.cpp
 
-GraphicalDiagramConnection.o: graphicals/GraphicalDiagramConnection.cpp graphicals/GraphicalDiagramConnection.h \
+build/obj/GraphicalDiagramConnection.o: graphicals/GraphicalDiagramConnection.cpp graphicals/GraphicalDiagramConnection.h \
 		../../../../kernel/simulator/ModelComponent.h \
 		../../../../kernel/simulator/Plugin.h \
 		../../../../kernel/util/Util.h \
@@ -13361,12 +13385,12 @@ GraphicalDiagramConnection.o: graphicals/GraphicalDiagramConnection.cpp graphica
 		TraitsGUI.h \
 		graphicals/GraphicalModelDataDefinition.h \
 		UtilGUI.h
-	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o GraphicalDiagramConnection.o graphicals/GraphicalDiagramConnection.cpp
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o build/obj/GraphicalDiagramConnection.o graphicals/GraphicalDiagramConnection.cpp
 
-GraphicalImageAnimation.o: graphicals/GraphicalImageAnimation.cpp graphicals/GraphicalImageAnimation.h
-	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o GraphicalImageAnimation.o graphicals/GraphicalImageAnimation.cpp
+build/obj/GraphicalImageAnimation.o: graphicals/GraphicalImageAnimation.cpp graphicals/GraphicalImageAnimation.h
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o build/obj/GraphicalImageAnimation.o graphicals/GraphicalImageAnimation.cpp
 
-GraphicalModelComponent.o: graphicals/GraphicalModelComponent.cpp graphicals/GraphicalModelComponent.h \
+build/obj/GraphicalModelComponent.o: graphicals/GraphicalModelComponent.cpp graphicals/GraphicalModelComponent.h \
 		../../../../kernel/simulator/ModelComponent.h \
 		../../../../kernel/simulator/Plugin.h \
 		../../../../kernel/util/Util.h \
@@ -13391,9 +13415,9 @@ GraphicalModelComponent.o: graphicals/GraphicalModelComponent.cpp graphicals/Gra
 		TraitsGUI.h \
 		graphicals/GraphicalModelDataDefinition.h \
 		UtilGUI.h
-	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o GraphicalModelComponent.o graphicals/GraphicalModelComponent.cpp
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o build/obj/GraphicalModelComponent.o graphicals/GraphicalModelComponent.cpp
 
-GraphicalModelDataDefinition.o: graphicals/GraphicalModelDataDefinition.cpp graphicals/GraphicalModelDataDefinition.h \
+build/obj/GraphicalModelDataDefinition.o: graphicals/GraphicalModelDataDefinition.cpp graphicals/GraphicalModelDataDefinition.h \
 		../../../../kernel/simulator/Plugin.h \
 		../../../../kernel/util/Util.h \
 		../../../../kernel/simulator/Persistence.h \
@@ -13405,9 +13429,9 @@ GraphicalModelDataDefinition.o: graphicals/GraphicalModelDataDefinition.cpp grap
 		../../../../kernel/simulator/ParserChangesInformation.h \
 		../../../../kernel/simulator/SimulationControlAndResponse.h \
 		../../../../kernel/simulator/TraceManager.h
-	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o GraphicalModelDataDefinition.o graphicals/GraphicalModelDataDefinition.cpp
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o build/obj/GraphicalModelDataDefinition.o graphicals/GraphicalModelDataDefinition.cpp
 
-main.o: main.cpp mainwindow.h \
+build/obj/main.o: main.cpp mainwindow.h \
 		propertyeditor/DataComponentProperty.h \
 		propertyeditor/DataComponentEditor.h \
 		../../../../kernel/simulator/PropertyGenesys.h \
@@ -13471,9 +13495,9 @@ main.o: main.cpp mainwindow.h \
 		../../../terminal/GenesysShell/GenesysShell.h \
 		../../../BaseGenesysTerminalApplication.h \
 		../../../terminal/examples/smarts/Smart_DefaultModalModel.h
-	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o main.o main.cpp
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o build/obj/main.o main.cpp
 
-mainwindow.o: mainwindow.cpp mainwindow.h \
+build/obj/mainwindow.o: mainwindow.cpp mainwindow.h \
 		propertyeditor/DataComponentProperty.h \
 		propertyeditor/DataComponentEditor.h \
 		../../../../kernel/simulator/PropertyGenesys.h \
@@ -13532,106 +13556,110 @@ mainwindow.o: mainwindow.cpp mainwindow.h \
 		../../../../kernel/simulator/Counter.h \
 		animations/AnimationTimer.h \
 		ui_mainwindow.h \
+		codeeditor/CodeEditor.h \
+		graphicals/ModelGraphicsView.h \
+		propertyeditor/ObjectPropertyBrowser.h \
+		propertyeditor/qtpropertybrowser/qttreepropertybrowser.h \
+		propertyeditor/qtpropertybrowser/qtpropertybrowser.h \
+		propertyeditor/qtpropertybrowser/qtvariantproperty.h \
 		../../../../kernel/simulator/SinkModelComponent.h \
 		../../../../kernel/simulator/Attribute.h \
 		../../../TraitsApp.h \
-		../../../GenesysApplication_if.h \
-		propertyeditor/qtpropertybrowser/qttreepropertybrowser.h \
-		propertyeditor/qtpropertybrowser/qtpropertybrowser.h
-	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o mainwindow.o mainwindow.cpp
+		../../../GenesysApplication_if.h
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o build/obj/mainwindow.o mainwindow.cpp
 
-qtbuttonpropertybrowser.o: propertyeditor/qtpropertybrowser/qtbuttonpropertybrowser.cpp propertyeditor/qtpropertybrowser/qtbuttonpropertybrowser.h \
+build/obj/qtbuttonpropertybrowser.o: propertyeditor/qtpropertybrowser/qtbuttonpropertybrowser.cpp propertyeditor/qtpropertybrowser/qtbuttonpropertybrowser.h \
 		propertyeditor/qtpropertybrowser/qtpropertybrowser.h \
-		moc_qtbuttonpropertybrowser.cpp
-	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o qtbuttonpropertybrowser.o propertyeditor/qtpropertybrowser/qtbuttonpropertybrowser.cpp
+		build/moc/moc_qtbuttonpropertybrowser.cpp
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o build/obj/qtbuttonpropertybrowser.o propertyeditor/qtpropertybrowser/qtbuttonpropertybrowser.cpp
 
-qteditorfactory.o: propertyeditor/qtpropertybrowser/qteditorfactory.cpp propertyeditor/qtpropertybrowser/qteditorfactory.h \
+build/obj/qteditorfactory.o: propertyeditor/qtpropertybrowser/qteditorfactory.cpp propertyeditor/qtpropertybrowser/qteditorfactory.h \
 		propertyeditor/qtpropertybrowser/qtpropertymanager.h \
 		propertyeditor/qtpropertybrowser/qtpropertybrowser.h \
 		propertyeditor/qtpropertybrowser/qtpropertybrowserutils_p.h \
-		moc_qteditorfactory.cpp \
+		build/moc/moc_qteditorfactory.cpp \
 		qteditorfactory.moc
-	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o qteditorfactory.o propertyeditor/qtpropertybrowser/qteditorfactory.cpp
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o build/obj/qteditorfactory.o propertyeditor/qtpropertybrowser/qteditorfactory.cpp
 
-qtgroupboxpropertybrowser.o: propertyeditor/qtpropertybrowser/qtgroupboxpropertybrowser.cpp propertyeditor/qtpropertybrowser/qtgroupboxpropertybrowser.h \
+build/obj/qtgroupboxpropertybrowser.o: propertyeditor/qtpropertybrowser/qtgroupboxpropertybrowser.cpp propertyeditor/qtpropertybrowser/qtgroupboxpropertybrowser.h \
 		propertyeditor/qtpropertybrowser/qtpropertybrowser.h \
-		moc_qtgroupboxpropertybrowser.cpp
-	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o qtgroupboxpropertybrowser.o propertyeditor/qtpropertybrowser/qtgroupboxpropertybrowser.cpp
+		build/moc/moc_qtgroupboxpropertybrowser.cpp
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o build/obj/qtgroupboxpropertybrowser.o propertyeditor/qtpropertybrowser/qtgroupboxpropertybrowser.cpp
 
-qtpropertybrowser.o: propertyeditor/qtpropertybrowser/qtpropertybrowser.cpp propertyeditor/qtpropertybrowser/qtpropertybrowser.h \
-		moc_qtpropertybrowser.cpp
-	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o qtpropertybrowser.o propertyeditor/qtpropertybrowser/qtpropertybrowser.cpp
+build/obj/qtpropertybrowser.o: propertyeditor/qtpropertybrowser/qtpropertybrowser.cpp propertyeditor/qtpropertybrowser/qtpropertybrowser.h \
+		build/moc/moc_qtpropertybrowser.cpp
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o build/obj/qtpropertybrowser.o propertyeditor/qtpropertybrowser/qtpropertybrowser.cpp
 
-qtpropertybrowserutils.o: propertyeditor/qtpropertybrowser/qtpropertybrowserutils.cpp propertyeditor/qtpropertybrowser/qtpropertybrowserutils_p.h
-	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o qtpropertybrowserutils.o propertyeditor/qtpropertybrowser/qtpropertybrowserutils.cpp
+build/obj/qtpropertybrowserutils.o: propertyeditor/qtpropertybrowser/qtpropertybrowserutils.cpp propertyeditor/qtpropertybrowser/qtpropertybrowserutils_p.h
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o build/obj/qtpropertybrowserutils.o propertyeditor/qtpropertybrowser/qtpropertybrowserutils.cpp
 
-qtpropertymanager.o: propertyeditor/qtpropertybrowser/qtpropertymanager.cpp propertyeditor/qtpropertybrowser/qtpropertymanager.h \
+build/obj/qtpropertymanager.o: propertyeditor/qtpropertybrowser/qtpropertymanager.cpp propertyeditor/qtpropertybrowser/qtpropertymanager.h \
 		propertyeditor/qtpropertybrowser/qtpropertybrowser.h \
 		propertyeditor/qtpropertybrowser/qtpropertybrowserutils_p.h \
-		moc_qtpropertymanager.cpp \
+		build/moc/moc_qtpropertymanager.cpp \
 		qtpropertymanager.moc
-	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o qtpropertymanager.o propertyeditor/qtpropertybrowser/qtpropertymanager.cpp
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o build/obj/qtpropertymanager.o propertyeditor/qtpropertybrowser/qtpropertymanager.cpp
 
-qttreepropertybrowser.o: propertyeditor/qtpropertybrowser/qttreepropertybrowser.cpp propertyeditor/qtpropertybrowser/qttreepropertybrowser.h \
+build/obj/qttreepropertybrowser.o: propertyeditor/qtpropertybrowser/qttreepropertybrowser.cpp propertyeditor/qtpropertybrowser/qttreepropertybrowser.h \
 		propertyeditor/qtpropertybrowser/qtpropertybrowser.h \
-		moc_qttreepropertybrowser.cpp \
+		build/moc/moc_qttreepropertybrowser.cpp \
 		qttreepropertybrowser.moc
-	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o qttreepropertybrowser.o propertyeditor/qtpropertybrowser/qttreepropertybrowser.cpp
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o build/obj/qttreepropertybrowser.o propertyeditor/qtpropertybrowser/qttreepropertybrowser.cpp
 
-qtvariantproperty.o: propertyeditor/qtpropertybrowser/qtvariantproperty.cpp propertyeditor/qtpropertybrowser/qtvariantproperty.h \
+build/obj/qtvariantproperty.o: propertyeditor/qtpropertybrowser/qtvariantproperty.cpp propertyeditor/qtpropertybrowser/qtvariantproperty.h \
 		propertyeditor/qtpropertybrowser/qtpropertybrowser.h \
 		propertyeditor/qtpropertybrowser/qtpropertymanager.h \
 		propertyeditor/qtpropertybrowser/qteditorfactory.h \
-		moc_qtvariantproperty.cpp
-	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o qtvariantproperty.o propertyeditor/qtpropertybrowser/qtvariantproperty.cpp
+		build/moc/moc_qtvariantproperty.cpp
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o build/obj/qtvariantproperty.o propertyeditor/qtpropertybrowser/qtvariantproperty.cpp
 
-qrc_GenesysQtGUI_resources.o: qrc_GenesysQtGUI_resources.cpp 
-	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o qrc_GenesysQtGUI_resources.o qrc_GenesysQtGUI_resources.cpp
+build/obj/qrc_GenesysQtGUI_resources.o: build/rcc/qrc_GenesysQtGUI_resources.cpp 
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o build/obj/qrc_GenesysQtGUI_resources.o build/rcc/qrc_GenesysQtGUI_resources.cpp
 
-qrc_qtpropertybrowser.o: qrc_qtpropertybrowser.cpp 
-	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o qrc_qtpropertybrowser.o qrc_qtpropertybrowser.cpp
+build/obj/qrc_qtpropertybrowser.o: build/rcc/qrc_qtpropertybrowser.cpp 
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o build/obj/qrc_qtpropertybrowser.o build/rcc/qrc_qtpropertybrowser.cpp
 
-qrc_qmake_qmake_qm_files.o: qrc_qmake_qmake_qm_files.cpp 
-	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o qrc_qmake_qmake_qm_files.o qrc_qmake_qmake_qm_files.cpp
+build/obj/qrc_qmake_qmake_qm_files.o: build/rcc/qrc_qmake_qmake_qm_files.cpp 
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o build/obj/qrc_qmake_qmake_qm_files.o build/rcc/qrc_qmake_qmake_qm_files.cpp
 
-moc_CodeEditor.o: moc_CodeEditor.cpp 
-	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o moc_CodeEditor.o moc_CodeEditor.cpp
+build/obj/moc_CodeEditor.o: build/moc/moc_CodeEditor.cpp 
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o build/obj/moc_CodeEditor.o build/moc/moc_CodeEditor.cpp
 
-moc_ObjectPropertyBrowser.o: moc_ObjectPropertyBrowser.cpp 
-	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o moc_ObjectPropertyBrowser.o moc_ObjectPropertyBrowser.cpp
+build/obj/moc_ObjectPropertyBrowser.o: build/moc/moc_ObjectPropertyBrowser.cpp 
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o build/obj/moc_ObjectPropertyBrowser.o build/moc/moc_ObjectPropertyBrowser.cpp
 
-moc_DialogFind.o: moc_DialogFind.cpp 
-	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o moc_DialogFind.o moc_DialogFind.cpp
+build/obj/moc_DialogFind.o: build/moc/moc_DialogFind.cpp 
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o build/obj/moc_DialogFind.o build/moc/moc_DialogFind.cpp
 
-moc_DialogSelectCounter.o: moc_DialogSelectCounter.cpp 
-	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o moc_DialogSelectCounter.o moc_DialogSelectCounter.cpp
+build/obj/moc_DialogSelectCounter.o: build/moc/moc_DialogSelectCounter.cpp 
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o build/obj/moc_DialogSelectCounter.o build/moc/moc_DialogSelectCounter.cpp
 
-moc_DialogSelectVariable.o: moc_DialogSelectVariable.cpp 
-	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o moc_DialogSelectVariable.o moc_DialogSelectVariable.cpp
+build/obj/moc_DialogSelectVariable.o: build/moc/moc_DialogSelectVariable.cpp 
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o build/obj/moc_DialogSelectVariable.o build/moc/moc_DialogSelectVariable.cpp
 
-moc_DialogTimerConfigure.o: moc_DialogTimerConfigure.cpp 
-	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o moc_DialogTimerConfigure.o moc_DialogTimerConfigure.cpp
+build/obj/moc_DialogTimerConfigure.o: build/moc/moc_DialogTimerConfigure.cpp 
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o build/obj/moc_DialogTimerConfigure.o build/moc/moc_DialogTimerConfigure.cpp
 
-moc_Dialogmodelinformation.o: moc_Dialogmodelinformation.cpp 
-	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o moc_Dialogmodelinformation.o moc_Dialogmodelinformation.cpp
+build/obj/moc_Dialogmodelinformation.o: build/moc/moc_Dialogmodelinformation.cpp 
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o build/obj/moc_Dialogmodelinformation.o build/moc/moc_Dialogmodelinformation.cpp
 
-moc_dialogBreakpoint.o: moc_dialogBreakpoint.cpp 
-	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o moc_dialogBreakpoint.o moc_dialogBreakpoint.cpp
+build/obj/moc_dialogBreakpoint.o: build/moc/moc_dialogBreakpoint.cpp 
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o build/obj/moc_dialogBreakpoint.o build/moc/moc_dialogBreakpoint.cpp
 
-moc_dialogpluginmanager.o: moc_dialogpluginmanager.cpp 
-	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o moc_dialogpluginmanager.o moc_dialogpluginmanager.cpp
+build/obj/moc_dialogpluginmanager.o: build/moc/moc_dialogpluginmanager.cpp 
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o build/obj/moc_dialogpluginmanager.o build/moc/moc_dialogpluginmanager.cpp
 
-moc_dialogsimulationconfigure.o: moc_dialogsimulationconfigure.cpp 
-	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o moc_dialogsimulationconfigure.o moc_dialogsimulationconfigure.cpp
+build/obj/moc_dialogsimulationconfigure.o: build/moc/moc_dialogsimulationconfigure.cpp 
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o build/obj/moc_dialogsimulationconfigure.o build/moc/moc_dialogsimulationconfigure.cpp
 
-moc_dialogsystempreferences.o: moc_dialogsystempreferences.cpp 
-	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o moc_dialogsystempreferences.o moc_dialogsystempreferences.cpp
+build/obj/moc_dialogsystempreferences.o: build/moc/moc_dialogsystempreferences.cpp 
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o build/obj/moc_dialogsystempreferences.o build/moc/moc_dialogsystempreferences.cpp
 
-moc_mainwindow.o: moc_mainwindow.cpp 
-	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o moc_mainwindow.o moc_mainwindow.cpp
+build/obj/moc_mainwindow.o: build/moc/moc_mainwindow.cpp 
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o build/obj/moc_mainwindow.o build/moc/moc_mainwindow.cpp
 
-moc_qtpropertybrowserutils_p.o: moc_qtpropertybrowserutils_p.cpp 
-	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o moc_qtpropertybrowserutils_p.o moc_qtpropertybrowserutils_p.cpp
+build/obj/moc_qtpropertybrowserutils_p.o: build/moc/moc_qtpropertybrowserutils_p.cpp 
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o build/obj/moc_qtpropertybrowserutils_p.o build/moc/moc_qtpropertybrowserutils_p.cpp
 
 ####### Install
 

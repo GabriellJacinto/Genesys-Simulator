@@ -655,3 +655,9 @@ RESOURCES += \
     GenesysQtGUI_resources.qrc \
     propertyeditor/qtpropertybrowser/qtpropertybrowser.qrc
 
+# Diretórios de build e testes
+OBJECTS_DIR = build/obj
+MOC_DIR = build/moc
+RCC_DIR = build/rcc
+UI_DIR = build/ui
+

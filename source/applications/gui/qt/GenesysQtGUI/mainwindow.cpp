@@ -47,6 +47,8 @@
 #include <QtCharts/QChartView>
 #include <QtCharts/QBarCategoryAxis>
 #include <QtCharts/QValueAxis>
+#include "../../../../kernel/simulator/StatisticsCollector.h"
+#include "../../../../kernel/simulator/Counter.h"
 using namespace QtCharts;
 
 MainWindow::MainWindow(QWidget *parent) : QMainWindow(parent), ui(new Ui::MainWindow) {
@@ -2157,5 +2159,46 @@ void MainWindow::_helpCopy() {
 //-------------------------
 // PRIVATE SLOTS
 //-------------------------
+
+void MainWindow::updateResultsPlot() {
+    // Busca o modelo atual
+    Model* model = simulator->getModelManager()->current();
+    if (!model) return;
+    // Busca as estatísticas
+    auto statsList = model->getDataManager()->getDataDefinitionList(Util::TypeOf<StatisticsCollector>());
+    QBarSet *set = new QBarSet("Média");
+    QStringList categories;
+    for (ModelDataDefinition* data : *statsList->list()) {
+        StatisticsCollector* stat = dynamic_cast<StatisticsCollector*>(data);
+        if (stat) {
+            categories << QString::fromStdString(stat->getName());
+            *set << stat->getStatistics()->average();
+        }
+    }
+    // Adiciona Counters
+    auto countersList = model->getDataManager()->getDataDefinitionList(Util::TypeOf<Counter>());
+    for (ModelDataDefinition* data : *countersList->list()) {
+        Counter* counter = dynamic_cast<Counter*>(data);
+        if (counter) {
+            categories << QString::fromStdString(counter->getName());
+            *set << counter->getCountValue();
+        }
+    }
+    // Monta o gráfico
+    QBarSeries *series = new QBarSeries();
+    series->append(set);
+    QChart *chart = new QChart();
+    chart->addSeries(series);
+    chart->setTitle("Resultados da Simulação");
+    chart->setAnimationOptions(QChart::SeriesAnimations);
+    QBarCategoryAxis *axisX = new QBarCategoryAxis();
+    axisX->append(categories);
+    chart->addAxis(axisX, Qt::AlignBottom);
+    series->attachAxis(axisX);
+    QValueAxis *axisY = new QValueAxis();
+    chart->addAxis(axisY, Qt::AlignLeft);
+    series->attachAxis(axisY);
+    chartView->setChart(chart);
+}
 
 
