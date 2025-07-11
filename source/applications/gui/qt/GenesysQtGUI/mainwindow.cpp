@@ -59,6 +59,7 @@ MainWindow::MainWindow(QWidget *parent) : QMainWindow(parent), ui(new Ui::MainWi
     simulator->getTraceManager()->addTraceErrorHandler<MainWindow>(this, &MainWindow::_simulatorTraceErrorHandler);
     simulator->getTraceManager()->addTraceReportHandler<MainWindow>(this, &MainWindow::_simulatorTraceReportsHandler);
     simulator->getTraceManager()->addTraceSimulationHandler<MainWindow>(this, &MainWindow::_simulatorTraceSimulationHandler);
+    simulator->getTraceManager()->addTraceResultsHandler<MainWindow>(this, &MainWindow::_simulatorTraceResultsHandler);
 
     simulator->getPluginManager()->autoInsertPlugins(_autoLoadPluginsFilename.toStdString());
     // now complete the information
@@ -67,7 +68,7 @@ MainWindow::MainWindow(QWidget *parent) : QMainWindow(parent), ui(new Ui::MainWi
         _insertPluginUI(simulator->getPluginManager()->getAtRank(i));
     }
 
-	propertyGenesys = new PropertyEditorGenesys();
+    propertyGenesys = new PropertyEditorGenesys();
     propertyList = new std::map<SimulationControl*, DataComponentProperty*>();
     propertyEditorUI = new std::map<SimulationControl*, DataComponentEditor*>();
     propertyBox = new std::map<SimulationControl*, ComboBoxEnum*>();
@@ -133,7 +134,7 @@ MainWindow::MainWindow(QWidget *parent) : QMainWindow(parent), ui(new Ui::MainWi
     // ModelGraphic
     ui->graphicsView->setParentWidget(ui->centralwidget);
     ui->graphicsView->setSimulator(simulator);
-	ui->graphicsView->setPropertyEditor(propertyGenesys);
+    ui->graphicsView->setPropertyEditor(propertyGenesys);
     ui->graphicsView->setPropertyList(propertyList);
     ui->graphicsView->setPropertyEditorUI(propertyEditorUI);
     ui->graphicsView->setComboBox(propertyBox);
@@ -1288,7 +1289,7 @@ void MainWindow::_recursiveCreateModelGraphicPicture(ModelDataDefinition* compon
         //std::string nodeComponentOtherLevel = "shape=record, fontsize=12, fontcolor=black, style=filled, fillcolor=goldenrod3";
         std::string edgeComponent = "style=solid, arrowhead=\"normal\" color=black, fontcolor=black, fontsize=7";
         std::string nodeDataDefInternal = "shape=record, fontsize=8, color=gray50, fontcolor=gray50, style=filled, fillcolor=#d9ebbd";
-		std::string nodeDataDefAttached = "shape=record, fontsize=10, color=gray50, fontcolor=gray50, style=filled, fillcolor=#a2cd5a";
+        std::string nodeDataDefAttached = "shape=record, fontsize=10, color=gray50, fontcolor=gray50, style=filled, fillcolor=#a2cd5a";
         std::string edgeDataDefInternal = "style=dashed, arrowhead=\"diamond\", color=gray55, fontcolor=gray55, fontsize=7";
         std::string edgeDataDefAttached = "style=dashed, arrowhead=\"ediamond\", color=gray50, fontcolor=gray50, fontsize=7";
         unsigned int rankSource = 0;
@@ -1442,7 +1443,7 @@ void MainWindow::_actualizeModelCppCode() {
         tabs++;
         text += _addCppCodeLine("// Create simulator, a property editor, a model and get acess to plugins", tabs);
         text += _addCppCodeLine("Simulator* genesys = new Simulator();", tabs);
-		text += _addCppCodeLine("PropertyEditorGenesys* propertyEditor = new PropertyEditorGenesys();", tabs);
+        text += _addCppCodeLine("PropertyEditorGenesys* propertyEditor = new PropertyEditorGenesys();", tabs);
         text += _addCppCodeLine("Model* model = genesys->getModels()->newModel();", tabs);
         text += _addCppCodeLine("PluginManager* plugins = genesys->getPlugins();", tabs);
         text += _addCppCodeLine("model->getTracer()->setTraceLevel(TraceManager::TraceLevel::L9_mostDetailed);", tabs);
@@ -1455,12 +1456,12 @@ void MainWindow::_actualizeModelCppCode() {
                 if (name.find(".") == std::string::npos) {
                     text += _addCppCodeLine(ddClassname + "* " + name + " = plugins->newInstance<" + ddClassname + ">(model, \"" + name + "\");", tabs);
                 }
-				for (auto prop : *modeldata->getProperties()->list()) {
-					// Fazer um loop até encontrar propriedade não alterável?
-					text += _addCppCodeLine("SimulationControl* property = propertyEditor->findProperty(" + std::to_string(modeldata->getId()) + ", " + prop->getName() + ");", tabs);
-					text += _addCppCodeLine("propertyEditor->changeProperty(property, " + prop->getValue() + ", false);", tabs);
-				};
-				text += _addCppCodeLine("", tabs);
+                for (auto prop : *modeldata->getProperties()->list()) {
+                    // Fazer um loop até encontrar propriedade não alterável?
+                    text += _addCppCodeLine("SimulationControl* property = propertyEditor->findProperty(" + std::to_string(modeldata->getId()) + ", " + prop->getName() + ");", tabs);
+                    text += _addCppCodeLine("propertyEditor->changeProperty(property, " + prop->getValue() + ", false);", tabs);
+                };
+                text += _addCppCodeLine("", tabs);
             }
         }
         code->insert({"4datadef", text});

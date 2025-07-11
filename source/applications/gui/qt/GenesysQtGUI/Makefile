@@ -37,7 +37,7 @@ MOVE          = mv -f
 TAR           = tar -cf
 COMPRESS      = gzip -9f
 DISTNAME      = GenesysQtGUI1.0.0
-DISTDIR = /home/orion23/Documents/repos/Genesys-Simulator/source/applications/gui/qt/GenesysQtGUI/.tmp/GenesysQtGUI1.0.0
+DISTDIR = /home/ist/Documentos/modelsim/new-genesys/Genesys-Simulator/source/applications/gui/qt/GenesysQtGUI/.tmp/GenesysQtGUI1.0.0
 LINK          = g++
 LFLAGS        = -Wl,-O1
 LIBS          = $(SUBLIBS) /usr/lib/x86_64-linux-gnu/libQt5PrintSupport.so /usr/lib/x86_64-linux-gnu/libQt5Designer.so /usr/lib/x86_64-linux-gnu/libQt5Charts.so /usr/lib/x86_64-linux-gnu/libQt5Widgets.so /usr/lib/x86_64-linux-gnu/libQt5Gui.so /usr/lib/x86_64-linux-gnu/libQt5Xml.so /usr/lib/x86_64-linux-gnu/libQt5Core.so -lGL -lpthread   
@@ -646,6 +646,8 @@ DIST          = ../../../../../autoloadplugins.txt \
 		/usr/lib/x86_64-linux-gnu/qt5/mkspecs/modules/qt_lib_dbus.pri \
 		/usr/lib/x86_64-linux-gnu/qt5/mkspecs/modules/qt_lib_dbus_private.pri \
 		/usr/lib/x86_64-linux-gnu/qt5/mkspecs/modules/qt_lib_designer.pri \
+		/usr/lib/x86_64-linux-gnu/qt5/mkspecs/modules/qt_lib_designer_private.pri \
+		/usr/lib/x86_64-linux-gnu/qt5/mkspecs/modules/qt_lib_designercomponents_private.pri \
 		/usr/lib/x86_64-linux-gnu/qt5/mkspecs/modules/qt_lib_devicediscovery_support_private.pri \
 		/usr/lib/x86_64-linux-gnu/qt5/mkspecs/modules/qt_lib_edid_support_private.pri \
 		/usr/lib/x86_64-linux-gnu/qt5/mkspecs/modules/qt_lib_egl_support_private.pri \
@@ -658,6 +660,7 @@ DIST          = ../../../../../autoloadplugins.txt \
 		/usr/lib/x86_64-linux-gnu/qt5/mkspecs/modules/qt_lib_gui.pri \
 		/usr/lib/x86_64-linux-gnu/qt5/mkspecs/modules/qt_lib_gui_private.pri \
 		/usr/lib/x86_64-linux-gnu/qt5/mkspecs/modules/qt_lib_help.pri \
+		/usr/lib/x86_64-linux-gnu/qt5/mkspecs/modules/qt_lib_help_private.pri \
 		/usr/lib/x86_64-linux-gnu/qt5/mkspecs/modules/qt_lib_input_support_private.pri \
 		/usr/lib/x86_64-linux-gnu/qt5/mkspecs/modules/qt_lib_kms_support_private.pri \
 		/usr/lib/x86_64-linux-gnu/qt5/mkspecs/modules/qt_lib_linuxaccessibility_support_private.pri \
@@ -670,12 +673,6 @@ DIST          = ../../../../../autoloadplugins.txt \
 		/usr/lib/x86_64-linux-gnu/qt5/mkspecs/modules/qt_lib_platformcompositor_support_private.pri \
 		/usr/lib/x86_64-linux-gnu/qt5/mkspecs/modules/qt_lib_printsupport.pri \
 		/usr/lib/x86_64-linux-gnu/qt5/mkspecs/modules/qt_lib_printsupport_private.pri \
-		/usr/lib/x86_64-linux-gnu/qt5/mkspecs/modules/qt_lib_qml.pri \
-		/usr/lib/x86_64-linux-gnu/qt5/mkspecs/modules/qt_lib_qmlmodels.pri \
-		/usr/lib/x86_64-linux-gnu/qt5/mkspecs/modules/qt_lib_qmltest.pri \
-		/usr/lib/x86_64-linux-gnu/qt5/mkspecs/modules/qt_lib_qmlworkerscript.pri \
-		/usr/lib/x86_64-linux-gnu/qt5/mkspecs/modules/qt_lib_quick.pri \
-		/usr/lib/x86_64-linux-gnu/qt5/mkspecs/modules/qt_lib_quickwidgets.pri \
 		/usr/lib/x86_64-linux-gnu/qt5/mkspecs/modules/qt_lib_service_support_private.pri \
 		/usr/lib/x86_64-linux-gnu/qt5/mkspecs/modules/qt_lib_sql.pri \
 		/usr/lib/x86_64-linux-gnu/qt5/mkspecs/modules/qt_lib_sql_private.pri \
@@ -684,6 +681,7 @@ DIST          = ../../../../../autoloadplugins.txt \
 		/usr/lib/x86_64-linux-gnu/qt5/mkspecs/modules/qt_lib_theme_support_private.pri \
 		/usr/lib/x86_64-linux-gnu/qt5/mkspecs/modules/qt_lib_uiplugin.pri \
 		/usr/lib/x86_64-linux-gnu/qt5/mkspecs/modules/qt_lib_uitools.pri \
+		/usr/lib/x86_64-linux-gnu/qt5/mkspecs/modules/qt_lib_uitools_private.pri \
 		/usr/lib/x86_64-linux-gnu/qt5/mkspecs/modules/qt_lib_vulkan_support_private.pri \
 		/usr/lib/x86_64-linux-gnu/qt5/mkspecs/modules/qt_lib_widgets.pri \
 		/usr/lib/x86_64-linux-gnu/qt5/mkspecs/modules/qt_lib_widgets_private.pri \
@@ -1339,6 +1337,8 @@ Makefile: GenesysQtGUI.pro /usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++/qmake
 		/usr/lib/x86_64-linux-gnu/qt5/mkspecs/modules/qt_lib_dbus.pri \
 		/usr/lib/x86_64-linux-gnu/qt5/mkspecs/modules/qt_lib_dbus_private.pri \
 		/usr/lib/x86_64-linux-gnu/qt5/mkspecs/modules/qt_lib_designer.pri \
+		/usr/lib/x86_64-linux-gnu/qt5/mkspecs/modules/qt_lib_designer_private.pri \
+		/usr/lib/x86_64-linux-gnu/qt5/mkspecs/modules/qt_lib_designercomponents_private.pri \
 		/usr/lib/x86_64-linux-gnu/qt5/mkspecs/modules/qt_lib_devicediscovery_support_private.pri \
 		/usr/lib/x86_64-linux-gnu/qt5/mkspecs/modules/qt_lib_edid_support_private.pri \
 		/usr/lib/x86_64-linux-gnu/qt5/mkspecs/modules/qt_lib_egl_support_private.pri \
@@ -1351,6 +1351,7 @@ Makefile: GenesysQtGUI.pro /usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++/qmake
 		/usr/lib/x86_64-linux-gnu/qt5/mkspecs/modules/qt_lib_gui.pri \
 		/usr/lib/x86_64-linux-gnu/qt5/mkspecs/modules/qt_lib_gui_private.pri \
 		/usr/lib/x86_64-linux-gnu/qt5/mkspecs/modules/qt_lib_help.pri \
+		/usr/lib/x86_64-linux-gnu/qt5/mkspecs/modules/qt_lib_help_private.pri \
 		/usr/lib/x86_64-linux-gnu/qt5/mkspecs/modules/qt_lib_input_support_private.pri \
 		/usr/lib/x86_64-linux-gnu/qt5/mkspecs/modules/qt_lib_kms_support_private.pri \
 		/usr/lib/x86_64-linux-gnu/qt5/mkspecs/modules/qt_lib_linuxaccessibility_support_private.pri \
@@ -1363,12 +1364,6 @@ Makefile: GenesysQtGUI.pro /usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++/qmake
 		/usr/lib/x86_64-linux-gnu/qt5/mkspecs/modules/qt_lib_platformcompositor_support_private.pri \
 		/usr/lib/x86_64-linux-gnu/qt5/mkspecs/modules/qt_lib_printsupport.pri \
 		/usr/lib/x86_64-linux-gnu/qt5/mkspecs/modules/qt_lib_printsupport_private.pri \
-		/usr/lib/x86_64-linux-gnu/qt5/mkspecs/modules/qt_lib_qml.pri \
-		/usr/lib/x86_64-linux-gnu/qt5/mkspecs/modules/qt_lib_qmlmodels.pri \
-		/usr/lib/x86_64-linux-gnu/qt5/mkspecs/modules/qt_lib_qmltest.pri \
-		/usr/lib/x86_64-linux-gnu/qt5/mkspecs/modules/qt_lib_qmlworkerscript.pri \
-		/usr/lib/x86_64-linux-gnu/qt5/mkspecs/modules/qt_lib_quick.pri \
-		/usr/lib/x86_64-linux-gnu/qt5/mkspecs/modules/qt_lib_quickwidgets.pri \
 		/usr/lib/x86_64-linux-gnu/qt5/mkspecs/modules/qt_lib_service_support_private.pri \
 		/usr/lib/x86_64-linux-gnu/qt5/mkspecs/modules/qt_lib_sql.pri \
 		/usr/lib/x86_64-linux-gnu/qt5/mkspecs/modules/qt_lib_sql_private.pri \
@@ -1377,6 +1372,7 @@ Makefile: GenesysQtGUI.pro /usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++/qmake
 		/usr/lib/x86_64-linux-gnu/qt5/mkspecs/modules/qt_lib_theme_support_private.pri \
 		/usr/lib/x86_64-linux-gnu/qt5/mkspecs/modules/qt_lib_uiplugin.pri \
 		/usr/lib/x86_64-linux-gnu/qt5/mkspecs/modules/qt_lib_uitools.pri \
+		/usr/lib/x86_64-linux-gnu/qt5/mkspecs/modules/qt_lib_uitools_private.pri \
 		/usr/lib/x86_64-linux-gnu/qt5/mkspecs/modules/qt_lib_vulkan_support_private.pri \
 		/usr/lib/x86_64-linux-gnu/qt5/mkspecs/modules/qt_lib_widgets.pri \
 		/usr/lib/x86_64-linux-gnu/qt5/mkspecs/modules/qt_lib_widgets_private.pri \
@@ -1433,6 +1429,8 @@ Makefile: GenesysQtGUI.pro /usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++/qmake
 /usr/lib/x86_64-linux-gnu/qt5/mkspecs/modules/qt_lib_dbus.pri:
 /usr/lib/x86_64-linux-gnu/qt5/mkspecs/modules/qt_lib_dbus_private.pri:
 /usr/lib/x86_64-linux-gnu/qt5/mkspecs/modules/qt_lib_designer.pri:
+/usr/lib/x86_64-linux-gnu/qt5/mkspecs/modules/qt_lib_designer_private.pri:
+/usr/lib/x86_64-linux-gnu/qt5/mkspecs/modules/qt_lib_designercomponents_private.pri:
 /usr/lib/x86_64-linux-gnu/qt5/mkspecs/modules/qt_lib_devicediscovery_support_private.pri:
 /usr/lib/x86_64-linux-gnu/qt5/mkspecs/modules/qt_lib_edid_support_private.pri:
 /usr/lib/x86_64-linux-gnu/qt5/mkspecs/modules/qt_lib_egl_support_private.pri:
@@ -1445,6 +1443,7 @@ Makefile: GenesysQtGUI.pro /usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++/qmake
 /usr/lib/x86_64-linux-gnu/qt5/mkspecs/modules/qt_lib_gui.pri:
 /usr/lib/x86_64-linux-gnu/qt5/mkspecs/modules/qt_lib_gui_private.pri:
 /usr/lib/x86_64-linux-gnu/qt5/mkspecs/modules/qt_lib_help.pri:
+/usr/lib/x86_64-linux-gnu/qt5/mkspecs/modules/qt_lib_help_private.pri:
 /usr/lib/x86_64-linux-gnu/qt5/mkspecs/modules/qt_lib_input_support_private.pri:
 /usr/lib/x86_64-linux-gnu/qt5/mkspecs/modules/qt_lib_kms_support_private.pri:
 /usr/lib/x86_64-linux-gnu/qt5/mkspecs/modules/qt_lib_linuxaccessibility_support_private.pri:
@@ -1457,12 +1456,6 @@ Makefile: GenesysQtGUI.pro /usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++/qmake
 /usr/lib/x86_64-linux-gnu/qt5/mkspecs/modules/qt_lib_platformcompositor_support_private.pri:
 /usr/lib/x86_64-linux-gnu/qt5/mkspecs/modules/qt_lib_printsupport.pri:
 /usr/lib/x86_64-linux-gnu/qt5/mkspecs/modules/qt_lib_printsupport_private.pri:
-/usr/lib/x86_64-linux-gnu/qt5/mkspecs/modules/qt_lib_qml.pri:
-/usr/lib/x86_64-linux-gnu/qt5/mkspecs/modules/qt_lib_qmlmodels.pri:
-/usr/lib/x86_64-linux-gnu/qt5/mkspecs/modules/qt_lib_qmltest.pri:
-/usr/lib/x86_64-linux-gnu/qt5/mkspecs/modules/qt_lib_qmlworkerscript.pri:
-/usr/lib/x86_64-linux-gnu/qt5/mkspecs/modules/qt_lib_quick.pri:
-/usr/lib/x86_64-linux-gnu/qt5/mkspecs/modules/qt_lib_quickwidgets.pri:
 /usr/lib/x86_64-linux-gnu/qt5/mkspecs/modules/qt_lib_service_support_private.pri:
 /usr/lib/x86_64-linux-gnu/qt5/mkspecs/modules/qt_lib_sql.pri:
 /usr/lib/x86_64-linux-gnu/qt5/mkspecs/modules/qt_lib_sql_private.pri:
@@ -1471,6 +1464,7 @@ Makefile: GenesysQtGUI.pro /usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++/qmake
 /usr/lib/x86_64-linux-gnu/qt5/mkspecs/modules/qt_lib_theme_support_private.pri:
 /usr/lib/x86_64-linux-gnu/qt5/mkspecs/modules/qt_lib_uiplugin.pri:
 /usr/lib/x86_64-linux-gnu/qt5/mkspecs/modules/qt_lib_uitools.pri:
+/usr/lib/x86_64-linux-gnu/qt5/mkspecs/modules/qt_lib_uitools_private.pri:
 /usr/lib/x86_64-linux-gnu/qt5/mkspecs/modules/qt_lib_vulkan_support_private.pri:
 /usr/lib/x86_64-linux-gnu/qt5/mkspecs/modules/qt_lib_widgets.pri:
 /usr/lib/x86_64-linux-gnu/qt5/mkspecs/modules/qt_lib_widgets_private.pri:
@@ -2330,7 +2324,7 @@ compiler_moc_header_clean:
 moc_CodeEditor.cpp: codeeditor/CodeEditor.h \
 		moc_predefs.h \
 		/usr/lib/qt5/bin/moc
-	/usr/lib/qt5/bin/moc $(DEFINES) --include /home/orion23/Documents/repos/Genesys-Simulator/source/applications/gui/qt/GenesysQtGUI/moc_predefs.h -I/usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++ -I/home/orion23/Documents/repos/Genesys-Simulator/source/applications/gui/qt/GenesysQtGUI -I/usr/include/x86_64-linux-gnu/qt5 -I/usr/include/x86_64-linux-gnu/qt5/QtPrintSupport -I/usr/include/x86_64-linux-gnu/qt5/QtDesigner -I/usr/include/x86_64-linux-gnu/qt5/QtUiPlugin -I/usr/include/x86_64-linux-gnu/qt5/QtCharts -I/usr/include/x86_64-linux-gnu/qt5/QtWidgets -I/usr/include/x86_64-linux-gnu/qt5/QtGui -I/usr/include/x86_64-linux-gnu/qt5/QtXml -I/usr/include/x86_64-linux-gnu/qt5/QtCore -I/usr/include/c++/11 -I/usr/include/x86_64-linux-gnu/c++/11 -I/usr/include/c++/11/backward -I/usr/lib/gcc/x86_64-linux-gnu/11/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include codeeditor/CodeEditor.h -o moc_CodeEditor.cpp
+	/usr/lib/qt5/bin/moc $(DEFINES) --include /home/ist/Documentos/modelsim/new-genesys/Genesys-Simulator/source/applications/gui/qt/GenesysQtGUI/moc_predefs.h -I/usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++ -I/home/ist/Documentos/modelsim/new-genesys/Genesys-Simulator/source/applications/gui/qt/GenesysQtGUI -I/usr/include/x86_64-linux-gnu/qt5 -I/usr/include/x86_64-linux-gnu/qt5/QtPrintSupport -I/usr/include/x86_64-linux-gnu/qt5/QtDesigner -I/usr/include/x86_64-linux-gnu/qt5/QtUiPlugin -I/usr/include/x86_64-linux-gnu/qt5/QtCharts -I/usr/include/x86_64-linux-gnu/qt5/QtWidgets -I/usr/include/x86_64-linux-gnu/qt5/QtGui -I/usr/include/x86_64-linux-gnu/qt5/QtXml -I/usr/include/x86_64-linux-gnu/qt5/QtCore -I/usr/include/c++/11 -I/usr/include/x86_64-linux-gnu/c++/11 -I/usr/include/c++/11/backward -I/usr/lib/gcc/x86_64-linux-gnu/11/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include codeeditor/CodeEditor.h -o moc_CodeEditor.cpp
 
 moc_ObjectPropertyBrowser.cpp: propertyeditor/ObjectPropertyBrowser.h \
 		propertyeditor/qtpropertybrowser/qttreepropertybrowser.h \
@@ -2360,7 +2354,7 @@ moc_ObjectPropertyBrowser.cpp: propertyeditor/ObjectPropertyBrowser.h \
 		propertyeditor/ComboBoxEnum.h \
 		moc_predefs.h \
 		/usr/lib/qt5/bin/moc
-	/usr/lib/qt5/bin/moc $(DEFINES) --include /home/orion23/Documents/repos/Genesys-Simulator/source/applications/gui/qt/GenesysQtGUI/moc_predefs.h -I/usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++ -I/home/orion23/Documents/repos/Genesys-Simulator/source/applications/gui/qt/GenesysQtGUI -I/usr/include/x86_64-linux-gnu/qt5 -I/usr/include/x86_64-linux-gnu/qt5/QtPrintSupport -I/usr/include/x86_64-linux-gnu/qt5/QtDesigner -I/usr/include/x86_64-linux-gnu/qt5/QtUiPlugin -I/usr/include/x86_64-linux-gnu/qt5/QtCharts -I/usr/include/x86_64-linux-gnu/qt5/QtWidgets -I/usr/include/x86_64-linux-gnu/qt5/QtGui -I/usr/include/x86_64-linux-gnu/qt5/QtXml -I/usr/include/x86_64-linux-gnu/qt5/QtCore -I/usr/include/c++/11 -I/usr/include/x86_64-linux-gnu/c++/11 -I/usr/include/c++/11/backward -I/usr/lib/gcc/x86_64-linux-gnu/11/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include propertyeditor/ObjectPropertyBrowser.h -o moc_ObjectPropertyBrowser.cpp
+	/usr/lib/qt5/bin/moc $(DEFINES) --include /home/ist/Documentos/modelsim/new-genesys/Genesys-Simulator/source/applications/gui/qt/GenesysQtGUI/moc_predefs.h -I/usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++ -I/home/ist/Documentos/modelsim/new-genesys/Genesys-Simulator/source/applications/gui/qt/GenesysQtGUI -I/usr/include/x86_64-linux-gnu/qt5 -I/usr/include/x86_64-linux-gnu/qt5/QtPrintSupport -I/usr/include/x86_64-linux-gnu/qt5/QtDesigner -I/usr/include/x86_64-linux-gnu/qt5/QtUiPlugin -I/usr/include/x86_64-linux-gnu/qt5/QtCharts -I/usr/include/x86_64-linux-gnu/qt5/QtWidgets -I/usr/include/x86_64-linux-gnu/qt5/QtGui -I/usr/include/x86_64-linux-gnu/qt5/QtXml -I/usr/include/x86_64-linux-gnu/qt5/QtCore -I/usr/include/c++/11 -I/usr/include/x86_64-linux-gnu/c++/11 -I/usr/include/c++/11/backward -I/usr/lib/gcc/x86_64-linux-gnu/11/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include propertyeditor/ObjectPropertyBrowser.h -o moc_ObjectPropertyBrowser.cpp
 
 moc_DialogFind.cpp: dialogs/DialogFind.h \
 		graphicals/GraphicalModelComponent.h \
@@ -2422,7 +2416,7 @@ moc_DialogFind.cpp: dialogs/DialogFind.h \
 		animations/AnimationTimer.h \
 		moc_predefs.h \
 		/usr/lib/qt5/bin/moc
-	/usr/lib/qt5/bin/moc $(DEFINES) --include /home/orion23/Documents/repos/Genesys-Simulator/source/applications/gui/qt/GenesysQtGUI/moc_predefs.h -I/usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++ -I/home/orion23/Documents/repos/Genesys-Simulator/source/applications/gui/qt/GenesysQtGUI -I/usr/include/x86_64-linux-gnu/qt5 -I/usr/include/x86_64-linux-gnu/qt5/QtPrintSupport -I/usr/include/x86_64-linux-gnu/qt5/QtDesigner -I/usr/include/x86_64-linux-gnu/qt5/QtUiPlugin -I/usr/include/x86_64-linux-gnu/qt5/QtCharts -I/usr/include/x86_64-linux-gnu/qt5/QtWidgets -I/usr/include/x86_64-linux-gnu/qt5/QtGui -I/usr/include/x86_64-linux-gnu/qt5/QtXml -I/usr/include/x86_64-linux-gnu/qt5/QtCore -I/usr/include/c++/11 -I/usr/include/x86_64-linux-gnu/c++/11 -I/usr/include/c++/11/backward -I/usr/lib/gcc/x86_64-linux-gnu/11/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include dialogs/DialogFind.h -o moc_DialogFind.cpp
+	/usr/lib/qt5/bin/moc $(DEFINES) --include /home/ist/Documentos/modelsim/new-genesys/Genesys-Simulator/source/applications/gui/qt/GenesysQtGUI/moc_predefs.h -I/usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++ -I/home/ist/Documentos/modelsim/new-genesys/Genesys-Simulator/source/applications/gui/qt/GenesysQtGUI -I/usr/include/x86_64-linux-gnu/qt5 -I/usr/include/x86_64-linux-gnu/qt5/QtPrintSupport -I/usr/include/x86_64-linux-gnu/qt5/QtDesigner -I/usr/include/x86_64-linux-gnu/qt5/QtUiPlugin -I/usr/include/x86_64-linux-gnu/qt5/QtCharts -I/usr/include/x86_64-linux-gnu/qt5/QtWidgets -I/usr/include/x86_64-linux-gnu/qt5/QtGui -I/usr/include/x86_64-linux-gnu/qt5/QtXml -I/usr/include/x86_64-linux-gnu/qt5/QtCore -I/usr/include/c++/11 -I/usr/include/x86_64-linux-gnu/c++/11 -I/usr/include/c++/11/backward -I/usr/lib/gcc/x86_64-linux-gnu/11/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include dialogs/DialogFind.h -o moc_DialogFind.cpp
 
 moc_DialogSelectCounter.cpp: dialogs/DialogSelectCounter.h \
 		../../../../kernel/simulator/Counter.h \
@@ -2439,7 +2433,7 @@ moc_DialogSelectCounter.cpp: dialogs/DialogSelectCounter.h \
 		../../../../kernel/simulator/PluginInformation.h \
 		moc_predefs.h \
 		/usr/lib/qt5/bin/moc
-	/usr/lib/qt5/bin/moc $(DEFINES) --include /home/orion23/Documents/repos/Genesys-Simulator/source/applications/gui/qt/GenesysQtGUI/moc_predefs.h -I/usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++ -I/home/orion23/Documents/repos/Genesys-Simulator/source/applications/gui/qt/GenesysQtGUI -I/usr/include/x86_64-linux-gnu/qt5 -I/usr/include/x86_64-linux-gnu/qt5/QtPrintSupport -I/usr/include/x86_64-linux-gnu/qt5/QtDesigner -I/usr/include/x86_64-linux-gnu/qt5/QtUiPlugin -I/usr/include/x86_64-linux-gnu/qt5/QtCharts -I/usr/include/x86_64-linux-gnu/qt5/QtWidgets -I/usr/include/x86_64-linux-gnu/qt5/QtGui -I/usr/include/x86_64-linux-gnu/qt5/QtXml -I/usr/include/x86_64-linux-gnu/qt5/QtCore -I/usr/include/c++/11 -I/usr/include/x86_64-linux-gnu/c++/11 -I/usr/include/c++/11/backward -I/usr/lib/gcc/x86_64-linux-gnu/11/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include dialogs/DialogSelectCounter.h -o moc_DialogSelectCounter.cpp
+	/usr/lib/qt5/bin/moc $(DEFINES) --include /home/ist/Documentos/modelsim/new-genesys/Genesys-Simulator/source/applications/gui/qt/GenesysQtGUI/moc_predefs.h -I/usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++ -I/home/ist/Documentos/modelsim/new-genesys/Genesys-Simulator/source/applications/gui/qt/GenesysQtGUI -I/usr/include/x86_64-linux-gnu/qt5 -I/usr/include/x86_64-linux-gnu/qt5/QtPrintSupport -I/usr/include/x86_64-linux-gnu/qt5/QtDesigner -I/usr/include/x86_64-linux-gnu/qt5/QtUiPlugin -I/usr/include/x86_64-linux-gnu/qt5/QtCharts -I/usr/include/x86_64-linux-gnu/qt5/QtWidgets -I/usr/include/x86_64-linux-gnu/qt5/QtGui -I/usr/include/x86_64-linux-gnu/qt5/QtXml -I/usr/include/x86_64-linux-gnu/qt5/QtCore -I/usr/include/c++/11 -I/usr/include/x86_64-linux-gnu/c++/11 -I/usr/include/c++/11/backward -I/usr/lib/gcc/x86_64-linux-gnu/11/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include dialogs/DialogSelectCounter.h -o moc_DialogSelectCounter.cpp
 
 moc_DialogSelectVariable.cpp: dialogs/DialogSelectVariable.h \
 		../../../../plugins/data/Variable.h \
@@ -2456,19 +2450,19 @@ moc_DialogSelectVariable.cpp: dialogs/DialogSelectVariable.h \
 		../../../../kernel/simulator/PluginInformation.h \
 		moc_predefs.h \
 		/usr/lib/qt5/bin/moc
-	/usr/lib/qt5/bin/moc $(DEFINES) --include /home/orion23/Documents/repos/Genesys-Simulator/source/applications/gui/qt/GenesysQtGUI/moc_predefs.h -I/usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++ -I/home/orion23/Documents/repos/Genesys-Simulator/source/applications/gui/qt/GenesysQtGUI -I/usr/include/x86_64-linux-gnu/qt5 -I/usr/include/x86_64-linux-gnu/qt5/QtPrintSupport -I/usr/include/x86_64-linux-gnu/qt5/QtDesigner -I/usr/include/x86_64-linux-gnu/qt5/QtUiPlugin -I/usr/include/x86_64-linux-gnu/qt5/QtCharts -I/usr/include/x86_64-linux-gnu/qt5/QtWidgets -I/usr/include/x86_64-linux-gnu/qt5/QtGui -I/usr/include/x86_64-linux-gnu/qt5/QtXml -I/usr/include/x86_64-linux-gnu/qt5/QtCore -I/usr/include/c++/11 -I/usr/include/x86_64-linux-gnu/c++/11 -I/usr/include/c++/11/backward -I/usr/lib/gcc/x86_64-linux-gnu/11/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include dialogs/DialogSelectVariable.h -o moc_DialogSelectVariable.cpp
+	/usr/lib/qt5/bin/moc $(DEFINES) --include /home/ist/Documentos/modelsim/new-genesys/Genesys-Simulator/source/applications/gui/qt/GenesysQtGUI/moc_predefs.h -I/usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++ -I/home/ist/Documentos/modelsim/new-genesys/Genesys-Simulator/source/applications/gui/qt/GenesysQtGUI -I/usr/include/x86_64-linux-gnu/qt5 -I/usr/include/x86_64-linux-gnu/qt5/QtPrintSupport -I/usr/include/x86_64-linux-gnu/qt5/QtDesigner -I/usr/include/x86_64-linux-gnu/qt5/QtUiPlugin -I/usr/include/x86_64-linux-gnu/qt5/QtCharts -I/usr/include/x86_64-linux-gnu/qt5/QtWidgets -I/usr/include/x86_64-linux-gnu/qt5/QtGui -I/usr/include/x86_64-linux-gnu/qt5/QtXml -I/usr/include/x86_64-linux-gnu/qt5/QtCore -I/usr/include/c++/11 -I/usr/include/x86_64-linux-gnu/c++/11 -I/usr/include/c++/11/backward -I/usr/lib/gcc/x86_64-linux-gnu/11/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include dialogs/DialogSelectVariable.h -o moc_DialogSelectVariable.cpp
 
 moc_DialogTimerConfigure.cpp: dialogs/DialogTimerConfigure.h \
 		animations/AnimationTimer.h \
 		../../../../kernel/util/Util.h \
 		moc_predefs.h \
 		/usr/lib/qt5/bin/moc
-	/usr/lib/qt5/bin/moc $(DEFINES) --include /home/orion23/Documents/repos/Genesys-Simulator/source/applications/gui/qt/GenesysQtGUI/moc_predefs.h -I/usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++ -I/home/orion23/Documents/repos/Genesys-Simulator/source/applications/gui/qt/GenesysQtGUI -I/usr/include/x86_64-linux-gnu/qt5 -I/usr/include/x86_64-linux-gnu/qt5/QtPrintSupport -I/usr/include/x86_64-linux-gnu/qt5/QtDesigner -I/usr/include/x86_64-linux-gnu/qt5/QtUiPlugin -I/usr/include/x86_64-linux-gnu/qt5/QtCharts -I/usr/include/x86_64-linux-gnu/qt5/QtWidgets -I/usr/include/x86_64-linux-gnu/qt5/QtGui -I/usr/include/x86_64-linux-gnu/qt5/QtXml -I/usr/include/x86_64-linux-gnu/qt5/QtCore -I/usr/include/c++/11 -I/usr/include/x86_64-linux-gnu/c++/11 -I/usr/include/c++/11/backward -I/usr/lib/gcc/x86_64-linux-gnu/11/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include dialogs/DialogTimerConfigure.h -o moc_DialogTimerConfigure.cpp
+	/usr/lib/qt5/bin/moc $(DEFINES) --include /home/ist/Documentos/modelsim/new-genesys/Genesys-Simulator/source/applications/gui/qt/GenesysQtGUI/moc_predefs.h -I/usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++ -I/home/ist/Documentos/modelsim/new-genesys/Genesys-Simulator/source/applications/gui/qt/GenesysQtGUI -I/usr/include/x86_64-linux-gnu/qt5 -I/usr/include/x86_64-linux-gnu/qt5/QtPrintSupport -I/usr/include/x86_64-linux-gnu/qt5/QtDesigner -I/usr/include/x86_64-linux-gnu/qt5/QtUiPlugin -I/usr/include/x86_64-linux-gnu/qt5/QtCharts -I/usr/include/x86_64-linux-gnu/qt5/QtWidgets -I/usr/include/x86_64-linux-gnu/qt5/QtGui -I/usr/include/x86_64-linux-gnu/qt5/QtXml -I/usr/include/x86_64-linux-gnu/qt5/QtCore -I/usr/include/c++/11 -I/usr/include/x86_64-linux-gnu/c++/11 -I/usr/include/c++/11/backward -I/usr/lib/gcc/x86_64-linux-gnu/11/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include dialogs/DialogTimerConfigure.h -o moc_DialogTimerConfigure.cpp
 
 moc_Dialogmodelinformation.cpp: dialogs/Dialogmodelinformation.h \
 		moc_predefs.h \
 		/usr/lib/qt5/bin/moc
-	/usr/lib/qt5/bin/moc $(DEFINES) --include /home/orion23/Documents/repos/Genesys-Simulator/source/applications/gui/qt/GenesysQtGUI/moc_predefs.h -I/usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++ -I/home/orion23/Documents/repos/Genesys-Simulator/source/applications/gui/qt/GenesysQtGUI -I/usr/include/x86_64-linux-gnu/qt5 -I/usr/include/x86_64-linux-gnu/qt5/QtPrintSupport -I/usr/include/x86_64-linux-gnu/qt5/QtDesigner -I/usr/include/x86_64-linux-gnu/qt5/QtUiPlugin -I/usr/include/x86_64-linux-gnu/qt5/QtCharts -I/usr/include/x86_64-linux-gnu/qt5/QtWidgets -I/usr/include/x86_64-linux-gnu/qt5/QtGui -I/usr/include/x86_64-linux-gnu/qt5/QtXml -I/usr/include/x86_64-linux-gnu/qt5/QtCore -I/usr/include/c++/11 -I/usr/include/x86_64-linux-gnu/c++/11 -I/usr/include/c++/11/backward -I/usr/lib/gcc/x86_64-linux-gnu/11/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include dialogs/Dialogmodelinformation.h -o moc_Dialogmodelinformation.cpp
+	/usr/lib/qt5/bin/moc $(DEFINES) --include /home/ist/Documentos/modelsim/new-genesys/Genesys-Simulator/source/applications/gui/qt/GenesysQtGUI/moc_predefs.h -I/usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++ -I/home/ist/Documentos/modelsim/new-genesys/Genesys-Simulator/source/applications/gui/qt/GenesysQtGUI -I/usr/include/x86_64-linux-gnu/qt5 -I/usr/include/x86_64-linux-gnu/qt5/QtPrintSupport -I/usr/include/x86_64-linux-gnu/qt5/QtDesigner -I/usr/include/x86_64-linux-gnu/qt5/QtUiPlugin -I/usr/include/x86_64-linux-gnu/qt5/QtCharts -I/usr/include/x86_64-linux-gnu/qt5/QtWidgets -I/usr/include/x86_64-linux-gnu/qt5/QtGui -I/usr/include/x86_64-linux-gnu/qt5/QtXml -I/usr/include/x86_64-linux-gnu/qt5/QtCore -I/usr/include/c++/11 -I/usr/include/x86_64-linux-gnu/c++/11 -I/usr/include/c++/11/backward -I/usr/lib/gcc/x86_64-linux-gnu/11/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include dialogs/Dialogmodelinformation.h -o moc_Dialogmodelinformation.cpp
 
 moc_dialogBreakpoint.cpp: dialogs/dialogBreakpoint.h \
 		ui_dialogBreakpoint.h \
@@ -2512,12 +2506,12 @@ moc_dialogBreakpoint.cpp: dialogs/dialogBreakpoint.h \
 		../../../../kernel/simulator/SimulationExperiment.h \
 		moc_predefs.h \
 		/usr/lib/qt5/bin/moc
-	/usr/lib/qt5/bin/moc $(DEFINES) --include /home/orion23/Documents/repos/Genesys-Simulator/source/applications/gui/qt/GenesysQtGUI/moc_predefs.h -I/usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++ -I/home/orion23/Documents/repos/Genesys-Simulator/source/applications/gui/qt/GenesysQtGUI -I/usr/include/x86_64-linux-gnu/qt5 -I/usr/include/x86_64-linux-gnu/qt5/QtPrintSupport -I/usr/include/x86_64-linux-gnu/qt5/QtDesigner -I/usr/include/x86_64-linux-gnu/qt5/QtUiPlugin -I/usr/include/x86_64-linux-gnu/qt5/QtCharts -I/usr/include/x86_64-linux-gnu/qt5/QtWidgets -I/usr/include/x86_64-linux-gnu/qt5/QtGui -I/usr/include/x86_64-linux-gnu/qt5/QtXml -I/usr/include/x86_64-linux-gnu/qt5/QtCore -I/usr/include/c++/11 -I/usr/include/x86_64-linux-gnu/c++/11 -I/usr/include/c++/11/backward -I/usr/lib/gcc/x86_64-linux-gnu/11/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include dialogs/dialogBreakpoint.h -o moc_dialogBreakpoint.cpp
+	/usr/lib/qt5/bin/moc $(DEFINES) --include /home/ist/Documentos/modelsim/new-genesys/Genesys-Simulator/source/applications/gui/qt/GenesysQtGUI/moc_predefs.h -I/usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++ -I/home/ist/Documentos/modelsim/new-genesys/Genesys-Simulator/source/applications/gui/qt/GenesysQtGUI -I/usr/include/x86_64-linux-gnu/qt5 -I/usr/include/x86_64-linux-gnu/qt5/QtPrintSupport -I/usr/include/x86_64-linux-gnu/qt5/QtDesigner -I/usr/include/x86_64-linux-gnu/qt5/QtUiPlugin -I/usr/include/x86_64-linux-gnu/qt5/QtCharts -I/usr/include/x86_64-linux-gnu/qt5/QtWidgets -I/usr/include/x86_64-linux-gnu/qt5/QtGui -I/usr/include/x86_64-linux-gnu/qt5/QtXml -I/usr/include/x86_64-linux-gnu/qt5/QtCore -I/usr/include/c++/11 -I/usr/include/x86_64-linux-gnu/c++/11 -I/usr/include/c++/11/backward -I/usr/lib/gcc/x86_64-linux-gnu/11/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include dialogs/dialogBreakpoint.h -o moc_dialogBreakpoint.cpp
 
 moc_dialogpluginmanager.cpp: dialogs/dialogpluginmanager.h \
 		moc_predefs.h \
 		/usr/lib/qt5/bin/moc
-	/usr/lib/qt5/bin/moc $(DEFINES) --include /home/orion23/Documents/repos/Genesys-Simulator/source/applications/gui/qt/GenesysQtGUI/moc_predefs.h -I/usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++ -I/home/orion23/Documents/repos/Genesys-Simulator/source/applications/gui/qt/GenesysQtGUI -I/usr/include/x86_64-linux-gnu/qt5 -I/usr/include/x86_64-linux-gnu/qt5/QtPrintSupport -I/usr/include/x86_64-linux-gnu/qt5/QtDesigner -I/usr/include/x86_64-linux-gnu/qt5/QtUiPlugin -I/usr/include/x86_64-linux-gnu/qt5/QtCharts -I/usr/include/x86_64-linux-gnu/qt5/QtWidgets -I/usr/include/x86_64-linux-gnu/qt5/QtGui -I/usr/include/x86_64-linux-gnu/qt5/QtXml -I/usr/include/x86_64-linux-gnu/qt5/QtCore -I/usr/include/c++/11 -I/usr/include/x86_64-linux-gnu/c++/11 -I/usr/include/c++/11/backward -I/usr/lib/gcc/x86_64-linux-gnu/11/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include dialogs/dialogpluginmanager.h -o moc_dialogpluginmanager.cpp
+	/usr/lib/qt5/bin/moc $(DEFINES) --include /home/ist/Documentos/modelsim/new-genesys/Genesys-Simulator/source/applications/gui/qt/GenesysQtGUI/moc_predefs.h -I/usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++ -I/home/ist/Documentos/modelsim/new-genesys/Genesys-Simulator/source/applications/gui/qt/GenesysQtGUI -I/usr/include/x86_64-linux-gnu/qt5 -I/usr/include/x86_64-linux-gnu/qt5/QtPrintSupport -I/usr/include/x86_64-linux-gnu/qt5/QtDesigner -I/usr/include/x86_64-linux-gnu/qt5/QtUiPlugin -I/usr/include/x86_64-linux-gnu/qt5/QtCharts -I/usr/include/x86_64-linux-gnu/qt5/QtWidgets -I/usr/include/x86_64-linux-gnu/qt5/QtGui -I/usr/include/x86_64-linux-gnu/qt5/QtXml -I/usr/include/x86_64-linux-gnu/qt5/QtCore -I/usr/include/c++/11 -I/usr/include/x86_64-linux-gnu/c++/11 -I/usr/include/c++/11/backward -I/usr/lib/gcc/x86_64-linux-gnu/11/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include dialogs/dialogpluginmanager.h -o moc_dialogpluginmanager.cpp
 
 moc_dialogsimulationconfigure.cpp: dialogs/dialogsimulationconfigure.h \
 		../../../../kernel/simulator/Simulator.h \
@@ -2560,12 +2554,12 @@ moc_dialogsimulationconfigure.cpp: dialogs/dialogsimulationconfigure.h \
 		../../../../kernel/simulator/SimulationExperiment.h \
 		moc_predefs.h \
 		/usr/lib/qt5/bin/moc
-	/usr/lib/qt5/bin/moc $(DEFINES) --include /home/orion23/Documents/repos/Genesys-Simulator/source/applications/gui/qt/GenesysQtGUI/moc_predefs.h -I/usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++ -I/home/orion23/Documents/repos/Genesys-Simulator/source/applications/gui/qt/GenesysQtGUI -I/usr/include/x86_64-linux-gnu/qt5 -I/usr/include/x86_64-linux-gnu/qt5/QtPrintSupport -I/usr/include/x86_64-linux-gnu/qt5/QtDesigner -I/usr/include/x86_64-linux-gnu/qt5/QtUiPlugin -I/usr/include/x86_64-linux-gnu/qt5/QtCharts -I/usr/include/x86_64-linux-gnu/qt5/QtWidgets -I/usr/include/x86_64-linux-gnu/qt5/QtGui -I/usr/include/x86_64-linux-gnu/qt5/QtXml -I/usr/include/x86_64-linux-gnu/qt5/QtCore -I/usr/include/c++/11 -I/usr/include/x86_64-linux-gnu/c++/11 -I/usr/include/c++/11/backward -I/usr/lib/gcc/x86_64-linux-gnu/11/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include dialogs/dialogsimulationconfigure.h -o moc_dialogsimulationconfigure.cpp
+	/usr/lib/qt5/bin/moc $(DEFINES) --include /home/ist/Documentos/modelsim/new-genesys/Genesys-Simulator/source/applications/gui/qt/GenesysQtGUI/moc_predefs.h -I/usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++ -I/home/ist/Documentos/modelsim/new-genesys/Genesys-Simulator/source/applications/gui/qt/GenesysQtGUI -I/usr/include/x86_64-linux-gnu/qt5 -I/usr/include/x86_64-linux-gnu/qt5/QtPrintSupport -I/usr/include/x86_64-linux-gnu/qt5/QtDesigner -I/usr/include/x86_64-linux-gnu/qt5/QtUiPlugin -I/usr/include/x86_64-linux-gnu/qt5/QtCharts -I/usr/include/x86_64-linux-gnu/qt5/QtWidgets -I/usr/include/x86_64-linux-gnu/qt5/QtGui -I/usr/include/x86_64-linux-gnu/qt5/QtXml -I/usr/include/x86_64-linux-gnu/qt5/QtCore -I/usr/include/c++/11 -I/usr/include/x86_64-linux-gnu/c++/11 -I/usr/include/c++/11/backward -I/usr/lib/gcc/x86_64-linux-gnu/11/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include dialogs/dialogsimulationconfigure.h -o moc_dialogsimulationconfigure.cpp
 
 moc_dialogsystempreferences.cpp: dialogs/dialogsystempreferences.h \
 		moc_predefs.h \
 		/usr/lib/qt5/bin/moc
-	/usr/lib/qt5/bin/moc $(DEFINES) --include /home/orion23/Documents/repos/Genesys-Simulator/source/applications/gui/qt/GenesysQtGUI/moc_predefs.h -I/usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++ -I/home/orion23/Documents/repos/Genesys-Simulator/source/applications/gui/qt/GenesysQtGUI -I/usr/include/x86_64-linux-gnu/qt5 -I/usr/include/x86_64-linux-gnu/qt5/QtPrintSupport -I/usr/include/x86_64-linux-gnu/qt5/QtDesigner -I/usr/include/x86_64-linux-gnu/qt5/QtUiPlugin -I/usr/include/x86_64-linux-gnu/qt5/QtCharts -I/usr/include/x86_64-linux-gnu/qt5/QtWidgets -I/usr/include/x86_64-linux-gnu/qt5/QtGui -I/usr/include/x86_64-linux-gnu/qt5/QtXml -I/usr/include/x86_64-linux-gnu/qt5/QtCore -I/usr/include/c++/11 -I/usr/include/x86_64-linux-gnu/c++/11 -I/usr/include/c++/11/backward -I/usr/lib/gcc/x86_64-linux-gnu/11/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include dialogs/dialogsystempreferences.h -o moc_dialogsystempreferences.cpp
+	/usr/lib/qt5/bin/moc $(DEFINES) --include /home/ist/Documentos/modelsim/new-genesys/Genesys-Simulator/source/applications/gui/qt/GenesysQtGUI/moc_predefs.h -I/usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++ -I/home/ist/Documentos/modelsim/new-genesys/Genesys-Simulator/source/applications/gui/qt/GenesysQtGUI -I/usr/include/x86_64-linux-gnu/qt5 -I/usr/include/x86_64-linux-gnu/qt5/QtPrintSupport -I/usr/include/x86_64-linux-gnu/qt5/QtDesigner -I/usr/include/x86_64-linux-gnu/qt5/QtUiPlugin -I/usr/include/x86_64-linux-gnu/qt5/QtCharts -I/usr/include/x86_64-linux-gnu/qt5/QtWidgets -I/usr/include/x86_64-linux-gnu/qt5/QtGui -I/usr/include/x86_64-linux-gnu/qt5/QtXml -I/usr/include/x86_64-linux-gnu/qt5/QtCore -I/usr/include/c++/11 -I/usr/include/x86_64-linux-gnu/c++/11 -I/usr/include/c++/11/backward -I/usr/lib/gcc/x86_64-linux-gnu/11/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include dialogs/dialogsystempreferences.h -o moc_dialogsystempreferences.cpp
 
 moc_mainwindow.cpp: mainwindow.h \
 		propertyeditor/DataComponentProperty.h \
@@ -2627,54 +2621,54 @@ moc_mainwindow.cpp: mainwindow.h \
 		animations/AnimationTimer.h \
 		moc_predefs.h \
 		/usr/lib/qt5/bin/moc
-	/usr/lib/qt5/bin/moc $(DEFINES) --include /home/orion23/Documents/repos/Genesys-Simulator/source/applications/gui/qt/GenesysQtGUI/moc_predefs.h -I/usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++ -I/home/orion23/Documents/repos/Genesys-Simulator/source/applications/gui/qt/GenesysQtGUI -I/usr/include/x86_64-linux-gnu/qt5 -I/usr/include/x86_64-linux-gnu/qt5/QtPrintSupport -I/usr/include/x86_64-linux-gnu/qt5/QtDesigner -I/usr/include/x86_64-linux-gnu/qt5/QtUiPlugin -I/usr/include/x86_64-linux-gnu/qt5/QtCharts -I/usr/include/x86_64-linux-gnu/qt5/QtWidgets -I/usr/include/x86_64-linux-gnu/qt5/QtGui -I/usr/include/x86_64-linux-gnu/qt5/QtXml -I/usr/include/x86_64-linux-gnu/qt5/QtCore -I/usr/include/c++/11 -I/usr/include/x86_64-linux-gnu/c++/11 -I/usr/include/c++/11/backward -I/usr/lib/gcc/x86_64-linux-gnu/11/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include mainwindow.h -o moc_mainwindow.cpp
+	/usr/lib/qt5/bin/moc $(DEFINES) --include /home/ist/Documentos/modelsim/new-genesys/Genesys-Simulator/source/applications/gui/qt/GenesysQtGUI/moc_predefs.h -I/usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++ -I/home/ist/Documentos/modelsim/new-genesys/Genesys-Simulator/source/applications/gui/qt/GenesysQtGUI -I/usr/include/x86_64-linux-gnu/qt5 -I/usr/include/x86_64-linux-gnu/qt5/QtPrintSupport -I/usr/include/x86_64-linux-gnu/qt5/QtDesigner -I/usr/include/x86_64-linux-gnu/qt5/QtUiPlugin -I/usr/include/x86_64-linux-gnu/qt5/QtCharts -I/usr/include/x86_64-linux-gnu/qt5/QtWidgets -I/usr/include/x86_64-linux-gnu/qt5/QtGui -I/usr/include/x86_64-linux-gnu/qt5/QtXml -I/usr/include/x86_64-linux-gnu/qt5/QtCore -I/usr/include/c++/11 -I/usr/include/x86_64-linux-gnu/c++/11 -I/usr/include/c++/11/backward -I/usr/lib/gcc/x86_64-linux-gnu/11/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include mainwindow.h -o moc_mainwindow.cpp
 
 moc_qtbuttonpropertybrowser.cpp: propertyeditor/qtpropertybrowser/qtbuttonpropertybrowser.h \
 		propertyeditor/qtpropertybrowser/qtpropertybrowser.h \
 		moc_predefs.h \
 		/usr/lib/qt5/bin/moc
-	/usr/lib/qt5/bin/moc $(DEFINES) --include /home/orion23/Documents/repos/Genesys-Simulator/source/applications/gui/qt/GenesysQtGUI/moc_predefs.h -I/usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++ -I/home/orion23/Documents/repos/Genesys-Simulator/source/applications/gui/qt/GenesysQtGUI -I/usr/include/x86_64-linux-gnu/qt5 -I/usr/include/x86_64-linux-gnu/qt5/QtPrintSupport -I/usr/include/x86_64-linux-gnu/qt5/QtDesigner -I/usr/include/x86_64-linux-gnu/qt5/QtUiPlugin -I/usr/include/x86_64-linux-gnu/qt5/QtCharts -I/usr/include/x86_64-linux-gnu/qt5/QtWidgets -I/usr/include/x86_64-linux-gnu/qt5/QtGui -I/usr/include/x86_64-linux-gnu/qt5/QtXml -I/usr/include/x86_64-linux-gnu/qt5/QtCore -I/usr/include/c++/11 -I/usr/include/x86_64-linux-gnu/c++/11 -I/usr/include/c++/11/backward -I/usr/lib/gcc/x86_64-linux-gnu/11/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include propertyeditor/qtpropertybrowser/qtbuttonpropertybrowser.h -o moc_qtbuttonpropertybrowser.cpp
+	/usr/lib/qt5/bin/moc $(DEFINES) --include /home/ist/Documentos/modelsim/new-genesys/Genesys-Simulator/source/applications/gui/qt/GenesysQtGUI/moc_predefs.h -I/usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++ -I/home/ist/Documentos/modelsim/new-genesys/Genesys-Simulator/source/applications/gui/qt/GenesysQtGUI -I/usr/include/x86_64-linux-gnu/qt5 -I/usr/include/x86_64-linux-gnu/qt5/QtPrintSupport -I/usr/include/x86_64-linux-gnu/qt5/QtDesigner -I/usr/include/x86_64-linux-gnu/qt5/QtUiPlugin -I/usr/include/x86_64-linux-gnu/qt5/QtCharts -I/usr/include/x86_64-linux-gnu/qt5/QtWidgets -I/usr/include/x86_64-linux-gnu/qt5/QtGui -I/usr/include/x86_64-linux-gnu/qt5/QtXml -I/usr/include/x86_64-linux-gnu/qt5/QtCore -I/usr/include/c++/11 -I/usr/include/x86_64-linux-gnu/c++/11 -I/usr/include/c++/11/backward -I/usr/lib/gcc/x86_64-linux-gnu/11/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include propertyeditor/qtpropertybrowser/qtbuttonpropertybrowser.h -o moc_qtbuttonpropertybrowser.cpp
 
 moc_qteditorfactory.cpp: propertyeditor/qtpropertybrowser/qteditorfactory.h \
 		propertyeditor/qtpropertybrowser/qtpropertymanager.h \
 		propertyeditor/qtpropertybrowser/qtpropertybrowser.h \
 		moc_predefs.h \
 		/usr/lib/qt5/bin/moc
-	/usr/lib/qt5/bin/moc $(DEFINES) --include /home/orion23/Documents/repos/Genesys-Simulator/source/applications/gui/qt/GenesysQtGUI/moc_predefs.h -I/usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++ -I/home/orion23/Documents/repos/Genesys-Simulator/source/applications/gui/qt/GenesysQtGUI -I/usr/include/x86_64-linux-gnu/qt5 -I/usr/include/x86_64-linux-gnu/qt5/QtPrintSupport -I/usr/include/x86_64-linux-gnu/qt5/QtDesigner -I/usr/include/x86_64-linux-gnu/qt5/QtUiPlugin -I/usr/include/x86_64-linux-gnu/qt5/QtCharts -I/usr/include/x86_64-linux-gnu/qt5/QtWidgets -I/usr/include/x86_64-linux-gnu/qt5/QtGui -I/usr/include/x86_64-linux-gnu/qt5/QtXml -I/usr/include/x86_64-linux-gnu/qt5/QtCore -I/usr/include/c++/11 -I/usr/include/x86_64-linux-gnu/c++/11 -I/usr/include/c++/11/backward -I/usr/lib/gcc/x86_64-linux-gnu/11/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include propertyeditor/qtpropertybrowser/qteditorfactory.h -o moc_qteditorfactory.cpp
+	/usr/lib/qt5/bin/moc $(DEFINES) --include /home/ist/Documentos/modelsim/new-genesys/Genesys-Simulator/source/applications/gui/qt/GenesysQtGUI/moc_predefs.h -I/usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++ -I/home/ist/Documentos/modelsim/new-genesys/Genesys-Simulator/source/applications/gui/qt/GenesysQtGUI -I/usr/include/x86_64-linux-gnu/qt5 -I/usr/include/x86_64-linux-gnu/qt5/QtPrintSupport -I/usr/include/x86_64-linux-gnu/qt5/QtDesigner -I/usr/include/x86_64-linux-gnu/qt5/QtUiPlugin -I/usr/include/x86_64-linux-gnu/qt5/QtCharts -I/usr/include/x86_64-linux-gnu/qt5/QtWidgets -I/usr/include/x86_64-linux-gnu/qt5/QtGui -I/usr/include/x86_64-linux-gnu/qt5/QtXml -I/usr/include/x86_64-linux-gnu/qt5/QtCore -I/usr/include/c++/11 -I/usr/include/x86_64-linux-gnu/c++/11 -I/usr/include/c++/11/backward -I/usr/lib/gcc/x86_64-linux-gnu/11/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include propertyeditor/qtpropertybrowser/qteditorfactory.h -o moc_qteditorfactory.cpp
 
 moc_qtgroupboxpropertybrowser.cpp: propertyeditor/qtpropertybrowser/qtgroupboxpropertybrowser.h \
 		propertyeditor/qtpropertybrowser/qtpropertybrowser.h \
 		moc_predefs.h \
 		/usr/lib/qt5/bin/moc
-	/usr/lib/qt5/bin/moc $(DEFINES) --include /home/orion23/Documents/repos/Genesys-Simulator/source/applications/gui/qt/GenesysQtGUI/moc_predefs.h -I/usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++ -I/home/orion23/Documents/repos/Genesys-Simulator/source/applications/gui/qt/GenesysQtGUI -I/usr/include/x86_64-linux-gnu/qt5 -I/usr/include/x86_64-linux-gnu/qt5/QtPrintSupport -I/usr/include/x86_64-linux-gnu/qt5/QtDesigner -I/usr/include/x86_64-linux-gnu/qt5/QtUiPlugin -I/usr/include/x86_64-linux-gnu/qt5/QtCharts -I/usr/include/x86_64-linux-gnu/qt5/QtWidgets -I/usr/include/x86_64-linux-gnu/qt5/QtGui -I/usr/include/x86_64-linux-gnu/qt5/QtXml -I/usr/include/x86_64-linux-gnu/qt5/QtCore -I/usr/include/c++/11 -I/usr/include/x86_64-linux-gnu/c++/11 -I/usr/include/c++/11/backward -I/usr/lib/gcc/x86_64-linux-gnu/11/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include propertyeditor/qtpropertybrowser/qtgroupboxpropertybrowser.h -o moc_qtgroupboxpropertybrowser.cpp
+	/usr/lib/qt5/bin/moc $(DEFINES) --include /home/ist/Documentos/modelsim/new-genesys/Genesys-Simulator/source/applications/gui/qt/GenesysQtGUI/moc_predefs.h -I/usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++ -I/home/ist/Documentos/modelsim/new-genesys/Genesys-Simulator/source/applications/gui/qt/GenesysQtGUI -I/usr/include/x86_64-linux-gnu/qt5 -I/usr/include/x86_64-linux-gnu/qt5/QtPrintSupport -I/usr/include/x86_64-linux-gnu/qt5/QtDesigner -I/usr/include/x86_64-linux-gnu/qt5/QtUiPlugin -I/usr/include/x86_64-linux-gnu/qt5/QtCharts -I/usr/include/x86_64-linux-gnu/qt5/QtWidgets -I/usr/include/x86_64-linux-gnu/qt5/QtGui -I/usr/include/x86_64-linux-gnu/qt5/QtXml -I/usr/include/x86_64-linux-gnu/qt5/QtCore -I/usr/include/c++/11 -I/usr/include/x86_64-linux-gnu/c++/11 -I/usr/include/c++/11/backward -I/usr/lib/gcc/x86_64-linux-gnu/11/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include propertyeditor/qtpropertybrowser/qtgroupboxpropertybrowser.h -o moc_qtgroupboxpropertybrowser.cpp
 
 moc_qtpropertybrowser.cpp: propertyeditor/qtpropertybrowser/qtpropertybrowser.h \
 		moc_predefs.h \
 		/usr/lib/qt5/bin/moc
-	/usr/lib/qt5/bin/moc $(DEFINES) --include /home/orion23/Documents/repos/Genesys-Simulator/source/applications/gui/qt/GenesysQtGUI/moc_predefs.h -I/usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++ -I/home/orion23/Documents/repos/Genesys-Simulator/source/applications/gui/qt/GenesysQtGUI -I/usr/include/x86_64-linux-gnu/qt5 -I/usr/include/x86_64-linux-gnu/qt5/QtPrintSupport -I/usr/include/x86_64-linux-gnu/qt5/QtDesigner -I/usr/include/x86_64-linux-gnu/qt5/QtUiPlugin -I/usr/include/x86_64-linux-gnu/qt5/QtCharts -I/usr/include/x86_64-linux-gnu/qt5/QtWidgets -I/usr/include/x86_64-linux-gnu/qt5/QtGui -I/usr/include/x86_64-linux-gnu/qt5/QtXml -I/usr/include/x86_64-linux-gnu/qt5/QtCore -I/usr/include/c++/11 -I/usr/include/x86_64-linux-gnu/c++/11 -I/usr/include/c++/11/backward -I/usr/lib/gcc/x86_64-linux-gnu/11/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include propertyeditor/qtpropertybrowser/qtpropertybrowser.h -o moc_qtpropertybrowser.cpp
+	/usr/lib/qt5/bin/moc $(DEFINES) --include /home/ist/Documentos/modelsim/new-genesys/Genesys-Simulator/source/applications/gui/qt/GenesysQtGUI/moc_predefs.h -I/usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++ -I/home/ist/Documentos/modelsim/new-genesys/Genesys-Simulator/source/applications/gui/qt/GenesysQtGUI -I/usr/include/x86_64-linux-gnu/qt5 -I/usr/include/x86_64-linux-gnu/qt5/QtPrintSupport -I/usr/include/x86_64-linux-gnu/qt5/QtDesigner -I/usr/include/x86_64-linux-gnu/qt5/QtUiPlugin -I/usr/include/x86_64-linux-gnu/qt5/QtCharts -I/usr/include/x86_64-linux-gnu/qt5/QtWidgets -I/usr/include/x86_64-linux-gnu/qt5/QtGui -I/usr/include/x86_64-linux-gnu/qt5/QtXml -I/usr/include/x86_64-linux-gnu/qt5/QtCore -I/usr/include/c++/11 -I/usr/include/x86_64-linux-gnu/c++/11 -I/usr/include/c++/11/backward -I/usr/lib/gcc/x86_64-linux-gnu/11/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include propertyeditor/qtpropertybrowser/qtpropertybrowser.h -o moc_qtpropertybrowser.cpp
 
 moc_qtpropertybrowserutils_p.cpp: propertyeditor/qtpropertybrowser/qtpropertybrowserutils_p.h \
 		moc_predefs.h \
 		/usr/lib/qt5/bin/moc
-	/usr/lib/qt5/bin/moc $(DEFINES) --include /home/orion23/Documents/repos/Genesys-Simulator/source/applications/gui/qt/GenesysQtGUI/moc_predefs.h -I/usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++ -I/home/orion23/Documents/repos/Genesys-Simulator/source/applications/gui/qt/GenesysQtGUI -I/usr/include/x86_64-linux-gnu/qt5 -I/usr/include/x86_64-linux-gnu/qt5/QtPrintSupport -I/usr/include/x86_64-linux-gnu/qt5/QtDesigner -I/usr/include/x86_64-linux-gnu/qt5/QtUiPlugin -I/usr/include/x86_64-linux-gnu/qt5/QtCharts -I/usr/include/x86_64-linux-gnu/qt5/QtWidgets -I/usr/include/x86_64-linux-gnu/qt5/QtGui -I/usr/include/x86_64-linux-gnu/qt5/QtXml -I/usr/include/x86_64-linux-gnu/qt5/QtCore -I/usr/include/c++/11 -I/usr/include/x86_64-linux-gnu/c++/11 -I/usr/include/c++/11/backward -I/usr/lib/gcc/x86_64-linux-gnu/11/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include propertyeditor/qtpropertybrowser/qtpropertybrowserutils_p.h -o moc_qtpropertybrowserutils_p.cpp
+	/usr/lib/qt5/bin/moc $(DEFINES) --include /home/ist/Documentos/modelsim/new-genesys/Genesys-Simulator/source/applications/gui/qt/GenesysQtGUI/moc_predefs.h -I/usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++ -I/home/ist/Documentos/modelsim/new-genesys/Genesys-Simulator/source/applications/gui/qt/GenesysQtGUI -I/usr/include/x86_64-linux-gnu/qt5 -I/usr/include/x86_64-linux-gnu/qt5/QtPrintSupport -I/usr/include/x86_64-linux-gnu/qt5/QtDesigner -I/usr/include/x86_64-linux-gnu/qt5/QtUiPlugin -I/usr/include/x86_64-linux-gnu/qt5/QtCharts -I/usr/include/x86_64-linux-gnu/qt5/QtWidgets -I/usr/include/x86_64-linux-gnu/qt5/QtGui -I/usr/include/x86_64-linux-gnu/qt5/QtXml -I/usr/include/x86_64-linux-gnu/qt5/QtCore -I/usr/include/c++/11 -I/usr/include/x86_64-linux-gnu/c++/11 -I/usr/include/c++/11/backward -I/usr/lib/gcc/x86_64-linux-gnu/11/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include propertyeditor/qtpropertybrowser/qtpropertybrowserutils_p.h -o moc_qtpropertybrowserutils_p.cpp
 
 moc_qtpropertymanager.cpp: propertyeditor/qtpropertybrowser/qtpropertymanager.h \
 		propertyeditor/qtpropertybrowser/qtpropertybrowser.h \
 		moc_predefs.h \
 		/usr/lib/qt5/bin/moc
-	/usr/lib/qt5/bin/moc $(DEFINES) --include /home/orion23/Documents/repos/Genesys-Simulator/source/applications/gui/qt/GenesysQtGUI/moc_predefs.h -I/usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++ -I/home/orion23/Documents/repos/Genesys-Simulator/source/applications/gui/qt/GenesysQtGUI -I/usr/include/x86_64-linux-gnu/qt5 -I/usr/include/x86_64-linux-gnu/qt5/QtPrintSupport -I/usr/include/x86_64-linux-gnu/qt5/QtDesigner -I/usr/include/x86_64-linux-gnu/qt5/QtUiPlugin -I/usr/include/x86_64-linux-gnu/qt5/QtCharts -I/usr/include/x86_64-linux-gnu/qt5/QtWidgets -I/usr/include/x86_64-linux-gnu/qt5/QtGui -I/usr/include/x86_64-linux-gnu/qt5/QtXml -I/usr/include/x86_64-linux-gnu/qt5/QtCore -I/usr/include/c++/11 -I/usr/include/x86_64-linux-gnu/c++/11 -I/usr/include/c++/11/backward -I/usr/lib/gcc/x86_64-linux-gnu/11/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include propertyeditor/qtpropertybrowser/qtpropertymanager.h -o moc_qtpropertymanager.cpp
+	/usr/lib/qt5/bin/moc $(DEFINES) --include /home/ist/Documentos/modelsim/new-genesys/Genesys-Simulator/source/applications/gui/qt/GenesysQtGUI/moc_predefs.h -I/usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++ -I/home/ist/Documentos/modelsim/new-genesys/Genesys-Simulator/source/applications/gui/qt/GenesysQtGUI -I/usr/include/x86_64-linux-gnu/qt5 -I/usr/include/x86_64-linux-gnu/qt5/QtPrintSupport -I/usr/include/x86_64-linux-gnu/qt5/QtDesigner -I/usr/include/x86_64-linux-gnu/qt5/QtUiPlugin -I/usr/include/x86_64-linux-gnu/qt5/QtCharts -I/usr/include/x86_64-linux-gnu/qt5/QtWidgets -I/usr/include/x86_64-linux-gnu/qt5/QtGui -I/usr/include/x86_64-linux-gnu/qt5/QtXml -I/usr/include/x86_64-linux-gnu/qt5/QtCore -I/usr/include/c++/11 -I/usr/include/x86_64-linux-gnu/c++/11 -I/usr/include/c++/11/backward -I/usr/lib/gcc/x86_64-linux-gnu/11/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include propertyeditor/qtpropertybrowser/qtpropertymanager.h -o moc_qtpropertymanager.cpp
 
 moc_qttreepropertybrowser.cpp: propertyeditor/qtpropertybrowser/qttreepropertybrowser.h \
 		propertyeditor/qtpropertybrowser/qtpropertybrowser.h \
 		moc_predefs.h \
 		/usr/lib/qt5/bin/moc
-	/usr/lib/qt5/bin/moc $(DEFINES) --include /home/orion23/Documents/repos/Genesys-Simulator/source/applications/gui/qt/GenesysQtGUI/moc_predefs.h -I/usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++ -I/home/orion23/Documents/repos/Genesys-Simulator/source/applications/gui/qt/GenesysQtGUI -I/usr/include/x86_64-linux-gnu/qt5 -I/usr/include/x86_64-linux-gnu/qt5/QtPrintSupport -I/usr/include/x86_64-linux-gnu/qt5/QtDesigner -I/usr/include/x86_64-linux-gnu/qt5/QtUiPlugin -I/usr/include/x86_64-linux-gnu/qt5/QtCharts -I/usr/include/x86_64-linux-gnu/qt5/QtWidgets -I/usr/include/x86_64-linux-gnu/qt5/QtGui -I/usr/include/x86_64-linux-gnu/qt5/QtXml -I/usr/include/x86_64-linux-gnu/qt5/QtCore -I/usr/include/c++/11 -I/usr/include/x86_64-linux-gnu/c++/11 -I/usr/include/c++/11/backward -I/usr/lib/gcc/x86_64-linux-gnu/11/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include propertyeditor/qtpropertybrowser/qttreepropertybrowser.h -o moc_qttreepropertybrowser.cpp
+	/usr/lib/qt5/bin/moc $(DEFINES) --include /home/ist/Documentos/modelsim/new-genesys/Genesys-Simulator/source/applications/gui/qt/GenesysQtGUI/moc_predefs.h -I/usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++ -I/home/ist/Documentos/modelsim/new-genesys/Genesys-Simulator/source/applications/gui/qt/GenesysQtGUI -I/usr/include/x86_64-linux-gnu/qt5 -I/usr/include/x86_64-linux-gnu/qt5/QtPrintSupport -I/usr/include/x86_64-linux-gnu/qt5/QtDesigner -I/usr/include/x86_64-linux-gnu/qt5/QtUiPlugin -I/usr/include/x86_64-linux-gnu/qt5/QtCharts -I/usr/include/x86_64-linux-gnu/qt5/QtWidgets -I/usr/include/x86_64-linux-gnu/qt5/QtGui -I/usr/include/x86_64-linux-gnu/qt5/QtXml -I/usr/include/x86_64-linux-gnu/qt5/QtCore -I/usr/include/c++/11 -I/usr/include/x86_64-linux-gnu/c++/11 -I/usr/include/c++/11/backward -I/usr/lib/gcc/x86_64-linux-gnu/11/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include propertyeditor/qtpropertybrowser/qttreepropertybrowser.h -o moc_qttreepropertybrowser.cpp
 
 moc_qtvariantproperty.cpp: propertyeditor/qtpropertybrowser/qtvariantproperty.h \
 		propertyeditor/qtpropertybrowser/qtpropertybrowser.h \
 		moc_predefs.h \
 		/usr/lib/qt5/bin/moc
-	/usr/lib/qt5/bin/moc $(DEFINES) --include /home/orion23/Documents/repos/Genesys-Simulator/source/applications/gui/qt/GenesysQtGUI/moc_predefs.h -I/usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++ -I/home/orion23/Documents/repos/Genesys-Simulator/source/applications/gui/qt/GenesysQtGUI -I/usr/include/x86_64-linux-gnu/qt5 -I/usr/include/x86_64-linux-gnu/qt5/QtPrintSupport -I/usr/include/x86_64-linux-gnu/qt5/QtDesigner -I/usr/include/x86_64-linux-gnu/qt5/QtUiPlugin -I/usr/include/x86_64-linux-gnu/qt5/QtCharts -I/usr/include/x86_64-linux-gnu/qt5/QtWidgets -I/usr/include/x86_64-linux-gnu/qt5/QtGui -I/usr/include/x86_64-linux-gnu/qt5/QtXml -I/usr/include/x86_64-linux-gnu/qt5/QtCore -I/usr/include/c++/11 -I/usr/include/x86_64-linux-gnu/c++/11 -I/usr/include/c++/11/backward -I/usr/lib/gcc/x86_64-linux-gnu/11/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include propertyeditor/qtpropertybrowser/qtvariantproperty.h -o moc_qtvariantproperty.cpp
+	/usr/lib/qt5/bin/moc $(DEFINES) --include /home/ist/Documentos/modelsim/new-genesys/Genesys-Simulator/source/applications/gui/qt/GenesysQtGUI/moc_predefs.h -I/usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++ -I/home/ist/Documentos/modelsim/new-genesys/Genesys-Simulator/source/applications/gui/qt/GenesysQtGUI -I/usr/include/x86_64-linux-gnu/qt5 -I/usr/include/x86_64-linux-gnu/qt5/QtPrintSupport -I/usr/include/x86_64-linux-gnu/qt5/QtDesigner -I/usr/include/x86_64-linux-gnu/qt5/QtUiPlugin -I/usr/include/x86_64-linux-gnu/qt5/QtCharts -I/usr/include/x86_64-linux-gnu/qt5/QtWidgets -I/usr/include/x86_64-linux-gnu/qt5/QtGui -I/usr/include/x86_64-linux-gnu/qt5/QtXml -I/usr/include/x86_64-linux-gnu/qt5/QtCore -I/usr/include/c++/11 -I/usr/include/x86_64-linux-gnu/c++/11 -I/usr/include/c++/11/backward -I/usr/lib/gcc/x86_64-linux-gnu/11/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include propertyeditor/qtpropertybrowser/qtvariantproperty.h -o moc_qtvariantproperty.cpp
 
 compiler_moc_objc_header_make_all:
 compiler_moc_objc_header_clean:
@@ -2689,7 +2683,7 @@ qteditorfactory.moc: propertyeditor/qtpropertybrowser/qteditorfactory.cpp \
 		moc_qteditorfactory.cpp \
 		moc_predefs.h \
 		/usr/lib/qt5/bin/moc
-	/usr/lib/qt5/bin/moc $(DEFINES) --include /home/orion23/Documents/repos/Genesys-Simulator/source/applications/gui/qt/GenesysQtGUI/moc_predefs.h -I/usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++ -I/home/orion23/Documents/repos/Genesys-Simulator/source/applications/gui/qt/GenesysQtGUI -I/usr/include/x86_64-linux-gnu/qt5 -I/usr/include/x86_64-linux-gnu/qt5/QtPrintSupport -I/usr/include/x86_64-linux-gnu/qt5/QtDesigner -I/usr/include/x86_64-linux-gnu/qt5/QtUiPlugin -I/usr/include/x86_64-linux-gnu/qt5/QtCharts -I/usr/include/x86_64-linux-gnu/qt5/QtWidgets -I/usr/include/x86_64-linux-gnu/qt5/QtGui -I/usr/include/x86_64-linux-gnu/qt5/QtXml -I/usr/include/x86_64-linux-gnu/qt5/QtCore -I/usr/include/c++/11 -I/usr/include/x86_64-linux-gnu/c++/11 -I/usr/include/c++/11/backward -I/usr/lib/gcc/x86_64-linux-gnu/11/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include propertyeditor/qtpropertybrowser/qteditorfactory.cpp -o qteditorfactory.moc
+	/usr/lib/qt5/bin/moc $(DEFINES) --include /home/ist/Documentos/modelsim/new-genesys/Genesys-Simulator/source/applications/gui/qt/GenesysQtGUI/moc_predefs.h -I/usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++ -I/home/ist/Documentos/modelsim/new-genesys/Genesys-Simulator/source/applications/gui/qt/GenesysQtGUI -I/usr/include/x86_64-linux-gnu/qt5 -I/usr/include/x86_64-linux-gnu/qt5/QtPrintSupport -I/usr/include/x86_64-linux-gnu/qt5/QtDesigner -I/usr/include/x86_64-linux-gnu/qt5/QtUiPlugin -I/usr/include/x86_64-linux-gnu/qt5/QtCharts -I/usr/include/x86_64-linux-gnu/qt5/QtWidgets -I/usr/include/x86_64-linux-gnu/qt5/QtGui -I/usr/include/x86_64-linux-gnu/qt5/QtXml -I/usr/include/x86_64-linux-gnu/qt5/QtCore -I/usr/include/c++/11 -I/usr/include/x86_64-linux-gnu/c++/11 -I/usr/include/c++/11/backward -I/usr/lib/gcc/x86_64-linux-gnu/11/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include propertyeditor/qtpropertybrowser/qteditorfactory.cpp -o qteditorfactory.moc
 
 qtpropertymanager.moc: propertyeditor/qtpropertybrowser/qtpropertymanager.cpp \
 		propertyeditor/qtpropertybrowser/qtpropertymanager.h \
@@ -2698,7 +2692,7 @@ qtpropertymanager.moc: propertyeditor/qtpropertybrowser/qtpropertymanager.cpp \
 		moc_qtpropertymanager.cpp \
 		moc_predefs.h \
 		/usr/lib/qt5/bin/moc
-	/usr/lib/qt5/bin/moc $(DEFINES) --include /home/orion23/Documents/repos/Genesys-Simulator/source/applications/gui/qt/GenesysQtGUI/moc_predefs.h -I/usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++ -I/home/orion23/Documents/repos/Genesys-Simulator/source/applications/gui/qt/GenesysQtGUI -I/usr/include/x86_64-linux-gnu/qt5 -I/usr/include/x86_64-linux-gnu/qt5/QtPrintSupport -I/usr/include/x86_64-linux-gnu/qt5/QtDesigner -I/usr/include/x86_64-linux-gnu/qt5/QtUiPlugin -I/usr/include/x86_64-linux-gnu/qt5/QtCharts -I/usr/include/x86_64-linux-gnu/qt5/QtWidgets -I/usr/include/x86_64-linux-gnu/qt5/QtGui -I/usr/include/x86_64-linux-gnu/qt5/QtXml -I/usr/include/x86_64-linux-gnu/qt5/QtCore -I/usr/include/c++/11 -I/usr/include/x86_64-linux-gnu/c++/11 -I/usr/include/c++/11/backward -I/usr/lib/gcc/x86_64-linux-gnu/11/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include propertyeditor/qtpropertybrowser/qtpropertymanager.cpp -o qtpropertymanager.moc
+	/usr/lib/qt5/bin/moc $(DEFINES) --include /home/ist/Documentos/modelsim/new-genesys/Genesys-Simulator/source/applications/gui/qt/GenesysQtGUI/moc_predefs.h -I/usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++ -I/home/ist/Documentos/modelsim/new-genesys/Genesys-Simulator/source/applications/gui/qt/GenesysQtGUI -I/usr/include/x86_64-linux-gnu/qt5 -I/usr/include/x86_64-linux-gnu/qt5/QtPrintSupport -I/usr/include/x86_64-linux-gnu/qt5/QtDesigner -I/usr/include/x86_64-linux-gnu/qt5/QtUiPlugin -I/usr/include/x86_64-linux-gnu/qt5/QtCharts -I/usr/include/x86_64-linux-gnu/qt5/QtWidgets -I/usr/include/x86_64-linux-gnu/qt5/QtGui -I/usr/include/x86_64-linux-gnu/qt5/QtXml -I/usr/include/x86_64-linux-gnu/qt5/QtCore -I/usr/include/c++/11 -I/usr/include/x86_64-linux-gnu/c++/11 -I/usr/include/c++/11/backward -I/usr/lib/gcc/x86_64-linux-gnu/11/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include propertyeditor/qtpropertybrowser/qtpropertymanager.cpp -o qtpropertymanager.moc
 
 qttreepropertybrowser.moc: propertyeditor/qtpropertybrowser/qttreepropertybrowser.cpp \
 		propertyeditor/qtpropertybrowser/qttreepropertybrowser.h \
@@ -2706,7 +2700,7 @@ qttreepropertybrowser.moc: propertyeditor/qtpropertybrowser/qttreepropertybrowse
 		moc_qttreepropertybrowser.cpp \
 		moc_predefs.h \
 		/usr/lib/qt5/bin/moc
-	/usr/lib/qt5/bin/moc $(DEFINES) --include /home/orion23/Documents/repos/Genesys-Simulator/source/applications/gui/qt/GenesysQtGUI/moc_predefs.h -I/usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++ -I/home/orion23/Documents/repos/Genesys-Simulator/source/applications/gui/qt/GenesysQtGUI -I/usr/include/x86_64-linux-gnu/qt5 -I/usr/include/x86_64-linux-gnu/qt5/QtPrintSupport -I/usr/include/x86_64-linux-gnu/qt5/QtDesigner -I/usr/include/x86_64-linux-gnu/qt5/QtUiPlugin -I/usr/include/x86_64-linux-gnu/qt5/QtCharts -I/usr/include/x86_64-linux-gnu/qt5/QtWidgets -I/usr/include/x86_64-linux-gnu/qt5/QtGui -I/usr/include/x86_64-linux-gnu/qt5/QtXml -I/usr/include/x86_64-linux-gnu/qt5/QtCore -I/usr/include/c++/11 -I/usr/include/x86_64-linux-gnu/c++/11 -I/usr/include/c++/11/backward -I/usr/lib/gcc/x86_64-linux-gnu/11/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include propertyeditor/qtpropertybrowser/qttreepropertybrowser.cpp -o qttreepropertybrowser.moc
+	/usr/lib/qt5/bin/moc $(DEFINES) --include /home/ist/Documentos/modelsim/new-genesys/Genesys-Simulator/source/applications/gui/qt/GenesysQtGUI/moc_predefs.h -I/usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++ -I/home/ist/Documentos/modelsim/new-genesys/Genesys-Simulator/source/applications/gui/qt/GenesysQtGUI -I/usr/include/x86_64-linux-gnu/qt5 -I/usr/include/x86_64-linux-gnu/qt5/QtPrintSupport -I/usr/include/x86_64-linux-gnu/qt5/QtDesigner -I/usr/include/x86_64-linux-gnu/qt5/QtUiPlugin -I/usr/include/x86_64-linux-gnu/qt5/QtCharts -I/usr/include/x86_64-linux-gnu/qt5/QtWidgets -I/usr/include/x86_64-linux-gnu/qt5/QtGui -I/usr/include/x86_64-linux-gnu/qt5/QtXml -I/usr/include/x86_64-linux-gnu/qt5/QtCore -I/usr/include/c++/11 -I/usr/include/x86_64-linux-gnu/c++/11 -I/usr/include/c++/11/backward -I/usr/lib/gcc/x86_64-linux-gnu/11/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include propertyeditor/qtpropertybrowser/qttreepropertybrowser.cpp -o qttreepropertybrowser.moc
 
 compiler_uic_make_all: ui_DialogTimerConfigure.h ui_Dialogmodelinformation.h ui_dialogBreakpoint.h ui_dialogpluginmanager.h ui_dialogsimulationconfigure.h ui_dialogsystempreferences.h ui_mainwindow.h
 compiler_uic_clean:

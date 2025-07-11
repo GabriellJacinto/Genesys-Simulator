@@ -176,6 +176,8 @@ public:
     QVBoxLayout *verticalLayout_18;
     QTextEdit *textEdit_Reports;
     QWidget *TabReportsResults;
+    QVBoxLayout *verticalLayout_Results;
+    QTextEdit *textEdit_Results;
     QWidget *tabReportsPlots;
     QHBoxLayout *horizontalLayoutZoomReplication;
     QLabel *labelMousePos;
@@ -935,6 +937,20 @@ public:
         tabWidgetReports->addTab(tabReportsReports, QString());
         TabReportsResults = new QWidget();
         TabReportsResults->setObjectName(QString::fromUtf8("TabReportsResults"));
+        verticalLayout_Results = new QVBoxLayout(TabReportsResults);
+        verticalLayout_Results->setObjectName(QString::fromUtf8("verticalLayout_Results"));
+        textEdit_Results = new QTextEdit(TabReportsResults);
+        textEdit_Results->setObjectName(QString::fromUtf8("textEdit_Results"));
+        QFont font2;
+        font2.setFamily(QString::fromUtf8("Arial"));
+        font2.setPointSize(11);
+        textEdit_Results->setFont(font2);
+        textEdit_Results->setLineWrapMode(QTextEdit::WidgetWidth);
+        textEdit_Results->setTextInteractionFlags(Qt::TextSelectableByKeyboard|Qt::TextSelectableByMouse|Qt::TextEditable);
+        textEdit_Results->setAcceptRichText(true);
+
+        verticalLayout_Results->addWidget(textEdit_Results);
+
         tabWidgetReports->addTab(TabReportsResults, QString());
         tabReportsPlots = new QWidget();
         tabReportsPlots->setObjectName(QString::fromUtf8("tabReportsPlots"));
@@ -952,9 +968,9 @@ public:
         horizontalLayoutZoomReplication->setObjectName(QString::fromUtf8("horizontalLayoutZoomReplication"));
         labelMousePos = new QLabel(centralwidget);
         labelMousePos->setObjectName(QString::fromUtf8("labelMousePos"));
-        QFont font2;
-        font2.setPointSize(9);
-        labelMousePos->setFont(font2);
+        QFont font3;
+        font3.setPointSize(9);
+        labelMousePos->setFont(font3);
 
         horizontalLayoutZoomReplication->addWidget(labelMousePos);
 
@@ -967,7 +983,7 @@ public:
 
         label_3 = new QLabel(centralwidget);
         label_3->setObjectName(QString::fromUtf8("label_3"));
-        label_3->setFont(font2);
+        label_3->setFont(font3);
 
         horizontalLayoutZoomReplication->addWidget(label_3);
 
@@ -995,13 +1011,13 @@ public:
 
         label_2 = new QLabel(centralwidget);
         label_2->setObjectName(QString::fromUtf8("label_2"));
-        label_2->setFont(font2);
+        label_2->setFont(font3);
 
         horizontalLayoutZoomReplication->addWidget(label_2);
 
         label_ReplicationNum = new QLabel(centralwidget);
         label_ReplicationNum->setObjectName(QString::fromUtf8("label_ReplicationNum"));
-        label_ReplicationNum->setFont(font2);
+        label_ReplicationNum->setFont(font3);
 
         horizontalLayoutZoomReplication->addWidget(label_ReplicationNum);
 
@@ -1012,7 +1028,7 @@ public:
 
         progressBarSimulation = new QProgressBar(centralwidget);
         progressBarSimulation->setObjectName(QString::fromUtf8("progressBarSimulation"));
-        progressBarSimulation->setFont(font2);
+        progressBarSimulation->setFont(font3);
         progressBarSimulation->setValue(0);
         progressBarSimulation->setInvertedAppearance(false);
 
@@ -1105,9 +1121,9 @@ public:
         sizePolicy3.setHeightForWidth(textEdit_Console->sizePolicy().hasHeightForWidth());
         textEdit_Console->setSizePolicy(sizePolicy3);
         textEdit_Console->setMinimumSize(QSize(100, 100));
-        QFont font3;
-        font3.setPointSize(8);
-        textEdit_Console->setFont(font3);
+        QFont font4;
+        font4.setPointSize(8);
+        textEdit_Console->setFont(font4);
         textEdit_Console->setTextInteractionFlags(Qt::TextSelectableByKeyboard|Qt::TextSelectableByMouse);
 
         verticalLayout->addWidget(textEdit_Console);
@@ -1611,6 +1627,7 @@ public:
         tabWidgetSimulation->setTabText(tabWidgetSimulation->indexOf(tabDebugEvents), QCoreApplication::translate("MainWindow", "Events", nullptr));
         tabWidgetCentral->setTabText(tabWidgetCentral->indexOf(tabCentralSimulation), QCoreApplication::translate("MainWindow", "Simulation", nullptr));
         tabWidgetReports->setTabText(tabWidgetReports->indexOf(tabReportsReports), QCoreApplication::translate("MainWindow", "Reports", nullptr));
+        textEdit_Results->setHtml(QString());
         tabWidgetReports->setTabText(tabWidgetReports->indexOf(TabReportsResults), QCoreApplication::translate("MainWindow", "Results", nullptr));
         tabWidgetReports->setTabText(tabWidgetReports->indexOf(tabReportsPlots), QCoreApplication::translate("MainWindow", "Plots", nullptr));
         tabWidgetCentral->setTabText(tabWidgetCentral->indexOf(tabCentralWidget), QCoreApplication::translate("MainWindow", "Results", nullptr));

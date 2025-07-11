@@ -32,6 +32,7 @@ public:
 	virtual void showSimulationStatistics();
 	virtual void showSimulationResponses();
 	virtual void showSimulationControls();
+	void showResultsReport();
 private:
 	ModelSimulation* _simulation;
 	Model* _model;

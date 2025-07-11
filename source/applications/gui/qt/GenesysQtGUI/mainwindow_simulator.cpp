@@ -49,8 +49,39 @@ void MainWindow::_simulatorTraceSimulationHandler(TraceSimulationEvent e) {
 
 void MainWindow::_simulatorTraceReportsHandler(TraceEvent e) {
 
-    std::cout << e.getText() << std::endl;
-    ui->textEdit_Reports->append(QString::fromStdString(e.getText()));
+    // Filtro: ignora mensagens HTML (usadas só na aba Results)
+    const std::string& msg = e.getText();
+    if (
+        (msg.rfind("<html", 0) == 0) ||
+        (msg.rfind("<!DOCTYPE html", 0) == 0)
+    ) {
+        // Não exibe HTML na aba Reports
+        return;
+    }
+    std::cout << msg << std::endl;
+    ui->textEdit_Reports->append(QString::fromStdString(msg));
+    QCoreApplication::processEvents();
+}
+
+
+// Handler para resultados (L2_results)
+void MainWindow::_simulatorTraceResultsHandler(TraceEvent e) {
+    // Exibe HTML se detectar, senão texto puro. Se HTML já estiver exibido, ignora texto puro subsequente.
+    const std::string& msg = e.getText();
+    static bool htmlMostrado = false;
+    if ((msg.rfind("<html", 0) == 0) || (msg.rfind("<!DOCTYPE html", 0) == 0)) {
+        std::cout << "[HTML] " << msg.substr(0, 80) << (msg.size() > 80 ? "..." : "") << std::endl;
+        ui->textEdit_Results->clear();
+        ui->textEdit_Results->setHtml(QString::fromStdString(msg));
+        htmlMostrado = true;
+    } else {
+        if (htmlMostrado) {
+            // Se já exibiu HTML, ignora texto puro subsequente
+            return;
+        }
+        std::cout << msg << std::endl;
+        ui->textEdit_Results->append(QString::fromStdString(msg));
+    }
     QCoreApplication::processEvents();
 }
 

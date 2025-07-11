@@ -37,66 +37,54 @@ void SimulationReporterDefaultImpl1::showSimulationControls() {
 	Util::DecIndent();
 }
 
+
 void SimulationReporterDefaultImpl1::showReplicationStatistics() {
+	// --- Gera e emite tanto o HTML (L2_resultsHtml) quanto o relatório textual (L2_results) ---
+	std::string html = "<html><head><style>table{border-collapse:collapse;}th,td{border:1px solid #888;padding:4px;}th{background:#eee;}</style></head><body>";
+	html += "<h2>Statistics for replication " + std::to_string(_simulation->getCurrentReplicationNumber()) + " of " + std::to_string(_model->getSimulation()->getNumberOfReplications()) + "</h2>";
+	html += "<table><tr>";
+	html += "<th>Name</th>";
+	html += "<th>Elems</th>";
+	html += "<th>Min</th><th>Max</th><th>Average</th><th>Variance</th><th>Std.Dev.</th><th>Var.Coef.</th><th>Conf.Inter.</th><th>Conf.Level</th>";
+	html += "</tr>";
+
 	_model->getTracer()->traceReport("");
 	_model->getTracer()->traceReport("Begin of Report for replication " + std::to_string(_simulation->getCurrentReplicationNumber()) + " of " + std::to_string(_model->getSimulation()->getNumberOfReplications()));
-	/* @TODO: StatisticsCollector and Counter should NOT be special classes. It should iterate classes looking for classes that can generate reports.
-	 StatisticsCollector and Counter should ovveride an inherited attribute from ModelDataDefinition to specify they generate report information
-	 look for _generateReportInformation = true;  using bool generateReportInformation() const;
-	 */
+
 	const std::string UtilTypeOfStatisticsCollector = Util::TypeOf<StatisticsCollector>();
 	const std::string UtilTypeOfCounter = Util::TypeOf<Counter>();
-	// runs over all elements and list the statistics for each one, and then the statistics with no parent
 	Util::IncIndent();
-	// copy the list of statistics and counters into a single new list
 	std::list<ModelDataDefinition*>* statisticsAndCounters = new std::list<ModelDataDefinition*>(*(_model->getDataManager()->getDataDefinitionList(UtilTypeOfStatisticsCollector)->list()));
 	std::list<ModelDataDefinition*>* counters = new std::list<ModelDataDefinition*>(*(_model->getDataManager()->getDataDefinitionList(UtilTypeOfCounter)->list()));
 	statisticsAndCounters->merge(*counters);
-	//statisticsAndCounters->insert(counters->list()->begin(), counters->list()->end());
-	// organizes statistics into a map of maps
 	std::map< std::string, std::map<std::string, std::list<ModelDataDefinition*>*>* >* mapMapTypeStat = new std::map<std::string, std::map<std::string, std::list<ModelDataDefinition*>*>*>();
-
 	for (ModelDataDefinition* cstatOrCounter : *statisticsAndCounters) {
 		std::string parentName, parentTypename;
-		//std::cout << statOrCnt->getName() << ": " << statOrCnt->getTypename() << std::endl;
 		if (cstatOrCounter->getClassname() == UtilTypeOfStatisticsCollector) {
 			StatisticsCollector* cstat = dynamic_cast<StatisticsCollector*> (cstatOrCounter);
 			parentName = cstat->getParent()->getName();
 			parentTypename = cstat->getParent()->getClassname();
-		} else {
-			if (cstatOrCounter->getClassname() == UtilTypeOfCounter) {
-				Counter* counter = dynamic_cast<Counter*> (cstatOrCounter);
-				parentName = counter->getParent()->getName();
-				parentTypename = counter->getParent()->getClassname();
-
-			}
+		} else if (cstatOrCounter->getClassname() == UtilTypeOfCounter) {
+			Counter* counter = dynamic_cast<Counter*> (cstatOrCounter);
+			parentName = counter->getParent()->getName();
+			parentTypename = counter->getParent()->getClassname();
 		}
-		// look for key=parentTypename
-		std::map<std::string, std::map<std::string, std::list<ModelDataDefinition*>*>*>::iterator mapMapIt = mapMapTypeStat->find(parentTypename);
-		if (mapMapIt == mapMapTypeStat->end()) { // parentTypename does not exists in map. Include it.
-			std::pair< std::string, std::map<std::string, std::list<ModelDataDefinition*>*>* >* newPair = new std::pair<std::string, std::map<std::string, std::list<ModelDataDefinition*>*>*>(parentTypename, new std::map<std::string, std::list<ModelDataDefinition*>*>());
+		auto mapMapIt = mapMapTypeStat->find(parentTypename);
+		if (mapMapIt == mapMapTypeStat->end()) {
+			auto* newPair = new std::pair<std::string, std::map<std::string, std::list<ModelDataDefinition*>*>*>(parentTypename, new std::map<std::string, std::list<ModelDataDefinition*>*>());
 			mapMapTypeStat->insert(*newPair);
-			mapMapIt = mapMapTypeStat->find(parentTypename); // find again. Now it will.
+			mapMapIt = mapMapTypeStat->find(parentTypename);
 		}
-		//assert(mapMapIt != mapMapTypeStat->end());
-		std::map<std::string, std::list<ModelDataDefinition*>*>* mapTypeStat = (*mapMapIt).second;
-		assert(mapTypeStat != nullptr);
-		// look for key=parentName
-		std::map<std::string, std::list<ModelDataDefinition*>*>::iterator mapIt = mapTypeStat->find(parentName);
-		if (mapIt == mapTypeStat->end()) { // parentTypename does not exists in map. Include it.
-			std::pair< std::string, std::list<ModelDataDefinition*>* >* newPair = new std::pair<std::string, std::list<ModelDataDefinition*>*>(parentName, new std::list<ModelDataDefinition*>());
+		auto* mapTypeStat = (*mapMapIt).second;
+		auto mapIt = mapTypeStat->find(parentName);
+		if (mapIt == mapTypeStat->end()) {
+			auto* newPair = new std::pair<std::string, std::list<ModelDataDefinition*>*>(parentName, new std::list<ModelDataDefinition*>());
 			mapTypeStat->insert(*newPair);
-			mapIt = mapTypeStat->find(parentName); // find again. Now it will.
+			mapIt = mapTypeStat->find(parentName);
 		}
-		// get the list and insert the stat in that list
-		std::list<ModelDataDefinition*>* listStatAndCount = (*mapIt).second;
-		assert(listStatAndCount != nullptr);
+		auto* listStatAndCount = (*mapIt).second;
 		listStatAndCount->insert(listStatAndCount->end(), cstatOrCounter);
-		//_model->getTraceManager()->traceReport(parentTypename + " -> " + parentName + " -> " + stat->show());
 	}
-	//
-	//
-	// now runs over that map of maps showing the statistics
 	Util::IncIndent();
 	Util::IncIndent();
 	_model->getTracer()->traceReport(Util::SetW("name", _nameW) + Util::SetW("elems", _w) + Util::SetW("min", _w) + Util::SetW("max", _w) + Util::SetW("average", _w) + Util::SetW("variance", _w) + Util::SetW("stddev", _w) + Util::SetW("varCoef", _w) + Util::SetW("confInterv", _w) + Util::SetW("confLevel", _w));
@@ -104,49 +92,69 @@ void SimulationReporterDefaultImpl1::showReplicationStatistics() {
 	Util::DecIndent();
 	const unsigned short _w1 = _w - 1;
 	for (auto mapmapItem : *mapMapTypeStat) {
+		html += "<tr><td colspan=10><b>" + mapmapItem.first + "</b></td></tr>";
 		_model->getTracer()->traceReport("Statistics for " + mapmapItem.first + ":");
 		Util::IncIndent();
-		{
-			for (auto mapItem : *(mapmapItem.second)) {
-				_model->getTracer()->traceReport(mapItem.first + ":");
-				Util::IncIndent();
-				{
-					//					_model->getTracer()->traceReport(Util::SetW("name", _nameW) + Util::SetW("elems", _w) + Util::SetW("min", _w) + Util::SetW("max", _w) + Util::SetW("average", _w) + Util::SetW("variance", _w) + Util::SetW("stddev", _w) + Util::SetW("varCoef", _w) + Util::SetW("confInterv", _w) + Util::SetW("confLevel", _w));
-					for (ModelDataDefinition * const item : *(mapItem.second)) {
-						if (item->getClassname() == UtilTypeOfStatisticsCollector) {
-							Statistics_if* stat = dynamic_cast<StatisticsCollector*> (item)->getStatistics();
-							_model->getTracer()->traceReport(
-									Util::SetW(item->getName() + std::string(_nameW, '.'), _nameW - 1) + " " +
-									Util::SetW(Util::StrTruncIfInt(stat->numElements()), _w1) + " " +
-									Util::SetW(Util::StrTruncIfInt(stat->min()), _w1) + " " +
-									Util::SetW(Util::StrTruncIfInt(stat->max()), _w1) + " " +
-									Util::SetW(Util::StrTruncIfInt(stat->average()), _w1) + " " +
-									Util::SetW(Util::StrTruncIfInt(stat->variance()), _w1) + " " +
-									Util::SetW(Util::StrTruncIfInt(stat->stddeviation()), _w1) + " " +
-									Util::SetW(Util::StrTruncIfInt(stat->variationCoef()), _w1) + " " +
-									Util::SetW(Util::StrTruncIfInt(stat->halfWidthConfidenceInterval()), _w1) + " " +
-									Util::SetW(Util::StrTruncIfInt(stat->confidenceLevel()), _w)
-									, TraceManager::Level::L2_results);
-						} else {
-							if (item->getClassname() == UtilTypeOfCounter) {
-								Counter* count = dynamic_cast<Counter*> (item);
-								_model->getTracer()->traceReport(
-										Util::SetW(count->getName() + std::string(_nameW, '.'), _nameW - 1) + " " +
-										Util::SetW(Util::StrTruncIfInt(count->getCountValue()), _w)
-										, TraceManager::Level::L2_results);
-							}
-						}
-					}
+		for (auto mapItem : *(mapmapItem.second)) {
+			html += "<tr><td colspan=10>" + mapItem.first + "</td></tr>";
+			_model->getTracer()->traceReport(mapItem.first + ":");
+			Util::IncIndent();
+			for (ModelDataDefinition * const item : *(mapItem.second)) {
+				if (item->getClassname() == UtilTypeOfStatisticsCollector) {
+					Statistics_if* stat = dynamic_cast<StatisticsCollector*> (item)->getStatistics();
+					html += "<tr>";
+					html += "<td>" + item->getName() + "</td>";
+					html += "<td>" + Util::StrTruncIfInt(stat->numElements()) + "</td>";
+					html += "<td>" + Util::StrTruncIfInt(stat->min()) + "</td>";
+					html += "<td>" + Util::StrTruncIfInt(stat->max()) + "</td>";
+					html += "<td>" + Util::StrTruncIfInt(stat->average()) + "</td>";
+					html += "<td>" + Util::StrTruncIfInt(stat->variance()) + "</td>";
+					html += "<td>" + Util::StrTruncIfInt(stat->stddeviation()) + "</td>";
+					html += "<td>" + Util::StrTruncIfInt(stat->variationCoef()) + "</td>";
+					html += "<td>" + Util::StrTruncIfInt(stat->halfWidthConfidenceInterval()) + "</td>";
+					html += "<td>" + Util::StrTruncIfInt(stat->confidenceLevel()) + "</td>";
+					html += "</tr>";
+					_model->getTracer()->traceReport(
+						Util::SetW(item->getName() + std::string(_nameW, '.'), _nameW - 1) + " " +
+						Util::SetW(Util::StrTruncIfInt(stat->numElements()), _w1) + " " +
+						Util::SetW(Util::StrTruncIfInt(stat->min()), _w1) + " " +
+						Util::SetW(Util::StrTruncIfInt(stat->max()), _w1) + " " +
+						Util::SetW(Util::StrTruncIfInt(stat->average()), _w1) + " " +
+						Util::SetW(Util::StrTruncIfInt(stat->variance()), _w1) + " " +
+						Util::SetW(Util::StrTruncIfInt(stat->stddeviation()), _w1) + " " +
+						Util::SetW(Util::StrTruncIfInt(stat->variationCoef()), _w1) + " " +
+						Util::SetW(Util::StrTruncIfInt(stat->halfWidthConfidenceInterval()), _w1) + " " +
+						Util::SetW(Util::StrTruncIfInt(stat->confidenceLevel()), _w)
+						, TraceManager::Level::L2_results);
+				} else if (item->getClassname() == UtilTypeOfCounter) {
+					Counter* count = dynamic_cast<Counter*> (item);
+					html += "<tr>";
+					html += "<td>" + count->getName() + "</td>";
+					html += "<td colspan=9>" + Util::StrTruncIfInt(count->getCountValue()) + "</td>";
+					html += "</tr>";
+					_model->getTracer()->traceReport(
+						Util::SetW(count->getName() + std::string(_nameW, '.'), _nameW - 1) + " " +
+						Util::SetW(Util::StrTruncIfInt(count->getCountValue()), _w)
+						, TraceManager::Level::L2_results);
 				}
-				Util::DecIndent();
 			}
+			Util::DecIndent();
 		}
 		Util::DecIndent();
 	}
-	if (_simulation->isShowSimulationResposesInReport())
+	if (_simulation->isShowSimulationResposesInReport()) {
+		html += "<tr><td colspan=10><b>Respostas da Simulação</b></td></tr>";
+		html += "<tr><td colspan=10><ul>";
+		for (SimulationControl* response : *_model->getResponses()->list()) {
+			html += "<li>(" + response->getClassname() + ") " + response->getElementName() + "." + response->getName() + ": " + response->getValue() + "</li>";
+		}
+		html += "</ul></td></tr>";
 		this->showSimulationResponses();
-	Util::DecIndent();
+	}
 	_model->getTracer()->traceReport("End of Report for replication " + std::to_string(_simulation->getCurrentReplicationNumber()) + " of " + std::to_string(_model->getSimulation()->getNumberOfReplications()));
+	html += "</table></body></html>";
+	// Emite o HTML para a aba Results
+	_model->getTracer()->traceReport(html, TraceManager::Level::L2_resultsHtml);
 }
 
 void SimulationReporterDefaultImpl1::showSimulationResponses() {
@@ -160,6 +168,7 @@ void SimulationReporterDefaultImpl1::showSimulationResponses() {
 	Util::DecIndent();
 }
 
+
 void SimulationReporterDefaultImpl1::showSimulationStatistics() {//List<StatisticsCollector*>* cstatsSimulation) {
 	_model->getTracer()->traceReport("");
 	_model->getTracer()->traceReport("Begin of Report for Simulation (based on " + std::to_string(_model->getSimulation()->getNumberOfReplications()) + " replications)");
@@ -167,17 +176,19 @@ void SimulationReporterDefaultImpl1::showSimulationStatistics() {//List<Statisti
 	const std::string UtilTypeOfCounter = Util::TypeOf<Counter>();
 	Util::IncIndent();
 	if (_simulation->isShowSimulationControlsInReport())
-		this->showSimulationControls(); // assumed the controls are the same for all replications, show them only for the whole simulation
-	// runs over all elements and list the statistics for each one, and then the statistics with no parent
-	// COPY the list of statistics and counters into a single new list
-	//std::list<ModelDataDefinition*>* statisticsAndCounters = //new std::list<ModelDataDefinition*>(*(this->_statsCountersSimulation->list()));
-	// organizes statistics into a map of maps
-	std::map< std::string, std::map<std::string, std::list<ModelDataDefinition*>*>* >* mapMapTypeStat = new std::map<std::string, std::map<std::string, std::list<ModelDataDefinition*>*>*>();
+		this->showSimulationControls();
+	// --- Gera HTML ---
+	std::string html = "<html><head><style>table{border-collapse:collapse;}th,td{border:1px solid #888;padding:4px;}th{background:#eee;}</style></head><body>";
+	html += "<h2>Statistics for all replications (" + std::to_string(_model->getSimulation()->getNumberOfReplications()) + ")</h2>";
+	html += "<table><tr>";
+	html += "<th>Name</th>";
+	html += "<th>Elems</th><th>Min</th><th>Max</th><th>Average</th><th>Variance</th><th>Std.Dev.</th><th>Var.Coef.</th><th>Conf.Inter.</th><th>Conf.Level</th>";
+	html += "</tr>";
 
+	std::map< std::string, std::map<std::string, std::list<ModelDataDefinition*>*>* >* mapMapTypeStat = new std::map<std::string, std::map<std::string, std::list<ModelDataDefinition*>*>*>();
 	for (std::list<ModelDataDefinition*>::iterator it = _statsCountersSimulation->list()->begin(); it != _statsCountersSimulation->list()->end(); it++) {
 		std::string parentName, parentTypename;
 		ModelDataDefinition* statOrCnt = (*it);
-		//std::cout << statOrCnt->getName() << ": " << statOrCnt->getTypename() << std::endl;
 		if ((*it)->getClassname() == UtilTypeOfStatisticsCollector) {
 			StatisticsCollector* stat = dynamic_cast<StatisticsCollector*> (statOrCnt);
 			parentName = stat->getParent()->getName();
@@ -187,79 +198,86 @@ void SimulationReporterDefaultImpl1::showSimulationStatistics() {//List<Statisti
 				Counter* cnt = dynamic_cast<Counter*> (statOrCnt);
 				parentName = cnt->getParent()->getName();
 				parentTypename = cnt->getParent()->getClassname();
-
 			}
 		}
-		// look for key=parentTypename
 		std::map<std::string, std::map<std::string, std::list<ModelDataDefinition*>*>*>::iterator mapMapIt = mapMapTypeStat->find(parentTypename);
-		if (mapMapIt == mapMapTypeStat->end()) { // parentTypename does not exists in map. Include it.
+		if (mapMapIt == mapMapTypeStat->end()) {
 			std::pair< std::string, std::map<std::string, std::list<ModelDataDefinition*>*>* >* newPair = new std::pair<std::string, std::map<std::string, std::list<ModelDataDefinition*>*>*>(parentTypename, new std::map<std::string, std::list<ModelDataDefinition*>*>());
 			mapMapTypeStat->insert(*newPair);
-			mapMapIt = mapMapTypeStat->find(parentTypename); // find again. Now it will.
+			mapMapIt = mapMapTypeStat->find(parentTypename);
 		}
 		assert(mapMapIt != mapMapTypeStat->end());
 		std::map<std::string, std::list<ModelDataDefinition*>*>* mapTypeStat = (*mapMapIt).second;
 		assert(mapTypeStat != nullptr);
-		// look for key=parentName
 		std::map<std::string, std::list<ModelDataDefinition*>*>::iterator mapIt = mapTypeStat->find(parentName);
-		if (mapIt == mapTypeStat->end()) { // parentTypename does not exists in map. Include it.
+		if (mapIt == mapTypeStat->end()) {
 			std::pair< std::string, std::list<ModelDataDefinition*>* >* newPair = new std::pair<std::string, std::list<ModelDataDefinition*>*>(parentName, new std::list<ModelDataDefinition*>());
 			mapTypeStat->insert(*newPair);
-			mapIt = mapTypeStat->find(parentName); // find again. Now it will.
+			mapIt = mapTypeStat->find(parentName);
 		}
-		// get the list and insert the stat in that list
 		std::list<ModelDataDefinition*>* listStat = (*mapIt).second;
 		listStat->insert(listStat->end(), statOrCnt);
-		//_model->getTraceManager()->traceReport(parentTypename + " -> " + parentName + " -> " + stat->show());
 	}
-	// now runs over that map of maps showing the statistics
-	//int w = 12;
 	Util::IncIndent();
 	Util::IncIndent();
 	_model->getTracer()->traceReport(Util::SetW("name", _nameW) + Util::SetW("elems", _w) + Util::SetW("min", _w) + Util::SetW("max", _w) + Util::SetW("average", _w) + Util::SetW("variance", _w) + Util::SetW("stddev", _w) + Util::SetW("varCoef", _w) + Util::SetW("confInterv", _w) + Util::SetW("confLevel", _w));
 	Util::DecIndent();
 	Util::DecIndent();
-	// @TODO: USE REFERENCE TO MAPITEM TO AVOID COPY
 	const unsigned short _w1 = _w - 1;
 	for (auto mapmapItem : *mapMapTypeStat) {
+		html += "<tr><td colspan=10><b>" + mapmapItem.first + "</b></td></tr>";
 		_model->getTracer()->traceReport("Statistics for " + mapmapItem.first + ":");
 		Util::IncIndent();
-		{
-			for (auto mapItem : *(mapmapItem.second)) {
-				_model->getTracer()->traceReport(mapItem.first + ":");
-				Util::IncIndent();
-				{
-					for (ModelDataDefinition * const item : *(mapItem.second)) {
-						if (item->getClassname() == UtilTypeOfStatisticsCollector) {
-							Statistics_if* stat = dynamic_cast<StatisticsCollector*> (item)->getStatistics();
-							_model->getTracer()->traceReport(
-									Util::SetW(item->getName() + std::string(_nameW, '.'), _nameW - 1) + " " +
-									Util::SetW(Util::StrTruncIfInt(stat->numElements()), _w1) + " " +
-									Util::SetW(Util::StrTruncIfInt(stat->min()), _w1) + " " +
-									Util::SetW(Util::StrTruncIfInt(stat->max()), _w1) + " " +
-									Util::SetW(Util::StrTruncIfInt(stat->average()), _w1) + " " +
-									Util::SetW(Util::StrTruncIfInt(stat->variance()), _w1) + " " +
-									Util::SetW(Util::StrTruncIfInt(stat->stddeviation()), _w1) + " " +
-									Util::SetW(Util::StrTruncIfInt(stat->variationCoef()), _w1) + " " +
-									Util::SetW(Util::StrTruncIfInt(stat->halfWidthConfidenceInterval()), _w1) + " " +
-									Util::SetW(Util::StrTruncIfInt(stat->confidenceLevel()), _w)
-									, TraceManager::Level::L2_results);
-						} else {
-							if (item->getClassname() == UtilTypeOfCounter) {
-								Counter* cnt = dynamic_cast<Counter*> (item);
-								_model->getTracer()->traceReport(
-										Util::SetW(cnt->getName() + std::string(_nameW, '.'), _nameW - 1) + " " +
-										Util::SetW(Util::StrTruncIfInt(cnt->getCountValue()), _w)
-										, TraceManager::Level::L2_results);
-							}
-						}
-					}
+		for (auto mapItem : *(mapmapItem.second)) {
+			html += "<tr><td colspan=10>" + mapItem.first + "</td></tr>";
+			_model->getTracer()->traceReport(mapItem.first + ":");
+			Util::IncIndent();
+			for (ModelDataDefinition * const item : *(mapItem.second)) {
+				if (item->getClassname() == UtilTypeOfStatisticsCollector) {
+					Statistics_if* stat = dynamic_cast<StatisticsCollector*> (item)->getStatistics();
+					html += "<tr>";
+					html += "<td>" + item->getName() + "</td>";
+					html += "<td>" + Util::StrTruncIfInt(stat->numElements()) + "</td>";
+					html += "<td>" + Util::StrTruncIfInt(stat->min()) + "</td>";
+					html += "<td>" + Util::StrTruncIfInt(stat->max()) + "</td>";
+					html += "<td>" + Util::StrTruncIfInt(stat->average()) + "</td>";
+					html += "<td>" + Util::StrTruncIfInt(stat->variance()) + "</td>";
+					html += "<td>" + Util::StrTruncIfInt(stat->stddeviation()) + "</td>";
+					html += "<td>" + Util::StrTruncIfInt(stat->variationCoef()) + "</td>";
+					html += "<td>" + Util::StrTruncIfInt(stat->halfWidthConfidenceInterval()) + "</td>";
+					html += "<td>" + Util::StrTruncIfInt(stat->confidenceLevel()) + "</td>";
+					html += "</tr>";
+					_model->getTracer()->traceReport(
+						Util::SetW(item->getName() + std::string(_nameW, '.'), _nameW - 1) + " " +
+						Util::SetW(Util::StrTruncIfInt(stat->numElements()), _w1) + " " +
+						Util::SetW(Util::StrTruncIfInt(stat->min()), _w1) + " " +
+						Util::SetW(Util::StrTruncIfInt(stat->max()), _w1) + " " +
+						Util::SetW(Util::StrTruncIfInt(stat->average()), _w1) + " " +
+						Util::SetW(Util::StrTruncIfInt(stat->variance()), _w1) + " " +
+						Util::SetW(Util::StrTruncIfInt(stat->stddeviation()), _w1) + " " +
+						Util::SetW(Util::StrTruncIfInt(stat->variationCoef()), _w1) + " " +
+						Util::SetW(Util::StrTruncIfInt(stat->halfWidthConfidenceInterval()), _w1) + " " +
+						Util::SetW(Util::StrTruncIfInt(stat->confidenceLevel()), _w)
+						, TraceManager::Level::L2_results);
+				} else if (item->getClassname() == UtilTypeOfCounter) {
+					Counter* cnt = dynamic_cast<Counter*> (item);
+					html += "<tr>";
+					html += "<td>" + cnt->getName() + "</td>";
+					html += "<td colspan=9>" + Util::StrTruncIfInt(cnt->getCountValue()) + "</td>";
+					html += "</tr>";
+					_model->getTracer()->traceReport(
+						Util::SetW(cnt->getName() + std::string(_nameW, '.'), _nameW - 1) + " " +
+						Util::SetW(Util::StrTruncIfInt(cnt->getCountValue()), _w)
+						, TraceManager::Level::L2_results);
 				}
-				Util::DecIndent();
 			}
+			Util::DecIndent();
 		}
 		Util::DecIndent();
 	}
 	Util::DecIndent();
 	_model->getTracer()->traceReport("End of Report for Simulation");
+	html += "</table></body></html>";
+	// Emite o HTML para a aba Results
+	_model->getTracer()->traceReport(html, TraceManager::Level::L2_resultsHtml);
 }
