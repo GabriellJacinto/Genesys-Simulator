@@ -186,33 +186,14 @@ MainWindow::MainWindow(QWidget *parent) : QMainWindow(parent), ui(new Ui::MainWi
     //ui->tabWidget_Model->setCurrentIndex(CONST.TabModelGraphicEditIndex);
 
     // Inicializa o Qt Charts para a aba Plots
-    QBarSet *set0 = new QBarSet("Média");
-    *set0 << 1 << 2 << 3 << 4 << 5; // Exemplo de dados
-
-    QBarSeries *series = new QBarSeries();
-    series->append(set0);
-
-    QChart *chart = new QChart();
-    chart->addSeries(series);
-    chart->setTitle("Exemplo de gráfico de barras");
-    chart->setAnimationOptions(QChart::SeriesAnimations);
-
-    QStringList categories;
-    categories << "A" << "B" << "C" << "D" << "E";
-    QBarCategoryAxis *axisX = new QBarCategoryAxis();
-    axisX->append(categories);
-    chart->addAxis(axisX, Qt::AlignBottom);
-    series->attachAxis(axisX);
-
-    QValueAxis *axisY = new QValueAxis();
-    chart->addAxis(axisY, Qt::AlignLeft);
-    series->attachAxis(axisY);
-
-    chartView = new QChartView(chart, ui->tabReportsPlots);
-    chartView->setRenderHint(QPainter::Antialiasing);
-
+    // Substitui o gráfico simples pelo GraphicalReportManager
+    graphicalReportManager = new GraphicalReportManager(this);
+    graphicalReportManager->setSimulator(simulator);
+    
+    QWidget* graphicalReportWidget = graphicalReportManager->createGraphicalReportWidget();
+    
     QVBoxLayout* layout = new QVBoxLayout(ui->tabReportsPlots);
-    layout->addWidget(chartView);
+    layout->addWidget(graphicalReportWidget);
     ui->tabReportsPlots->setLayout(layout);
 }
 

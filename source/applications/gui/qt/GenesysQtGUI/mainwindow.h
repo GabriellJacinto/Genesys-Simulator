@@ -13,6 +13,7 @@ QT_CHARTS_USE_NAMESPACE
 #include "propertyeditor/DataComponentProperty.h"
 #include "propertyeditor/DataComponentEditor.h"
 #include "propertyeditor/ComboBoxEnum.h"
+#include "GraphicalReportManager.h"
 
 #include "../../../../kernel/simulator/Simulator.h"
 #include "../../../../kernel/simulator/PropertyGenesys.h"
@@ -319,5 +320,8 @@ private:
 	bool _loaded = false;
 	//CodeEditor* textCodeEdit_Model;
 	QChartView* chartView = nullptr;
+	
+	// Novo gerenciador de relatórios gráficos
+	GraphicalReportManager* graphicalReportManager = nullptr;
 };
 #endif // MAINWINDOW_H

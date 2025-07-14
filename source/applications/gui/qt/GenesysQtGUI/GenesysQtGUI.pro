@@ -259,6 +259,7 @@ SOURCES += \
     graphicals/GraphicalImageAnimation.cpp \
     graphicals/GraphicalModelComponent.cpp \
     graphicals/GraphicalModelDataDefinition.cpp \
+    GraphicalReportManager.cpp \
     main.cpp \
     mainwindow.cpp \
     propertyeditor/qtpropertybrowser/qtbuttonpropertybrowser.cpp \
@@ -550,6 +551,7 @@ HEADERS += \
     graphicals/GraphicalImageAnimation.h \
     graphicals/GraphicalModelComponent.h \
     graphicals/GraphicalModelDataDefinition.h \
+    GraphicalReportManager.h \
     mainwindow.h \
     propertyeditor/qtpropertybrowser/QtAbstractEditorFactoryBase \
     propertyeditor/qtpropertybrowser/QtAbstractPropertyBrowser \
